@@ -193,18 +193,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AUH_claims_italy
-		icon = GFX_focus_attack_italy
-		x = 16
-		y = 5
-		prerequisite = { focus = AUH_serbian_situation }
-		mutually_exclusive = { focus = AUH_abandon_claims_italy }
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-	}
-
-	focus = {
 		id = AUH_reclaim_lombardy_venetia
 		icon = GFX_focus_attack_italy
 		x = 16

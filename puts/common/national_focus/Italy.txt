@@ -37,7 +37,127 @@ focus_tree = {
 		y = 2
 		cost = 1
 		prerequisite = { focus = ITA_italian_elections }
-		mutually_exclusive = { focus = ITA_kings_coup }
+		mutually_exclusive = { focus = ITA_socialist_victory }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_foreign_affairs
+		x = 11
+		y = 3
+		cost = 10
+		prerequisite = { focus = ITA_maintain_coalition focus = ITA_kings_coup }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ITA_german_ally
+		x = 12
+		y = 4
+		cost = 5
+		prerequisite = { focus = ITA_foreign_affairs }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_honour_the_alliance
+		x = 12
+		y = 5
+		cost = 10
+		prerequisite = { focus = ITA_german_ally }
+
+		available = {
+			AUH = {
+				OR = {
+					NOT = {
+						is_in_faction_with = GER
+					}
+					has_completed_focus = AUH_abandon_claims_italy
+				}
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_entente_ally
+		x = 10
+		y = 4
+		cost = 5
+		prerequisite = { focus = ITA_foreign_affairs }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_london_pact
+		x = 10
+		y = 5
+		cost = 10
+		prerequisite = { focus = ITA_entente_ally }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_instablitity
+		x = 16
+		y = 3
+		cost = 10
+		prerequisite = { focus = ITA_maintain_coalition }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_continue_industrialisation
+		x = 17
+		y = 4
+		cost = 5
+		prerequisite = { focus = ITA_instablitity }
+		prerequisite = { focus = ITA_improve_working }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_appease_rurals
+		x = 15
+		y = 4
+		cost = 5
+		prerequisite = { focus = ITA_instablitity }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ITA_united_by_country
+		x = 16
+		y = 5
+		cost = 10
+		prerequisite = { focus = ITA_continue_industrialisation }
+		prerequisite = { focus = ITA_appease_rurals }
 
 		completion_reward = {
 			
@@ -48,7 +168,7 @@ focus_tree = {
 		id = ITA_improve_working
 		x = 19
 		y = 3
-		cost = 1
+		cost = 10
 		prerequisite = { focus = ITA_maintain_coalition focus = ITA_socialist_victory }
 
 		completion_reward = {
@@ -62,35 +182,13 @@ focus_tree = {
 		y = 2
 		cost = 1
 		prerequisite = { focus = ITA_italian_elections }
-		mutually_exclusive = { focus = ITA_maintain_coalition }
-		mutually_exclusive = { focus = ITA_socialist_victory }
+
+		available = {
+			always = no
+		}
 
 		completion_reward = {
 			
-		}
-	}
-
-	focus = {
-		id = ITA_foreign_affairs_1
-		x = 6
-		y = 4
-		cost = 10
-		prerequisite = { focus = ITA_kings_coup }
-
-		completion_reward = {
-			add_stability = -0.1
-			add_war_support = 0.1
-		}
-	}
-
-	focus = {
-		id = ITA_negotiate_claims
-		x = 6
-		y = 5
-		cost = 10
-		prerequisite = { focus = ITA_foreign_affairs_1 }
-
-		completion_reward = {
 		}
 	}
 
@@ -182,7 +280,6 @@ focus_tree = {
 		cost = 1
 		prerequisite = { focus = ITA_italian_elections }
 		mutually_exclusive = { focus = ITA_maintain_coalition }
-		mutually_exclusive = { focus = ITA_kings_coup }
 
 		completion_reward = {
 			
@@ -232,6 +329,13 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = ITA_ambitions }
+
+		available = {
+			OR = {
+				has_completed_focus = ITA_maintain_coalition
+				has_completed_focus = ITA_kings_coup
+			}
+		}
 
 		completion_reward = {
 			
