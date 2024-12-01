@@ -573,7 +573,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_morocco_for_protection }
 		mutually_exclusive = { focus = ENG_demand_andalusia }
 
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			add_stability = -0.05
@@ -774,7 +774,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_churchill }
 
-		cost = 5
+		cost = 20
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1246,6 +1246,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_thirteen_colonies
+		icon = GFX_focus_eng_imperial_federation
+		x = 7
+		y = 10
+		prerequisite = { focus = ENG_imperial_federation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+			}
 		}
 	}
 
