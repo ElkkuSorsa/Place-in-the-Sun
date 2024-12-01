@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		ENG_march_for_change = {
+			modifier = {
+				neutrality_drift = 0.02
+				fascism_drift = 0.02
+				stability_factor = -0.5
+			}
+		}
+
+		ENG_restored_monarchy = {
+			modifier = {
+				political_power_factor = 0.1
+				neutrality_drift = 0.05
+				fascism_drift = -0.02
+			}
+		}
+
+		ENG_empowered_local_nobility = {
+			modifier = {
+				political_power_factor = -0.05
+				stability_weekly = 0.08
+			}
+		}
+
+		ENG_empowered_local_nobility = {
+			modifier = {
+				political_power_factor = -0.05
+				stability_weekly = 0.08
+			}
+		}
+
+		ENG_pax_britannica = {
+			modifier = {
+				join_faction_tension = 1
+				justify_war_goal_time = -0.1
+				generate_wargoal_tension = -0.5
+				guarantee_tension = 1
+			}
+		}
+	}
+}

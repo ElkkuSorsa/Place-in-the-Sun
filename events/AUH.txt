@@ -1,0 +1,189 @@
+add_namespace = hungary
+
+country_event = {
+	id = hungary.1
+	title = "Hungarian Situtation"
+	desc = hungary.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's hope the best!"
+		add_political_power = 50
+	}
+
+}
+
+country_event = {
+	id = hungary.2
+	title = "Elections: Independent Party Victorius!"
+	desc = "After two month election period, the votes have been counted and the Independent Party emerged victorius. It has been speculated that this was due to low trust among Hungarians towards the Imperial Government."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "This surely will effect the whole empire!"
+		custom_effect_tooltip = "The Emperor will appoint Gyula Justh to serve as Prime Minister of Hungary."
+		hidden_effect = {
+			retire_character = AUH_sandor
+			recruit_character = AUH_gyula
+			activate_advisor = AUH_gyula
+			clr_country_flag = HUN_nat
+			set_country_flag = HUN_ind
+		}
+	}
+
+	option = {
+		name = "We can't trust him!"
+		custom_effect_tooltip = "The Emperor will not appoint a new prime minister."
+		hidden_effect = {
+			country_event = {
+				id = army_question.4
+				days = 10
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = hungary.3
+	title = "Elections: National Work Party Victorius!"
+	desc = "After two month election period, the votes have been counted and the National Work Party emerged victorius. Yhis may have been due to rising trust towards Empire and it's government in Hungary."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Stability and Prosperity Guaranteed!"
+		custom_effect_tooltip = "The Emperor will appoint Károly Khuen-Héderváry to serve as Prime Minister of Hungary."
+		hidden_effect = {
+			retire_character = AUH_sandor
+			recruit_character = AUH_karoly
+			activate_advisor = AUH_karoly
+			clr_country_flag = HUN_ind
+			set_country_flag = HUN_nat
+		}
+	}
+
+}
+
+add_namespace = army_question
+
+country_event = {
+	id = army_question.1
+	title = "The Army Question Crisis"
+	desc = army_question.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's reach for a compromise..."
+		add_political_power = -150
+	}
+
+	option = {
+		name = "We won't make any concessions!"
+		country_event = { id = army_question.2 days = 10 }
+	}
+
+}
+
+country_event = {
+	id = army_question.2
+	title = "Hungarians Protest"
+	desc = army_question.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Abdicate the Throne"
+		country_event = { id = army_question.3 days = 30 }
+	}
+
+	option = {
+		name = "Ratify the Solutions"
+		country_event = { id = army_question.4 days = 10 }
+	}
+
+}
+
+country_event = {
+	id = army_question.3
+	title = "Question of Succession"
+	desc = army_question.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Franz Ferdinand I"
+		create_country_leader = {
+			name = "Franz Ferdinand I"
+			picture = "Portrait_Yugoslavia_Peter_II.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = { }
+		}
+	}
+
+	option = {
+		name = "Karl I"
+		create_country_leader = {
+			name = "Karl I"
+			picture = "Portrait_Yugoslavia_Peter_II.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = { }
+		}
+		
+	}
+
+}
+
+country_event = {
+	id = army_question.4
+	title = "Hungarian War of Independence"
+	desc = army_question.4.d
+
+	fire_only_once = yes
+
+	trigger = {
+		check_variable = { var = hungary_trust value = 1 compare = less_than }
+		original_tag = AUH
+	}
+
+	option = {
+		name = "Then war it is..."
+		custom_effect_tooltip = "Hungary will declare independence war!"
+		unlock_national_focus = AUH_danube_crisis
+		hidden_effect = {
+			release = HUN
+			declare_war_on = { type = annex_everything target = HUN }
+			set_country_flag = danubecrisis
+			mark_focus_tree_layout_dirty = yes
+		} 
+		
+	}
+
+
+
+}
+
+add_namespace = grand_congress
+
+country_event = {
+	id = grand_congress.1
+	title = "Grand Congress of Vienna"
+	desc = grand_congress.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Send the Invitations!"
+		custom_effect_tooltip = "We will invite all the nations of the realm to Vienna."
+		hidden_effect = {
+			set_country_flag = vienna_congress
+		} 
+		
+	}
+
+}

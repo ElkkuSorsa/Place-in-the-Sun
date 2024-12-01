@@ -1,0 +1,15 @@
+defined_text = {
+	name = hungary_ruling_party
+	text = {
+		trigger = {
+			has_country_flag = HUN_ind
+		}
+		localization_key = hun_party.1
+	}
+	text = {
+		trigger = {
+			has_country_flag = HUN_nat
+		}
+		localization_key = hun_party.2
+	}
+}

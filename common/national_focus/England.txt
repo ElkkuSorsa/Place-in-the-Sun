@@ -1,0 +1,1617 @@
+focus_tree = {
+	id = ENG_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 500
+			tag = ENG
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 1800 }
+
+	shared_focus = ENT_entente_cordiale_1
+
+
+	# Historical Political Tree
+
+	focus = {
+		id = ENG_1910_elections
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 45
+		y = 1
+		mutually_exclusive = { focus = ENG_march_for_change }
+
+		cost = 10
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_the_last_liberals
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 30
+		y = 2
+		prerequisite = { focus = ENG_1910_elections }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_minority_government
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 30
+		y = 3
+		prerequisite = { focus = ENG_the_last_liberals }
+		mutually_exclusive = { focus = ENG_government_of_liberals }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.2
+		}
+	}
+
+	focus = {
+		id = ENG_socialists_lead
+		icon = GFX_focus_SWE_socialist_reforms
+		x = 30
+		y = 4
+		prerequisite = { focus = ENG_minority_government }
+
+		cost = 5
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+			set_popularities = {
+				democratic = 45
+				communism = 45
+				fascism = 5
+				neutrality = 5
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "Socialist-Liberal Coalition"
+				name = "SocLib-Coalition"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Socialist-Liberal Coalition"
+				name = "SocLib-Coalition"
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_social_democracy
+		icon = GFX_focus_BRA_socialist_theologians
+		x = 32
+		y = 5
+		prerequisite = { focus = ENG_socialists_lead }
+		mutually_exclusive = { focus = ENG_red_star_in_the_sky }
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_welfare_reforms
+		icon = GFX_focus_FIN_socialist_welfare
+		x = 32
+		y = 6
+		prerequisite = { focus = ENG_social_democracy }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_women_suffrage
+		icon = GFX_focus_generic_universal_suffrage
+		x = 32
+		y = 7
+		prerequisite = { focus = ENG_welfare_reforms }
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_red_star_in_the_sky
+		icon = GFX_focus_ger_great_red_menace
+		x = 28
+		y = 5
+		prerequisite = { focus = ENG_socialists_lead }
+		mutually_exclusive = { focus = ENG_social_democracy }
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_oust_the_liberal_ministers
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 28
+		y = 6
+		prerequisite = { focus = ENG_red_star_in_the_sky }
+
+		cost = 5
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.3
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "British Union of Socialists"
+				name = "Socialists"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Liberal Party"
+				name = "Liberals"
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_workers_dictatorship
+		icon = GFX_goal_support_communism
+		x = 28
+		y = 7
+		prerequisite = { focus = ENG_oust_the_liberal_ministers }
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_united_forever
+		icon = GFX_goal_support_communism
+		x = 29
+		y = 8
+		prerequisite = { focus = ENG_workers_dictatorship }
+		mutually_exclusive = { focus = ENG_repeal_acts_of_union }
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_repeal_acts_of_union
+		icon = GFX_goal_support_communism
+		x = 27
+		y = 8
+		prerequisite = { focus = ENG_workers_dictatorship }
+		mutually_exclusive = { focus = ENG_united_forever }
+
+		cost = 10
+
+		completion_reward = {
+			release_puppet_on_controlled = SCO 
+			release_puppet_on_controlled = IRE
+		}
+	}
+
+	focus = {
+		id = ENG_government_of_liberals
+		icon = GFX_goal_support_democracy
+		x = 35
+		y = 3
+		prerequisite = { focus = ENG_the_last_liberals }
+		mutually_exclusive = { focus = ENG_minority_government }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_liberal_reforms
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 36
+		y = 4
+		prerequisite = { focus = ENG_government_of_liberals }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_expand_education_access
+		icon = GFX_focus_SWE_education_reform
+		x = 39
+		y = 5
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_private_schools
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		x = 39
+		y = 7
+		prerequisite = { focus = ENG_expand_education_access }
+		prerequisite = { focus = ENG_support_entreprenourship }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_poor_laws
+		icon = GFX_focus_generic_population_growth
+		x = 37
+		y = 5
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_healthcare_reform
+		icon = GFX_goal_generic_consumer_goods
+		x = 35
+		y = 5
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_national_insurance_act
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 35
+		y = 7
+		prerequisite = { focus = ENG_healthcare_reform }
+		prerequisite = { focus = ENG_parliament_act }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_trade_union_act
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 37
+		y = 8
+		prerequisite = { focus = ENG_poor_laws }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_parliament_act
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 36
+		y = 6
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_support_entreprenourship
+		icon = GFX_focus_mex_privatisation
+		x = 38
+		y = 6
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_reassure_france
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 42
+		y = 5
+		prerequisite = { focus = ENG_government_of_liberals }
+		prerequisite = { focus = ENG_limited_homerule }
+
+		cost = 5
+
+		completion_reward = {
+			give_guarantee = fra
+		}
+	}
+
+	focus = {
+		id = ENG_attachee_to_russia
+		icon = GFX_goal_generic_major_alliance
+		x = 42
+		y = 6
+		prerequisite = { focus = ENG_reassure_france }
+
+		cost = 5
+
+		available = {
+			RUS = {
+				has_war_with = GER
+			}
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_war_against_ottomans
+		icon = GFX_focus_generic_attack_turkey
+		x = 42
+		y = 7
+		prerequisite = { focus = ENG_attachee_to_russia }
+
+		cost = 5
+
+		will_lead_to_war_with = OTT
+
+		completion_reward = {
+			declare_war_on = {
+				target = OTT 
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_divide_ottomans
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 42
+		y = 8
+		prerequisite = { focus = ENG_war_against_ottomans }
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_engage_in_europe
+		icon = GFX_goal_generic_territory_or_war
+		x = 45
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory }
+		prerequisite = { focus = ENG_the_last_liberals }
+
+
+		cost = 5
+
+		completion_reward = {
+			give_guarantee = BEL
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_limited_homerule
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		x = 43
+		y = 4
+		prerequisite = { focus = ENG_engage_in_europe }
+		prerequisite = { focus = ENG_the_last_liberals }
+
+		cost = 10
+
+		completion_reward = {
+			release_puppet_on_controlled = IRE
+		}
+	}
+
+	focus = {
+		id = ENG_hold_on_ireland
+		icon = GFX_goal_generic_military_deal
+		x = 47
+		y = 4
+		prerequisite = { focus = ENG_engage_in_europe }
+		prerequisite = { focus = ENG_conservative_victory }
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_increase_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 45
+		y = 5
+		prerequisite = { focus = ENG_engage_in_europe }
+
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = ENG_conservative_victory
+		icon = GFX_goal_generic_national_unity
+		x = 60
+		y = 2
+		prerequisite = { focus = ENG_1910_elections }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_agressive_diplomacy
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 51
+		y = 4
+		prerequisite = { focus = ENG_conservative_victory }
+		prerequisite = { focus = ENG_engage_in_europe }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_entente_con
+		icon = GFX_goal_generic_alliance
+		x = 51
+		y = 5
+		prerequisite = { focus = ENG_agressive_diplomacy }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_entente_conference
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 50
+		y = 6
+		prerequisite = { focus = ENG_entente_con }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_morocco_for_protection
+		icon = GFX_goal_generic_forceful_treaty
+		x = 47
+		y = 7
+		prerequisite = { focus = ENG_entente_conference }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_stabilize_spain
+		icon = GFX_focus_intervention_spain_nationalists
+		x = 46
+		y = 8
+		prerequisite = { focus = ENG_morocco_for_protection }
+		mutually_exclusive = { focus = ENG_demand_andalusia }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_demand_andalusia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 48
+		y = 8
+		prerequisite = { focus = ENG_morocco_for_protection }
+		mutually_exclusive = { focus = ENG_stabilize_spain }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_invoke_portugal
+		icon = GFX_focus_generic_befriend_portugal
+		x = 50
+		y = 7
+		prerequisite = { focus = ENG_entente_conference }
+		mutually_exclusive = { focus = ENG_demand_mozambique }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_colonial_ambitions
+		icon = GFX_focus_ARG_revive_the_colonial_plan
+		x = 54
+		y = 6
+		prerequisite = { focus = ENG_entente_con }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_abyssinia
+		icon = GFX_focus_ETH_protector_of_the_somalis
+		x = 56
+		y = 7
+		prerequisite = { focus = ENG_colonial_ambitions }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_middle_east
+		icon = GFX_focus_ETH_an_arabic_base
+		x = 54
+		y = 7
+		prerequisite = { focus = ENG_colonial_ambitions }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_anatolian_lands
+		icon = GFX_focus_ETH_an_arabic_base
+		x = 53
+		y = 8
+		prerequisite = { focus = ENG_middle_east }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_demand_mozambique
+		icon = GFX_focus_generic_attack_portugal
+		x = 52
+		y = 7
+		prerequisite = { focus = ENG_colonial_ambitions }
+		mutually_exclusive = { focus = ENG_invoke_portugal }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_empower_house_of_lords
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 59
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory }
+		mutually_exclusive = { focus = ENG_status_quo_with_lords }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_balfour
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 58
+		y = 4
+		prerequisite = { focus = ENG_empower_house_of_lords }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_semiconstitutionalism
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 59
+		y = 5
+		prerequisite = { focus = ENG_balfour }
+		prerequisite = { focus = ENG_royal_support }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_status_quo_with_lords
+		icon = GFX_focus_generic_support_the_left_right
+		x = 61
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory }
+		mutually_exclusive = { focus = ENG_empower_house_of_lords }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_churchill
+		icon = GFX_focus_generic_support_the_left_right
+		x = 62
+		y = 4
+		prerequisite = { focus = ENG_status_quo_with_lords }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_dreams_of_federation
+		icon = GFX_focus_generic_support_the_left_right
+		x = 68
+		y = 5
+		prerequisite = { focus = ENG_churchill }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_develop_oceania
+		icon = GFX_goal_reichsautobahn
+		x = 67
+		y = 7
+		prerequisite = { focus = ENG_dreams_of_federation }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_develop_canada
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 66
+		y = 6
+		prerequisite = { focus = ENG_dreams_of_federation }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_malaysian_dominion
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 68
+		y = 6
+		prerequisite = { focus = ENG_dreams_of_federation }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_develop_south_africa
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 70
+		y = 6
+		prerequisite = { focus = ENG_dreams_of_federation }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_develop_egypt
+		icon = GFX_goal_generic_production2
+		x = 69
+		y = 7
+		prerequisite = { focus = ENG_dreams_of_federation }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_question_of_raj
+		icon = GFX_focus_RAJ_british_investors
+		x = 68
+		y = 8
+		prerequisite = { focus = ENG_develop_canada }
+		prerequisite = { focus = ENG_develop_egypt }
+		prerequisite = { focus = ENG_develop_oceania }
+		prerequisite = { focus = ENG_develop_south_africa }
+		prerequisite = { focus = ENG_malaysian_dominion }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_conference_con
+		icon = GFX_focus_generic_improve_the_administration
+		x = 68
+		y = 9
+		prerequisite = { focus = ENG_question_of_raj }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_british_federation
+		icon = GFX_focus_eng_imperial_federation
+		x = 68
+		y = 10
+		prerequisite = { focus = ENG_imperial_conference_con }
+
+		cost = 30
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_constitutionalism
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 61
+		y = 5
+		prerequisite = { focus = ENG_churchill }
+		prerequisite = { focus = ENG_royal_support }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_limited_reformism
+		icon = GFX_focus_DEN_limited_regulations
+		x = 60
+		y = 6
+		prerequisite = { focus = ENG_semiconstitutionalism focus = ENG_constitutionalism }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_repeal_people_budget
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 59
+		y = 7
+		prerequisite = { focus = ENG_limited_reformism }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_draft_budget
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 58
+		y = 8
+		prerequisite = { focus = ENG_repeal_people_budget }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_limited_poor_laws
+		icon = GFX_focus_generic_military_mission
+		x = 61
+		y = 7
+		prerequisite = { focus = ENG_limited_reformism }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_veteran_pensions
+		icon = GFX_focus_generic_military_mission
+		x = 62
+		y = 8
+		prerequisite = { focus = ENG_limited_poor_laws }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_promote_english_church
+		icon = GFX_focus_generic_military_mission
+		x = 60
+		y = 8
+		prerequisite = { focus = ENG_limited_poor_laws }
+		prerequisite = { focus = ENG_repeal_people_budget }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_new_conservative_england
+		icon = GFX_focus_generic_military_mission
+		x = 60
+		y = 9
+		prerequisite = { focus = ENG_veteran_pensions }
+		prerequisite = { focus = ENG_promote_english_church }
+		prerequisite = { focus = ENG_draft_budget }
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_royal_support
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 60
+		y = 4
+		prerequisite = { focus = ENG_status_quo_with_lords focus = ENG_empower_house_of_lords }
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_march_for_change
+		icon = GFX_goal_support_fascism
+		x = 17
+		y = 1
+		mutually_exclusive = { focus = ENG_1910_elections }
+
+		cost = 10
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The king decided to cancel future elections"
+				always = no
+			}
+		}
+
+		completion_reward = {
+			add_ideas = march_for_change
+		}
+	}
+
+	focus = {
+		id = ENG_question_of_future
+		icon = GFX_goal_tripartite_pact
+		x = 17
+		y = 2
+		prerequisite = { focus = ENG_march_for_change }
+
+		cost = 10
+
+		available = {
+			has_country_leader = {
+				name = "Military Government"
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+				id = march_change.3 
+				days = 2
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_hand_over_to_king
+		icon = GFX_focus_generic_home_defense
+		x = 14
+		y = 3
+		prerequisite = { focus = ENG_question_of_future }
+		mutually_exclusive = { focus = ENG_extended_military_admin }
+
+		cost = 1
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_restored_monarchy
+				days = 180
+			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "King"
+					picture = "portrait_eng_fallen_government.dds"
+					ideology = despotism
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Saxe-Coburg & Gotha"
+					name = "House of Saxe-Coburg and Gotha"
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_revert_the_democratic_reforms
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 11
+		y = 4
+		prerequisite = { focus = ENG_hand_over_to_king }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_deal_with_ireland
+		icon = GFX_goal_generic_dangerous_deal
+		x = 8
+		y = 5
+		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			country_event = {
+				id = ireland.1
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_crown_of_ireland
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		x = 7
+		y = 6
+		prerequisite = { focus = ENG_deal_with_ireland }
+		mutually_exclusive = { focus = ENG_under_control_ireland }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			release_puppet_on_controlled = IRE
+		}
+	}
+
+	focus = {
+		id = ENG_under_control_ireland
+		icon = GFX_goal_generic_position_armies
+		x = 9
+		y = 6
+		prerequisite = { focus = ENG_deal_with_ireland }
+		mutually_exclusive = { focus = ENG_crown_of_ireland }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_nation_united_once_more
+		icon = GFX_goal_generic_national_unity
+		x = 8
+		y = 7
+		prerequisite = { focus = ENG_under_control_ireland focus = ENG_crown_of_ireland }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_conference
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 7
+		y = 8
+		prerequisite = { focus = ENG_nation_united_once_more }
+		mutually_exclusive = { focus = ENG_angevin_empire }
+
+		cost = 30
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_federation
+		icon = GFX_focus_eng_imperial_federation
+		x = 7
+		y = 9
+		prerequisite = { focus = ENG_imperial_conference }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_disband_the_house_of_commons
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		x = 11
+		y = 5
+		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_empower_loyal_nobility
+		icon = GFX_focus_generic_monarchy_1
+		x = 12
+		y = 6
+		prerequisite = { focus = ENG_disband_the_house_of_commons }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_empowered_local_nobility
+				days = 365
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = ENG_embrace_german_heritage
+		icon = GFX_focus_generic_monarchy_2
+		x = 14
+		y = 4
+		prerequisite = { focus = ENG_hand_over_to_king }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_german_naval_treaty
+		icon = GFX_focus_generic_treaty
+		x = 14
+		y = 5
+		prerequisite = { focus = ENG_embrace_german_heritage }
+		mutually_exclusive = { focus = ENG_pax_britannica }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_blockade_france
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 14
+		y = 6
+		prerequisite = { focus = ENG_anglo_german_naval_treaty }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			send_embargo = FRA
+		}
+	}
+
+	focus = {
+		id = ENG_reinstate_claims
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 12
+		y = 7
+		prerequisite = { focus = ENG_blockade_france }
+		prerequisite = { focus = ENG_empower_loyal_nobility }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_angevin_empire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 8
+		prerequisite = { focus = ENG_reinstate_claims }
+		prerequisite = { focus = ENG_nation_united_once_more }
+		mutually_exclusive = { focus = ENG_imperial_conference }
+
+		cost = 30
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_german_alliance
+		icon = GFX_goal_generic_alliance
+		x = 14
+		y = 7
+		prerequisite = { focus = ENG_blockade_france }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_avenge_the_hundred_years_war
+		icon = GFX_goal_generic_major_war
+		x = 14
+		y = 8
+		prerequisite = { focus = ENG_anglo_german_alliance focus = ENG_britain_leads focus = ENG_romanov_alliance }
+		prerequisite = { focus = ENG_reinstate_claims focus = ENG_britain_leads focus = ENG_romanov_alliance }
+		mutually_exclusive = { focus = ENG_slay_the_eagle }
+
+		will_lead_to_war_with = FRA
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_extended_military_admin
+		icon = GFX_focus_generic_military_dictatorship
+		x = 20
+		y = 3
+		prerequisite = { focus = ENG_question_of_future }
+		mutually_exclusive = { focus = ENG_hand_over_to_king }
+
+		cost = 1
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = ENG_appoint_leader
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 20
+		y = 4
+		prerequisite = { focus = ENG_extended_military_admin }
+
+		cost = 10
+
+		available = {
+			has_civil_war = no
+			NOT = {
+				has_active_mission = ENG_civil_war
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_abolish_nobility
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 5
+		prerequisite = { focus = ENG_appoint_leader }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.15
+		}
+	}
+
+	focus = {
+		id = ENG_exile_the_royals
+		icon = GFX_focus_rom_handle_king
+		x = 24
+		y = 6
+		prerequisite = { focus = ENG_abolish_nobility }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.2
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.3
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_purge_the_government
+		icon = GFX_focus_SOV_military_purge
+		x = 24
+		y = 7
+		prerequisite = { focus = ENG_exile_the_royals }
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+
+	focus = {
+		id = ENG_war_budget
+		icon = GFX_focus_generic_total_war
+		x = 22
+		y = 6
+		prerequisite = { focus = ENG_abolish_nobility }
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_expand_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 22
+		y = 7
+		prerequisite = { focus = ENG_war_budget }
+
+		cost = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_pax_britannica
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 17
+		y = 5
+		prerequisite = { focus = ENG_appoint_leader focus = ENG_embrace_german_heritage }
+		mutually_exclusive = { focus = ENG_anglo_german_naval_treaty }
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = ENG_pax_britannica
+		}
+	}
+
+	focus = {
+		id = ENG_abandon_two_power_standard
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 17
+		y = 6
+		prerequisite = { focus = ENG_pax_britannica }
+
+		cost = 5
+
+		completion_reward = {
+			leave_faction = yes
+			create_faction = "The Imperial Sphere"
+		}
+	}
+
+	focus = {
+		id = ENG_britain_leads
+		icon = GFX_focus_generic_support_the_left_right
+		x = 17
+		y = 7
+		prerequisite = { focus = ENG_abandon_two_power_standard }
+		mutually_exclusive = { focus = ENG_romanov_alliance }
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_romanov_alliance
+		icon = GFX_focus_generic_home_defense
+		x = 19
+		y = 7
+		prerequisite = { focus = ENG_abandon_two_power_standard }
+		mutually_exclusive = { focus = ENG_britain_leads }
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_slay_the_eagle
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 8
+		prerequisite = { focus = ENG_britain_leads focus = ENG_romanov_alliance }
+		mutually_exclusive = { focus = ENG_avenge_the_hundred_years_war }
+
+		will_lead_to_war_with = GER
+		
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+		}
+	}
+}

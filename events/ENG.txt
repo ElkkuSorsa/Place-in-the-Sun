@@ -1,0 +1,126 @@
+add_namespace = march_change
+
+country_event = {
+	id = march_change.1
+	title = "The Prime Minister Resigns!"
+	desc = "After the rise of many nationalist and authoritarian movements, the liberal government struggled to keep the popular trust on their side. After mass protests on streets of major cities like London, Edinburgh and Manchester, the government has decided to resign."
+
+	is_triggered_only = no 
+	fire_only_once = yes
+
+	trigger = {
+		democratic < 0.5
+		has_completed_focus = ENG_march_for_change
+	}
+
+	option = {
+		name = "Does the sun set on the British Empire?"
+		add_political_power = -100
+		create_country_leader = {
+			name = "Fallen Government"
+			picture = "portrait_eng_fallen_government.dds"
+			ideology = liberalism
+			traits = { cabinet_crisis }
+		}
+		remove_ideas = march_for_change
+		hidden_effect  = {
+			country_event = {
+				id = march_change.2
+				days = 35
+			}
+		}
+	}
+}
+
+country_event = {
+	id = march_change.2
+	title = "Martial Law Declared!"
+	desc = "The United Kingdom has been in chaos since the government resignation. With no parliament, there have been many local governments trying to push their agenda, but now it seems that the army has taken control of most of the country."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Stability at last!"
+		add_political_power = 50
+		create_country_leader = {
+			name = "Military Government"
+			picture = "portrait_eng_fallen_government.dds"
+			ideology = fascism_ideology
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = "Provisional Government"
+			name = "Provisional Government"
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+}
+
+country_event = {
+	id = march_change.3
+	title = "Question of Leadership"
+	desc = "Now that the Provisional Government has been established, there is a main question that is about the future of the great empire. "
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Hand the civil government over to the king."
+		add_political_power = 50
+		create_country_leader = {
+			name = "King"
+			picture = "portrait_eng_fallen_government.dds"
+			ideology = despotism
+		}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = "Saxe-Coburg & Gotha"
+			name = "House of Saxe-Coburg and Gotha"
+		}
+	}
+
+	option = {
+		name = "Extend the military adminstration!"
+		add_political_power = 50
+		set_country_flag = miladminextended
+		complete_national_focus = ENG_extended_military_admin
+		custom_effect_tooltip = "This will have serious consuquenses!"
+		hidden_effect = {
+			activate_mission = ENG_civil_war
+		}
+	}
+}
+
+add_namespace = ireland 
+country_event = {
+	id = ireland.1
+	title = "The Emerald Isle"
+	desc = "The Irish Separatist Movement has gained popularity throughout the isle, and our control over the island is weakning. We must find a long-term solution to our problem."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Establish Ireland as a Personal Union"
+		add_political_power = -150
+		custom_effect_tooltip = "We shall reform Ireland to a junior personal union partner!"
+		hidden_effect = {
+			complete_national_focus = ENG_crown_of_ireland
+		}
+	}
+
+	option = {
+		name = "Hold Tight!"
+		add_political_power = 50
+		custom_effect_tooltip = "This option might become very expensive while at war!"
+		hidden_effect = {
+			complete_national_focus = ENG_under_control_ireland
+		}
+	}
+}

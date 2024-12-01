@@ -1,0 +1,14 @@
+﻿l_english:
+ hun_trust:0 "Hungarian Affairs"
+ hun_trust_desc:0 "After the establishment of Austria-Hungary as a dual monarchy, there has been many problems and questions about Hungary. These questions effects our relation and the stability of the realm. \n\nCurrent ruling party of Hungary is [hungary_ruling_party] \n\nHungarian current trust is [hungary_trust_text] \n"
+ elections:0 "Hungarian Elections of [GetYear]"
+
+ trust.1: "§Rvery low."
+ trust.2: "§Olow."
+ trust.3: "§Yneutral."
+ trust.4: "§7high."
+ trust.5: "§Gvery high."
+ trust.default: "§Rat war!"
+
+ hun_party.1: "Independence and 48' Party (§OPro-Indpendence§!)"
+ hun_party.2: "National Work Party (§7Pro-Empire§!)"
