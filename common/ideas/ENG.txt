@@ -43,5 +43,37 @@ ideas = {
 				political_power_factor = -0.15
 			}
 		}
+
+		ENG_stand_alone = {
+			picture = eng_guided_by_britain
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.15
+			}
+		}
+
+		ENG_slay_the_eagle = {
+			picture = eng_guided_by_britain
+			modifier = {
+				naval_invasion_capacity = 10
+				invasion_preparation = -0.3
+			}
+		}
+
+		ENG_war_budget = {
+			picture = eng_guided_by_britain
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_attack_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				industrial_capacity_factory = 0.15
+			}
+
+			cancel = {
+				has_War = no
+			}
+		}
 	}
 }
