@@ -31,4 +31,13 @@ ideas = {
    political_power_factor = -0.1 
    }
    }}
+   country = {
+   plan_west = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   army_org_factor = 0.03
+   army_attack_factor = 0.05
+   army_speed_factor = 0.05 
+   }
+   }}
 }

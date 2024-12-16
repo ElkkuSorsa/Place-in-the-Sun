@@ -245,10 +245,96 @@ focus_tree = {
         focus = GER_alliance_with_britain}
         completion_reward = {
         add_war_support = 0.05
+        add_ideas = plan_west
         }         
 		cost = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
 
     }
+    focus = {
+        id = GER_war_with_holland
+        icon = GFX_focus_hol_oranje_boven
+        x = 10
+        y = 7
+		
+        prerequisite = {focus = GER_western_plans}
+        completion_reward = {
+        create_wargoal = { type = annex_everything target = HOL }
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_plan_for_war_with_belgium
+        icon = GFX_focus_BEL_dyle_plan
+        x = 14
+        y = 7
+		
+        prerequisite = {focus = GER_western_plans}
+        completion_reward = {
+        add_political_power = 25
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_eastern_expansion
+        icon = GFX_focus_GER_eastern_grand_duchies
+        x = 16
+        y = 5
+		
+        prerequisite = {focus = GER_staff_in_austria}
+        completion_reward = {
+        add_political_power = 25
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_stir_up_russian_communists
+        icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+        x = 17
+        y = 6
+		
+        prerequisite = {focus = GER_eastern_expansion}
+        completion_reward = {
+        add_political_power = 25
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_polish_kingdom
+        icon = GFX_focus_generic_polish_deal
+        x = 15
+        y = 6
+		
+        prerequisite = {focus = GER_eastern_expansion}
+        completion_reward = {
+        add_political_power = 25
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_secure_finland
+        icon = GFX_focus_generic_fortify_finland
+        x = 17
+        y = 7
+		
+        prerequisite = {focus = GER_stir_up_russian_communists}
+        completion_reward = {
+        add_political_power = 25
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+
 
 }
