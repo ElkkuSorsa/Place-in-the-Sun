@@ -74,6 +74,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			set_cosmetic_tag = ENG_democratic
 			set_politics = {
 				ruling_party = communism
 			}
@@ -139,6 +140,20 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_republican_movement
+		icon = GFX_focus_generic_universal_suffrage
+		x = 32
+		y = 8
+		prerequisite = { focus = ENG_women_suffrage }
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = ENG_red_star_in_the_sky
 		icon = GFX_focus_ger_great_red_menace
 		x = 28
@@ -189,7 +204,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			set_cosmetic_tag = UOB
+			set_cosmetic_tag = ENG_communism
 		}
 	}
 
