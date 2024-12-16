@@ -1,82 +1,34 @@
 ideas = {
-     country = {
-         prussian_militarism = {
-            picture = chi_army_corruption3 
-            modifier = {
-                war_support_factor = 0.1
-                conscription_factor = 0.2
-             }
-} }
-     country = {
-         anti_militarist_policies = {
-            picture = generic_neglected_military
-            modifier = {
-                war_support_factor = -0.15
-                conscription_factor = -0.25
-                consumer_goods_factor = -0.35
-                production_speed_buildings_factor = 0.1
-                stability_factor = 0.15
-             }
-} }
-     country = {
-         improved_workers_rights = {
-            picture = por_iberian_workers_united 
-            modifier = {
-                consumer_goods_factor = 0.1
-                stability_factor = 0.1
-             }
-} }
-     country = {
-         democratic_ideals = {
-            picture = 
-            modifier = {
-               democratic_drift = 0.005 
-             }
-} }
-country = {
-         monarchy_abolished = {
-            picture = 
-            modifier = {
-               stability_factor = -0.1
-               consumer_goods_factor = -0.15
-             }
-} }
-country = {
-         womens_suffrage = {
-            picture = 
-            modifier = {
-               political_power_factor = 0.15
-             }
-} }
-country = {
-         union_cooperation = {
-            picture = 
-            modifier = {
-               political_power_factor = 0.05
-               production_speed_buildings_factor = 0.05
-               consumer_goods_factor = 0.08
-             }
-} }
-country = {
-         public_investments = {
-            picture = 
-            modifier = {
-               consumer_goods_factor = -0.1
-               production_speed_industrial_complex_factor = 0.05
-             }
-} }
-country = {
-         increased_military_spending = {
-            picture = 
-            modifier = {
-               consumer_goods_factor = -0.1
-               production_speed_industrial_complex_factor = 0.05
-             }
-} }
-country = {
-         chemistry_investments = {
-            picture = 
-            modifier = {
-               
-             }
-} }
+   country = {
+   german_general_staff_ww1 = {
+   picture = german_advisors
+   modifier = {
+   experience_gain_army_factor = 0.1
+   army_speed_factor = 0.05
+   army_org_factor = 0.05
+   }
+   }}
+   country = {
+   foreign_policy_effort = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   political_power_factor = 0.05
+   justify_war_goal_time = -0.15
+   generate_wargoal_tension = -0.2
+   join_faction_tension = -0.1
+   guarantee_cost = -0.25
+   guarantee_tension = -0.35 
+   }
+   }}
+   country = {
+   naval_buildup = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   consumer_goods_factor = -0.05
+   production_speed_dockyard_factor = 0.15
+   stability_factor = -0.05
+   war_support_factor = 0.1
+   political_power_factor = -0.1 
+   }
+   }}
+}
