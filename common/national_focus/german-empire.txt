@@ -1,321 +1,254 @@
 focus_tree = {
-	id = GER_focus_tree
-	country = {
-		factor = 0
+    id = GER_focus_tree
+    country = {
+        factor = 0
 
-		modifier = {
-			add = 50
-			tag = GER
-		}
-	}
+        modifier = {
+            add = 50
+            tag = GER
+        }
+    }
 
-	default = no
+    default = no
 
-	focus = {
-		id = GER_Weltpolitik
-		icon = GFX_focus_ger_revive_kaiserreich
-		x = 8
-		y = 1
-
-		completion_reward = {
-			add_political_power = 100
-			add_war_support = 0.1
-		}
-		mutually_exclusive = { focus = GER_contest_the_kaisers_authority }
+    focus = {
+        id = GER_Weltpolitik
+        icon = GFX_focus_ger_revive_kaiserreich
+        x = 18
+        y = 1
+		
+        completion_reward = { add_political_power = 25
+        add_war_support = 0.1
+        add_stability = 0.1 }         
 		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-	}
-	focus = {
-		id = GER_contest_the_kaisers_authority
-		icon = GFX_goal_support_democracy
-		x = 30
-		y = 1
+        search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-		}
-		mutually_exclusive = { focus = GER_Weltpolitik }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_gather_support
-		icon = GFX_goal_generic_propaganda
-		x = 32
-		y = 2
-
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_political_power = 100
-		}
-		prerequisite = { focus = GER_contest_the_kaisers_authority }
+    }
+    focus = {
+        id = GER_foreign_policy
+        icon = GFX_goal_generic_dangerous_deal
+        x = 13
+        y = 2
+		
+        prerequisite = {focus = GER_Weltpolitik}
+        completion_reward = { add_war_support = 0.05
+        add_political_power = 35
+        add_ideas = foreign_policy_effort }         
 		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_democratize_the_reichstag
-		icon = GFX_focus_generic_treaty
-		x = 28
-		y = 2
+        search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.1
-			}
-			add_political_power = 50
-		}
-		prerequisite = { focus = GER_contest_the_kaisers_authority }
+    }
+    focus = {
+        id = GER_general_staff
+        icon = GFX_goal_generic_army_doctrines
+        x = 22
+        y = 2
+		
+        prerequisite = {focus = GER_Weltpolitik}
+        completion_reward = { army_experience = 15
+        add_ideas = german_general_staff_ww1 }         
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = GER_maintain_austrian_alliance
+        icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+        x = 15
+        y = 3
+		
+        prerequisite = {focus = GER_foreign_policy}
+        completion_reward = {
+        add_political_power = 50
+        add_stability = 0.05
+        give_guarantee = AUH }  
+        mutually_exclusive = { focus = GER_greater_german_ambition}       
 		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_erode_the_kaisers_powers
-		icon = GFX_GFX_focus_generic_treaty
-		x = 30
-		y = 4
+        search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.2
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.2
-			}
-		}
-		prerequisite = { focus = GER_gather_support }
-		prerequisite = { focus = GER_democratize_the_reichstag }
+    }
+    focus = {
+        id = GER_greater_german_ambition
+        icon = GFX_goal_generic_major_war
+        x = 9
+        y = 3
+		
+        prerequisite = {focus = GER_foreign_policy}
+        mutually_exclusive = { focus = GER_maintain_austrian_alliance}
+        completion_reward = { add_war_support = 0.05
+        remove_from_faction = AUH
+        add_state_claim = 976
+        add_state_claim = 4
+        add_state_claim = 153
+        add_state_claim = 152
+        add_state_claim = 848
+        add_state_claim = 975
+        add_threat = 0.1}         
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_ramp_up_naval_production
+        icon = GFX_focus_generic_north_atlantic_fleet
+        x = 14
+        y = 4
+		
+        prerequisite = {focus = GER_greater_german_ambition focus = GER_maintain_austrian_alliance}
+        completion_reward = {
+        add_ideas = naval_buildup
+        add_threat = 0.1
+        add_war_support = 0.05
+        add_political_power = 75 }  
+        mutually_exclusive = {focus = GER_anglo_german_agreement}       
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = GER_anglo_german_agreement
+        icon = GFX_focus_chi_british_cooperation
+        x = 10
+        y = 4
+		
+        prerequisite = {focus = GER_greater_german_ambition focus = GER_maintain_austrian_alliance}
+        completion_reward = {
+        add_political_power = 50}  
+        mutually_exclusive = { focus = GER_ramp_up_naval_production}       
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = GER_anglo_german_agreement
+        icon = GFX_focus_chi_british_cooperation
+        x = 10
+        y = 4
+		
+        prerequisite = {focus = GER_greater_german_ambition focus = GER_maintain_austrian_alliance}
+        completion_reward = {
+        add_political_power = 50}  
+        mutually_exclusive = { focus = GER_ramp_up_naval_production}       
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = GER_war_with_austria
+        icon = GFX_focus_generic_total_war
+        x = 7
+        y = 4
+		
+        prerequisite = {focus = GER_greater_german_ambition}
+        completion_reward = {
+        add_threat = 0.05
+        create_wargoal = { type = annex_everything target = AUH } }         
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_staff_in_austria
+        icon = GFX_focus_GER_appease_the_wehrmacht
+        x = 16
+        y = 4
+		
+        prerequisite = {focus = GER_maintain_austrian_alliance}
+        completion_reward = { }         
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_claims_on_italy
+        icon = GFX_focus_attack_italy
+        x = 8
+        y = 5
+		
+        prerequisite = {focus = GER_war_with_austria}
+        completion_reward = {
+        add_state_claim = 160
+        add_state_claim = 39
+        add_state_claim = 850
+        add_threat = 0.05
+        }         
 		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_hold_elections
-		icon = GFX_goal_anschluss
-		x = 30
-		y = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = {
-			country_event = german_elections.1
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
-		prerequisite = { focus = GER_erode_the_kaisers_powers }
+    }
+    focus = {
+        id = GER_war_with_italy
+        icon = GFX_focus_attack_italy
+        x = 8
+        y = 6
+		
+        prerequisite = {focus = GER_claims_on_italy}
+        completion_reward = {
+        add_threat = 0.05
+        create_wargoal = { type = annex_everything target = ITA } }         
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_alliance_with_italy
+        icon = GFX_focus_befriend_italy
+        x = 5
+        y = 5
+		
+        prerequisite = {focus = GER_war_with_austria}
+        mutually_exclusive = {focus = GER_claims_on_italy}
+        completion_reward = {
+        add_political_power = 25
+        give_guarantee = ITA
+        }         
 		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-	}
-	focus = {
-		id = GER_zentrum
-		icon = GFX_goal_anschluss
-		x = 36
-		y = 6
+        search_filters = { FOCUS_FILTER_POLITICAL }
 
-		mutually_exclusive = { focus = GER_SPD }
-		prerequisite = { focus = GER_hold_elections }
+    }
+    focus = {
+        id = GER_alliance_with_britain
+        icon = GFX_focus_chi_british_cooperation
+        x = 10
+        y = 5
+		
+        prerequisite = {focus = GER_alliance_with_britain}
+        completion_reward = {
+        add_political_power = 25
+        give_guarantee = ENG
+        }         
 		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-	}
-	focus = {
-		id = GER_SPD
-		icon = GFX_goal_anschluss
-		x = 24
-		y = 6
+        search_filters = { FOCUS_FILTER_POLITICAL }
 
-		mutually_exclusive = { focus = GER_zentrum }
-		prerequisite = { focus = GER_hold_elections }
+    }
+    focus = {
+        id = GER_claim_mittelafrika
+        icon = GFX_focus_GER_realize_mittelafrika
+        x = 14
+        y = 5
+		
+        prerequisite = {focus = GER_ramp_up_naval_production}
+        completion_reward = {
+        add_state_claim = 160
+        }         
 		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_constitutional_monarchy
-		icon = GFX_goal_anschluss
-		x = 31
-		y = 7
+        search_filters = { FOCUS_FILTER_POLITICAL }
 
-		mutually_exclusive = { focus = GER_abolish_the_monarchy }
-		prerequisite = { focus = GER_zentrum }
+    }
+    focus = {
+        id = GER_western_plans
+        icon = GFX_focus_GER_western_grand_duchies
+        x = 12
+        y = 6
+		
+        prerequisite = {focus = GER_ramp_up_naval_production
+        focus = GER_alliance_with_britain}
+        completion_reward = {
+        add_war_support = 0.05
+        }         
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_abolish_the_monarchy
-		icon = GFX_GFX_goal_tfv_burn_the_royal_portraits
-		x = 29
-		y = 7
+        search_filters = { FOCUS_FILTER_POLITICAL }
 
-		mutually_exclusive = { focus = GER_constitutional_monarchy }
-		prerequisite = { focus = GER_SPD }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_strenghten_workers_rights
-		icon = GFX_focus_generic_workers_and_farmers_rise
-		x = 21
-		y = 7
-
-		completion_reward = {
-			add_political_power = 100
-			add_ideas = improved_workers_rights
-		}
-		prerequisite = { focus = GER_SPD }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_enact_social_reforms
-		icon = GFX_focus_por_workers_of_iberia
-		x = 19
-		y = 8
-
-		completion_reward = {
-			add_stability = 0.1
-		}
-		prerequisite = { focus = GER_strenghten_workers_rights }
-		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_ally_the_socialists
-		icon = GFX_focus_prc_agrarian_socialism
-		x = 32
-		y = 3
-
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-			add_stability = -0.05
-		}
-		prerequisite = { focus = GER_gather_support }
-		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_womens_suffrage
-		icon = GFX_focus_generic_universal_suffrage
-		x = 19
-		y = 9
-
-		completion_reward = {
-			add_ideas = womens_suffrage
-		}
-		prerequisite = { focus = GER_enact_social_reforms }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_public_investments
-		icon = GFX_goal_generic_construction
-		x = 25
-		y = 7
-
-		completion_reward = {
-			add_ideas = public_investments
-		}
-		prerequisite = { focus = GER_SPD }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_increase_military_spending
-		icon = GFX_goal_generic_construction
-		x = 8
-		y = 2
-
-		completion_reward = {
-			add_ideas = increased_military_spending
-		}
-		prerequisite = { focus = GER_Weltpolitik }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = GER_support_the_ohl
-		icon = GFX_focus_generic_military_dictatorship
-		x = 10
-		y = 3
-
-		completion_reward = {
-			add_war_support = 0.05
-		}
-		prerequisite = { focus = GER_increase_military_spending }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = GER_empower_the_kaiser
-		icon = GFX_focus_generic_military_dictatorship
-		x = 6
-		y = 3
-
-		completion_reward = {
-			add_war_support = 0.05
-		}
-		prerequisite = { focus = GER_increase_military_spending }
-		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = GER_german_industrialization
-		icon = GFX_goal_generic_construction
-		x = 45
-		y = 0
-
-		completion_reward = {
-			64 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-		}
-		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = GER_invest_in_rheinland
-		icon = GFX_goal_generic_construction
-		x = 42
-		y = 2
-
-		completion_reward = {
-			51 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			42 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-		prerequisite = { focus = GER_german_industrialization }
-		cost = 10
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
+    }
 
 }
