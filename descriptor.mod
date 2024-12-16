@@ -1,12 +1,7 @@
-version="1.15.1"
+version="0.0.1"
 tags={
-	"Alternative History"
-	"Gameplay"
 	"Historical"
+	"Map"
 }
-name="Place in the Sun"
-
-replace_path="history/states"
-
-supported_version="1.15.1"
-remote_file_id="3357265780"
+name="Place In The Sun"
+supported_version="1.15.3"
