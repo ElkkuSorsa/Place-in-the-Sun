@@ -1,14 +1,16 @@
 ideas = {
 	country = {
 		ENG_march_for_change = {
+			picture = ast_abandon_the_westminster_system_fascism
 			modifier = {
 				neutrality_drift = 0.02
 				fascism_drift = 0.02
-				stability_factor = -0.5
+				stability_factor = -0.3
 			}
 		}
 
 		ENG_restored_monarchy = {
+			picture = generic_monarchist_uprising
 			modifier = {
 				political_power_factor = 0.1
 				neutrality_drift = 0.05
@@ -17,25 +19,28 @@ ideas = {
 		}
 
 		ENG_empowered_local_nobility = {
+			picture = generic_disjointed_gov
 			modifier = {
 				political_power_factor = -0.05
-				stability_weekly = 0.08
-			}
-		}
-
-		ENG_empowered_local_nobility = {
-			modifier = {
-				political_power_factor = -0.05
-				stability_weekly = 0.08
+				stability_weekly = 0.02
 			}
 		}
 
 		ENG_pax_britannica = {
+			picture = eng_the_sun_never_sets
 			modifier = {
 				join_faction_tension = 1
-				justify_war_goal_time = -0.1
+				justify_war_goal_time = -0.25
 				generate_wargoal_tension = -0.5
 				guarantee_tension = 1
+			}
+		}
+
+		ENG_irish_occupation = {
+			picture = DEN_occupation_laws
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.15
 			}
 		}
 	}

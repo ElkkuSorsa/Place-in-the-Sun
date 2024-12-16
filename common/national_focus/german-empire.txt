@@ -1,0 +1,321 @@
+focus_tree = {
+	id = GER_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			tag = GER
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = GER_Weltpolitik
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 8
+		y = 1
+
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.1
+		}
+		mutually_exclusive = { focus = GER_contest_the_kaisers_authority }
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	}
+	focus = {
+		id = GER_contest_the_kaisers_authority
+		icon = GFX_goal_support_democracy
+		x = 30
+		y = 1
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+		mutually_exclusive = { focus = GER_Weltpolitik }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_gather_support
+		icon = GFX_goal_generic_propaganda
+		x = 32
+		y = 2
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_political_power = 100
+		}
+		prerequisite = { focus = GER_contest_the_kaisers_authority }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_democratize_the_reichstag
+		icon = GFX_focus_generic_treaty
+		x = 28
+		y = 2
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_political_power = 50
+		}
+		prerequisite = { focus = GER_contest_the_kaisers_authority }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_erode_the_kaisers_powers
+		icon = GFX_GFX_focus_generic_treaty
+		x = 30
+		y = 4
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+		prerequisite = { focus = GER_gather_support }
+		prerequisite = { focus = GER_democratize_the_reichstag }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_hold_elections
+		icon = GFX_goal_anschluss
+		x = 30
+		y = 5
+
+		completion_reward = {
+			country_event = german_elections.1
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		prerequisite = { focus = GER_erode_the_kaisers_powers }
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	}
+	focus = {
+		id = GER_zentrum
+		icon = GFX_goal_anschluss
+		x = 36
+		y = 6
+
+		mutually_exclusive = { focus = GER_SPD }
+		prerequisite = { focus = GER_hold_elections }
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	}
+	focus = {
+		id = GER_SPD
+		icon = GFX_goal_anschluss
+		x = 24
+		y = 6
+
+		mutually_exclusive = { focus = GER_zentrum }
+		prerequisite = { focus = GER_hold_elections }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_constitutional_monarchy
+		icon = GFX_goal_anschluss
+		x = 31
+		y = 7
+
+		mutually_exclusive = { focus = GER_abolish_the_monarchy }
+		prerequisite = { focus = GER_zentrum }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_abolish_the_monarchy
+		icon = GFX_GFX_goal_tfv_burn_the_royal_portraits
+		x = 29
+		y = 7
+
+		mutually_exclusive = { focus = GER_constitutional_monarchy }
+		prerequisite = { focus = GER_SPD }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_strenghten_workers_rights
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 21
+		y = 7
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = improved_workers_rights
+		}
+		prerequisite = { focus = GER_SPD }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_enact_social_reforms
+		icon = GFX_focus_por_workers_of_iberia
+		x = 19
+		y = 8
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+		prerequisite = { focus = GER_strenghten_workers_rights }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_ally_the_socialists
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 32
+		y = 3
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_stability = -0.05
+		}
+		prerequisite = { focus = GER_gather_support }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_womens_suffrage
+		icon = GFX_focus_generic_universal_suffrage
+		x = 19
+		y = 9
+
+		completion_reward = {
+			add_ideas = womens_suffrage
+		}
+		prerequisite = { focus = GER_enact_social_reforms }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_public_investments
+		icon = GFX_goal_generic_construction
+		x = 25
+		y = 7
+
+		completion_reward = {
+			add_ideas = public_investments
+		}
+		prerequisite = { focus = GER_SPD }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_increase_military_spending
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 2
+
+		completion_reward = {
+			add_ideas = increased_military_spending
+		}
+		prerequisite = { focus = GER_Weltpolitik }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = GER_support_the_ohl
+		icon = GFX_focus_generic_military_dictatorship
+		x = 10
+		y = 3
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		prerequisite = { focus = GER_increase_military_spending }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = GER_empower_the_kaiser
+		icon = GFX_focus_generic_military_dictatorship
+		x = 6
+		y = 3
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		prerequisite = { focus = GER_increase_military_spending }
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = GER_german_industrialization
+		icon = GFX_goal_generic_construction
+		x = 45
+		y = 0
+
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = GER_invest_in_rheinland
+		icon = GFX_goal_generic_construction
+		x = 42
+		y = 2
+
+		completion_reward = {
+			51 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			42 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		prerequisite = { focus = GER_german_industrialization }
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+}

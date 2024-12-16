@@ -1,0 +1,511 @@
+focus_tree = {
+    id = OTT_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 50
+            tag = TUR
+        }
+    }
+
+    default = no
+
+    # Turkish Industry Tree
+    focus = {
+        id = OTT_begin_industrialization
+        icon = GFX_focus_generic_modernize_industry
+        x = 20
+        y = 1
+
+        completion_reward = {
+           49 = { add_extra_state_shared_building_slots = 2 
+            add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+           }
+        }  
+
+        cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+     }
+    
+
+    focus = {
+        id = OTT_cooperate_with_the_debt_administration
+        icon = GFX_focus_mex_privatisation
+        x = 15
+        y = 2
+        completion_reward = { add_ideas = debt_administration }
+        prerequisite = { focus = OTT_begin_industrialization }
+		mutually_exclusive = { focus = OTT_move_towards_autarky }
+
+        cost = 7
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_move_towards_autarky
+        icon = GFX_goal_generic_construction2
+        x = 32
+        y = 2
+        prerequisite = { focus = OTT_begin_industrialization }
+		mutually_exclusive = { focus = OTT_cooperate_with_the_debt_administration }
+
+        cost = 7
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_building_our_own_industries
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 32
+        y = 3
+        prerequisite = { focus = OTT_move_towards_autarky }
+		completion_reward = { random_owned_controlled_state = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes 
+    }
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+}
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+        }
+        }
+    }
+    
+	focus = {
+        id = OTT_seek_foreign_investments
+        icon = GFX_focus_DEN_heavy_regulations
+        x = 13
+        y = 4
+        prerequisite = { focus = OTT_cooperate_with_the_debt_administration }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_increase_trade
+        icon = GFX_goal_generic_positive_trade_relations
+        x = 19
+        y = 4
+        prerequisite = { focus = OTT_cooperate_with_the_debt_administration }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_investments_from_britain
+        icon = GFX_focus_generic_british_trade
+        x = 11
+        y = 5
+        prerequisite = { focus = OTT_seek_foreign_investments }
+		
+		cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_investments_from_germany
+        icon = GFX_focus_ger_revive_kaiserreich
+        x = 15
+        y = 5
+        prerequisite = { focus = OTT_seek_foreign_investments }
+		
+		cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_agricultural_autarky
+        icon = GFX_focus_generic_farmland
+        x = 35
+        y = 4
+        prerequisite = { focus = OTT_building_our_own_industries }
+		
+		cost = 8
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_heavy_industry
+        icon = GFX_focus_generic_industry_2
+        x = 32
+        y = 5
+        prerequisite = { focus = OTT_building_our_own_industries }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	 focus = {
+        id = OTT_bring_foreign_experts
+        iconfocus = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+        x = 20
+        y = 5
+        prerequisite = { focus = OTT_increase_trade }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_paying_our_debts
+        icon = GFX_focus_DEN_limited_regulations
+        x = 16
+        y = 3
+        prerequisite = { focus = OTT_cooperate_with_the_debt_administration }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_develop_the_empire
+        icon = GFX_goal_generic_construction
+        x = 25
+        y = 3
+        prerequisite = { focus = OTT_begin_industrialization }
+		
+        completion_reward = { random_owned_controlled_state = {
+     add_extra_state_shared_building_slots = 2 
+     add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+}
+}
+
+     
+     }
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_develop_libya
+        icon = GFX_focus_generic_develop_libya
+        x = 22
+        y = 4
+        prerequisite = { focus = OTT_develop_the_empire }
+		
+		cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_develop_anatolia
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 25
+        y = 4
+        prerequisite = { focus = OTT_develop_the_empire }
+		
+		cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_develop_the_balkans
+        icon = GFX_focus_BUL_free_balkan_states
+        x = 28
+        y = 4
+        prerequisite = { focus = OTT_develop_the_empire }
+		
+		cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_foreign_research
+        icon = GFX_focus_research2
+        x = 18
+        y = 5
+        prerequisite = { focus = OTT_increase_trade }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_national_austerity
+        icon = GFX_goal_generic_production2
+        x = 30
+        y = 4
+        prerequisite = { focus = OTT_building_our_own_industries }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_turkish_war_industry
+        icon = GFX_focus_ARG_the_war_machine
+        x = 32
+        y = 7
+        prerequisite = { focus = OTT_heavy_industry }
+		
+		cost = 10
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+	focus = {
+        id = OTT_continue_young_turk_reforms
+        icon = GFX_focus_TUR_ratify_the_six_arrows
+        x = 61
+        y = 1
+
+        mutually_exclusive = {focus = OTT_revive_our_past_glory}
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+	focus = {
+        id = OTT_revive_our_past_glory
+        icon = GFX_focus_TUR_misak_i_milli
+        x = 78
+        y = 1
+        
+        completion_reward = { add_war_support = 0.1 }
+		mutually_exclusive = {focus = OTT_continue_young_turk_reforms}
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_empower_the_sultan
+        icon = GFX_focus_TUR_pivot_to_the_past
+        x = 73
+        y = 2
+        
+		prerequisite = { focus = OTT_revive_our_past_glory }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_expanding_our_influence
+        icon = GFX_goal_generic_territory_or_war
+        x = 83
+        y = 2
+        
+        completion_reward = {add_political_power = 50
+        add_war_support = 0.05 }
+		prerequisite = { focus = OTT_revive_our_past_glory }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_balkan_expansion
+        icon = GFX_focus_generic_balkans_focus
+        x = 80
+        y = 3
+        
+		prerequisite = { focus = OTT_expanding_our_influence }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_invade_romania
+        icon = GFX_focus_generic_attack_romania
+        x = 79
+        y = 4
+        
+        completion_reward = {create_wargoal = { type = annex_everything target = ROM }}
+        mutually_exclusive = { focus = OTT_offer_romania_protection }
+		prerequisite = { focus = OTT_balkan_expansion }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_claim_bosnia
+        icon = GFX_goal_generic_occupy_states_ongoing_war
+        x = 77
+        y = 4
+        
+		prerequisite = { focus = OTT_balkan_expansion }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_war_with_austria
+        icon = GFX_focus_generic_total_war
+        x = 77
+        y = 5
+        
+		prerequisite = { focus = OTT_claim_bosnia }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_integrate_balkan_territories
+        icon = GFX_focus_generic_balkan_diplomacy
+        x = 83
+        y = 5
+        
+		prerequisite = { focus = OTT_balkan_expansion }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_middle_eastern_conquests
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 87
+        y = 3
+        
+		prerequisite = { focus = OTT_expanding_our_influence }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_war_with_persia
+        icon = GFX_focus_generic_attack_iran
+        x = 87
+        y = 4
+        
+		prerequisite = { focus = OTT_middle_eastern_conquests }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_reclaim_suez
+        icon = GFX_focus_generic_the_suez
+        x = 85
+        y = 4
+        
+		prerequisite = { focus = OTT_middle_eastern_conquests }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_subjugate_arabia
+        icon = GFX_focus_TUR_taking_over_defense_of_the_gulf
+        x = 89
+        y = 4
+        
+		prerequisite = { focus = OTT_middle_eastern_conquests }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_expand_to_the_caucasus
+        icon = GFX_focus_GRE_a_land_of_mountains
+        x = 92
+        y = 3
+        
+		prerequisite = { focus = OTT_expanding_our_influence }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_caucasus_puppets
+        icon = GFX_focus_GRE_a_land_of_mountains
+        x = 91
+        y = 4
+        
+		prerequisite = { focus = OTT_expand_to_the_caucasus }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_turkish_militarism
+        icon = GFX_focus_generic_attack_turkey
+        x = 95
+        y = 3
+        
+		prerequisite = { focus = OTT_expanding_our_influence }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+	focus = {
+        id = OTT_military_industries
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 95
+        y = 4
+        
+		prerequisite = { focus = OTT_turkish_militarism }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = OTT_offer_romania_protection
+        icon = GFX_focus_rom_preserve_romania
+        x = 81
+        y = 4
+        
+        mutually_exclusive = { focus = OTT_invade_romania }
+		prerequisite = { focus = OTT_balkan_expansion }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = OTT_reintegrate_the_caucasus
+        icon = GFX_focus_SMB_a_land_of_mountains
+        x = 93
+        y = 4
+        
+        mutually_exclusive = { focus = OTT_caucasus_puppets }
+		prerequisite = { focus = OTT_expand_to_the_caucasus }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = OTT_persecute_the_young_turks
+        icon = GFX_focus_generic_strike_at_democracy2
+        x = 73
+        y = 3
+        
+        prerequisite = { focus = OTT_empower_the_sultan }
+		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = OTT_continue_ottomanisation_efforts
+        icon = GFX_focus_generic_strike_at_democracy2
+        x = 65
+        y = 2
+        
+        completion_reward = { add_stability = 0.05 add_political_power = 50}
+        prerequisite = { focus = OTT_continue_young_turk_reforms OTT_revive_our_past_glory }
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+     focus = {
+        id = OTT_dockyard_expansion
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 34
+        y = 6
+        
+        prerequisite = { focus = OTT_heavy_industry }
+		cost = 5
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+    }
+}

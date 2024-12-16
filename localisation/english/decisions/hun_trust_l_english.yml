@@ -1,0 +1,10 @@
+﻿l_english:
+ hun_trust:0 "Hungarian Affairs"
+ hun_trust_desc:0 "After the establishment of Austria-Hungary as a dual monarchy, there has been many problems and questions about Hungary. These questions effects our relation and the stability of the realm. \n\nHungarian current trust is [hungary_trust_text]"
+ elections:0 "Hungarian Elections of [GetYear]"
+
+ trust.1:0 "§RVery Low"
+ trust.2:0 "§tLow"
+ trust.3:0 "§YMiddling"
+ trust.4:0 "§7High"
+ trust.5:0 "§GVery High"

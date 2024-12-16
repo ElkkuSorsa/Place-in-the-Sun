@@ -28,19 +28,6 @@ country_event = {
 			retire_character = AUH_sandor
 			recruit_character = AUH_gyula
 			activate_advisor = AUH_gyula
-			clr_country_flag = HUN_nat
-			set_country_flag = HUN_ind
-		}
-	}
-
-	option = {
-		name = "We can't trust him!"
-		custom_effect_tooltip = "The Emperor will not appoint a new prime minister."
-		hidden_effect = {
-			country_event = {
-				id = army_question.4
-				days = 10
-			}
 		}
 	}
 
@@ -60,8 +47,6 @@ country_event = {
 			retire_character = AUH_sandor
 			recruit_character = AUH_karoly
 			activate_advisor = AUH_karoly
-			clr_country_flag = HUN_ind
-			set_country_flag = HUN_nat
 		}
 	}
 
@@ -77,12 +62,12 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Let's reach for a compromise..."
+		name = "Compromise"
 		add_political_power = -150
 	}
 
 	option = {
-		name = "We won't make any concessions!"
+		name = "Our Empire, Our Solutions!"
 		country_event = { id = army_question.2 days = 10 }
 	}
 
@@ -144,27 +129,20 @@ country_event = {
 	title = "Hungarian War of Independence"
 	desc = army_question.4.d
 
-	fire_only_once = yes
-
-	trigger = {
-		check_variable = { var = hungary_trust value = 1 compare = less_than }
-		original_tag = AUH
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = "Then war it is..."
-		custom_effect_tooltip = "Hungary will declare independence war!"
+		custom_effect_tooltip = "§RHungary declares war of independence!"
 		unlock_national_focus = AUH_danube_crisis
 		hidden_effect = {
-			release = HUN
-			declare_war_on = { type = annex_everything target = HUN }
+			release = HUN 
+			declare_war_on = { type = annex_everything    target = HUN }
 			set_country_flag = danubecrisis
 			mark_focus_tree_layout_dirty = yes
 		} 
 		
 	}
-
-
 
 }
 

@@ -1,0 +1,32 @@
+ideas = {
+     country = {
+         debt_administration = {
+            picture = generic_foreign_capital 
+            modifier = {
+                stability_factor = 0.1
+                consumer_goods_factor = 0.15
+                production_factory_efficiency_gain_factor = -0.15
+                production_factory_max_efficiency_factor = 0.1
+             }
+} }
+country = {
+         austerity_measures = {
+            picture = generic_goods_red_bonus
+            modifier = {
+                stability_factor = -0.1
+                consumer_goods_factor = -0.25
+                production_speed_buildings_factor = -0.05
+             }
+} }
+country = {
+         outdated_industry = {
+            picture = POL_disjointed_industry
+            modifier = {
+                consumer_goods_factor = 0.1
+                production_speed_buildings_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.2
+                production_factory_max_efficiency_factor = -0.1
+                production_lack_of_resource_penalty_factor = 0.15
+
+             }
+} }

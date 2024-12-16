@@ -1,0 +1,17 @@
+ideas = {
+     country = {
+         swedish_economy = {
+            picture = ARG_economic_reactivation
+            modifier = {
+                consumer_goods_factor = -0.1
+                production_speed_buildings_factor = 0.05
+             }
+} }
+country = {
+         swedish_economy = {
+            picture = ARG_economic_reactivation
+            modifier = {
+                consumer_goods_factor = -0.1
+                production_speed_buildings_factor = 0.05
+             }
+} }

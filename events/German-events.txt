@@ -1,0 +1,18 @@
+add_namespace = german_elections
+
+country_event = {
+    id = german_elections.1
+    title = "German Elections"
+    desc = my_event.1.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "Social Democrats"
+        unlock_national_focus = GER_SPD 
+    }
+     option = {
+        name = "Zentrum"
+        unlock_national_focus = GER_zentrum 
+    }
+}
