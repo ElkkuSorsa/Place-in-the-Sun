@@ -1,7 +1,7 @@
 focus_tree = {
     id = GER_focus_tree
     country = {
-        factor = 0
+        factor = 11
 
         modifier = {
             add = 50

@@ -13,13 +13,53 @@ focus_tree = {
 
     focus = {
         id = FIN_independence
-        icon = GFX_focus_ger_revive_kaiserreich
-        x = 18
+        icon = GFX_focus_EST_national_pride_in_finland
+        x = 7
         y = 1
 		
-        completion_reward = { add_political_power = 25
-        add_war_support = 0.1
-        add_stability = 0.1 }         
+        completion_reward = { add_political_power = 100}         
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = FIN_white_guard
+        icon = GFX_focus_FIN_strengthen_military_administration
+        x = 7
+        y = 2
+		
+        completion_reward = { add_war_support = 0.05
+        add_popularity = {
+	    ideology = neutrality
+	    popularity = 0.15
+        }
+        add_ideas = suojeluskunta}
+        prerequisite = {focus = FIN_independence}         
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = FIN_bring_the_jagers
+        icon = GFX_focus_EST_national_pride_in_finland
+        x = 5
+        y = 3
+		
+        completion_reward = {add_ideas = jagers
+        add_manpower = 2000}
+        prerequisite = {focus = FIN_white_guard}         
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = FIN_request_german_support
+        icon = GFX_focus_EST_national_pride_in_finland
+        x = 9
+        y = 3
+		
+        completion_reward = {}
+        prerequisite = {focus = FIN_white_guard}         
 		cost = 5
         search_filters = { FOCUS_FILTER_HISTORICAL }
 
