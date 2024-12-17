@@ -212,7 +212,7 @@ focus_tree = {
         x = 10
         y = 5
 		
-        prerequisite = {focus = GER_alliance_with_britain}
+        prerequisite = { focus = GER_alliance_with_britain }
         completion_reward = {
         add_political_power = 25
         give_guarantee = ENG
@@ -301,7 +301,7 @@ focus_tree = {
 		
         prerequisite = {focus = GER_eastern_expansion}
         completion_reward = {
-        add_political_power = 25
+        
         }         
 		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }
