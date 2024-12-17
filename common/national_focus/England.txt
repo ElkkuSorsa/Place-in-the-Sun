@@ -74,6 +74,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			set_cosmetic_tag = ENG_democratic
 			set_politics = {
 				ruling_party = communism
 			}
@@ -139,6 +140,20 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_republican_movement
+		icon = GFX_focus_generic_universal_suffrage
+		x = 32
+		y = 8
+		prerequisite = { focus = ENG_women_suffrage }
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = ENG_red_star_in_the_sky
 		icon = GFX_focus_ger_great_red_menace
 		x = 28
@@ -189,7 +204,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			set_cosmetic_tag = UOB
+			set_cosmetic_tag = ENG_communism
 		}
 	}
 
@@ -1531,7 +1546,11 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_ideas = extensive_conscription
+			set_party_name = {
+				ideology = fascism
+				long_name = "British Union Party of Order"
+				name = "Party of order"
+			}
 		}
 	}
 
@@ -1544,8 +1563,16 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+			OR = {
+				has_war_with = GER
+				has_war_with = RUS
+				has_war_with = FRA
+			}
+		}
+
 		completion_reward = {
-			
+			add_ideas = ENG_war_budget
 		}
 	}
 
@@ -1559,7 +1586,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			
+			add_ideas = extensive_conscription
 		}
 	}
 
@@ -1604,6 +1631,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			add_ideas = ENG_stand_alone
 		}
 	}
 
@@ -1637,6 +1665,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_timed_idea = {
+				days = 180
+				idea = ENG_slay_the_eagle
+			}
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = GER
