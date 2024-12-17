@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ENG = {
+				country_event = {
+					id = elections.1
+					days = 350
+				}
+			}
+		}
+	}
+}

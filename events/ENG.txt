@@ -70,6 +70,7 @@ country_event = {
 	option = {
 		name = "Hand the civil government over to the king."
 		add_political_power = 50
+		complete_national_focus = ENG_hand_over_to_king
 		create_country_leader = {
 			name = "King"
 			picture = "portrait_eng_fallen_government.dds"
@@ -185,3 +186,61 @@ country_event = {
 		}
 	}
 }
+
+add_namespace = elections
+country_event = {
+	id = elections.1
+	title = "Elections of 1910"
+	desc = "We live in dark times. The next government may even experience a major war in Europe. We must choose wisely!"
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Liberals Win!"
+		complete_national_focus = ENG_1910_elections
+		complete_national_focus = ENG_the_last_liberals
+		hidden_effect = {
+			country_event = {
+				id = elections.2
+				days = 10
+			}
+		}
+	}
+
+	option = {
+		name = "Conservatives Win by a Slight Majority!"
+		complete_national_focus = ENG_1910_elections
+		complete_national_focus = ENG_conservative_victory
+	}
+}
+
+country_event = {
+	id = elections.2
+	title = "Liberal Victory"
+	desc = "The people have voted! Currently it is clear that the Liberals won, but did they win by majority?"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Majority"
+		complete_national_focus = ENG_government_of_liberals
+	}
+
+	option = {
+		name = "Minority!"
+		complete_national_focus = ENG_minority_government
+	}
+
+	option = {
+		name = "Minority, the King Intervenes!"
+		complete_national_focus = ENG_march_for_change
+		uncomplete_national_focus = {
+			focus = ENG_1910_elections
+			uncomplete_children = yes
+			refund_political_power = no
+		}
+	}
+}
+

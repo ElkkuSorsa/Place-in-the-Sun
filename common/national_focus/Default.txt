@@ -1,7 +1,7 @@
 focus_tree = {
 	id = default_focus
 	country = {
-		factor = 10
+		factor = 11
 	}
 
 	shared_focus = ENT_entente_cordiale_1

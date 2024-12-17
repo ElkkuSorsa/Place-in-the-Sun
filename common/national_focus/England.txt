@@ -27,7 +27,10 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = "Elections were held like usually."
+				has_completed_focus = ENG_1910_elections
+			}
 		}
 
 		completion_reward = {
@@ -57,7 +60,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_the_last_liberals }
 		mutually_exclusive = { focus = ENG_government_of_liberals }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_stability = -0.2
@@ -149,7 +152,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-
+			set_cosmetic_tag = ENG_communism
 		}
 	}
 
@@ -246,7 +249,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_the_last_liberals }
 		mutually_exclusive = { focus = ENG_minority_government }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_stability = 0.1
@@ -1077,7 +1080,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "The king decided to cancel future elections"
-				always = no
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -1269,6 +1272,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+
 		}
 	}
 
@@ -1278,6 +1282,8 @@ focus_tree = {
 		x = 7
 		y = 10
 		prerequisite = { focus = ENG_imperial_federation }
+
+		will_lead_to_war_with = USA
 
 		cost = 10
 
@@ -1433,6 +1439,13 @@ focus_tree = {
 
 		cost = 10
 
+		bypass = {
+			OR = {
+				is_in_faction_with = RUS
+				is_in_faction_with = GER
+			}
+		}
+
 		available = {
 		}
 
@@ -1549,7 +1562,7 @@ focus_tree = {
 			set_party_name = {
 				ideology = fascism
 				long_name = "British Union Party of Order"
-				name = "Party of order"
+				name = "Party of Order"
 			}
 		}
 	}
@@ -1616,7 +1629,7 @@ focus_tree = {
 
 		completion_reward = {
 			leave_faction = yes
-			create_faction = "The Imperial Sphere"
+			create_faction = "British Alliance"
 		}
 	}
 
@@ -1629,6 +1642,10 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_romanov_alliance }
 
 		cost = 5
+
+		available = {
+			is_faction_leader = yes
+		}
 
 		completion_reward = {
 			add_ideas = ENG_stand_alone
@@ -1644,6 +1661,13 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_britain_leads }
 
 		cost = 5
+
+		bypass = {
+			OR = {
+				is_in_faction_with = RUS
+				is_in_faction_with = GER
+			}
+		}
 
 		completion_reward = {
 		}
@@ -1662,6 +1686,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			NOT { is_in_faction_with = GER }
 		}
 
 		completion_reward = {
