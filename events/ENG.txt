@@ -244,3 +244,29 @@ country_event = {
 	}
 }
 
+add_namespace = communist_britain
+country_event = {
+	id = communist_britain.1
+	title = "British Revolution"
+	desc = "Shortly after the Socialists took over the government and ousted the Liberal ministers, they have now declared the Republic of Great Britain!"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "That's odd..."
+	}
+}
+
+country_event = {
+	id = communist_britain.2
+	title = "British Republic"
+	desc = "The Liberals were forced to ally the Socialists to make a majority in the government. This coalition now has led us to a strong Republican movement. This movement has greatly succeeded and the coalition announced that the king has now been stripped from his titles."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "That's odd..."
+	}
+}
