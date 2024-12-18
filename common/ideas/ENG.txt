@@ -75,5 +75,21 @@ ideas = {
 				has_War = no
 			}
 		}
+
+		ENG_socialist_reforms = {
+			picture = eng_guided_by_britain
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+
+		ENG_socialist_influence = {
+			picture = eng_guided_by_britain
+			modifier = {
+				communism_drift = 0.03
+			}
+		}
 	}
 }

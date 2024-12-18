@@ -1,0 +1,26 @@
+add_namespace = pathguide
+
+country_event = {
+	id = pathguide.1
+	title = "United Kingdom"
+	desc = pathguide.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Cool!"
+	}
+}
+
+country_event = {
+	id = pathguide.2
+	title = "Austria-Hungary"
+	desc = pathguide.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Cool!"
+	}
+}
+

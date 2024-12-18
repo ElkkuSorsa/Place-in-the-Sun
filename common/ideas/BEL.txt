@@ -1,0 +1,7 @@
+ideas = {
+	country = {
+		ENG_march_for_change = {
+
+		}
+	}
+}
