@@ -1,0 +1,89 @@
+focus_tree = {
+	id = ENG_COM_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			original_tag = ENG
+			has_country_flag = socialist_england
+		}
+	}
+
+	focus = {
+		id = ENG_end_of_internal_crisis
+
+		x = 7
+		y = 0
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_
+
+		prerequisite = { focus = ENG_end_of_internal_crisis }
+
+		x = 7
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_trade_union_conference
+
+		prerequisite = { focus = ENG_end_of_internal_crisis }
+
+		x = 7
+		y = 1
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_radical_socialism
+
+		prerequisite = { focus = ENG_trade_union_conference }
+
+		x = 10
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_end_to_revolution
+
+		prerequisite = { focus = ENG_trade_union_conference }
+
+		x = 4
+		y = 2
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_declare_socialist_republic
+
+		prerequisite = { focus = ENG_end_to_revolution focus = ENG_radical_socialism }
+
+		x = 7
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+
+}
