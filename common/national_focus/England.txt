@@ -242,7 +242,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			load_focus_tree = ENG_COM_focus_tree
+			custom_effect_tooltip = "This will establish a one party state and switch to new focus tree!"
+			hidden_effect = {
+				load_focus_tree = ENG_COM_focus_tree
+			}
 		}
 	}
 
@@ -257,7 +260,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			load_focus_tree = ENG_COM_focus_tree
+			custom_effect_tooltip = "This will establish a one party state and switch to new focus tree!"
+			hidden_effect = {
+				load_focus_tree = ENG_COM_focus_tree
+			}
 			release_puppet_on_controlled = SCO 
 			release_puppet_on_controlled = IRE
 		}

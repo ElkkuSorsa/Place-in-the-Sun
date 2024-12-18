@@ -22,15 +22,89 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_
+		id = ENG_internationale
 
 		prerequisite = { focus = ENG_end_of_internal_crisis }
 
-		x = 7
+		x = 15
 		y = 1
 
 		completion_reward = {
-			
+			create_faction = "British Internationale"
+		}
+	}
+
+	focus = {
+		id = ENG_ally_the_french_socialists
+
+		prerequisite = { focus = ENG_internationale }
+		mutually_exclusive = { focus = ENG_enemy_forever }
+
+		x = 14
+		y = 2
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_spark_revolutions
+
+		prerequisite = { focus = ENG_ally_the_french_socialists }
+
+		x = 14
+		y = 4
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_enemy_forever
+
+		prerequisite = { focus = ENG_internationale }
+		mutually_exclusive = { focus = ENG_ally_the_french_socialists }
+
+		x = 16
+		y = 2
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_alliance_with_russia
+
+		prerequisite = { focus = ENG_enemy_forever }
+
+		x = 16
+		y = 4
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_socialist_republic_of_italy
+
+		prerequisite = { focus = ENG_enemy_forever focus = ENG_ally_the_french_socialists }
+
+		x = 15
+		y = 3
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_common_enemy
+
+		prerequisite = { focus = ENG_spark_revolutions focus = ENG_alliance_with_russia}
+
+		x = 15
+		y = 5
+
+		completion_reward = {
 		}
 	}
 
