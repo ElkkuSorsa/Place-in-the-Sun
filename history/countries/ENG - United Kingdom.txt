@@ -24,6 +24,12 @@ add_ideas = {
 #Politics for 1936.1.1
 set_cosmetic_tag = ENG_democratic
 
+set_autonomy = {
+	target = FIN 
+	autonomy_state = real_union
+}
+
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.6.15"
@@ -31,8 +37,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 90
-	fascism = 5
+	democratic = 85
+	fascism = 0
 	communism = 10
 	neutrality = 5
 }
