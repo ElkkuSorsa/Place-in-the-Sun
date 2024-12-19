@@ -8,3 +8,8 @@ ITA = {
 	color = rgb { 6 140 21 }
 	color_ui = rgb { 6 140 21 }
 }
+ENG = {
+	color = rgb { 168 2 2 }
+	color_ui = rgb { 168 2 2 }
+}
+

@@ -43,7 +43,12 @@ focus_tree = {
 		x = 14
 		y = 2
 
+		available = {
+			country_exists = COF
+		}
+
 		completion_reward = {
+			
 		}
 	}
 
@@ -125,6 +130,7 @@ focus_tree = {
 		id = ENG_radical_socialism
 
 		prerequisite = { focus = ENG_trade_union_conference }
+		mutually_exclusive = { focus = ENG_end_to_revolution }
 
 		x = 10
 		y = 2
@@ -138,6 +144,7 @@ focus_tree = {
 		id = ENG_end_to_revolution
 
 		prerequisite = { focus = ENG_trade_union_conference }
+		mutually_exclusive = { focus = ENG_radical_socialism }
 
 		x = 4
 		y = 2
