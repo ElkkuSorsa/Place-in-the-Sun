@@ -278,54 +278,14 @@ news_event = {
 add_namespace = entente_conf
 country_event = {
 	id = entente_conf.1
-	title = "Day 1: Leadership Question"
+	title = "Entente Conference"
 	desc = ""
 
 	is_triggered_only = yes
 
 	option = {
-		name = "the UK"
-		add_to_variable = { var = Global.ukent value = 1 }
-		news_event = {
-			id = entente_conf.2
-			days = 1
-		}
-	}
-
-	option = {
-		name = "France"
-		add_to_variable = { var = Global.frent value = 1 }
-		news_event = {
-			id = entente_conf.2
-			days = 1
-		}
-	}
-}
-
-news_event = {
-	id = entente_conf.2
-	title = "Entente Leadership"
-	desc = ""
-
-	is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
-
-	option = {
-		name = "the UK"
-		trigger = {
-			Global.ukent > Global.frent
-		}
-	}
-
-	option = {
-		name = "France"
-		trigger = {
-			OR = {
-				Global.ukent < Global.frent
-				Global.ukent = Global.frent
-			}
-		}
+		name = "Dawn on the new Entente"
+		set_faction_leader = yes
 	}
 }
 
@@ -414,5 +374,40 @@ country_event = {
 		ENG = {
 			uncomplete_national_focus = ENG_invoke_portugal
 		}
+	}
+}
+
+add_namespace = conservative_england
+country_event = {
+	id = conservative_england.1
+	title = "Royal Support"
+	desc = "In order to maintain this fragile government, we must be in favor of the Royal family. They may demand some consessions..."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Accept Liberum Veto"
+		trigger = {
+			has_completed_focus = ENG_empower_house_of_lords
+		}
+		complete_national_focus = ENG_royal_veto
+	}
+
+	option = {
+		name = "We can't take this risk..."
+		trigger = {
+			has_completed_focus = ENG_empower_house_of_lords
+		}
+		add_ideas = ENG_royal_opposition
+		bypass_national_focus = ENG_royal_veto
+	}
+
+	option = {
+		name = "Limited Appeasement"
+		trigger = {
+			has_completed_focus = ENG_status_quo_with_lords
+		}
+		complete_national_focus = ENG_constitutionalism
 	}
 }

@@ -631,7 +631,6 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-				set_variable = { }
 				id = entente_conf.1
 				days = 1
 			}
@@ -648,8 +647,12 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			SPA = {
+				country_event = {
+					id = morocco_guarantee.1
+					days = 5
+				}
+			}
 		}
 	}
 
@@ -696,10 +699,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Conference voted to invite Portugal"
-				has_global_flag = portugal_inclusion
-			}
 		}
 
 		completion_reward = {
@@ -830,8 +829,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			add_ideas = ENG_royal_veto
 		}
 	}
 
@@ -1019,8 +1017,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			add_ideas = ENG_royal_appeasement
 		}
 	}
 
