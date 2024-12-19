@@ -1139,6 +1139,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			country_event = {
+				id = conservative_england.1
+				days = 1
+			}
 		}
 	}
 
