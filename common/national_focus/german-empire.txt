@@ -141,7 +141,7 @@ focus_tree = {
 		
         prerequisite = {focus = GER_greater_german_ambition}
         completion_reward = {
-        add_threat = 0.05
+        add_threat = 5
         create_wargoal = { type = annex_everything target = AUH } }         
 		cost = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -154,7 +154,8 @@ focus_tree = {
         y = 4
 		
         prerequisite = {focus = GER_maintain_austrian_alliance}
-        completion_reward = { }         
+        completion_reward = { army_experience = 25
+        AUH = {add_ideas = staff_in_austria} }         
 		cost = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -170,7 +171,7 @@ focus_tree = {
         add_state_claim = 160
         add_state_claim = 39
         add_state_claim = 850
-        add_threat = 0.05
+        add_threat = 5
         }         
 		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -184,7 +185,7 @@ focus_tree = {
 		
         prerequisite = {focus = GER_claims_on_italy}
         completion_reward = {
-        add_threat = 0.05
+        add_threat = 5
         create_wargoal = { type = annex_everything target = ITA } }         
 		cost = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -212,10 +213,9 @@ focus_tree = {
         x = 10
         y = 5
 		
-        prerequisite = { focus = GER_alliance_with_britain }
+        prerequisite = { focus = GER_anglo_german_agreement }
         completion_reward = {
         add_political_power = 25
-        give_guarantee = ENG
         }         
 		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -257,6 +257,7 @@ focus_tree = {
         x = 10
         y = 7
 		
+        mutually_exclusive = {focus = GER_utilize_the_netherlands}
         prerequisite = {focus = GER_western_plans}
         completion_reward = {
         create_wargoal = { type = annex_everything target = HOL }
@@ -266,11 +267,12 @@ focus_tree = {
 
     }
     focus = {
-        id = GER_plan_for_war_with_belgium
+        id = GER_utilize_the_netherlands
         icon = GFX_focus_BEL_dyle_plan
         x = 14
         y = 7
 		
+        mutually_exclusive = {focus = GER_war_with_holland}
         prerequisite = {focus = GER_western_plans}
         completion_reward = {
         add_political_power = 25
@@ -287,9 +289,19 @@ focus_tree = {
 		
         prerequisite = {focus = GER_staff_in_austria}
         completion_reward = {
-        add_
+        add_state_claim = 98
+        add_state_claim = 87
+        add_threat = 10
+        create_wargoal = {
+        type = puppet_wargoal_focus
+        target = SOV
+        }
+        add_timed_idea = {
+        idea = eastern_operations
+        days = 180
+        }
         }         
-		cost = 5
+		cost = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
 
     }
@@ -301,7 +313,7 @@ focus_tree = {
 		
         prerequisite = {focus = GER_eastern_expansion}
         completion_reward = {
-        
+        SOV = { add_ideas = communist_revolts }
         }         
 		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -315,7 +327,7 @@ focus_tree = {
 		
         prerequisite = {focus = GER_eastern_expansion}
         completion_reward = {
-        add_political_power = 25
+        
         }         
 		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -329,7 +341,33 @@ focus_tree = {
 		
         prerequisite = {focus = GER_stir_up_russian_communists}
         completion_reward = {
-        add_political_power = 25
+        
+        }         
+		cost = 5
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_execute_plan
+        icon = GFX_goal_generic_territory_or_war
+        x = 12
+        y = 8
+		
+        prerequisite = {focus = GER_utilize_the_netherlands focus = GER_war_with_holland}
+        completion_reward = {
+        create_wargoal = {
+        type = puppet_wargoal_focus
+        target = BEL
+        }
+        create_wargoal = {
+        type = puppet_wargoal_focus
+        target = FRA
+        }
+        create_wargoal = {
+        type = puppet_wargoal_focus
+        target = LUX
+        }
+        add_threat = 20
         }         
 		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }

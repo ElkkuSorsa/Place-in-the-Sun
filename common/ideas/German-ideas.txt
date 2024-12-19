@@ -40,4 +40,30 @@ ideas = {
    army_speed_factor = 0.05 
    }
    }}
-}
+   country = {
+   staff_in_austria = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   army_org_factor = 0.05
+   experience_gain_army_factor = 0.15 
+   }
+   }}
+   country = {
+   eastern_operations = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   conscription_factor = 0.05
+   army_speed_factor = 0.15
+   attack_bonus_against = 0.1
+   defence_bonus_against = 0.1
+   }
+   }}
+   communist_revolts = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   stability_weekly = -0.02
+   army_org_factor = -0.05
+   communism_drift = 0.05
+   }
+   }}
+
