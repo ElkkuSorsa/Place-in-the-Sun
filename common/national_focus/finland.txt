@@ -96,8 +96,18 @@ focus_tree = {
         y = 5
 		
         completion_reward = {}
-        prerequisite = {focus = FIN_bring_the_jagers focus = FIN_utilize_russian_equipment
-        focus = FIN_request_german_support}         
+        prerequisite = {focus = FIN_proclaim_victory}         
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = FIN_industrial_efforts
+        icon = GFX_focus_EST_national_pride_in_finland
+        x = 15
+        y = 1
+		
+        completion_reward = {}         
 		cost = 5
         search_filters = { FOCUS_FILTER_HISTORICAL }
 
