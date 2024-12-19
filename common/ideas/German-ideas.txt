@@ -8,6 +8,7 @@ ideas = {
    army_org_factor = 0.05
    }
    }}
+
    country = {
    foreign_policy_effort = {
    picture = generic_flexible_foreign_policy2
@@ -20,6 +21,7 @@ ideas = {
    guarantee_tension = -0.35 
    }
    }}
+
    country = {
    naval_buildup = {
    picture = generic_flexible_foreign_policy2
@@ -31,6 +33,7 @@ ideas = {
    political_power_factor = -0.1 
    }
    }}
+
    country = {
    plan_west = {
    picture = generic_flexible_foreign_policy2
@@ -40,6 +43,7 @@ ideas = {
    army_speed_factor = 0.05 
    }
    }}
+
    country = {
    staff_in_austria = {
    picture = generic_flexible_foreign_policy2
@@ -48,16 +52,18 @@ ideas = {
    experience_gain_army_factor = 0.15 
    }
    }}
+
    country = {
    eastern_operations = {
    picture = generic_flexible_foreign_policy2
    modifier = {
    conscription_factor = 0.05
    army_speed_factor = 0.15
-   attack_bonus_against = 0.1
-   defence_bonus_against = 0.1
+   SOV_attack_bonus_against = 0.1}
    }
    }}
+
+   country = {
    communist_revolts = {
    picture = generic_flexible_foreign_policy2
    modifier = {
@@ -66,4 +72,13 @@ ideas = {
    communism_drift = 0.05
    }
    }}
+   
+   country = {
+   shclieffen_plan = {
+   picture = generic_flexible_foreign_policy2
+   modifier = {
+   army_speed_factor = 0.15
+   }
+   }}
+}
 
