@@ -153,7 +153,7 @@ focus_tree = {
 		y = 8
 		prerequisite = { focus = ENG_women_suffrage }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			news_event = {
@@ -161,6 +161,19 @@ focus_tree = {
 				days = 3
 			}
 			set_cosmetic_tag = ENG_republic
+		}
+	}
+
+	focus = {
+		id = ENG_presidental_elections
+		icon = GFX_focus_generic_universal_suffrage
+		x = 32
+		y = 9
+		prerequisite = { focus = ENG_republican_movement }
+
+		cost = 5
+
+		completion_reward = {
 		}
 	}
 
@@ -175,6 +188,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			
 		}
 	}
 
@@ -335,10 +349,10 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_liberal_reforms }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
-			add_stability = 0.05
+			add_ideas = ENG_poor_laws
 		}
 	}
 
@@ -352,7 +366,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = 0.05
+			add_timed_idea = {
+				days = 90
+				idea = ENG_healthcare_reform
+			}
 		}
 	}
 
@@ -367,7 +384,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -395,7 +415,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = ENG_house_of_lords
+				add_idea = ENG_house_of_lords_2
+			}
 		}
 	}
 
@@ -409,7 +432,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = 0.05
+			add_timed_idea = {
+				days = 120
+				idea = ENG_healthcare_reform
+			}
 		}
 	}
 
@@ -521,6 +547,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			add_ideas = ENG_irish_occupation
 		}
 	}
 
@@ -537,6 +564,9 @@ focus_tree = {
 			}
 		}
 
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
 
 		cost = 5
 
@@ -584,8 +614,9 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			FRA = {
+				add_to_faction = ENG
+			}
 		}
 	}
 
@@ -599,8 +630,11 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			country_event = {
+				set_variable = { }
+				id = entente_conf.1
+				days = 1
+			}
 		}
 	}
 
@@ -661,9 +695,18 @@ focus_tree = {
 
 		cost = 10
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Conference voted to invite Portugal"
+				has_global_flag = portugal_inclusion
+			}
+		}
+
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			country_event = {
+				id = portugal_england.1
+				days = 3
+			}
 		}
 	}
 
@@ -692,8 +735,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ETH
+			}
 		}
 	}
 
@@ -816,8 +861,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -829,6 +873,10 @@ focus_tree = {
 		prerequisite = { focus = ENG_churchill }
 
 		cost = 20
+
+		allow_branch = {
+			has_completed_focus = ENG_churchill
+		}
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1186,7 +1234,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = ENG_hand_over_to_king }
 
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -1260,7 +1308,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = ENG_under_control_ireland focus = ENG_crown_of_ireland }
 
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -1334,7 +1382,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -1361,6 +1409,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_house_of_lords_2
+				remove_idea = ENG_house_of_lords
+			}
 			add_timed_idea = {
 				idea = ENG_empowered_local_nobility
 				days = 365
@@ -1413,7 +1465,7 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = ENG_anglo_german_naval_treaty }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -1553,7 +1605,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_appoint_leader }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_stability = -0.15
@@ -1657,6 +1709,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			remove_ideas = ENG_two_power_standard
 			leave_faction = yes
 			create_faction = "British Alliance"
 		}
@@ -1670,7 +1723,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_abandon_two_power_standard }
 		mutually_exclusive = { focus = ENG_romanov_alliance }
 
-		cost = 5
+		cost = 10
 
 		available = {
 			is_faction_leader = yes
@@ -1689,7 +1742,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_abandon_two_power_standard }
 		mutually_exclusive = { focus = ENG_britain_leads }
 
-		cost = 5
+		cost = 10
 
 		bypass = {
 			OR = {
