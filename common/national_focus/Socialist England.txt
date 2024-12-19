@@ -148,7 +148,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_declare_socialist_republic
+		id = ENG_declare_union_of_britain
 
 		prerequisite = { focus = ENG_end_to_revolution focus = ENG_radical_socialism }
 
@@ -156,7 +156,7 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
-			
+			set_cosmetic_tag = ENG_communism
 		}
 	}
 
