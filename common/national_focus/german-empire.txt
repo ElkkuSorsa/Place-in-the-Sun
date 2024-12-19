@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = GER_Weltpolitik
         icon = GFX_focus_ger_revive_kaiserreich
-        x = 18
+        x = 25
         y = 1
 		
         completion_reward = { add_political_power = 25
@@ -27,7 +27,7 @@ focus_tree = {
     focus = {
         id = GER_foreign_policy
         icon = GFX_goal_generic_dangerous_deal
-        x = 13
+        x = 20
         y = 2
 		
         prerequisite = {focus = GER_Weltpolitik}
@@ -41,7 +41,7 @@ focus_tree = {
     focus = {
         id = GER_general_staff
         icon = GFX_goal_generic_army_doctrines
-        x = 22
+        x = 32
         y = 2
 		
         prerequisite = {focus = GER_Weltpolitik}
@@ -54,7 +54,7 @@ focus_tree = {
     focus = {
         id = GER_maintain_austrian_alliance
         icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-        x = 15
+        x = 24
         y = 3
 		
         prerequisite = {focus = GER_foreign_policy}
@@ -70,7 +70,7 @@ focus_tree = {
     focus = {
         id = GER_greater_german_ambition
         icon = GFX_goal_generic_major_war
-        x = 9
+        x = 16
         y = 3
 		
         prerequisite = {focus = GER_foreign_policy}
@@ -91,7 +91,7 @@ focus_tree = {
     focus = {
         id = GER_ramp_up_naval_production
         icon = GFX_focus_generic_north_atlantic_fleet
-        x = 14
+        x = 22
         y = 4
 		
         prerequisite = {focus = GER_greater_german_ambition focus = GER_maintain_austrian_alliance}
@@ -122,7 +122,7 @@ focus_tree = {
     focus = {
         id = GER_anglo_german_agreement
         icon = GFX_focus_chi_british_cooperation
-        x = 10
+        x = 17
         y = 4
 		
         prerequisite = {focus = GER_greater_german_ambition focus = GER_maintain_austrian_alliance}
@@ -136,7 +136,7 @@ focus_tree = {
     focus = {
         id = GER_war_with_austria
         icon = GFX_focus_generic_total_war
-        x = 7
+        x = 14
         y = 4
 		
         prerequisite = {focus = GER_greater_german_ambition}
@@ -150,7 +150,7 @@ focus_tree = {
     focus = {
         id = GER_staff_in_austria
         icon = GFX_focus_GER_appease_the_wehrmacht
-        x = 16
+        x = 24
         y = 4
 		
         prerequisite = {focus = GER_maintain_austrian_alliance}
@@ -163,7 +163,7 @@ focus_tree = {
     focus = {
         id = GER_claims_on_italy
         icon = GFX_focus_attack_italy
-        x = 8
+        x = 15
         y = 5
 		
         prerequisite = {focus = GER_war_with_austria}
@@ -180,7 +180,7 @@ focus_tree = {
     focus = {
         id = GER_war_with_italy
         icon = GFX_focus_attack_italy
-        x = 8
+        x = 15
         y = 6
 		
         prerequisite = {focus = GER_claims_on_italy}
@@ -194,7 +194,7 @@ focus_tree = {
     focus = {
         id = GER_alliance_with_italy
         icon = GFX_focus_befriend_italy
-        x = 5
+        x = 12
         y = 5
 		
         prerequisite = {focus = GER_war_with_austria}
@@ -210,7 +210,7 @@ focus_tree = {
     focus = {
         id = GER_alliance_with_britain
         icon = GFX_focus_chi_british_cooperation
-        x = 10
+        x = 17
         y = 5
 		
         prerequisite = { focus = GER_anglo_german_agreement }
@@ -224,7 +224,7 @@ focus_tree = {
     focus = {
         id = GER_claim_mittelafrika
         icon = GFX_focus_GER_realize_mittelafrika
-        x = 14
+        x = 22
         y = 5
 		
         prerequisite = {focus = GER_ramp_up_naval_production}
@@ -238,7 +238,7 @@ focus_tree = {
     focus = {
         id = GER_western_plans
         icon = GFX_focus_GER_western_grand_duchies
-        x = 12
+        x = 20
         y = 6
 		
         prerequisite = {focus = GER_ramp_up_naval_production
@@ -254,7 +254,7 @@ focus_tree = {
     focus = {
         id = GER_war_with_holland
         icon = GFX_focus_hol_oranje_boven
-        x = 10
+        x = 17
         y = 7
 		
         mutually_exclusive = {focus = GER_utilize_the_netherlands}
@@ -269,7 +269,7 @@ focus_tree = {
     focus = {
         id = GER_utilize_the_netherlands
         icon = GFX_focus_hol_gateway_to_europe
-        x = 14
+        x = 22
         y = 7
 		
         mutually_exclusive = {focus = GER_war_with_holland}
@@ -284,7 +284,7 @@ focus_tree = {
     focus = {
         id = GER_eastern_expansion
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 16
+        x = 24
         y = 5
 		available = { threat > 0.2} 
         prerequisite = {focus = GER_staff_in_austria}
@@ -308,7 +308,7 @@ focus_tree = {
     focus = {
         id = GER_stir_up_russian_communists
         icon = GFX_focus_AUS_union_of_danubian_socialist_republics
-        x = 17
+        x = 25
         y = 6
 		
         prerequisite = {focus = GER_eastern_expansion}
@@ -322,7 +322,7 @@ focus_tree = {
     focus = {
         id = GER_polish_kingdom
         icon = GFX_focus_generic_polish_deal
-        x = 15
+        x = 23
         y = 6
 		
         prerequisite = {focus = GER_eastern_expansion}
@@ -336,7 +336,7 @@ focus_tree = {
     focus = {
         id = GER_secure_finland
         icon = GFX_focus_generic_fortify_finland
-        x = 17
+        x = 25
         y = 7
 		
         prerequisite = {focus = GER_stir_up_russian_communists}
@@ -350,7 +350,7 @@ focus_tree = {
     focus = {
         id = GER_execute_plan
         icon = GFX_goal_generic_territory_or_war
-        x = 12
+        x = 20
         y = 8
 		
         prerequisite = {focus = GER_utilize_the_netherlands focus = GER_war_with_holland}
@@ -371,6 +371,20 @@ focus_tree = {
         } 
         available = { threat > 0.35}       
 		cost = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+
+    }
+    focus = {
+        id = GER_integrate_western_lands
+        icon = GFX_focus_generic_fortify_finland
+        x = 21
+        y = 9
+		
+        prerequisite = {focus = GER_execute_plan}
+        completion_reward = {
+        add_state_core = 8
+        }         
+		cost = 5
         search_filters = { FOCUS_FILTER_POLITICAL }
 
     }
