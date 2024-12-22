@@ -1,5 +1,26 @@
 ideas = {
 	country = {
+		ENG_royal_opposition = {
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		ENG_royal_veto = {
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ENG_royal_appeasement = {
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
 		ENG_supported_entreprenourship = {
 			modifier = {
 				consumer_goods_factor = -0.15
