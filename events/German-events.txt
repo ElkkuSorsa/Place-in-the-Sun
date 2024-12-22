@@ -1,18 +1,18 @@
-add_namespace = german_elections
+add_namespace = leadership_question
 
 country_event = {
-    id = german_elections.1
-    title = "German Elections"
+    id = leadership_question.1
+    title = "Question_of_leadership"
     desc = my_event.1.desc
     
     is_triggered_only = yes
     
     option = {
-        name = "Social Democrats"
-        unlock_national_focus = GER_SPD 
+        name = "The OHL shall take control for the duration of the war."
+        unlock_national_focus = GER_OHL
     }
      option = {
-        name = "Zentrum"
-        unlock_national_focus = GER_zentrum 
+        name = "The Kaiser will continue his rule."
+        unlock_national_focus = GER_kaiser 
     }
 }
