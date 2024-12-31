@@ -1,0 +1,99 @@
+focus_tree = {
+    id = RUS_focus_tree
+    country = {
+        factor = 11
+
+        modifier = {
+            add = 50
+            tag = RUS
+        }
+    }
+
+    default = no
+    focus = {
+        id = RUS_conservative_duma
+        icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+        x = 25
+        y = 1
+		
+        completion_reward = {
+        add_political_power = 50
+        add_stability = 0.1 }         
+	    cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = RUS_continue_stolyipin_reform
+        icon = GFX_focus_generic_economic_recovery
+        x = 22
+        y = 2
+		prerequisite = {focus = RUS_conservative_duma}
+        completion_reward = {
+        add_ideas = stolypin_reform}         
+	    cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = RUS_supress_marxists
+        icon = GFX_focus_generic_economic_recovery
+        x = 28
+        y = 2
+		prerequisite = {focus = RUS_conservative_duma}
+        completion_reward = {
+        add_popularity = {
+	    ideology = communism
+	    popularity = -0.1
+        }
+        add_stability = 0.05
+        add_ideas = supress_marxists
+        }         
+	    cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = RUS_land_reforms
+        icon = GFX_focus_generic_economic_recovery
+        x = 20
+        y = 3
+		prerequisite = {focus = RUS_continue_stolyipin_reform}
+        completion_reward = {}
+                 
+	    cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = RUS_privatization
+        icon = GFX_focus_generic_economic_recovery
+        x = 24
+        y = 3
+		prerequisite = {focus = RUS_continue_stolyipin_reform}
+        completion_reward = {}
+                 
+	    cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+    focus = {
+        id = RUS_control_duma
+        icon = GFX_focus_generic_economic_recovery
+        x = 26
+        y = 3
+		prerequisite = {focus = RUS_supress_marxists}
+        completion_reward = {
+        add_popularity = {
+	    ideology = neutrality
+	    popularity = 0.1
+        }
+        add_political_power = 25
+        
+        }
+                 
+	    cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+}
