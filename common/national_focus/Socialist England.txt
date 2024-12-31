@@ -317,4 +317,64 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ENG_start_socialist_programs
+
+		x = 23
+		y = 0
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The office of the president or the chairman has been established"
+				OR = {
+					has_completed_focus = ENG_establish_presidental_office
+					has_completed_focus = ENG_chairman_of_britain
+				}
+			}
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_minimum_wages
+
+		prerequisite = { focus = ENG_start_socialist_programs }
+
+		x = 23
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_national_pension_program
+
+		prerequisite = { focus = ENG_start_socialist_programs }
+
+		x = 21
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_better_working_conditions
+
+		prerequisite = { focus = ENG_start_socialist_programs }
+
+		x = 25
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+
 }
