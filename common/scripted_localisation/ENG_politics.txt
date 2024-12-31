@@ -1,0 +1,33 @@
+defined_text = {
+	name = ENG_parties
+	text = {
+		trigger = {
+			has_country_flag = ENG_lib_his
+		}
+		localization_key = ENG_parties.1
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_lib_soc
+		}
+		localization_key = ENG_parties.2
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_soc
+		}
+		localization_key = ENG_parties.3
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_lib_con
+		}
+		localization_key = ENG_parties.4
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_con
+		}
+		localization_key = ENG_parties.5
+	}
+}

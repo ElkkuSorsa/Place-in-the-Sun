@@ -105,3 +105,49 @@ march_for_change = {
 		}
 	}
 }
+
+ENG_politics = {
+	grand_coalition = {
+		available = {
+			always = yes
+		#	has_country_flag = ENG_instability
+		}
+
+		fire_only_once = yes
+		is_good = yes
+		
+		complete_effect = {
+			set_variable = { libseats = 30 }
+			create_country_leader = {
+				name = "David Lloyd George"
+				picture = "portrait_eng_fallen_government.dds"
+				ideology = liberal
+			}
+			news_event = {
+				id = pinstability.1
+				days = 3
+			}
+		}
+	}
+	resign_asquith = {
+		available = {
+			always = yes
+		#	has_country_flag = ENG_instability
+		}
+
+		fire_only_once = yes
+		is_good = yes
+		
+		complete_effect = {
+			create_country_leader = {
+				name = "David Lloyd George"
+				picture = "portrait_eng_fallen_government.dds"
+				ideology = liberal
+			}
+			news_event = {
+				id = pinstability.1
+				days = 3
+			}
+		}
+	}
+}
