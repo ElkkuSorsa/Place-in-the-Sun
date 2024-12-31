@@ -23,6 +23,8 @@ add_ideas = {
 
 #Politics for 1936.1.1
 set_cosmetic_tag = ENG_democratic
+set_country_flag = ENG_lib_his
+set_variable = { libseats = 30 }
 
 set_autonomy = {
 	target = FIN 

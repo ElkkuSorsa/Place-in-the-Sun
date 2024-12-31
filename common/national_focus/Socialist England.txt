@@ -141,6 +141,74 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_establish_secret_police
+
+		prerequisite = { focus = ENG_radical_socialism }
+
+		x = 10
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_crack_down_on_resistance
+
+		prerequisite = { focus = ENG_establish_secret_police }
+		prerequisite = { focus = ENG_declare_union_of_britain }
+
+		x = 9
+		y = 4
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_comissariat_revolution
+
+		prerequisite = { focus = ENG_establish_secret_police }
+		prerequisite = { focus = ENG_declare_union_of_britain }
+
+		x = 11
+		y = 4
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_reform_the_party
+
+		prerequisite = { focus = ENG_crack_down_on_resistance }
+		prerequisite = { focus = ENG_comissariat_revolution }
+
+		x = 10
+		y = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_chairman_of_britain
+
+		prerequisite = { focus = ENG_reform_the_party }
+
+		x = 10
+		y = 6
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = ENG_end_to_revolution
 
 		prerequisite = { focus = ENG_trade_union_conference }
@@ -155,15 +223,157 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_reconvene_parliament
+
+		prerequisite = { focus = ENG_end_to_revolution }
+
+		x = 4
+		y = 3
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_limited_democracy
+
+		prerequisite = { focus = ENG_reconvene_parliament }
+		mutually_exclusive = { focus = ENG_socialist_democracy }
+
+		x = 4
+		y = 4
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_allow_parties
+
+		prerequisite = { focus = ENG_limited_democracy focus = ENG_socialist_democracy }
+		mutually_exclusive = { focus = ENG_one_party_state }
+
+		x = 4
+		y = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_socialist_democracy
+
+		prerequisite = { focus = ENG_reconvene_parliament }
+		mutually_exclusive = { focus = ENG_limited_democracy }
+
+		x = 2
+		y = 4
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_one_party_state
+
+		prerequisite = { focus = ENG_socialist_democracy }
+		mutually_exclusive = { focus = ENG_allow_parties }
+
+		x = 2
+		y = 5
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_establish_presidental_office
+
+		prerequisite = { focus = ENG_one_party_state focus = ENG_allow_parties }
+
+		x = 3
+		y = 6
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = ENG_declare_union_of_britain
 
-		prerequisite = { focus = ENG_end_to_revolution focus = ENG_radical_socialism }
+		prerequisite = { focus = ENG_radical_socialism }
 
-		x = 7
+		x = 8
 		y = 3
 
 		completion_reward = {
 			set_cosmetic_tag = ENG_communism
+		}
+	}
+
+	focus = {
+		id = ENG_start_socialist_programs
+
+		x = 23
+		y = 0
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The office of the president or the chairman has been established"
+				OR = {
+					has_completed_focus = ENG_establish_presidental_office
+					has_completed_focus = ENG_chairman_of_britain
+				}
+			}
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_minimum_wages
+
+		prerequisite = { focus = ENG_start_socialist_programs }
+
+		x = 23
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_national_pension_program
+
+		prerequisite = { focus = ENG_start_socialist_programs }
+
+		x = 21
+		y = 1
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_better_working_conditions
+
+		prerequisite = { focus = ENG_start_socialist_programs }
+
+		x = 25
+		y = 1
+
+		completion_reward = {
+
 		}
 	}
 

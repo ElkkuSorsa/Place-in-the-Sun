@@ -1,0 +1,9 @@
+﻿l_english:
+ ENG_politics:0 "British Politics"
+ ENG_politics_desc:0 "The United Kingdom is known for it's rich and stable politics, dominated by the Whigs for over a century. But now, in the 1910s, the Liberal party is struggling to form majority governments, how will the situation evolve? \n\n\nParliament [?govseats]/336 needed for majority\n[ENG_parties]"
+
+ ENG_parties.1:0 "Government:\nLiberal party [?libseats]\nIrish National Movement\nLabour Party\n"
+ ENG_parties.2:0 "Government:\nLiberal party [?libseats]\nBritish Workers' Union\n"
+ ENG_parties.3:0 "Government:\nBritish Communist Party\n"
+ ENG_parties.4:0 "Government:\nLiberal party [?libseats]\nConservative Party\nIrish National Movement\nLabour Party\n"
+ ENG_parties.5:0 "Government:\nConservative Party [?conseats]\n"

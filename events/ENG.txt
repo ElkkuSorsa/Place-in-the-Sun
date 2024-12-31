@@ -411,3 +411,18 @@ country_event = {
 		complete_national_focus = ENG_constitutionalism
 	}
 }
+
+add_namespace = pinstability
+news_event = {
+	id = pinstability.1
+	title = "Herbert Henry Asquith Resign"
+	desc = "The political chaos in the United Kingdom has led to the unpopular prime minister's resignation in favor of David Lloyd George."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "Troublesome..."
+	}
+}
