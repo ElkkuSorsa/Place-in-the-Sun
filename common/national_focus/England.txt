@@ -1701,11 +1701,11 @@ focus_tree = {
 	focus = {
 		id = ENG_dissolve_parliament
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		x = 22
-		y = 7
-		prerequisite = { focus = ENG_war_budget }
+		x = 23
+		y = 8
+		prerequisite = { focus = ENG_expand_conscription focus = ENG_purge_the_government }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			remove_ideas = ENG_british_politics_dem
