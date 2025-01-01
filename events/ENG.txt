@@ -101,7 +101,7 @@ country_event = {
 country_event = {
 	id = march_change.4
 	title = "German Officers Offer Their Service"
-	desc = "A German Divison was formed after couple thousand German soldiers sympathic to our cause arriaved in Cardiff."
+	desc = "A German Divison was formed after couple thousand German soldiers sympathic to our cause arriaved in Cardiff. These soldiers want to offer their services in our civil war. We just need to decide if we want to promote one of them as officer."
 
 	fire_only_once = yes
 
@@ -126,7 +126,7 @@ country_event = {
 country_event = {
 	id = march_change.5
 	title = "Leadership of Military Government"
-	desc = "Without a strong and charismatic leader, we have been very unpopular among the people. Now it's time for us to select a supreme leader!"
+	desc = "Without a strong and charismatic leader, we have been very unpopular among the people, because of our radical nationalist politics. Our economy is in ruins after the civil war and everyone are very unhappy. Now it's time for us to select a supreme leader!"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -163,7 +163,7 @@ add_namespace = ireland
 country_event = {
 	id = ireland.1
 	title = "The Emerald Isle"
-	desc = "The Irish Separatist Movement has gained popularity throughout the isle, and our control over the island is weakning. We must find a long-term solution to our problem."
+	desc = "The Irish Separatist Movement has gained popularity throughout the isle, and our control over the island is weakning. We must find a long-term solution to our problem. We must safeguard the interests of the crown and British people!"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -191,7 +191,7 @@ add_namespace = elections
 country_event = {
 	id = elections.1
 	title = "Elections of 1910"
-	desc = "We live in dark times. The next government may even experience a major war in Europe. We must choose wisely!"
+	desc = "We live in dark times. The next government may even experience a major war in Europe. We must choose wisely, otherwise our nation may not survive the coming storm!"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -218,7 +218,7 @@ country_event = {
 country_event = {
 	id = elections.2
 	title = "Liberal Victory"
-	desc = "The people have voted! Currently it is clear that the Liberals won, but did they win by majority?"
+	desc = "The people have voted! Currently it is clear that the Liberals won, but did they win by majority? If not, they may need to make some concessions to smaller parties in order to guarantee their support for our righteous government."
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -248,7 +248,7 @@ add_namespace = communist_britain
 news_event = {
 	id = communist_britain.1
 	title = "British Revolution"
-	desc = "Shortly after the Socialists took over the government and ousted the Liberal ministers, they have now declared the Republic of Great Britain!"
+	desc = "Shortly after the Socialists took over the government and ousted the Liberal ministers of the normally politically stable British Government, they have now declared the Republic of Great Britain! This is a highly unexpected, as the UK is generally very stable with it's politics."
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -293,7 +293,7 @@ add_namespace = morocco_guarantee
 country_event = {
 	id = morocco_guarantee.1
 	title = "British Offer Guarantees for Morocco"
-	desc = "We have been sent an offer to give up Morocco for the British Empire in exchange of Entente membership. How shall we respond?"
+	desc = "We have been sent an offer to give up Morocco for the British Empire in exchange of Entente membership. How shall we respond to their offer?"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -307,6 +307,7 @@ country_event = {
 
 		hidden_effect = {
 			ENG = {
+				give_guarantee = SPA
 				complete_national_focus = ENG_stabilize_spain
 			}
 		}

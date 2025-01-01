@@ -153,5 +153,22 @@ ideas = {
 				communism_drift = 0.03
 			}
 		}
+
+		ENG_british_politics_dem = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.15
+			}
+		}
+
+		ENG_british_politics_aut = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = -0.1
+				war_support_factor = 0.05
+			}
+		}
 	}
 }
