@@ -10,3 +10,7 @@ ENG_politics = {
     visible_when_empty = yes
     scripted_gui = ENG_parliament
 }
+
+ENG_march_for_change = {
+    
+}

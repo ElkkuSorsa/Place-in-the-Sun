@@ -1165,7 +1165,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_march_for_change
+			add_ideas = ENG_march_for_change_idea
 		}
 	}
 

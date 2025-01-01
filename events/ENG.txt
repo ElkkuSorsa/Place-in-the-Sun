@@ -22,7 +22,7 @@ country_event = {
 			ideology = liberalism
 			traits = { cabinet_crisis }
 		}
-		remove_ideas = march_for_change
+		remove_ideas = ENG_march_for_change_idea
 		hidden_effect  = {
 			country_event = {
 				id = march_change.2

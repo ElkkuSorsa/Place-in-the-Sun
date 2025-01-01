@@ -1,4 +1,4 @@
-march_for_change = {
+ENG_march_for_change = {
 	ENG_change_ireland = {
 		icon = eng_blackshirt_march
 
@@ -117,16 +117,10 @@ ENG_politics = {
 		is_good = yes
 		
 		complete_effect = {
-			set_variable = { libseats = 30 }
-			create_country_leader = {
-				name = "David Lloyd George"
-				picture = "portrait_eng_fallen_government.dds"
-				ideology = liberal
-			}
-			news_event = {
-				id = pinstability.1
-				days = 3
-			}
+			custom_effect_tooltip = ENG_con_join_gov
+			clr_country_flag = ENG_lib_his
+			set_country_flag = ENG_lib_con
+			ENG_calc_gov = yes
 		}
 	}
 	resign_asquith = {
