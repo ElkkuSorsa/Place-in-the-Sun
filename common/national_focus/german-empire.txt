@@ -478,6 +478,16 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_HISTORICAL }
 
     }
+    focus = {
+        id = GER_prioritize_war_production
+        icon = GFX_goal_generic_army_doctrines
+        x = 27
+        y = 7
+        prerequisite = {focus = GER_OHL}        
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
 
 
 }

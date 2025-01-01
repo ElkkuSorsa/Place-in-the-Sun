@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		stolypin_reform = {
+			modifier = {
+            production_speed_buildings_factor = 0.1
+            consumer_goods_factor = -0.15
+            stability_factor = -0.05
+			}
+		}
+    }
+    country = {
+		supress_marxists = {
+			modifier = {
+            communism_drift = -0.03
+			}
+		}
+    }
+    country = {
+		controlling_duma = {
+			modifier = {
+            political_power_factor = 0.15
+            consumer_goods_factor = 0.1
+			}
+		}
+    }
+
+}
