@@ -5,7 +5,7 @@ focus_tree = {
 
         modifier = {
             add = 50
-            tag = RUS
+            tag = SOV
         }
     }
 
@@ -678,6 +678,23 @@ focus = {
     swap_ideas = { 
     remove_idea = outdated_army 
     add_idea = outdated_army2 
+    }
+    }
+    }
+focus = {
+    id = RUS_modernize_equipment
+    icon = GFX_focus_generic_industry_3
+    x = 28
+    y = 2
+    prerequisite = {focus = RUS_army}
+    cost = 5
+    completion_reward = {
+    army_experience = 10
+    add_tech_bonus = {
+	name = infantry_bonus
+	bonus = 1
+	uses = 2
+	category = infantry_equipment
     }
     }
     }
