@@ -10,90 +10,675 @@ focus_tree = {
     }
 
     default = no
-    focus = {
-        id = RUS_conservative_duma
-        icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
-        x = 25
-        y = 1
-		
-        completion_reward = {
-        add_political_power = 50
-        add_stability = 0.1 }         
-	    cost = 5
-        search_filters = { FOCUS_FILTER_HISTORICAL }
+    
+focus = {
+    id = RUS_industrialization
+    icon = GFX_focus_generic_industry_3
+    x = 8
+    y = 0
+    cost = 10
+    completion_reward = {
+    219 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    192 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_seek_investments
+    icon = GFX_focus_generic_industry_3
+    x = 5
+    y = 1
+    cost = 5
+    prerequisite = {focus = RUS_industrialization}
+    completion_reward = {
+    add_political_power = 25
+    custom_tooltip = "Unlocks decisions to seek investments from foreign powers! "
+    }
+    }
+focus = {
+    id = RUS_take_loans
+    icon = GFX_focus_generic_industry_3
+    x = 3
+    y = 2
+    cost = 10
+    prerequisite = {focus = RUS_seek_investments}
+    completion_reward = {
+    241 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    add_building_construction = {
+	type = infrastructure
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+    add_timed_idea = { idea = industrial_loans  days = 365 }
+    }
+    }
+focus = {
+    id = RUS_invite_foreign_experts
+    icon = GFX_focus_generic_industry_3
+    x = 9
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_seek_investments}
+    completion_reward = {
+    add_research_slot = 1
+    add_ideas = foreign_researchers
+    }
+    }
+focus = {
+    id = RUS_relax_trade_policy
+    icon = GFX_focus_generic_industry_3
+    x = 7
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_seek_investments}
+    completion_reward = {
+    add_ideas = free_trade
+    add_stability = 0.1
+    241 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+}
+focus = {
+    id = RUS_french_capital
+    icon = GFX_focus_generic_industry_3
+    x = 1
+    y = 3
+    cost = 5
+    prerequisite = {focus = RUS_take_loans}
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+    target = FRA
+    modifier = large_increase
+    }
+    add_political_power = 25
+    241 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+}
+focus = {
+    id = RUS_british_capital
+    icon = GFX_focus_generic_industry_3
+    x = 3
+    y = 3
+    cost = 5
+    prerequisite = {focus = RUS_take_loans}
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+    target = ENG
+    modifier = large_increase
+    }
+    add_political_power = 25
+    241 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+}
+focus = {
+    id = RUS_german_capital
+    icon = GFX_focus_generic_industry_3
+    x = 5
+    y = 3
+    cost = 5
+    prerequisite = {focus = RUS_take_loans}
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+    target = GER
+    modifier = large_increase
+    }
+    add_political_power = 25
+    241 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+}
+focus = {
+    id = RUS_modernize_trade
+    icon = GFX_focus_generic_industry_3
+    x = 8
+    y = 4
+    cost = 10
+    prerequisite = {focus = RUS_relax_trade_policy}
+    prerequisite = {focus = RUS_invite_foreign_experts}
+
+    completion_reward = {
+    add_political_power = 50
 
     }
-    focus = {
-        id = RUS_continue_stolyipin_reform
-        icon = GFX_focus_generic_economic_recovery
-        x = 22
-        y = 2
-		prerequisite = {focus = RUS_conservative_duma}
-        completion_reward = {
-        add_ideas = stolypin_reform}         
-	    cost = 5
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-
+}
+focus = {
+    id = RUS_national_industrialization
+    icon = GFX_focus_generic_industry_3
+    x = 14
+    y = 1
+    cost = 5
+    prerequisite = {focus = RUS_industrialization}
+    completion_reward = {
+    add_ideas = stolypin_reform
     }
-    focus = {
-        id = RUS_supress_marxists
-        icon = GFX_focus_generic_economic_recovery
-        x = 28
-        y = 2
-		prerequisite = {focus = RUS_conservative_duma}
-        completion_reward = {
-        add_popularity = {
-	    ideology = communism
-	    popularity = -0.1
-        }
-        add_stability = 0.05
-        add_ideas = supress_marxists
-        }         
-	    cost = 10
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-
     }
-    focus = {
-        id = RUS_land_reforms
-        icon = GFX_focus_generic_economic_recovery
-        x = 20
-        y = 3
-		prerequisite = {focus = RUS_continue_stolyipin_reform}
-        completion_reward = {}
-                 
-	    cost = 5
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-
+focus = {
+    id = RUS_far_east
+    icon = GFX_focus_generic_industry_3
+    x = 19
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_national_industrialization}
+    completion_reward = {
+    566 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
     }
-    focus = {
-        id = RUS_privatization
-        icon = GFX_focus_generic_economic_recovery
-        x = 24
-        y = 3
-		prerequisite = {focus = RUS_continue_stolyipin_reform}
-        completion_reward = {}
-                 
-	    cost = 5
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-
     }
-    focus = {
-        id = RUS_control_duma
-        icon = GFX_focus_generic_economic_recovery
-        x = 26
-        y = 3
-		prerequisite = {focus = RUS_supress_marxists}
-        completion_reward = {
-        add_popularity = {
-	    ideology = neutrality
-	    popularity = 0.1
-        }
-        add_political_power = 25
-        
-        }
-                 
-	    cost = 5
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-
+    563 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    408 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    655 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_central_asia
+    icon = GFX_focus_generic_industry_3
+    x = 17
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_national_industrialization}
+    completion_reward = {
+    586 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    830 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    406 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    831 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_north
+    icon = GFX_focus_generic_industry_3
+    x = 15
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_national_industrialization}
+    completion_reward = {
+    214 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    215 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    216 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    213 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_caucasus
+    icon = GFX_focus_generic_industry_3
+    x = 13
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_national_industrialization}
+    completion_reward = {
+    231 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    230 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    229 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    821 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_urban_modernization
+    icon = GFX_focus_generic_industry_3
+    x = 11
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_national_industrialization}
+    completion_reward = {
+    202 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    217 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    195 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    206 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_far_east_factories
+    icon = GFX_focus_generic_industry_3
+    x = 19
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_far_east}
+    completion_reward = {
+    566 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    563 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_central_asia_factories
+    icon = GFX_focus_generic_industry_3
+    x = 17
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_central_asia}
+    completion_reward = {
+    586 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    830 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_north_factories
+    icon = GFX_focus_generic_industry_3
+    x = 15
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_north}
+    completion_reward = {
+    213 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    214 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_caucasus_factories
+    icon = GFX_focus_generic_industry_3
+    x = 13
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_caucasus}
+    completion_reward = {
+    231 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    230 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_urban_factories
+    icon = GFX_focus_generic_industry_3
+    x = 11
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_urban_modernization}
+    completion_reward = {
+    202 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    217 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_rapid_industrialization
+    icon = GFX_focus_generic_industry_3
+    x = 14
+    y = 4
+    cost = 5
+    mutually_exclusive = {focus = RUS_slow_reforms}
+    prerequisite = {focus = RUS_urban_factories}
+    prerequisite = {focus = RUS_caucasus_factories}
+    prerequisite = {focus = RUS_north_factories}
+    prerequisite = {focus = RUS_central_asia_factories}
+    prerequisite = {focus = RUS_far_east_factories}
+    completion_reward = {
+    add_stability = -0.1
+    202 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_slow_reforms
+    icon = GFX_focus_generic_industry_3
+    x = 16
+    y = 4
+    cost = 5
+    mutually_exclusive = {focus = RUS_rapid_industrialization}
+    prerequisite = {focus = RUS_urban_factories}
+    prerequisite = {focus = RUS_caucasus_factories}
+    prerequisite = {focus = RUS_north_factories}
+    prerequisite = {focus = RUS_central_asia_factories}
+    prerequisite = {focus = RUS_far_east_factories}
+    completion_reward = {
+    add_timed_idea = { idea = agrarian_reform  days = 365 }
+    }
+    }
+focus = {
+    id = RUS_complete_industrialization
+    icon = GFX_focus_generic_industry_3
+    x = 15
+    y = 5
+    cost = 5
+    prerequisite = {focus = RUS_rapid_industrialization focus = RUS_slow_reforms}
+    completion_reward = {
+    remove_ideas = outdated_industry
+    }
+    }
+focus = {
+    id = RUS_military_industry
+    icon = GFX_focus_generic_industry_3
+    x = 22
+    y = 2
+    cost = 10
+    prerequisite = {focus = RUS_national_industrialization}
+    completion_reward = {
+    217 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+    }
+    }
+    219 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_tula_arms_plant
+    icon = GFX_focus_generic_industry_3
+    x = 21
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_military_industry}
+    completion_reward = {
+    223 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+	type = arms_factory
+	level = 3
+	instant_build = yes
+    }
+    }
+    }
+    }
+focus = {
+    id = RUS_military_factories
+    icon = GFX_focus_generic_industry_3
+    x = 23
+    y = 3
+    cost = 5
+    prerequisite = {focus = RUS_military_industry}
+    completion_reward = {
+    add_ideas = arms_industry_focus
+    }
+    }
+focus = {
+    id = RUS_military
+    icon = GFX_focus_generic_industry_3
+    x = 35
+    y = 0
+    cost = 5
+    completion_reward = {
+    army_experience = 10
+    navy_experience = 10
+    air_experience = 10
+    }
+    }
+focus = {
+    id = RUS_army
+    icon = GFX_focus_generic_industry_3
+    x = 30
+    y = 1
+    prerequisite = {focus = RUS_military}
+    cost = 5
+    completion_reward = {
+    army_experience = 5
+    swap_ideas = { 
+    remove_idea = outdated_army 
+    add_idea = outdated_army2 
+    }
+    }
     }
 }

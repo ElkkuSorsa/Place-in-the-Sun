@@ -23,5 +23,89 @@ ideas = {
 			}
 		}
     }
+	country = {
+		industrial_loans = {
+			modifier = {
+            consumer_goods_factor = -0.25
+			production_speed_buildings_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			}
+			on_remove = {
+    		add_ideas = paying_off_loans
+			}
+		}
+    }
+	country = {
+		paying_off_loans = {
+			modifier = {
+            consumer_goods_factor = 0.5
+			}
+		}
+    }
+	country = {
+		foreign_researchers = {
+			modifier = {
+			research_speed_factor = 0.05
+			}
+		}
+    }
+	country = {
+		modernized_trade_policy = {
+			modifier = {
+			consumer_goods_factor = -0.15
+			}
+		}
+    }
+	country = {
+		agrarian_reform = {
+			modifier = {
+			stability_weekly = 0.002
+			}
+		}
+    }
+	country = {
+		outdated_industry = {
+			modifier = {
+			production_speed_buildings_factor = -0.15
+			consumer_goods_factor = 0.2
+			global_building_slots_factor = -0.35
+			research_speed_factor = -0.05
+			}
+		}
+    }
+	country = {
+		arms_industry_focus = {
+			modifier = {
+			production_speed_arms_factory_factor = 0.1
+			}
+		}
+    }
+	country = {
+		outdated_army = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.25
+			army_defence_factor	= -0.1
+			army_org_factor = -0.15
+			breakthrough_factor = -0.05
+			army_speed_factor = -0.1
+			conscription_factor = -0.15
+			}
+		}
+    }
+	country = {
+		outdated_army2 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.25
+			army_defence_factor	= -0.1
+			army_org_factor = -0.1
+			army_speed_factor = -0.1
+			conscription_factor = -0.15
+			}
+		}
+    }
 
 }
