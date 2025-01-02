@@ -107,5 +107,23 @@ ideas = {
 			}
 		}
     }
+	country = {
+		outdated_army3 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.25
+			army_defence_factor	= -0.1
+			army_org_factor = -0.1
+			army_speed_factor = -0.1
+			}
+		}
+    }
+	country = {
+		improved_recruitment_system = {
+			modifier = {
+			conscription_factor = 0.1
+			}
+		}
+    }
 
 }
