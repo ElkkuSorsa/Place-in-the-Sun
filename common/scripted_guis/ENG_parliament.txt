@@ -1,0 +1,7 @@
+scripted_gui = {
+    ENG_parliament = {
+        window_name = "independent_container"
+        context_type = decision_category
+         
+	}
+}

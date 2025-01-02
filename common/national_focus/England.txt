@@ -702,9 +702,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = {
-				id = portugal_england.1
-				days = 3
+			POR = {
+				country_event = {
+					id = portugal_england.1
+					days = 3
+				}
 			}
 		}
 	}
@@ -1163,7 +1165,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_march_for_change
+			add_ideas = ENG_march_for_change_idea
 		}
 	}
 
@@ -1241,8 +1243,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = -0.1
-			add_war_support = 0.05
+			swap_ideas = {
+				add_idea = ENG_british_politics_aut
+				remove_idea = ENG_british_politics_dem
+			}
 		}
 	}
 
@@ -1277,6 +1281,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			always = no
 		}
 
 		completion_reward = {
@@ -1295,6 +1300,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			always = no
 		}
 
 		completion_reward = {
@@ -1490,6 +1496,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_state_claim = 15
+			add_state_claim = 19
 		}
 	}
 
@@ -1509,6 +1517,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_cosmetic_tag = AGE
+			add_state_core = 15
+			add_state_core = 19
 		}
 	}
 
@@ -1595,7 +1605,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = {
+				id = march_change.5
+				days = 3
+			}
 		}
 	}
 
@@ -1609,7 +1622,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.15
+			remove_ideas = ENG_house_of_lords
 		}
 	}
 
@@ -1682,6 +1695,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = extensive_conscription
+		}
+	}
+
+	focus = {
+		id = ENG_dissolve_parliament
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 23
+		y = 8
+		prerequisite = { focus = ENG_expand_conscription focus = ENG_purge_the_government }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_british_politics_dem
 		}
 	}
 
