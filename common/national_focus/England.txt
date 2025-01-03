@@ -512,7 +512,6 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = ENG_conservative_victory focus = ENG_the_last_liberals }
 
-
 		cost = 5
 
 		completion_reward = {

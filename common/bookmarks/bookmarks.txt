@@ -1,0 +1,33 @@
+bookmarks = {
+	bookmark = {
+		name = bookmark_1910
+		date = 1910.5.1
+
+		default = yes
+		default_country = GER
+
+		ENG = {
+			history = ENG_history
+			ideology = democratic
+
+			focuses = { ENG_government_of_liberals ENG_british_federation ENG_pax_britannica }
+		}
+
+		FRA = {
+			history = FRA_history
+			ideology = democratic
+		}
+
+		GER = {
+			history = GER_history
+			ideology = neutrality
+		}
+
+		AUH = {
+			history = AUH_history
+			ideology = neutrality
+
+			focuses = { AUH_serbian_situation AUH_republic AUH_democracy_onleash }
+		}
+	}
+}

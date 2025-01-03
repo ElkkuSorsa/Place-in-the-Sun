@@ -189,7 +189,7 @@ country_event = {
 
 add_namespace = elections
 country_event = {
-	id = elections.1
+	id = ENG_elections.1
 	title = "Elections of 1910"
 	desc = "We live in dark times. The next government may even experience a major war in Europe. We must choose wisely, otherwise our nation may not survive the coming storm!"
 
@@ -202,8 +202,8 @@ country_event = {
 		complete_national_focus = ENG_the_last_liberals
 		hidden_effect = {
 			country_event = {
-				id = elections.2
-				days = 10
+				id = ENG_elections.2
+				days = 3
 			}
 		}
 	}
@@ -216,7 +216,7 @@ country_event = {
 }
 
 country_event = {
-	id = elections.2
+	id = ENG_elections.2
 	title = "Liberal Victory"
 	desc = "The people have voted! Currently it is clear that the Liberals won, but did they win by majority? If not, they may need to make some concessions to smaller parties in order to guarantee their support for our righteous government."
 
@@ -224,17 +224,32 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Majority"
+		name = "Trust the Irish and Labour Party"
 		complete_national_focus = ENG_government_of_liberals
 	}
 
 	option = {
-		name = "Minority!"
+		name = "Negotiations Break Down!"
+		country_event = ENG_elections.1
+	}
+
+}
+
+country_event = {
+	id = ENG_elections.3
+	title = "Failing Negotiations"
+	desc = "The people have voted! Currently it is clear that the Liberals won, but did they win by majority? If not, they may need to make some concessions to smaller parties in order to guarantee their support for our righteous government."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Negotiate only with Labour Radicals."
 		complete_national_focus = ENG_minority_government
 	}
 
 	option = {
-		name = "Minority, the King Intervenes!"
+		name = "The King must Intervene!"
 		complete_national_focus = ENG_march_for_change
 		uncomplete_national_focus = {
 			focus = ENG_1910_elections

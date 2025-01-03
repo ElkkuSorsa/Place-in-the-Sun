@@ -3,8 +3,8 @@ on_actions = {
 		effect = {
 			ENG = {
 				country_event = {
-					id = elections.1
-					days = 350
+					id = ENGelections.1
+					days = 232
 				}
 			}
 		}

@@ -33,7 +33,7 @@ focus_tree = {
 	    ideology = neutrality
 	    popularity = 0.15
         }
-        add_ideas = suojeluskunta}
+        add_ideas = FIN_suojeluskunta
         prerequisite = {focus = FIN_independence}         
 		cost = 10
         search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -45,7 +45,7 @@ focus_tree = {
         x = 5
         y = 3
 		
-        completion_reward = {add_ideas = jagers
+        completion_reward = {add_ideas = FIN_jagers
         add_manpower = 2000}
         prerequisite = {focus = FIN_white_guard}         
 		cost = 5
