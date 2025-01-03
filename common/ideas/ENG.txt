@@ -170,5 +170,14 @@ ideas = {
 				war_support_factor = 0.15
 			}
 		}
+
+		ENG_workers_militias = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_org_factor = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = 0.1
+			}
+		}
 	}
 }

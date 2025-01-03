@@ -100,7 +100,12 @@ ENG_march_for_change = {
 		timeout_effect = {
 			start_civil_war = {
 				ideology = communism
-				size = 0.3
+				size = 0.6
+				hidden_effect = {
+					set_country_flag = ENG_socialist_england
+					load_focus_tree = ENG_COM_focus_tree
+					add_ideas = ENG_workers_militias
+				}
 			}
 		}
 	}
