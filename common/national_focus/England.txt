@@ -62,6 +62,13 @@ focus_tree = {
 
 		cost = 10
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The liberals failed to negotiate government coalition."
+				always = no
+			}
+		}
+
 		completion_reward = {
 			add_stability = -0.2
 		}
@@ -293,6 +300,13 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_minority_government }
 
 		cost = 10
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The liberals negotiated a coalition with the Irish and Labour Party."
+				always = no
+			}
+		}
 
 		completion_reward = {
 			add_stability = 0.1
@@ -530,8 +544,15 @@ focus_tree = {
 
 		cost = 10
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Parliament Act of 1911"
+				has_country_flag = ENG_parliament_act
+			}
+		}
+
 		completion_reward = {
-			release_puppet_on_controlled = IRE
+			activate_mission = ENG_gov_of_ire_1911
 		}
 	}
 
@@ -1158,7 +1179,7 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "The king decided to cancel future elections"
+				tooltip = "The king asserted his royal prerogative"
 				has_completed_focus = ENG_march_for_change
 			}
 		}

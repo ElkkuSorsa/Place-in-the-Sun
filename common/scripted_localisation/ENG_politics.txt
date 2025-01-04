@@ -30,4 +30,16 @@ defined_text = {
 		}
 		localization_key = ENG_parties.5
 	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_lib_nire
+		}
+		localization_key = ENG_parties.6
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_lib_con_nire
+		}
+		localization_key = ENG_parties.7
+	}
 }

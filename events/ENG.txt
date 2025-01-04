@@ -187,7 +187,59 @@ country_event = {
 	}
 }
 
-add_namespace = elections
+add_namespace = ENG_parliament_act
+country_event = {
+	id = ENG_parliament_act.1
+	title = "Parliament Act Proposal"
+	desc = "The mostly conservative House of Lords has been a political burden for ages, blocking our budgets and legislation. The last nail in the coffin was the veto of the People's budget, that contained raising taxes and social welfare for the poor."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's Hope the Best."
+		hidden_effect = {
+			country_event = {
+				id = ENG_parliament_act.2
+				days = 71
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ENG_parliament_act.2
+	title = "Negotiations break down"
+	desc = "In order to limit the powers of the lords, they must accept a compromise. We have negotiated a compromise with them and the Conservative party without success. The prime minister today declared that the negotiations have failed."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Dissolve the Parliament!"
+		add_stability = -0.1
+		country_event = {
+			id = ENG_parliament_act.3
+			days = 10
+		}
+	}
+}
+
+country_event = {
+	id = ENG_parliament_act.3
+	title = "Prime Minister Calls for New Elections"
+	desc = "After disastrous failing of our efforts to limit the powers of the House of Lords, we must send a clear signal that WE have the people's mandate. We must call for new elections to make that clear to the Conservative Party and lords."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "May the Best Party Win!"
+		activate_mission = ENG_elections_1910
+	}
+}
+
+add_namespace = ENG_elections
 country_event = {
 	id = ENG_elections.1
 	title = "Elections of 1910"
@@ -225,6 +277,7 @@ country_event = {
 
 	option = {
 		name = "Trust the Irish and Labour Party"
+		activate_mission = ENG_irish_excpectations
 		complete_national_focus = ENG_government_of_liberals
 	}
 
