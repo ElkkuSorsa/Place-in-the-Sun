@@ -34,4 +34,19 @@ ENG_calc_gov = {
 		set_variable = { govseats = 0 }
 		add_to_variable = { var = govseats value = conseats }
 	}
+
+	if = {
+		limit = { has_country_flag = ENG_lib_nire }
+		set_variable = { govseats = 0 }
+		add_to_variable = { var = govseats value = libseats }
+		add_to_variable = { var = govseats value = labseats }
+	}
+
+	if = {
+		limit = { has_country_flag = ENG_lib_con_nire }
+		set_variable = { govseats = 0 }
+		add_to_variable = { var = govseats value = libseats }
+		add_to_variable = { var = govseats value = labseats }
+		add_to_variable = { var = govseats value = conseats }
+	}
 }

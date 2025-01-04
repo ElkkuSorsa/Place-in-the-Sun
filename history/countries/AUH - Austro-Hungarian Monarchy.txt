@@ -35,16 +35,16 @@ add_ideas = {
 	ethnic_divided
 }
 set_politics = {
-	ruling_party = democratic
-	last_election = "1935.10.27"
-	election_frequency = 60
+	ruling_party = neutrality
+	last_election = "1907.7.7"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	fascism = 0
+	communism = 5
+	neutrality = 70
 }
 
 #Politics for 1939.1.1
