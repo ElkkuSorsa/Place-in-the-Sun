@@ -1132,22 +1132,17 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
 	focus = {
 		id = ENG_dreams_of_federation
 		icon = GFX_focus_generic_support_the_left_right
-		x = 68
+		x = 66
 		y = 5
 		prerequisite = { focus = ENG_churchill }
 
 		cost = 20
-
-		allow_branch = {
-			has_completed_focus = ENG_churchill
-		}
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1158,7 +1153,7 @@ focus_tree = {
 	focus = {
 		id = ENG_develop_oceania
 		icon = GFX_goal_reichsautobahn
-		x = 67
+		x = 65
 		y = 7
 		prerequisite = { focus = ENG_dreams_of_federation }
 
@@ -1173,7 +1168,7 @@ focus_tree = {
 	focus = {
 		id = ENG_develop_canada
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = 66
+		x = 64
 		y = 6
 		prerequisite = { focus = ENG_dreams_of_federation }
 
@@ -1188,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = ENG_malaysian_dominion
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 68
+		x = 66
 		y = 6
 		prerequisite = { focus = ENG_dreams_of_federation }
 
@@ -1203,7 +1198,7 @@ focus_tree = {
 	focus = {
 		id = ENG_develop_south_africa
 		icon = GFX_focus_generic_africa_infrastructure
-		x = 70
+		x = 68
 		y = 6
 		prerequisite = { focus = ENG_dreams_of_federation }
 
@@ -1218,7 +1213,7 @@ focus_tree = {
 	focus = {
 		id = ENG_develop_egypt
 		icon = GFX_goal_generic_production2
-		x = 69
+		x = 67
 		y = 7
 		prerequisite = { focus = ENG_dreams_of_federation }
 
@@ -1233,7 +1228,7 @@ focus_tree = {
 	focus = {
 		id = ENG_question_of_raj
 		icon = GFX_focus_RAJ_british_investors
-		x = 68
+		x = 66
 		y = 8
 		prerequisite = { focus = ENG_develop_canada }
 		prerequisite = { focus = ENG_develop_egypt }
@@ -1252,7 +1247,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_conference_con
 		icon = GFX_focus_generic_improve_the_administration
-		x = 68
+		x = 66
 		y = 9
 		prerequisite = { focus = ENG_question_of_raj }
 
@@ -1267,7 +1262,7 @@ focus_tree = {
 	focus = {
 		id = ENG_british_federation
 		icon = GFX_focus_eng_imperial_federation
-		x = 68
+		x = 66
 		y = 10
 		prerequisite = { focus = ENG_imperial_conference_con }
 
@@ -2079,6 +2074,701 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = GER
 			}
+		}
+	}
+
+	# Industry & Army
+
+	focus = {
+		id = ENG_industrial_powerhouse
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 75
+		y = 1
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_industrial_powerhouse_idea_2
+				remove_idea = ENG_industrial_powerhouse_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_military_industries
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 80
+		y = 2
+
+		prerequisite = { focus = ENG_industrial_powerhouse }
+		prerequisite = { focus = ENG_haldane_reforms }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = 	arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_field_artillery
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 80
+		y = 3
+
+		prerequisite = { focus = ENG_military_industries }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_shell_factories
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 80
+		y = 4
+
+		prerequisite = { focus = ENG_field_artillery }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_shell_crisis
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 78
+		y = 4
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_emergancy_factories
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 80
+		y = 5
+
+		prerequisite = { focus = ENG_shell_factories }
+		prerequisite = { focus = ENG_shell_crisis }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_emergency_shell_factories
+				days = 50
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_convert_civilian_industries
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 80
+		y = 6
+
+		prerequisite = { focus = ENG_emergancy_factories }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			random_core_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_vickers_limited
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 83
+		y = 3
+
+		prerequisite = { focus = ENG_military_industries }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_further_infra
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 76
+		y = 2
+
+		prerequisite = { focus = ENG_industrial_powerhouse }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			126 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			123 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			338 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_railways
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 77
+		y = 3
+
+		prerequisite = { focus = ENG_further_infra }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_industrial_innovation
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 75
+		y = 4
+
+		prerequisite = { focus = ENG_industrial_powerhouse }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_assembly_line
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 75
+		y = 5
+
+		prerequisite = { focus = ENG_industrial_innovation }
+		prerequisite = { focus = ENG_utilize_colony_resources }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_develop_textile_industry
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 72
+		y = 2
+
+		prerequisite = { focus = ENG_industrial_powerhouse }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			132 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_steel_industries
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 71
+		y = 3
+
+		prerequisite = { focus = ENG_develop_textile_industry }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = steel 
+				amount = 40
+				state = 130
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_home_industries
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 73
+		y = 3
+
+		prerequisite = { focus = ENG_develop_textile_industry }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_heavy_industry
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 69
+		y = 3
+
+		prerequisite = { focus = ENG_develop_textile_industry }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_utilize_colony_resources
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 73
+		y = 4
+
+		prerequisite = { focus = ENG_home_industries focus = ENG_heavy_industry focus = ENG_steel_industries }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_colonial_resources_utilized
+				days = 100
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_haldane_reforms
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 85
+		y = 1
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_prepare_for_war
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 85
+		y = 3
+		prerequisite = { focus = ENG_haldane_reforms }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_support_arms_factories
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 84
+		y = 4
+		prerequisite = { focus = ENG_prepare_for_war }
+		prerequisite = { focus = ENG_vickers_limited }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_lessons_of_war
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 88
+		y = 2
+		prerequisite = { focus = ENG_haldane_reforms }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_military_innovation
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 92
+		y = 2
+		prerequisite = { focus = ENG_haldane_reforms }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_weapon_reasearch
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 92
+		y = 3
+		prerequisite = { focus = ENG_military_innovation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_heavy_howitzer
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 93
+		y = 4
+		prerequisite = { focus = ENG_weapon_reasearch }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_poison_gas
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 95
+		y = 4
+		prerequisite = { focus = ENG_weapon_reasearch }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_machine_guns
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 91
+		y = 4
+		prerequisite = { focus = ENG_weapon_reasearch }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_tanks
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 93
+		y = 5
+		prerequisite = { focus = ENG_machine_guns }
+		prerequisite = { focus = ENG_heavy_howitzer }
+		prerequisite = { focus = ENG_poison_gas }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_future_of_war
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 93
+		y = 6
+		prerequisite = { focus = ENG_tanks }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_royal_airforce
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 98
+		y = 3
+		prerequisite = { focus = ENG_military_innovation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_air_industry
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 98
+		y = 4
+		prerequisite = { focus = ENG_royal_airforce }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_territorial_force
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 87
+		y = 3
+		prerequisite = { focus = ENG_lessons_of_war }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_officer_training_corps
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 88
+		y = 4
+		prerequisite = { focus = ENG_territorial_force focus = ENG_expeditionary_force }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expeditionary_force
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 89
+		y = 3
+		prerequisite = { focus = ENG_lessons_of_war }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
 		}
 	}
 
