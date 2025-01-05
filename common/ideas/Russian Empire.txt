@@ -163,7 +163,8 @@ ideas = {
 			}
 		}
     }
-	outdated_army7 = {
+    country = {
+	    outdated_army7 = {
 			modifier = {
 			war_support_factor = -0.1
 			army_attack_factor = -0.1
@@ -171,4 +172,5 @@ ideas = {
 			}
 		}
 
+}
 }
