@@ -1,6 +1,6 @@
 ﻿oob = "AUH_1936"
 capital = 1
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
 set_convoys = 0
@@ -28,6 +28,7 @@ add_ideas = {
 recruit_character = AUH_sandor
 recruit_character = AUH_karoly
 recruit_character = AUH_gyula
+recruit_character = AUH_franzjosef
 activate_advisor = AUH_sandor
 hun_trust = yes
 set_country_flag = HUN_ind
