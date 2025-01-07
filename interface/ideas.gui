@@ -1,8 +1,0 @@
-	spriteTypes = {	
-	
-	###auh
-		SpriteType = {
-		name = "GFX_idea_auh_underfunded_army"
-		texturefile = "gfx/interface/ideas/AUH/auh_underfunded_army.png"
-	}
-}
