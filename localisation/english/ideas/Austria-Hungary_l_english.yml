@@ -1,6 +1,7 @@
 ﻿l_english:
   underfunded_army:0 "Underfunded Military"
   underfunded_army_desc:0 "Testtesttesttesttesttesttesttesttesttesttest"
-  ethnic_divided_1:0 "Ethnically Divided Army"
-  ethnic_divided_2:0 "Ethnically Divided Army"
-  ethnic_divided_3:0 "Ethnically Divided Army"
+  Multiethnicity:0 "Mutliethnic Empire of Old"
+  Multiethnicity_desc:0 "Testtesttesttesttesttesttesttesttesttesttest"
+  ghostofthepast:0 "Ghost of the Past"
+  ghostofthepast_desc:0 "Testtesttesttesttesttesttesttesttesttesttest"
