@@ -1,9 +1,9 @@
 ideas = {
 	
 	country = {
+		
 		auh_underfunded_army = {
 			picture = auh_underfunded_army
-			
 			modifier = {
 				war_support_factor = -0.05
 				army_attack_factor = -0.025
@@ -26,6 +26,7 @@ ideas = {
 				command_power_gain_mult = -0.05
 			}
 		}
+
 			Multiethnicity = {
 			modifier = {
 			recruitable_population_factor = 0.015
