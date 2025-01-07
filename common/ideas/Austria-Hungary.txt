@@ -1,7 +1,7 @@
 ideas = {
 	
 	country = {
-		AUH_underfunded_army = {
+		auh_underfunded_army = {
 			picture = auh_underfunded_army
 			
 			modifier = {

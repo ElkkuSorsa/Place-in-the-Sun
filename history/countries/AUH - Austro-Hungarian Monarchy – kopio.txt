@@ -29,7 +29,6 @@ recruit_character = AUH_sandor
 recruit_character = AUH_karoly
 recruit_character = AUH_gyula
 recruit_character = AUH_franzjosef
-activate_advisor = AUH_sandor
 hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {
