@@ -33,7 +33,9 @@ activate_advisor = AUH_sandor
 hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {
-	ethnic_divided
+	underfunded_army
+	Multiethnicity
+	ghostofthepast
 }
 set_politics = {
 	ruling_party = neutrality
