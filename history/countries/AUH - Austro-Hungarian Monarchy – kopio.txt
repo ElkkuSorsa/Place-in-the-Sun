@@ -33,7 +33,7 @@ activate_advisor = AUH_sandor
 hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {
-	underfunded_army
+	AUH_underfunded_army
 	Multiethnicity
 	ghostofthepast
 }
