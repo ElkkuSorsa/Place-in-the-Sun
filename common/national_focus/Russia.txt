@@ -1048,6 +1048,27 @@ focus = {
     }
     }
     }
+focus = {
+    id = RUS_upgrade_naval_bases
+    icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
+    x = 41
+    y = 4
+    prerequisite = {focus = RUS_naval_dockyards}
+    cost = 5
+    completion_reward = {
+    navy_experience = 50
+    }
+}
+focus = {
+    id = RUS_baltic_bases
+    icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
+    x = 39
+    y = 5
+    prerequisite = {focus = RUS_upgrade_naval_bases}
+    cost = 5
+    completion_reward = {
+    }
+}
 }
 
 
