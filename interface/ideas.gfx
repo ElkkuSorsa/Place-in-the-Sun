@@ -12,7 +12,7 @@ spriteTypes = {
 
 			SpriteType = {
 		name = "GFX_idea_ghost_of_the_past"
-		texturefile = "gfx/interface/ideas/AUH/empire_of_habsburg_old.dds"
+		texturefile = "gfx/interface/ideas/AUH/ghost_of_the_past.dds"
 	}
 
 	SpriteType = {
