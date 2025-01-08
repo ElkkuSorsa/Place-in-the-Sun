@@ -1,9 +1,0 @@
-spriteTypes = {	
-
-
-
-	SpriteType = {
-		name = "GFX_idea_nomoney_army"
-		texturefile = "gfx/interface/ideas/bad_funding_army.dds"
-	}
-}
