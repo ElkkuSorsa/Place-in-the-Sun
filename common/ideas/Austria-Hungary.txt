@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		
 		auh_underfunded_army = {
-			picture = GFX_idea_nomoney_army
+			picture = bad_funding_army
 			modifier = {
 				war_support_factor = -0.05
 				army_attack_factor = -0.025
@@ -27,7 +27,7 @@ ideas = {
 			}
 		}
 			Multiethnicity = {
-			picture = auh_underfunded_army
+			picture = empire_of_old_habsburg
 			modifier = {
 			recruitable_population_factor = 0.015
 			political_power_gain = 0.01
@@ -40,7 +40,7 @@ ideas = {
 			}
 		}
 			ghostofthepast = {
-			picture = auh_underfunded_army
+			picture = ghost_of_the_past
 			modifier = {
 			industrial_capacity_factory = -0.10
 			production_factory_efficiency_gain_factor = -0.05
