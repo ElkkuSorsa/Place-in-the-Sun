@@ -1,5 +1,5 @@
 ﻿oob = "AUH_1936"
-capital = 1
+capital = 4
 set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
@@ -33,10 +33,9 @@ recruit_character = AUH_franzjosef
 hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {
-	AUH_underfunded_army
+	auh_underfunded_army
 	Multiethnicity
 	ghostofthepast
-	AUH_nomoney_army
 }
 set_politics = {
 	ruling_party = neutrality
