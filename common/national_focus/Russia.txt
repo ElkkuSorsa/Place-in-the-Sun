@@ -677,8 +677,8 @@ focus = {
     completion_reward = {
     army_experience = 5
     swap_ideas = { 
-    remove_idea = outdated_army 
-    add_idea = outdated_army2 
+    remove_idea = RUS_outdated_army 
+    add_idea = RUS_outdated_army2 
     }
     }
     }
@@ -750,8 +750,8 @@ focus = {
     cost = 5
     completion_reward = {
     swap_ideas = { 
-    remove_idea = outdated_army2 
-    add_idea = outdated_army3
+    remove_idea = RUS_outdated_army2 
+    add_idea = RUS_outdated_army3
     }
     add_ideas = improved_recruitment_system
     army_experience = 10
@@ -777,8 +777,8 @@ focus = {
     cost = 10
     completion_reward = {
     swap_ideas = { 
-    remove_idea = outdated_army3 
-    add_idea = outdated_army4
+    remove_idea = RUS_outdated_army3 
+    add_idea = RUS_outdated_army4
     }
     add_timed_idea = { idea = army_drills  days = 180 }
     army_experience = 25
@@ -786,7 +786,7 @@ focus = {
     }
 focus = {
     id = RUS_improve_tactics
-    icon = GFX_focus_SMB_tierra_del_fuego_training
+    icon = GFX_focus_generic_military_mission
     x = 32
     y = 4
     prerequisite = {focus = RUS_war_propaganda}
@@ -794,15 +794,15 @@ focus = {
     cost = 5
     completion_reward = {
     swap_ideas = { 
-    remove_idea = outdated_army4 
-    add_idea = outdated_army5
+    remove_idea = RUS_outdated_army4 
+    add_idea = RUS_outdated_army5
     }
     army_experience = 5
     }
     }
 focus = {
     id = RUS_tank_program
-    icon = GFX_focus_SMB_tierra_del_fuego_training
+    icon = GFX_focus_generic_tank_assembly
     x = 29
     y = 4
     prerequisite = {focus = RUS_artillery_modernization}
@@ -819,7 +819,7 @@ focus = {
 }
 focus = {
     id = RUS_unit_elitism
-    icon = GFX_focus_SMB_tierra_del_fuego_training
+    icon = GFX_focus_chi_army_reform
     x = 30
     y = 5
     prerequisite = {focus = RUS_improve_tactics}
@@ -827,8 +827,8 @@ focus = {
     cost = 10
     completion_reward = {
     swap_ideas = { 
-    remove_idea = outdated_army5 
-    add_idea = outdated_army6
+    remove_idea = RUS_outdated_army5 
+    add_idea = RUS_outdated_army6
     }
     add_ideas = elite_army
     army_experience = 10
@@ -836,7 +836,7 @@ focus = {
     }
 focus = {
     id = RUS_mass_assault_tactics
-    icon = GFX_focus_SMB_tierra_del_fuego_training
+    icon = GFX_focus_generic_manpower
     x = 34
     y = 5
     prerequisite = {focus = RUS_improve_tactics}
@@ -844,8 +844,8 @@ focus = {
     cost = 10
     completion_reward = {
     swap_ideas = { 
-    remove_idea = outdated_army5 
-    add_idea = outdated_army7
+    remove_idea = RUS_outdated_army5 
+    add_idea = RUS_outdated_army7
     }
     
     army_experience = 15
@@ -860,11 +860,179 @@ focus = {
     cost = 10
     completion_reward = {
     swap_ideas = { 
-    remove_idea = outdated_army5 
-    add_idea = outdated_army7
+    remove_idea = RUS_outdated_army5 
+    add_idea = RUS_outdated_army7
     }
     
     army_experience = 15
     }
     }
+focus = {
+    id = RUS_navy
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 37
+    y = 1
+    prerequisite = {focus = RUS_military}
+    cost = 5
+    completion_reward = {
+    navy_experience = 25
+    213 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = dockyard
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+focus = {
+    id = RUS_russification_debate
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 16
+    y = 8
+    cost = 10
+    completion_reward = {
+    add_political_power = 100
+    add_stability = 0.05
+    }
+    
 }
+focus = {
+    id = RUS_russification
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 12
+    y = 9
+    cost = 10
+    mutually_exclusive = {focus = RUS_autonomy}
+    prerequisite = {focus = RUS_russification_debate}
+    completion_reward = {
+    add_political_power = 50
+    add_stability = -0.05
+    add_war_support = 0.05
+    add_ideas = RUS_russification_policies
+    }
+    
+}
+focus = {
+    id = RUS_autonomy
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 20
+    y = 9
+    cost = 5
+    mutually_exclusive = {focus = RUS_russification}
+    prerequisite = {focus = RUS_russification_debate}
+    completion_reward = {
+    add_stability = 0.1
+    }
+    
+}
+focus = {
+    id = RUS_naval_tactics
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 37
+    y = 2
+    prerequisite = {focus = RUS_navy}
+    cost = 10
+    completion_reward = {
+    navy_experience = 10
+    swap_ideas = { 
+    remove_idea = RUS_tsushima_humiliation 
+    add_idea = RUS_tsushima_humiliation2
+    }
+    }
+     
+    }
+focus = {
+    id = RUS_forget_the_humiliation
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 35
+    y = 3
+    prerequisite = {focus = RUS_naval_tactics}
+    prerequisite = {focus = RUS_war_propaganda}
+    cost = 5
+    completion_reward = {
+    swap_ideas = { 
+    remove_idea = RUS_tsushima_humiliation2 
+    add_idea = RUS_tsushima_humiliation3
+    }
+    }
+     
+    }
+focus = {
+    id = RUS_avenge_1905
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 34
+    y = 4
+    prerequisite = {focus = RUS_forget_the_humiliation}
+    mutually_exclusive = {focus = RUS_reconcile_with_japan}
+    cost = 10
+    completion_reward = {
+    add_war_support = 0.05
+    add_threat = 10
+    add_state_claim = 555
+    add_state_claim = 537
+    create_wargoal = {
+    type = puppet_wargoal_focus
+    target = JAP
+    }
+    remove_idea = RUS_tsushima_humiliation3
+    }   
+    }
+     
+focus = {
+    id = RUS_reconcile_with_japan
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 36
+    y = 4
+    mutually_exclusive = {focus = RUS_avenge_1905}
+    prerequisite = {focus = RUS_forget_the_humiliation}
+    cost = 10
+    completion_reward = {
+    remove_idea = RUS_tsushima_humiliation3
+    add_political_power = 50
+    add_stability = 0.05
+    navy_experience = 15
+    reverse_add_opinion_modifier = {
+    target = JAP
+    modifier = large_increase
+    }
+    }
+     
+    }
+focus = {
+    id = RUS_naval_dockyards
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 39
+    y = 3
+    prerequisite = {focus = RUS_naval_tactics}
+    cost = 10
+    completion_reward = {
+    navy_experience = 15
+    214 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+	type = dockyard
+	level = 3
+	instant_build = yes
+    }
+    }
+    }
+}
+focus = {
+    id = RUS_naval_production
+    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    x = 38
+    y = 4
+    prerequisite = {focus = RUS_naval_dockyards}
+    cost = 5
+    completion_reward = {
+    add_ideas = RUS_naval_production_focus
+    }
+}
+}
+
+
+
+
