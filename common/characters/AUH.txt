@@ -45,7 +45,7 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_HERMANN_HANNEKEN_DESC"
 			expire = "1916.1.1"
-			ideology = Despotism
+			ideology = Monarchism
 		}
 			portraits = {
 			civilian = {

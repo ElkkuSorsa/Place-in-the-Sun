@@ -26,6 +26,11 @@ bookmarks = {
 		AUH = {
 			history = AUH_history
 			ideology = neutrality
+			ideas = {
+			auh_underfunded_army
+			Multiethnicity
+			ghostofthepast
+			}
 
 			focuses = { AUH_serbian_situation AUH_republic AUH_democracy_onleash }
 		}
