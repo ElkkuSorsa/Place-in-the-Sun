@@ -3,8 +3,8 @@ spriteTypes = {
 
 
 	SpriteType = {
-		name = "GFX_idea_traits_strip"
-		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		name = "GFX_idea_bad_funding_army"
+		texturefile = "gfx/interface/ideas/AUH/bad_funding_army.dds"
 		noOfFrames = 18
 	}
 }
