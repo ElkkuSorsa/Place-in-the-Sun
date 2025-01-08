@@ -869,7 +869,7 @@ focus = {
     }
 focus = {
     id = RUS_navy
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_focus_generic_navy_battleship2
     x = 37
     y = 1
     prerequisite = {focus = RUS_military}
@@ -889,7 +889,7 @@ focus = {
 
 focus = {
     id = RUS_russification_debate
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_focus_generic_self_management
     x = 16
     y = 8
     cost = 10
@@ -901,7 +901,7 @@ focus = {
 }
 focus = {
     id = RUS_russification
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_goal_generic_political_pressure
     x = 12
     y = 9
     cost = 10
@@ -917,7 +917,7 @@ focus = {
 }
 focus = {
     id = RUS_autonomy
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_focus_generic_treaty
     x = 20
     y = 9
     cost = 5
@@ -930,7 +930,7 @@ focus = {
 }
 focus = {
     id = RUS_naval_tactics
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_goal_generic_navy_doctrines_tactics
     x = 37
     y = 2
     prerequisite = {focus = RUS_navy}
@@ -946,7 +946,7 @@ focus = {
     }
 focus = {
     id = RUS_forget_the_humiliation
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_focus_generic_support_the_left_right
     x = 35
     y = 3
     prerequisite = {focus = RUS_naval_tactics}
@@ -962,7 +962,7 @@ focus = {
     }
 focus = {
     id = RUS_avenge_1905
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_focus_attack_japan
     x = 34
     y = 4
     prerequisite = {focus = RUS_forget_the_humiliation}
@@ -983,7 +983,7 @@ focus = {
      
 focus = {
     id = RUS_reconcile_with_japan
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_focus_chi_collaboration_with_the_japanese
     x = 36
     y = 4
     mutually_exclusive = {focus = RUS_avenge_1905}
@@ -1003,7 +1003,7 @@ focus = {
     }
 focus = {
     id = RUS_naval_dockyards
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_goal_generic_construct_naval_dockyard
     x = 39
     y = 3
     prerequisite = {focus = RUS_naval_tactics}
@@ -1022,7 +1022,7 @@ focus = {
 }
 focus = {
     id = RUS_naval_production
-    icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+    icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
     x = 38
     y = 4
     prerequisite = {focus = RUS_naval_dockyards}
@@ -1031,6 +1031,23 @@ focus = {
     add_ideas = RUS_naval_production_focus
     }
 }
+focus = {
+    id = RUS_airforce
+    icon = GFX_focus_generic_air_research_boost
+    x = 43
+    y = 1
+    prerequisite = {focus = RUS_military}
+    cost = 5
+    completion_reward = {
+    air_experience = 25
+    add_tech_bonus = {
+	name = air_bonus1
+	bonus = 0.75
+	uses = 2
+	category = early_fighter 
+    }
+    }
+    }
 }
 
 
