@@ -925,6 +925,7 @@ focus = {
     prerequisite = {focus = RUS_russification_debate}
     completion_reward = {
     add_stability = 0.1
+    add_political_power = 75
     }
     
 }
@@ -1066,6 +1067,36 @@ focus = {
     y = 5
     prerequisite = {focus = RUS_upgrade_naval_bases}
     cost = 5
+    completion_reward = {
+    }
+}
+focus = {
+    id = RUS_black_sea_bases
+    icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
+    x = 41
+    y = 5
+    prerequisite = {focus = RUS_upgrade_naval_bases}
+    cost = 5
+    completion_reward = {
+    }
+}
+focus = {
+    id = RUS_far_east_bases
+    icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
+    x = 43
+    y = 5
+    prerequisite = {focus = RUS_upgrade_naval_bases}
+    cost = 5
+    completion_reward = {
+    }
+}
+focus = {
+    id = RUS_navy_technology
+    icon = GFX_goal_generic_construct_naval_dockyard
+    x = 37
+    y = 5
+    prerequisite = {focus = RUS_naval_tactics}
+    cost = 10
     completion_reward = {
     }
 }
