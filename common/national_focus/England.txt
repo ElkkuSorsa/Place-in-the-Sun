@@ -1140,7 +1140,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		x = 66
 		y = 5
-		prerequisite = { focus = ENG_churchill }
+		prerequisite = { focus = ENG_churchill focus = ENG_balfour }
 
 		cost = 20
 

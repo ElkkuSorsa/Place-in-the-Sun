@@ -4,6 +4,5 @@ tags={
 	"Map"
 }
 name="Place In The Sun"
-replace_path="history/states"
-replace_path="common/ideas"
+replace_path="GFX/loadingscreens"
 supported_version="1.15.3"

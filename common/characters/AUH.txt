@@ -5,12 +5,12 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			traits = { pro_hungary }
-			can_be_fired = no 
+			can_be_fired = yes
 			idea_token = AUH_sandor
 
 			allowed = {
 				OR = {
-					always = no
+					always = yes
 				}
 			}
 
@@ -18,28 +18,43 @@ characters = {
 				always = yes
 			}
 		}
-
 	}
 
-	AUH_karoly = {
-		name = "Károly Khuen-Héderváry"
+	AUH_Ernest_von_Koerber = {
+		name = "Ernest von Koerber"
 		advisor = {
 			slot = political_advisor
-			traits = { pro_empire }
-			can_be_fired = no
-			idea_token = AUH_karoly
+			traits = { minister-president_of_construction }
+			can_be_fired = yes
+			idea_token = AUH_Ernest_von_Koerber
 
 			allowed = {
 				OR = {
-					always = no
+					always = yes
 				}
 			}
 
 			available = {
-				always = yes
+				always = Yes
 			}
 		}
+	}
 
+		AUH_franzjosef = {
+		name = "Franz Josef I Habsburg-Lothringen"
+		country_leader = {
+			desc = "POLITICS_HERMANN_HANNEKEN_DESC"
+			expire = "1916.1.1"
+			ideology = Despotism
+		}
+			portraits = {
+			civilian = {
+				large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
+			}
+			army = {
+				large = "gfx/leaders/DEN/Portrait_Denmark_Herman_Von_Hanneken.png"
+			}
+		}
 	}
 
 	AUH_gyula = {

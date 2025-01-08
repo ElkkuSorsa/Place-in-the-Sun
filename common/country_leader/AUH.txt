@@ -6,10 +6,12 @@ leader_traits = {
 		consumer_goods_factor = 0.05
 	}
 
-	pro_empire = {
+	minister-president_of_construction = {
 		random = no
-		stability_factor = 0.05
-		war_support_factor = 0.05
-		consumer_goods_factor = 0.1
+		stability_factor = 0.025
+		war_support_factor = -0.05
+		consumer_goods_factor = -0.05
+		production_speed_infrastructure_factor = 0.05
+
 	}
 }

@@ -1,6 +1,6 @@
 ﻿oob = "AUH_1936"
-capital = 1
-set_research_slots = 3
+capital = 4
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.5
 set_convoys = 0
@@ -25,14 +25,17 @@ add_ideas = {
 }
 
 #Politics for 1936.1.1
+recruit_character = AUH_Ernest_von_Koerber
 recruit_character = AUH_sandor
 recruit_character = AUH_karoly
 recruit_character = AUH_gyula
-activate_advisor = AUH_sandor
+recruit_character = AUH_franzjosef
 hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {
-	ethnic_divided
+	auh_underfunded_army
+	Multiethnicity
+	ghostofthepast
 }
 set_politics = {
 	ruling_party = neutrality

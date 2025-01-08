@@ -1,0 +1,18 @@
+characters = {
+	GER_wilhelm_II = {
+		name = "Wilhelm II von Hohenzollern"
+		country_leader = {
+			desc = "POLITICS_HERMANN_HANNEKEN_DESC"
+			expire = "1940.1.1"
+			ideology = Despotism
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_wilhelm_II.png"
+			}
+			army = {
+				large = "gfx/leaders/DEN/Portrait_Denmark_Herman_Von_Hanneken.png"
+			}
+		}
+	}
+}
