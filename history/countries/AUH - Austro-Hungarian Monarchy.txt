@@ -31,6 +31,7 @@ recruit_character = AUH_karoly
 recruit_character = AUH_gyula
 recruit_character = AUH_franzjosef
 hun_trust = yes
+set_country_flag = HUN_ind
 add_ideas = {
 	AUH_underfunded_army
 	Multiethnicity

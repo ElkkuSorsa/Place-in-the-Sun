@@ -5,12 +5,12 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			traits = { pro_hungary }
-			can_be_fired = no 
+			can_be_fired = yes
 			idea_token = AUH_sandor
 
 			allowed = {
 				OR = {
-					always = no
+					always = yes
 				}
 			}
 
@@ -18,20 +18,19 @@ characters = {
 				always = yes
 			}
 		}
-
 	}
 
-	AUH_karoly = {
-		name = "Károly Khuen-Héderváry"
+	AUH_Ernest_von_Koerber = {
+		name = "Ernest von Koerber"
 		advisor = {
 			slot = political_advisor
-			traits = { pro_empire }
-			can_be_fired = no
-			idea_token = AUH_karoly
+			traits = { minister-president_of_construction }
+			can_be_fired = yes
+			idea_token = AUH_Ernest_von_Koerber
 
 			allowed = {
 				OR = {
-					always = no
+					always = yes
 				}
 			}
 
