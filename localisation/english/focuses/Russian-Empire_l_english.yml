@@ -1,4 +1,4 @@
 l_english:
-RUS_industrialization : "Continue Industrialization"
-RUS_seek_investments : "Seek Investments"
-RUS_take_loans : "Take Out Loans"
+ RUS_industrialization :0 "Continue Industrialization"
+ RUS_seek_investments :0 "Seek Investments"
+ RUS_take_loans :0 "Take Out Loans"
