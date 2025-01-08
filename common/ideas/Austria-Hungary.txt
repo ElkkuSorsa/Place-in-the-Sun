@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		
 		auh_underfunded_army = {
-			picture = nomoney_army
+			picture = GFX_idea_nomoney_army
 			modifier = {
 				war_support_factor = -0.05
 				army_attack_factor = -0.025
