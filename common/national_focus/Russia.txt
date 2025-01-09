@@ -5,7 +5,7 @@ focus_tree = {
 
         modifier = {
             add = 50
-            tag = SOV
+            tag = RUS
         }
     }
 

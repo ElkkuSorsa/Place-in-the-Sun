@@ -41,3 +41,7 @@
  FIN_communism_DEF:0 "the Workers' Republic of Finland"
  FIN:0 "Finland"
  FIN_ADJ:0 "Finnish"
+
+ RUS:0 "Russian Empire"
+ RUS_DEF:0 "the Russian Empire"
+ RUS_ADJ:0 "Russian"
