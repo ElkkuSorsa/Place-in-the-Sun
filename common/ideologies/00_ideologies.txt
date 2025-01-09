@@ -5,12 +5,15 @@ ideologies = {
 		types = {
 
 			conservatism = {
+				color = { 65 65 255 }
 			}
 
 			liberalism = {
+				color = { 255 200 70 }
 			}
 
 			socialism = {
+				color = { 255 85 65 }
 			}
 
 			populism = {
@@ -79,13 +82,14 @@ ideologies = {
 			leninism = {
 			}
 
-			stalinism = {
-			}
-
 			anti_revisionism = {
 			}
 
+			syndicalism = {
+			}
+
 			anarchist_communism = {
+				color = { 0 0 0 }
 			}
 		}
 
@@ -134,20 +138,13 @@ ideologies = {
 	fascism = {
 
 		types = {
-
-			nazism = {
-			}
-
-			gen_nazism = {
-			}
-
 			fascism_ideology = {
 			}
 
-			falangism = {
+			militarism = {
 			}
 
-			rexism = {
+			ultranationalism = {
 			}
 		}
 
@@ -159,7 +156,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 
-		color = { 150 75 0 }
+		color = { 30 30 30 }
 
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -201,6 +198,7 @@ ideologies = {
 
 			anarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				color = { 0 0 0 }
 			}
 
 			moderatism = {

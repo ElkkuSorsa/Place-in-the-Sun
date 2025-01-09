@@ -237,11 +237,7 @@ ENG_politics = {
 		is_good = yes
 		
 		complete_effect = {
-			create_country_leader = {
-				name = "David Lloyd George"
-				picture = "portrait_eng_fallen_government.dds"
-				ideology = liberal
-			}
+			promote_character = ENG_lloyd_george
 			news_event = {
 				id = pinstability.1
 				days = 3
