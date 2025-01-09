@@ -2526,6 +2526,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = ENG_haldane_reforms
 		}
 	}
 
@@ -2539,9 +2540,14 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			threat > 0.1
 		}
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_preparing_for_war
+				days = 120
+			}
 		}
 	}
 
@@ -2575,6 +2581,107 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_haldane_reform_1
+				add_idea = ENG_haldane_reform_2
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_territorial_force
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 87
+		y = 3
+		prerequisite = { focus = ENG_lessons_of_war }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = ENG_haldane_reform_3 }
+				swap_ideas = {
+					remove_idea = ENG_haldane_reform_3
+					add_idea = ENG_haldane_reform_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ENG_haldane_reform_2
+					add_idea = ENG_haldane_reform_3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_expeditionary_force
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 89
+		y = 3
+		prerequisite = { focus = ENG_lessons_of_war }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = ENG_haldane_reform_3 }
+				swap_ideas = {
+					remove_idea = ENG_haldane_reform_3
+					add_idea = ENG_haldane_reform_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ENG_haldane_reform_2
+					add_idea = ENG_haldane_reform_3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_officer_training_corps
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 88
+		y = 4
+		prerequisite = { focus = ENG_territorial_force }
+		prerequisite = { focus = ENG_expeditionary_force }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_haldane_reform_4
+				add_idea = ENG_haldane_reform_5
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_haldane_reforms_completed
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 86
+		y = 5
+		prerequisite = { focus = ENG_officer_training_corps }
+		prerequisite = { focus = ENG_support_arms_factories }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			remove_ideas = ENG_haldane_reforms
 		}
 	}
 
@@ -2714,54 +2821,6 @@ focus_tree = {
 		x = 98
 		y = 4
 		prerequisite = { focus = ENG_royal_airforce }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_territorial_force
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
-		x = 87
-		y = 3
-		prerequisite = { focus = ENG_lessons_of_war }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_officer_training_corps
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
-		x = 88
-		y = 4
-		prerequisite = { focus = ENG_territorial_force focus = ENG_expeditionary_force }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_expeditionary_force
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
-		x = 89
-		y = 3
-		prerequisite = { focus = ENG_lessons_of_war }
 
 		cost = 10
 
