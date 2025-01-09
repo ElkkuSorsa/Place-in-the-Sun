@@ -51,9 +51,6 @@ characters = {
 			civilian = {
 				large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
 			}
-			army = {
-				large = "gfx/leaders/DEN/Portrait_Denmark_Herman_Von_Hanneken.png"
-			}
 		}
 	}
 
