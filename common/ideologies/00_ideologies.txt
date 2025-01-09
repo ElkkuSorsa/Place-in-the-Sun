@@ -77,23 +77,19 @@ ideologies = {
 		types = {
 
 			marxism = {
-				color = { 255 0 0 }
 			}
 
 			leninism = {
-				color = { 255 0 0 }
 			}
 
 			anti_revisionism = {
-				color = { 255 0 0 }
 			}
 
 			syndicalism = {
-				color = { 255 0 0 }
 			}
 
 			anarchist_communism = {
-				color = { 255 255 255 }
+				color = { 0 0 0 }
 			}
 		}
 
@@ -202,7 +198,7 @@ ideologies = {
 
 			anarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-				color = { 255 255 255 }
+				color = { 0 0 0 }
 			}
 
 			moderatism = {
