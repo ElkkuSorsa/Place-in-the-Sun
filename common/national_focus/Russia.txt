@@ -1061,7 +1061,7 @@ focus = {
 	name = air_bonus1
 	bonus = 0.75
 	uses = 2
-	category = early_fighter 
+	category = air
     }
     }
     }
@@ -1130,6 +1130,33 @@ focus = {
     remove_idea = RUS_independence_movements 
     add_idea = RUS_independence_movements2
     }
+    }
+    
+}
+focus = {
+    id = RUS_annex_finland
+    icon = GFX_goal_generic_political_pressure
+    x = 8
+    y = 11
+    cost = 10
+    mutually_exclusive = {focus = RUS_continue_finnish_autonomy}
+    prerequisite = {focus = RUS_russian_language_in_schools}
+    completion_reward = {
+    add_stability = -0.1
+    annex_country = { target = FIN transfer_troops = yes }
+    }
+    
+}
+focus = {
+    id = RUS_continue_finnish_autonomy
+    icon = GFX_goal_generic_political_pressure
+    x = 10
+    y = 11
+    cost = 5
+    mutually_exclusive = {focus = RUS_annex_finland}
+    prerequisite = {focus = RUS_russian_language_in_schools}
+    completion_reward = {
+    add_stability = 0.1
     }
     
 }
