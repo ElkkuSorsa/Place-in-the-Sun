@@ -40,6 +40,26 @@ characters = {
 		}
 	}
 
+		AUH_karl_von_sturgkh = {
+		name = "Karl von Stürgkh"
+		advisor = {
+			slot = political_advisor
+			traits = { minister-president_of_construction }
+			can_be_fired = yes
+			idea_token = AUH_karl_von_sturgkh
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
 		AUH_franzjosef = {
 		name = "Franz Josef I Habsburg-Lothringen"
 		country_leader = {
