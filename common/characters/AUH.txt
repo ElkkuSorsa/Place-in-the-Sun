@@ -45,14 +45,11 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_HERMANN_HANNEKEN_DESC"
 			expire = "1916.1.1"
-			ideology = Despotism
+			ideology = Monarchism
 		}
 			portraits = {
 			civilian = {
 				large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
-			}
-			army = {
-				large = "gfx/leaders/DEN/Portrait_Denmark_Herman_Von_Hanneken.png"
 			}
 		}
 	}

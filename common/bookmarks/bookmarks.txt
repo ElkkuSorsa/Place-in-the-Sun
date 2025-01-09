@@ -26,8 +26,13 @@ bookmarks = {
 		AUH = {
 			history = AUH_history
 			ideology = neutrality
+			ideas = {
+			auh_underfunded_army
+			Multiethnicity
+			ghostofthepast
+			}
 
-			focuses = { AUH_serbian_situation AUH_republic AUH_democracy_onleash }
+			focuses = { AUH_empire_of_franz_josef AUH_government_funds_austria AUH_army_leadership_question }
 		}
 	}
 }
