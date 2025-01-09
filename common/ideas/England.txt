@@ -216,5 +216,65 @@ ideas = {
 				industrial_capacity_factory = 0.3
 			}
 		}
+
+		ENG_haldane_reforms = {
+			picture = generic_disjointed_gov
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_cost = 0.5
+			}
+		}
+
+		ENG_haldane_reform_1 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_org_factor = -0.2
+				army_defence_factor = -0.15
+				supply_consumption_factor = 0.2
+			}
+		}
+
+		ENG_haldane_reform_2 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_org_factor = -0.15
+				army_defence_factor = -0.1
+				supply_consumption_factor = 0.15
+			}
+		}
+
+		ENG_haldane_reform_3 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_org_factor = -0.1
+				army_defence_factor = -0.05
+				supply_consumption_factor = 0.1
+			}
+		}
+
+		ENG_haldane_reform_4 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_org_factor = -0.05
+				supply_consumption_factor = 0.05
+			}
+		}
+
+		ENG_haldane_reform_5 = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+
+		ENG_preparing_for_war = {
+			picture = generic_disjointed_gov
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				consumer_goods_factor = -0.1
+			}
+		}
 	}
 }
