@@ -1,0 +1,33 @@
+characters = {
+	ENG_asquith = {
+		name = "Herbert Henry Asquith"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = conservatism
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_asquith.png"
+			}
+			army = {
+				large = "gfx/leaders/DEN/Portrait_Denmark_Herman_Von_Hanneken.png"
+			}
+		}
+	}
+
+	ENG_lloyd_george = {
+		name = "David Lloyd George"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = conservatism
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_lloyd_george.png"
+			}
+			army = {
+				large = "gfx/leaders/DEN/Portrait_Denmark_Herman_Von_Hanneken.png"
+			}
+		}
+	}
+}
