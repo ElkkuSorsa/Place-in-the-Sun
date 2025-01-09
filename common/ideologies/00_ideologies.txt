@@ -77,15 +77,19 @@ ideologies = {
 		types = {
 
 			marxism = {
+				color = { 255 0 0 }
 			}
 
 			leninism = {
+				color = { 255 0 0 }
 			}
 
 			anti_revisionism = {
+				color = { 255 0 0 }
 			}
 
 			syndicalism = {
+				color = { 255 0 0 }
 			}
 
 			anarchist_communism = {
