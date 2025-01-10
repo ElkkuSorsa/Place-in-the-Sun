@@ -5,7 +5,7 @@ focus_tree = {
 
         modifier = {
             add = 50
-            tag = SOV
+            tag = RUS
         }
     }
 
@@ -715,6 +715,22 @@ focus = {
 	instant_build = yes
     }
     }
+    222 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+    }
+    }
+    10 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+    }
+    }
     }
     }
 focus = {
@@ -1045,7 +1061,7 @@ focus = {
 	name = air_bonus1
 	bonus = 0.75
 	uses = 2
-	category = early_fighter 
+	category = air
     }
     }
     }
@@ -1100,6 +1116,60 @@ focus = {
     completion_reward = {
     }
 }
+focus = {
+    id = RUS_russian_language_in_schools
+    icon = GFX_goal_generic_political_pressure
+    x = 12
+    y = 10
+    cost = 10
+    prerequisite = {focus = RUS_russification}
+    completion_reward = {
+    add_stability = -0.05
+    add_political_power = 50
+    swap_ideas = { 
+    remove_idea = RUS_independence_movements 
+    add_idea = RUS_independence_movements2
+    }
+    }
+    
+}
+focus = {
+    id = RUS_annex_finland
+    icon = GFX_goal_generic_political_pressure
+    x = 8
+    y = 11
+    cost = 10
+    mutually_exclusive = {focus = RUS_continue_finnish_autonomy}
+    prerequisite = {focus = RUS_russian_language_in_schools}
+    completion_reward = {
+    add_stability = -0.1
+    annex_country = { target = FIN transfer_troops = yes }
+    }
+    
+}
+focus = {
+    id = RUS_continue_finnish_autonomy
+    icon = GFX_goal_generic_political_pressure
+    x = 10
+    y = 11
+    cost = 5
+    mutually_exclusive = {focus = RUS_annex_finland}
+    prerequisite = {focus = RUS_russian_language_in_schools}
+    completion_reward = {
+    add_stability = 0.1
+    }
+    
+}
+focus = {
+    id = RUS_politics
+    icon = GFX_goal_tsar_sigma
+    x = 1
+    y = 1
+    cost = 1
+    completion_reward = {
+    add_political_power = 100
+    }
+    }
 }
 
 
