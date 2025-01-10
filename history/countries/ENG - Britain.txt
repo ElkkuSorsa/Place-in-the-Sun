@@ -32,11 +32,6 @@ set_variable = { ireseats = 74 }
 set_variable = { labseats = 43 }
 ENG_calc_gov = yes
 
-set_autonomy = {
-	target = FIN 
-	autonomy_state = real_union
-}
-
 
 set_politics = {
 	ruling_party = democratic

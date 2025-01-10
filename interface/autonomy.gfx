@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_real_union_icon"
+		texturefile = "gfx/interface/autonomy/autonomy_personal_union_puppet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_personal_union_icon"
+		texturefile = "gfx/interface/autonomy/autonomy_personal_union_puppet.dds"
+	}
+}
