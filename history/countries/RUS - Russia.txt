@@ -31,7 +31,7 @@ set_autonomy = {
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1907.8.10"
-	election_frequency = 59
+	election_frequency = 61
 	elections_allowed = yes
 }
 set_popularities = {
