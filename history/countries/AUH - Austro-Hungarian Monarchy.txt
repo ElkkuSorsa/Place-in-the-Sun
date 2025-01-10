@@ -33,6 +33,7 @@ recruit_character = AUH_franzjosef
 recruit_character = AUH_karl_von_sturgkh
 recruit_character = AUH_Richard_von_bienerth_schmerling
 activate_advisor = AUH_Richard_von_bienerth_schmerling
+
 hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {

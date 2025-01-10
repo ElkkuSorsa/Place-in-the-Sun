@@ -48,6 +48,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_Richard_von_bienerth_schmerling
 
+
 			allowed = {
 				OR = {
 					always = yes
