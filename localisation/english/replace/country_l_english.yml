@@ -1,8 +1,8 @@
 l_english:
  AUH:0 "Austria-Hungary"
- AUH_DEF:0 "the Austro-Hungarian Monarchy"
+ AUH_DEF:0 "The Austro-Hungarian Monarchy"
  AUH_ADJ:0 "Austro-Hungarian"
-
+ AUH_neutrality:0 "gdsgdfgdfgfdgfdgd"
  ENG_fascism:0 "British State"
  ENG_fascism_DEF:0 "the State of Britain"
  ENG_democratic:0 "United Kingdom"
