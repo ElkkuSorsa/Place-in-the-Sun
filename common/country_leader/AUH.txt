@@ -12,6 +12,21 @@ leader_traits = {
 		war_support_factor = -0.05
 		consumer_goods_factor = -0.05
 		production_speed_infrastructure_factor = 0.05
+	}
 
+		minister-president_of_germans = {
+		random = no
+		stability_factor = -0.10
+		war_support_factor = 0.05
+		communism_drift = -0.02
+		democratic_drift = -0.01
+		conscription = 0.005
+	}
+
+		minister-president_of_status_quo = {
+		random = no
+		industrial_capacity_factory = 0.015
+		stability_weekly = 0.0015
+		non_core_manpower = 0.015
 	}
 }

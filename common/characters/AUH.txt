@@ -40,11 +40,31 @@ characters = {
 		}
 	}
 
+		AUH_Richard_von_bienerth_schmerling = {
+		name = "Richard von Bienerth-Schmerling"
+		advisor = {
+			slot = political_advisor
+			traits = { minister-president_of_status_quo }
+			can_be_fired = yes
+			idea_token = AUH_Richard_von_bienerth_schmerling
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
 		AUH_karl_von_sturgkh = {
 		name = "Karl von Stürgkh"
 		advisor = {
 			slot = political_advisor
-			traits = { minister-president_of_construction }
+			traits = { minister-president_of_germans }
 			can_be_fired = yes
 			idea_token = AUH_karl_von_sturgkh
 
