@@ -1,0 +1,55 @@
+﻿oob = "RUS_1936"
+capital = 1
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.2
+set_convoys = 200
+
+
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+}
+
+
+
+
+#For start date 1939.1.1
+
+
+#Politics for 1936.1.1
+set_autonomy = {
+	target = FIN 
+	autonomy_state = autonomy_real_union
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1907.8.10"
+	election_frequency = 61
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 10
+	communism = 15
+	neutrality = 50
+}
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_popularities = {
+		democratic = 25
+		fascism = 25
+		communism = 25
+		neutrality = 25
+	}
+}
+
+
+
