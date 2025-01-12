@@ -18,8 +18,8 @@
  ENG_con_join_gov: "§2The Conservative Party §!will join the coalition."
  ENG_ire_leave_gov: "§GThe Irish Parliamentary party §!will leave the coalition."
 
- ENG_law_not_pass: "With the current support, the law §Rwill not pass!§! [?govseats]"
- ENG_law_pass: "With the current support, the law §Gwill pass!§! [?govseats]"
+ ENG_law_not_pass: "With the current support, the law §Rwill not pass!§!"
+ ENG_law_pass: "With the current support, the law §Gwill pass!§!"
 
  
  ENG_change_england: "Organize Nationalist Rally in England"

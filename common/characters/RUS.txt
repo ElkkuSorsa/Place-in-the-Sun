@@ -1,13 +1,13 @@
 characters = {
-	GER_wilhelm_II = {
-		name = "Wilhelm II"
+	RUS_nikolai_II = {
+		name = "Nikolai II"
 		country_leader = {
 			expire = "1940.1.1"
 			ideology = monarchism
 		}
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/GER/GER_wilhelm_II.png"
+				large = "gfx/leaders/RUS/RUS_nikolai_II.png"
 			}
 		}
 	}

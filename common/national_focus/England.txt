@@ -2074,10 +2074,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ENG_industrial_powerhouse_idea_2
-				remove_idea = ENG_industrial_powerhouse_idea_1
-			}
+			add_ideas = ENG_industrial_powerhouse_idea_1
 		}
 	}
 
@@ -2360,6 +2357,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_industrial_powerhouse_idea_2
+				remove_idea = ENG_industrial_powerhouse_idea_1
+			}
 		}
 	}
 
@@ -2509,7 +2510,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_haldane_reforms
+			add_ideas = ENG_haldane_reforms_idea
 		}
 	}
 
