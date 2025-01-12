@@ -400,10 +400,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
+			activate_mission = ENG_national_insurance_act
 		}
 	}
 
@@ -568,9 +565,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_david_lloyd
+		id = ENG_battle_the_party_influence
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
-		x = 40
+		x = 38
 		y = 12
 
 		prerequisite = { focus = ENG_reign_of_asquith }
@@ -583,25 +580,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_battle_the_party_influence
-		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
-		x = 38
-		y = 13
-
-		prerequisite = { focus = ENG_david_lloyd }
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
 		id = ENG_promote_pro_coalition
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 38
-		y = 14
+		y = 13
 
 		prerequisite = { focus = ENG_battle_the_party_influence }
 
@@ -616,9 +598,9 @@ focus_tree = {
 		id = ENG_discredit_liberals
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 40
-		y = 13
+		y = 12
 
-		prerequisite = { focus = ENG_david_lloyd }
+		prerequisite = { focus = ENG_reign_of_asquith }
 
 		cost = 5
 
@@ -631,7 +613,7 @@ focus_tree = {
 		id = ENG_split_in_liberals
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 40
-		y = 14
+		y = 13
 
 		prerequisite = { focus = ENG_discredit_liberals }
 
@@ -646,9 +628,9 @@ focus_tree = {
 		id = ENG_endorse_conservatives
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 42
-		y = 13
+		y = 12
 
-		prerequisite = { focus = ENG_david_lloyd }
+		prerequisite = { focus = ENG_reign_of_asquith }
 
 		cost = 5
 
@@ -661,7 +643,7 @@ focus_tree = {
 		id = ENG_collaborate_with_conservatives
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 42
-		y = 14
+		y = 13
 
 		prerequisite = { focus = ENG_endorse_conservatives }
 
@@ -682,10 +664,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_house_of_lords
-				add_idea = ENG_house_of_lords_2
-			}
+			activate_mission = ENG_parliament_act
 		}
 	}
 
