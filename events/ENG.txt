@@ -42,6 +42,8 @@ country_event = {
 
 	option = {
 		name = "Stability at last!"
+		custom_effect_tooltip = "Parliament will be dissolved"
+		set_country_flag = ENG_parliament_disabled
 		add_political_power = 50
 		create_country_leader = {
 			name = "Military Government"

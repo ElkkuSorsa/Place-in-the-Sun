@@ -236,6 +236,8 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved"
+			set_country_flag = ENG_parliament_disabled
 			news_event = {
 				id = communist_britain.1
 				days = 3
@@ -1709,8 +1711,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.1
+			add_opinion_modifier = {
+				target = GER
+				modifier = ENG_embrace_german_heritage_modi
+			}
 		}
 	}
 
