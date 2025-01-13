@@ -1,12 +1,12 @@
 characters = {
 	# Hungarian Prime Ministers and Leaders
-	AUH_sandor = {
-		name = "Sándor Wekerle"
+	AUH_Richard_von_bienerth_schmerling = {
+		name = "Richard von Bienerth-Schmerling"
 		advisor = {
 			slot = political_advisor
-			traits = { pro_hungary }
+			traits = { minister-president_of_status_quo }
 			can_be_fired = yes
-			idea_token = AUH_sandor
+			idea_token = AUH_Richard
 
 			allowed = {
 				OR = {
@@ -27,27 +27,6 @@ characters = {
 			traits = { minister-president_of_construction }
 			can_be_fired = yes
 			idea_token = AUH_Ernest_von_Koerber
-
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
-
-			available = {
-				always = Yes
-			}
-		}
-	}
-
-		AUH_Richard_von_bienerth_schmerling = {
-		name = "Richard von Bienerth-Schmerling"
-		advisor = {
-			slot = political_advisor
-			traits = { minister-president_of_status_quo }
-			can_be_fired = yes
-			idea_token = AUH_Richard_von_bienerth_schmerling
-
 
 			allowed = {
 				OR = {

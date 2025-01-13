@@ -25,14 +25,13 @@ add_ideas = {
 }
 
 #Politics for 1936.1.1
+activate_advisor = AUH_Richard_von_bienerth_schmerling
 recruit_character = AUH_Ernest_von_Koerber
-recruit_character = AUH_sandor
+recruit_character = AUH_Richard_von_bienerth_schmerling
 recruit_character = AUH_karoly
 recruit_character = AUH_gyula
 recruit_character = AUH_franzjosef
 recruit_character = AUH_karl_von_sturgkh
-recruit_character = AUH_Richard_von_bienerth_schmerling
-activate_advisor = AUH_Richard_von_bienerth_schmerling
 
 hun_trust = yes
 set_country_flag = HUN_ind
