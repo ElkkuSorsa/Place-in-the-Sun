@@ -38,8 +38,8 @@ hun_trust = yes
 set_country_flag = HUN_ind
 add_ideas = {
 	auh_underfunded_army
-	Multiethnicity
-	ghostofthepast
+	auh_Multiethnicity
+	auh_ghostofthepast
 }
 set_politics = {
 	ruling_party = neutrality
