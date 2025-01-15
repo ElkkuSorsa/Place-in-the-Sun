@@ -40,6 +40,86 @@ characters = {
 		}
 	}
 
+		AUH_sand_werkele = {
+		name = "Sándor Wekerle"
+		advisor = {
+			slot = political_advisor
+			traits = { primeminister_of_kingdom_of_ungarica }
+			can_be_fired = yes
+			idea_token = AUH_sand_werkele
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_karol_hedervary = {
+		name = "Károly Khuen-Héderváry"
+		advisor = {
+			slot = political_advisor
+			traits = { primeminister_not_liked }
+			can_be_fired = yes
+			idea_token = AUH_karol_hedervary
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_lasczlo_lukas = {
+		name = "László Lukács"
+		advisor = {
+			slot = political_advisor
+			traits = { one_from_the_normal_ones }
+			can_be_fired = yes
+			idea_token = AUH_karol_hedervary
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_istvan_tizsa = {
+		name = "István Tisza"
+		advisor = {
+			slot = political_advisor
+			traits = { hungarian_man_with_a_vision }
+			can_be_fired = yes
+			idea_token = AUH_karol_hedervary
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
 		AUH_karl_von_sturgkh = {
 		name = "Karl von Stürgkh"
 		advisor = {

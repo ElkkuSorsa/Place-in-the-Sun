@@ -17,7 +17,6 @@ add_ideas = {
 
 
 
-
 #For start date 1939.1.1
 1939.1.1 = {
 	add_political_power = 1000
@@ -32,6 +31,11 @@ recruit_character = AUH_karoly
 recruit_character = AUH_gyula
 recruit_character = AUH_franzjosef
 recruit_character = AUH_karl_von_sturgkh
+recruit_character = AUH_sand_werkele
+recruit_character = AUH_karol_hedervary
+recruit_character = AUH_lasczlo_lukas
+recruit_character = AUH_istvan_tizsa
+
 
 hun_trust = yes
 set_country_flag = HUN_ind
@@ -39,6 +43,7 @@ add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity
 	auh_ghostofthepast
+	AUH_Richard_von_bienerth_schmerling
 }
 set_politics = {
 	ruling_party = neutrality
