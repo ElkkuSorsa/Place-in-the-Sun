@@ -22,6 +22,8 @@ add_ideas = {
 
 
 #Politics for 1936.1.1
+recruit_character = RUS_nikolai_II
+
 set_autonomy = {
 	target = FIN 
 	autonomy_state = autonomy_real_union

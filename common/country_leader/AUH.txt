@@ -29,4 +29,25 @@ leader_traits = {
 		stability_weekly = 0.0015
 		non_core_manpower = 0.015
 	}
+
+		primeminister_of_kingdom_of_ungarica = {
+		consumer_goods_factor = -0.05
+	}
+
+		primeminister_not_liked = {
+		consumer_goods_factor = 0.1
+		stability_factor = -0.05
+	}
+		one_from_the_normal_ones = {
+		stability_factor = 0.01
+	}
+		hungarian_man_with_a_vision = {
+		stability_factor = -0.10
+		consumer_goods_factor = 0.1
+		democratic_drift = 0.05
+		war_support_factor = -0.1
+	}
+		the_middle_man = {
+		stability_factor = 0.01
+	}
 }

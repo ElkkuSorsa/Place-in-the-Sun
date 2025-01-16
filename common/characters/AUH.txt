@@ -1,12 +1,12 @@
 characters = {
 	# Hungarian Prime Ministers and Leaders
-	AUH_sandor = {
-		name = "Sándor Wekerle"
+	AUH_Richard_von_bienerth_schmerling = {
+		name = "Richard von Bienerth-Schmerling"
 		advisor = {
 			slot = political_advisor
-			traits = { pro_hungary }
+			traits = { minister-president_of_status_quo }
 			can_be_fired = yes
-			idea_token = AUH_sandor
+			idea_token = AUH_Richard
 
 			allowed = {
 				OR = {
@@ -40,14 +40,93 @@ characters = {
 		}
 	}
 
-		AUH_Richard_von_bienerth_schmerling = {
-		name = "Richard von Bienerth-Schmerling"
+		AUH_sand_werkele = {
+		name = "Sándor Wekerle"
 		advisor = {
 			slot = political_advisor
-			traits = { minister-president_of_status_quo }
+			traits = { primeminister_of_kingdom_of_ungarica }
 			can_be_fired = yes
-			idea_token = AUH_Richard_von_bienerth_schmerling
+			idea_token = AUH_sand_werkele
 
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_karol_hedervary = {
+		name = "Károly Khuen-Héderváry"
+		advisor = {
+			slot = political_advisor
+			traits = { primeminister_not_liked }
+			can_be_fired = yes
+			idea_token = AUH_karol_hedervary
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_lasczlo_lukas = {
+		name = "László Lukács"
+		advisor = {
+			slot = political_advisor
+			traits = { one_from_the_normal_ones }
+			can_be_fired = yes
+			idea_token = AUH_karol_hedervary
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_istvan_tizsa = {
+		name = "István Tisza"
+		advisor = {
+			slot = political_advisor
+			traits = { hungarian_man_with_a_vision }
+			can_be_fired = yes
+			idea_token = AUH_karol_hedervary
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
+		AUH_moric_ester = {
+		name = "Móric Esterházy"
+		advisor = {
+			slot = political_advisor
+			traits = { the_middle_man }
+			can_be_fired = yes
+			idea_token = AUH_moric_ester
 
 			allowed = {
 				OR = {
@@ -82,7 +161,7 @@ characters = {
 	}
 
 		AUH_franzjosef = {
-		name = "Franz Josef I von Habsburg-Lothringen"
+		name = "Franz Josef I"
 		country_leader = {
 			desc = "POLITICS_HERMANN_HANNEKEN_DESC"
 			expire = "1916.1.1"
@@ -113,6 +192,5 @@ characters = {
 				always = yes
 			}
 		}
-
 	}
 }

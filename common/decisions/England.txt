@@ -3,75 +3,77 @@ ENG_march_for_change = {
 		icon = eng_blackshirt_march
 
 		highlight_states = {
-			highlight_state_targets = { state = 119 } 
+			highlight_state_targets = { state = 113 state = 134 state = 135 state = 119 } 
 		}
 
 		on_map_mode = map_only
 
 		cost = 50
 
+		days_remove = 30
+
 		fire_only_once = yes
 
 		visible = {
-			NOT = { 
-				has_government = fascism
-				has_government = neutrality
-			}
+			NOT = { has_government = fascism OR has_government = neutrality }
+			has_completed_focus = ENG_march_for_change
 		}
 
-		cancel_if_not_visible = yes
-
-		complete_effect = {
+		remove_effect = {
 				add_popularity = { ideology = fascism popularity = 0.05 }
-				add_popularity = { ideology = neutrality popularity = 0.1 }
+				add_popularity = { ideology = neutrality popularity = 0.05 }
 		}
 	}
+
 	ENG_change_england = {
 		icon = eng_blackshirt_march
 
 		highlight_states = {
-			highlight_state_targets = { state = 119 } 
+			highlight_state_targets = { state = 126 state = 122 state = 931 state = 132 state = 130 state = 128 state = 129 state = 125 state = 131 state = 127 state = 338 state = 123 }
 		}
 
 		on_map_mode = map_only
 
 		cost = 50
 
+		days_remove = 30
+
 		fire_only_once = yes
 
 		visible = {
 			NOT = { has_government = fascism OR has_government = neutrality }
+			has_completed_focus = ENG_march_for_change
 		}
 
-		cancel_if_not_visible = yes
-
-		complete_effect = {
+		remove_effect = {
 				add_popularity = { ideology = fascism popularity = 0.05 }
 				add_popularity = { ideology = neutrality popularity = 0.1 }
 		}
 	}
+
 	ENG_change_scotland = {
 		icon = eng_blackshirt_march
 
 		highlight_states = {
-			highlight_state_targets = { state = 119 } 
+			highlight_state_targets = { state = 121 state = 136 state = 120 state = 133 }
 		}
 
 		on_map_mode = map_only
 
 		cost = 50
 
+		days_remove = 30
+
 		fire_only_once = yes
 
 		visible = {
 			NOT = { has_government = fascism OR has_government = neutrality }
+			has_completed_focus = ENG_march_for_change
 		}
 
-		cancel_if_not_visible = yes
-
-		complete_effect = {
+		remove_effect = {
 				add_popularity = { ideology = fascism popularity = 0.05 }
-				add_popularity = { ideology = neutrality popularity = 0.1 }
+				add_popularity = { ideology = neutrality popularity = 0.05 }
 		}
 	}
 
@@ -126,7 +128,7 @@ ENG_politics = {
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 40
+		days_mission_timeout = 26
 
 		priority = 100
 
@@ -137,8 +139,93 @@ ENG_politics = {
 		}
 	}
 
-	ENG_irish_excpectations = {
+	ENG_parliament_act = {
 
+		activation = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The House of Commons Passed This Law"
+				always = no
+			}
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 50
+
+		priority = 90
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { var = govseats  value = 331  compare = less_than }
+				}
+				custom_effect_tooltip = ENG_law_not_pass
+				add_stability = -0.1
+			}
+			
+			else_if = {
+				limit = {
+					check_variable = { var = govseats  value = 330  compare = greater_than }
+				}
+				custom_effect_tooltip = ENG_law_pass
+				set_country_flag = ENG_parliament_act
+				swap_ideas = {
+					remove_idea = ENG_house_of_lords
+					add_idea = ENG_house_of_lords_2
+				}
+			}
+		}
+	}
+
+	ENG_national_insurance_act = {
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The House of Commons Passed This Law"
+				always = no
+			}
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 50
+
+		priority = 90
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { var = govseats  value = 331  compare = less_than }
+				}
+				custom_effect_tooltip = ENG_law_not_pass
+				add_stability = -0.1
+			}
+			
+			else_if = {
+				limit = {
+					check_variable = { var = govseats  value = 330  compare = greater_than }
+				}
+				custom_effect_tooltip = ENG_law_pass
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}
+				add_stability = 0.05
+			}
+		}
+	}
+
+	ENG_irish_excpectations = {
 		activation = {
 			always = no
 		}

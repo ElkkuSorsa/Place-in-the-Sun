@@ -22,14 +22,21 @@ add_ideas = {
 
 
 #Politics for 1936.1.1
+add_ideas = {
+	ENG_haldane_reform_1
+	ENG_house_of_lords
+	ENG_two_power_standard
+	ENG_british_politics_dem
+}
+
 recruit_character = ENG_asquith
 recruit_character = ENG_lloyd_george
 set_cosmetic_tag = ENG_democratic
 set_country_flag = ENG_lib_his
-set_variable = { libseats = 272 }
-set_variable = { conseats = 271 }
+set_variable = { libseats = 274 }
+set_variable = { conseats = 272 }
 set_variable = { ireseats = 74 }
-set_variable = { labseats = 43 }
+set_variable = { labseats = 40 }
 ENG_calc_gov = yes
 
 

@@ -236,6 +236,8 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved"
+			set_country_flag = ENG_parliament_disabled
 			news_event = {
 				id = communist_britain.1
 				days = 3
@@ -398,10 +400,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
+			activate_mission = ENG_national_insurance_act
 		}
 	}
 
@@ -566,9 +565,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_david_lloyd
+		id = ENG_battle_the_party_influence
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
-		x = 40
+		x = 38
 		y = 12
 
 		prerequisite = { focus = ENG_reign_of_asquith }
@@ -581,25 +580,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_battle_the_party_influence
-		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
-		x = 38
-		y = 13
-
-		prerequisite = { focus = ENG_david_lloyd }
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
 		id = ENG_promote_pro_coalition
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 38
-		y = 14
+		y = 13
 
 		prerequisite = { focus = ENG_battle_the_party_influence }
 
@@ -614,9 +598,9 @@ focus_tree = {
 		id = ENG_discredit_liberals
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 40
-		y = 13
+		y = 12
 
-		prerequisite = { focus = ENG_david_lloyd }
+		prerequisite = { focus = ENG_reign_of_asquith }
 
 		cost = 5
 
@@ -629,7 +613,7 @@ focus_tree = {
 		id = ENG_split_in_liberals
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 40
-		y = 14
+		y = 13
 
 		prerequisite = { focus = ENG_discredit_liberals }
 
@@ -644,9 +628,9 @@ focus_tree = {
 		id = ENG_endorse_conservatives
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 42
-		y = 13
+		y = 12
 
-		prerequisite = { focus = ENG_david_lloyd }
+		prerequisite = { focus = ENG_reign_of_asquith }
 
 		cost = 5
 
@@ -659,7 +643,7 @@ focus_tree = {
 		id = ENG_collaborate_with_conservatives
 		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
 		x = 42
-		y = 14
+		y = 13
 
 		prerequisite = { focus = ENG_endorse_conservatives }
 
@@ -680,10 +664,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_house_of_lords
-				add_idea = ENG_house_of_lords_2
-			}
+			activate_mission = ENG_parliament_act
 		}
 	}
 
@@ -1709,8 +1690,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.1
+			add_opinion_modifier = {
+				target = GER
+				modifier = ENG_embrace_german_heritage_modi
+			}
 		}
 	}
 
@@ -2081,7 +2064,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_industrial_powerhouse
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_industry_2
 		x = 75
 		y = 1
 
@@ -2091,16 +2074,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ENG_industrial_powerhouse_idea_2
-				remove_idea = ENG_industrial_powerhouse_idea_1
-			}
+			add_ideas = ENG_industrial_powerhouse_idea_1
 		}
 	}
 
 	focus = {
 		id = ENG_military_industries
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
 		x = 80
 		y = 2
 
@@ -2126,7 +2106,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_field_artillery
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_army_artillery2
 		x = 80
 		y = 3
 
@@ -2148,7 +2128,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_shell_factories
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_army_artillery
 		x = 80
 		y = 4
 
@@ -2173,7 +2153,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_shell_crisis
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_army_artillery
 		x = 78
 		y = 4
 
@@ -2188,7 +2168,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_emergancy_factories
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_GER_factories_for_resources
 		x = 80
 		y = 5
 
@@ -2224,7 +2204,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_convert_civilian_industries
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_GER_integrated_economies
 		x = 80
 		y = 6
 
@@ -2263,7 +2243,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_vickers_limited
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_small_arms
 		x = 83
 		y = 3
 
@@ -2280,7 +2260,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_further_infra
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 76
 		y = 2
 
@@ -2325,7 +2305,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_railways
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_railroad
 		x = 77
 		y = 3
 
@@ -2342,7 +2322,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_industrial_innovation
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_modernize_industry
 		x = 75
 		y = 4
 
@@ -2364,7 +2344,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_assembly_line
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_industry_3
 		x = 75
 		y = 5
 
@@ -2377,12 +2357,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_industrial_powerhouse_idea_2
+				remove_idea = ENG_industrial_powerhouse_idea_1
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_develop_textile_industry
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		x = 72
 		y = 2
 
@@ -2407,7 +2391,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_steel_industries
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_steel
 		x = 71
 		y = 3
 
@@ -2429,7 +2413,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_home_industries
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		x = 73
 		y = 3
 
@@ -2462,7 +2446,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_heavy_industry
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
 		x = 69
 		y = 3
 
@@ -2495,7 +2479,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_utilize_colony_resources
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_resource_extraction
 		x = 73
 		y = 4
 
@@ -2516,7 +2500,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_haldane_reforms
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_chi_army_reform
 		x = 85
 		y = 1
 
@@ -2526,13 +2510,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_haldane_reforms
+			add_ideas = ENG_haldane_reforms_idea
 		}
 	}
 
 	focus = {
 		id = ENG_prepare_for_war
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 85
 		y = 3
 		prerequisite = { focus = ENG_haldane_reforms }
@@ -2553,7 +2537,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_support_arms_factories
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 84
 		y = 4
 		prerequisite = { focus = ENG_prepare_for_war }
@@ -2570,7 +2554,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_lessons_of_war
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 88
 		y = 2
 		prerequisite = { focus = ENG_haldane_reforms }
@@ -2590,7 +2574,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_territorial_force
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_army_doctrines
 		x = 87
 		y = 3
 		prerequisite = { focus = ENG_lessons_of_war }
@@ -2619,7 +2603,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_expeditionary_force
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_experts_in_camouflage_ccp_2d_sov_compatibility
 		x = 89
 		y = 3
 		prerequisite = { focus = ENG_lessons_of_war }
@@ -2648,7 +2632,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_officer_training_corps
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_military_mission
 		x = 88
 		y = 4
 		prerequisite = { focus = ENG_territorial_force }
@@ -2669,7 +2653,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_haldane_reforms_completed
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
 		x = 86
 		y = 5
 		prerequisite = { focus = ENG_officer_training_corps }
@@ -2681,13 +2665,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = ENG_haldane_reforms
+			remove_ideas = ENG_haldane_reforms_idea
 		}
 	}
 
 	focus = {
 		id = ENG_military_innovation
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_research
 		x = 92
 		y = 2
 		prerequisite = { focus = ENG_haldane_reforms }
@@ -2703,7 +2687,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_weapon_reasearch
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_continuous_research
 		x = 92
 		y = 3
 		prerequisite = { focus = ENG_military_innovation }
@@ -2719,7 +2703,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_heavy_howitzer
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
 		x = 93
 		y = 4
 		prerequisite = { focus = ENG_weapon_reasearch }
@@ -2735,7 +2719,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_poison_gas
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_build_tank
 		x = 95
 		y = 4
 		prerequisite = { focus = ENG_weapon_reasearch }
@@ -2751,7 +2735,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_machine_guns
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		x = 91
 		y = 4
 		prerequisite = { focus = ENG_weapon_reasearch }
@@ -2767,7 +2751,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_tanks
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_army_tanks
 		x = 93
 		y = 5
 		prerequisite = { focus = ENG_machine_guns }
@@ -2785,7 +2769,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_future_of_war
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_tank_production
 		x = 93
 		y = 6
 		prerequisite = { focus = ENG_tanks }
@@ -2801,7 +2785,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_royal_airforce
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_goal_generic_air_fighter
 		x = 98
 		y = 3
 		prerequisite = { focus = ENG_military_innovation }
@@ -2817,7 +2801,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_air_industry
-		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		icon = GFX_focus_generic_aircraft_production
 		x = 98
 		y = 4
 		prerequisite = { focus = ENG_royal_airforce }

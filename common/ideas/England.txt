@@ -1,6 +1,7 @@
 ideas = {
 	country = {
 		ENG_royal_opposition = {
+			picture = can_patriation
 			modifier = {
 				stability_factor = -0.1
 				consumer_goods_factor = -0.1
@@ -8,6 +9,7 @@ ideas = {
 		}
 
 		ENG_royal_veto = {
+			picture = can_patriation
 			modifier = {
 				stability_factor = 0.1
 				consumer_goods_factor = 0.1
@@ -15,6 +17,7 @@ ideas = {
 		}
 
 		ENG_royal_appeasement = {
+			picture = can_patriation
 			modifier = {
 				stability_factor = 0.05
 				consumer_goods_factor = 0.05
@@ -22,12 +25,14 @@ ideas = {
 		}
 
 		ENG_supported_entreprenourship = {
+			picture = generic_foreign_capital
 			modifier = {
 				consumer_goods_factor = -0.15
 			}
 		}
 
 		ENG_healthcare_reform = {
+			picture = SOV_rebuild_the_nation_ccp_sov_compatibility
 			modifier = {
 				consumer_goods_factor = 0.05
 				democratic_drift = 0.01
@@ -35,6 +40,7 @@ ideas = {
 		}
 
 		ENG_poor_laws = {
+			picture = generic_foreign_capital
 			modifier = {
 				consumer_goods_factor = 0.05
 				stability_factor = 0.05
@@ -43,6 +49,7 @@ ideas = {
 		}
 
 		ENG_house_of_lords = {
+			picture = generic_monarchist_uprising
 			modifier = {
 				stability_factor = -0.05
 				political_power_factor = -0.3
@@ -50,20 +57,21 @@ ideas = {
 		}
 
 		ENG_house_of_lords_2 = {
+			picture = generic_king_handled
 			modifier = {
 				political_power_factor = 0.1
 			}
 		}
 
 		ENG_two_power_standard = {
-			picture = ast_abandon_the_westminster_system_fascism
+			picture = generic_navy_bonus
 			modifier = {
 				industrial_capacity_dockyard = 0.1
 			}
 		}
 
 		ENG_march_for_change_idea = {
-			picture = generic_monarchist_uprising
+			picture = generic_democracy_banned
 			modifier = {
 				stability_factor = -0.25
 				neutrality_drift = 0.05
@@ -72,7 +80,7 @@ ideas = {
 		}
 
 		ENG_restored_monarchy = {
-			picture = generic_monarchist_uprising
+			picture = AUS_habsburg_monarchy_restored
 			modifier = {
 				political_power_factor = 0.1
 				neutrality_drift = 0.05
@@ -81,7 +89,7 @@ ideas = {
 		}
 
 		ENG_empowered_local_nobility = {
-			picture = generic_disjointed_gov
+			picture = eng_the_kings_party
 			modifier = {
 				political_power_factor = -0.05
 				stability_weekly = 0.02
@@ -116,7 +124,7 @@ ideas = {
 		}
 
 		ENG_slay_the_eagle = {
-			picture = eng_guided_by_britain
+			picture = GER_fan_prussian_militarism
 			modifier = {
 				naval_invasion_capacity = 10
 				invasion_preparation = -0.3
@@ -124,7 +132,7 @@ ideas = {
 		}
 
 		ENG_war_budget = {
-			picture = eng_guided_by_britain
+			picture = GER_economy_of_conquest
 			modifier = {
 				consumer_goods_factor = 0.1
 				army_attack_factor = 0.05
@@ -139,23 +147,24 @@ ideas = {
 		}
 
 		ENG_socialist_reforms = {
-			picture = eng_guided_by_britain
+			picture = HUN_resurgent_communist_party_idea
 			modifier = {
 				consumer_goods_factor = 0.05
 				stability_factor = 0.1
 				political_power_factor = 0.05
+				communism_drift = 0.01
 			}
 		}
 
 		ENG_socialist_influence = {
-			picture = eng_guided_by_britain
+			picture = generic_communism_drift_bonus
 			modifier = {
 				communism_drift = 0.03
 			}
 		}
 
 		ENG_british_politics_dem = {
-			picture = generic_disjointed_gov
+			picture = ARG_envoy_to_london
 			modifier = {
 				political_power_factor = 0.1
 				stability_factor = 0.15
@@ -163,7 +172,7 @@ ideas = {
 		}
 
 		ENG_british_politics_aut = {
-			picture = generic_disjointed_gov
+			picture = ARG_envoy_to_london
 			modifier = {
 				political_power_factor = 0.2
 				stability_factor = -0.1
@@ -172,7 +181,7 @@ ideas = {
 		}
 
 		ENG_workers_militias = {
-			picture = generic_disjointed_gov
+			picture = generic_communist_army
 			modifier = {
 				army_org_factor = -0.2
 				army_attack_factor = -0.1
@@ -181,7 +190,7 @@ ideas = {
 		}
 
 		ENG_industrial_powerhouse_idea_1 = {
-			picture = generic_disjointed_gov
+			picture = generic_economic_increase
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.05
@@ -191,7 +200,7 @@ ideas = {
 		}
 
 		ENG_industrial_powerhouse_idea_2 = {
-			picture = generic_disjointed_gov
+			picture = generic_economic_increase
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.1
@@ -201,7 +210,7 @@ ideas = {
 		}
 
 		ENG_colonial_resources_utilized = {
-			picture = generic_disjointed_gov
+			picture = SPR_relocate_the_gold_reserves
 			modifier = {
 				consumer_goods_factor = 0.1
 				industrial_capacity_factory = 0.2
@@ -210,15 +219,15 @@ ideas = {
 		}
 
 		ENG_emergency_shell_factories = {
-			picture = generic_disjointed_gov
+			picture = FRA_factory_strikes
 			modifier = {
 				consumer_goods_factor = 0.3
 				industrial_capacity_factory = 0.3
 			}
 		}
 
-		ENG_haldane_reforms = {
-			picture = generic_disjointed_gov
+		ENG_haldane_reforms_idea = {
+			picture = SOV_rebuild_the_nation_ccp_sov_compatibility
 			modifier = {
 				consumer_goods_factor = 0.1
 				political_power_cost = 0.5
@@ -226,7 +235,7 @@ ideas = {
 		}
 
 		ENG_haldane_reform_1 = {
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption
 			modifier = {
 				army_org_factor = -0.2
 				army_defence_factor = -0.15
@@ -235,7 +244,7 @@ ideas = {
 		}
 
 		ENG_haldane_reform_2 = {
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption
 			modifier = {
 				army_org_factor = -0.15
 				army_defence_factor = -0.1
@@ -244,7 +253,7 @@ ideas = {
 		}
 
 		ENG_haldane_reform_3 = {
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption2
 			modifier = {
 				army_org_factor = -0.1
 				army_defence_factor = -0.05
@@ -253,7 +262,7 @@ ideas = {
 		}
 
 		ENG_haldane_reform_4 = {
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption2
 			modifier = {
 				army_org_factor = -0.05
 				supply_consumption_factor = 0.05
@@ -261,7 +270,7 @@ ideas = {
 		}
 
 		ENG_haldane_reform_5 = {
-			picture = generic_disjointed_gov
+			picture = chi_army_corruption3
 			modifier = {
 				army_org_factor = 0.05
 				army_defence_factor = 0.05
@@ -270,7 +279,7 @@ ideas = {
 		}
 
 		ENG_preparing_for_war = {
-			picture = generic_disjointed_gov
+			picture = MEX_politicised_army
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
 				consumer_goods_factor = -0.1

@@ -26,7 +26,7 @@ ideas = {
 				command_power_gain_mult = -0.05
 			}
 		}
-			Multiethnicity = {
+			auh_Multiethnicity = {
 			picture = empire_of_old_habsburg
 			modifier = {
 			recruitable_population_factor = 0.015
@@ -39,7 +39,7 @@ ideas = {
 			subjects_autonomy_gain = 0.5
 			}
 		}
-			ghostofthepast = {
+			auh_ghostofthepast = {
 			picture = ghost_of_the_past
 			modifier = {
 			industrial_capacity_factory = -0.10
@@ -50,6 +50,35 @@ ideas = {
 			line_change_production_efficiency_factor = -0.05
 			research_speed_factor = -0.10
 			trade_laws_cost_factor = 0.20
+			}
+		}
+
+
+			@ @ @ ADVISORS_PRIMEMINISTER @ @ @
+
+			AUH_ernest_von_Koerber = {
+			picture = ghost_of_the_past
+			modifier = {
+			stability_factor = 0.025
+			war_support_factor = -0.05
+			consumer_goods_factor = -0.05
+			production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+			AUH_Richard_von_bienerth_schmerling = {
+			picture = Richard_von_bienerth_schmerling
+			modifier = {
+			industrial_capacity_factory = 0.015
+			stability_weekly = 0.0015
+			non_core_manpower = 0.015
+			}
+		}
+
+			auh_zsand_werkele = {
+			picture = zsand_werkele
+			modifier = {
+			consumer_goods_factor = -0.05
 			}
 		}
 	}

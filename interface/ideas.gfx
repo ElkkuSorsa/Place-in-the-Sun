@@ -10,9 +10,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/empire_of_habsburg_old.dds"
 	}
 
-			SpriteType = {
+		SpriteType = {
 		name = "GFX_idea_ghost_of_the_past"
 		texturefile = "gfx/interface/ideas/AUH/ghost_of_the_past.dds"
+	}
+
+		SpriteType = {
+		name = "GFX_idea_Richard_von_bienerth_schmerling"
+		texturefile = "gfx/interface/ideas/AUH/first_primeminister.png"
+	}
+		SpriteType = {
+		name = "GFX_idea_zsand_werkele
+		texturefile = "gfx/interface/ideas/AUH/first_primeminister_hun.png"
 	}
 
 	SpriteType = {
