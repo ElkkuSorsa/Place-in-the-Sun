@@ -205,7 +205,7 @@ focus = {
     cost = 5
     prerequisite = {focus = RUS_industrialization}
     completion_reward = {
-    add_ideas = stolypin_reform
+    add_ideas = RUS_industrial_focus
     }
     }
 focus = {
@@ -1161,13 +1161,139 @@ focus = {
     
 }
 focus = {
-    id = RUS_politics
-    icon = GFX_goal_tsar_sigma
-    x = 1
+    id = RUS_control_duma
+    icon = GFX_focus_GER_total_control_over_domestic_affairs
+    x = 56
     y = 1
-    cost = 1
+    cost = 5
+    completion_reward = {
+    add_political_power = 50
+    add_timed_idea = {idea = RUS_control_duma days = 365}
+    add_stability = -0.05
+    }
+    }
+focus = {
+    id = RUS_moving_away_from_agrarianism
+    icon = GFX_focus_generic_industry_3
+    x = 62
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_control_duma}
+    completion_reward = {
+    add_ideas = stolypin_reform
+    }
+    }
+
+focus = {
+    id = RUS_affirm_france
+    icon = GFX_focus_chi_reach_out_to_france
+    x = 50
+    y = 2
+    cost = 5
+    prerequisite = {focus = RUS_control_duma}
+    completion_reward = {
+    add_political_power = 35
+    reverse_add_opinion_modifier = {
+    target = FRA
+    modifier = huge_increase
+    }
+    }
+    }
+focus = {
+    id = RUS_farmers_into_factories
+    icon = GFX_focus_chi_reach_out_to_france
+    x = 63
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_moving_away_from_agrarianism}
+    completion_reward = {
+    219 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }}
+    swap_ideas = { 
+    remove_idea = RUS_agrarian_empire
+    add_idea = RUS_agrarian_empire2
+    }
+    }
+    }
+    focus = {
+    id = RUS_politics
+    icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+    x = 56
+    y = 2
+    cost = 5
     completion_reward = {
     add_political_power = 100
+    }
+    }
+    focus = {
+    id = RUS_collaborate_with_liberals
+    icon = GFX_goal_support_democracy
+    prerequisite = {focus = RUS_politics}
+    x = 54
+    y = 3
+    cost = 10
+    mutually_exclusive = {focus = RUS_ensure_the_tsars_powers}
+    completion_reward = {
+    add_political_power = 75
+    add_stability = 0.05
+    add_popularity = {
+	ideology = democratic
+	popularity = 0.1
+    }
+    add_ideas = RUS_liberal_cooperation
+    }
+    }
+    focus = {
+    id = RUS_ensure_the_tsars_powers
+    icon = GFX_focus_SOV_the_true_tsars
+    x = 58
+    y = 3
+    cost = 10
+    mutually_exclusive = {focus = RUS_collaborate_with_liberals}
+    prerequisite = {focus = RUS_politics}
+    completion_reward = {
+    add_political_power = 100
+    add_war_support = 0.05
+    add_stability = -0.05
+    add_timed_idea = {idea = RUS_empowering_tsar days = 365}
+    }
+    }
+focus = {
+    id = RUS_crush_trade_unions
+    icon = GFX_goal_anti_comintern_pact
+    x = 56
+    y = 4
+    cost = 10
+
+    prerequisite = {focus = RUS_collaborate_with_liberals focus = RUS_ensure_the_tsars_powers}
+    completion_reward = {
+    add_stability = -0.05
+    swap_ideas = { 
+    remove_idea = RUS_communist_revolutionaries
+    add_idea = RUS_communist_revolutionaries2
+    }
+    add_popularity = {
+	ideology = communism
+	popularity = -0.05
+    }
+    }
+    }
+focus = {
+    id = RUS_ramp_up_military_excercises
+    icon = GFX_focus_chi_reach_out_to_france
+    x = 50
+    y = 3
+    cost = 10
+    prerequisite = {focus = RUS_affirm_france}
+    completion_reward = {
+    army_experience = 20
+    add_war_support = 0.05
+    add_timed_idea = { idea = RUS_ramp_up_military_excercises days = 180}
     }
     }
 }
