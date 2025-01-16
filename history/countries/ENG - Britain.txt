@@ -29,6 +29,36 @@ add_ideas = {
 	ENG_british_politics_dem
 }
 
+set_autonomy = {
+	target = RAJ
+	autonomy_state = autonomy_colony
+}
+
+set_autonomy = {
+	target = AST
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = CAN
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = NZL
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = SAF
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = MAL
+	autonomy_state = autonomy_colony
+}
+
 recruit_character = ENG_asquith
 recruit_character = ENG_lloyd_george
 set_cosmetic_tag = ENG_democratic
