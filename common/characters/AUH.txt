@@ -120,6 +120,26 @@ characters = {
 		}
 	}
 
+		AUH_moric_ester = {
+		name = "Móric Esterházy"
+		advisor = {
+			slot = political_advisor
+			traits = { the_middle_man }
+			can_be_fired = yes
+			idea_token = AUH_moric_ester
+
+			allowed = {
+				OR = {
+					always = yes
+				}
+			}
+
+			available = {
+				always = Yes
+			}
+		}
+	}
+
 		AUH_karl_von_sturgkh = {
 		name = "Karl von Stürgkh"
 		advisor = {
@@ -172,6 +192,5 @@ characters = {
 				always = yes
 			}
 		}
-
 	}
 }

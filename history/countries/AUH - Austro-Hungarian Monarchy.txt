@@ -13,6 +13,7 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
+	AUH_sand_werkele
 }
 
 
@@ -24,7 +25,6 @@ add_ideas = {
 }
 
 #Politics for 1936.1.1
-activate_advisor = AUH_Richard_von_bienerth_schmerling
 recruit_character = AUH_Ernest_von_Koerber
 recruit_character = AUH_Richard_von_bienerth_schmerling
 recruit_character = AUH_karoly
@@ -35,6 +35,7 @@ recruit_character = AUH_sand_werkele
 recruit_character = AUH_karol_hedervary
 recruit_character = AUH_lasczlo_lukas
 recruit_character = AUH_istvan_tizsa
+recruit_character = AUH_moric_ester
 
 
 hun_trust = yes
@@ -44,6 +45,7 @@ add_ideas = {
 	auh_Multiethnicity
 	auh_ghostofthepast
 	AUH_Richard_von_bienerth_schmerling
+	auh_zsand_werkele
 }
 set_politics = {
 	ruling_party = neutrality

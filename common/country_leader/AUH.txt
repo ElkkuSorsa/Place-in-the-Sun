@@ -42,9 +42,12 @@ leader_traits = {
 		stability_factor = 0.01
 	}
 		hungarian_man_with_a_vision = {
-		stability_factor = -0.50
+		stability_factor = -0.10
 		consumer_goods_factor = 0.1
 		democratic_drift = 0.05
 		war_support_factor = -0.1
+	}
+		the_middle_man = {
+		stability_factor = 0.01
 	}
 }
