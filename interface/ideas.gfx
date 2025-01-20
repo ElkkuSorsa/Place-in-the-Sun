@@ -20,8 +20,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/first_primeminister.png"
 	}
 		SpriteType = {
-		name = "GFX_idea_zsand_werkele
-		texturefile = "gfx/interface/ideas/AUH/first_primeminister_hun.png"
+		name = "GFX_idea_AUH_primeminister_werkele
+		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.png"
 	}
 
 	SpriteType = {

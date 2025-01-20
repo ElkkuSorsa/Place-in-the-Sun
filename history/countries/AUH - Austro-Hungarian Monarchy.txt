@@ -13,7 +13,6 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
-	AUH_sand_werkele
 }
 
 
@@ -45,7 +44,7 @@ add_ideas = {
 	auh_Multiethnicity
 	auh_ghostofthepast
 	AUH_Richard_von_bienerth_schmerling
-	auh_zsand_werkele
+	AUH_primeminister_werkele
 }
 set_politics = {
 	ruling_party = neutrality

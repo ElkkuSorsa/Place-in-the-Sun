@@ -75,8 +75,8 @@ ideas = {
 			}
 		}
 
-			auh_zsand_werkele = {
-			picture = zsand_werkele
+			AUH_primeminister_werkele = {
+			picture = AUH_primeminister_werkele
 			modifier = {
 			consumer_goods_factor = -0.05
 			}
