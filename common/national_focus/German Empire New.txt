@@ -1,0 +1,273 @@
+focus_tree = {
+	id = GER_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 51
+			tag = GER
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = GER_legacy_of_bismarck
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 25
+		y = 1
+		        
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_continue_weltpolitik
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 17
+		y = 2
+		prerequisite = { focus = GER_legacy_of_bismarck }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_oberste_heeresleitung
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 22
+		y = 3
+		prerequisite = { focus = GER_continue_weltpolitik }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_continue_imperial_authority
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 21
+		y = 4
+		prerequisite = { focus = GER_oberste_heeresleitung }
+		mutually_exclusive = { focus = GER_ohl_authority }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_ohl_authority
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 23
+		y = 4
+		prerequisite = { focus = GER_oberste_heeresleitung }
+		mutually_exclusive = { focus = GER_continue_imperial_authority }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_foreign_policy
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 13
+		y = 3
+		prerequisite = { focus = GER_continue_weltpolitik }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_leagcy_of_brothers_war
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 10
+		y = 4
+		prerequisite = { focus = GER_foreign_policy }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_claim_german_territories
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 10
+		y = 5
+		prerequisite = { focus = GER_leagcy_of_brothers_war }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_german_bohemia
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 8
+		y = 5
+		prerequisite = { focus = GER_leagcy_of_brothers_war }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_second_brothers_war
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 10
+		y = 6
+		prerequisite = { focus = GER_claim_german_territories }
+		prerequisite = { focus = GER_german_bohemia }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_surrender_italian_claims
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 9
+		y = 7
+		prerequisite = { focus = GER_second_brothers_war }
+		mutually_exclusive = { focus = GER_dishonor_alliance }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_dishonor_alliance
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 11
+		y = 7
+		prerequisite = { focus = GER_second_brothers_war }
+		mutually_exclusive = { focus = GER_surrender_italian_claims }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_war_on_france
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 10
+		y = 8
+		prerequisite = { focus = GER_dishonor_alliance focus = GER_surrender_italian_claims }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_schlieffen_plan
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 13
+		y = 5
+		prerequisite = { focus = GER_leagcy_of_brothers_war focus = GER_maintain_austrian_claims}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_kingdom_of_poland
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 13
+		y = 6
+		prerequisite = { focus = GER_schlieffen_plan }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_maintain_austrian_claims
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 16
+		y = 4
+		prerequisite = { focus = GER_foreign_policy }
+		mutually_exclusive = { focus = GER_leagcy_of_brothers_war }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_send_advisors_auh
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 16
+		y = 5
+		prerequisite = { focus = GER_maintain_austrian_claims }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_dutch_mil_access
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 18
+		y = 6
+		prerequisite = { focus = GER_send_advisors_auh }
+		mutually_exclusive = { focus = GER_expand_schlieffen }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_expand_schlieffen
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 16
+		y = 6
+		prerequisite = { focus = GER_send_advisors_auh }
+		prerequisite = { focus = GER_schlieffen_plan }
+		mutually_exclusive = { focus = GER_dutch_mil_access }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_pre-emptive_strike
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 17
+		y = 7
+		prerequisite = { focus = GER_expand_schlieffen focus = GER_dutch_mil_access }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_balance_constituencies
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 33
+		y = 2
+		prerequisite = { focus = GER_legacy_of_bismarck }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+}
