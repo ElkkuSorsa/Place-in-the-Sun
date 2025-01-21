@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/bad_funding_army.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_AUH_primeminister_werkele"
+		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.png"
+	}
+
 		SpriteType = {
 		name = "GFX_idea_empire_of_old_habsburg"
 		texturefile = "gfx/interface/ideas/AUH/empire_of_habsburg_old.dds"
@@ -18,10 +23,6 @@ spriteTypes = {
 		SpriteType = {
 		name = "GFX_idea_Richard_von_bienerth_schmerling"
 		texturefile = "gfx/interface/ideas/AUH/first_primeminister.png"
-	}
-		SpriteType = {
-		name = "GFX_idea_AUH_primeminister_werkele
-		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.dds"
 	}
 
 	SpriteType = {

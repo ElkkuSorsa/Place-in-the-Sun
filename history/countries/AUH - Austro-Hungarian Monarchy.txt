@@ -37,8 +37,8 @@ recruit_character = AUH_istvan_tizsa
 recruit_character = AUH_moric_ester
 
 
-hun_trust = yes
-set_country_flag = HUN_ind
+*hun_trust = yes*
+*set_country_flag = HUN_ind*
 add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity

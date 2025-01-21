@@ -1,24 +1,5 @@
 characters = {
 	# Hungarian Prime Ministers and Leaders
-	AUH_Richard_von_bienerth_schmerling = {
-		name = "Richard von Bienerth-Schmerling"
-		advisor = {
-			slot = political_advisor
-			traits = { minister-president_of_status_quo }
-			can_be_fired = yes
-			idea_token = AUH_Richard
-
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
-
-			available = {
-				always = yes
-			}
-		}
-	}
 
 	AUH_Ernest_von_Koerber = {
 		name = "Ernest von Koerber"
@@ -40,13 +21,13 @@ characters = {
 		}
 	}
 
-		AUH_sand_werkele = {
-		name = "Sándor Wekerle"
+		AUH_stefan_burian = {
+		name = "Gráf István Burián von Rajecz"
 		advisor = {
 			slot = political_advisor
-			traits = { primeminister_of_kingdom_of_ungarica }
+			traits = { k_k_minister_finance_i }
 			can_be_fired = yes
-			idea_token = AUH_sand_werkele
+			idea_token = AUH_stefan_burian
 
 			allowed = {
 				OR = {
@@ -60,13 +41,13 @@ characters = {
 		}
 	}
 
-		AUH_karol_hedervary = {
-		name = "Károly Khuen-Héderváry"
+		AUH_leon_blinski = {
+		name = "Ritter Leon von Biliński"
 		advisor = {
 			slot = political_advisor
-			traits = { primeminister_not_liked }
+			traits = { k_k_minister_finance_ii }
 			can_be_fired = yes
-			idea_token = AUH_karol_hedervary
+			idea_token = AUH_leon_blinski
 
 			allowed = {
 				OR = {
@@ -80,13 +61,13 @@ characters = {
 		}
 	}
 
-		AUH_lasczlo_lukas = {
-		name = "László Lukács"
+		AUH_friedrich_von_georgi = {
+		name = "Friedrich Robert von Georgi"
 		advisor = {
 			slot = political_advisor
-			traits = { one_from_the_normal_ones }
+			traits = { k_k_minister_teritorial_defence_i }
 			can_be_fired = yes
-			idea_token = AUH_karol_hedervary
+			idea_token = AUH_friedrich_von_georgi
 
 			allowed = {
 				OR = {
@@ -100,13 +81,13 @@ characters = {
 		}
 	}
 
-		AUH_istvan_tizsa = {
-		name = "István Tisza"
+		AUH_alois_lexa_von_aehrenthal = {
+		name = "Alois Lexa von Aehrenthal"
 		advisor = {
 			slot = political_advisor
-			traits = { hungarian_man_with_a_vision }
+			traits = { k_k_minister_of_outside_i }
 			can_be_fired = yes
-			idea_token = AUH_karol_hedervary
+			idea_token = AUH_alois_lexa_von_aehrenthal
 
 			allowed = {
 				OR = {
@@ -120,13 +101,13 @@ characters = {
 		}
 	}
 
-		AUH_moric_ester = {
-		name = "Móric Esterházy"
+		AUH_alois_lexa_von_aehrenthal = {
+		name = "Alois Lexa von Aehrenthal"
 		advisor = {
 			slot = political_advisor
-			traits = { the_middle_man }
+			traits = { k_k_minister_of_outside_i }
 			can_be_fired = yes
-			idea_token = AUH_moric_ester
+			idea_token = AUH_alois_lexa_von_aehrenthal
 
 			allowed = {
 				OR = {
@@ -140,13 +121,13 @@ characters = {
 		}
 	}
 
-		AUH_karl_von_sturgkh = {
-		name = "Karl von Stürgkh"
+		AUH_leopold_berchtold = {
+		name = "Leopold Berchtold"
 		advisor = {
 			slot = political_advisor
-			traits = { minister-president_of_germans }
+			traits = { k_k_minister_of_outside_ii }
 			can_be_fired = yes
-			idea_token = AUH_karl_von_sturgkh
+			idea_token = AUH_leopold_berchtold
 
 			allowed = {
 				OR = {
@@ -170,26 +151,6 @@ characters = {
 			portraits = {
 			civilian = {
 				large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
-			}
-		}
-	}
-
-	AUH_gyula = {
-		name = "Gyula Justh"
-		advisor = {
-			slot = political_advisor
-			traits = { pro_hungary }
-			can_be_fired = no 
-			idea_token = AUH_gyula
-
-			allowed = {
-				OR = {
-					always = no
-				}
-			}
-
-			available = {
-				always = yes
 			}
 		}
 	}
