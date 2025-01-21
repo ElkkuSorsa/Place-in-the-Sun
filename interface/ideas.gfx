@@ -21,7 +21,7 @@ spriteTypes = {
 	}
 		SpriteType = {
 		name = "GFX_idea_AUH_primeminister_werkele
-		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.png"
+		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.dds"
 	}
 
 	SpriteType = {
