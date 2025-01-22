@@ -78,7 +78,7 @@ ideas = {
 			AUH_primeminister_werkele = {
 			picture = AUH_primeminister_werkele
 			modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = 0.05
 			}
 		}
 	}

@@ -23,7 +23,7 @@ AUH_stefan_burian = {
     name = "Gráf István Burián von Rajecz"
     advisor = {
         slot = political_advisor
-        traits = { k_k_minister_finance_i }
+        traits = { kuk_finanz_minister }
         can_be_fired = yes
         idea_token = AUH_stefan_burian
 
@@ -43,7 +43,7 @@ AUH_leon_blinski = {
     name = "Ritter Leon von Biliński"
     advisor = {
         slot = political_advisor
-        traits = { k_k_minister_finance_ii }
+        traits = { kuk_finanz_ministerii }
         can_be_fired = yes
         idea_token = AUH_leon_blinski
 
@@ -63,7 +63,7 @@ AUH_friedrich_von_georgi = {
     name = "Friedrich Robert von Georgi"
     advisor = {
         slot = political_advisor
-        traits = { k_k_minister_teritorial_defence_i }
+        traits = { kuk_regional_defence_minister }
         can_be_fired = yes
         idea_token = AUH_friedrich_von_georgi
 
@@ -83,7 +83,7 @@ AUH_alois_lexa_von_aehrenthal = {
     name = "Alois Lexa von Aehrenthal"
     advisor = {
         slot = political_advisor
-        traits = { k_k_minister_of_outside_i }
+        traits = { kuk_forgein_affairs }
         can_be_fired = yes
         idea_token = AUH_alois_lexa_von_aehrenthal
 
@@ -103,7 +103,7 @@ AUH_leopold_berchtold = {
     name = "Leopold Berchtold"
     advisor = {
         slot = political_advisor
-        traits = { k_k_minister_of_outside_ii }
+        traits = { kuk_forgein_affairsii }
         can_be_fired = yes
         idea_token = AUH_leopold_berchtold
 

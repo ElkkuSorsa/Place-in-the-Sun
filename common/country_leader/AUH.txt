@@ -30,6 +30,49 @@ leader_traits = {
 		non_core_manpower = 0.015
 	}
 
+		kuk_finanz_minister = {
+		random = no
+		consumer_goods_factor = -0.05
+		trade_laws_cost_factor = -0.05
+		economy_cost_factor = -0.05
+	}
+
+		kuk_finanz_ministerii = {
+		random = no
+		consumer_goods_factor = -0.1
+		trade_laws_cost_factor = -0.15
+		economy_cost_factor = -0.15
+	}
+
+		kuk_forgein_affairs = {
+		random = no
+		improve_relations_maintain_cost_factor = -0.02
+		justify_war_goal_time = -0.02
+		generate_wargoal_tension = -0.2
+		lend_lease_tension = -0.1
+		trade_opinion_factor = 0.03
+		foreign_subversive_activites = -0.3
+		stability_factor = -0.05
+	}
+
+		kuk_forgein_affairsii = {
+		random = no
+		improve_relations_maintain_cost_factor = -0.05
+		justify_war_goal_time = -0.05
+		generate_wargoal_tension = -0.3
+		lend_lease_tension = -0.02
+		trade_opinion_factor = 0.02
+		foreign_subversive_activites = -0.3
+		stability_factor = -0.10
+	}
+
+		kuk_regional_defence_minister = {
+		random = no
+		army_core_defence_factor = 0.025
+		army_core_attack_factor = 0.025
+		mobilization_speed = 0.05
+	}
+
 		primeminister_of_kingdom_of_ungarica = {
 		consumer_goods_factor = -0.05
 	}

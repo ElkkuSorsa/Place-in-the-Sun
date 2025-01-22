@@ -41,7 +41,9 @@ recruit_character = AUH_adolf_loos
 recruit_character = AUH_karl_wittgenstein
 recruit_character = AUH_otto_wagner
 recruit_character = AUH_vaclav_klement
-
+activate_advisor = AUH_stefan_burian
+activate_advisor = AUH_friedrich_von_georgi
+activate_advisor = AUH_alois_lexa_von_aehrenthal
 
 
 *hun_trust = yes*
