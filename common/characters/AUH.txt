@@ -1,11 +1,12 @@
 characters = {
-	AUH_Ernest_von_Koerber = {
+	
+    AUH_ernest_von_koerber = {
     name = "Ernest von Koerber"
     advisor = {
         slot = political_advisor
         traits = { minister-president_of_construction }
         can_be_fired = yes
-        idea_token = AUH_Ernest_von_Koerber
+        idea_token = AUH_ernest_von_koerber
 
         allowed = {
             OR = {

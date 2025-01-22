@@ -56,16 +56,6 @@ ideas = {
 
 			@ @ @ ADVISORS_PRIMEMINISTER @ @ @
 
-			AUH_ernest_von_Koerber = {
-			picture = ghost_of_the_past
-			modifier = {
-			stability_factor = 0.025
-			war_support_factor = -0.05
-			consumer_goods_factor = -0.05
-			production_speed_infrastructure_factor = 0.05
-			}
-		}
-
 			AUH_Richard_von_bienerth_schmerling = {
 			picture = Richard_von_bienerth_schmerling
 			modifier = {

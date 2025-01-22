@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/bad_funding_army.dds"
 	}
 
+		SpriteType = {
+		name = "GFX_idea_AUH_ernest_von_koerber"
+		texturefile = "gfx/interface/ideas/AUH/ernest_von_koerber.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_idea_AUH_primeminister_werkele"
 		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.png"
