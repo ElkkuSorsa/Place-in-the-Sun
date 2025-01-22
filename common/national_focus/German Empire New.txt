@@ -35,9 +35,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_oberste_heeresleitung
+		id = GER_general_staff
 		icon = GFX_focus_ger_revive_kaiserreich
-		x = 22
+		x = 25
 		y = 3
 		prerequisite = { focus = GER_continue_weltpolitik }
 
@@ -47,12 +47,28 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_continue_imperial_authority
+		id = GER_increase_peace_time_preparedness
 		icon = GFX_focus_ger_revive_kaiserreich
-		x = 21
+		x = 25
 		y = 4
-		prerequisite = { focus = GER_oberste_heeresleitung }
-		mutually_exclusive = { focus = GER_ohl_authority }
+		prerequisite = { focus = GER_general_staff }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_unlock_mil_prepare
+			add_dynamic_modifier = { modifier = GER_preparedness }
+		}
+
+	}
+
+	focus = {
+		id = GER_army_drills
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 22
+		y = 5
+		prerequisite = { focus = GER_increase_peace_time_preparedness }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -60,12 +76,35 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_ohl_authority
+		id = GER_rifle_improvements
 		icon = GFX_focus_ger_revive_kaiserreich
-		x = 23
-		y = 4
-		prerequisite = { focus = GER_oberste_heeresleitung }
-		mutually_exclusive = { focus = GER_continue_imperial_authority }
+		x = 25
+		y = 5
+		prerequisite = { focus = GER_increase_peace_time_preparedness }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_new_conscription
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 28
+		y = 5
+		prerequisite = { focus = GER_increase_peace_time_preparedness }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_oberste_heeresleitung
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 25
+		y = 6
+		prerequisite = { focus = GER_army_drills focus = GER_rifle_improvements focus = GER_new_conscription }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }

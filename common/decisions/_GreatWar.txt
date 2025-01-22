@@ -35,7 +35,7 @@ greatwar = {
 		}
 	}
 
-	GER_schlieffen_plan= {
+	GER_schlieffen_plan = {
 		ai_will_do = {
 			base = 500
 		}
@@ -49,6 +49,10 @@ greatwar = {
 		fire_only_once = yes
 
 		remove_effect = {
+			add_timed_idea = {
+				idea = GER_schlieffen_plan_idea
+				days = 45
+			}
 			declare_war_on = {
 				target = BEL
 				type = puppet_wargoal_focus
@@ -58,6 +62,64 @@ greatwar = {
 				target = LUX
 				type = puppet_wargoal_focus
 			}
+
+			if = {
+				limit = { has_country_flag = schlieffen_expanded }
+				declare_war_on = {
+					target = LUX
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+
+	GER_surrender = {
+		ai_will_do = {
+			base = 500
+		}
+
+		available = {
+			or = {
+				surrender_progress > 0.3
+
+			}
+		}
+
+		visible = {
+			original_tag = GER
+			has_war_with = FRA
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	FRA_surrender = {
+		ai_will_do = {
+			base = 500
+		}
+
+		available = {
+			or = {
+				surrender_progress > 0.7
+				NOT = {
+					controls_province = 11506
+				}
+			}
+		}
+
+		visible = {
+			original_tag = FRA
+			has_war_with = GER
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
 		}
 	}
 }

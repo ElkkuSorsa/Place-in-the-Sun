@@ -1,0 +1,5 @@
+﻿l_english:
+ GER_preparedness: "Military Preparedness"
+ GER_preparedness_desc: "The unified German army has not yet put in to a real war, a great war. We must prepare and train our troops for the next war. Tensions in Europe are rising between us and the French. \n\nPreparedness: §Y[?GER_preparedness]%§!"
+
+ GER_unlock_mil_prepare: "§YThis will unlock new decisions to prepare nation to war."

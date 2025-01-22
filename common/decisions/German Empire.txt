@@ -1,0 +1,37 @@
+GER_preparedness = {
+	ENG_intervene_greatwar = {
+		ai_will_do = {
+			base = 500
+		}
+
+		available = {
+			has_completed_focus = ENG_engage_in_europe
+			GER = {
+				has_war_with = BEL
+			}
+		}
+
+		visible = {
+			original_tag = ENG
+			has_government = democratic
+
+			FRA = {
+				has_war_with = GER
+			}
+		}
+
+		days_remove = 5
+		fire_only_once = yes
+
+		remove_effect = {
+			declare_war_on = {
+				target = GER
+				type = puppet_wargoal_focus
+			}
+
+			FRA = {
+				add_to_faction = ENG
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		GER_schlieffen_plan_idea = {
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.3
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.3
+			}
+		}
+	}
+}
