@@ -123,7 +123,7 @@ AUH_otto_wagner = {
     name = "Otto Wagner"
     advisor = {
         slot = political_advisor
-        traits = { k_k_artist_of_buildings }
+        traits = { kuk_rebuilder }
         can_be_fired = yes
 		expire = "1918.1.1"
         idea_token = AUH_otto_wagner
@@ -144,7 +144,7 @@ AUH_karl_wittgenstein = {
     name = "Karl Wittgenstein"
     advisor = {
         slot = political_advisor
-        traits = { k_k_steel_baron }
+        traits = { kuk_resources_more }
         can_be_fired = yes
 		expire = "1913.1.1"
         idea_token = AUH_karl_wittgenstein
@@ -162,10 +162,10 @@ AUH_karl_wittgenstein = {
 }
 
 AUH_vaclav_klement = {
-    name = "Václav Klementn"
+    name = "Václav Klement"
     advisor = {
         slot = political_advisor
-        traits = { k_k_master_designer }
+        traits = { kuk_engineer_of_future }
         can_be_fired = yes
 		expire = "1913.1.1"
         idea_token = AUH_vaclav_klement
@@ -186,7 +186,7 @@ AUH_adolf_loos = {
     name = "Adolf Loos"
     advisor = {
         slot = political_advisor
-        traits = { k_k_architect_of_clean }
+        traits = { kuk_modern_achitect }
         can_be_fired = yes
 		expire = "1913.1.1"
         idea_token = AUH_adolf_loos
@@ -203,32 +203,11 @@ AUH_adolf_loos = {
     }
 }
 
-AUH_leopold_bauer = {
-    name = "Leopold Bauer"
-    advisor = {
-        slot = political_advisor
-        traits = { k_k_architect_of_peasents }
-        can_be_fired = yes
-		expire = "1938.1.1"
-        idea_token = AUH_leopold_bauer
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
-        available = {
-            always = yes
-        }
-    }
-}
-
 AUH_viktor_adler = {
-    name = "Victor Adler"
+    name = "Viktor Adler"
     advisor = {
         slot = political_advisor
-        traits = { k_k_pan_german_marxist }
+        traits = { kuk_prominent_austromarxist }
         can_be_fired = yes
 		expire = "1919.1.1"
         idea_token = AUH_viktor_adler
@@ -249,31 +228,10 @@ AUH_eugen_von_bohm_bawerk = {
     name = "Eugen von Böhm-Bawerk"
     advisor = {
         slot = political_advisor
-        traits = { k_k_economic_expert_hate_marxism }
+        traits = { kuk_austrian_school_of_economics }
         can_be_fired = yes
 		expire = "1914.11.11"
         idea_token = AUH_eugen_von_bohm_bawerk
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
-        available = {
-            always = yes
-        }
-    }
-}
-
-AUH_joseph_schumpeter = {
-    name = "Joseph Schumpeter"
-    advisor = {
-        slot = political_advisor
-        traits = { k_k_economy_of_slow_growth }
-        can_be_fired = yes
-		expire = "1950.11.11"
-        idea_token = AUH_joseph_schumpeter
 
         allowed = {
             OR = {
@@ -291,7 +249,7 @@ AUH_otto_bauer = {
     name = "Otto Bauer"
     advisor = {
         slot = political_advisor
-        traits = { k_k_adlers_dog_economic }
+        traits = { kuk_austromarxist_economist }
         can_be_fired = yes
 		expire = "1938.1.1"
         idea_token = AUH_viktor_adler

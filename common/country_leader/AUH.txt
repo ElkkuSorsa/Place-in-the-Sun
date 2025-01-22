@@ -44,26 +44,49 @@ leader_traits = {
 		economy_cost_factor = -0.15
 	}
 
+		kuk_rebuilder = {
+		random = no
+		industry_repair_factor = 0.25
+	}
+
+		kuk_engineer_of_future = {
+		random = no
+		research_speed_factor = 0.10
+		production_factory_max_efficiency_factor = 0.075
+	}
+
+		kuk_resources_more = {
+		random = no
+		production_lack_of_resource_penalty_factor = -0.1
+		local_resources_factor = 0.10
+	}
+
+		kuk_modern_achitect = {
+		random = no
+		production_speed_buildings_factor = 0.075
+		stability_factor = 0.025
+	}
+
 		kuk_forgein_affairs = {
 		random = no
-		improve_relations_maintain_cost_factor = -0.02
+		improve_relations_maintain_cost_factor = -0.03
 		justify_war_goal_time = -0.02
-		generate_wargoal_tension = -0.2
-		lend_lease_tension = -0.1
+		generate_wargoal_tension = -0.3
+		lend_lease_tension = -0.2
 		trade_opinion_factor = 0.03
-		foreign_subversive_activites = -0.3
-		stability_factor = -0.05
+		stability_factor = -0.03
 	}
 
 		kuk_forgein_affairsii = {
 		random = no
 		improve_relations_maintain_cost_factor = -0.05
 		justify_war_goal_time = -0.05
-		generate_wargoal_tension = -0.3
-		lend_lease_tension = -0.02
-		trade_opinion_factor = 0.02
-		foreign_subversive_activites = -0.3
-		stability_factor = -0.10
+		generate_wargoal_tension = -0.1
+		lend_lease_tension = -0.05
+		trade_opinion_factor = 0.05
+		stability_factor = -0.06
+		justify_war_goal_time = -0.04
+		generate_wargoal_tension = -0.5
 	}
 
 		kuk_regional_defence_minister = {
@@ -71,6 +94,35 @@ leader_traits = {
 		army_core_defence_factor = 0.025
 		army_core_attack_factor = 0.025
 		mobilization_speed = 0.05
+	}
+
+		kuk_prominent_austromarxist = {
+		random = no
+		democratic_drift = 0.05
+		communism_drift = 0.05
+		neutrality_drift = -0.02
+		fascism_drift = 0.03
+		stability_weekly = 0.002
+		war_support_factor = -0.1
+	}
+
+		kuk_austrian_school_of_economics = {
+		random = no
+		communism_drift = -0.02
+		line_change_production_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.025
+		industrial_capacity_factory = 0.025
+	}
+
+		kuk_austromarxist_economist = {
+		random = no
+		communism_drift = 0.02
+		line_change_production_efficiency_factor = 0.05
+		production_factory_start_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.025
+		production_factory_max_efficiency_factor = 0.025
+		production_speed_buildings_factor = 0.025
+		neutrality_drift = -0.03
 	}
 
 		primeminister_of_kingdom_of_ungarica = {
