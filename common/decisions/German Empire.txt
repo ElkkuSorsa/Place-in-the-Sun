@@ -4,11 +4,11 @@ GER_preparedness = {
 			base = 500
 		}
 
-		custom_cost_text = inf_eq_5
-
 		custom_cost_trigger = {
-			# Inf Eq
+			has_equipment = { infantry_equipment > 999 }
 		}
+
+		custom_cost_text = decision_cost_ie_1000
 
 		available = {
 
@@ -18,7 +18,15 @@ GER_preparedness = {
 		days_re_enable = 35
 
 		complete_effect = {
-			GER_increase_preparedness_5 = yes
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1000
+				}
+			}
+
+
+			GER_increase_preparedness_10 = yes
 		}
 	}
 
@@ -27,19 +35,26 @@ GER_preparedness = {
 			base = 500
 		}
 
-		custom_cost_text = ae_15
-
 		custom_cost_trigger = {
-			# AE
+			has_army_experience > 14
 		}
 
-		available = {
+		custom_cost_text = ae_15
 
+		available = {
+			has_completed_focus = GER_new_conscription
 		}
 
 		fire_only_once = yes
 
 		complete_effect = {
+			hidden_effect = {
+				army_experience = -15
+			}
+			add_timed_idea = {
+				idea = GER_conscription_increase
+				days = 120
+			}
 			GER_increase_preparedness_5 = yes
 		}
 	}
@@ -52,7 +67,7 @@ GER_preparedness = {
 		cost = 50
 
 		available = {
-
+			has_completed_focus = GER_rifle_improvements
 		}
 
 		fire_only_once = yes

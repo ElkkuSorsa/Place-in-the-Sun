@@ -102,6 +102,12 @@ ideas = {
 				industrial_capacity_factory = 0.15
 			}
 		}
+
+		GER_conscription_increase = {
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
 	}
 }
 

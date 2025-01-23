@@ -1,6 +1,6 @@
 ﻿l_english:
- inf_eq_5: "£infantry_equipment 1000"
- inf_eq_5_blocked: "£infantry_equipment §R1000"
+ inf_eq_5: "£GFX_infantry_equipment_text_icon   §Y1000"
+ inf_eq_5_blocked: "£GFX_infantry_equipment_text_icon   §R1000"
 
- ae_15: "£GFX_army_experience 15"
- ae_15_blocked: "£GFX_army_experience §R15"
+ ae_15: "£GFX_army_experience   §Y15"
+ ae_15_blocked: "£GFX_army_experience   §R15"
