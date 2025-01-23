@@ -15,12 +15,6 @@ add_ideas = {
 	civilian_economy
 }
 
-set_variable = { GER_prepare_att = 0.025 }
-set_variable = { GER_prepare_def = 0.025 }
-set_variable = { GER_prepare_org = 0.025 }
-set_variable = { GER_prepare_mil = 0.05 }
-set_variable = { GER_prepare_cg = 0.025 }
-
 #For start date 1939.1.1
 1939.1.1 = {
 	add_political_power = 1000
