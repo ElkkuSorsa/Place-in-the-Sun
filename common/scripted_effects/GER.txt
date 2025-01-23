@@ -1,0 +1,19 @@
+GER_increase_preparedness_5 = {
+	custom_effect_tooltip = GER_increase_5
+	add_to_variable = { GER_preparedess = 5 }
+	add_to_variable = { GER_prepare_org = 0.025 }
+	add_to_variable = { GER_prepare_att = 0.025 }
+	add_to_variable = { GER_prepare_def = 0.025 }
+	add_to_variable = { GER_prepare_mil = 0.025 }
+	add_to_variable = { GER_prepare_cg = 0.025 }
+}
+
+GER_increase_preparedness_10 = {
+	custom_effect_tooltip = GER_increase_10
+	add_to_variable = { GER_preparedess = 10 }
+	add_to_variable = { GER_prepare_org = 0.05 }
+	add_to_variable = { GER_prepare_att = 0.05 }
+	add_to_variable = { GER_prepare_def = 0.05 }
+	add_to_variable = { GER_prepare_mil = 0.05 }
+	add_to_variable = { GER_prepare_cg = 0.05 }
+}
