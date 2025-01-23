@@ -21,7 +21,7 @@ add_namespace = GER_preparedness
 country_event = {
 	id = GER_preparedness.1
 	title = "Preparing pays off"
-	desc = ""
+	desc = "We have taken measures to ensure a victory in the next war. That war has started and our prepareing has paid off, we have received a ton of bonuses because of our pre-emptive measures to strenghten our military."
 
 	fire_only_once = yes
 

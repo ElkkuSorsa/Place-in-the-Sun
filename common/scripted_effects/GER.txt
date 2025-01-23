@@ -6,6 +6,10 @@ GER_increase_preparedness_5 = {
 	add_to_variable = { GER_prepare_def = 0.025 }
 	add_to_variable = { GER_prepare_mil = 0.025 }
 	add_to_variable = { GER_prepare_cg = 0.025 }
+	if = {
+		limit = { GER_preparedness > 99 }
+		add_to_variable = { GER_prepare_cg = 0.025 }
+	}
 }
 
 GER_increase_preparedness_10 = {
@@ -16,4 +20,8 @@ GER_increase_preparedness_10 = {
 	add_to_variable = { GER_prepare_def = 0.05 }
 	add_to_variable = { GER_prepare_mil = 0.05 }
 	add_to_variable = { GER_prepare_cg = 0.05 }
+	if = {
+		limit = { GER_preparedness > 99 }
+		add_to_variable = { GER_prepare_cg = 0.025 }
+	}
 }
