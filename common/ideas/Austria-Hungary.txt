@@ -1,7 +1,15 @@
 ideas = {
 	
 	country = {
-		
+			AUH_Richard_von_bienerth_schmerling = {
+			picture = Richard_von_bienerth_schmerling
+			modifier = {
+			industrial_capacity_factory = 0.015
+			stability_weekly = 0.0015
+			non_core_manpower = 0.015
+			}
+		}
+
 		auh_underfunded_army = {
 			picture = bad_funding_army
 			modifier = {
@@ -52,19 +60,6 @@ ideas = {
 			trade_laws_cost_factor = 0.20
 			}
 		}
-
-
-			@ @ @ ADVISORS_PRIMEMINISTER @ @ @
-
-			AUH_Richard_von_bienerth_schmerling = {
-			picture = Richard_von_bienerth_schmerling
-			modifier = {
-			industrial_capacity_factory = 0.015
-			stability_weekly = 0.0015
-			non_core_manpower = 0.015
-			}
-		}
-
 			AUH_primeminister_werkele = {
 			picture = AUH_primeminister_werkele
 			modifier = {

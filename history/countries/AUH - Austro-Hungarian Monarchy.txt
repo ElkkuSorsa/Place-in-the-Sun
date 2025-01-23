@@ -24,7 +24,7 @@ add_ideas = {
 }
 
 #Politics for 1936.1.1
-recruit_character = AUH_Ernest_von_Koerber
+recruit_character = auh_ernest_von_koerber
 recruit_character = AUH_Richard_von_bienerth_schmerling
 recruit_character = AUH_franzjosef
 recruit_character = AUH_stefan_burian

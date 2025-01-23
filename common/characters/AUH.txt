@@ -1,12 +1,19 @@
 characters = {
 	
-    AUH_ernest_von_koerber = {
+    auh_ernest_von_koerber = {
     name = "Ernest von Koerber"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_advisor_auh_ernest_von_koerber"
+		    }
+		}
     advisor = {
         slot = political_advisor
         traits = { minister-president_of_construction }
+        cost = 100
         can_be_fired = yes
-        idea_token = AUH_ernest_von_koerber
+        idea_token = auh_ernest_von_koerber
 
         allowed = {
             OR = {
@@ -20,10 +27,16 @@ characters = {
     }
 }
 
-AUH_stefan_burian = {
+    AUH_stefan_burian = {
     name = "Gráf István Burián von Rajecz"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_stefan_burian"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_finanz_minister }
         can_be_fired = yes
         idea_token = AUH_stefan_burian
@@ -42,8 +55,14 @@ AUH_stefan_burian = {
 
 AUH_leon_blinski = {
     name = "Ritter Leon von Biliński"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_leon_blinski"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_finanz_ministerii }
         can_be_fired = yes
         idea_token = AUH_leon_blinski
@@ -62,8 +81,14 @@ AUH_leon_blinski = {
 
 AUH_friedrich_von_georgi = {
     name = "Friedrich Robert von Georgi"
+                portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_friedrich_von_georgi"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_regional_defence_minister }
         can_be_fired = yes
         idea_token = AUH_friedrich_von_georgi
@@ -82,8 +107,15 @@ AUH_friedrich_von_georgi = {
 
 AUH_alois_lexa_von_aehrenthal = {
     name = "Alois Lexa von Aehrenthal"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_alois_lexa_von_aehrenthal"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
+        expire = "1910.6.1"
         traits = { kuk_forgein_affairs }
         can_be_fired = yes
         idea_token = AUH_alois_lexa_von_aehrenthal
@@ -100,10 +132,16 @@ AUH_alois_lexa_von_aehrenthal = {
     }
 }
 
-AUH_leopold_berchtold = {
+    AUH_leopold_berchtold = {
     name = "Leopold Berchtold"
+                    portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_leopold_berchtold"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_forgein_affairsii }
         can_be_fired = yes
         idea_token = AUH_leopold_berchtold
@@ -122,8 +160,14 @@ AUH_leopold_berchtold = {
 
 AUH_otto_wagner = {
     name = "Otto Wagner"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_otto_wagner"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_rebuilder }
         can_be_fired = yes
 		expire = "1918.1.1"
@@ -143,8 +187,14 @@ AUH_otto_wagner = {
 
 AUH_karl_wittgenstein = {
     name = "Karl Wittgenstein"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_wittgenstein"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_resources_more }
         can_be_fired = yes
 		expire = "1913.1.1"
@@ -164,8 +214,14 @@ AUH_karl_wittgenstein = {
 
 AUH_vaclav_klement = {
     name = "Václav Klement"
+                portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_vaclav_klement"
+		    }
+		}
     advisor = {
         slot = political_advisor
+        cost = 100
         traits = { kuk_engineer_of_future }
         can_be_fired = yes
 		expire = "1913.1.1"
@@ -185,6 +241,12 @@ AUH_vaclav_klement = {
 
 AUH_adolf_loos = {
     name = "Adolf Loos"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_adolf_loos"
+		    }
+		}
+    cost = 100
     advisor = {
         slot = political_advisor
         traits = { kuk_modern_achitect }
@@ -206,6 +268,12 @@ AUH_adolf_loos = {
 
 AUH_viktor_adler = {
     name = "Viktor Adler"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_viktor_Adler"
+		    }
+		}
+    cost = 100
     advisor = {
         slot = political_advisor
         traits = { kuk_prominent_austromarxist }
@@ -227,6 +295,7 @@ AUH_viktor_adler = {
 
 AUH_eugen_von_bohm_bawerk = {
     name = "Eugen von Böhm-Bawerk"
+    cost = 100
     advisor = {
         slot = political_advisor
         traits = { kuk_austrian_school_of_economics }
@@ -248,6 +317,7 @@ AUH_eugen_von_bohm_bawerk = {
 
 AUH_otto_bauer = {
     name = "Otto Bauer"
+    cost = 100
     advisor = {
         slot = political_advisor
         traits = { kuk_austromarxist_economist }
