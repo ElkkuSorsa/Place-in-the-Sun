@@ -26,6 +26,16 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_advisor_AUH_otto_bauer"
+		texturefile = "gfx/interface/ideas/AUH/otto_bauer.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_AUH_eduard_bohm"
+		texturefile = "gfx/interface/ideas/AUH/eduard_bohm.png"
+	}
+
+		spriteType = {
 		name = "GFX_advisor_AUH_leopold_berchtold"
 		texturefile = "gfx/interface/ideas/AUH/leopold_berchtold.png"
 	}

@@ -295,14 +295,18 @@ AUH_viktor_adler = {
 
 AUH_eugen_von_bohm_bawerk = {
     name = "Eugen von Böhm-Bawerk"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_eduard_bohm"
+		    }
+		}
     cost = 100
     advisor = {
         slot = political_advisor
         traits = { kuk_austrian_school_of_economics }
         can_be_fired = yes
 		expire = "1914.11.11"
-        idea_token = AUH_eugen_von_bohm_bawerk
-
+GFX_advisor_AUH_eduard_bohm
         allowed = {
             OR = {
                 always = yes
@@ -317,6 +321,11 @@ AUH_eugen_von_bohm_bawerk = {
 
 AUH_otto_bauer = {
     name = "Otto Bauer"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_otto_bauer"
+		    }
+		}
     cost = 100
     advisor = {
         slot = political_advisor
