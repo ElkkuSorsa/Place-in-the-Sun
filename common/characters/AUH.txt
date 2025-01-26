@@ -27,6 +27,31 @@ characters = {
     }
 }
 
+	AUH_alexandr_von_krobatin = {
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = AUH_alexandr_von_krobatin
+			ledger = air
+			allowed = {
+				original_tag = AUH
+			}
+			
+			traits = {
+				kuk_korbatin
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		name = AUH_alexandr_von_krobatin
+		portraits = {
+			army = {
+				small = "GFX_advisor_AUH_alexandr_von_krobatin"
+			}
+		}
+	}
+
     AUH_stefan_burian = {
     name = "Gráf István Burián von Rajecz"
             portraits = {

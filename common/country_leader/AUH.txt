@@ -5,7 +5,6 @@ leader_traits = {
 		war_support_factor = -0.1
 		consumer_goods_factor = 0.05
 	}
-
 	minister-president_of_construction = {
 		random = no
 		stability_factor = 0.025
@@ -36,6 +35,8 @@ leader_traits = {
 		trade_laws_cost_factor = -0.05
 		economy_cost_factor = -0.05
 	}
+
+	cat_superior_firepower_cost_factor = -0.15
 
 		kuk_finanz_ministerii = {
 		random = no

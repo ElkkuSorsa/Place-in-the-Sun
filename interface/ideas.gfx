@@ -21,6 +21,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_advisor_AUH_alexandr_von_krobatin"
+		texturefile = "gfx/interface/ideas/AUH/alexander_von_krobatin.png"
+	}
+
+		spriteType = {
 		name = "GFX_advisor_AUH_friedrich_von_georgi"
 		texturefile = "gfx/interface/ideas/AUH/georgi.png"
 	}
