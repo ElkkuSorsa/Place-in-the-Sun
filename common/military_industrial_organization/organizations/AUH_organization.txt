@@ -8,17 +8,17 @@
 
  #################### 
 
-AUH_ansaldo_organization = {
-	name = AUS_ansaldo_organization
+AUH_skoda_tank = {
+	name = AUH_skoda_tank
 	include = generic_tank_organization
-	icon = GFX_idea_AUS_ansaldo
+	icon = GFX_idea_AUH_skoda_tank
 	allowed = {
 		original_TAG = AUH
 		has_dlc = "Arms Against Tyranny" 
 		has_dlc = "Gotterdammerung"
 	}
 	available = {
-		owner = { has_completed_focus = AUS_invite_foreign_tank_designers }
+		owner = { has_completed_focus = AUS_in_works }
 	}
 }
 
@@ -123,14 +123,14 @@ AUS_stabilimento_tecnico_triestino_organization = {
 	}
 }
 
-AUS_ELIN_organization = {
+AUH_ELIN_organization = {
 	name = AUS_ELIN_organization
 	include = generic_submarine_organization
 	icon = GFX_idea_AUS_elin
 	allowed = {
 		OR = {
 			AND = {
-				original_TAG = AUS
+				original_TAG = AUH
 				has_dlc = "Arms Against Tyranny" 
 				has_dlc = "Gotterdammerung"
 			}
@@ -576,21 +576,17 @@ AUH_steyr_organization = {
 	}
 
 }
-AUS_graf_and_stift_organization = {
+AUH_graf_and_stift_organization = {
 	name = AUS_graf_and_stift_organization
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_AUS_graf_and_stift
 	allowed = {
-		original_tag = AUS
+		original_tag = AUH
 		has_dlc = "Arms Against Tyranny" 
 		has_dlc = "Gotterdammerung"
 	}
 	available = {
 		owner = { has_completed_focus = AUS_graf_und_stift_focus }
-	}
-
-	visible = {
-		owner = { NOT = { has_completed_focus = AUS_saurerwerke } }
 	}
 
 	initial_trait = {
