@@ -1,3 +1,4 @@
+
 ideas = {
 country = {
 		low_legit = {
@@ -330,6 +331,148 @@ demo_regf = {
 			}
 
 		}
+
+new_era_of_democry = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+          political_power_gain = 0.05
+		stability_factor = 0.05
+			command_power_gain_mult = 0.05
+			mobilization_speed = 0.05
+			}
+
+		}
+
+
+
+commune_of_china = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+          political_power_gain = 0.05
+		stability_factor = 0.05
+			mobilization_speed = 0.1
+			communism_drift = 0.1
+			}
+
+		}
+
+Workers_rights_idea = {
+
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+        recruitable_population_factor = 0.5
+				training_time_factor = 0.05
+				mobilization_speed = 0.05
+			}
+
+		}
+
+Plans_to_Reconcer_chi_idea = {
+
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+        recruitable_population_factor = 0.05
+				training_time_factor = -0.05
+				mobilization_speed = 0.05
+			max_dig_in_factor = 0.1
+			org_loss_when_moving = -0.05
+			}
+
+		}
+
+new_era_off_chaina_idea_C = {
+
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				  political_power_gain = 0.05
+		          stability_factor = 0.05
+			consumer_goods_factor = -0.04	
+			communism_drift = 0.1
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
