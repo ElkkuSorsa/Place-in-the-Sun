@@ -1191,7 +1191,7 @@ focus = {
     id = RUS_collaborate_with_liberals
     icon = GFX_goal_support_democracy
     prerequisite = {focus = RUS_politics}
-    x = 52
+    x = 51
     y = 3
     cost = 10
     mutually_exclusive = {focus = RUS_ensure_the_tsars_powers}
@@ -1208,7 +1208,7 @@ focus = {
     focus = {
     id = RUS_ensure_the_tsars_powers
     icon = GFX_focus_SOV_the_true_tsars
-    x = 62
+    x = 63
     y = 3
     cost = 10
     mutually_exclusive = {focus = RUS_collaborate_with_liberals}
@@ -1245,7 +1245,7 @@ focus = {
     id = RUS_economic_liberalization
     icon = GFX_goal_support_democracy
     prerequisite = {focus = RUS_collaborate_with_liberals}
-    x = 50
+    x = 48
     y = 4
     cost = 10
     completion_reward = {
@@ -1285,6 +1285,7 @@ focus = {
     x = 100
     y = 2
     cost = 5
+    prerequisite = {focus = RUS_embrace_national_bolshevik_cause}
     completion_reward = {
     custom_effect_tooltip = eurasia_will_rise
     hidden_effect = {add_ideas = RUS_eurasian_dream}
@@ -1294,7 +1295,7 @@ focus = {
     id = RUS_guarantee_individual_liberties
     icon = GFX_goal_support_democracy
     prerequisite = {focus = RUS_collaborate_with_liberals}
-    x = 53
+    x = 52
     y = 4
     cost = 5
     completion_reward = {
@@ -1305,7 +1306,7 @@ focus = {
     id = RUS_encourage_entrepenourship
     icon = GFX_goal_support_democracy
     prerequisite = {focus = RUS_economic_liberalization}
-    x = 49
+    x = 47
     y = 5
     cost = 5
     completion_reward = {
@@ -1315,7 +1316,7 @@ focus = {
 focus = {
     id = RUS_iron_fist
     icon = GFX_focus_SOV_the_true_tsars
-    x = 62
+    x = 63
     y = 4
     cost = 5
     prerequisite = {focus = RUS_ensure_the_tsars_powers}
@@ -1327,7 +1328,25 @@ focus = {
     }
     }
     }
+focus = {
+    id = RUS_improve_workers_rights
+    icon = GFX_goal_anti_comintern_pact
+    x = 54
+    y = 5
+    cost = 10
+
+    prerequisite = {focus = RUS_crush_trade_unions}
+    completion_reward = {
+    add_stability = 0.05
+    swap_ideas = {
+    remove_idea = RUS_communist_revolutionaries2
+    add_idea = RUS_communist_revolutionaries3
+    }
+    }
+    }
+    
 }
+
 
 
 

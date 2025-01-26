@@ -273,10 +273,10 @@ ideas = {
 	country = {
 	    RUS_communist_revolutionaries = {
 			modifier = {
-			stability_factor = -0.1
-			communism_drift = 0.01
-			stability_weekly = -0.001
-			industrial_capacity_factory = -0.15
+			stability_factor = -0.15
+			communism_drift = 0.04
+			stability_weekly = -0.002
+			industrial_capacity_factory = -0.2
 			}
 		}
 	}
@@ -362,7 +362,8 @@ ideas = {
 			modifier = {
 			stability_factor = -0.1
 			communism_drift = 0.002
-			industrial_capacity_factory = -0.05
+			stability_weekly = -0.001
+			industrial_capacity_factory = -0.15
 			}
 		}
 	}
@@ -390,6 +391,16 @@ ideas = {
 	    RUS_companies = {
 			modifier = {
 			industrial_capacity_factory = 0.1
+			}
+		}
+	}
+
+	country = {
+	    RUS_communist_revolutionaries3 = {
+			modifier = {
+			stability_factor = -0.05
+			communism_drift = 0.002
+			industrial_capacity_factory = -0.1
 			}
 		}
 	}
