@@ -32,4 +32,9 @@ spriteTypes = {
 		name = "GFX_goal_tsar_sigma"
 		texturefile = "gfx/interface/goals/RUS/tsar_actually_sigma.dds"			
 	}
+	}
+		SpriteType = {
+		name = "GFX_goal_dugin"
+		texturefile = "gfx/interface/goals/RUS/DUGIN.dds"			
+	}
 }	
