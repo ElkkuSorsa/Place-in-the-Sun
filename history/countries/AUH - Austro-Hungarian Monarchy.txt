@@ -13,7 +13,6 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
-	AUH_sand_werkele
 }
 
 
@@ -25,27 +24,36 @@ add_ideas = {
 }
 
 #Politics for 1936.1.1
-recruit_character = AUH_Ernest_von_Koerber
+recruit_character = auh_ernest_von_koerber
 recruit_character = AUH_Richard_von_bienerth_schmerling
-recruit_character = AUH_karoly
-recruit_character = AUH_gyula
 recruit_character = AUH_franzjosef
-recruit_character = AUH_karl_von_sturgkh
-recruit_character = AUH_sand_werkele
-recruit_character = AUH_karol_hedervary
-recruit_character = AUH_lasczlo_lukas
-recruit_character = AUH_istvan_tizsa
-recruit_character = AUH_moric_ester
+recruit_character = AUH_stefan_burian
+recruit_character = AUH_leon_blinski
+recruit_character = AUH_friedrich_von_georgi
+recruit_character = AUH_alois_lexa_von_aehrenthal
+recruit_character = AUH_leopold_berchtold
+recruit_character = AUH_joseph_schumpeter
+recruit_character = AUH_eugen_von_bohm_bawerk
+recruit_character = AUH_viktor_adler
+recruit_character = AUH_leopold_bauer
+recruit_character = AUH_otto_bauer
+recruit_character = AUH_adolf_loos
+recruit_character = AUH_karl_wittgenstein
+recruit_character = AUH_otto_wagner
+recruit_character = AUH_vaclav_klement
+activate_advisor = AUH_stefan_burian
+activate_advisor = AUH_friedrich_von_georgi
+activate_advisor = AUH_alois_lexa_von_aehrenthal
 
 
-hun_trust = yes
-set_country_flag = HUN_ind
+*hun_trust = yes*
+*set_country_flag = HUN_ind*
 add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity
 	auh_ghostofthepast
 	AUH_Richard_von_bienerth_schmerling
-	auh_zsand_werkele
+	AUH_primeminister_werkele
 }
 set_politics = {
 	ruling_party = neutrality

@@ -254,6 +254,7 @@ country_event = {
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_conservative_victory
 		hidden_effect = {
+			clr_country_flag = ENG_lib_his
 			set_country_flag = ENG_con
 			set_variable = { libseats = 232 }
 			set_variable = { conseats = 332 }
@@ -280,7 +281,7 @@ country_event = {
 
 	option = {
 		name = "Negotiations Break Down!"
-		country_event = ENG_elections.1
+		country_event = ENG_elections.3
 	}
 
 }
@@ -296,6 +297,9 @@ country_event = {
 	option = {
 		name = "Negotiate only with Labour Radicals."
 		complete_national_focus = ENG_minority_government
+		set_variable = { labseats = 31 }
+		set_variable = { socseats = 12 }
+		clr_country_flag = ENG_lib_his
 		set_country_flag = ENG_lib_soc
 		ENG_calc_gov = yes
 	}
@@ -307,6 +311,31 @@ country_event = {
 			focus = ENG_1910_elections
 			uncomplete_children = yes
 			refund_political_power = no
+		}
+	}
+}
+
+country_event = {
+	id = ENG_elections.4
+	title = ENG_elections_1918_event
+	desc = "The Great War has ended. We have been shaken by the lenghtiness of the war and now we must reconstruct the economy while maintaining the position as the global hegemon and great power. This war wasn't easy, we endured irish rebellions and deaths of hundreds of thousands of Brits."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Liberals have divided themselvs..."
+		hidden_effect = {
+			set_variable = { libseats = 272 }
+			set_variable = { conseats = 271 }
+			clear_variable = ireseats
+			set_variable = { sinseats = 74 }
+			set_variable = { labseats = 43 }
+			ENG_calc_gov = yes
+			country_event = {
+				id = ENG_ireland.2
+				days = 5
+			}
 		}
 	}
 }
@@ -492,5 +521,121 @@ news_event = {
 
 	option = {
 		name = "Troublesome..."
+	}
+}
+
+add_namespace = ENG_ireland
+news_event = {
+	id = ENG_ireland.1
+	title = "Easter Rising"
+	desc = "Irish Republican Movement rose to a armed rebellion against the British rule. They demand a greater autonomy or even full independence from the empire. The British put down the rebellion, but this rebellion is a large symbol resistance within Ireland."
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		has_war = yes
+		NOT = { has_war_with = IRE }
+		date = 1916.4.29
+	}
+
+	option = {
+		name = "Troublesome..."
+		if = {
+			LIMIT = { original_tag = ENG }
+			add_political_power = -50
+			add_manpower = -143
+		}
+	}
+}
+
+country_event = {
+	id = ENG_ireland.2
+	title = "Irish War of Independence"
+	desc = "After the elections in the United Kingdom ended in a Sinn Féin landslide, they refused to receive their seats in the British parliament and they established their own in Dublin and declared independence from us. We are now officially at war with them."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Rally the Army!"
+		hidden_effect = {
+			IRE = {
+				transfer_state = 113
+				transfer_state = 135
+				transfer_state = 134
+			}
+		}
+
+		declare_war_on = {
+			target = IRE
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = ENG_ireland.4
+	title = "Anglo-Irish Treaty"
+	desc = "We have pushed Irish rebellion to their place and now we must create a solution that will last for the best of the empire and his majesty. We have sent an offer of dominion status within the empire to the rebel government. This will establish a Irish Free State that is responsible for it's internal affairs."
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = ENG
+		has_war_with = IRE
+		IRE = {
+			surrender_progress > 0.4
+		}
+	}
+
+	option = {
+		name = "These are Acceptable Terms."
+		hidden_effect = {
+			white_peace = IRE
+		}
+		unlock_national_focus = ENG_anglo_irish_treaty
+		set_autonomy = {
+			target = IRE
+			autonomous_state = autonomy_dominion
+			end_wars = yes
+		}
+		IRE = {
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ENG_ireland.5
+	title = "Sinn Féin Declares Irish Parliament"
+	desc = "The elections are now over and the new Sinn Féin party has won almost all Irish seats in the parliament. The party announced that they will refuse to receive the seats and declared their own parliament and proclaimed independence."
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = ENG_irish_war_ready
+	}
+
+	option = {
+		name = "Rally the Army!"
+		hidden_effect = {
+			IRE = {
+				transfer_state = 113
+				transfer_state = 135
+				transfer_state = 134
+			}
+		}
+
+		declare_war_on = {
+			target = IRE
+			type = annex_everything
+		}
 	}
 }

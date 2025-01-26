@@ -15,9 +15,6 @@ add_ideas = {
 	civilian_economy
 }
 
-
-
-
 #For start date 1939.1.1
 1939.1.1 = {
 	add_political_power = 1000
@@ -30,7 +27,7 @@ recruit_character = GER_wilhelm_II
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1907.7.7"
-	election_frequency = 48
+	election_frequency = 60
 	elections_allowed = yes
 }
 
