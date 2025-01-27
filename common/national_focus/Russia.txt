@@ -1344,6 +1344,88 @@ focus = {
     }
     }
     }
+focus = {
+    id = RUS_improve_workers_rights
+    icon = GFX_goal_anti_comintern_pact
+    x = 54
+    y = 5
+    cost = 10
+
+    prerequisite = {focus = RUS_crush_trade_unions}
+    completion_reward = {
+    add_stability = 0.05
+    swap_ideas = {
+    remove_idea = RUS_communist_revolutionaries2
+    add_idea = RUS_communist_revolutionaries3
+    }
+    }
+    }
+focus = {
+    id = RUS_democratizing_the_system
+    icon = GFX_goal_support_democracy
+    prerequisite = {focus = RUS_economic_liberalization}
+    prerequisite = {focus = RUS_guarantee_individual_liberties}
+    x = 50
+    y = 5
+    cost = 5
+    completion_reward = {
+    add_political_power = 75
+    add_stability = 0.05
+    add_popularity = {
+    ideology = democratic
+    popularity = 0.05
+    }
+    }
+    }
+focus = {
+    id = RUS_monarchy_question
+    icon = GFX_goal_support_democracy
+    prerequisite = {focus = RUS_democratizing_the_system}
+    x = 50
+    y = 6
+    cost = 10
+    completion_reward = {
+    add_political_power = 100
+    }
+    }
+focus = {
+    id = RUS_figurehead
+    icon = GFX_goal_support_democracy
+    prerequisite = {focus = RUS_monarchy_question}
+    mutually_exclusive = {focus = RUS_constitutional_monarchy}
+    available = {always = no}
+    x = 48
+    y = 7
+    cost = 1
+    completion_reward = {
+    
+    }
+    }
+focus = {
+    id = RUS_constitutional_monarchy
+    icon = GFX_goal_support_democracy
+    prerequisite = {focus = RUS_monarchy_question}
+    available = {always = no}
+    mutually_exclusive = {focus = RUS_figurehead}
+    x = 52
+    y = 7
+    cost = 1
+    completion_reward = {
+    
+    }
+    }
+focus = {
+    id = RUS_suspend_minority
+    icon = GFX_goal_support_democracy
+    prerequisite = {focus = RUS_guarantee_individual_liberties}
+    x = 52
+    y = 5
+    cost = 5
+    completion_reward = {
+    add_stability = 0.1
+    }
+    }
+    
     
 }
 

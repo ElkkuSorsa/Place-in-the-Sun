@@ -13,6 +13,12 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
+	outdated_industry
+	RUS_outdated_army
+	RUS_tsushima_humiliation
+	RUS_independence_movements
+	RUS_communist_revolutionaries
+	RUS_agrarian_empire
 }
 
 
