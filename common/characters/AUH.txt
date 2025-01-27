@@ -168,6 +168,134 @@ characters = {
     }
 }
 
+	AUH_goglia_zlota = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token = AUH_goglia_zlota
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					goglia_lipa
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			corps_commander = {
+				traits = { bearer_of_artillery infantry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			name = AUH_goglia_zlota
+			portraits = { #add new art here
+				army = {
+					large = "GFX_portrait_AUS_lothar_rendulic"
+					small = "GFX_portrait_AUS_lothar_rendulic_small"
+				}
+			}
+		}
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token = AUH_goglia_zlota
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					goglia_lipa
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			name = AUH_goglia_zlota
+			portraits = { 
+				army = {
+					small = "GFX_idea_generic_army_europe_1"
+				}
+			}
+		}
+	}
+
+	AUH_eduard_bohm = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token = AUH_eduard_bohm
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			corps_commander = {
+				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert infantry_expert organizer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			name = AUH_eduard_bohm
+			portraits = { #add new art here
+				army = {
+					large = "GFX_portrait_AUS_lothar_rendulic"
+					small = "GFX_portrait_AUS_lothar_rendulic_small"
+				}
+			}
+		}
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token = AUH_eduard_bohm
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			name = AUH_eduard_bohm
+			portraits = { 
+				army = {
+					small = "GFX_idea_generic_army_europe_1"
+				}
+			}
+		}
+	}
+
     auh_leopold_von_hauer = {
     name = "Leopold von Hauer"
             portraits = {
