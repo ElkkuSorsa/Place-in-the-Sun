@@ -24,4 +24,17 @@ characters = {
 			}
 		}
 	}
+
+	ENG_george_v = {
+		name = "George V"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = monarchism
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_george_v.png"
+			}
+		}
+	}
 }

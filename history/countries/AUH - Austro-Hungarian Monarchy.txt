@@ -35,14 +35,27 @@ recruit_character = AUH_leopold_berchtold
 recruit_character = AUH_joseph_schumpeter
 recruit_character = AUH_eugen_von_bohm_bawerk
 recruit_character = AUH_viktor_adler
+recruit_character = AUH_goglia_zlota
 recruit_character = AUH_leopold_bauer
 recruit_character = AUH_otto_bauer
 recruit_character = AUH_adolf_loos
 recruit_character = AUH_karl_wittgenstein
 recruit_character = AUH_otto_wagner
 recruit_character = AUH_vaclav_klement
+recruit_character = auh_morritz_auffenberg
+recruit_character = auh_alexander_von_krobatin
+recruit_character = auh_samuel_von_hazai
 activate_advisor = AUH_stefan_burian
+activate_advisor = auh_morritz_auffenberg
+recruit_character = auh_svetozar_bojna
+recruit_character = AUH_leopold_von_hauer
+recruit_character = AUH_eduard_bohm
+recruit_character = auh_conrad_hotzendorff
+recruit_character = auh_arthur_giesling
+recruit_character = AUH_otto_ellison_nidlef
+recruit_character = auh_rudolf_stoger_steinstatten
 activate_advisor = AUH_friedrich_von_georgi
+activate_advisor = auh_conrad_hotzendorff
 activate_advisor = AUH_alois_lexa_von_aehrenthal
 
 

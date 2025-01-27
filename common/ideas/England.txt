@@ -237,26 +237,29 @@ ideas = {
 		ENG_haldane_reform_1 = {
 			picture = chi_army_corruption
 			modifier = {
-				army_org_factor = -0.2
+				conscription_factor = -0.9
+				army_org_factor = 0.15
 				army_defence_factor = -0.15
-				supply_consumption_factor = 0.2
+				supply_consumption_factor = 0.15
 			}
 		}
 
 		ENG_haldane_reform_2 = {
 			picture = chi_army_corruption
 			modifier = {
-				army_org_factor = -0.15
+				army_org_factor = 0.1
 				army_defence_factor = -0.1
-				supply_consumption_factor = 0.15
+				conscription_factor = -0.75
+				supply_consumption_factor = 0.1
 			}
 		}
 
 		ENG_haldane_reform_3 = {
 			picture = chi_army_corruption2
 			modifier = {
-				army_org_factor = -0.1
-				army_defence_factor = -0.05
+				army_org_factor = 0.05
+				army_defence_factor = -0.075
+				conscription_factor = -0.5
 				supply_consumption_factor = 0.1
 			}
 		}
@@ -264,7 +267,8 @@ ideas = {
 		ENG_haldane_reform_4 = {
 			picture = chi_army_corruption2
 			modifier = {
-				army_org_factor = -0.05
+				army_org_factor = 0.05
+				conscription_factor = -0.25
 				supply_consumption_factor = 0.05
 			}
 		}
@@ -272,9 +276,9 @@ ideas = {
 		ENG_haldane_reform_5 = {
 			picture = chi_army_corruption3
 			modifier = {
-				army_org_factor = 0.05
-				army_defence_factor = 0.05
-				supply_consumption_factor = -0.1
+				army_org_factor = 0.1
+				army_defence_factor = -0.075
+				conscription_factor = 0.05
 			}
 		}
 
