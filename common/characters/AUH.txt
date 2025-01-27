@@ -27,6 +27,31 @@ characters = {
     }
 }
 
+	AUH_alexandr_von_krobatin = {
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = AUH_alexandr_von_krobatin
+			ledger = air
+			allowed = {
+				original_tag = AUH
+			}
+			
+			traits = {
+				kuk_korbatin
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		name = AUH_alexandr_von_krobatin
+		portraits = {
+			army = {
+				small = "GFX_advisor_AUH_alexandr_von_krobatin"
+			}
+		}
+	}
+
     AUH_stefan_burian = {
     name = "Gráf István Burián von Rajecz"
             portraits = {
@@ -53,7 +78,7 @@ characters = {
     }
 }
 
-    AUH_leon_blinski = {
+AUH_leon_blinski = {
     name = "Ritter Leon von Biliński"
             portraits = {
 			civilian = {
@@ -79,7 +104,7 @@ characters = {
     }
 }
 
-    AUH_friedrich_von_georgi = {
+AUH_friedrich_von_georgi = {
     name = "Friedrich Robert von Georgi"
                 portraits = {
 			civilian = {
@@ -105,7 +130,7 @@ characters = {
     }
 }
 
-    AUH_alois_lexa_von_aehrenthal = {
+AUH_alois_lexa_von_aehrenthal = {
     name = "Alois Lexa von Aehrenthal"
             portraits = {
 			civilian = {
@@ -158,7 +183,7 @@ characters = {
     }
 }
 
-    AUH_otto_wagner = {
+AUH_otto_wagner = {
     name = "Otto Wagner"
             portraits = {
 			civilian = {
@@ -185,7 +210,7 @@ characters = {
     }
 }
 
-    AUH_karl_wittgenstein = {
+AUH_karl_wittgenstein = {
     name = "Karl Wittgenstein"
             portraits = {
 			civilian = {
@@ -212,7 +237,7 @@ characters = {
     }
 }
 
-    AUH_vaclav_klement = {
+AUH_vaclav_klement = {
     name = "Václav Klement"
                 portraits = {
 			civilian = {
@@ -239,7 +264,7 @@ characters = {
     }
 }
 
-    AUH_adolf_loos = {
+AUH_adolf_loos = {
     name = "Adolf Loos"
             portraits = {
 			civilian = {
@@ -266,7 +291,7 @@ characters = {
     }
 }
 
-    AUH_viktor_adler = {
+AUH_viktor_adler = {
     name = "Viktor Adler"
             portraits = {
 			civilian = {
@@ -293,7 +318,7 @@ characters = {
     }
 }
 
-    AUH_eugen_von_bohm_bawerk = {
+AUH_eugen_von_bohm_bawerk = {
     name = "Eugen von Böhm-Bawerk"
             portraits = {
 			civilian = {
@@ -306,7 +331,7 @@ characters = {
         traits = { kuk_austrian_school_of_economics }
         can_be_fired = yes
 		expire = "1914.11.11"
-    GFX_advisor_AUH_eduard_bohm
+GFX_advisor_AUH_eduard_bohm
         allowed = {
             OR = {
                 always = yes
@@ -318,7 +343,8 @@ characters = {
         }
     }
 }
-    AUH_otto_bauer = {
+
+AUH_otto_bauer = {
     name = "Otto Bauer"
             portraits = {
 			civilian = {
@@ -345,7 +371,7 @@ characters = {
     }
 }
 
-    AUH_franzjosef = {
+AUH_franzjosef = {
     name = "Franz Josef I"
     country_leader = {
         desc = "POLITICS_HERMANN_HANNEKEN_DESC"
@@ -358,6 +384,4 @@ characters = {
         }
     }
 }
-
 }
-

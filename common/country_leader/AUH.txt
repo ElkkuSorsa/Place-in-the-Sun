@@ -1,12 +1,10 @@
 leader_traits = {
-	
 	pro_hungary = {
 		random = no
 		stability_factor = 0.15
 		war_support_factor = -0.1
 		consumer_goods_factor = 0.05
 	}
-	
 	minister-president_of_construction = {
 		random = no
 		stability_factor = 0.025
