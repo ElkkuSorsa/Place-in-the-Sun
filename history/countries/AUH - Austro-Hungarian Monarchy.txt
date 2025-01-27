@@ -51,8 +51,10 @@ recruit_character = auh_svetozar_bojna
 recruit_character = AUH_leopold_von_hauer
 recruit_character = AUH_eduard_bohm
 recruit_character = auh_conrad_hotzendorf
+recruit_character = auh_arthur_giesling
 recruit_character = auh_rudolf_stoger_steinstatten
 activate_advisor = AUH_friedrich_von_georgi
+activate_advisor = auh_conrad_hotzendorf
 activate_advisor = AUH_alois_lexa_von_aehrenthal
 
 

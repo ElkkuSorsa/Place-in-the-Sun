@@ -39,6 +39,14 @@ leader_traits = {
 		attrition = -0.05
 	}
 
+		arthur_giesling = {
+		random = no
+		army_attack_factor = 0.045
+		army_defence_factor = 0.055
+		army_org_factor = 0.05
+		experience_gain_army = 0.15
+	}
+
 		rudolf_Steinstatten = {
 		random = no
 		army_attack_factor = 0.045

@@ -253,7 +253,7 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert infantry_expert organizer }
+				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert organizer }
 				skill = 3
 				attack_skill = 2
 				defense_skill = 2
@@ -310,6 +310,33 @@ characters = {
         cost = 150
         can_be_fired = yes
         idea_token = auh_leopold_von_hauer
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_arthur_giesling = {
+    name = "Arthur Giesl von Gieslingen"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = high_command
+        traits = { head_of_the_abwehr }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_arthur_giesling
 
         allowed = {
             OR = {
