@@ -20,6 +20,66 @@ characters = {
                 always = yes
             }
         }
+        	visible = {
+			date < 1919.1.1
+		}
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_alexander_von_krobatin = {
+    name = "Alexander von Krobatin"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_alexander_von_krobatin"
+                small = "GFX_advisor_alexander_von_krobatin"
+		    }
+		}
+    advisor = {
+        slot = theorist
+        traits = { alexander_krobatin }
+        cost = 100
+        		visible = {
+				date < 1933.1.1
+			}
+        can_be_fired = yes
+        idea_token = auh_alexander_von_krobatin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_samuel_von_hazai = {
+    name = "Gráf Samuel von Hazai"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_alexander_von_krobatin"
+                small = "GFX_advisor_alexander_von_krobatin"
+		    }
+		}
+    advisor = {
+        slot = theorist
+        traits = { samuel_hazai }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_samuel_von_hazai
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
         available = {
             always = yes
@@ -34,6 +94,9 @@ characters = {
                 small = "GFX_advisor_AUH_stefan_burian"
 		    }
 		}
+            visible = {
+			date < 1922.1.1
+			}
     advisor = {
         slot = political_advisor
         cost = 100
@@ -60,6 +123,9 @@ AUH_leon_blinski = {
                 small = "GFX_advisor_AUH_leon_blinski"
 		    }
 		}
+        visible = {
+			date < 1923.1.1
+			}
     advisor = {
         slot = political_advisor
         cost = 100
@@ -86,6 +152,9 @@ AUH_friedrich_von_georgi = {
                 small = "GFX_advisor_AUH_friedrich_von_georgi"
 		    }
 		}
+        visible = {
+			date < 1926.1.1
+		}
     advisor = {
         slot = political_advisor
         cost = 100
@@ -111,6 +180,9 @@ AUH_alois_lexa_von_aehrenthal = {
 			civilian = {
                 small = "GFX_advisor_AUH_alois_lexa_von_aehrenthal"
 		    }
+		}
+            visible = {
+			date < 1912.2.17
 		}
     advisor = {
         slot = political_advisor
@@ -165,6 +237,9 @@ AUH_otto_wagner = {
                 small = "GFX_advisor_AUH_otto_wagner"
 		    }
 		}
+                    visible = {
+			date < 1918.2.17
+		}
     advisor = {
         slot = political_advisor
         cost = 100
@@ -192,12 +267,14 @@ AUH_karl_wittgenstein = {
                 small = "GFX_advisor_AUH_wittgenstein"
 		    }
 		}
+            visible = {
+			date < 1913.1.20
+		}
     advisor = {
         slot = political_advisor
         cost = 100
         traits = { kuk_resources_more }
         can_be_fired = yes
-		expire = "1913.1.1"
         idea_token = AUH_karl_wittgenstein
 
         allowed = {
@@ -224,7 +301,6 @@ AUH_vaclav_klement = {
         cost = 100
         traits = { kuk_engineer_of_future }
         can_be_fired = yes
-		expire = "1913.1.1"
         idea_token = AUH_vaclav_klement
 
         allowed = {
@@ -251,7 +327,6 @@ AUH_adolf_loos = {
         slot = political_advisor
         traits = { kuk_modern_achitect }
         can_be_fired = yes
-		expire = "1913.1.1"
         idea_token = AUH_adolf_loos
 
         allowed = {
@@ -272,6 +347,9 @@ AUH_viktor_adler = {
 			civilian = {
                 small = "GFX_advisor_AUH_viktor_Adler"
 		    }
+		}
+            visible = {
+			date < 1918.5.5
 		}
     cost = 100
     advisor = {
@@ -299,6 +377,9 @@ AUH_eugen_von_bohm_bawerk = {
 			civilian = {
                 small = "GFX_advisor_AUH_eduard_bohm"
 		    }
+		}
+            visible = {
+			date < 1914.8.1
 		}
     cost = 100
     advisor = {
