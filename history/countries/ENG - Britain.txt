@@ -59,6 +59,7 @@ set_autonomy = {
 	autonomy_state = autonomy_colony
 }
 
+recruit_character = ENG_george_v
 recruit_character = ENG_asquith
 recruit_character = ENG_lloyd_george
 set_cosmetic_tag = ENG_democratic
