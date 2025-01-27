@@ -64,8 +64,8 @@ characters = {
     name = "Gráf Samuel von Hazai"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_alexander_von_krobatin"
-                small = "GFX_advisor_alexander_von_krobatin"
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
 		    }
 		}
     advisor = {
@@ -74,6 +74,168 @@ characters = {
         cost = 150
         can_be_fired = yes
         idea_token = auh_samuel_von_hazai
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_conrad_hotzendorf = {
+    name = "Franz Conrad von Hötzendorf"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { conrad_hotzendorf }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_conrad_hotzendorf
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_conrad_hotzendorf = {
+    name = "Franz Conrad von Hötzendorf"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { conrad_hotzendorf }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_conrad_hotzendorf
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_rudolf_stoger_steinstatten = {
+    name = "Rudolf Stöger-Steiner von Steinstätten"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { rudolf_Steinstatten }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_rudolf_stoger_steinstatten
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_leopold_von_hauer = {
+    name = "Leopold von Hauer"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { leopold_von_hauer }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_leopold_von_hauer
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_svetozar_bojna = {
+    name = "Svetozar Borojević von Bojna"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { svetozar_bojna }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_svetozar_bojna
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_morritz_auffenberg = {
+    name = "Moritz von Auffenberg"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = theorist
+        traits = { morritz_auffenberg }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_morritz_auffenberg
 
         allowed = {
             OR = {

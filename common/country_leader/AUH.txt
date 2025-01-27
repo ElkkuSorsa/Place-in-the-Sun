@@ -20,6 +20,47 @@ leader_traits = {
 		army_core_defence_factor = 0.025
 	}
 
+		conrad_hotzendorf = {
+		random = no
+		army_attack_factor = 0.075
+		army_org_factor = 0.025
+		attrition = 0.05
+		experience_gain_army = 0.25
+		non_core_manpower = -0.015
+		command_power_gain_mult = -0.1
+	}
+
+		leopold_von_hauer = {
+		random = no
+		army_attack_factor = 0.05
+		army_org_factor = 0.025
+		experience_gain_army = 0.10
+		command_power_gain_mult = 0.1
+		attrition = -0.05
+	}
+
+		rudolf_Steinstatten = {
+		random = no
+		army_attack_factor = 0.045
+		army_defence_factor = 0.055
+		army_org_factor = 0.05
+		experience_gain_army = 0.15
+	}
+
+		svetozar_bojna = {
+		random = no
+		army_defence_factor = 0.075
+		max_dig_in = 2.5
+		experience_gain_army = 0.10
+	}
+
+		morritz_auffenberg = {
+		random = no
+		experience_gain_army = 0.09
+		army_org_factor = 0.05
+		cat_grand_battle_plan_cost_factor = -0.05
+	}
+
 	minister-president_of_construction = {
 		random = no
 		stability_factor = 0.025
