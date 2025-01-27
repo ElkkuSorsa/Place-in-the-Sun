@@ -296,6 +296,70 @@ characters = {
 		}
 	}
 
+    AUH_otto_ellison_nidlef = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token =  AUH_otto_ellison_nidlef
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					entrenchment_general
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			corps_commander = {
+				traits = { egineer_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			name =  AUH_otto_ellison_nidlef
+			portraits = { #add new art here
+				army = {
+					large = "GFX_portrait_AUS_lothar_rendulic"
+					small = "GFX_portrait_AUS_lothar_rendulic_small"
+				}
+			}
+		}
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token =  AUH_otto_ellison_nidlef
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					entrenchment_general
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			name =  AUH_otto_ellison_nidlef
+			portraits = { 
+				army = {
+					small = "GFX_idea_generic_army_europe_1"
+				}
+			}
+		}
+	}
+
     auh_svetozar_bojna = {
 		instance = {
 			allowed = {

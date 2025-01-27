@@ -39,13 +39,23 @@ leader_traits = {
 		attrition = -0.05
 	}
 
+		entrenchment_general = {
+		random = no
+		max_dig_in = 5
+		dig_in_speed_factor = 0.1
+		production_speed_bunker_factor = 0.05
+		production_speed_coastal_bunker_factor = 0.05
+		mobilization_speed = 0.01
+
+	}
+
 		arthur_giesling = {
 		random = no
 		operative_slot = 2
-		agency_upgrade_time = -0.2
-		resistance_damage_to_garrison = -0.2
-		foreign_subversive_activites = -0.2
-		subversive_activites_upkeep = -0.2
+		agency_upgrade_time = -0.1
+		resistance_damage_to_garrison = -0.1
+		foreign_subversive_activites = -0.1
+		subversive_activites_upkeep = -0.1
 	}
 
 		rudolf_Steinstatten = {
