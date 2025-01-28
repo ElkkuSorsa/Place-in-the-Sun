@@ -538,11 +538,11 @@ characters = {
 		name = AUH_anton_haus
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_karl_donitz
-				small = GFX_portrait_GER_karl_donitz_small
+				large = GFX_portrait_auh_anton_haus
+				small = GFX_advisor_auh_anton_haus
 			}
 			army = {
-				small = GFX_idea_AUH_anton_haus
+				small = GFX_advisor_auh_anton_haus
 			}
 		}
 		advisor = {
