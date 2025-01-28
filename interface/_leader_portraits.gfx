@@ -18,8 +18,33 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_portrait_auh_leopold_hauer"
+		texturefile = "gfx/leaders/AUH/hauer.png"
+	}
+
+		spriteType = {
 		name = "GFX_portrait_AUH_eugen_habsburg"
 		texturefile = "gfx/leaders/AUH/eugen_habsburg.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_auh_conrad_hotzendorff"
+		texturefile = "gfx/leaders/AUH/conrad_hotzendorf.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_auh_rudolf_stoger_steinstatten"
+		texturefile = "gfx/leaders/AUH/steinstatten.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_auh_svetozar_bojna"
+		texturefile = "gfx/leaders/AUH/svetozar_bojna.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_auh_svetozar_bojna"
+		texturefile = "gfx/leaders/AUH/svetozar_bojna.png"
 	}
 
 	spriteType = {

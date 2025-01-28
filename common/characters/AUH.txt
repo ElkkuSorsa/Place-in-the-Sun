@@ -11,7 +11,7 @@ characters = {
     advisor = {
         slot = political_advisor
         traits = { minister-president_of_construction }
-        cost = 100
+        cost = 150
         can_be_fired = yes
         idea_token = auh_ernest_von_koerber
 
@@ -41,7 +41,7 @@ characters = {
     advisor = {
         slot = theorist
         traits = { alexander_krobatin }
-        cost = 100
+        cost = 150
         		visible = {
 				date < 1933.1.1
 			}
@@ -86,67 +86,12 @@ characters = {
         }
     }
 }
-
-    auh_conrad_hotzendorf = {
-    name = "Franz Conrad von Hötzendorf"
-            portraits = {
-			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
-		    }
-		}
-    advisor = {
-        slot = army_chief
-        traits = { conrad_hotzendorf }
-        cost = 150
-        can_be_fired = yes
-        idea_token = auh_conrad_hotzendorf
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
-        available = {
-            always = yes
-        }
-    }
-}
-
-    auh_conrad_hotzendorf = {
-    name = "Franz Conrad von Hötzendorf"
-            portraits = {
-			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
-		    }
-		}
-    advisor = {
-        slot = army_chief
-        traits = { conrad_hotzendorf }
-        cost = 150
-        can_be_fired = yes
-        idea_token = auh_conrad_hotzendorf
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
-        available = {
-            always = yes
-        }
-    }
-}
-
     auh_rudolf_stoger_steinstatten = {
     name = "Rudolf Stöger-Steiner von Steinstätten"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
+				large = "GFX_portrait_auh_rudolf_stoger_steinstatten"
+                small = "GFX_advisor_auh_steinstatten"
 		    }
 		}
     advisor = {
@@ -182,7 +127,7 @@ characters = {
 				traits = {
 					goglia_lipa
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -217,7 +162,7 @@ characters = {
 				traits = {
 					goglia_lipa
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -246,14 +191,14 @@ characters = {
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
 			}
 
 			corps_commander = {
-				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert organizer }
+				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert career_officer }
 				skill = 3
 				attack_skill = 2
 				defense_skill = 2
@@ -281,7 +226,7 @@ characters = {
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -310,12 +255,12 @@ characters = {
 				traits = {
 					eugen_habsburg
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
 			}
-
+ 
 			corps_commander = {
 				traits = { egineer_officer }
 				skill = 2
@@ -345,7 +290,7 @@ characters = {
 				traits = {
 					eugen_habsburg
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -374,7 +319,7 @@ characters = {
 				traits = {
 					entrenchment_general
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -409,7 +354,7 @@ characters = {
 				traits = {
 					entrenchment_general
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -438,7 +383,7 @@ characters = {
 				traits = {
 					army_commando_3
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -473,7 +418,7 @@ characters = {
 				traits = {
 					army_commando_3
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
@@ -507,25 +452,25 @@ characters = {
 				traits = {
 					svetozar_bojna
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
 			}
 
 			corps_commander = {
-				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert organizer }
+				traits = { infantry_leader organizer mountaineer }
 				skill = 3
 				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
+				defense_skill = 4
+				planning_skill = 3
 				logistics_skill = 2
 			}
 			name = auh_svetozar_bojna
 			portraits = { #add new art here
 				army = {
-					large = "GFX_portrait_AUS_lothar_rendulic"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					large = "GFX_portrait_auh_svetozar_bojna"
+					small = "GFX_advisor_auh_svetozar_bojna"
 				}
 			}
 		}
@@ -538,6 +483,92 @@ characters = {
 					small = "GFX_idea_generic_army_europe_1"
 				}
 			}
+		}
+	}
+
+	    auh_adolf_von_brudermann = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token = auh_adolf_von_brudermann
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					adolf_von_brudermann
+				}
+				cost = 150
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			corps_commander = {
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			name = auh_adolf_von_brudermann
+			portraits = { #add new art here
+				army = {
+					large = "GFX_portrait_AUS_lothar_rendulic"
+					small = "GFX_portrait_AUS_lothar_rendulic_small"
+				}
+			}
+		}
+		instance = {
+			allowed = {
+			}
+			name = adolf_von_brudermann
+			portraits = { 
+				army = {
+					small = "GFX_idea_generic_army_europe_1"
+				}
+			}
+		}
+	}
+
+		AUH_anton_haus = {
+		name = AUH_anton_haus
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_karl_donitz
+				small = GFX_portrait_GER_karl_donitz_small
+			}
+			army = {
+				small = GFX_idea_AUH_anton_haus
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = donitz
+			allowed = {
+				original_tag = AUH
+			}
+			available = {
+			}
+			traits = {
+				anton_haus
+			}
+			cost = 150
+			ai_will_do = {
+				base = 2
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 2
 		}
 	}
 
@@ -555,25 +586,25 @@ characters = {
 				traits = {
 					conrad_hotzendorf
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					base = 1
 				}
 			}
 
-			corps_commander = {
-				traits = { infantry_officer }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
+			field_marshal = {
+				traits = { politically_connected old_guard infantry_leader infantry_officer harsh_leader media_personality war_hero trait_reckless organizer thorough_planner  }
+				skill = 4
+				attack_skill = 6
+				defense_skill = 1
+				planning_skill = 4
 				logistics_skill = 2
 			}
 			name = auh_conrad_hotzendorff
 			portraits = { #add new art here
 				army = {
-					large = "GFX_portrait_AUS_lothar_rendulic"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					large = "GFX_portrait_auh_conrad_hotzendorff"
+					small = "GFX_advisor_auh_conrad_hotzendorff"
 				}
 			}
 		}
@@ -593,8 +624,8 @@ characters = {
     name = "Leopold von Hauer"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
+				large = "GFX_portrait_auh_leopold_hauer"
+                small = "GFX_advisor_auh_leopold_hauer"
 		    }
 		}
     advisor = {
@@ -674,8 +705,7 @@ characters = {
     name = "Moritz von Auffenberg"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_auh_morritz_auffenberg"
 		    }
 		}
     advisor = {
@@ -709,7 +739,7 @@ characters = {
 			}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         traits = { kuk_finanz_minister }
         can_be_fired = yes
         idea_token = AUH_stefan_burian
@@ -738,7 +768,7 @@ AUH_leon_blinski = {
 			}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         traits = { kuk_finanz_ministerii }
         can_be_fired = yes
         idea_token = AUH_leon_blinski
@@ -767,7 +797,7 @@ AUH_friedrich_von_georgi = {
 		}
     advisor = {
         slot = political_advisor
-        cost = 100
+       cost = 150
         traits = { kuk_regional_defence_minister }
         can_be_fired = yes
         idea_token = AUH_friedrich_von_georgi
@@ -796,7 +826,7 @@ AUH_alois_lexa_von_aehrenthal = {
 		}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         expire = "1910.6.1"
         traits = { kuk_forgein_affairs }
         can_be_fired = yes
@@ -823,7 +853,7 @@ AUH_alois_lexa_von_aehrenthal = {
 		}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         traits = { kuk_forgein_affairsii }
         can_be_fired = yes
         idea_token = AUH_leopold_berchtold
@@ -852,7 +882,7 @@ AUH_otto_wagner = {
 		}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         traits = { kuk_rebuilder }
         can_be_fired = yes
 		expire = "1918.1.1"
@@ -882,7 +912,7 @@ AUH_karl_wittgenstein = {
 		}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         traits = { kuk_resources_more }
         can_be_fired = yes
         idea_token = AUH_karl_wittgenstein
@@ -908,7 +938,7 @@ AUH_vaclav_klement = {
 		}
     advisor = {
         slot = political_advisor
-        cost = 100
+        cost = 150
         traits = { kuk_engineer_of_future }
         can_be_fired = yes
         idea_token = AUH_vaclav_klement
@@ -932,7 +962,7 @@ AUH_adolf_loos = {
                 small = "GFX_advisor_AUH_adolf_loos"
 		    }
 		}
-    cost = 100
+    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_modern_achitect }
@@ -961,7 +991,7 @@ AUH_viktor_adler = {
             visible = {
 			date < 1918.5.5
 		}
-    cost = 100
+    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_prominent_austromarxist }
@@ -991,7 +1021,7 @@ AUH_eugen_von_bohm_bawerk = {
             visible = {
 			date < 1914.8.1
 		}
-    cost = 100
+    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_austrian_school_of_economics }
@@ -1017,7 +1047,7 @@ AUH_otto_bauer = {
                 small = "GFX_advisor_AUH_otto_bauer"
 		    }
 		}
-    cost = 100
+    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_austromarxist_economist }

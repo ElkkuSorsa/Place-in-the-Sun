@@ -21,6 +21,30 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_advisor_auh_morritz_auffenberg"
+		texturefile = "gfx/interface/ideas/AUH/morritz.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_auh_leopold_hauer"
+		texturefile = "gfx/interface/ideas/AUH/hauer.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_auh_conrad_hotzendorff"
+		texturefile = "gfx/interface/ideas/AUH/hotzendorf.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_auh_steinstatten"
+		texturefile = "gfx/interface/ideas/AUH/steinstatten.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_auh_svetozar_bojna"
+		texturefile = "gfx/interface/ideas/AUH/bojna.png"
+	}
+		spriteType = {
 		name = "GFX_advisor_AUH_stefan_burian"
 		texturefile = "gfx/interface/ideas/AUH/burian_rajecz.png"
 	}
