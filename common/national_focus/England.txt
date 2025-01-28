@@ -236,7 +236,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = "Parliament will be dissolved"
+			custom_effect_tooltip = "Parliament will be dissolved."
 			set_country_flag = ENG_parliament_disabled
 			news_event = {
 				id = communist_britain.1
@@ -497,6 +497,10 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+			always = no
+		}
+
 		completion_reward = {
 			add_stability = 0.05
 		}
@@ -560,7 +564,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = 0.05
+			set_power_balance = {
+				id = ENG_liberals_split
+			}
 		}
 	}
 
@@ -919,8 +925,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			add_to_faction = SPA
 		}
 	}
 
@@ -1277,7 +1282,7 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = ENG_royal_veto focus = ENG_constitutionalism }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1292,7 +1297,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = ENG_limited_reformism }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1322,7 +1327,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = ENG_limited_reformism }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1385,13 +1390,10 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = ENG_status_quo_with_lords focus = ENG_empower_house_of_lords }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
-			country_event = {
-				id = conservative_england.1
-				days = 1
-			}
+			country_event = conservative_england.1
 		}
 	}
 
@@ -1460,11 +1462,6 @@ focus_tree = {
 				days = 180
 			}
 			hidden_effect = {
-				create_country_leader = {
-					name = "King"
-					picture = "portrait_eng_fallen_government.dds"
-					ideology = despotism
-				}
 				set_politics = {
 					ruling_party = neutrality
 				}
@@ -1504,7 +1501,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -1636,12 +1633,14 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
 			add_stability = -0.05
 			add_popularity = {
 				ideology = democratic
@@ -1957,6 +1956,8 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
 			remove_ideas = ENG_british_politics_dem
 		}
 	}
@@ -2112,7 +2113,7 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_military_industries }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2160,6 +2161,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			always = no
 		}
 
 		completion_reward = {
@@ -2175,7 +2177,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_shell_factories }
 		prerequisite = { focus = ENG_shell_crisis }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2210,7 +2212,7 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_emergancy_factories }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2222,18 +2224,19 @@ focus_tree = {
 					level = 2
 				}
 				add_building_construction = {
-					type = 	arms_factory
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
+
 			random_core_state = {
 				remove_building = {
 					type = industrial_complex
 					level = 2
 				}
 				add_building_construction = {
-					type = 	arms_factory
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -2249,7 +2252,7 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_military_industries }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2328,7 +2331,7 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_industrial_powerhouse }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2485,7 +2488,7 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_home_industries focus = ENG_heavy_industry focus = ENG_steel_industries }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2692,7 +2695,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = ENG_military_innovation }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2774,7 +2777,7 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = ENG_tanks }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2829,6 +2832,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = entente_victory
 			}
+			has_government = democratic
 		}
 
 		completion_reward = {
@@ -3070,6 +3074,38 @@ focus_tree = {
 		y = 16
 		prerequisite = { focus = ENG_steady_as_she_goes focus = ENG_new_interventionism }
 		mutually_exclusive = { focus = ENG_nationalist_movement focus = ENG_king_coup }
+		
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_coalition_landslide
+		icon = GFX_goal_generic_major_war
+		x = 28
+		y = 17
+		prerequisite = { focus = ENG_elections_1918 } 
+		
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_rebuild_the_country
+		icon = GFX_goal_generic_major_war
+		x = 28
+		y = 18
+		prerequisite = { focus = ENG_coalition_landslide } 
 		
 		cost = 10
 
