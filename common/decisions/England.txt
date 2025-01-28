@@ -238,7 +238,7 @@ ENG_politics = {
 		}
 
 		selectable_mission = no
-		days_mission_timeout = 300
+		days_mission_timeout = 350
 
 		priority = 100
 

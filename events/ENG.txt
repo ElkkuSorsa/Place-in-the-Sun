@@ -75,6 +75,7 @@ country_event = {
 		complete_national_focus = ENG_hand_over_to_king
 		set_politics = {
 			ruling_party = neutrality
+			promote_character = ENG_george_v
 		}
 	}
 
@@ -139,34 +140,6 @@ country_event = {
 		create_country_leader = {
 			name = "Adolf Hitler"
 			ideology = militarism
-		}
-	}
-}
-
-add_namespace = ireland 
-country_event = {
-	id = ireland.1
-	title = "The Emerald Isle"
-	desc = "The Irish Separatist Movement has gained popularity throughout the isle, and our control over the island is weakning. We must find a long-term solution to our problem. We must safeguard the interests of the crown and British people!"
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = "Establish Ireland as a Personal Union"
-		add_political_power = -150
-		custom_effect_tooltip = "We shall reform Ireland to a junior personal union partner!"
-		hidden_effect = {
-			complete_national_focus = ENG_crown_of_ireland
-		}
-	}
-
-	option = {
-		name = "Hold Tight!"
-		add_political_power = 50
-		custom_effect_tooltip = "This option might become very expensive while at war!"
-		hidden_effect = {
-			complete_national_focus = ENG_under_control_ireland
 		}
 	}
 }
@@ -636,6 +609,60 @@ country_event = {
 		declare_war_on = {
 			target = IRE
 			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = ENG_ireland.6
+	title = "The Emerald Isle"
+	desc = "The Irish Separatist Movement has gained popularity throughout the isle, and our control over the island is weakning. We must find a long-term solution to our problem. We must safeguard the interests of the crown and British people!"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Establish Ireland as a Personal Union"
+		add_political_power = -150
+		custom_effect_tooltip = "We shall reform Ireland to a junior personal union partner!"
+		hidden_effect = {
+			complete_national_focus = ENG_crown_of_ireland
+		}
+	}
+
+	option = {
+		name = "Hold Tight!"
+		add_political_power = 50
+		custom_effect_tooltip = "This option might become very expensive while at war!"
+		hidden_effect = {
+			complete_national_focus = ENG_under_control_ireland
+		}
+	}
+}
+
+country_event = {
+	id = ENG_ireland.7
+	title = "Irish Home Rule Delayed"
+	desc = "The prime minister has announced and passed legislation to delay the Irish Home Rule Bill till the end of the diplomatic crisis in Europe. Also unionists in Ulster have rebelled against the home rule bill and for direct British control. Where as the Irish have been disappointment of our limited home rule."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Establish Ireland as a Personal Union"
+		add_political_power = -150
+		custom_effect_tooltip = "We shall reform Ireland to a junior personal union partner!"
+		hidden_effect = {
+			complete_national_focus = ENG_crown_of_ireland
+		}
+	}
+
+	option = {
+		name = "Hold Tight!"
+		add_political_power = 50
+		custom_effect_tooltip = "This option might become very expensive while at war!"
+		hidden_effect = {
+			complete_national_focus = ENG_under_control_ireland
 		}
 	}
 }
