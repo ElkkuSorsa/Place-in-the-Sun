@@ -23,6 +23,7 @@ add_ideas = {
 
 #Politics for 1936.1.1
 add_ideas = {
+	ENG_edward_vii
 	ENG_haldane_reform_1
 	ENG_house_of_lords
 	ENG_two_power_standard

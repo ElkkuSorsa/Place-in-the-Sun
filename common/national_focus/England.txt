@@ -766,6 +766,10 @@ focus_tree = {
 
 		cost = 5
 
+		available = {
+			threat > 0.01
+		}
+
 		completion_reward = {
 			give_guarantee = BEL
 			add_war_support = 0.1
@@ -791,6 +795,12 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission = ENG_gov_of_ire_1911
+			hidden_effect = {
+				country_event = {
+					days = 45
+					id = ENG_ireland.7
+				}
+			}
 		}
 	}
 
@@ -1507,10 +1517,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = {
-				id = ireland.1
-				days = 1
-			}
+			country_event = ENG_ireland.6
 		}
 	}
 
@@ -1765,6 +1772,10 @@ focus_tree = {
 
 		completion_reward = {
 			set_cosmetic_tag = AGE
+			add_trait = {
+				character = ENG_george_v
+				trait = ENG_immortal_imperialist
+			}
 			add_state_core = 15
 			add_state_core = 19
 		}

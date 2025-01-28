@@ -1,5 +1,15 @@
 ideas = {
 	country = {
+		ENG_edward_vii = {
+			picture = GFX_idea_ENG_edward_vii
+			traits = { popular_figurehead }
+		}
+
+		ENG_george_v = {
+			picture = GFX_idea_ENG_george_v
+			traits = { popular_figurehead }
+		}
+
 		ENG_royal_opposition = {
 			picture = can_patriation
 			modifier = {

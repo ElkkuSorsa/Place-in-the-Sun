@@ -9972,6 +9972,14 @@ spriteTypes = {
 		name = "GFX_idea_HUN_the_rakosi_battalion_idea"
 		texturefile = "gfx/interface/ideas/idea_HUN_the_rakosi_battalion_idea.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ENG_george_v"
+		texturefile = "gfx/interface/ideas/ENG/george_v_small.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_edward_vii"
+		texturefile = "gfx/interface/ideas/ENG/edward_vii_small.png"
+	}
 
 
 	### MIO ###
