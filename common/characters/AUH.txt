@@ -296,6 +296,70 @@ characters = {
 		}
 	}
 
+        AUH_eugen_habsburg = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token =  AUH_eugen_habsburg
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					eugen_habsburg
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			corps_commander = {
+				traits = { egineer_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			name =  AUH_eugen_habsburg
+			portraits = { #add new art here
+				army = {
+					large = "GFX_portrait_AUH_eugen_habsburg"
+					small = "GFX_portrait_AUS_lothar_rendulic_small"
+				}
+			}
+		}
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token =  AUH_eugen_habsburg
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					eugen_habsburg
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			name =  AUH_eugen_habsburg
+			portraits = { 
+				army = {
+					small = "GFX_idea_generic_army_europe_1"
+				}
+			}
+		}
+	}
+
     AUH_otto_ellison_nidlef = {
 		instance = {
 			allowed = {
@@ -358,6 +422,75 @@ characters = {
 				}
 			}
 		}
+	}
+
+        AUH_ignaz_trollmann = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token =  AUH_ignaz_trollmann
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					army_commando_3
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			corps_commander = {
+				traits = { egineer_officer }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			name =  AUH_ignaz_trollmann
+			portraits = { #add new art here
+				army = {
+					large = "GFX_portrait_AUH_ignaz_trollmann"
+					small = "GFX_portrait_AUS_lothar_rendulic_small"
+				}
+			}
+		}
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = high_command
+				idea_token =  AUH_ignaz_trollmann
+				ledger = army
+				allowed = {
+					original_tag = AUH
+				}
+				traits = {
+					army_commando_3
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			name =  AUH_ignaz_trollmann
+			portraits = { 
+				army = {
+					small = "GFX_idea_generic_army_europe_1"
+				}
+			}
+		}
+	}
+
+    	spriteType = {
+		name = "GFX_portrait_AUH_ignaz_trollmann"
+		texturefile = "gfx/leaders/AUH/trooll_mann_done.png"
 	}
 
     auh_svetozar_bojna = {
@@ -470,6 +603,33 @@ characters = {
         cost = 150
         can_be_fired = yes
         idea_token = auh_leopold_von_hauer
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_emil_uzelac = {
+    name = "Emil Uzelac"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_samuel_hazai"
+		    }
+		}
+    advisor = {
+        slot = air_chief
+        traits = { emil_uzelac }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_emil_uzelac
 
         allowed = {
             OR = {
