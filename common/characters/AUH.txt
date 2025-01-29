@@ -514,6 +514,34 @@ characters = {
 		}
 	}
 
+		AUH_viktor_krasnik = {
+		name = AUH_viktor_krasnik
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_viktor_krasnik"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
 		AUH_rudolf_brudermann = {
 		name = AUH_rudolf_brudermann
 		portraits = {
