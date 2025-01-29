@@ -21,6 +21,16 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_advisor_adolf_brudermann"
+		texturefile = "gfx/interface/ideas/AUH/brudermann.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_AUH_otto_ellison_nidlef"
+		texturefile = "gfx/interface/ideas/AUH/niedlf.png"
+	}
+
+		spriteType = {
 		name = "GFX_advisor_emil_uzelac"
 		texturefile = "gfx/interface/ideas/AUH/uzelac.png"
 	}
@@ -32,7 +42,7 @@ spriteTypes = {
 
 		spriteType = {
 		name = "GFX_advisor_bohm_ermroli"
-		texturefile = "gfx/interface/ideas/AUH/bohm_ermroli.png"
+		texturefile = "gfx/interface/ideas/AUH/bohm_emroli.png"
 	}
 
 		spriteType = {

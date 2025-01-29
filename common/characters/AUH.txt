@@ -336,8 +336,8 @@ characters = {
 			name =  AUH_otto_ellison_nidlef
 			portraits = { #add new art here
 				army = {
-					large = "GFX_portrait_AUS_lothar_rendulic"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					large = "GFX_portrait_AUH_otto_ellison_nidlef"
+					small = "GFX_advisor_AUH_otto_ellison_nidlef"
 				}
 			}
 		}
@@ -486,6 +486,62 @@ characters = {
 		}
 	}
 
+		AUH_arz_straussenburg = {
+		name = AUH_arz_straussenburg
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_arz_straussenburg"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_rudolf_brudermann = {
+		name = AUH_rudolf_brudermann
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_rudolf_brudermann"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
 	    auh_adolf_von_brudermann = {
 		instance = {
 			allowed = {
@@ -517,8 +573,8 @@ characters = {
 			name = auh_adolf_von_brudermann
 			portraits = { #add new art here
 				army = {
-					large = "GFX_portrait_AUS_lothar_rendulic"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					large = "GFX_portrait_AUH_adolf_brudermann"
+					small = "GFX_advisor_adolf_brudermann"
 				}
 			}
 		}

@@ -18,6 +18,26 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_portrait_AUH_adolf_brudermann"
+		texturefile = "gfx/leaders/AUH/brudermann.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_arz_straussenburg"
+		texturefile = "gfx/leaders/AUH/straussburg.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_rudolf_brudermann"
+		texturefile = "gfx/leaders/AUH/brudermann_cav.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_otto_ellison_nidlef"
+		texturefile = "gfx/leaders/AUH/niedlf.png"
+	}
+
+		spriteType = {
 		name = "GFX_portrait_auh_leopold_hauer"
 		texturefile = "gfx/leaders/AUH/hauer.png"
 	}

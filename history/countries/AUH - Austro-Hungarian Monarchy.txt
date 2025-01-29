@@ -28,6 +28,7 @@ recruit_character = auh_ernest_von_koerber
 recruit_character = AUH_Richard_von_bienerth_schmerling
 recruit_character = AUH_franzjosef
 recruit_character = AUH_stefan_burian
+recruit_character = AUH_rudolf_brudermann
 recruit_character = AUH_anton_haus
 recruit_character = AUH_leon_blinski
 recruit_character = auh_adolf_von_brudermann
