@@ -18,6 +18,16 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_portrait_AUH_friedrich_habsburg"
+		texturefile = "gfx/leaders/AUH/friedrich_teschen.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_erzherzog_franz_habsburg"
+		texturefile = "gfx/leaders/AUH/erzherog_franz_habsburg.png"
+	}
+
+		spriteType = {
 		name = "GFX_portrait_AUH_adolf_brudermann"
 		texturefile = "gfx/leaders/AUH/brudermann.png"
 	}
