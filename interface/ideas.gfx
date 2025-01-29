@@ -1,21 +1,21 @@
 spriteTypes = {	
 		
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_idea_bad_funding_army"
 		texturefile = "gfx/interface/ideas/AUH/bad_funding_army.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_auh_ernest_von_koerber"
 		texturefile = "gfx/interface/ideas/AUH/auh_ernest_von_koerber.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_alexander_von_krobatin"
 		texturefile = "gfx/interface/ideas/AUH/alexander_krobatin.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_samuel_hazai"
 		texturefile = "gfx/interface/ideas/AUH/hazai_theorst.png"
 	}
@@ -79,82 +79,82 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/burian_rajecz.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_leon_blinski"
 		texturefile = "gfx/interface/ideas/AUH/leon_blinzki.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_friedrich_von_georgi"
 		texturefile = "gfx/interface/ideas/AUH/georgi.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_otto_bauer"
 		texturefile = "gfx/interface/ideas/AUH/otto_bauer.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_eduard_bohm"
 		texturefile = "gfx/interface/ideas/AUH/eduard_bohm.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_leopold_berchtold"
 		texturefile = "gfx/interface/ideas/AUH/leopold_berchtold.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_wittgenstein"
 		texturefile = "gfx/interface/ideas/AUH/wittgenstein.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_adolf_loos"
 		texturefile = "gfx/interface/ideas/AUH/aold_loos.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_viktor_Adler"
 		texturefile = "gfx/interface/ideas/AUH/viktor_adler.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_vaclav_klement"
 		texturefile = "gfx/interface/ideas/AUH/klement.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_alois_lexa_von_aehrenthal"
 		texturefile = "gfx/interface/ideas/AUH/lexa_arenthal.png"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_advisor_AUH_otto_wagner"
 		texturefile = "gfx/interface/ideas/AUH/otto_wagner.png"
 	}
 
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_idea_AUH_primeminister_werkele"
 		texturefile = "gfx/interface/ideas/AUH/AUH_primeminister_werkele.png"
 	}
 
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_idea_empire_of_old_habsburg"
 		texturefile = "gfx/interface/ideas/AUH/empire_of_habsburg_old.dds"
 	}
 
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_idea_ghost_of_the_past"
 		texturefile = "gfx/interface/ideas/AUH/ghost_of_the_past.dds"
 	}
 
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_idea_Richard_von_bienerth_schmerling"
 		texturefile = "gfx/interface/ideas/AUH/first_primeminister.png"
 	}
 
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
 		noOfFrames = 18
@@ -162,7 +162,7 @@ spriteTypes = {
 
 	### new tfv nat spirit icons
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}		

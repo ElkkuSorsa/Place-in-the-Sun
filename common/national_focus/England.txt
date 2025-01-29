@@ -686,7 +686,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				days = 120
-				idea = ENG_healthcare_reform
+				idea = ENG_supported_entreprenourship
 			}
 		}
 	}
@@ -1429,6 +1429,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_fire_rise
+		icon = GFX_goal_tripartite_pact
+		x = 24
+		y = 2
+		prerequisite = { focus = ENG_march_for_change }
+
+		cost = 10
+
+		available = {
+			has_country_leader = {
+				name = "Military Government"
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+				id = march_change.3 
+				days = 2
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_question_of_future
 		icon = GFX_goal_tripartite_pact
 		x = 17
@@ -1872,6 +1896,109 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_fire_shall_rise
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 5
+		prerequisite = { focus = ENG_appoint_leader }
+
+		cost = 10
+
+		allow_branch = {
+		#	has_country_flag = ENG_hitler
+		}
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_accident_shall_happen
+		icon = GFX_focus_rom_abdicate
+		x = 24
+		y = 6
+		prerequisite = { focus = ENG_fire_shall_rise }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_queen_will_hear
+		icon = GFX_focus_rom_abdicate
+		x = 24
+		y = 7
+		prerequisite = { focus = ENG_accident_shall_happen }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_world_shall_bow
+		icon = GFX_focus_rom_abdicate
+		x = 22
+		y = 6
+		prerequisite = { focus = ENG_fire_shall_rise }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_they_will_know
+		icon = GFX_focus_rom_abdicate
+		x = 22
+		y = 7
+		prerequisite = { focus = ENG_world_shall_bow }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_those_who_oppose_us
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 8
+		prerequisite = { focus = ENG_they_will_know }
+		prerequisite = { focus = ENG_queen_will_hear }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_will_bow_to_us
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 9
+		prerequisite = { focus = ENG_those_who_oppose_us }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
 		id = ENG_abolish_nobility
 		icon = GFX_focus_rom_abdicate
 		x = 23
@@ -1879,6 +2006,11 @@ focus_tree = {
 		prerequisite = { focus = ENG_appoint_leader }
 
 		cost = 10
+
+		allow_branch = {
+		#	NOT = { has_country_flag = ENG_hitler }
+		always = no
+		}
 
 		completion_reward = {
 			remove_ideas = ENG_house_of_lords
