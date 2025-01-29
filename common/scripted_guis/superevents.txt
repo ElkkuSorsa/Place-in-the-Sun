@@ -1,11 +1,71 @@
 scripted_gui = {
-    superevent_windows = {
-        window_name = "superevent_windows"
-        context_type = player_context
+  new_scripted_gui = {
+    window_name = "superevents"
+    context_type = player_context
 
-        visible = {
-            always = no
-        }
-         
+    visible = {
+		has_country_flag = SE_superevents_activate
+    }
+
+    effects = {
+		superevents_button_click = {
+			clr_country_flag = SE_superevents_activate
+			#superevents
+			clr_global_flag = SE_ww1
+			clr_global_flag = SE_fall_france
+			clr_global_flag = SE_french_empire
+			clr_global_flag = SE_french_communism
+			clr_global_flag = SE_radicals_uk
+			clr_global_flag = SE_bolshevik
+			clr_global_flag = SE_unification_rome
+		}
+    }
+
+    triggers = {
+		superevents_ww1_visible = {
+			has_global_flag = SE_ww1
+		}
+		superevents_unification_rome_visible = {
+			has_global_flag = SE_rome_unified
+		}
+		superevents_french_empire_visible = {
+			has_global_flag = SE_french_empire
+		}
+		superevents_french_communism_visible = {
+			has_global_flag = SE_french_communism
+		}
+		superevents_fall_france_visible = {
+			has_global_flag = SE_fall_france
+		}
+		superevents_radicals_uk_visible = {
+			has_global_flag = SE_radicals_uk
+		}
+		superevents_bolshevik_visible = {
+			has_global_flag = SE_bolshevik
+		}
+		
+    }
+
+    dynamic_lists = {
 	}
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	ai_test_variance = 0.5
+	
+    ai_check = {
+    }
+	
+    ai_check_scope = {
+    }
+	
+    ai_weights = {
+    }
+  }
 }

@@ -940,7 +940,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_demand_andalusia
+		id = ENG_expand_gibraltar
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 48
 		y = 8
@@ -1119,7 +1119,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_churchill
+		id = ENG_law
 		icon = GFX_focus_generic_support_the_left_right
 		x = 62
 		y = 4
@@ -1136,7 +1136,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		x = 66
 		y = 5
-		prerequisite = { focus = ENG_churchill focus = ENG_balfour }
+		prerequisite = { focus = ENG_law focus = ENG_balfour }
 
 		cost = 20
 
@@ -1905,7 +1905,7 @@ focus_tree = {
 		cost = 10
 
 		allow_branch = {
-		#	has_country_flag = ENG_hitler
+			has_country_flag = ENG_hitler
 		}
 
 		completion_reward = {
@@ -2008,8 +2008,7 @@ focus_tree = {
 		cost = 10
 
 		allow_branch = {
-		#	NOT = { has_country_flag = ENG_hitler }
-		always = no
+			NOT = { has_country_flag = ENG_hitler }
 		}
 
 		completion_reward = {
@@ -2967,7 +2966,7 @@ focus_tree = {
 		id = ENG_war_to_end_them_all
 		icon = GFX_goal_generic_major_war
 		x = 24
-		y = 14
+		y = 12
 		
 		cost = 10
 
@@ -2986,12 +2985,16 @@ focus_tree = {
 		id = ENG_new_interventionism
 		icon = GFX_goal_generic_major_war
 		x = 20
-		y = 15
+		y = 13
 		prerequisite = { focus = ENG_war_to_end_them_all }
 
 		cost = 10
 
 		available = {
+		}
+
+		bypass = {
+			OR = { has_government = fascism has_government = neutrality }
 		}
 
 		completion_reward = {
@@ -3002,13 +3005,14 @@ focus_tree = {
 		id = ENG_nationalist_movement
 		icon = GFX_goal_generic_major_war
 		x = 20
-		y = 16
+		y = 14
 		prerequisite = { focus = ENG_new_interventionism }
 		mutually_exclusive = { focus = ENG_elections_1918 focus = ENG_king_coup }
 
 		cost = 10
 
 		available = {
+			has_government = fascism
 		}
 
 		completion_reward = {
@@ -3019,13 +3023,14 @@ focus_tree = {
 		id = ENG_king_coup
 		icon = GFX_goal_generic_major_war
 		x = 12
-		y = 16
+		y = 14
 		prerequisite = { focus = ENG_new_interventionism }
 		mutually_exclusive = { focus = ENG_nationalist_movement focus = ENG_elections_1918 }
 
 		cost = 10
 
 		available = {
+			has_government = neutrality
 		}
 
 		completion_reward = {
@@ -3036,7 +3041,7 @@ focus_tree = {
 		id = ENG_dissolve_commons
 		icon = GFX_goal_generic_major_war
 		x = 16
-		y = 17
+		y = 15
 		prerequisite = { focus = ENG_king_coup focus = ENG_nationalist_movement }
 
 		cost = 10
@@ -3045,6 +3050,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
 		}
 	}
 
@@ -3052,7 +3059,7 @@ focus_tree = {
 		id = ENG_prime_minister_churchill
 		icon = GFX_goal_generic_major_war
 		x = 10
-		y = 17
+		y = 15
 		prerequisite = { focus = ENG_king_coup }
 
 		cost = 10
@@ -3068,7 +3075,7 @@ focus_tree = {
 		id = ENG_guarantor_of_european_peace
 		icon = GFX_goal_generic_major_war
 		x = 10
-		y = 18
+		y = 16
 		prerequisite = { focus = ENG_prime_minister_churchill }
 
 		cost = 10
@@ -3084,7 +3091,7 @@ focus_tree = {
 		id = ENG_guarantee_france
 		icon = GFX_goal_generic_major_war
 		x = 8
-		y = 19
+		y = 17
 		prerequisite = { focus = ENG_guarantor_of_european_peace }
 
 		cost = 10
@@ -3100,7 +3107,7 @@ focus_tree = {
 		id = ENG_lowlands
 		icon = GFX_goal_generic_major_war
 		x = 10
-		y = 19
+		y = 17
 		prerequisite = { focus = ENG_guarantor_of_european_peace }
 
 		cost = 10
@@ -3116,7 +3123,7 @@ focus_tree = {
 		id = ENG_secure_lowlands
 		icon = GFX_goal_generic_major_war
 		x = 8
-		y = 20
+		y = 18
 		prerequisite = { focus = ENG_lowlands }
 		mutually_exclusive = { focus = ENG_keep_peace_lowlands }
 
@@ -3133,7 +3140,7 @@ focus_tree = {
 		id = ENG_keep_peace_lowlands
 		icon = GFX_goal_generic_major_war
 		x = 12
-		y = 20
+		y = 18
 		prerequisite = { focus = ENG_lowlands }
 		mutually_exclusive = { focus = ENG_secure_lowlands }
 
@@ -3150,7 +3157,7 @@ focus_tree = {
 		id = ENG_maintain_imperial_integrity
 		icon = GFX_goal_generic_major_war
 		x = 6
-		y = 18
+		y = 16
 		prerequisite = { focus = ENG_prime_minister_churchill }
 
 		cost = 10
@@ -3166,7 +3173,7 @@ focus_tree = {
 		id = ENG_suppress_nationalist_movements
 		icon = GFX_goal_generic_major_war
 		x = 6
-		y = 19
+		y = 17
 		prerequisite = { focus = ENG_maintain_imperial_integrity }
 
 		cost = 10
@@ -3182,7 +3189,7 @@ focus_tree = {
 		id = ENG_steady_as_she_goes
 		icon = GFX_goal_generic_major_war
 		x = 28
-		y = 15
+		y = 13
 		prerequisite = { focus = ENG_war_to_end_them_all }
 		
 		cost = 10
@@ -3198,7 +3205,7 @@ focus_tree = {
 		id = ENG_coalition_coupons
 		icon = GFX_goal_generic_major_war
 		x = 30
-		y = 16
+		y = 14
 		prerequisite = { focus = ENG_steady_as_she_goes }
 		
 		cost = 10
@@ -3214,9 +3221,26 @@ focus_tree = {
 		id = ENG_elections_1918
 		icon = GFX_goal_generic_major_war
 		x = 28
-		y = 16
+		y = 14
 		prerequisite = { focus = ENG_steady_as_she_goes focus = ENG_new_interventionism }
 		mutually_exclusive = { focus = ENG_nationalist_movement focus = ENG_king_coup }
+		
+		cost = 10
+
+		available = {
+			OR = { has_government = democratic has_government = neutrality }
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_conservative_future
+		icon = GFX_goal_generic_major_war
+		x = 24
+		y = 15
+		prerequisite = { focus = ENG_elections_1918 } 
 		
 		cost = 10
 
@@ -3230,8 +3254,8 @@ focus_tree = {
 	focus = {
 		id = ENG_coalition_landslide
 		icon = GFX_goal_generic_major_war
-		x = 28
-		y = 17
+		x = 32
+		y = 15
 		prerequisite = { focus = ENG_elections_1918 } 
 		
 		cost = 10
@@ -3247,8 +3271,8 @@ focus_tree = {
 		id = ENG_rebuild_the_country
 		icon = GFX_goal_generic_major_war
 		x = 28
-		y = 18
-		prerequisite = { focus = ENG_coalition_landslide } 
+		y = 16
+		prerequisite = { focus = ENG_coalition_landslide focus = ENG_conservative_future } 
 		
 		cost = 10
 
