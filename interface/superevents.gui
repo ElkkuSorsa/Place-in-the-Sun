@@ -1,0 +1,30 @@
+guiTypes = {
+    containerWindowType = {
+        name = "superevent_windows"
+        position = { x = 0 y = 0 }
+        size = { width = 800 height = 650 }
+		moveable = no
+		fade_type = linear
+		fade_time = 100
+		orientation = center
+		origo = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_superevent_back"
+		} 
+
+		instantTextboxType = {
+			name = "superevent_title"
+			position = { x = 400 y = 100 }
+			font = "hoi_20b"
+			text = "Finnish Independence"
+			maxWidth = 50000
+			maxHeight = 50000
+			format = left
+			alwaystransparent = yes
+			orientation = center
+			origo = center
+		}
+    }
+}

@@ -1,0 +1,11 @@
+scripted_gui = {
+    superevent_windows = {
+        window_name = "superevent_windows"
+        context_type = player_context
+
+        visible = {
+            always = no
+        }
+         
+	}
+}
