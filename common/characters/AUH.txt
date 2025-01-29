@@ -144,8 +144,8 @@ characters = {
 			name = AUH_goglia_zlota
 			portraits = { #add new art here
 				army = {
-					large = "GFX_portrait_AUS_lothar_rendulic"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					large = "GFX_portrait_auh_goglia_lipa"
+					small = "GFX_advisor_goglia_lipa"
 				}
 			}
 		}
@@ -208,8 +208,8 @@ characters = {
 			name = AUH_eduard_bohm
 			portraits = { #add new art here
 				army = {
-					large = "GFX_portrait_AUS_lothar_rendulic"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					large = "GFX_portrait_auh_bohm_ermroli"
+					small = "GFX_advisor_bohm_ermroli"
 				}
 			}
 		}
@@ -652,7 +652,7 @@ characters = {
             portraits = {
 			civilian = {
 				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
+                small = "GFX_advisor_emil_uzelac"
 		    }
 		}
     advisor = {

@@ -21,6 +21,21 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_advisor_emil_uzelac"
+		texturefile = "gfx/interface/ideas/AUH/uzelac.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_goglia_lipa"
+		texturefile = "gfx/interface/ideas/AUH/goglia_lipa.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_bohm_ermroli"
+		texturefile = "gfx/interface/ideas/AUH/bohm_ermroli.png"
+	}
+
+		spriteType = {
 		name = "GFX_advisor_auh_morritz_auffenberg"
 		texturefile = "gfx/interface/ideas/AUH/morritz.png"
 	}

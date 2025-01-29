@@ -28,6 +28,16 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_portrait_auh_bohm_ermroli"
+		texturefile = "gfx/leaders/AUH/bohm_ermroli.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_auh_goglia_lipa"
+		texturefile = "gfx/leaders/AUH/goglia_lipa.png"
+	}
+
+		spriteType = {
 		name = "GFX_portrait_AUH_eugen_habsburg"
 		texturefile = "gfx/leaders/AUH/eugen_habsburg.png"
 	}
