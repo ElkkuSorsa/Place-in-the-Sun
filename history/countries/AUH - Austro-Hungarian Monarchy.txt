@@ -91,6 +91,72 @@ set_popularities = {
 	neutrality = 70
 }
 
+9 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 5
+}
+
+75 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 5
+}
+
+88 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+89 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+91 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+80 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+73 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+70 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+71 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+644 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 
+}
+
+76 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 
+}
+
 #Politics for 1939.1.1
 1939.1.1 = {
 	set_popularities = {
