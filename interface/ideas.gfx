@@ -20,7 +20,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/hazai_theorst.png"
 	}
 
-	spriteType = {
+		spriteType = {
 		name = "GFX_advisor_AUH_stefan_burian"
 		texturefile = "gfx/interface/ideas/AUH/burian_rajecz.png"
 	}
