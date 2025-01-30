@@ -189,7 +189,7 @@ characters = {
 					original_tag = AUH
 				}
 				traits = {
-					army_infantry_2
+					bohm_ermroli
 				}
 				cost = 150
 				ai_will_do = {
@@ -273,7 +273,7 @@ characters = {
 			portraits = { #add new art here
 				army = {
 					large = "GFX_portrait_AUH_eugen_habsburg"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					small = "GFX_advisor_AUH_eugen_habsburg"
 				}
 			}
 		}
@@ -381,7 +381,7 @@ characters = {
 					original_tag = AUH
 				}
 				traits = {
-					army_commando_3
+					ignaz_trollmann
 				}
 				cost = 150
 				ai_will_do = {
@@ -401,7 +401,7 @@ characters = {
 			portraits = { #add new art here
 				army = {
 					large = "GFX_portrait_AUH_ignaz_trollmann"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					small = "GFX_advisor_AUH_ignaz_trollmann"
 				}
 			}
 		}
@@ -818,8 +818,8 @@ characters = {
     name = "Arthur Giesl von Gieslingen"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
+				large = "GFX_advisor_auh_arthur_giesling"
+                small = "GFX_advisor_auh_arthur_giesling"
 		    }
 		}
     advisor = {

@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/bad_funding_army.dds"
 	}
 
+		SpriteType = {
+		name = "GFX_idea_landtags_in_revolt"
+		texturefile = "gfx/interface/ideas/AUH/landtags_in_open_revolt.dds"
+	}
+
 	spriteType = {
 		name = "GFX_advisor_auh_ernest_von_koerber"
 		texturefile = "gfx/interface/ideas/AUH/auh_ernest_von_koerber.dds"
@@ -15,9 +20,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/alexander_krobatin.png"
 	}
 
-	spriteType = {
+		spriteType = {
 		name = "GFX_advisor_samuel_hazai"
 		texturefile = "gfx/interface/ideas/AUH/hazai_theorst.png"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_AUH_eugen_habsburg"
+		texturefile = "gfx/interface/ideas/AUH/eugen_teschen.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_auh_arthur_giesling"
+		texturefile = "gfx/interface/ideas/AUH/arthur_giesling.png"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_AUH_ignaz_trollmann"
+		texturefile = "gfx/interface/ideas/AUH/ignaz_trollmann.png"
 	}
 
 		spriteType = {
