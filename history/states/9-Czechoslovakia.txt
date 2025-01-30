@@ -11,7 +11,7 @@ state={
 	history={
 		owner = AUH
 		add_core_of = CZE
-		compliance_25
+	#	compliance_25
 		victory_points = { 11542 30 }
 		victory_points = { 6418 5 }
 		victory_points = { 9569 5 }
