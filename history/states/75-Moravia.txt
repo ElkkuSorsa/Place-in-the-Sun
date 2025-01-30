@@ -19,8 +19,8 @@ state={
 			6562 5
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 4
+			infrastructure = 2
+			industrial_complex = 1
 		}
 
 		1939.3.14 = {

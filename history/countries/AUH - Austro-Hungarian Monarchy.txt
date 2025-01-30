@@ -126,6 +126,18 @@ set_popularities = {
 	set_resistance = 0
 }
 
+664 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+163 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
 73 = {
 	start_resistance = yes
 	set_compliance = 35
@@ -146,15 +158,110 @@ set_popularities = {
 
 644 = {
 	start_resistance = yes
-	set_compliance = 40
-	set_resistance = 
+	set_compliance = 35
+	set_resistance = 10
 }
 
 76 = {
 	start_resistance = yes
-	set_compliance = 40
-	set_resistance = 
+	set_compliance = 35
+	set_resistance = 10
 }
+
+80 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+155 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+43 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+974 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+973 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+154 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+84 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+83 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+82 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+764 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+45 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+109 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+103 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+104 = {
+	start_resistance = yes
+	set_compliance = 40
+}
+
+804 = {
+	start_resistance = yes
+	set_compliance = 40
+}
+
+
+
+
+add_core_of = HUN
+
+
 
 #Politics for 1939.1.1
 1939.1.1 = {

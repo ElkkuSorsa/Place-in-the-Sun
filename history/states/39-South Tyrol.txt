@@ -16,8 +16,8 @@ state = {
 		}
 		owner = AUH
 		buildings = {
-			infrastructure = 2 # was 3 before split
-			industrial_complex = 1 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
+			infrastructure = 1 # was 3 before split
+			 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
 		}
 		add_calim_by = ITA
 		add_core_of = LBV
