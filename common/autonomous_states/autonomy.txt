@@ -8,6 +8,8 @@ autonomy_state = {
 	min_freedom_level = 0.1
 	
 	manpower_influence = 1.0
+
+	default = no
 	
 	#Entirely diplomatically dependent on their overlord, but fairly autonomous in industry
 	rule = {
@@ -58,6 +60,8 @@ autonomy_state = {
 	min_freedom_level = 0.2
 	
 	manpower_influence = 1.0
+
+	default = no
 	
 	#Entirely diplomatically dependent on their overlord, but fairly autonomous in industry
 	rule = {
