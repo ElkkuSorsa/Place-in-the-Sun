@@ -598,6 +598,119 @@ characters = {
 		}
 	}
 
+		AUH_claudius_czibulka = {
+		name = AUH_claudius_czibulka
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_claudius_czibulka"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_georgy_reny = {
+		name = UH_georgy_reny
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_georgy_reny"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_karl_huyn = {
+		name = AUH_karl_huyn
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_karl_huyn"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+	
+		AUH_kovesz_koveshaza = {
+		name = AUH_kovesz_koveshaza
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_kovesz_koveshaza"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
 		AUH_rudolf_brudermann = {
 		name = AUH_rudolf_brudermann
 		portraits = {

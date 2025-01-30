@@ -18,6 +18,26 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_portrait_AUH_kovesz_koveshaza"
+		texturefile = "gfx/leaders/AUH/kovesz.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_georgy_reny"
+		texturefile = "gfx/leaders/AUH/george_reny.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_karl_huyn"
+		texturefile = "gfx/leaders/AUH/huyn.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_claudius_czibulka"
+		texturefile = "gfx/leaders/AUH/czibulka.png"
+	}
+
+		spriteType = {
 		name = "GFX_portrait_AUH_friedrich_habsburg"
 		texturefile = "gfx/leaders/AUH/friedrich_teschen.png"
 	}
