@@ -135,10 +135,10 @@ characters = {
 
 			corps_commander = {
 				traits = { bearer_of_artillery infantry_leader }
-				skill = 3
+				skill = 2
 				attack_skill = 3
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 2
 				logistics_skill = 1
 			}
 			name = AUH_goglia_zlota
@@ -199,8 +199,8 @@ characters = {
 
 			corps_commander = {
 				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert career_officer }
-				skill = 3
-				attack_skill = 2
+				skill = 2
+				attack_skill = 3
 				defense_skill = 2
 				planning_skill = 2
 				logistics_skill = 2
@@ -262,9 +262,9 @@ characters = {
 			}
  
 			corps_commander = {
-				traits = { egineer_officer }
+				traits = { politically_connected }
 				skill = 2
-				attack_skill = 1
+				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 3
 				logistics_skill = 1
@@ -326,12 +326,12 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { egineer_officer }
+				traits = { engineer_officer }
 				skill = 2
 				attack_skill = 1
-				defense_skill = 3
+				defense_skill = 1
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 			}
 			name =  AUH_otto_ellison_nidlef
 			portraits = { #add new art here
@@ -390,12 +390,12 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { egineer_officer }
+				traits = { hill_fighter mountaineer commando engineer trickster ranger }
 				skill = 2
-				attack_skill = 1
-				defense_skill = 3
+				attack_skill = 3
+				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 			}
 			name =  AUH_ignaz_trollmann
 			portraits = { #add new art here
@@ -418,7 +418,7 @@ characters = {
 				traits = {
 					army_commando_3
 				}
-				cost = 150
+				cost = 250
 				ai_will_do = {
 					base = 1
 				}
@@ -460,7 +460,7 @@ characters = {
 
 			corps_commander = {
 				traits = { infantry_leader organizer mountaineer }
-				skill = 3
+				skill = 2
 				attack_skill = 2
 				defense_skill = 4
 				planning_skill = 3
@@ -495,11 +495,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
-			skill = 1
+			traits = { organizer scavenger }
+			skill = 2
 			attack_skill = 2
 			defense_skill = 2
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = -1
 			visible = {
@@ -523,7 +523,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { cavalry_leader cavalry_expert }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 2
@@ -551,7 +551,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { winter_specialist media_personality }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 2
@@ -579,11 +579,11 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = {  }
-			skill = 1
+			traits = { old_gurad }
+			skill = 3
 			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
+			defense_skill = 3
+			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = -1
 			visible = {
@@ -607,12 +607,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { trickster  }
 			skill = 1
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -627,7 +627,7 @@ characters = {
 	}
 
 		AUH_georgy_reny = {
-		name = UH_georgy_reny
+		name = AUH_georgy_reny
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_georgy_reny"
@@ -637,10 +637,10 @@ characters = {
 		corps_commander = {
 			traits = {  }
 			skill = 1
-			attack_skill = 2
-			defense_skill = 2
+			attack_skill = 1
+			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 2
+			logistics_skill = 1
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -663,12 +663,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
-			skill = 1
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
+			traits = { engineeer engineer_officer swamp_fox }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -691,12 +691,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
-			skill = 1
-			attack_skill = 2
+			traits = { fortress_buster ambusher brilliant_strategist }
+			skill = 2
+			attack_skill = 4
 			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 2
+			logistics_skill = 1
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -719,12 +719,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { cavalry_officer  }
 			skill = 1
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -748,7 +748,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { ranger hill_fighter }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 2
@@ -776,12 +776,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { old_guard politically_connected cavalry_leader }
 			skill = 1
-			attack_skill = 2
-			defense_skill = 2
+			attack_skill = 1
+			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 2
+			logistics_skill = 1
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -816,12 +816,12 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { infantry_officer }
-				skill = 3
+				traits = { infantry_officer infantry_leader }
+				skill = 2
 				attack_skill = 2
 				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
 			}
 			name = auh_adolf_von_brudermann
 			portraits = { #add new art here
@@ -903,7 +903,7 @@ characters = {
 
 			field_marshal = {
 				traits = { politically_connected old_guard infantry_leader infantry_officer harsh_leader media_personality war_hero trait_reckless organizer thorough_planner  }
-				skill = 4
+				skill = 3
 				attack_skill = 6
 				defense_skill = 1
 				planning_skill = 4
