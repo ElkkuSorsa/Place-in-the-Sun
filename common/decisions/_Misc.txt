@@ -1,0 +1,29 @@
+superevents_dec = {
+	enable_se = {
+		ai_will_do = {
+			base = 500
+		}
+
+		visible = {
+			has_country_flag = SE_superevents_enabled
+		}
+
+		complete_effect = {
+			clr_country_flag = SE_superevents_enabled
+		}
+	}
+
+	disable_se = {
+		ai_will_do = {
+			base = -500
+		}
+
+		visible = {
+			NOT = { has_country_flag = SE_superevents_enabled }
+		}
+
+		complete_effect = {
+			set_country_flag = SE_superevents_enabled
+		}
+	}
+}

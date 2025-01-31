@@ -1,0 +1,70 @@
+ideas = {
+	
+	country = {
+		auh_underfunded_army = {
+			picture = bad_funding_army
+			modifier = {
+				war_support_factor = -0.05
+				army_attack_factor = -0.075
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				mobilization_speed = -0.1
+				experience_gain_army_factor = -0.05
+				experience_gain_army_unit_factor = -0.1
+				army_speed_factor = -0.2
+				dig_in_speed_factor = -0.2
+				max_planning_factor = -0.2
+				planning_speed = -0.4
+				army_chief_cost_factor = 0.20
+				navy_chief_cost_factor = 0.20
+				air_chief_cost_factor = 0.4
+				high_command_cost_factor = 0.2
+				theorist_cost_factor = 0.4
+				command_power_gain_mult = -0.2
+				air_training_xp_gain_factor = -0.15
+			}
+		}
+
+			AUH_landtags_in_active_revolt = {
+			picture = landtags_in_revolt
+			modifier = {
+			stability_factor = -0.05
+			trade_laws_cost_factor = 0.1
+			line_change_production_efficiency_factor = -0.1
+			production_factory_start_efficiency_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.05
+			army_defence_against_major_factor = -0.1
+			army_attack_against_major_factor = -0.1
+
+			}
+		}
+			auh_Multiethnicity = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.1
+			war_support_factor = -0.2
+			stability_factor = -0.02
+			compliance_gain = -0.05
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.15
+			resistance_growth = 0.10
+			subjects_autonomy_gain = 0.1
+			research_speed_factor = -0.05
+			}
+		}
+			auh_ghostofthepast = {
+			picture = ghost_of_the_past
+			modifier = {
+			industrial_capacity_factory = -0.2
+			production_factory_efficiency_gain_factor = -0.1
+			roduction_factory_max_efficiency_factor = -0.2
+			production_factory_start_efficiency_factor = -0.1
+			production_speed_buildings_factor = -0.2
+			line_change_production_efficiency_factor = -0.1
+			research_speed_factor = -0.2
+			trade_laws_cost_factor = 0.3
+			}
+		}
+	}
+}

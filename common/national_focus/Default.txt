@@ -1,0 +1,14 @@
+focus_tree = {
+	id = default_focus
+	country = {
+		factor = 11
+	}
+
+	shared_focus = ENT_entente_cordiale_1
+
+	focus = {
+		id = focus_tree
+		x = 5
+		y = 5
+	}
+}

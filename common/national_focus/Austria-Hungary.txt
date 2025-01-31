@@ -1,0 +1,260 @@
+focus_tree = {
+	id = AUH_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			tag = AUH
+		}
+	}
+
+	default = no
+
+	# Political and Coring Tree
+	
+
+		focus = {
+		id = AUH_empire_of_franz_josef
+		icon = GFX_goal_empire_of_franz_josef
+		x = 21
+		y = 1
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+		focus = {
+		id = AUH_solution_of_the_landtag
+		icon = GFX_goal_AUH_solution_of_the_landtag
+		x = 22
+		y = 2
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_empire_of_franz_josef}  
+
+		completion_reward = {
+						country_event = {
+					id = austria_hungary.1
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_allow_regional_languages
+		icon = GFX_goal_empire_of_franz_josef
+		x = 24
+		y = 2
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_empire_of_franz_josef}  
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_problems_with_translatheinia
+		icon = GFX_goal_empire_of_franz_josef
+		x = 26
+		y = 2
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_empire_of_franz_josef}  
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_give_jobs_to_regionals
+		icon = GFX_goal_empire_of_franz_josef
+		x = 23
+		y = 3
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_solution_of_the_landtag}
+		prerequisite = {focus = AUH_allow_regional_languages}    
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_give_rights_to_no_hungarian_minorities
+		icon = GFX_goal_empire_of_franz_josef
+		x = 25
+		y = 3
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_problems_with_translatheinia}
+		prerequisite = {focus = AUH_allow_regional_languages}    
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_reinforce_kuk_gendarmarie
+		icon = GFX_goal_empire_of_franz_josef
+		x = 24
+		y = 4
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_give_jobs_to_regionals}
+		prerequisite = {focus = AUH_give_rights_to_no_hungarian_minorities}    
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_purge_of_unloyal_hungarians
+		icon = GFX_goal_empire_of_franz_josef
+		x = 22
+		y = 5
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_limit_rights_on_slavonia
+		icon = GFX_goal_empire_of_franz_josef
+		x = 24
+		y = 5
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_serbians_on_their_own
+		icon = GFX_goal_empire_of_franz_josef
+		x = 26
+		y = 5
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_slovenian_debate
+		icon = GFX_goal_empire_of_franz_josef
+		x = 23
+		y = 6
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
+		prerequisite = {focus = AUH_purge_of_unloyal_hungarians} 
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_austrian_sud_tirol
+		icon = GFX_goal_empire_of_franz_josef
+		x = 25
+		y = 6
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
+		prerequisite = {focus = AUH_serbians_on_their_own} 
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+		focus = {
+		id = AUH_declare_the_revolt_uncostitutional
+		icon = GFX_goal_empire_of_franz_josef
+		x = 24
+		y = 7
+
+		cost = 2.9
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_austrian_sud_tirol}  
+		prerequisite = {focus = AUH_slovenian_debate} 
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		focus = {
+		id = AUH_government_funds_austria
+		icon = GFX_goal_AUH_government_funds_austria
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = AUH_army_leadership_question
+		icon = GFX_goal_AUH_army_leadership_question
+		x = 2
+		y = 1
+		army_leadership_question
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+}

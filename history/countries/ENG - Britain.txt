@@ -1,0 +1,102 @@
+﻿oob = "ENG_1936"
+capital = 1
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.2
+set_convoys = 500
+
+
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+}
+
+
+
+
+#For start date 1939.1.1
+
+
+#Politics for 1936.1.1
+set_global_flag = SE_ww1
+set_country_flag = SE_superevents_activate
+add_ideas = {
+	ENG_edward_vii
+	ENG_haldane_reform_1
+	ENG_house_of_lords
+	ENG_two_power_standard
+	ENG_british_politics_dem
+	naval_race
+}
+
+set_autonomy = {
+	target = RAJ
+	autonomy_state = autonomy_colony
+}
+
+set_autonomy = {
+	target = AST
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = CAN
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = NZL
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = SAF
+	autonomy_state = autonomy_dominion
+}
+
+set_autonomy = {
+	target = MAL
+	autonomy_state = autonomy_colony
+}
+
+recruit_character = ENG_george_v
+recruit_character = ENG_asquith
+recruit_character = ENG_lloyd_george
+set_cosmetic_tag = ENG_democratic
+set_country_flag = ENG_lib_his
+set_variable = { libseats = 274 }
+set_variable = { conseats = 272 }
+set_variable = { ireseats = 74 }
+set_variable = { labseats = 40 }
+ENG_calc_gov = yes
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1906.12.19"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 85
+	fascism = 0
+	communism = 10
+	neutrality = 5
+}
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_popularities = {
+		democratic = 25
+		fascism = 25
+		communism = 25
+		neutrality = 25
+	}
+}
+
+
+

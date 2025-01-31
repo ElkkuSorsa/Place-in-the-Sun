@@ -1,0 +1,3 @@
+hun_trust = {
+	set_variable = { var = hungary_trust value = 40 }
+}

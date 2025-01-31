@@ -1,0 +1,56 @@
+defined_text = {
+	name = hungary_trust_text
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { var = hungary_trust value = 0 compare = equals }
+				check_variable = { var = hungary_trust value = 10 compare = equals }
+			}
+		}
+		localization_key = trust.1
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { var = hungary_trust value = 20 compare = equals }
+				check_variable = { var = hungary_trust value = 30 compare = equals }
+			}
+		}
+		localization_key = trust.2
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { var = hungary_trust value = 40 compare = equals }
+				check_variable = { var = hungary_trust value = 50 compare = equals }
+			}
+		}
+		localization_key = trust.3
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { var = hungary_trust value = 60 compare = equals }
+				check_variable = { var = hungary_trust value = 70 compare = equals }
+			}
+		}
+		localization_key = trust.4
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { var = hungary_trust value = 80 compare = equals }
+				check_variable = { var = hungary_trust value = 90 compare = equals }
+				check_variable = { var = hungary_trust value = 100 compare = equals }
+			}
+		}
+		localization_key = trust.5
+	}
+	text = {
+		localization_key = trust.default
+	}
+}

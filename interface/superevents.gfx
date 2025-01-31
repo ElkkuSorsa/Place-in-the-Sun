@@ -1,0 +1,49 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_supereventsbg"
+		textureFile = "/gfx/superevents_gui/supereventsbg.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbg_test"
+		textureFile = "/gfx/superevents_gui/supereventsbg_test.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbutton"
+		textureFile = "/gfx/superevents_gui/supereventsbutton.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsoverlay"
+		textureFile = "/gfx/superevents_gui/supereventsoverlay.dds"
+	}
+	
+	#meat and potatoes
+	spriteType = {
+		name = "GFX_superevents_ww1"
+		textureFile = "/gfx/superevents_pictures/superevents_ww1.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_french_empire"
+		textureFile = "/gfx/superevents_pictures/superevents_french_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_french_communism"
+		textureFile = "/gfx/superevents_pictures/superevents_french_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_radicals_uk"
+		textureFile = "/gfx/superevents_pictures/superevents_radicals_uk.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_fall_france"
+		textureFile = "/gfx/superevents_pictures/GFX_superevents_fall_france.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_unification_rome"
+		textureFile = "/gfx/superevents_pictures/superevents_unification_rome.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_bolshevik"
+		textureFile = "/gfx/superevents_pictures/GFX_superevents_bolshevik.dds"
+	}
+}

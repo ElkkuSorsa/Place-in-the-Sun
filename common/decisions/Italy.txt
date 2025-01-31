@@ -1,0 +1,30 @@
+arvizzio = {
+	arvizziocoup = {
+		activation = {
+			ITA_arvizzio = {
+				is_hired_as_advisor = yes
+			}
+
+			NOT = { has_country_flag = coupready } 
+		}
+
+		available = {
+			not = {
+				ITA_arvizzio = {
+					is_hired_as_advisor = yes
+				}  
+			}
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 50
+
+		timeout_effect = {
+			custom_effect_tooltip = "Arvizzio is ready to execute a coup!"
+			hidden_effect = {
+				set_country_flag = coupready
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+}

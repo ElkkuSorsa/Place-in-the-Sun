@@ -1,0 +1,42 @@
+hun_trust = {
+	elections = {
+		activation = {
+			has_completed_focus = AUH_allow_hungarian_elections
+		}
+
+		available = {
+			country_exists = HUN
+		}
+
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 60
+
+		timeout_effect = {
+			custom_effect_tooltip = "Votes are counted and winner is announced."
+			hidden_effect = {
+				IF = {
+					limit = {
+						check_variable = { 
+								var = hungary_trust
+								value = 51 
+								compare = less_than 
+						}
+					}
+
+					country_event = {
+						id = hungary.2
+						days = 10
+					}
+				}
+
+				else = {
+					country_event = {
+						id = hungary.3
+						days = 10
+					}
+				}
+        	}
+		}
+	}
+}

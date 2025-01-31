@@ -1,0 +1,114 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "superevents"
+		position = { x = 0 y = 0}	
+		size = { width = 1000 height= 893 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "background"		
+			quadTextureSprite ="GFX_supereventsbg"
+		}
+		iconType = {
+			name = "supereventsbg_test"		
+			quadTextureSprite ="GFX_supereventsbg_test"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		###
+		iconType = {
+			name = "superevents_ww1"		
+			quadTextureSprite ="GFX_superevents_ww1"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_rome"		
+			quadTextureSprite ="GFX_superevents_unification_rome"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_french_empire"		
+			quadTextureSprite ="GFX_superevents_french_empire"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_french_communism"		
+			quadTextureSprite ="GFX_superevents_french_communism"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_france"		
+			quadTextureSprite ="GFX_superevents_fall_france"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_radicals_uk"		
+			quadTextureSprite ="GFX_radicals_uk"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_bolshevik"		
+			quadTextureSprite ="GFX_superevents_bolshevik"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		buttonType ={
+			name = "superevents_button"
+			spriteType = "GFX_supereventsbutton"
+			position = { x= 225 y = 766 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			buttonText= "[GetSupereventsRemark]"
+			buttonFont = "hoi_30header"
+			clicksound = click_close
+		}
+		
+		instantTextboxType = {
+			name = "superevents_title"
+			position = { x = 0 y = 78 }
+			font = "hoi_36header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsTitle]"
+			maxWidth = 1000
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_quote"
+			position = { x = 125 y = 535 }
+			font = "hoi_30header"
+			format = RIGHT
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsBody]"
+			maxWidth = 800
+			maxHeight = 893
+			fixedsize = yes
+		}
+		
+		#instantTextboxType = {
+		#	name = "superevents_title"
+		#	position = { x = 0 y = 78 }
+		#	font = "hoi_36header"
+		#	format = CENTER
+		#	borderSize = {x = 0 y = 0}
+		#	text = "[get_superevents_title]"
+		#	maxWidth = 1000
+		#	maxHeight = 893
+		#}
+	}
+}

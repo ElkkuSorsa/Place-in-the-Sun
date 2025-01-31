@@ -1,0 +1,13 @@
+add_namespace = austria_hungary
+
+country_event = {
+	id = austria_hungary.1
+	title = "What are our Options"
+	desc = austria_hungary.1.d
+	picture = GFX_austria_hungary.1
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's see what we can do"
+	}
+}

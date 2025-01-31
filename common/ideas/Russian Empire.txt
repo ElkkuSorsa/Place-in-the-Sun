@@ -1,0 +1,408 @@
+ideas = {
+	country = {
+		stolypin_reform = {
+			modifier = {
+            production_speed_buildings_factor = 0.1
+            consumer_goods_factor = -0.15
+            stability_factor = -0.05
+			}
+		}
+    }
+
+    country = {
+		supress_marxists = {
+			modifier = {
+            communism_drift = -0.03
+			}
+		}
+    }
+
+    country = {
+		controlling_duma = {
+			modifier = {
+            political_power_factor = 0.15
+            consumer_goods_factor = 0.1
+			}
+		}
+    }
+
+	country = {
+		industrial_loans = {
+			modifier = {
+            consumer_goods_factor = -0.25
+			production_speed_buildings_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			}
+			on_remove = {
+    		add_ideas = paying_off_loans
+			}
+		}
+    }
+
+	country = {
+		paying_off_loans = {
+			modifier = {
+            consumer_goods_factor = 0.5
+			}
+		}
+    }
+
+	country = {
+		foreign_researchers = {
+			modifier = {
+			research_speed_factor = 0.05
+			}
+		}
+    }
+
+	country = {
+		modernized_trade_policy = {
+			modifier = {
+			consumer_goods_factor = -0.15
+			}
+		}
+    }
+
+	country = {
+		RUS_agrarian_reform = {
+			modifier = {
+			stability_weekly = 0.002
+			}
+		}
+    }
+
+	country = {
+		outdated_industry = {
+			modifier = {
+			production_speed_buildings_factor = -0.15
+			consumer_goods_factor = 0.2
+			global_building_slots_factor = -0.35
+			research_speed_factor = -0.05
+			}
+		}
+    }
+
+	country = {
+		arms_industry_focus = {
+			modifier = {
+			production_speed_arms_factory_factor = 0.1
+			}
+		}
+    }
+
+	country = {
+		RUS_outdated_army = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.25
+			army_defence_factor	= -0.1
+			army_org_factor = -0.15
+			breakthrough_factor = -0.05
+			army_speed_factor = -0.1
+			conscription_factor = -0.15
+			}
+		}
+    }
+
+	country = {
+		RUS_outdated_army2 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.25
+			army_defence_factor	= -0.1
+			army_org_factor = -0.1
+			army_speed_factor = -0.1
+			conscription_factor = -0.15
+			}
+		}
+    }
+
+	country = {
+		RUS_outdated_army3 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.25
+			army_defence_factor	= -0.1
+			army_org_factor = -0.1
+			army_speed_factor = -0.1
+			}
+		}
+    }
+
+	country = {
+		improved_recruitment_system = {
+			modifier = {
+			conscription_factor = 0.1
+			}
+		}
+    }
+
+	country = {
+		RUS_outdated_army4 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.15
+			army_defence_factor	= -0.1
+			army_org_factor = -0.05
+			army_speed_factor = -0.1
+			}
+		}
+    }
+
+	country = {
+		RUS_outdated_army5 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.1
+			army_defence_factor	= -0.05
+			army_org_factor = -0.05
+			}
+		}
+    }
+
+	country = {
+		army_drills = {
+			modifier = {
+			experience_gain_army = 0.02
+			experience_gain_army_factor = 0.15
+			}
+		}
+    }
+
+	country = {
+		RUS_outdated_army6 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.1
+			}
+		}
+    }
+
+	country = {
+		elite_army = {
+			modifier = {
+			army_attack_factor = 0.1
+			army_defence_factor = 0.1
+			army_org_factor = 0.1
+			army_speed_factor = 0.1
+			equipment_capture_factor = 0.05
+			conscription_factor = -0.25
+			}
+		}
+    }
+
+    country = {
+	    RUS_outdated_army7 = {
+			modifier = {
+			war_support_factor = -0.1
+			army_attack_factor = -0.1
+			conscription_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+	    RUS_russification_policies = {
+			modifier = {
+			political_power_factor = -0.05
+			stability_weekly = 0.002
+			}
+		}
+	}
+
+	country = {
+	    RUS_tsushima_humiliation = {
+			modifier = {
+			war_support_factor = -0.15
+			naval_accidents_chance = 0.2
+			naval_coordination = -0.1
+			naval_detection = -0.2
+
+			}
+		}
+	}
+
+	country = {
+	    RUS_tsushima_humiliation2 = {
+			modifier = {
+			war_support_factor = -0.15
+			naval_accidents_chance = 0.1
+			naval_coordination = -0.05
+			naval_detection = -0.1
+
+			}
+		}
+	}
+
+	country = {
+	    RUS_tsushima_humiliation3 = {
+			modifier = {
+			naval_accidents_chance = 0.05
+			naval_coordination = -0.05
+			naval_detection = -0.1
+
+			}
+		}
+	}
+
+	country = {
+	    RUS_naval_production_focus = {
+			modifier = {
+			production_speed_dockyard_factor = 0.1
+
+			}
+		}
+	}
+
+	country = {
+	    RUS_independence_movements = {
+			modifier = {
+			stability_factor = -0.25
+			war_support_factor = -0.15
+			political_power_factor = -0.2
+			production_speed_buildings_factor = -0.1
+			stability_weekly = -0.002
+			drift_defence_factor = -0.15
+			neutrality_drift = -0.03
+			}
+		}
+	}
+
+	country = {
+	    RUS_communist_revolutionaries = {
+			modifier = {
+			stability_factor = -0.15
+			communism_drift = 0.04
+			stability_weekly = -0.002
+			industrial_capacity_factory = -0.2
+			}
+		}
+	}
+
+	country = {
+	    RUS_independence_movements2 = {
+			modifier = {
+			stability_factor = -0.2
+			war_support_factor = -0.1
+			political_power_factor = -0.15
+			production_speed_buildings_factor = -0.1
+			stability_weekly = -0.002
+			drift_defence_factor = -0.1
+			neutrality_drift = -0.03
+			}
+		}
+	}
+
+	country = {
+	    RUS_industrial_focus = {
+			modifier = {
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_infrastructure_factor = 0.1
+			industrial_capacity_factory = 0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_agrarian_empire = {
+			modifier = {
+			local_building_slots_factor	= -0.35
+			production_speed_industrial_complex_factor = -0.15
+			production_speed_infrastructure_factor = -0.15
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.15
+			}
+		}
+	}
+
+	country = {
+	    RUS_control_duma = {
+			modifier = {
+			political_power_factor = 0.15
+			}
+		}
+	}
+
+	country = {
+	    RUS_agrarian_empire2 = {
+			modifier = {
+			local_building_slots_factor	= -0.25
+			production_speed_industrial_complex_factor = -0.15
+			production_speed_infrastructure_factor = -0.15
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+			}
+		}
+	}
+
+	country = {
+	    RUS_liberal_cooperation = {
+			modifier = {
+			political_power_factor = 0.05
+			democratic_drift = 0.01
+			consumer_goods_factor = -0.1
+			production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_empowering_tsar = {
+			modifier = {
+			stability_weekly = 0.001
+			political_power_factor = -0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_communist_revolutionaries2 = {
+			modifier = {
+			stability_factor = -0.1
+			communism_drift = 0.002
+			stability_weekly = -0.001
+			industrial_capacity_factory = -0.15
+			}
+		}
+	}
+
+	country = {
+	    RUS_ramp_up_military_excercises = {
+			modifier = {
+			experience_gain_army_factor	= 0.25
+			war_support_weekly = 0.001
+			}
+		}
+	}
+
+	country = {
+	    RUS_eurasian_dream = {
+			modifier = {
+			political_power_factor = 0.3
+			stability_weekly = 0.1
+			war_support_weekly = 0.1
+			}
+		}
+	}
+
+	country = {
+	    RUS_companies = {
+			modifier = {
+			industrial_capacity_factory = 0.1
+			}
+		}
+	}
+
+	country = {
+	    RUS_communist_revolutionaries3 = {
+			modifier = {
+			stability_factor = -0.05
+			communism_drift = 0.002
+			industrial_capacity_factory = -0.1
+			}
+		}
+	}
+
+}

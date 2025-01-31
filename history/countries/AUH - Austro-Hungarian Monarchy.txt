@@ -1,0 +1,283 @@
+﻿oob = "AUH_1936"
+capital = 4
+set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.2
+set_convoys = 0
+
+
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+}
+
+
+
+#For start date 1939.1.1
+1939.1.1 = {
+	add_political_power = 1000
+	oob = "AUH_1939"
+}
+
+#Politics for 1936.1.1
+recruit_character = auh_ernest_von_koerber
+recruit_character = AUH_Richard_von_bienerth_schmerling
+recruit_character = AUH_franzjosef
+recruit_character = AUH_friedrich_habsburg
+recruit_character = AUH_erzherzog_franz_habsburg
+recruit_character = AUH_stefan_burian
+recruit_character = AUH_rudolf_brudermann
+recruit_character = AUH_viktor_krasnik
+recruit_character = AUH_arz_straussenburg
+recruit_character = AUH_claudius_czibulka
+recruit_character = AUH_kovesz_koveshaza
+recruit_character = AUH_karl_huyn
+recruit_character = AUH_anton_haus
+recruit_character = AUH_georgy_reny
+recruit_character = AUH_pflanzer_baltin
+recruit_character = AUH_leon_blinski
+recruit_character = auh_adolf_von_brudermann
+recruit_character = AUH_friedrich_von_georgi
+recruit_character = AUH_teraszszky
+recruit_character = AUH_alois_lexa_von_aehrenthal
+recruit_character = AUH_leopold_berchtold
+recruit_character = AUH_joseph_schumpeter
+recruit_character = AUH_eugen_von_bohm_bawerk
+recruit_character = AUH_viktor_adler
+recruit_character = AUH_goglia_zlota
+recruit_character = AUH_leopold_bauer
+recruit_character = AUH_otto_bauer
+recruit_character = AUH_adolf_loos
+recruit_character = AUH_karl_wittgenstein
+recruit_character = AUH_otto_wagner
+recruit_character = AUH_vaclav_klement
+recruit_character = auh_morritz_auffenberg
+recruit_character = auh_alexander_von_krobatin
+recruit_character = auh_samuel_von_hazai
+activate_advisor = AUH_stefan_burian
+activate_advisor = Auh_morritz_auffenberg
+recruit_character = auh_svetozar_bojna
+recruit_character = AUH_ignaz_trollmann
+recruit_character = AUH_leopold_von_hauer
+recruit_character = AUH_eugen_habsburg
+recruit_character = auh_emil_uzelac
+recruit_character = AUH_eduard_bohm
+recruit_character = auh_conrad_hotzendorff
+recruit_character = auh_arthur_giesling
+recruit_character = AUH_otto_ellison_nidlef
+recruit_character = auh_rudolf_stoger_steinstatten
+activate_advisor = AUH_friedrich_von_georgi
+activate_advisor = auh_conrad_hotzendorff
+activate_advisor = AUH_alois_lexa_von_aehrenthal
+
+
+*hun_trust = yes*
+*set_country_flag = HUN_ind*
+add_ideas = {
+	auh_underfunded_army
+	auh_Multiethnicity
+	auh_ghostofthepast
+	AUH_landtags_in_active_revolt
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1907.7.7"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 0
+	communism = 5
+	neutrality = 70
+}
+
+9 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 5
+}
+
+75 = {
+	start_resistance = yes
+	set_compliance = 40
+	set_resistance = 5
+}
+
+88 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+89 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+91 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+80 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+664 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+163 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+73 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+70 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+71 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+644 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+76 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+80 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 0
+}
+
+155 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+43 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+974 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 10
+}
+
+973 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+154 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+84 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+83 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+82 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+764 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+45 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+109 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+103 = {
+	start_resistance = yes
+	set_compliance = 35
+	set_resistance = 5
+}
+
+104 = {
+	start_resistance = yes
+	set_compliance = 40
+}
+
+804 = {
+	start_resistance = yes
+	set_compliance = 40
+}
+
+
+
+
+add_core_of = HUN
+
+
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_popularities = {
+		democratic = 25
+		fascism = 25
+		communism = 25
+		neutrality = 25
+	}
+}
+
+
+

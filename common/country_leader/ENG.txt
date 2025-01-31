@@ -1,0 +1,9 @@
+leader_traits = {
+	ENG_immortal_imperialist = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 0.15
+		political_power_factor = 0.1
+		consumer_goods_factor = 0.05
+	}
+}

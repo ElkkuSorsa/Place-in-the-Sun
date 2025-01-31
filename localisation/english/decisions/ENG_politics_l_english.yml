@@ -1,0 +1,29 @@
+﻿l_english:
+ ENG_politics: "British Politics"
+ ENG_politics_desc: "\nThe United Kingdom is known for it's rich and stable politics, dominated by the Whigs for over a century. But now, in the 1910s, the Liberal party is struggling to form majority governments, how will the situation evolve?"
+ 
+ ENG_parliament: "We need §Y331 §!seats out of total §Y660 §!seats \nto reign with majority, we have §Y[?govseats]. \n\n[ENG_parties]"
+ ENG_parliament_title: "§HHouse of Commons"
+ ENG_public_trust: "§HPublic Trust: [?pubtrust]"
+ ENG_public_trust_desc: "In order to maintain internal stability,\nwe must keep the people happy and well fed."
+
+ ENG_parties.1: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:\n - §2Conservative Party§!: [?conseats]"
+ ENG_parties.2: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §RLabour Party Radicals§!: [?socseats]\n\nOpposition:\n - §2Conservative Party§!: [?conseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]"
+ ENG_parties.3: "§!Government:\n - §RLabour Party Radicals§!: [?socseats]\n"
+ ENG_parties.4: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §2Conservative Party§!: [?conseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:"
+ ENG_parties.5: "§!Government:\n - §2Conservative Party§!: [?conseats]\n\nOpposition:\n - Liberal Party§!: [?libseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]"
+ ENG_parties.6: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:\n - §2Conservative Party§!: [?conseats]\n - §GIrish Parliamentary Party§!: [?ireseats]"
+ ENG_parties.7: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §2Conservative Party§!: [?conseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:\n - §GIrish Parliamentary Party§!: [?ireseats]"
+ 
+ ENG_con_join_gov: "§2The Conservative Party §!will join the coalition."
+ ENG_ire_leave_gov: "§GThe Irish Parliamentary party §!will leave the coalition."
+
+ ENG_law_not_pass: "With the current support, the law §Rwill not pass!§!"
+ ENG_law_pass: "With the current support, the law §Gwill pass!§!"
+
+ 
+ ENG_change_england: "Organize Nationalist Rally in England"
+ ENG_change_scotland: "Organize Nationalist Rally in Scotland"
+ ENG_change_ireland: "Organize Nationalist Rally in Ireland"
+
+ ENG_elections_1918_event: "Elections of [GetYear]"
