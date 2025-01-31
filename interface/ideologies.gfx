@@ -1,8 +1,0 @@
-spriteTypes = {
-
-	#Monarchism
-	spriteType = {
-		name = "GFX_ideology_AUH_monarchism"
-		texturefile = "gfx/interface/ideologies/AUH_monarchism.dds"
-	}
-}
