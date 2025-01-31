@@ -1380,6 +1380,7 @@ AUH_franzjosef = {
     name = "Franz Josef I"
     country_leader = {
         desc = "POLITICS_HERMANN_HANNEKEN_DESC"
+		traits = { kaiser_franz_josef }
         expire = "1916.1.1"
         ideology = Monarchism
     }
