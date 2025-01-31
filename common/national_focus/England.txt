@@ -10,7 +10,7 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 100 y = 1800 }
+	continuous_focus_position = { x = 100 y = 3000 }
 
 	shared_focus = ENT_entente_cordiale_1
 
@@ -1623,6 +1623,22 @@ focus_tree = {
 		x = 2
 		y = 7
 		prerequisite = { focus = ENG_side_with_nobility focus = ENG_side_with_people }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_social_divides
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 9
+		prerequisite = { focus = ENG_workers_rights focus = ENG_restore_noble_privileges }
 
 		cost = 5
 
