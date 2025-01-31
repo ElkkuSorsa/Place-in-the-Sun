@@ -7,7 +7,12 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/AUH/regin_of_franz_josef.dds"			
 	}
 
-		SpriteType = {
+	SpriteType = {
+	name = "GFX_goal_AUH_solution_of_the_landtag"
+	texturefile = "gfx/interface/goals/AUH/solution_of_the_landtag.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_government_funds_austria"
 	texturefile = "gfx/interface/goals/AUH/austrian_economic_revolution.dds"			
 	}
@@ -17,12 +22,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
 	}
 
-		SpriteType = {
+	SpriteType = {
 	name = "GFX_goal_AUH_army_leadership_question"
 	texturefile = "gfx/interface/goals/AUH/army_leadership_question.dds"			
 	}
-
-	
 		SpriteType = {
 		name = "GFX_goal_unknown"
 		texturefile = "gfx/interface/goals/goal_unknown.dds"
@@ -31,7 +34,6 @@ spriteTypes = {
 		SpriteType = {
 		name = "GFX_goal_tsar_sigma"
 		texturefile = "gfx/interface/goals/RUS/tsar_actually_sigma.dds"			
-	}
 	}
 		SpriteType = {
 		name = "GFX_goal_dugin"
