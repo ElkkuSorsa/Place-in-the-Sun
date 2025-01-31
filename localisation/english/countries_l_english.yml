@@ -63,3 +63,10 @@
  RUS:0 "Russian Empire"
  RUS_DEF:0 "the Russian Empire"
  RUS_ADJ:0 "Russian"
+
+BUL_neutrality:0 "Bulgaria"
+BUL_neutrality_def:0 "the Bulgaria"
+BUL_neutrality_adj:0 "Bulgarian"
+BUL:0 "Bulgaria"
+BUL_DEF:0 "the Bulgaria"
+BUL_ADJ:0 "Bulgarian"
