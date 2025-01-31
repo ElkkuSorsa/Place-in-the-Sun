@@ -1,8 +1,8 @@
 ﻿oob = "AUH_1936"
 capital = 4
 set_research_slots = 2
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = 0.3
+set_war_support = 0.2
 set_convoys = 0
 
 
@@ -38,9 +38,11 @@ recruit_character = AUH_kovesz_koveshaza
 recruit_character = AUH_karl_huyn
 recruit_character = AUH_anton_haus
 recruit_character = AUH_georgy_reny
+recruit_character = AUH_pflanzer_baltin
 recruit_character = AUH_leon_blinski
 recruit_character = auh_adolf_von_brudermann
 recruit_character = AUH_friedrich_von_georgi
+recruit_character = AUH_teraszszky
 recruit_character = AUH_alois_lexa_von_aehrenthal
 recruit_character = AUH_leopold_berchtold
 recruit_character = AUH_joseph_schumpeter

@@ -23,6 +23,16 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_portrait_AUH_teraszszky"
+		texturefile = "gfx/leaders/AUH/teraszszky.png"
+	}
+
+		spriteType = {
+		name = "GFX_portrait_AUH_pflanzer_baltin"
+		texturefile = "gfx/leaders/AUH/pflanzer_baltin.png"
+	}
+
+		spriteType = {
 		name = "GFX_portrait_AUH_georgy_reny"
 		texturefile = "gfx/leaders/AUH/george_reny.png"
 	}

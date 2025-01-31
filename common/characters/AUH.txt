@@ -654,6 +654,62 @@ characters = {
 		}
 	}
 
+		AUH_teraszszky = {
+		name = AUH_teraszszky
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_teraszszky"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_pflanzer_baltin = {
+		name = AUH_pflanzer_baltin
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_pflanzer_baltin"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
 		AUH_karl_huyn = {
 		name = AUH_karl_huyn
 		portraits = {
