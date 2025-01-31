@@ -44,7 +44,7 @@ id = EGY_focus_tree
 		}
 
 		completion_reward = {
-             =
+            
 		}
 	}
  focus = {
