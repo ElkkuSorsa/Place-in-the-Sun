@@ -80,6 +80,26 @@ ideas = {
 			}
 		}
 
+		naval_race = {
+			picture = generic_navy_bonus
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.075
+				stability_factor = -0.05
+			}
+		}
+
+		naval_race_2 = {
+			picture = generic_navy_bonus
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+
 		ENG_march_for_change_idea = {
 			picture = generic_democracy_banned
 			modifier = {
@@ -187,6 +207,7 @@ ideas = {
 				political_power_factor = 0.2
 				stability_factor = -0.1
 				war_support_factor = 0.15
+				research_speed_factor = -0.07
 			}
 		}
 
