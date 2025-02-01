@@ -135,10 +135,10 @@ characters = {
 
 			corps_commander = {
 				traits = { bearer_of_artillery infantry_leader }
-				skill = 3
+				skill = 2
 				attack_skill = 3
 				defense_skill = 1
-				planning_skill = 3
+				planning_skill = 2
 				logistics_skill = 1
 			}
 			name = AUH_goglia_zlota
@@ -189,7 +189,7 @@ characters = {
 					original_tag = AUH
 				}
 				traits = {
-					army_infantry_2
+					bohm_ermroli
 				}
 				cost = 150
 				ai_will_do = {
@@ -199,8 +199,8 @@ characters = {
 
 			corps_commander = {
 				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert career_officer }
-				skill = 3
-				attack_skill = 2
+				skill = 2
+				attack_skill = 3
 				defense_skill = 2
 				planning_skill = 2
 				logistics_skill = 2
@@ -262,9 +262,9 @@ characters = {
 			}
  
 			corps_commander = {
-				traits = { egineer_officer }
+				traits = { politically_connected }
 				skill = 2
-				attack_skill = 1
+				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 3
 				logistics_skill = 1
@@ -273,7 +273,7 @@ characters = {
 			portraits = { #add new art here
 				army = {
 					large = "GFX_portrait_AUH_eugen_habsburg"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					small = "GFX_advisor_AUH_eugen_habsburg"
 				}
 			}
 		}
@@ -326,12 +326,12 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { egineer_officer }
+				traits = { engineer_officer }
 				skill = 2
 				attack_skill = 1
-				defense_skill = 3
+				defense_skill = 1
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 			}
 			name =  AUH_otto_ellison_nidlef
 			portraits = { #add new art here
@@ -381,7 +381,7 @@ characters = {
 					original_tag = AUH
 				}
 				traits = {
-					army_commando_3
+					ignaz_trollmann
 				}
 				cost = 150
 				ai_will_do = {
@@ -390,18 +390,18 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { egineer_officer }
+				traits = { hill_fighter mountaineer commando engineer trickster ranger }
 				skill = 2
-				attack_skill = 1
-				defense_skill = 3
+				attack_skill = 3
+				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 1
+				logistics_skill = 2
 			}
 			name =  AUH_ignaz_trollmann
 			portraits = { #add new art here
 				army = {
 					large = "GFX_portrait_AUH_ignaz_trollmann"
-					small = "GFX_portrait_AUS_lothar_rendulic_small"
+					small = "GFX_advisor_AUH_ignaz_trollmann"
 				}
 			}
 		}
@@ -418,7 +418,7 @@ characters = {
 				traits = {
 					army_commando_3
 				}
-				cost = 150
+				cost = 250
 				ai_will_do = {
 					base = 1
 				}
@@ -460,7 +460,7 @@ characters = {
 
 			corps_commander = {
 				traits = { infantry_leader organizer mountaineer }
-				skill = 3
+				skill = 2
 				attack_skill = 2
 				defense_skill = 4
 				planning_skill = 3
@@ -495,11 +495,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
-			skill = 1
+			traits = { organizer scavenger }
+			skill = 2
 			attack_skill = 2
 			defense_skill = 2
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = -1
 			visible = {
@@ -523,7 +523,232 @@ characters = {
 			}
 		}
 		corps_commander = {
+			traits = { cavalry_leader cavalry_expert }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_erzherzog_franz_habsburg = {
+		name = AUH_erzherzog_franz_habsburg
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_erzherzog_franz_habsburg"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist media_personality }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_friedrich_habsburg = {
+		name = AUH_friedrich_habsburg
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_friedrich_habsburg"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		field_marshal = {
+			traits = { old_gurad }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_claudius_czibulka = {
+		name = AUH_claudius_czibulka
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_claudius_czibulka"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = { trickster  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_georgy_reny = {
+		name = AUH_georgy_reny
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_georgy_reny"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
 			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_teraszszky = {
+		name = AUH_teraszszky
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_teraszszky"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = { engineeer engineer_officer swamp_fox }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_pflanzer_baltin = {
+		name = AUH_pflanzer_baltin
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_pflanzer_baltin"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = { fortress_buster ambusher brilliant_strategist }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+		AUH_karl_huyn = {
+		name = AUH_karl_huyn
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_karl_huyn"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				OR = {
+					AND = {
+						has_civil_war = yes
+					}
+				
+					has_civil_war = no
+				}
+			}
+		}
+	}
+
+	
+		AUH_kovesz_koveshaza = {
+		name = AUH_kovesz_koveshaza
+		portraits = {
+			army = {
+				large = "GFX_portrait_AUH_kovesz_koveshaza"
+				small = "GFX_portrait_AUS_eduard_barger_small"
+			}
+		}
+		corps_commander = {
+			traits = { ranger hill_fighter }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 2
@@ -551,12 +776,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  }
+			traits = { old_guard politically_connected cavalry_leader }
 			skill = 1
-			attack_skill = 2
-			defense_skill = 2
+			attack_skill = 1
+			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 2
+			logistics_skill = 1
 			legacy_id = -1
 			visible = {
 				OR = {
@@ -591,12 +816,12 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { infantry_officer }
-				skill = 3
+				traits = { infantry_officer infantry_leader }
+				skill = 2
 				attack_skill = 2
 				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
 			}
 			name = auh_adolf_von_brudermann
 			portraits = { #add new art here
@@ -678,7 +903,7 @@ characters = {
 
 			field_marshal = {
 				traits = { politically_connected old_guard infantry_leader infantry_officer harsh_leader media_personality war_hero trait_reckless organizer thorough_planner  }
-				skill = 4
+				skill = 3
 				attack_skill = 6
 				defense_skill = 1
 				planning_skill = 4
@@ -762,8 +987,8 @@ characters = {
     name = "Arthur Giesl von Gieslingen"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_samuel_hazai"
-                small = "GFX_advisor_samuel_hazai"
+				large = "GFX_advisor_auh_arthur_giesling"
+                small = "GFX_advisor_auh_arthur_giesling"
 		    }
 		}
     advisor = {
@@ -1154,7 +1379,8 @@ AUH_otto_bauer = {
 AUH_franzjosef = {
     name = "Franz Josef I"
     country_leader = {
-        desc = "POLITICS_HERMANN_HANNEKEN_DESC"
+        desc = "AUH_franzjosef_desc"
+		traits = { kaiser_franz_josef }
         expire = "1916.1.1"
         ideology = Monarchism
     }

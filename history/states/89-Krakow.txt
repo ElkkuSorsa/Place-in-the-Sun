@@ -11,12 +11,10 @@ state={
 		#}
 		owner = AUH
 		buildings = {
-			infrastructure = 3
-			air_base = 3
+			infrastructure = 2
 
 		}
 		add_core_of = POL
-		add_core_of = AUH
 
 	}
 

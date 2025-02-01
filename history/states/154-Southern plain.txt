@@ -8,13 +8,10 @@ state = {
 	history = {
 
 		owner = AUH
-		add_core_of = AUH
+		add_core_of = hun
 
 		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 2
-			arms_factory = 1
-			air_base = 2
+			infrastructure = 2 #was: 6
 		}
 
 		victory_points = {

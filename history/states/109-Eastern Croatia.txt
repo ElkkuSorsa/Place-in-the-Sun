@@ -9,13 +9,12 @@ state={
 	history={
 		owner = AUH
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			11581 3 
 		}
-		add_core_of = AUH
 		add_core_of = CRO
 	}
 

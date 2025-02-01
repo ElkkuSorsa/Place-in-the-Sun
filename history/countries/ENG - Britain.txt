@@ -30,6 +30,7 @@ add_ideas = {
 	ENG_house_of_lords
 	ENG_two_power_standard
 	ENG_british_politics_dem
+	naval_race
 }
 
 set_autonomy = {

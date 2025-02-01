@@ -6,7 +6,7 @@ state = {
 	state_category = town
 	
 	resources = {
-		steel = 2
+		steel = 4
 	}
 	
 	history = {
@@ -20,8 +20,7 @@ state = {
 
 		buildings = {
 		
-			infrastructure = 3
-			anti_air_building = 1
+			infrastructure = 2
 
 			5283 = {
 				bunker = 1

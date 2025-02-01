@@ -14,12 +14,9 @@ state={
 		#	3483 5
 		#}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			air_base = 5
+			infrastructure = 2
 		}
 		add_core_of = POL
-		add_core_of = AUH
 	}
 
 	provinces={

@@ -13,11 +13,24 @@ leader_traits = {
 		cavalry_defence_factor = 0.025
 	}
 
+		kaiser_franz_josef = {
+		random = no
+		stability_factor = 0.3
+		war_support_factor = 0.2
+		political_power_factor = 0.1
+	}
+
 		samuel_hazai = {
 		random = no
 		cat_grand_battle_plan_cost_factor = -0.10
 		army_core_attack_factor = 0.025
 		army_core_defence_factor = 0.025
+	}
+
+		ignaz_trollmann = {
+		random = no
+		special_forces_attack_factor = 0.075
+		special_forces_cap_flat = 2.5
 	}
 
 		conrad_hotzendorf = {
@@ -46,9 +59,13 @@ leader_traits = {
 		experience_gain_air = 0.15
 		air_accidents_factor = -0.05
 		air_night_penalty = -0.1
-
 	}
 
+		bohm_ermroli = {
+		random = no
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1
+	}
 		entrenchment_general = {
 		random = no
 		max_dig_in = 5

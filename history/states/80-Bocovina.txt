@@ -12,11 +12,9 @@ state={
 		}
 		owner = AUH
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
+			infrastructure = 1
 		}
 		add_core_of = ROM
-		add_core_of = AUH
 	}
 	provinces={
 		577 9548

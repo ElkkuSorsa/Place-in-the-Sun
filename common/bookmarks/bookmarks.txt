@@ -19,6 +19,12 @@ bookmarks = {
 			ideology = democratic
 		}
 
+		BUL = {
+			minor = yes
+			history = BUL_history
+			ideology = neutrality
+		}
+
 		RUS = {
 			history = RUS_history
 			ideology = neutrality

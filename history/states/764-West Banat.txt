@@ -14,7 +14,6 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 		}
-		add_core_of = AUH
 		add_core_of = HUN
 	}
 

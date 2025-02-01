@@ -16,7 +16,6 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = AUH
 		add_core_of = CRO
 		start_resistance = CRO #Yugoslavia shouldn't resist occupation
 		set_compliance = 70

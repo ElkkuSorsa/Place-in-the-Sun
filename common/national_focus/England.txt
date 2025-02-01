@@ -10,7 +10,7 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 100 y = 1800 }
+	continuous_focus_position = { x = 100 y = 3000 }
 
 	shared_focus = ENT_entente_cordiale_1
 
@@ -410,6 +410,8 @@ focus_tree = {
 		x = 37
 		y = 8
 		prerequisite = { focus = ENG_poor_laws }
+		prerequisite = { focus = ENG_national_insurance_act }
+		prerequisite = { focus = ENG_private_schools }
 
 		cost = 5
 
@@ -716,12 +718,19 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+			has_war_with = GER
 			RUS = {
 				has_war_with = GER
 			}
 		}
 
 		completion_reward = {
+			RUS = {
+	#			add_ideas
+			}
 		}
 	}
 
@@ -732,7 +741,11 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = ENG_attachee_to_russia }
 
-		cost = 5
+		cost = 10
+
+		available = {
+			has_war_with = GER
+		}
 
 		will_lead_to_war_with = OTT
 
@@ -751,7 +764,7 @@ focus_tree = {
 		y = 8
 		prerequisite = { focus = ENG_war_against_ottomans }
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 		}
@@ -1317,7 +1330,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_draft_budget
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_generic_treaty
 		x = 58
 		y = 8
 		prerequisite = { focus = ENG_repeal_people_budget }
@@ -1331,8 +1344,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_limited_poor_laws
-		icon = GFX_focus_generic_military_mission
+		id = ENG_limit_free_trade
+		icon = GFX_goal_generic_positive_trade_relations
 		x = 61
 		y = 7
 		prerequisite = { focus = ENG_limited_reformism }
@@ -1350,7 +1363,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = 62
 		y = 8
-		prerequisite = { focus = ENG_limited_poor_laws }
+		prerequisite = { focus = ENG_limit_free_trade }
 
 		cost = 5
 
@@ -1362,10 +1375,10 @@ focus_tree = {
 
 	focus = {
 		id = ENG_promote_english_church
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_focus_mex_triumph_over_the_cristeros
 		x = 60
 		y = 8
-		prerequisite = { focus = ENG_limited_poor_laws }
+		prerequisite = { focus = ENG_limit_free_trade }
 		prerequisite = { focus = ENG_repeal_people_budget }
 
 		cost = 5
@@ -1378,7 +1391,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_new_conservative_england
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
 		x = 60
 		y = 9
 		prerequisite = { focus = ENG_veteran_pensions }
@@ -1425,30 +1438,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ENG_march_for_change_idea
-		}
-	}
-
-	focus = {
-		id = ENG_fire_rise
-		icon = GFX_goal_tripartite_pact
-		x = 24
-		y = 2
-		prerequisite = { focus = ENG_march_for_change }
-
-		cost = 10
-
-		available = {
-			has_country_leader = {
-				name = "Military Government"
-				ruling_only = yes
-			}
-		}
-
-		completion_reward = {
-			country_event = {
-				id = march_change.3 
-				days = 2
-			}
 		}
 	}
 
@@ -1531,7 +1520,7 @@ focus_tree = {
 	focus = {
 		id = ENG_deal_with_ireland
 		icon = GFX_goal_generic_dangerous_deal
-		x = 8
+		x = 7
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
@@ -1546,9 +1535,126 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_english_society
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 5
+		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+
+		cost = 5
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_side_with_nobility
+		icon = GFX_goal_generic_dangerous_deal
+		x = 3
+		y = 6
+		prerequisite = { focus = ENG_english_society }
+		mutually_exclusive = { focus = ENG_side_with_people }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_restore_noble_privileges
+		icon = GFX_goal_generic_dangerous_deal
+		x = 3
+		y = 8
+		prerequisite = { focus = ENG_side_with_nobility }
+		prerequisite = { focus = ENG_maintain_balance }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_side_with_people
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 6
+		prerequisite = { focus = ENG_english_society }
+		mutually_exclusive = { focus = ENG_side_with_nobility }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_workers_rights
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 8
+		prerequisite = { focus = ENG_side_with_people }
+		prerequisite = { focus = ENG_maintain_balance }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_maintain_balance
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 7
+		prerequisite = { focus = ENG_side_with_nobility focus = ENG_side_with_people }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_social_divides
+		icon = GFX_goal_generic_dangerous_deal
+		x = 2
+		y = 9
+		prerequisite = { focus = ENG_workers_rights focus = ENG_restore_noble_privileges }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = ENG_crown_of_ireland
 		icon = GFX_focus_ETH_the-italo_ethiopian_empire
-		x = 7
+		x = 6
 		y = 6
 		prerequisite = { focus = ENG_deal_with_ireland }
 		mutually_exclusive = { focus = ENG_under_control_ireland }
@@ -1560,14 +1666,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			release_puppet_on_controlled = IRE
+			hidden_effect = {
+				release_puppet_on_controlled = IRE
+			}
+			set_autonomy = {
+				target = IRE
+				autonomy_state = autonomy_personal_union
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_under_control_ireland
 		icon = GFX_goal_generic_position_armies
-		x = 9
+		x = 8
 		y = 6
 		prerequisite = { focus = ENG_deal_with_ireland }
 		mutually_exclusive = { focus = ENG_crown_of_ireland }
@@ -1586,7 +1698,7 @@ focus_tree = {
 	focus = {
 		id = ENG_nation_united_once_more
 		icon = GFX_goal_generic_national_unity
-		x = 8
+		x = 7
 		y = 7
 		prerequisite = { focus = ENG_under_control_ireland focus = ENG_crown_of_ireland }
 
@@ -1681,6 +1793,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_collaborate_conservatives
+		icon = GFX_focus_generic_monarchy_1
+		x = 10
+		y = 6
+		prerequisite = { focus = ENG_disband_the_house_of_commons }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_appoint_bonar_law
+		icon = GFX_focus_generic_monarchy_1
+		x = 10
+		y = 7
+		prerequisite = { focus = ENG_collaborate_conservatives }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = ENG_empower_loyal_nobility
 		icon = GFX_focus_generic_monarchy_1
 		x = 12
@@ -1707,6 +1851,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = ENG_embrace_german_heritage
 		icon = GFX_focus_generic_monarchy_2
@@ -1787,6 +1932,7 @@ focus_tree = {
 		y = 8
 		prerequisite = { focus = ENG_reinstate_claims }
 		prerequisite = { focus = ENG_nation_united_once_more }
+		prerequisite = { focus = ENG_appoint_bonar_law }
 		mutually_exclusive = { focus = ENG_imperial_conference }
 
 		cost = 30
@@ -2536,7 +2682,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_steel_industries
-		icon = GFX_focus_generic_steel
+		icon = GFX_focus_generic_chromium
 		x = 71
 		y = 3
 
@@ -2553,6 +2699,103 @@ focus_tree = {
 				amount = 40
 				state = 130
 			}
+		}
+	}
+
+	focus = {
+		id = ENG_scottish_rare_metals
+		icon = GFX_focus_generic_steel
+		x = 71
+		y = 4
+
+		prerequisite = { focus = ENG_steel_industries }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			120 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = tungsten 
+				amount = 8
+				state = 120
+			}
+			add_resource = {
+				type = tungsten 
+				amount = 2
+				state = 121
+			}
+			add_resource = {
+				type = chromium
+				amount = 2
+				state = 120
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_develop_home_counties
+		icon = GFX_SOV_eastern_development_ccp_2d_sov_compatibility
+		x = 72
+		y = 5
+
+		prerequisite = { focus = ENG_scottish_rare_metals }
+		prerequisite = { focus = ENG_utilize_colony_resources }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_fund_universities
+		icon = GFX_focus_ARG_universidad_de_buenos_aires
+		x = 72
+		y = 6
+
+		prerequisite = { focus = ENG_develop_home_counties }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -2707,6 +2950,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			has_completed_focus = ENG_legacy_of_boer_war
 		}
 
 		completion_reward = {
@@ -2952,6 +3196,332 @@ focus_tree = {
 		prerequisite = { focus = ENG_royal_airforce }
 
 		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_two_power_standard_focus
+		icon = GFX_focus_chi_army_reform
+		x = 105
+		y = 1
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_british_navy
+		icon = GFX_focus_chi_army_reform
+		x = 105
+		y = 2
+		prerequisite = { focus = ENG_two_power_standard_focus }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expand_dockyards
+		icon = GFX_focus_chi_army_reform
+		x = 106
+		y = 3
+		prerequisite = { focus = ENG_british_navy }
+		prerequisite = { focus = ENG_military_innovation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_end_to_the_race
+		icon = GFX_focus_chi_army_reform
+		x = 105
+		y = 4
+		prerequisite = { focus = ENG_expand_dockyards }
+		mutually_exclusive = { focus = ENG_divert_resources }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_naval_treaty_GER
+		icon = GFX_focus_chi_army_reform
+		x = 105
+		y = 5
+		prerequisite = { focus = ENG_end_to_the_race }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_divert_resources
+		icon = GFX_focus_chi_army_reform
+		x = 107
+		y = 4
+		prerequisite = { focus = ENG_expand_dockyards }
+		mutually_exclusive = { focus = ENG_end_to_the_race }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = naval_race_2
+				remove_idea = naval_race
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_more_dockyards
+		icon = GFX_focus_chi_army_reform
+		x = 107
+		y = 5
+		prerequisite = { focus = ENG_divert_resources }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_naval_innovation
+		icon = GFX_focus_chi_army_reform
+		x = 102
+		y = 3
+		prerequisite = { focus = ENG_british_navy }
+		prerequisite = { focus = ENG_military_innovation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_heavy_ships
+		icon = GFX_focus_chi_army_reform
+		x = 101
+		y = 4
+		prerequisite = { focus = ENG_naval_innovation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_light_ships
+		icon = GFX_focus_chi_army_reform
+		x = 103
+		y = 4
+		prerequisite = { focus = ENG_naval_innovation }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_south_africa_act
+		icon = GFX_focus_chi_army_reform
+		x = 113
+		y = 1
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_legacy_of_boer_war
+		icon = GFX_focus_chi_army_reform
+		x = 111
+		y = 2
+		prerequisite = { focus = ENG_south_africa_act }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_commonwealth
+		icon = GFX_focus_chi_army_reform
+		x = 115
+		y = 2
+		prerequisite = { focus = ENG_south_africa_act }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_south_africa
+		icon = GFX_focus_chi_army_reform
+		x = 109
+		y = 3
+		prerequisite = { focus = ENG_commonwealth }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_canada
+		icon = GFX_focus_chi_army_reform
+		x = 112
+		y = 3
+		prerequisite = { focus = ENG_commonwealth }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_oceania
+		icon = GFX_focus_chi_army_reform
+		x = 115
+		y = 3
+		prerequisite = { focus = ENG_commonwealth }
+
+		cost = 1
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_australia
+		icon = GFX_focus_chi_army_reform
+		x = 114
+		y = 4
+		prerequisite = { focus = ENG_oceania }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_new_zealand
+		icon = GFX_focus_chi_army_reform
+		x = 116
+		y = 4
+		prerequisite = { focus = ENG_oceania }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_british_raj
+		icon = GFX_focus_chi_army_reform
+		x = 118
+		y = 3
+		prerequisite = { focus = ENG_commonwealth }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_malaysia
+		icon = GFX_focus_chi_army_reform
+		x = 121
+		y = 3
+		prerequisite = { focus = ENG_commonwealth }
+
+		cost = 5
 
 		available = {
 		}
