@@ -192,7 +192,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Question_Of_Macedonia
+		id = BUL_Assert_Dominance
 		icon = GFX_focus_generic_attack_yugoslavia
 		x = 22
 		y = 7
