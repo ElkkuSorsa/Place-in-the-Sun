@@ -1,0 +1,10 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_franz_josef_meeting_fezs"
+		texturefile = "gfx/event_pictures/franz_josef_meeting_fezs.dds"
+	}
+}
+
+
+

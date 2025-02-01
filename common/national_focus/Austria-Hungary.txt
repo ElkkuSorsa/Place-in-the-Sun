@@ -48,7 +48,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_allow_regional_languages
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_allow_regional_languages
 		x = 24
 		y = 2
 

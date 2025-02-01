@@ -4,7 +4,7 @@ country_event = {
 	id = austria_hungary.1
 	title = "What are our Options"
 	desc = austria_hungary.1.d
-	picture = GFX_austria_hungary.1
+	picture = GFX_franz_josef_meeting_fezs
 	is_triggered_only = yes
 
 	option = {

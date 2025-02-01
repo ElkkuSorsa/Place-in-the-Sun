@@ -12,6 +12,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/AUH/solution_of_the_landtag.dds"			
 	}
 
+		SpriteType = {
+	name = "GFX_goal_AUH_allow_regional_languages"
+	texturefile = "gfx/interface/goals/AUH/allow_minority_language.dds"			
+	}
+
 	SpriteType = {
 	name = "GFX_goal_AUH_government_funds_austria"
 	texturefile = "gfx/interface/goals/AUH/austrian_economic_revolution.dds"			
