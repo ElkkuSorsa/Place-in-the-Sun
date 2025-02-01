@@ -82,6 +82,7 @@ add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity
 	auh_ghostofthepast
+	AUH_landtags_in_active_revolt
 }
 set_politics = {
 	ruling_party = neutrality

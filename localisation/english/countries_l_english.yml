@@ -1,7 +1,7 @@
 ﻿l_english:
- AUH:0 "Austria-Hungary"
- AUH_DEF:0 "the Austro-Hungarian Empire"
- AUH_ADJ:0 "Austro-Hungarian"
+ AUH:0 "Austrian Empire"
+ AUH_DEF:0 "Austrian Empire"
+ AUH_ADJ:0 "Austrian Empire"
 
  HUN_fascism:0 "Hungary"
  HUN_fascism_DEF:0 "Hungary"
@@ -15,11 +15,10 @@
  HUN_democratic_ADJ:0 "Hungarian"
  HUN_neutrality_ADJ:0 "Hungarian"
  HUN_communism_ADJ:0 "Hungarian"
- HUN:0 "Hungary"
- HUN_DEF:0 "Hungary"
+ HUN:0 "the Kingdom of Hungary"
+ HUN_DEF:0 "the Kingdom of Hungary"
  HUN_ADJ:0 "Hungarian"
- HUN_subject:0 "$OVERLORDADJ$ $HUN$"
- HUN_subject_DEF:0 "$OVERLORDADJ$ $HUN$"
+ BOS_neutrality:0 "Dual-leadership of Bosnia-Herzegovina"
 
  GER:0 "German Empire"
  GER_DEF:0 "the German Empire"

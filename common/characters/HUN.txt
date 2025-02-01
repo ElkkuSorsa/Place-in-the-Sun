@@ -1,0 +1,17 @@
+characters = {
+	
+AUH_franzjosef_hun = {
+    name = " Ferenc József Károly I"
+    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = { kaiser_franz_josef }
+        expire = "1916.1.1"
+        ideology = Monarchism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser_hun.png"
+        }
+    }
+}
+}
