@@ -26,7 +26,6 @@ set_autonomy = {
 	autonomy_state = autonomy_real_union
 }
 
-
 #For start date 1939.1.1
 1939.1.1 = {
 	add_political_power = 1000
