@@ -125,7 +125,12 @@ focus_tree = {
 		x = 12
 		y = 4
 		prerequisite = { focus = BUL_Start_Prepearing_Against_The_Ottomans }
-		completion_reward = { add_political_power = 50 }         
+		completion_reward = {
+			country_event = { id = balkan_league.1 days = 7 }
+			SER = {
+				country_event = { id = balkan_league.1 days = 7 }
+			}
+		}         
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
