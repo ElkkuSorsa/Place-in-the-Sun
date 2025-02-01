@@ -16,15 +16,6 @@ add_ideas = {
 }
 
 
-set_autonomy = {
-	target = BOS
-	autonomy_state = autonomy_real_union
-}
-
-set_autonomy = {
-	target = HUN
-	autonomy_state = autonomy_real_union
-}
 
 
 #For start date 1939.1.1
@@ -103,6 +94,16 @@ set_popularities = {
 	fascism = 0
 	communism = 5
 	neutrality = 70
+}
+
+set_autonomy = {
+	target = BOS
+	autonomy_state = autonomy_real_union
+}
+
+set_autonomy = {
+	target = HUN
+	autonomy_state = autonomy_real_union
 }
 
 9 = {
