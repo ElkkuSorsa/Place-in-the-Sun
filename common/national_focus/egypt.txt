@@ -106,7 +106,7 @@ focus = {
 					level = 2
 					instant_build = yes} 
 			}	
-	}}}
+	}}
  focus = {
 		id = EGY_start_industrialization
 		icon = GFX_focus_generic_africa_infrastructure
@@ -126,5 +126,6 @@ focus = {
 		instant_build = yes }
  
   } 
+}
             
 
