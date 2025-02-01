@@ -80,7 +80,7 @@ id = EGY_focus_tree
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = { 
 					type = 	arms_factory
-					level = 1
+					level = 2
 					instant_build = yes} 
 			
 		
@@ -103,7 +103,7 @@ focus = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = 	arms_factory
-					level = 2
+					level = 4
 					instant_build = yes} 
 			}	
 	}}
@@ -154,7 +154,7 @@ focus = {
 		completion_reward = { add_ideas = free_trade}
 			
 		}
-  focus = {
+   focus= {
 		id = EGY_expand_oil_drilling
 		icon = GFX_focus_generic_offshore_oil_rig
 		x = 27
@@ -176,7 +176,136 @@ focus = {
 					state = 453		
 				}	
 			}
-		}
-	} 	
-}           
+			}	}
+focus = {
+		id = EGY_our_exports_are_growing
+		icon = GFX_focus_generic_economic_recovery
+		x = 23
+		y = 2
+		
 
+		cost = 10
+	 	prerequisite = {focus = EGY_start_industrialization}
+		available = {
+			
+		}
+
+		completion_reward = {
+			456 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = 2
+				type = industrial_complex 
+				instant_build = yes
+			
+			}
+		}
+	}	
+focus = {
+		id = EGY_expanding_our_railways
+		icon = GFX_focus_CHL_connect_the_northern_railways
+		x = 25
+		y = 2
+		
+
+		cost = 5
+
+		available = {
+			
+		}
+
+		completion_reward = {add_timed_idea = {idea = EGY_expanding_the_railways days= 120} }
+}
+focus = {
+		id = EGY_heavy_idustries
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 23
+		y = 3
+		
+
+		cost = 10
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			447 = {
+				add_building_construction = {
+				add_extra_state_shared_building_slots = 1	
+					type = industrial_complex
+					level = 2 
+					instant_build = yes 
+				}
+			}
+			907 = {
+				add_building_construction = {
+				add_extra_state_shared_building_slots = 2	
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+			    }
+		    }
+        }		
+    }
+	 focus= {
+		id = EGY_expand_alexandria_steel_mines
+		icon = GFX_focus_generic_offshore_oil_rig
+		x = 25
+		y = 3
+		
+
+		cost = 5
+		prerequisite = {focus = EGY_expanding_our_railways}
+		available = {}
+			
+		
+
+		completion_reward ={
+			453 = {
+				add_extra_state_shared_building_slots = 3
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 447	
+				}	
+			}
+		}
+	 }		
+		 focus= {
+		id = EGY_the_cairo_university_of_science
+		icon = GFX_focus_NORDIC_dem_research
+		x = 25
+		y = 5
+		
+
+		cost = 5
+		prerequisite = {focus = EGY_expand_alexandria_steel_mines}
+		prerequisite = {focus = EGY_expand_oil_drilling }
+		prerogative =  {focus = EGY_heavy_idustries }
+		available = {}
+			
+		
+
+		completion_reward = {add_research_slot = 1 }
+	}	
+      focus= {
+		id = EGY_the_university_off_all_universities
+		icon = GFX_focus_NORDIC_dem_research
+		x = 25
+		y = 6
+		
+
+		cost = 5
+		prerequisite = {focus = EGY_the_cairo_university_of_science}
+		available = {  }
+			
+		
+
+		completion_reward = {add_research_slot = 1 }
+	}						
+	}
+		
+	 			
+
+
+            
