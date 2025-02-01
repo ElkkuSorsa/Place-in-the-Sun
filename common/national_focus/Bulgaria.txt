@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = BUL_National_Revitalization
 		icon = GFX_focus_BUL_the_third_bulgarian_empire
-		x = 12
+		x = 9
 		y = 1
 		
 		completion_reward = { add_political_power = 50
@@ -32,11 +32,13 @@ focus_tree = {
 		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		x = 5
 		y = 2
+		
 		prerequisite = { focus = BUL_National_Revitalization }
-		completion_reward = { add_political_power = 100
-		add_stability = -0.05
-		}         
-		cost = 10
+		completion_reward = { add_political_power = 50
+        add_stability = 0.05
+        add_war_support = 0.05
+		}
+        cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
@@ -148,6 +150,23 @@ focus_tree = {
 	}
 
 		focus = {
+		id = BUL_balkan_cordination
+		icon = GFX_focus_BUL_guardians_of_the_balkans
+		x = 11
+		y = 6
+
+		available = {
+			always = no
+		}
+
+		prerequisite = { focus = BUL_Balkan_League }
+		completion_reward = { add_political_power = 100 }         
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
 		id = BUL_Going_Alone
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		x = 13
@@ -164,48 +183,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
-
-		focus = {
-		id = BUL_New_Foreign_Policy
-		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
-		x = 20
-		y = 6
-
-		prerequisite = { focus = BUL_Going_Alone }
-		completion_reward = { add_political_power = 100 }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = BUL_Question_Of_Northern_Dobruja
-		icon = GFX_focus_generic_attack_romania
-		x = 18
-		y = 7
-
-		prerequisite = { focus = BUL_New_Foreign_Policy }
-		completion_reward = { add_political_power = 100 }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = BUL_Assert_Dominance
-		icon = GFX_focus_generic_attack_yugoslavia
-		x = 22
-		y = 7
-
-		prerequisite = { focus = BUL_New_Foreign_Policy }
-		completion_reward = { add_political_power = 100 }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-        
-        
-		focus = {
+       
+        focus = {
 		id = BUL_Prepearing_For_The_War_Of_Liberation
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		x = 13
@@ -219,7 +198,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Time_Has_Come
+		id = BUL_time_has_come
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		x = 13
 		y = 7
@@ -230,3 +209,4 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
+}
