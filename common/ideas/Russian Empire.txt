@@ -405,4 +405,14 @@ ideas = {
 		}
 	}
 
+	country = {
+	    RUS_communist_revolutionaries4 = {
+			modifier = {
+			stability_factor = -0.05
+			communism_drift = 0.001
+			industrial_capacity_factory = -0.05
+			}
+		}
+	}
+
 }
