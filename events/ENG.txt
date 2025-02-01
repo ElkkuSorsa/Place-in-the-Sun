@@ -683,5 +683,6 @@ country_event = {
 		set_power_balance = {
 			id = ENG_english_society_bop
 		}
+		unlock_national_focus = ENG_english_society
 	}
 }
