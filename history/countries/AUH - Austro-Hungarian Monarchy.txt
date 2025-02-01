@@ -15,13 +15,14 @@ add_ideas = {
 	civilian_economy
 }
 
+
 set_autonomy = {
-	target = HUN
+	target = BOS
 	autonomy_state = autonomy_real_union
 }
 
 set_autonomy = {
-	target = BOS
+	target = HUN
 	autonomy_state = autonomy_real_union
 }
 
