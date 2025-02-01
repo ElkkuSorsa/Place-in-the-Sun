@@ -1,0 +1,8 @@
+ideas = {
+	country = {
+		BUL_agrarian_economy = {
+			picture = generic_agrarian_society
+			modifier = {
+
+			}
+		}

@@ -59,6 +59,6 @@ POR = {
 }
 
 BUL = {
-	color = rgb { 60 190 26 }
-	color_ui = rgb { 60 190 26 }
+	color = rgb { 60 170 26 }
+	color_ui = rgb { 60 170 26 }
 }

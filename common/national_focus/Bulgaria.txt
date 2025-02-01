@@ -5,94 +5,23 @@ focus_tree = {
 
 		modifier = {
 			add = 50
-			tag = BUl
+			tag = BUL
 		}
 	}
 
-    default = no
+	default = no
 
-focus = {
-		id = BUL_Bulgarian_Decade
-		icon = GFX_focus_BUL_promote_bulgarian_nationalism
-		x = 20
+	focus = {
+		id = BUL_National_Revitalization
+		icon = GFX_focus_mex_redeem_aztlan
+		x = 8
 		y = 1
 		
-		completion_reward = { add_war_support = 0.05
-		add_political_power = 100 
-		}         
+		completion_reward = { add_political_power = 50
+        add_stability = 0.02
+        add_war_support = 0.02
+        }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
-
-      focus = {
-		id = BUL_Repress_The_Turkic_Minority
-		icon = GFX_focus_generic_attack_turkey
-		x = 14
-		y = 2
-		prerequisite = {focus = BUL_Bulgarian_Decade}
-		completion_reward = { add_political_power = 100}         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-    }
-
-      focus = {
-		id = BUL_Bulgarian_National_identity
-		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
-		x = 26
-		y = 2
-		prerequisite = {focus = BUL_Bulgarian_Decade}
-		completion_reward = { add_political_power = 100 }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-    }
-	
-      focus = {
-		id = BUL_Foreign_Policy
-		icon = GFX_goal_generic_improve_relations
-		x = 32
-		y = 3
-		prerequisite = {focus = BUL_Bulgarian_National_identity}
-		completion_reward = { add_political_power = 100 }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-    }
-
-      focus = {
-		id = BUL_Militarize_Youth
-		icon = GFX_focus_generic_military_mission
-		x = 24
-		y = 3
-		prerequisite = {focus = BUL_Bulgarian_National_identity}
-		completion_reward = { add_political_power = 100 }        
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-      focus = {
-		id = BUL_Balkan_League
-		icon = GFX_focus_BUL_free_balkan_states
-		x = 34
-		y = 4
-		prerequisite = {focus = BUL_Foreign_Policy}
-		mutually_exclusive = { focus = BUL_Go_Alone}
-		completion_reward = { add_political_power = 100 }        
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		}
-
-      focus = {
-		id = BUL_Go_Alone
-		icon = GFX_focus_NOR_the_lone_wolf_norway
-		x = 30
-		y = 4
-		prerequisite = {focus = BUL_Foreign_Policy}
-		mutually_exclusive = { focus = BUL_Balkan_League}
-		completion_reward = { add_political_power = 100 }        
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
