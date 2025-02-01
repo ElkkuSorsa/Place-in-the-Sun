@@ -39,8 +39,7 @@ country = {
 
 		ethnic_tensions = {
 
-            picture = tur_coordinated_balkan_armed_forces
-
+            picture = tur_funkplan
 			modifier = {
 			 political_power_gain = -0.4
 			 war_support_factor = -0.1
@@ -62,7 +61,7 @@ country = {
 
 	    agrarian_economy = {
 
-            picture = generic_agrarian_society
+            picture = HUN_agrarian_tradition
 
 			modifier = {
 			 consumer_goods_factor = 0.45
