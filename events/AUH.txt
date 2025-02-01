@@ -20,6 +20,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Let's see what we can do"
+		name = "Ahoj, Hallo, Pasta"
 	}
 }
