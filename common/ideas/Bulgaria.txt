@@ -1,8 +1,73 @@
-ideas = {
-	country = {
-		BUL_agrarian_economy = {
-			picture = generic_agrarian_society
-			modifier = {
 
+ideas = {
+country = {
+		lone_warrior = {
+
+            picture = bul_bulgarian_irredentism
+
+			modifier = {
+			 army_core_attack_factor = 0.1
+			 army_core_defence_factor = 0.1
+			 army_org = 5
 			}
+
+		}
+
+        minority_rights = {
+
+            picture = generic_constitutional_guarantees
+
+			modifier = {
+			 political_power_gain = 0.15
+			 stability_factor = 0.05
+			 war_support_factor = -0.05
+			}
+
+		}
+
+		supressed_minorities = {
+
+            picture = generic_secret_police
+
+			modifier = {
+			 political_power_gain = 0.15
+			 war_support_factor = 0.05
+			 stability_factor = -0.05
+			}
+
+		}
+
+		ethnic_tensions = {
+
+            picture = tur_coordinated_balkan_armed_forces
+
+			modifier = {
+			 political_power_gain = -0.4
+			 war_support_factor = -0.1
+			 stability_factor = -0.1
+			}
+
+		}
+
+		national_supremacy = {
+
+            picture = bul_third_bulgarian_state
+
+			modifier = {
+			 political_power_gain = 0.1
+			 war_support_factor = 0.05
+			 army_core_defence_factor = 0.05
+		    }
+        }
+
+	    agrarian_economy = {
+
+            picture = generic_agrarian_society
+
+			modifier = {
+			 consumer_goods_factor = 0.45
+			 production_speed_buildings_factor = -0.5
+			 conscription_factor = -0.25
+		    }
+
 		}
