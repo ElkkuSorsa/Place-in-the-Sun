@@ -410,6 +410,8 @@ focus_tree = {
 		x = 37
 		y = 8
 		prerequisite = { focus = ENG_poor_laws }
+		prerequisite = { focus = ENG_national_insurance_act }
+		prerequisite = { focus = ENG_private_schools }
 
 		cost = 5
 
