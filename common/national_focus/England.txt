@@ -1514,6 +1514,12 @@ focus_tree = {
 				add_idea = ENG_british_politics_aut
 				remove_idea = ENG_british_politics_dem
 			}
+			hidden_effect = {
+				country_event = {
+					id = ENG_restored_monarchy.1
+					days = 15
+				}
+			}
 		}
 	}
 
@@ -1536,24 +1542,27 @@ focus_tree = {
 
 	focus = {
 		id = ENG_english_society
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_CHL_revise_the_social_classes
 		x = 2
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
-		cost = 5
+		cost = 1
 
 		available = {
 			always = no
 		}
 
 		completion_reward = {
+			set_power_balance = {
+				id = ENG_english_society_bop
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_side_with_nobility
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_CONGO_gold_and_diamonds
 		x = 3
 		y = 6
 		prerequisite = { focus = ENG_english_society }
@@ -1565,12 +1574,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = 0.25
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_restore_noble_privileges
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_home_defense
 		x = 3
 		y = 8
 		prerequisite = { focus = ENG_side_with_nobility }
@@ -1582,12 +1595,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = 0.1
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_side_with_people
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_GER_the_peoples_victory
 		x = 1
 		y = 6
 		prerequisite = { focus = ENG_english_society }
@@ -1599,12 +1616,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = -0.25
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_workers_rights
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_workers
 		x = 1
 		y = 8
 		prerequisite = { focus = ENG_side_with_people }
@@ -1616,12 +1637,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = -0.1
+			}
 		}
 	}
 
 	focus = {
 		id = ENG_maintain_balance
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_neutrality_focus
 		x = 2
 		y = 7
 		prerequisite = { focus = ENG_side_with_nobility focus = ENG_side_with_people }
@@ -1632,12 +1657,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
 	focus = {
 		id = ENG_social_divides
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 2
 		y = 9
 		prerequisite = { focus = ENG_workers_rights focus = ENG_restore_noble_privileges }
@@ -1648,6 +1674,40 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_power_balance = {
+				id = ENG_english_society_bop
+			}
+			IF = {
+				limit = {
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value > 0.15
+					}
+				}
+				add_ideas = ENG_social_divides_1
+			}
+			IF = {
+				limit = {
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value < -0.15
+					}
+				}
+				add_ideas = ENG_social_divides_2
+			}
+			ELSE = {
+				limit = {
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value > 0.15
+					}
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value < -0.15
+					}
+				}
+				add_ideas = ENG_social_divides_3
+			}
 		}
 	}
 
