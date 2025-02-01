@@ -1519,6 +1519,7 @@ focus = {
     x = 68
     y = 6
     cost = 10
+    available = {threat > 25}
     completion_reward = {
     create_wargoal = {
     type = puppet_wargoal_focus
@@ -1527,17 +1528,87 @@ focus = {
     }
     }
 focus = {
-    id = RUS_
+    id = RUS_persian_question
     icon = GFX_focus_GER_align_middle_east
-    prerequisite = {focus = RUS_improve_relations_with_britain}
-    x = 71
-    y = 4
-    cost = 5
+    prerequisite = {focus = RUS_middle_eastern_policy}
+    x = 72
+    y = 5
+    cost = 2
     completion_reward = {
+    add_political_power = 25
+    }
+    }
+focus = {
+    id = RUS_revoke_the_convention
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_persian_question}
+    mutually_exclusive = {focus = RUS_respect_the_convention}
+    x = 74
+    y = 6
+    cost = 10
+    completion_reward = {
+    add_ideas = RUS_revoked_the_convention
+    add_threat = 5
+    add_state_claim = 420
+    add_state_claim = 266
+    add_state_claim = 416
+    add_state_claim = 419
     reverse_add_opinion_modifier = {
     target = ENG
-    modifier = huge_increase
+    modifier = large_decrease
     }
+    }
+    }
+    
+focus = {
+    id = RUS_respect_the_convention
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_persian_question}
+    mutually_exclusive = {focus = RUS_revoke_the_convention}
+    x = 70
+    y = 6
+    cost = 5
+    completion_reward = {
+    
+    }
+    }
+focus = {
+    id = RUS_war_with_afghanistan
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_revoke_the_convention}
+    x = 76
+    y = 7
+    cost = 5
+    completion_reward = {
+    create_wargoal = {
+    type = puppet_wargoal_focus
+    target = AFG
+    }
+    }
+    }
+focus = {
+    id = RUS_invade_persia
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_revoke_the_convention}
+    x = 72
+    y = 7
+    cost = 5
+    completion_reward = {
+    create_wargoal = {
+    type = puppet_wargoal_focus
+    target = PER
+    }
+    }
+    }
+focus = {
+    id = RUS_anglo_russian_tarde_deals
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_respect_the_convention}
+    x = 70
+    y = 7
+    cost = 5
+    completion_reward = {
+    
     }
     }
     
