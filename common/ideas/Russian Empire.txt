@@ -426,4 +426,15 @@ ideas = {
 		}
 	}
 
+	country = {
+	    RUS_panslavic_nationalism = {
+			modifier = {
+			war_support_factor = 0.05
+			conscription_factor = 0.1
+			army_org_factor = 0.05
+			army_defence_factor = 0.05
+			}
+		}
+	}
+
 }
