@@ -10,6 +10,17 @@ country_event = {
 		name = "We should form a Balkan League"
 		IF = {
 			limit = {
+				original_tag = BUL
+			}
+			SER = {
+				country_event = {
+					id = balkan_league.1
+					days = 3
+				}
+			}
+		}
+		IF = {
+			limit = {
 				original_tag = SER
 			}
 			BUL = {
@@ -40,25 +51,31 @@ country_event = {
 	option = {
 		name = "We support partitioning the region"
 		custom_effect_tooltip = historical_event_option
-		country_event = {
-			id = balkan_league.4
-			days = 2
+		SER  = {
+			country_event = {
+				id = balkan_league.2
+				days = 2
+			}
 		}
 	}
 
 	option = {
 		name = "We must take the whole region!"
-		country_event = {
-			id = balkan_league.3
-			days = 2
+		SER  = {
+			country_event = {
+				id = balkan_league.4
+				days = 2
+			}
 		}
 	}
 
 	option = {
 		name = "Propose independence for Macedonia"
-		country_event = {
-			id = balkan_league.5
-			days = 2
+		SER  = {
+			country_event = {
+				id = balkan_league.5
+				days = 2
+			}
 		}
 	}
 }
@@ -80,7 +97,13 @@ country_event = {
 
 	option = {
 		name = "We must make sacrifices..."
-		set_country_flag = macedonia_bulgaria
+		set_global_flag = macedonia_bulgaria
+		BUL = {
+			country_event = {
+				id = balkan_league.6
+				days = 2
+			}
+		}
 	}
 }
 
@@ -92,7 +115,13 @@ country_event = {
 
 	option = {
 		name = "Yes, yes, of course..."
-		set_country_flag = macedonia_partition
+		set_global_flag = macedonia_partition
+		BUL = {
+			country_event = {
+				id = balkan_league.6
+				days = 2
+			}
+		}
 	}
 }
 
@@ -104,7 +133,13 @@ country_event = {
 
 	option = {
 		name = "This is reasonable..."
-		set_country_flag = macedonia_indenpendence
+		set_global_flag = macedonia_indenpendence
+		BUL = {
+			country_event = {
+				id = balkan_league.6
+				days = 2
+			}
+		}
 	}
 }
 
