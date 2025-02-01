@@ -10,17 +10,60 @@ focus_tree = {
 	}
 
 	default = no
-
+    continuous_focus_position = { x = 100 y = 3000 }
+	
 	focus = {
 		id = BUL_National_Revitalization
-		icon = GFX_focus_mex_redeem_aztlan
-		x = 8
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
+		x = 12
 		y = 1
 		
 		completion_reward = { add_political_power = 50
         add_stability = 0.02
         add_war_support = 0.02
         }         
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = BUL_Guestion_Off_The_Turkish_Minority
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		x = 6
+		y = 2
+		prerequisite = { focus = BUL_National_Revitalization }
+		completion_reward = { add_political_power = 50}         
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = BUL_Repress_Minorities
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 3
+		prerequisite = { focus = BUL_Guestion_Off_The_Turkish_Minority }
+		mutually_exclusive = { focus = BUL_Minority_Rights }
+		completion_reward = { add_war_support = 0.05
+		add_stability = -0.05
+		}         
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = BUL_Minority_Rights
+		icon = GFX_goal_tripartite_pact
+		x = 5
+		y = 3
+		prerequisite = { focus = BUL_Guestion_Off_The_Turkish_Minority }
+		mutually_exclusive = { focus = BUL_Repress_Minorities }
+		completion_reward = { add_stability = 0.05
+		add_war_support = -0.05
+	    }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
