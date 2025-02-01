@@ -207,6 +207,7 @@ country_event = {
 
 	option = {
 		name = "Liberals Win!"
+		custom_effect_tooltip = historical_event_option
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_the_last_liberals
 		hidden_effect = {
@@ -248,6 +249,7 @@ country_event = {
 
 	option = {
 		name = "Trust the Irish and Labour Party"
+		custom_effect_tooltip = historical_event_option
 		activate_mission = ENG_irish_excpectations
 		complete_national_focus = ENG_government_of_liberals
 	}
@@ -568,6 +570,7 @@ country_event = {
 
 	option = {
 		name = "These are Acceptable Terms."
+		custom_effect_tooltip = historical_event_option
 		hidden_effect = {
 			white_peace = IRE
 		}
@@ -649,21 +652,8 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Establish Ireland as a Personal Union"
+		name = "Salty and Savoury"
 		add_political_power = -150
-		custom_effect_tooltip = "We shall reform Ireland to a junior personal union partner!"
-		hidden_effect = {
-			complete_national_focus = ENG_crown_of_ireland
-		}
-	}
-
-	option = {
-		name = "Hold Tight!"
-		add_political_power = 50
-		custom_effect_tooltip = "This option might become very expensive while at war!"
-		hidden_effect = {
-			complete_national_focus = ENG_under_control_ireland
-		}
 	}
 }
 
