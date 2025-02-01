@@ -120,12 +120,55 @@ focus = {
 			
 		}
 
-		completion_reward = {add_building_construction
+		completion_reward = {456 = {add_building_construction}
 		type = infrastructure
 		level = 2 
 		instant_build = yes }
+	452 = {add_building_construction
+	type = infrastructure
+	level = 2
+	instant_build = yes }
  
   } 
-}
+  focus = {
+		id = EGY_bring_money_from_exports
+		icon = GFX_focus_generic_monetary_union
+		x = 27
+		y = 2
+		
+
+		cost = 5
+        prerequisite = {focus = EGY_start_industrialization}
+		available = {}
+			
+		
+
+		completion_reward = { add_ideas = free_trade}
             
+		}
+  focus = {
+		id = EGY_expand_oil_drilling
+		icon = GFX_focus_generic_offshore_oil_rig
+		x = 27
+		y = 3
+		
+
+		cost = 5
+        prerequisite = {focus = EGY_bring_money_from_exports}
+		available = {}
+			
+		
+
+		completion_reward ={
+			453 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			add_resource = {
+				type = oil
+				amount = 240000000
+				state = 453		
+        	}
+		}
+    } 	
+}           
 

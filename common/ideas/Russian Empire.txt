@@ -415,4 +415,15 @@ ideas = {
 		}
 	}
 
+	country = {
+	    RUS_revoked_the_convention = {
+			modifier = {
+			war_support_factor = 0.05
+			justify_war_goal_time = -0.35
+			generate_wargoal_tension = -0.1
+
+			}
+		}
+	}
+
 }
