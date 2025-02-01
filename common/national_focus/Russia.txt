@@ -1472,6 +1472,74 @@ focus = {
     give_guarantee = FRA
     }
     }
+focus = {
+    id = RUS_improve_relations_with_britain
+    icon = GFX_focus_chi_british_cooperation
+    prerequisite = {focus = RUS_reassure_france}
+    x = 71
+    y = 3
+    cost = 5
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+    target = ENG
+    modifier = huge_increase
+    }
+    }
+    }
+focus = {
+    id = RUS_middle_eastern_policy
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_improve_relations_with_britain}
+    x = 71
+    y = 4
+    cost = 5
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+    target = ENG
+    modifier = huge_increase
+    }
+    }
+    }
+focus = {
+    id = RUS_claims_on_ottomans
+    icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+    prerequisite = {focus = RUS_middle_eastern_policy}
+    x = 68
+    y = 5
+    cost = 5
+    completion_reward = {
+    add_state_claim = 797
+    add_war_support = 0.05
+    }
+    }
+focus = {
+    id = RUS_war_with_ottomans
+    icon = GFX_focus_generic_attack_turkey
+    prerequisite = {focus = RUS_claims_on_ottomans}
+    x = 68
+    y = 6
+    cost = 10
+    completion_reward = {
+    create_wargoal = {
+    type = puppet_wargoal_focus
+    target = TUR
+    }
+    }
+    }
+focus = {
+    id = RUS_
+    icon = GFX_focus_GER_align_middle_east
+    prerequisite = {focus = RUS_improve_relations_with_britain}
+    x = 71
+    y = 4
+    cost = 5
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+    target = ENG
+    modifier = huge_increase
+    }
+    }
+    }
     
     
 }
