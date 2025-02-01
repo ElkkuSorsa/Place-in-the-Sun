@@ -1,0 +1,180 @@
+add_namespace = balkan_league
+
+country_event = {
+	id = balkan_league.1
+	title = "Secret Meeting in Sofia"
+	desc = "The Serbian delegation has arrieved in Sofia to discuss the possibility of a Balkan League. The Bulgarians are eager to discuss the possibility of a Balkan League, but the Serbians are hesitant. The Greeks are also interested in the idea, but they are not sure if they can trust the Bulgarians."
+	is_triggered_only = yes
+
+	option = {
+		name = "We should form a Balkan League"
+		IF = {
+			limit = {
+				original_tag = SER
+			}
+			BUL = {
+				country_event = {
+					id = balkan_league.2
+					days = 7
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "We will not bend!"
+		
+		BUL = { complete_national_focus = BUL_Going_Alone }
+		hidden_effect = {
+			news_event = balkan_league.10
+		}
+	}
+}
+
+country_event = {
+	id = balkan_league.2
+	title = "Question of Macedonia"
+	desc = "One of the most important questions that the Balkan League will have to answer is the question of Macedonia. The Bulgarians are eager to take the region, but the Serbians and Greeks are not so sure. The Serbians are worried about the Bulgarians taking the region, and the Greeks are worried about the Bulgarians taking the region."
+	is_triggered_only = yes
+
+	option = {
+		name = "We support partitioning the region"
+		custom_effect_tooltip = historical_event_option
+		country_event = {
+			id = balkan_league.4
+			days = 2
+		}
+	}
+
+	option = {
+		name = "We must take the whole region!"
+		country_event = {
+			id = balkan_league.3
+			days = 2
+		}
+	}
+
+	option = {
+		name = "Propose independence for Macedonia"
+		country_event = {
+			id = balkan_league.5
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = balkan_league.3
+	title = "Demands from Bulgaria"
+	desc = "The Bulgarians are demanding the whole of Macedonia, this is a outrageous demand, and we must consider if we can do this at all..."
+	is_triggered_only = yes
+
+	option = {
+		name = "Outrageous!"
+		BUL = { complete_national_focus = BUL_Going_Alone }
+		news_event = {
+			id = balkan_league.10
+			days = 3
+		}
+	}
+
+	option = {
+		name = "We must make sacrifices..."
+		set_country_flag = macedonia_bulgaria
+	}
+}
+
+country_event = {
+	id = balkan_league.4
+	title = "Demands from Bulgaria"
+	desc = "The Bulgarians request partitioning of Macedonia, this is a reasonable demand, and we must accept it, to preserve the unity of the Balkan League in the future."
+	is_triggered_only = yes
+
+	option = {
+		name = "Yes, yes, of course..."
+		set_country_flag = macedonia_partition
+	}
+}
+
+country_event = {
+	id = balkan_league.5
+	title = "Demands from Bulgaria"
+	desc = "The Bulgarians request independence for Macedonia, this is a reasonable demand, and we must accept it, to preserve the unity of the Balkan League in the future."
+	is_triggered_only = yes
+
+	option = {
+		name = "This is reasonable..."
+		set_country_flag = macedonia_indenpendence
+	}
+}
+
+country_event = {
+	id = balkan_league.6
+	title = "Serbia Accepts"
+	desc = "The Bulgarians request independence for Macedonia, this is a reasonable demand, and we must accept it, to preserve the unity of the Balkan League in the future."
+	is_triggered_only = yes
+
+	option = {
+		name = "Step towards unity!"
+		SER = {
+			country_event = {
+				id = balkan_league.7
+				days = 5
+			}
+		}
+		country_event = {
+			id = balkan_league.7
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = balkan_league.7
+	title = "Conculsion of the Balkan League"
+	desc = "We have successfully formed the Balkan League, and we are now ready to face the Ottoman Empire together with our allies. The future of the Balkans is looking bright!"
+	is_triggered_only = yes
+
+	option = {
+		name = "Beacon of hope!"
+		IF = {
+			limit = {
+				original_tag = BUL
+			}
+			unlock_national_focus = BUL_Balkan_League
+			create_faction = "Balkan League"
+			add_to_faction = SER
+			news_event = {
+				id = balkan_league.8
+				days = 2
+			}
+		}
+
+	}
+}
+
+news_event = {
+	id = balkan_league.8
+	title = "Serbo-Bulgarian Negotiations Succeed"
+	desc = "The Serbo-Bulgarian negotiations been a success, and the two countries have agreed to form a Balkan League. The Greeks are also eager to join the alliance, and the future of the Balkans is looking bright."
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = "This could be a disaster for the Ottomans!"
+	}
+}
+
+news_event = {
+	id = balkan_league.10
+	title = "Serbo-Bulgarian Negotiations Break Down"
+	desc = "The Serbo-Bulgarian negotiations have broken down. The Serbians have left Sofia in a huff, and the Bulgarians are left wondering what went wrong, and if they can trust the Serbians at all. The Greeks are worring about the future of the Balkans."
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = "This could be a disaster!"
+	}
+}

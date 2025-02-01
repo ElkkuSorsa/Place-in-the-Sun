@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = AUH
+		owner = BOS
 		victory_points = {
 			11899 5 
 		}
@@ -21,8 +21,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			air_base = 2
+			industrial_complex = 1
 		}
 		add_core_of = BOS
 	}

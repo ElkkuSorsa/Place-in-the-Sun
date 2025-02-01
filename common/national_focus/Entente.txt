@@ -3,6 +3,14 @@ shared_focus = {
 	x = 3
 	y = 1
 
+	offset = {
+		x = 20
+		trigger = {
+			original_tag = ENG
+			has_completed_focus = ENG_march_for_change
+		}
+	}
+
 	available = {
 		is_in_faction_with = FRA
 	}
@@ -17,6 +25,14 @@ shared_focus = {
 	x = 1
 	y = 2
 	prerequisite = { focus = ENT_entente_cordiale_1 }
+
+	offset = {
+		x = 20
+		trigger = {
+			original_tag = ENG
+			has_completed_focus = ENG_march_for_change
+		}
+	}
 
 	available = {
 		is_in_faction_with = FRA
@@ -37,6 +53,14 @@ joint_focus = {
 	joint_trigger = { is_in_faction_with = FRA }
 	prerequisite = { focus = ENT_entente_cordiale_1 }
 
+	offset = {
+		x = 20
+		trigger = {
+			original_tag = ENG
+			has_completed_focus = ENG_march_for_change
+		}
+	}
+
 	available = {
 		is_in_faction_with = FRA
 	}
@@ -52,6 +76,14 @@ joint_focus = {
 	y = 2
 	joint_trigger = { is_in_faction_with = FRA }
 	prerequisite = { focus = ENT_entente_cordiale_1 }
+
+	offset = {
+		x = 20
+		trigger = {
+			original_tag = ENG
+			has_completed_focus = ENG_march_for_change
+		}
+	}
 
 	available = {
 		is_in_faction_with = FRA

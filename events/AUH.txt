@@ -11,3 +11,15 @@ country_event = {
 		name = "Let's see what we can do"
 	}
 }
+
+country_event = {
+	id = austria_hungary.2
+	title = "Languages aren't simple"
+	desc = austria_hungary.2.d
+	picture = GFX_school_lesson_girls
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's see what we can do"
+	}
+}

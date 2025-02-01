@@ -57,7 +57,10 @@ focus_tree = {
 		prerequisite = {focus = AUH_empire_of_franz_josef}  
 
 		completion_reward = {
-			add_political_power = 100
+					country_event = {
+					id = austria_hungary.2
+					days = 1
+				}
 		}
 	}
 

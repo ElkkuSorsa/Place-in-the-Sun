@@ -6,5 +6,14 @@ spriteTypes = {
 	}
 }
 
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_school_lesson_girls"
+		texturefile = "gfx/event_pictures/school_lesson_girls.dds"
+	}
+}
+
+
 
 

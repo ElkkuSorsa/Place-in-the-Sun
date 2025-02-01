@@ -15,7 +15,7 @@ ENG_march_for_change = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = { has_government = fascism OR has_government = neutrality }
+			NOT = { OR = { has_government = fascism has_government = neutrality }}
 			has_completed_focus = ENG_march_for_change
 		}
 
@@ -41,7 +41,7 @@ ENG_march_for_change = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = { has_government = fascism OR has_government = neutrality }
+			NOT = { OR = { has_government = fascism has_government = neutrality }}
 			has_completed_focus = ENG_march_for_change
 		}
 
@@ -67,7 +67,7 @@ ENG_march_for_change = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = { has_government = fascism OR has_government = neutrality }
+			NOT = { OR = { has_government = fascism has_government = neutrality }}
 			has_completed_focus = ENG_march_for_change
 		}
 

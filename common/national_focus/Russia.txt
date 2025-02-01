@@ -1601,7 +1601,7 @@ focus = {
     }
     }
 focus = {
-    id = RUS_anglo_russian_tarde_deals
+    id = RUS_anglo_russian_trade_deals
     icon = GFX_focus_GER_align_middle_east
     prerequisite = {focus = RUS_respect_the_convention}
     x = 70
@@ -1609,6 +1609,56 @@ focus = {
     cost = 5
     completion_reward = {
     
+    }
+    }
+focus = {
+    id = RUS_european_affairs
+    icon = GFX_focus_chi_reach_out_to_france
+    prerequisite = {focus = RUS_reassure_france}
+    x = 80
+    y = 3
+    cost = 5
+    completion_reward = {
+    
+    }
+    }
+focus = {
+    id = RUS_invoke_panslavic_nationalism
+    icon = GFX_focus_SOV_the_true_tsars
+    x = 80
+    y = 4
+    cost = 10
+    prerequisite = {focus = RUS_european_affairs}
+    completion_reward = {
+    add_ideas = RUS_panslavic_nationalism
+    add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+    }
+    }
+    }
+focus = {
+    id = RUS_guarantee_serbia
+    icon = GFX_focus_SOV_the_true_tsars
+    x = 78
+    y = 5
+    cost = 5
+    prerequisite = {focus = RUS_invoke_panslavic_nationalism}
+    completion_reward = {
+    give_guarantee = SER
+    add_political_power = 50
+    }
+    }
+focus = {
+    id = RUS_guarantee_serbia
+    icon = GFX_focus_SOV_the_true_tsars
+    x = 78
+    y = 5
+    cost = 5
+    prerequisite = {focus = RUS_invoke_panslavic_nationalism}
+    completion_reward = {
+    give_guarantee = SER
+    add_political_power = 50
     }
     }
     
