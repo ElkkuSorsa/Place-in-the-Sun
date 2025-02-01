@@ -1415,14 +1415,61 @@ focus = {
     }
     }
 focus = {
-    id = RUS_suspend_minority
+    id = RUS_suspend_minority_discr
     icon = GFX_goal_support_democracy
     prerequisite = {focus = RUS_guarantee_individual_liberties}
     x = 52
     y = 5
     cost = 5
     completion_reward = {
-    add_stability = 0.1
+    add_stability = 0.05
+    
+    }
+    }
+focus = {
+    id = RUS_foreign_policy
+    icon = GFX_SOV_swap_to_political_advisors_ccp_2d_sov_compatibility
+    x = 79
+    y = 1
+    cost = 5
+    completion_reward = {
+    add_political_power = 50
+    }
+    }
+focus = {
+    id = RUS_reassure_france
+    icon = GFX_focus_chi_reach_out_to_france
+    prerequisite = {focus = RUS_foreign_policy}
+    x = 75
+    y = 2
+    cost = 5
+    completion_reward = {
+    add_stability = 0.05
+    give_guarantee = FRA
+    }
+    }
+focus = {
+    id = RUS_reassure_france
+    icon = GFX_focus_chi_reach_out_to_france
+    prerequisite = {focus = RUS_foreign_policy}
+    x = 75
+    y = 2
+    cost = 5
+    completion_reward = {
+    add_stability = 0.05
+    give_guarantee = FRA
+    }
+    }
+focus = {
+    id = RUS_reassure_france
+    icon = GFX_focus_chi_reach_out_to_france
+    prerequisite = {focus = RUS_foreign_policy}
+    x = 75
+    y = 2
+    cost = 5
+    completion_reward = {
+    add_stability = 0.05
+    give_guarantee = FRA
     }
     }
     
