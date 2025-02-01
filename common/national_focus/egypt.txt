@@ -195,6 +195,7 @@ focus = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = 2
 				type = industrial_complex 
+				level = 2
 				instant_build = yes
 			
 			}
@@ -217,7 +218,7 @@ focus = {
 }
 focus = {
 		id = EGY_heavy_idustries
-		icon = GFX_focus_generic_africa_infrastructure
+		icon = GFX_focus_generic_africa_factory
 		x = 23
 		y = 3
 		
@@ -254,7 +255,7 @@ focus = {
 		y = 3
 		
 
-		cost = 5
+		cost = 10
 		prerequisite = {focus = EGY_expanding_our_railways}
 		available = {}
 			
@@ -275,13 +276,13 @@ focus = {
 		id = EGY_the_cairo_university_of_science
 		icon = GFX_focus_NORDIC_dem_research
 		x = 25
-		y = 5
+		y = 4
 		
 
-		cost = 5
+		cost = 10
 		prerequisite = {focus = EGY_expand_alexandria_steel_mines}
 		prerequisite = {focus = EGY_expand_oil_drilling }
-		prerogative =  {focus = EGY_heavy_idustries }
+	    prerequisite =  {focus = EGY_heavy_idustries }
 		available = {}
 			
 		
@@ -289,13 +290,13 @@ focus = {
 		completion_reward = {add_research_slot = 1 }
 	}	
       focus= {
-		id = EGY_the_university_off_all_universities
-		icon = GFX_focus_NORDIC_dem_research
+		id = EGY_the_university_of_all_universities
+		icon = GFX_focus_NORDIC_com_research
 		x = 25
-		y = 6
+		y = 5
 		
 
-		cost = 5
+		cost = 10
 		prerequisite = {focus = EGY_the_cairo_university_of_science}
 		available = {  }
 			
