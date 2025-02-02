@@ -8,6 +8,10 @@ recruit_character = AUH_franzjosef_bos
 
 set_research_slots = 1
 
+add_ideas = {
+	bos_fez_surrounded_by_cross
+}
+
 set_stability = 0.1
 set_war_support = 0.1
 

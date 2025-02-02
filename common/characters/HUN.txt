@@ -1,7 +1,7 @@
 characters = {
 	
 AUH_franzjosef_hun = {
-    name = " Ferenc József Károly I"
+    name = "Ferenc József Károly I"
     country_leader = {
         desc = "AUH_franzjosef_desc"
 		traits = { kaiser_franz_josef }

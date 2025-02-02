@@ -3,7 +3,7 @@ ideas = {
 	country = {
 
 		hun_sun_shining_over_us = {
-			picture = landtags_in_revolt
+			picture = hun_sun_shining_over_us
 			modifier = {
 			stability_factor = 0.05
 			trade_laws_cost_factor = -0.15
@@ -16,7 +16,7 @@ ideas = {
 			}
 		}
 			hun_magyarization = {
-			picture = empire_of_old_habsburg
+			picture = hun_magyarization
 			modifier = {
 			resistance_growth = 0.05
 			war_support_factor = -0.075
@@ -38,7 +38,7 @@ ideas = {
 			}
 		}
 			hun_economic_wasteland = {
-			picture = ghost_of_the_past
+			picture = hun_economy_wasteland
 			modifier = {
 			industrial_capacity_factory = -0.2
 			production_factory_efficiency_gain_factor = -0.1
