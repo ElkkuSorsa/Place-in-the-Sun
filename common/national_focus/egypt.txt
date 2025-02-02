@@ -367,7 +367,13 @@ focus = {
 			
 		
 
-		completion_reward = {}
-	}
-}		
-	 			
+		completion_reward = 
+		{ENG ={
+		set set_autonomy = {Automy_satellite}
+		target = EGY
+		autonomy_state = Automy_satellite
+		end_wars = no
+		end_civil_wars = no}
+		}
+	}		
+}	 			
