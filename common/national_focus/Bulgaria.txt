@@ -37,8 +37,7 @@ focus_tree = {
 		
 		prerequisite = { focus = BUL_national_revitalization }
 		completion_reward = { add_political_power = 50
-        add_stability = 0.05
-        add_war_support = 0.05
+		add_stability = -0.05
 		}
         cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -61,13 +60,27 @@ focus_tree = {
 		focus = {
 		id = BUL_bulgarian_dominance
 		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
-		x = 7
+		x = 6
 		y = 4
 		prerequisite = { focus = BUL_repress_the_turkic_minority }
 		completion_reward = { add_ideas = {national_supremacy} }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
+	}
+
+		focus = {
+		id = BUL_demolish_mosques
+		icon = GFX_focus_generic_attack_turkey
+		x = 8
+		y = 4
+		prerequisite = { focus = BUL_repress_the_turkic_minority }
+		completion_reward = { add_stability = -0.025
+		add_war_support = 0.05
+	    }         
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
 	}
 
 		focus = {
@@ -90,7 +103,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = BUL_minority_rights }
 		completion_reward = { add_stability = 0.05
-		add_political_power = 50
+		add_political_power = 100
 	    }      
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -127,7 +140,8 @@ focus_tree = {
 		x = 12
 		y = 3
 		prerequisite = { focus = BUL_national_revitalization }
-		completion_reward = { add_war_support = 0.05 }         
+		completion_reward = { add_war_support = 0.025
+		add_stability = -0.025 }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
  
@@ -172,7 +186,7 @@ focus_tree = {
 		y = 6
         
 		prerequisite = { focus = BUL_Balkan_League }
-		completion_reward = { add_political_power = 100 }         
+		completion_reward = { add_to_faction = MNT }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -185,8 +199,12 @@ focus_tree = {
 		y = 6
         
 		prerequisite = { focus = BUL_Balkan_League }
-		completion_reward = { add_political_power = 100 }         
-		cost = 5
+		completion_reward = { 48 = {add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes }}}      
+	    cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
@@ -230,7 +248,7 @@ focus_tree = {
 		y = 6
 
 		prerequisite = { focus = BUL_Going_Alone }
-		completion_reward = { add_political_power = 100 }         
+		completion_reward = { add_timed_idea = { idea = extensive_planning  days = 500 }  }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -243,7 +261,7 @@ focus_tree = {
 		y = 6
 
 		prerequisite = { focus = BUL_Going_Alone }
-		completion_reward = { add_political_power = 100 }         
+		completion_reward = { add_timed_idea = { idea = logistic_preperations days = 500 } }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -259,7 +277,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_Prepearing_For_The_War_Of_Liberation }
 		prerequisite = { focus = BUL_logistic_planning }
 		completion_reward = { create_wargoal = { type = annex_everything target = OTT } }         
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
@@ -271,7 +289,7 @@ focus_tree = {
 		y = 8
 
 		prerequisite = { focus = BUL_time_has_come focus = BUL_strike_the_empire }
-		completion_reward = { add_ideas = {war_of_liberation} }         
+		completion_reward = { add_timed_idea = { idea = war_of_liberation days = 360 } }         
 		cost = 1
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -307,8 +325,8 @@ focus_tree = {
 			available = {
 			always = no
 		}
-
-		completion_reward = { add_ideas = {3rd_national_catastrophe}
+        
+		completion_reward = { add_ideas = {1st_national_catastrophe}
 	    }         
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
