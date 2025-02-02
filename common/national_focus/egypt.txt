@@ -308,9 +308,66 @@ focus = {
 
 		completion_reward = {add_research_slot = 1 }
 	}						
-}
+	      focus= {
+		id = EGY_Political_effort
+		icon = GFX_goal_generic_major_alliance
+		x = -10
+		y = 1
 		
+
+		cost = 10
+		
+		available = {  }
+			
+		
+
+		completion_reward = {add_political_power = 100 }
+	}						
+      focus= {
+		id = EGY_
+		icon = GFX_focus_NORDIC_com_research
+		x = -11
+		y = 2
+		
+
+		cost = 10
+		prerequisite = {focus = EGY_Political_effort}
+		available = {  }
+			
+		
+
+		completion_reward = {add_research_slot = 1 }
+	}						
+	      focus= {
+		id = EGY_Political_effort
+		icon = GFX_goal_generic_major_alliance
+		x = -10
+		y = 1
+		
+
+		cost = 10
+		
+		available = {  }
+			
+		
+
+		completion_reward = {add_political_power = 100}
+	}
+	      focus= {
+		id = EGY_contest_khedives_authotority
+		icon = GFX_goal_generic_major_alliance
+		x = -9
+		y = 2
+		
+
+		cost = 10
+		
+		prerequisite = {EGY_Political_effort}
+		available = {  }
+			
+		
+
+		completion_reward = {}
+	}
+}		
 	 			
-
-
-            
