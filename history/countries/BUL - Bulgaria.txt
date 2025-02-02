@@ -4,6 +4,8 @@ set_stability = 0.62
 set_war_support = 0.54
 set_convoys = 20
 
+recruit_character = BUL_aleksandar_malinov
+
 add_ideas = {
 	scraping_the_barrel
 	all_adults_serve
@@ -19,17 +21,17 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1890.1.1"
+	ruling_party = democratic
+	last_election = "1908.4.9"
 	election_frequency = 48
 	elections_allowed = no
 
 }
 
 set_popularities = {
-	democratic = 5
+	democratic = 75
 	fascism = 0
-	communism = 10
-	neutrality = 85
+	communism = 5
+	neutrality = 20
 }
 }

@@ -39,7 +39,7 @@ country = {
 
 		ethnic_tensions = {
 
-            picture = tur_funkplan
+            picture = tur_golden_age_of_the_wolf
 			modifier = {
 			 political_power_gain = -0.4
 			 war_support_factor = -0.1
@@ -61,12 +61,13 @@ country = {
 
 	    agrarian_economy = {
 
-            picture = HUN_agrarian_tradition
+            picture = generic_agrarian_reform
 
 			modifier = {
-			 consumer_goods_factor = 0.45
-			 production_speed_buildings_factor = -0.5
-			 conscription_factor = -0.25
+			 consumer_goods_factor = 0.25
+			 production_speed_buildings_factor = -0.2
+			 conscription_factor = -0.15
+			 stability_factor = 0.05
 		    }
 
 		}
@@ -78,5 +79,26 @@ country = {
 			modifier = {
              conscription = 0.01
 			 conscription_factor = 0.15	   
+		    }
+        }
+
+			war_of_liberation = {
+
+            picture = BEL_legacy_of_the_great_war
+
+			modifier = {
+             army_core_attack_factor = 0.1
+			 army_org = 5
+		    }
+        }
+
+			1st_national_catastrophe = {
+
+            picture = bul_second_national_catastrophe
+
+			modifier = {
+             consumer_goods_factor = 0.25
+			 stability_factor = -0.1
+			 war_support_factor = -0.25
 		    }
         }

@@ -22,7 +22,7 @@ bookmarks = {
 		BUL = {
 			minor = yes
 			history = BUL_history
-			ideology = neutrality
+			ideology = democratic
 		}
 
 		RUS = {
