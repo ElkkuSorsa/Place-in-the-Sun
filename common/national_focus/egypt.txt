@@ -108,7 +108,7 @@ focus = {
 				} 
 			}	
 	}}
- focus = {
+	focus = {
 		id = EGY_start_industrialization
 		icon = GFX_focus_generic_africa_infrastructure
 		x = 25
@@ -137,7 +137,7 @@ focus = {
 				}
 			}
  		}
- } 
+	} 
   focus = {
 		id = EGY_bring_money_from_exports
 		icon = GFX_focus_generic_monetary_union
@@ -193,10 +193,12 @@ focus = {
 		completion_reward = {
 			456 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = 2
+				add_building_construction = {
 				type = industrial_complex 
 				level = 2
 				instant_build = yes
+
+				}
 			
 			}
 		}
@@ -235,16 +237,16 @@ focus = {
 
 		completion_reward = {
 			447 = {
-				add_building_construction = {
 				add_extra_state_shared_building_slots = 1	
+				add_building_construction = {
 					type = industrial_complex
 					level = 2 
 					instant_build = yes 
 				}
 			}
 			907 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				add_extra_state_shared_building_slots = 2	
 					type = industrial_complex
 					level = 2
 					instant_build = yes 
@@ -326,7 +328,7 @@ focus = {
       focus= {
 		id = EGY_
 		icon = GFX_focus_NORDIC_com_research
-		x = -11
+		x = 0
 		y = 2
 		
 
@@ -341,7 +343,7 @@ focus = {
 	      focus= {
 		id = EGY_Political_effort
 		icon = GFX_goal_generic_major_alliance
-		x = -10
+		x = 0
 		y = 1
 		
 
@@ -356,7 +358,7 @@ focus = {
 	      focus= {
 		id = EGY_contest_khedives_authotority
 		icon = GFX_goal_generic_major_alliance
-		x = -9
+		x = 0
 		y = 2
 		
 
