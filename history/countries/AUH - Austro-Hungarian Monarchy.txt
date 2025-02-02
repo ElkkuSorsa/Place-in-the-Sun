@@ -1,4 +1,4 @@
-﻿oob = "AUH_1936"
+oob = "AUH_1936"
 capital = 4
 set_research_slots = 2
 set_stability = 0.3
@@ -270,7 +270,7 @@ set_autonomy = {
 }
 
 804 = {
-	start_resistance = yes
+	start_resistance = yes									
 	set_compliance = 40
 }
 
