@@ -155,9 +155,6 @@ focus_tree = {
 		prerequisite = { focus = BUL_start_prepearing_against_the_ottomans }
 		completion_reward = {
 			country_event = { id = balkan_league.1 days = 7 }
-			SER = {
-				country_event = { id = balkan_league.1 days = 7 }
-			}
 		}         
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }

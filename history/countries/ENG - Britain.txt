@@ -22,8 +22,6 @@ add_ideas = {
 
 
 #Politics for 1936.1.1
-set_global_flag = SE_ww1
-set_country_flag = SE_superevents_activate
 add_ideas = {
 	ENG_edward_vii
 	ENG_haldane_reform_1

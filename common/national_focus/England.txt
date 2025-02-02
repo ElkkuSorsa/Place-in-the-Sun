@@ -3786,7 +3786,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -3880,7 +3880,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 5
+		cost = 10
 
 		available = {
 		}

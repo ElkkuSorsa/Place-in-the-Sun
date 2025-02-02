@@ -81,9 +81,17 @@
  RUS_DEF:0 "the Russian Empire"
  RUS_ADJ:0 "Russian"
 
-BUL_neutrality:0 "Bulgaria"
-BUL_neutrality_def:0 "the Bulgaria"
-BUL_neutrality_adj:0 "Bulgarian"
-BUL:0 "Bulgaria"
-BUL_DEF:0 "the Bulgaria"
-BUL_ADJ:0 "Bulgarian"
+ BUL_neutrality:0 "Bulgaria"
+ BUL_neutrality_def:0 "the Tsardom of Bulgaria"
+ BUL_neutrality_adj:0 "Bulgarian"
+ BUL:0 "Bulgaria"
+ BUL_DEF:0 "Bulgaria"
+ BUL_ADJ:0 "Bulgarian"
+
+ ITA:0 "Italy"
+ ITA_DEF:0 "the Kingdom of Italy"
+ ITA_ADJ:0 "Italian"
+
+ EGY:0 "Egypt"
+ EGY_DEF:0 "the Khedivate of Egypt"
+ EGY_ADJ:0 "Egyptian"
