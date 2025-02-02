@@ -12,8 +12,22 @@ focus_tree = {
     default = no 
     continuous_focus_position = { x = 120 y = 1800 }
 
+    # Italian Industry Tree
+	focus = {
+		id = ITA_industrial_innovation
+		icon = GFX_focus_generic_modernize_industry
+		x = 5
+		y = 4
+
+		cost = 5
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
 
 }
-
-
-    # Italian Industry Tree
