@@ -1,0 +1,9 @@
+ideas = {
+	country = {
+		EGY_expanding_the_railways = {
+			modifier = {
+				production_speed_rail_way_factor = 0.2
+			}
+		}
+	}
+}

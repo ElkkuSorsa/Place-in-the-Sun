@@ -15,6 +15,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/auh_ernest_von_koerber.dds"
 	}
 
+		spriteType = {
+		name = "GFX_idea_hun_sun_shining_over_us"
+		texturefile = "gfx/interface/ideas/AUH/sun_shining_over_us.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_hun_magyarization"
+		texturefile = "gfx/interface/ideas/AUH/magyarization.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_hun_economy_wasteland"
+		texturefile = "gfx/interface/ideas/AUH/economy_wasteland.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_bos_fez_surrounded_by_cross"
+		texturefile = "gfx/interface/ideas/AUH/fez_surrounded_by_cros.dds"
+	}
+
 	spriteType = {
 		name = "GFX_advisor_alexander_von_krobatin"
 		texturefile = "gfx/interface/ideas/AUH/alexander_krobatin.png"

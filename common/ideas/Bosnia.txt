@@ -1,0 +1,13 @@
+ideas = {
+	
+	country = {
+
+		bos_fez_surrounded_by_cross = {
+			picture = hun_sun_shining_over_us
+			modifier = {
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			}
+		}
+	}
+}

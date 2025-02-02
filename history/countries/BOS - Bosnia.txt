@@ -4,18 +4,15 @@
 
 ### SETUP THE CORRECT POLITICAL PARTIES ###
 
-recruit_character = AUH_franzjosef_hun
+recruit_character = AUH_franzjosef_bos
 
 set_research_slots = 1
 
 add_ideas = {
-hun_sun_shining_over_us
-hun_magyarization
-hun_economic_wasteland
-hun_political_rodeo
+	bos_fez_surrounded_by_cross
 }
 
-set_stability = 0.3
+set_stability = 0.1
 set_war_support = 0.1
 
 # SETUP HUNGARIAN POLITICS
@@ -27,8 +24,8 @@ set_war_support = 0.1
 		elections_allowed = no
 	}
 	set_popularities = {
-		democratic = 30
-		fascism = 10
-		neutrality = 60
+		democratic = 5
+		fascism = 15
+		neutrality = 80
 	}
 }

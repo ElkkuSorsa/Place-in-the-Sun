@@ -16,15 +16,6 @@ add_ideas = {
 }
 
 
-set_autonomy = {
-	target = BOS
-	autonomy_state = autonomy_real_union
-}
-
-set_autonomy = {
-	target = HUN
-	autonomy_state = autonomy_real_union
-}
 
 
 #For start date 1939.1.1
@@ -91,6 +82,7 @@ add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity
 	auh_ghostofthepast
+	AUH_landtags_in_active_revolt
 }
 set_politics = {
 	ruling_party = neutrality
@@ -104,6 +96,17 @@ set_popularities = {
 	communism = 5
 	neutrality = 70
 }
+
+set_autonomy = {
+	target = BOS
+	autonomy_state = autonomy_real_union
+}
+
+set_autonomy = {
+	target = HUN
+	autonomy_state = autonomy_real_union
+}
+
 
 9 = {
 	start_resistance = yes

@@ -1,8 +1,19 @@
 spriteTypes = {
 
-	#Monarchism
+	#Monarchism @AUH
 	spriteType = {
 		name = "GFX_ideology_AUH_monarchism"
 		texturefile = "gfx/interface/ideologies/AUH_monarchism.dds"
 	}
+		#Monarchism @HUN
+		spriteType = {
+		name = "GFX_ideology_HUN_monarchism"
+		texturefile = "gfx/interface/ideologies/AUH_monarchism.dds"
+	}
+		#Monarchism @BOS
+		spriteType = {
+		name = "GFX_ideology_BOS_monarchism"
+		texturefile = "gfx/interface/ideologies/AUH_monarchism.dds"
+	}
+
 }
