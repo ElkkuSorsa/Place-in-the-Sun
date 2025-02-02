@@ -107,6 +107,7 @@ set_autonomy = {
 	autonomy_state = autonomy_real_union
 }
 
+
 9 = {
 	start_resistance = yes
 	set_compliance = 40
