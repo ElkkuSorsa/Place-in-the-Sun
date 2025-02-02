@@ -13,7 +13,7 @@ focus_tree = {
     continuous_focus_position = { x = 100 y = 3000 }
 	
 	focus = {
-		id = BUL_National_Revitalization
+		id = BUL_national_revitalization
 		icon = GFX_focus_BUL_the_third_bulgarian_empire
 		x = 9
 		y = 1
@@ -28,12 +28,12 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Question_Of_The_Turkish_Minority
+		id = BUL_question_of_the_turkish_minority
 		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		x = 5
 		y = 2
 		
-		prerequisite = { focus = BUL_National_Revitalization }
+		prerequisite = { focus = BUL_national_revitalization }
 		completion_reward = { add_political_power = 50
         add_stability = 0.05
         add_war_support = 0.05
@@ -44,12 +44,12 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Repress_The_Turkic_Minority
+		id = BUL_repress_the_turkic_minority
 		icon = GFX_focus_generic_attack_turkey
 		x = 7
 		y = 3
-		prerequisite = { focus = BUL_Question_Of_The_Turkish_Minority }
-		mutually_exclusive = { focus = BUL_Minority_Rights }
+		prerequisite = { focus = BUL_question_of_the_turkish_minority }
+		mutually_exclusive = { focus = BUL_minority_rights }
 		completion_reward = { add_ideas = {supressed_minorities} }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -57,11 +57,11 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Bulgarian_Dominance
+		id = BUL_bulgarian_dominance
 		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
 		x = 7
 		y = 4
-		prerequisite = { focus = BUL_Repress_The_Turkic_Minority }
+		prerequisite = { focus = BUL_repress_the_turkic_minority }
 		completion_reward = { add_ideas = {national_supremacy} }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -69,12 +69,12 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Minority_Rights
+		id = BUL_minority_rights
 		icon = GFX_focus_generic_befriend_turkey
 		x = 3
 		y = 3
-		prerequisite = { focus = BUL_Question_Of_The_Turkish_Minority }
-		mutually_exclusive = { focus = BUL_Repress_The_Turkic_Minority }
+		prerequisite = { focus = BUL_question_of_the_turkish_minority }
+		mutually_exclusive = { focus = BUL_repress_the_turkic_minority }
 		completion_reward = { add_ideas = {minority_rights} }      
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -82,25 +82,37 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Equal_Rights
+		id = BUL_equal_rights
 		icon = GFX_focus_generic_treaty
 		x = 3
 		y = 4
-		prerequisite = { focus = BUL_Minority_Rights }
+		prerequisite = { focus = BUL_minority_rights }
 		completion_reward = { add_stability = 0.05
 		add_political_power = 50
 	    }      
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		
+
 	}
 
 		focus = {
-		id = BUL_End_The_Ethnic_Tension
+		id = BUL_minority_conscription
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 2
+		y = 5
+		prerequisite = { focus = BUL_equal_rights }
+		completion_reward = { add_ideas = { minority_conscripts } }      
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = BUL_end_the_ethnic_tension
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 5
 		y = 5
-		prerequisite = { focus = BUL_Equal_Rights focus = BUL_Bulgarian_Dominance }
+		prerequisite = { focus = BUL_equal_rights focus = BUL_bulgarian_dominance }
 		completion_reward = { remove_ideas = ethnic_tensions }      
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -108,11 +120,11 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Start_Prepearing_Against_The_Ottomans
-		icon = GFX_focus_TUR_misak_i_milli
+		id = BUL_start_prepearing_against_the_ottomans
+		icon = GFX_focus_BUL_the_fate_of_the_balkans
 		x = 12
 		y = 3
-		prerequisite = { focus = BUL_National_Revitalization }
+		prerequisite = { focus = BUL_national_revitalization }
 		completion_reward = { add_war_support = 0.05 }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -120,11 +132,11 @@ focus_tree = {
 	}
 
 		focus = {
-		id = BUL_Negotiations_Whit_Serbia
-		icon = GFX_focus_invite_yugoslavia
+		id = BUL_negotiations_whit_serbia
+		icon = GFX_goal_serbian_negotiations
 		x = 12
 		y = 4
-		prerequisite = { focus = BUL_Start_Prepearing_Against_The_Ottomans }
+		prerequisite = { focus = BUL_start_prepearing_against_the_ottomans }
 		completion_reward = {
 			country_event = { id = balkan_league.1 days = 7 }
 			SER = {
@@ -139,14 +151,14 @@ focus_tree = {
 		focus = {
 		id = BUL_Balkan_League
 		icon = GFX_focus_BUL_guardians_of_the_balkans
-		x = 11
+		x = 10
 		y = 5
 
 		available = {
 			always = no
 		}
 
-		prerequisite = { focus = BUL_Negotiations_Whit_Serbia }
+		prerequisite = { focus = BUL_negotiations_whit_serbia }
 		mutually_exclusive = { focus = BUL_Going_Alone }
 		completion_reward = { create_faction = Balkan_League }         
 		cost = 10
@@ -159,13 +171,36 @@ focus_tree = {
 		icon = GFX_focus_BUL_guardians_of_the_balkans
 		x = 11
 		y = 6
-
-		available = {
-			always = no
-		}
-
+        
 		prerequisite = { focus = BUL_Balkan_League }
 		completion_reward = { add_political_power = 100 }         
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+		
+		focus = {
+		id = BUL_balkan_investment
+		icon = GFX_focus_BUL_guardians_of_the_balkans
+		x = 9
+		y = 6
+        
+		prerequisite = { focus = BUL_Balkan_League }
+		completion_reward = { add_political_power = 100 }         
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+		
+		focus = {
+		id = BUL_strike_the_empire
+		icon = GFX_focus_BUL_guardians_of_the_balkans
+		x = 10
+		y = 7
+        
+		prerequisite = { focus = BUL_balkan_investment }
+		prerequisite = { focus = BUL_balkan_cordination }
+		completion_reward = { create_wargoal = { type = annex_everything target = OTT } }         
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -174,14 +209,14 @@ focus_tree = {
 		focus = {
 		id = BUL_Going_Alone
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
-		x = 13
+		x = 14
 		y = 5
 
 		available = {
 			always = no
 		}
 		
-		prerequisite = { focus = BUL_Negotiations_Whit_Serbia }
+		prerequisite = { focus = BUL_negotiations_whit_serbia }
 		mutually_exclusive = { focus = BUL_Balkan_League }
 		completion_reward = { add_ideas = {lone_warrior} }         
 		cost = 10
@@ -202,13 +237,28 @@ focus_tree = {
 
 	}
 
+        focus = {
+		id = BUL_logistic_planning
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		x = 15
+		y = 6
+
+		prerequisite = { focus = BUL_Going_Alone }
+		completion_reward = { add_political_power = 100 }         
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+
+	}
+
 		focus = {
 		id = BUL_time_has_come
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
-		x = 13
+		x = 14
 		y = 7
 
 		prerequisite = { focus = BUL_Prepearing_For_The_War_Of_Liberation }
+		prerequisite = { focus = BUL_logistic_planning }
 		completion_reward = { create_wargoal = { type = annex_everything target = OTT } }         
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
