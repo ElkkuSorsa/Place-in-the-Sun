@@ -1,0 +1,19 @@
+focus_tree = {
+    id = ITA_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 50
+            tag = ITA_focus_tree
+        }
+    }
+
+    default = no 
+    continuous_focus_position = { x = 120 y = 1800 }
+
+
+}
+
+
+    # Italian Industry Tree
