@@ -102,3 +102,25 @@ country = {
 			 war_support_factor = -0.25
 		    }
         }
+
+			extensive_planning = {
+
+            picture = SWE_hodgepodge_of_equipment
+
+			modifier = {
+            planning_speed = 0.2
+			max_planning = 0.1
+		    }
+        }
+
+			logistic_preperations = {
+
+            picture = generic_supply_depot
+
+			modifier = {
+            training_time_factor = -0.2
+			attrition = -0.15
+			winter_attrition = -0.1
+		    }
+        }
+    }
