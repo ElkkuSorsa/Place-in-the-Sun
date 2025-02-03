@@ -46,7 +46,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_repress_the_turkic_minority
-		icon = GFX_focus_BUL_murder_the_ottomans
+		icon = GFX_focus_BUL_no_turk_rights
 		x = 7
 		y = 3
 		prerequisite = { focus = BUL_question_of_the_turkish_minority }
@@ -59,7 +59,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_bulgarian_dominance
-		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
+		icon = GFX_focus_BUL_bulgarian_dominance
 		x = 6
 		y = 4
 		prerequisite = { focus = BUL_repress_the_turkic_minority }
@@ -71,7 +71,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_demolish_mosques
-		icon = GFX_focus_generic_attack_turkey
+		icon = GFX_focus_BUL_bomb_mosque
 		x = 8
 		y = 4
 		prerequisite = { focus = BUL_repress_the_turkic_minority }
@@ -85,7 +85,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_minority_rights
-		icon = GFX_focus_generic_befriend_turkey
+		icon = GFX_focus_BUL_turk_rights
 		x = 3
 		y = 3
 		prerequisite = { focus = BUL_question_of_the_turkish_minority }
@@ -98,7 +98,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_equal_rights
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_BUL_turk_rights_1
 		x = 3
 		y = 4
 		prerequisite = { focus = BUL_minority_rights }
@@ -112,7 +112,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_minority_conscription
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_BUL_turk_conscript
 		x = 2
 		y = 5
 		prerequisite = { focus = BUL_equal_rights }
@@ -124,7 +124,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_end_the_ethnic_tension
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_focus_BUL_end_ethnic_tension
 		x = 5
 		y = 5
 		prerequisite = { focus = BUL_equal_rights focus = BUL_bulgarian_dominance }
@@ -136,7 +136,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_start_prepearing_against_the_ottomans
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_BUL_start_preperations_against_ottomans
 		x = 12
 		y = 3
 		prerequisite = { focus = BUL_national_revitalization }
@@ -163,7 +163,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_Balkan_League
-		icon = GFX_focus_BUL_guardians_of_the_balkans
+		icon = GFX_focus_BUL_balkan_league
 		x = 10
 		y = 5
 
@@ -181,7 +181,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_balkan_cordination
-		icon = GFX_focus_BUL_guardians_of_the_balkans
+		icon = GFX_focus_BUL_balkan_cooperation
 		x = 11
 		y = 6
         
@@ -194,7 +194,7 @@ focus_tree = {
 		
 		focus = {
 		id = BUL_balkan_investment
-		icon = GFX_focus_BUL_guardians_of_the_balkans
+		icon = GFX_focus_BUL_balkan_investment
 		x = 9
 		y = 6
         
@@ -211,7 +211,7 @@ focus_tree = {
 		
 		focus = {
 		id = BUL_strike_the_empire
-		icon = GFX_goal_murder_the_ottomans
+		icon = GFX_focus_BUL_murder_the_ottomans
 		x = 10
 		y = 7
         
@@ -270,7 +270,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_time_has_come
-		icon = GFX_goal_murder_the_ottomans
+		icon = GFX_focus_BUL_murder_the_ottomans
 		x = 14
 		y = 7
 

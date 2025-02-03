@@ -63,4 +63,47 @@ spriteTypes = {
 		name = "GFX_focus_BUL_murder_the_ottomans"
 		texturefile = "gfx/interface/goals/BUL/murder_the_ottomans.dds"
 	}
-}
+    SpriteType = {
+		name = "GFX_focus_BUL_no_turk_rights"
+		texturefile = "gfx/interface/goals/BUL/no_turk_rights.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BUL_turk_rights"
+		texturefile = "gfx/interface/goals/BUL/turk_rights.dds"
+	}	  
+	SpriteType = {
+		name = "GFX_focus_BUL_turk_rights_1"
+		texturefile = "gfx/interface/goals/BUL/turk_rights_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BUL_turk_conscripts"
+		texturefile = "gfx/interface/goals/BUL/turk_conscripts.dds"
+	}
+    SpriteType = {
+		name = "GFX_focus_BUL_start_preperations_against_ottomans"
+		texturefile = "gfx/interface/goals/BUL/start_preperations_against_ottomans.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BUL_end_ethnic_tension"
+		texturefile = "gfx/interface/goals/BUL/end_ethnic_tension.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BUL_bomb_mosque"
+		texturefile = "gfx/interface/goals/BUL/bomb_mosque.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_bulgarian_dominance"
+		texturefile = "gfx/interface/goals/BUL/bulgarian_dominance.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_balkan_cooperation"
+		texturefile = "gfx/interface/goals/BUL/balkan_cooperation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_balkan_investment"
+		texturefile = "gfx/interface/goals/BUL/balkan_investment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_balkan_league"
+		texturefile = "gfx/interface/goals/BUL/balkan_league.dds"
+	}
