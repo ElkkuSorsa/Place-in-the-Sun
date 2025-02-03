@@ -36,6 +36,25 @@ ideas = {
 			production_factory_efficiency_gain_factor = -0.05
 			army_defence_against_major_factor = -0.1
 			army_attack_against_major_factor = -0.1
+			stability_weekly = -0.001
+			democratic_drift = 0.02
+			drift_defence_factor = -0.1
+			industrial_capacity_factory = -0.1
+			}
+		}
+
+			AUH_landtags_in_active_revolt_better = {
+			picture = landtags_in_revolt
+			modifier = {
+			stability_factor = -0.05
+			trade_laws_cost_factor = 0.15
+			line_change_production_efficiency_factor = -0.05
+			production_factory_start_efficiency_factor = -0.05
+			army_defence_against_major_factor = -0.05
+			army_attack_against_major_factor = -0.05
+			stability_weekly = -0.001
+			drift_defence_factor = -0.1
+			industrial_capacity_factory = -0.05
 
 			}
 		}
@@ -54,6 +73,21 @@ ideas = {
 			political_advisor_cost_factor = 0.1
 			}
 		}
+
+			auh_burden_for_now_better = {
+			picture = bureo_nice
+			modifier = {
+			army_defence_against_major_factor = 0.05
+			army_attack_against_major_factor = 0.05
+			stability_factor = 0.05
+			army_chief_cost_factor = -0.1
+			navy_chief_cost_factor = -0.1
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.05
+
+			}
+		}
+
 			auh_ghostofthepast = {
 			picture = ghost_of_the_past
 			modifier = {
