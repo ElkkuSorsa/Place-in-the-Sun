@@ -149,7 +149,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_negotiations_whit_serbia
-		icon = GFX_goal_serbian_negotiations
+		icon = GFX_goal_serbian_negotiation
 		x = 12
 		y = 4
 		prerequisite = { focus = BUL_start_prepearing_against_the_ottomans }
@@ -211,7 +211,7 @@ focus_tree = {
 		
 		focus = {
 		id = BUL_strike_the_empire
-		icon = GFX_focus_BUL_guardians_of_the_balkans
+		icon = GFX_goal_murder_the_ottomans
 		x = 10
 		y = 7
         
@@ -270,7 +270,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_time_has_come
-		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		icon = GFX_goal_murder_the_ottomans
 		x = 14
 		y = 7
 

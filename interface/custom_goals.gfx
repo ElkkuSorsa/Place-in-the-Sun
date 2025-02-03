@@ -54,7 +54,11 @@ spriteTypes = {
 		name = "GFX_goal_dugin"
 		texturefile = "gfx/interface/goals/RUS/DUGIN.dds"			
 	}
-		SpriteType = {
-		name = "GFX_goal_serbian_negotiations"
-		texturefile = "gfx/interface/goals/BUL/serbian_negotiations.dds"			
+        SpriteType = {
+		name = "GFX_focus_BUL_serbian_negotiation"
+		texturefile = "gfx/interface/goals/BUL/serbian_negotiation.dds"
+	}
+        SpriteType = {
+		name = "GFX_focus_BUL_murder_the_ottomans"
+		texturefile = "gfx/interface/goals/BUL/murder_the_ottomans.dds"
 	}

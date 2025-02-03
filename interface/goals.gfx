@@ -9141,6 +9141,7 @@ spriteTypes = {
 		name = "GFX_focus_COG_force_publique_mutiny"
 		texturefile = "gfx/interface/goals/focus_COG_force_publique_mutiny.dds"
 	}
+}
 
 
 
@@ -9153,4 +9154,4 @@ spriteTypes = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
 	}
-}
+
