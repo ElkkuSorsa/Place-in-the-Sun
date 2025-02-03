@@ -8,7 +8,8 @@ ideas = {
 				army_defence_factor = 0.05
 			}
 		}
-
+	}
+	country = {
 		FIN_jagers = {
 			picture = SWE_save_finland
 			modifier = {
@@ -18,28 +19,70 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
-
-		FIN_sotilasmiljoonat = {
-			picture = generic_neglected_military
-			available = {
-				is_subject_of = RUS
-			} 
-			targeted_modifier = {
-				tag = RUS
-				cic_to_target_factor = 0.3
-			}
+	}
+	country = {
+		FIN_towards_republic = {
+			picture = generic_democratic_drift_bonus
 			modifier = {
-				autonomy_manpower_share = -1
-				conscription_factor = -1
-				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				democratic_drift = 0.05
+				political_power_factor = 0.1
 			}
-			on_add = {
-				country_lock_all_division_template = yes
-			}	
-			on_remove = {
-				country_lock_all_division_template = no
+		}
+		}
+	country = {
+	FIN_ban_commmunism = {
+	picture = generic_communism_banned
+	modifier = {
+	communism_drift = -0.1
+	}
+	}
+	}
+		country = {
+		FIN_public_works1 = {
+			picture = FIN_the_workers_state
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		}
+		country = {
+		FIN_public_works2 = {
+			picture = FIN_the_workers_state
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+		}
+		country = {
+		FIN_public_works3 = {
+			picture = FIN_the_workers_state
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		}
+		country = {
+		FIN_conscription = {
+			picture = chi_army_corruption3
+			modifier = {
+				conscription_factor = 0.15
+			}
+		}
+	}
+	country = {
+		FIN_war_against_soviet = {
+			picture = FIN_opposition_to_winter_war
+			modifier = {
+				conscription_factor = 0.2
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+				army_defence_factor = 0.05
 			}
 		}
 	}
 }
+
  

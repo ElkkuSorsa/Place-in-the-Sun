@@ -11,6 +11,424 @@ focus_tree = {
 
     default = no
 
+    focus = {
+    id = FIN_independence_at_last
+    icon = GFX_focus_EST_national_pride_in_finland
+    x = 15
+    y = 1
+    cost = 5
+    completion_reward = {
+    add_political_power = 75
+    }
+    }
 
+    focus = {
+    id = FIN_political_debates
+    icon = GFX_focus_FIN_finnish_neutrality
+    x = 15
+    y = 2
+    cost = 5
+    prerequisite = {focus = FIN_independence_at_last}
+    completion_reward = {
+    add_political_power = 25
+    add_stability = 0.05
+    }
+    }
+
+    focus = {
+    id = FIN_favor_republic
+    icon = GFX_goal_support_democracy
+    x = 10
+    y = 3
+    cost = 10
+    mutually_exclusive = {focus = FIN_favor_monarchy}
+    prerequisite = {focus = FIN_political_debates}
+    completion_reward = {
+    add_stability = 0.05
+    add_popularity = {
+    ideology = democratic popularity = 0.15
+    }
+    add_ideas = FIN_towards_republic
+    }
+    }
+
+    focus = {
+    id = FIN_favor_monarchy
+    icon = GFX_focus_FIN_the_finnish_throne
+    x = 20
+    y = 3
+    cost = 10
+    mutually_exclusive = {focus = FIN_favor_republic}
+    prerequisite = {focus = FIN_political_debates}
+    completion_reward = {
+    
+    }
+    }
+
+    focus = {
+    id = FIN_begin_industrialization
+    icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
+    x = 15
+    y = 4
+    cost = 5
+    prerequisite = {focus = FIN_favor_republic focus = FIN_favor_monarchy}
+    completion_reward = {
+    111 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_moderate_politicss
+    icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+    x = 10
+    y = 4
+    cost = 5
+    prerequisite = {focus = FIN_favor_republic}
+    completion_reward = {
+    add_stability = 0.1
+    }
+    }
+
+    focus = {
+    id = FIN_ban_communism
+    icon = GFX_goal_generic_war_with_comintern
+    x = 17
+    y = 4
+    cost = 5
+    prerequisite = {focus = FIN_favor_republic focus = FIN_favor_monarchy}
+    completion_reward = {
+    add_stability = -0.05
+    add_popularity = {
+    ideology = communism popularity = -0.1
+    }
+
+    }
+    }
+
+    focus = {
+    id = FIN_northern_infra
+    icon = GFX_goal_generic_construct_infrastructure
+    x = 13
+    y = 5
+    cost = 5
+    prerequisite = {focus = FIN_begin_industrialization}
+    completion_reward = {
+    148 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_tampere_factories
+    icon = GFX_focus_generic_industry_3
+    x = 17
+    y = 5
+    cost = 10
+    prerequisite = {focus = FIN_begin_industrialization}
+    completion_reward = {
+    927 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    927 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = arms_factory
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_public_works
+    icon = GFX_focus_generic_workers_and_farmers_rise
+    x = 15
+    y = 5
+    cost = 10
+    prerequisite = {focus = FIN_begin_industrialization}
+    completion_reward = {
+    add_ideas = FIN_public_works1
+    930 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_industrialize_turku
+    icon = GFX_focus_generic_modernize_industry
+    x = 16
+    y = 6
+    cost = 10
+    prerequisite = {focus = FIN_tampere_factories}
+    prerequisite = {focus = FIN_public_works}
+    completion_reward = {
+    926 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+    }
+    }
+    926 = {
+    add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+    }
+    }
+    926 = {
+    add_building_construction = {
+	type = dockyard
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_support_farmers
+    icon = GFX_focus_generic_farmland
+    x = 14
+    y = 6
+    cost = 5
+    prerequisite = {focus = FIN_public_works}
+    prerequisite = {focus = FIN_northern_infra}
+    completion_reward = {
+    swap_ideas = {
+    remove_idea = FIN_public_works1
+    add_idea = FIN_public_works2
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_trade_relations
+    icon = GFX_goal_generic_positive_trade_relations
+    x = 12
+    y = 6
+    cost = 5
+    prerequisite = {focus = FIN_northern_infra}
+    completion_reward = {
+    add_ideas = free_trade
+    }
+    }
+
+    focus = {
+    id = FIN_military_factories
+    icon = GFX_goal_generic_construct_mil_factory
+    x = 18
+    y = 6
+    cost = 10
+    prerequisite = {focus = FIN_tampere_factories}
+    completion_reward = {
+    926 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_heavy_industry
+    icon = GFX_focus_generic_military_industry
+    x = 13
+    y = 7
+    cost = 5
+    prerequisite = {focus = FIN_trade_relations}
+    prerequisite = {focus = FIN_support_farmers}
+
+    completion_reward = {
+    swap_ideas = {
+    remove_idea = FIN_public_works2
+    add_idea = FIN_public_works3
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_universities
+    icon = GFX_focus_research2
+    x = 15
+    y = 7
+    cost = 10
+    prerequisite = {focus = FIN_public_works}
+
+    completion_reward = {
+    add_research_slot = 1
+    }
+    }
+
+    focus = {
+    id = FIN_introduce_conscription
+    icon = GFX_focus_generic_manpower
+    x = 12
+    y = 4
+    cost = 10
+    prerequisite = {focus = FIN_favor_republic focus = FIN_favor_monarchy}
+    completion_reward = {
+    add_ideas = FIN_conscription
+    }
+    }
+
+    focus = {
+    id = FIN_diplomatic_ties
+    icon = GFX_focus_generic_diplomatic_treaty
+    x = 8
+    y = 4
+    cost = 5
+    prerequisite = {focus = FIN_favor_republic}
+    completion_reward = {
+    add_political_power = 50
+    }
+    }
+
+    focus = {
+    id = FIN_western_diplomacy
+    icon = GFX_focus_chi_british_cooperation
+    x = 7
+    y = 5
+    cost = 4
+    prerequisite = {focus = FIN_diplomatic_ties}
+    completion_reward = {
+    add_political_power = 25
+    reverse_add_opinion_modifier = {
+    target = ENG
+    modifier = large_increase
+    }
+    reverse_add_opinion_modifier = {
+    target = FRA
+    modifier = large_increase
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_swedish_ties
+    icon = GFX_focus_SWE_swedish_finnish_defense_agreement
+    x = 9
+    y = 5
+    cost = 4
+    prerequisite = {focus = FIN_diplomatic_ties}
+    completion_reward = {
+    add_political_power = 25
+    reverse_add_opinion_modifier = {
+    target = SWE
+    modifier = large_increase
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_nordic_ties
+    icon = GFX_focus_generic_nordic_territory
+    x = 8
+    y = 6
+    cost = 4
+    prerequisite = {focus = FIN_swedish_ties focus = FIN_western_diplomacy}
+    completion_reward = {
+    add_political_power = 25
+    reverse_add_opinion_modifier = {
+    target = NOR
+    modifier = large_increase
+    }
+    reverse_add_opinion_modifier = {
+    target = DEN
+    modifier = large_increase
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_presidential_election
+    icon = GFX_focus_generic_support_the_left_right
+    x = 10
+    y = 6
+    cost = 10
+    prerequisite = {focus = FIN_moderate_politicss}
+    completion_reward = {
+    add_political_power = 100
+    }
+    }
+
+    focus = {
+    id = FIN_eastern_claims
+    icon = GFX_focus_FIN_dreams_of_expansionism
+    x = 10
+    y = 7
+    cost = 10
+    prerequisite = {focus = FIN_presidential_election}
+    prerequisite = {focus = FIN_nordic_ties}
+    completion_reward = {
+    add_state_claim = 722
+    add_state_claim = 213
+    add_state_claim = 216
+    add_state_claim = 215
+    add_war_support = 0.05
+    }
+    }
+
+    focus = {
+    id = FIN_negotiate_with_soviets
+    icon = GFX_focus_FIN_approach_the_soviets
+    x = 8
+    y = 8
+    cost = 10
+    mutually_exclusive = {focus = FIN_war_with_soviets}
+    prerequisite = {focus = FIN_eastern_claims}
+    completion_reward = {
+    add_stability = 0.05
+    }
+    }
+
+    focus = {
+    id = FIN_war_with_soviets
+    icon = GFX_focus_attack_soviet
+    x = 12
+    y = 8
+    cost = 10
+    prerequisite = {focus = FIN_eastern_claims}
+    mutually_exclusive = {focus = FIN_negotiate_with_soviets}
+    completion_reward = {
+    add_war_support = 0.1
+    add_timed_idea = { idea = FIN_war_against_soviet days = 180}
+    create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SOV
+    add_threat = 5
+    }
+    }
+    }
 
 }
+
