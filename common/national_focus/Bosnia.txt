@@ -1,11 +1,11 @@
 ﻿focus_tree = {
-    id = HUN_focus_tree
+    id = BOS_focus_tree
     country = {
         factor = 0
 
         modifier = {
             add = 50
-            tag = HUN
+            tag = BOS
         }
     }
     default = no

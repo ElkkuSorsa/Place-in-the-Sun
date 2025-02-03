@@ -23,3 +23,27 @@ country_event = {
 		name = "Ahoj, Hallo, Pasta"
 	}
 }
+
+country_event = {
+	id = austria_hungary.3
+	title = "Whispers across the Danube"
+	desc = austria_hungary.3.d
+	picture = GFX_translethania_postcard
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's pray for them"
+	}
+}
+
+country_event = {
+	id = austria_hungary.4
+	title = "Maybe, Not All is so Bad"
+	desc = austria_hungary.4.d
+	picture = GFX_translethania_postcard
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's get something to Drink"
+	}
+}

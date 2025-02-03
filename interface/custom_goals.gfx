@@ -12,9 +12,19 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/AUH/solution_of_the_landtag.dds"			
 	}
 
-		SpriteType = {
+	SpriteType = {
 	name = "GFX_goal_AUH_allow_regional_languages"
 	texturefile = "gfx/interface/goals/AUH/allow_minority_language.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_problems_with_translatheinia"
+	texturefile = "gfx/interface/goals/AUH/problems_on_translethania.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_give_jobs_to_regionals"
+	texturefile = "gfx/interface/goals/AUH/allow_minorities_in_to_government.dds"			
 	}
 
 	SpriteType = {

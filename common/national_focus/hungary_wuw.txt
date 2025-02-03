@@ -1,1 +1,12 @@
-﻿
+﻿focus_tree = {
+    id = HUN_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 50
+            tag = HUN
+        }
+    }
+    default = no
+}
