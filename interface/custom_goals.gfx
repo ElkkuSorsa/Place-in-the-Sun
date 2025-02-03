@@ -38,27 +38,29 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "GFX_goal_AUH_army_leadership_question"
-	texturefile = "gfx/interface/goals/AUH/army_leadership_question.dds"			
+		name = "GFX_goal_AUH_army_leadership_question"
+		texturefile = "gfx/interface/goals/AUH/army_leadership_question.dds"			
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_goal_unknown"
 		texturefile = "gfx/interface/goals/goal_unknown.dds"
 		legacy_lazy_load = no
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_tsar_sigma"
 		texturefile = "gfx/interface/goals/RUS/tsar_actually_sigma.dds"			
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_dugin"
 		texturefile = "gfx/interface/goals/RUS/DUGIN.dds"			
 	}
-        SpriteType = {
+    SpriteType = {
 		name = "GFX_focus_BUL_serbian_negotiation"
 		texturefile = "gfx/interface/goals/BUL/serbian_negotiation.dds"
 	}
-        SpriteType = {
+    SpriteType = {
 		name = "GFX_focus_BUL_murder_the_ottomans"
 		texturefile = "gfx/interface/goals/BUL/murder_the_ottomans.dds"
 	}
+}
