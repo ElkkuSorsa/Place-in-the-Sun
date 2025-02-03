@@ -64,7 +64,6 @@ focus_tree = {
 			custom_effect_tooltip = "In case of German invasion, we will be able to avoid war by becoming a satellite."
 		}         
 		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
@@ -172,6 +171,10 @@ focus_tree = {
 		icon = GFX_focus_BEL_government_resigns
 		x = 26
 		y = 1
+
+		allow_branch = {
+			has_country_flag = BEL_government_resign
+		}
 		
 		completion_reward = { add_political_power = 100}         
 		cost = 5
