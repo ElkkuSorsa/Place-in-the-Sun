@@ -1,0 +1,16 @@
+characters = {
+BUL_aleksandar_malinov = {
+    name = "Aleksandar Malinov"
+    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = {  }
+        expire = "1956.1.1"
+        ideology = liberalism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/BUL/aleksandar_malinov.png"
+        }
+    }
+}
+}
