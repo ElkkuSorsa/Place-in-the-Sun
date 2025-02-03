@@ -20,6 +20,13 @@ spriteTypes = {
 	}
 }
 
+spriteTypes = {
+		spriteType = {
+		name = "GFX_office_meeting_maybe_giving"
+		texturefile = "gfx/event_pictures/office_meeting_maybe_giving.dds"
+	}
+}
+
 
 
 

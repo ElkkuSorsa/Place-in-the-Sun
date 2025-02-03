@@ -21,6 +21,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_idea_bureo_nice"
+		texturefile = "gfx/interface/ideas/AUH/bureo_nice.dds"
+	}
+
+		spriteType = {
 		name = "GFX_idea_hun_magyarization"
 		texturefile = "gfx/interface/ideas/AUH/magyarization.dds"
 	}

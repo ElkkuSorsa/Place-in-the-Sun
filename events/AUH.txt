@@ -40,7 +40,7 @@ country_event = {
 	id = austria_hungary.4
 	title = "Maybe, Not All is so Bad"
 	desc = austria_hungary.4.d
-	picture = GFX_translethania_postcard
+	picture = GFX_office_meeting_maybe_giving
 	is_triggered_only = yes
 
 	option = {

@@ -34,7 +34,7 @@ focus_tree = {
 		x = 22
 		y = 2
 
-		cost = 2.9
+		cost = 2.2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}  
 
@@ -52,7 +52,7 @@ focus_tree = {
 		x = 24
 		y = 2
 
-		cost = 2.9
+		cost = 2.2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}  
 
@@ -79,7 +79,7 @@ focus_tree = {
 		x = 26
 		y = 2
 
-		cost = 2.9
+		cost = 2.2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}  
 
@@ -97,7 +97,7 @@ focus_tree = {
 		x = 23
 		y = 3
 
-		cost = 2.9
+		cost = 2.2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_solution_of_the_landtag}
 		prerequisite = {focus = AUH_allow_regional_languages}    
@@ -112,17 +112,20 @@ focus_tree = {
 
 		focus = {
 		id = AUH_give_rights_to_no_hungarian_minorities
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_eas_up_bureacoracy
 		x = 25
 		y = 3
 
-		cost = 2.9
+		cost = 2.2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_problems_with_translatheinia}
 		prerequisite = {focus = AUH_allow_regional_languages}    
 
 		completion_reward = {
-			add_political_power = 100
+				add_timed_idea = {
+				days = 90
+				idea = auh_burden_for_now_better
+			}
 		}
 	}
 

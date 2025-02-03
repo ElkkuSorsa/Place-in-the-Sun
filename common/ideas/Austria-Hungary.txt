@@ -54,6 +54,21 @@ ideas = {
 			political_advisor_cost_factor = 0.1
 			}
 		}
+
+			auh_burden_for_now_better = {
+			picture = bureo_nice
+			modifier = {
+			army_defence_against_major_factor = 0.05
+			army_attack_against_major_factor = 0.05
+			stability_factor = 0.05
+			army_chief_cost_factor = -0.1
+			navy_chief_cost_factor = -0.1
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.05
+
+			}
+		}
+
 			auh_ghostofthepast = {
 			picture = ghost_of_the_past
 			modifier = {
