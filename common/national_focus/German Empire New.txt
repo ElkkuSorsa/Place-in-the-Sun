@@ -51,7 +51,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 25
 		y = 4
-		prerequisite = { focus = GER_general_staff }
+		prerequisite = { focus = GER_general_staff focus = GER_snap_elections }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -235,6 +235,18 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_eastern_duchies
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 13
+		y = 7
+		prerequisite = { focus = GER_kingdom_of_poland }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
 		id = GER_maintain_austrian_claims
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 16
@@ -306,7 +318,87 @@ focus_tree = {
 		prerequisite = { focus = GER_legacy_of_bismarck }
 
 		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = GER_snap_elections
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 33
+		y = 3
+		prerequisite = { focus = GER_balance_constituencies }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_zentrum
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 33
+		y = 4
+		prerequisite = { focus = GER_snap_elections }
+		mutually_exclusive = { focus = GER_spd }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_new_constitution
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 37
+		y = 5
+		prerequisite = { focus = GER_spd focus = GER_zentrum }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_dissolve_kingdoms
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 38
+		y = 6
+		prerequisite = { focus = GER_new_constitution }
+		prerequisite = { focus = GER_spd }
+
+		cost = 2
+
+	}
+
+	focus = {
+		id = GER_government_reform
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 36
+		y = 6
+		prerequisite = { focus = GER_new_constitution }
+		prerequisite = { focus = GER_zentrum }
+
+		cost = 2
+
+	}
+
+	focus = {
+		id = GER_true_constitutionalism
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 37
+		y = 7
+		prerequisite = { focus = GER_new_constitution }
+
+		cost = 2
+
+	}
+
+	focus = {
+		id = GER_spd
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 41
+		y = 4
+		prerequisite = { focus = GER_snap_elections }
+		mutually_exclusive = { focus = GER_zentrum }
+
+		cost = 5
 
 	}
 }
