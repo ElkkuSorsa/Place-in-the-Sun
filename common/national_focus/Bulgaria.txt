@@ -46,7 +46,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_repress_the_turkic_minority
-		icon = GFX_focus_generic_attack_turkey
+		icon = GFX_focus_BUL_murder_the_ottomans
 		x = 7
 		y = 3
 		prerequisite = { focus = BUL_question_of_the_turkish_minority }
@@ -149,7 +149,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_negotiations_whit_serbia
-		icon = GFX_goal_serbian_negotiation
+		icon = GFX_focus_BUL_serbian_negotiation
 		x = 12
 		y = 4
 		prerequisite = { focus = BUL_start_prepearing_against_the_ottomans }
