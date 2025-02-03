@@ -131,7 +131,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_reinforce_kuk_gendarmarie
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_pay_more_gendarm
 		x = 24
 		y = 4
 
@@ -141,7 +141,10 @@ focus_tree = {
 		prerequisite = {focus = AUH_give_rights_to_no_hungarian_minorities}    
 
 		completion_reward = {
-			add_political_power = 100
+		swap_ideas = { 
+    	remove_idea = AUH_landtags_in_active_revolt
+    	add_idea = AUH_landtags_in_active_revolt_better
+    }
 		}
 	}
 
