@@ -46,7 +46,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_
+		id = FRA_political_instability
 		icon = GFX_focus_BEL_belgian_special_forces
 		x = 25
 		y = 3
@@ -62,11 +62,27 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_political_instability
+		id = FRA_champagne_riots
 		icon = GFX_focus_BEL_belgian_special_forces
 		x = 25
-		y = 3
-		prerequisite = { focus = FRA_maintain_liberal_coalition focus = FRA_social_conservatist_coalition } 
+		y = 4
+		prerequisite = { focus = FRA_political_instability } 
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_negotiate_with_rioters
+		icon = GFX_focus_BEL_belgian_special_forces
+		x = 26
+		y = 5
+		prerequisite = { focus = FRA_champagne_riots } 
 		
 		completion_reward = {
 			add_political_power = 100
