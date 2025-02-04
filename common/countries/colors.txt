@@ -62,3 +62,8 @@ BUL = {
 	color = rgb { 40 170 20 }
 	color_ui = rgb { 40 170 20 }
 }
+
+EGY = {
+	color = rgb { 240 126 126 }
+	color_ui = rgb { 240 126 126 }
+}
