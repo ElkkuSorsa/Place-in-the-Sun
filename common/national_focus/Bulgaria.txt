@@ -332,4 +332,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
+
+		focus = {
+		id = BUL_SIEG_HEIL
+		icon = GFX_focus_GER_new_reforms_in_the_wehrmacht
+		x = 16
+		y = 10
+
+			available = {
+			always = no
+		}
+        
+		prerequisite = { focus = BUL_defeat_in_the_1st_balkan_war }
+		completion_reward = { add_stability = 10000000
+		add_war_support = 1000000
+		}         
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
 }

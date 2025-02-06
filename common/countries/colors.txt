@@ -64,6 +64,6 @@ BUL = {
 }
 
 EGY = {
-	color = rgb { 240 126 126 }
-	color_ui = rgb { 240 126 126 }
+	color = rgb { 180 40 40 }
+	color_ui = rgb { 180 40 40 }
 }
