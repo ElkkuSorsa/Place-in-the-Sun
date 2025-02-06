@@ -274,6 +274,27 @@ set_autonomy = {
 	set_compliance = 40
 }
 
+736 = {
+	start_resistance = no									
+	set_compliance = 40
+}
+
+853 = {
+	start_resistance = no									
+	set_compliance = 65
+}
+
+852 = {
+	start_resistance = yes					
+	set_compliance = 25
+}
+
+850 = {
+	start_resistance = yes					
+	set_compliance = 15
+	set_resistance = 40
+}
+
 
 
 

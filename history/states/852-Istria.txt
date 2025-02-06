@@ -16,11 +16,10 @@ state = {
 			infrastructure = 3
 			dockyard = 1
 			11564 = {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
 		add_core_of = ITA
-		add_core_of = AUH
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
