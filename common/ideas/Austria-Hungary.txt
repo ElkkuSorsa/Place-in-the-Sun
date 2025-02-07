@@ -55,7 +55,18 @@ ideas = {
 			stability_weekly = -0.001
 			drift_defence_factor = -0.1
 			industrial_capacity_factory = -0.05
+			}
+		}
 
+			AUH_well_oiled_machine = {
+			picture = landtags_in_revolt
+			modifier = {
+			stability_factor = 0.025
+			line_change_production_efficiency_factor = 0.025
+			production_factory_start_efficiency_factor = 0.025
+			industrial_capacity_factory = 0.025
+			research_speed_factor = 0.025
+			production_speed_buildings_factor = 0.025
 			}
 		}
 			auh_Multiethnicity = {
