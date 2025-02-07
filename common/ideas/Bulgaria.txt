@@ -123,4 +123,15 @@ country = {
 			winter_attrition = -0.1
 		    }
         }
+			bitter_looser = {
+
+            picture = NOR_norsk_Spraengstofindustri
+
+			modifier = {
+            army_core_attack_factor = 0.25
+			army_org = 10
+			army_core_defence_factor = 0.15
+		    }
+        }
+
     }
