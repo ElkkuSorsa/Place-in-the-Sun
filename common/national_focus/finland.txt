@@ -41,7 +41,6 @@ focus_tree = {
     x = 10
     y = 3
     cost = 10
-    mutually_exclusive = {focus = FIN_favor_monarchy}
     prerequisite = {focus = FIN_political_debates}
     completion_reward = {
     add_stability = 0.05
@@ -58,10 +57,12 @@ focus_tree = {
     x = 20
     y = 3
     cost = 10
-    mutually_exclusive = {focus = FIN_favor_republic}
     prerequisite = {focus = FIN_political_debates}
     completion_reward = {
-    
+    add_political_power = 50
+    add_popularity = {
+    ideology = neutrality popularity = 0.15
+    }
     }
     }
 
@@ -427,6 +428,51 @@ focus_tree = {
     target = SOV
     add_threat = 5
     }
+    }
+    }
+
+    focus = {
+    id = FIN_rally_support
+    icon = GFX_focus_FIN_the_finnish_throne
+    x = 20
+    y = 4
+    cost = 10
+    prerequisite = {focus = FIN_favor_monarchy}
+    completion_reward = {
+    add_political_power = 75
+    add_stability = 0.05
+    add_war_support = 0.05
+    add_popularity = {
+    ideology = neutrality popularity = 0.1
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_empower_white_guard
+    icon = GFX_focus_FIN_the_finnish_throne
+    x = 22
+    y = 4
+    cost = 10
+    prerequisite = {focus = FIN_favor_monarchy}
+    completion_reward = {
+    add_stability = -0.05
+    add_popularity = {
+    ideology = neutrality popularity = 0.05
+    }
+    add_ideas = FIN_suojeluskunta
+    }
+    }
+
+    focus = {
+    id = FIN_the_coronation
+    icon = GFX_focus_FIN_the_finnish_throne
+    x = 22
+    y = 4
+    cost = 10
+    prerequisite = {focus = FIN_favor_monarchy}
+    completion_reward = {
+    
     }
     }
 
