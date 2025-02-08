@@ -16,7 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_national_revitalization
-		icon = GFX_focus_BUL_the_third_bulgarian_empire
+		icon = GFX_goal_national_rev
 		x = 9
 		y = 1
 		
@@ -31,7 +31,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_question_of_the_turkish_minority
-		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		icon = GFX_goal_turkish_question
 		x = 5
 		y = 2
 		
@@ -225,7 +225,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_Going_Alone
-		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		icon = GFX_goal_going_alone
 		x = 14
 		y = 5
 
@@ -243,7 +243,7 @@ focus_tree = {
        
         focus = {
 		id = BUL_Prepearing_For_The_War_Of_Liberation
-		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		icon = GFX_goal_prepeare_war_liberation
 		x = 13
 		y = 6
 
@@ -256,7 +256,7 @@ focus_tree = {
 
         focus = {
 		id = BUL_logistic_planning
-		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+		icon = GFX_goal_logistic_planning
 		x = 15
 		y = 6
 
