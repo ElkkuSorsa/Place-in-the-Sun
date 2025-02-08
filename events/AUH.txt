@@ -47,3 +47,15 @@ country_event = {
 		name = "Let's get something to Drink"
 	}
 }
+
+country_event = {
+	id = austria_hungary.5
+	title = "Future is Now"
+	desc = austria_hungary.5.d
+	picture = GFX_office_meeting_maybe_giving
+	is_triggered_only = yes
+
+	option = {
+		name = "Now we can't just stop"
+	}
+}

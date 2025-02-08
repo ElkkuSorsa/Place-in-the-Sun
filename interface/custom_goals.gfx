@@ -28,6 +28,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_killing_unloyal_officers"
+	texturefile = "gfx/interface/goals/AUH/killing_unloyal_officers.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_give_jobs_to_regionals"
 	texturefile = "gfx/interface/goals/AUH/allow_minorities_in_to_government.dds"			
 	}
