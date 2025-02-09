@@ -2,7 +2,7 @@ ideas = {
 
     	country = {
 
-        ITA_problema_del_sud_1 = {
+        ITA_southern_problem_1 = {
 		picture = generic_economic_increase
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -10,37 +10,53 @@ ideas = {
 			global_building_slots_factor = -0.2
             production_factory_efficiency_gain_factor = -0.1
             production_factory_max_efficiency_factor = -0.1
+			production_speed_buildings_factor = -0.1
 			}
 		}
-        ITA_problema_del_sud_2 = {
+        ITA_southern_problem_2 = {
 		picture = generic_economic_increase
 		modifier = {
-			consumer_goods_factor = 0.5
-			industrial_capacity_factory = -0.5
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
 			global_building_slots_factor = -0.1
             production_factory_efficiency_gain_factor = -0.1
-            production_factory_max_efficiency_factor = 0.1
+            production_factory_max_efficiency_factor = -0.1
+			production_speed_buildings_factor = -0.05
 			}
 		}
-        ITA_problema_del_sud_3 = {
+        ITA_southern_problem_3 = {
 		picture = generic_economic_increase
 		modifier = {
-			consumer_goods_factor = 0.5
-			industrial_capacity_factory = -0.5
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.05
 			global_building_slots_factor = -0.1
-            production_factory_efficiency_gain_factor = -0.5
-            production_factory_max_efficiency_factor = -0.5
+            production_factory_efficiency_gain_factor = -0.05
+            production_factory_max_efficiency_factor = -0.05
+			production_speed_buildings_factor = -0.05
 			}
 		}
-        ITA_problema_del_sud_3 = {
+        ITA_southern_problem_4 = {
 		picture = MEX_politicised_army
 		modifier = {
-			
+			industrial_capacity_factory = -0.05
+			global_building_slots_factor = -0.1
+            production_factory_efficiency_gain_factor = -0.05
+            production_factory_max_efficiency_factor = -0.05
 			
 			}
 		}
-         
-
+	
+        ITA_under_supplied_army = {
+		picture = MEX_politicised_army
+		modifier = {
+		conscription_factor = -0.15
+		army_org_factor = -0.12
+		army_defence_factor = -0.15
+		supply_consumption_factor = -0.15
+		army_attack_factor = -0.20
+		army_speed_factor = -0.05
+		}
+		}
 
 
 

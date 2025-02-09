@@ -14,7 +14,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUH
 		add_core_of = ITA
 		add_core_of = LBV
 		add_claim_by = AUH

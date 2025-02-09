@@ -28,6 +28,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_killing_unloyal_officers"
+	texturefile = "gfx/interface/goals/AUH/killing_unloyal_officers.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_give_jobs_to_regionals"
 	texturefile = "gfx/interface/goals/AUH/allow_minorities_in_to_government.dds"			
 	}
@@ -120,5 +125,25 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_balkan_cooperation"
 		texturefile = "gfx/interface/goals/BUL/balkan_cooperation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_turkish_question"
+		texturefile = "gfx/interface/goals/BUL/turkish_question.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_national_rev"
+		texturefile = "gfx/interface/goals/BUL/national_rev.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_logistic_planning"
+		texturefile = "gfx/interface/goals/BUL/logistic_planning.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_prepeare_war_liberation"
+		texturefile = "gfx/interface/goals/BUL/prepeare_war_liberation.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_going_alone"
+		texturefile = "gfx/interface/goals/BUL/going_alone.dds"
 	}
 }
