@@ -8,19 +8,18 @@ state={
 	state_category = rural
 	
 	resources={
-		aluminium=1
 	}
 
 	history={
-		owner = LCH
+		owner = AUH
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
 		}
 		victory_points = {
 			13674 1
 		}
-		add_core_of = LCH
+		add_core_of = AUH
 	}
 
 	provinces={

@@ -6,17 +6,17 @@ state = {
 	state_category = pastoral
 	
 	history = {
-		owner = ITA
+		owner = HUN
 		victory_points = { #Zara/Zadar
 			11901 5 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			11901 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
-		add_core_of = YUG
+		add_core_of = HUN
 		add_core_of = CRO
 		add_core_of = DAL
 		add_core_of = LBV
