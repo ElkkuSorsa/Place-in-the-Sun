@@ -20,13 +20,15 @@ state = {
 		} 
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
 		}
 		
 	}
 
 	provinces = {
-		682 3680 6685 9624 9643 11610
+		682 3670 3680 6685 9624 9643 11610
 	}
 
 	local_supplies = 0.0 

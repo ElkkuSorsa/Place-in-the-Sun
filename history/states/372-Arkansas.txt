@@ -18,6 +18,7 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = USA
+		add_core_of = CSA
 		victory_points = {
 			12489 1 
 		}
@@ -25,7 +26,7 @@ state={
 	}
 
 	provinces={
-		1503 1646 4444 4567 4597 4625 7485 7543 7586 10355 10477 12458 12489 12778 
+		1503 1646 4444 4567 4597 4625 7485 7543 7586 10355 10477 12458 12489 12778 13803
 	}
 
 	local_supplies=9.0 

@@ -13,7 +13,6 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
-	ITA_problema_del_sud_1
 }
 
 
@@ -48,7 +47,6 @@ set_popularities = {
 		neutrality = 25
 	}
 }
-
 
 
 

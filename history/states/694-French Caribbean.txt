@@ -14,9 +14,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 1
-			177 = {
-				naval_base = 3
-			}
 			9377 = {
 				naval_base = 1
 			}
@@ -24,7 +21,7 @@ state={
 	}
 	
 	provinces={
-		177 9377 13084 
+		9377
 	}
 
 	local_supplies=3.0 

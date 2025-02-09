@@ -8,7 +8,6 @@ state={
 			infrastructure = 1
 			10548 = {
 				naval_base = 1
-
 			}
 
 		}
@@ -17,10 +16,10 @@ state={
 	}
 
 	provinces={
-		917 1411 1799 1872 4678 5403 10548 12508 12571 
+		1799 1872 5403 10548 12508 12571 13718 13719
 	}
 	manpower=27681
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 	local_supplies=3.000
 }

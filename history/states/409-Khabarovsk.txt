@@ -10,9 +10,9 @@ state = {
 	state_category = rural
 
 	history = {
-		owner = RUS
+		owner = SOV
 		victory_points = {
-			12189 1
+			12189 5
 		}
 		buildings = {
 			infrastructure = 2
@@ -22,7 +22,7 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = RUS
+		add_core_of = SOV
 		add_core_of = FER
 		add_core_of = VLA
 	}

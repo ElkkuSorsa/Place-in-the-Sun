@@ -4,9 +4,12 @@ state={
 	name="STATE_814"
 
 	history={
-		owner = RUS
+		owner = LIT
 		victory_points = {
 			11312 1 #Marijampole
+		}
+		victory_points = {
+			3272 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -20,9 +23,9 @@ state={
 	}
 
 	provinces={
-		3272 6281 6407 11312 
+		3272 6281 11312 
 	}
-	manpower=219740
+	manpower=189740
 	buildings_max_level_factor=1.000
 	state_category=town
 }

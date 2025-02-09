@@ -1,7 +1,7 @@
 ﻿capital = 48
 set_research_slots = 3
 set_stability = 0.36
-set_war_support = 0.44
+set_war_support = 0.54
 set_convoys = 20
 
 recruit_character = BUL_aleksandar_malinov
@@ -33,4 +33,5 @@ set_popularities = {
 	fascism = 0
 	communism = 5
 	neutrality = 20
+}
 }

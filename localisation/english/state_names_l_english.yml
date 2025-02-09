@@ -1,0 +1,2001 @@
+﻿l_english:
+ # NOTE FOR TRANSLATORS: Every entry marked with '#KSR' is either for a new state or an altered vanilla name :)
+ STATE_1:0 "Corsica"
+ STATE_2:1 "Lazio"
+ STATE_3:1 "Swiss Plateau"
+ STATE_4:0 "Lower Austria"
+ STATE_5:0 "Masuren" #KSR
+ STATE_5_POL:0 "Mazury" #KSR
+ STATE_6:0 "Vlaanderen"
+ STATE_6_FRA:0 "Flandre" #KSR
+ STATE_7:0 "Holland"
+ STATE_8:0 "Luxemburg"
+ STATE_9:0 "Bohemia"
+ STATE_10:0 "Warszawa" #KSR
+ STATE_10_GER:0 "Warschau" #KSR
+ STATE_10_LIT:0 "Varšuva" #KSR
+ STATE_11:0 "Kaunas" #KSR
+ STATE_11_POL:0 "Kowno" #KSR
+ STATE_11_SMG:0 "Kauns" #KSR
+ STATE_11_BLR:0 "Kowna" #KSR
+ STATE_12:0 "Vidzeme"
+ STATE_13:1 "Pärnu" #KSR
+ STATE_13_LAT:0 "Pērnava" #KSR
+ STATE_14:0 "Brittany"
+ STATE_15:0 "Normandy"
+ STATE_16:0 "Ile de France"
+ STATE_17:1 "Franche-Comte"
+ STATE_18:0 "Champagne"
+ STATE_19:0 "Aquitaine"
+ STATE_20:0 "Rhone"
+ STATE_21:1 "Bouches-du-Rhône" #KSR
+ STATE_21_ITA:1 "Bocche del Rodano" #KSR
+ STATE_22:0 "Languedoc"
+ STATE_23:0 "Poitou"
+ STATE_24:0 "Centre"
+ STATE_25:0 "Limousin"
+ STATE_26:0 "Auvergne"
+ STATE_27:0 "Bourgogne"
+ STATE_28:1 "Alsace-Lorraine" #KSR
+ STATE_28_GER:0 "Elsass–Lothringen" #KSR
+ STATE_29:1 "Nord-Pas-de-Calais"
+ STATE_30:0 "Loire"
+ STATE_31:0 "Midi Pyrenees"
+ STATE_32:0 "Alpes"
+ STATE_33:0 "Centre-Sud"
+ STATE_34:0 "Wallonie"
+ STATE_35:0 "Brabant"
+ STATE_36:0 "Friesland"
+ STATE_37:0 "Sjaelland"
+ STATE_38:0 "Gävleborg"
+ STATE_39:1 "Alto Adige"
+ STATE_40:1 "Altai Krai"
+ STATE_41:0 "Madrid"
+ STATE_42:0 "Moselland"
+ STATE_43:0 "Northern Hungary"
+ STATE_44:0 "Albania"
+ STATE_45:0 "Vojvodina" #KSR
+ STATE_45_HUN:0 "Vajdaság" #KSR
+ STATE_46:0 "Muntenia"
+ STATE_47:0 "Attica"
+ STATE_48:0 "Sofia"
+ STATE_49:0 "Ankara"
+ STATE_50:0 "Württemberg"
+ STATE_51:0 "Rhineland"
+ STATE_51_FRA:0 "Rhinanie" #KSR
+ STATE_52:0 "Oberbayern"
+ STATE_53:0 "Niederbayern"
+ STATE_54:0 "Franken"
+ STATE_55:0 "Hessen"
+ STATE_56:0 "Weser-Ems"
+ STATE_57:0 "Westfalen"
+ STATE_58:1 "Holstein"
+ STATE_58_DEN: "Holsten"
+ STATE_59:0 "Hannover"
+ STATE_60:0 "Thüringen"
+ STATE_61:0 "Mecklenburg"
+ STATE_62:1 "Vorpommern"
+ STATE_63:0 "Köslin" #KSR
+ STATE_63_POL:0 "Koszalin" #KSR
+ STATE_64:0 "Brandenburg"
+ STATE_65:0 "Sachsen"
+ STATE_66:0 "Breslau" #KSR
+ STATE_66_POL:0 "Wrocław" #KSR
+ STATE_67:0 "Oberschlesien" #KSR
+ STATE_67_POL:0 "Górny Śląsk" #KSR
+ STATE_68:0 "Küstrin" #KSR
+ STATE_68_POL:0 "Kostrzyn nad Odrą" #KSR
+ STATE_69:0 "Sudetenland"
+ STATE_70:0 "Žilina" #KSR
+ STATE_70_HUN:0 "Zsolna" #KSR
+ STATE_71:0 "Poprad" #KSR
+ STATE_71_HUN:0 "Poprád" #KSR
+ STATE_72:0 "Trans-Olza" #KSR
+ STATE_72_POL:0 "Zoalzie" #KSR
+ STATE_72_GER:0 "Olsa-Gebiet" #KSR
+ STATE_73:0 "Mukačevo" #KSR
+ STATE_73_CRP:0 "Mukachovo" #KSR
+ STATE_73_HUN:0 "Munkács" #KSR
+ STATE_73_SOV:0 "Mukachevo" #KSR
+ STATE_74:0 "Eastern Sudetenland"
+ STATE_75:0 "Moravia"
+ STATE_76:0 "North Transylvania"
+ STATE_77:0 "Dobruja" #KSR
+ STATE_77_ROM:0 "Dobrogea" #KSR
+ STATE_78:0 "Bessarabia"
+ STATE_79:0 "Moldova"
+ STATE_80:0 "Chernivtsi" #KSR
+ STATE_80_SOV:0 "Chernovtsy" #KSR
+ STATE_80_ROM:0 "Cernauti" #KSR
+ STATE_80_MOL:0 "Cernauti" #KSR
+ STATE_80_AUS:0 "Czernowitz" #KSR
+ STATE_81:0 "Oltenia"
+ STATE_82:0 "Banat"
+ STATE_83:0 "Crisana"
+ STATE_84:0 "Transylvania"
+ STATE_85:0 "Gdańsk" #KSR
+ STATE_85_GER:0 "Danzig" #KSR
+ STATE_86:0 "Poznań" #KSR
+ STATE_86_GER:0 "Posen" #KSR
+ STATE_87:1 "Łódz" #KSR
+ STATE_87_GER:0 "Litzmannstadt" #KSR
+ STATE_87_LIT:0 "Lodzė" #KSR
+ STATE_88:1 "Kraków" #KSR
+ STATE_88_AUS:0 "Krakau" #KSR
+ STATE_88_HUN:0 "Krakau" #KSR
+ STATE_88_LIT:0 "Krokuva" #KSR
+ STATE_89:0 "Stanyslaviv" #KSR
+ STATE_89_POL:0 "Stanisławów" #KSR
+ STATE_89_SOV:0 "Stanislav" #KSR
+ STATE_89_AUS:0 "Stanislau" #KSR
+ STATE_90:0 "Kielce"
+ STATE_91:0 "Lviv" #KSR
+ STATE_91_POL:0 "Lwów" #KSR
+ STATE_91_SOV:0 "Lvov" #KSR
+ STATE_91_LIT:0 "Lvovas" #KSR
+ STATE_91_AUS:0 "Lemberg" #KSR
+ STATE_92:0 "Lublin"
+ STATE_93:0 "Volyn" #KSR
+ STATE_93_POL:0 "Wołyń" #KSR
+ STATE_93_SOV:0 "Volyn" #KSR
+ STATE_93_LIT:0 "Voluinė" #KSR
+ STATE_94:0 "Pinsk" #KSR
+ STATE_94_POL:0 "Pińsk" #KSR
+ STATE_94_LIT:0 "Pinskas" #KSR
+ STATE_95:0 "Baranavichy" #KSR
+ STATE_95_POL:0 "Baranowicze" #KSR
+ STATE_95_LIT:0 "Baranovičiai" #KSR
+ STATE_95_SOV:0 "Baranovichi" #KSR
+ STATE_96:1 "Viliejka" #KSR
+ STATE_96_POL:0 "Wilejka" #KSR
+ STATE_96_LIT:0 "Vileika" #KSR
+ STATE_96_SOV:0 "Vileika" #KSR
+ STATE_97:0 "Białystok" #KSR
+ STATE_97_LIT:0 "Balstogė" #KSR
+ STATE_97_SOV:0 "Belostok" #KSR
+ STATE_97_GER:0 "Bjelostock" #KSR
+ STATE_97_BLR:0 "Bielastok" #KSR
+ STATE_98:0 "Płock" #KSR
+ STATE_98_GER:0 "Schröttersburg" #KSR
+ STATE_99:1 "Jylland"
+ STATE_100:0 "Iceland"
+ STATE_101:0 "Greenland"
+ STATE_102:1 "Kranjska" #KSR
+ STATE_103:0 "Dalmatia" #KSR
+ STATE_103_ITA:0 "Dalmazia" #KSR
+ STATE_104:0 "Bosnia"
+ STATE_105:0 "Montenegro"
+ STATE_106:0 "Macedonia"
+ STATE_107:0 "Serbia"
+ STATE_108:0 "Morava"
+ STATE_109:0 "Croatia"
+ STATE_110:2 "Oslofjord"
+ STATE_111:0 "Uusimaa"
+ STATE_111_SWE: "Nyland"
+ STATE_112:0 "Lisbon"
+ STATE_113:0 "Leinster"
+ STATE_114:1 "Sardegna"
+ STATE_115:1 "Sicilia"
+ STATE_116:0 "Malta"
+ STATE_117:0 "Campania"
+ STATE_118:0 "Gibraltar"
+ STATE_119:0 "Northern Ireland"
+ STATE_120:0 "Scottish Highlands"
+ STATE_121:0 "Lothian"
+ STATE_122:0 "Wales"
+ STATE_123:1 "South-West England"
+ STATE_124:0 "Gotland"
+ STATE_125:0 "East Anglia"
+ STATE_126:0 "Greater London Area"
+ STATE_127:0 "Sussex"
+ STATE_128:0 "West Midlands"
+ STATE_129:0 "East Midlands"
+ STATE_130:0 "Yorkshire"
+ STATE_130_DEN: "Jorvik"
+ STATE_131:1 "Northumberland"
+ STATE_132:0 "Lancashire"
+ STATE_133:0 "Lanark"
+ STATE_134:0 "Connaught"
+ STATE_135:0 "Munster"
+ STATE_136:0 "Aberdeenshire"
+ STATE_137:0 "Crimea"
+ STATE_138:1 "Skåne"
+ STATE_138_DEN: "Skaanelandene"
+ STATE_139:0 "Småland"
+ STATE_140:0 "Västergötland"
+ STATE_141:1 "Södermanland"
+ STATE_142:0 "Vestlandet"
+ STATE_143:1 "Trøndelag"
+ STATE_144:0 "Nordland"
+ STATE_145:0 "Åland"
+ STATE_146:0 "Karjala" #KSR
+ STATE_146_SWE: "Karelen" #KSR
+ STATE_146_SOV: "Kareliya" #KSR
+ STATE_147:0 "Salla"
+ STATE_148:0 "Lappi"
+ STATE_148_SWE: "Lappland"
+ STATE_149:1 "Vaasa"
+ STATE_149_SWE: "Vasa"
+ STATE_150:1 "Kuopio"
+ STATE_151:1 "Eastern Swiss Alps"
+ STATE_152:0 "Upper Austria"
+ STATE_153:0 "Tyrol"
+ STATE_154:0 "Alföld"
+ STATE_155:0 "Transdanubia"
+ STATE_156:0 "Calabria"
+ STATE_157:0 "Abruzzo"
+ STATE_158:1 "Piemonte" #KSR
+ STATE_158_FRA:1 "Piémont" #KSR
+ STATE_159:1 "Lombardia"
+ STATE_160:0 "Veneto"
+ STATE_161:0 "Emilia" #KSR
+ STATE_162:1 "Toscana"
+ STATE_163:1 "Zadar"
+ STATE_163_ITA:0 "Zara"
+ STATE_164:0 "Dodecanese"
+ STATE_164_ITA:0 "Dodecaneso"
+ STATE_165:1 "Cataluña"
+ STATE_166:1 "Western Aragón"
+ STATE_167:0 "Valencia"
+ STATE_168:0 "Murcia"
+ STATE_169:1 "Sevilla"
+ STATE_170:0 "Extremadura"
+ STATE_171:0 "Galicia"
+ STATE_172:1 "Navarra"
+ STATE_173:0 "Granada"
+ STATE_174:1 "León"
+ STATE_175:1 "Ciudad Real"
+ STATE_176:1 "Burgos"
+ STATE_177:1 "Islas Baleares"
+ STATE_178:1 "Islas Canarias"
+ STATE_179:0 "Beja"
+ STATE_180:0 "Porto"
+ STATE_181:0 "Guarda"
+ STATE_182:0 "Crete"
+ STATE_183:0 "Cyprus"
+ STATE_184:0 "West Thrace" #KSR
+ STATE_185:0 "Epirus"
+ STATE_186:0 "Peloponnese"
+ STATE_187:0 "Aegean Islands"
+ STATE_188:0 "Klaipeda" #KSR
+ STATE_188_POL:0 "Kłajpeda" #KSR
+ STATE_188_SMG:0 "Klaipieda" #KSR
+ STATE_188_BLR:0 "Klajpeda" #KSR
+ STATE_188_GER:0 "Memel" #KSR
+ STATE_189:0 "Šiauliai" #KSR
+ STATE_189_POL:0 "Szawle" #KSR
+ STATE_189_SMG:0 "Šiaulē" #KSR
+ STATE_189_BLR:0 "Shavli" #KSR
+ STATE_190:0 "Kurzeme"
+ STATE_191:0 "Tartu"
+ STATE_192:0 "Odesa" #KSR
+ STATE_192_SOV:0 "Odessa" #KSR
+ STATE_193:0 "Chernihiv" #KSR
+ STATE_193_SOV:0 "Chernigov" #KSR
+ STATE_193_LIT:0 "Černihivas" #KSR
+ STATE_193_BLR:0 "Charnihau" #KSR
+ STATE_193_POL:0 "Czernihów" #KSR
+ STATE_194:0 "Mazyr" #KSR
+ STATE_194_LIT:0 "Mozyrius" #KSR
+ STATE_194_POL:0 "Mozyrz" #KSR
+ STATE_194_SOV:0 "Mozyr" #KSR
+ STATE_195:0 "Sankt-Peterburg" #KSR
+ STATE_195_SOV_STALINIST:0 "Leningrad" #KSR
+ STATE_195_SOV_TSARIST:0 "Petrograd" #KSR
+ STATE_195_FIN:0 "Pietari" #KSR
+ STATE_195_GER_RENAMED:0 "Ludendorff" #KSR
+ STATE_196:0 "Nova Kakhovka" #KSR
+ STATE_196_SOV:0 "Novaya Kakhovka" #KSR
+ STATE_197:0 "Mykolaiv" #KSR
+ STATE_197_SOV:0 "Nikolaev" #KSR
+ STATE_197_LIT:0 "Mykolajivas" #KSR
+ STATE_198:0 "Vinnytsia" #KSR
+ STATE_198_POL:0 "Winnica" #KSR
+ STATE_198_SOV:0 "Vinnitsa" #KSR
+ STATE_198_LIT:0 "Vinica" #KSR
+ STATE_199:0 "Proskuriv" #KSR
+ STATE_199_POL:0 "Płoskirów" #KSR
+ STATE_199_SOV:0 "Proskurov" #KSR
+ STATE_199_LIT:0 "Proskurovas" #KSR
+ STATE_200:0 "Zaporizhzhia" #KSR
+ STATE_200_SOV:0 "Zaporozhye" #KSR
+ STATE_201:0 "Zhytomyr" #KSR
+ STATE_201_POL:0 "Żytomierz" #KSR
+ STATE_201_SOV:0 "Zhitomir" #KSR
+ STATE_201_LIT:0 "Žitomyras" #KSR
+ STATE_202:0 "Kyiv" #KSR
+ STATE_202_SOV:0 "Kiev" #KSR
+ STATE_202_POL:0 "Kijów" #KSR
+ STATE_202_LIT:0 "Kyjivas" #KSR
+ STATE_203:0 "Cherkasy" #KSR
+ STATE_203_POL:0 "Czerkasy" #KSR
+ STATE_203_LIT:0 "Čerkasai" #KSR
+ STATE_204:0 "Babruysk" #KSR
+ STATE_204_SOV:0 "Bobruisk" #KSR
+ STATE_204_LIT:0 "Bobruiskas" #KSR
+ STATE_204_POL:0 "Bobrujsk" #KSR
+ STATE_205:0 "Kaluga"
+ STATE_206:0 "Minsk" #KSR
+ STATE_206_POL:0 "Mińsk" #KSR
+ STATE_206_LIT:0 "Minskas" #KSR
+ STATE_207:0 "Vicebsk" #KSR
+ STATE_207_SOV:0 "Vitebsk" #KSR
+ STATE_207_LIT:0 "Vitebskas" #KSR
+ STATE_207_POL:0 "Witebsk" #KSR
+ STATE_207_UKR:0 "Vitebsk" #KSR
+ STATE_208:0 "Luga"
+ STATE_209:0 "Pskov"
+ STATE_210:0 "Nevel" #KSR
+ STATE_210_LIT:0 "Nevelis" #KSR
+ STATE_211:0 "Burgas"
+ STATE_212:0 "Plovdiv"
+ STATE_213:0 "Murmansk"
+ STATE_213_FIN: "Kuolan Niemimaa"
+ STATE_214:0 "Arkhangelsk"
+ STATE_215:0 "Onega"
+ STATE_216:0 "Olonets"
+ STATE_217:0 "Volgograd" #KSR
+ STATE_217_SOV_STALINIST:0 "Stalingrad" #KSR
+ STATE_217_SOV_TSARIST:0 "Tsaritsyn" #KSR
+ STATE_217_SOV_TROTSKYIST:0 "Trotskygrad" #KSR
+ STATE_217_SOV_BUKHARINIST:0 "Bukharino" #KSR
+ STATE_217_GER_RENAMED:0 "Hindenburg" #KSR
+ STATE_218:0 "Rostov-na-Donu" #KSR
+ STATE_218_UKR:0 "Rostiv" #KSR
+ STATE_219:0 "Moskva" #KSR
+ STATE_220:0 "Kursk" #KSR
+ STATE_220_LIT:0 "Kurskas" #KSR
+ STATE_221:0 "Kharkiv" #KSR
+ STATE_221_SOV:0 "Kharkov" #KSR
+ STATE_221_LIT:0 "Charkovas" #KSR
+ STATE_222:0 "Oryol" #KSR
+ STATE_223:0 "Tula"
+ STATE_224:0 "Bryansk" #KSR
+ STATE_224_LIT:0 "Brianskas" #KSR
+ STATE_225:0 "Sumy" #KSR
+ STATE_225_LIT:0 "Sumai" #KSR
+ STATE_226:0 "Dnipropetrovsk" #KSR
+ STATE_226_SOV_TSARIST:0 "Yekaterinoslav" #KSR
+ STATE_226_LIT:0 "Dniepropetrovskas" #KSR
+ STATE_227:0 "Donetsk" #KSR
+ STATE_227_SOV_STALINIST:0 "Stalino" #KSR
+ STATE_227_SOV_TSARIST:0 "Yuzovka" #KSR
+ STATE_227_SOV_TROTSKYIST:0 "Trotsk" #KSR
+ STATE_228:0 "Luhansk" #KSR
+ STATE_228_SOV:0 "Lugansk" #KSR
+ STATE_228_SOV_STALINIST:0 "Voroshilovgrad" #KSR
+ STATE_229:1 "Azerbaijan"
+ STATE_230:0 "Armenia"
+ STATE_231:0 "Georgia"
+ STATE_232:1 "Dagestan"
+ STATE_233:1 "Sochi"
+ STATE_234:1 "Krasnodar"
+ STATE_235:0 "Stavropol"
+ STATE_236:0 "Astrakhan"
+ STATE_237:1 "Kalmykia"
+ STATE_238:0 "Volgodonsk"
+ STATE_239:0 "Saratov"
+ STATE_240:0 "Stary Oskol" #KSR
+ STATE_240_UKR:0 "Stary Oskil" #KSR
+ STATE_240_LIT:0 "Stary Oskolas" #KSR
+ STATE_241:0 "Krychaw" #KSR
+ STATE_241_SOV:0 "Krichev" #KSR
+ STATE_241_LIT:0 "Kryčavas" #KSR
+ STATE_241_POL:0 "Krzyczew" #KSR
+ STATE_241_UKR:0 "Krychiv" #KSR
+ STATE_242:0 "Smolensk" #KSR
+ STATE_242_LIT:0 "Smolenskas" #KSR
+ STATE_242_POL:0 "Smoleńsk" #KSR
+ STATE_242_BLR:0 "Smolensk" #KSR
+ STATE_243:0 "Roslavl" #KSR
+ STATE_243_LIT:0 "Roslavlis" #KSR
+ STATE_243_POL:0 "Rosław" #KSR
+ STATE_244:0 "Volkhov"
+ STATE_245:0 "Morozovsk" #KSR
+ STATE_246:0 "Rzhev"
+ STATE_247:0 "Tver" #KSR
+ STATE_247_SOV_STALINIST:0 "Kalinin" #KSR
+ STATE_248:0 "Yaroslavl"
+ STATE_249:0 "Kazan"
+ STATE_250:0 "Ulyanovsk" #KSR
+ STATE_250_SOV_TSARIST:0 "Simbirsk" #KSR
+ STATE_251:1 "Kuybyshev"
+ STATE_252:1 "Nizhny Novgorod" #KSR
+ STATE_252_SOV_STALINIST:0 "Gorky" #KSR
+ STATE_253:0 "Ivanovo"
+ STATE_254:0 "Ryazan"
+ STATE_255:0 "Penza"
+ STATE_256:1 "Chuvashia"
+ STATE_257:0 "Tambov"
+ STATE_258:0 "Lipetsk"
+ STATE_259:0 "Poltava"
+ STATE_260:0 "Voronezh"
+ STATE_261:0 "Ohio"
+ STATE_262:0 "Pechora"
+ STATE_263:0 "Novgorod"
+ STATE_264:0 "Tikhvin"
+ STATE_265:0 "Mikhaylovka"
+ STATE_266:0 "Tehran"
+ STATE_267:0 "Kabul"
+ STATE_268:0 "French Somaliland"
+ STATE_269:0 "British Somaliland"
+ STATE_270:0 "Pitcairn Island"
+ STATE_271:1 "Shewa"
+ STATE_272:0 "Senegal"
+ STATE_273:0 "Libyan Desert"
+ STATE_274:0 "Ghana"
+ STATE_275:0 "Transvaal"
+ STATE_276:0 "Southern Ontario"
+ STATE_277:0 "Mexico City"
+ STATE_278:0 "Buenos Aires" # Was Pampas
+ STATE_279:0 "Santiago"
+ STATE_280:0 "Mato Grosso"
+ STATE_281:0 "Maldives"
+ STATE_282:0 "Kanto"
+ STATE_283:0 "Gansu"
+ STATE_284:0 "North Island"
+ STATE_285:0 "New South Wales"
+ STATE_286:1 "Southern Indochina"
+ STATE_287:0 "Taklamakan"
+ STATE_288:0 "Burma"
+ STATE_289:0 "Siam"
+ STATE_290:0 "Spanish Africa"
+ STATE_291:0 "Baghdad"
+ STATE_292:0 "Nejd"
+ STATE_293:0 "Yemen"
+ STATE_294:0 "Oman"
+ STATE_295:0 "Leopoldville"
+ 295_autenticite_name: "Kinshasa"
+ STATE_296:0 "Portuguese Guinea"
+ STATE_297:0 "Equatorial Guinea"
+ STATE_298:0 "Liberia"
+ STATE_299:0 "Falkland Islands"
+ STATE_300:0 "Montevideo" # was uruguay
+ STATE_301:0 "Paraguay"
+ STATE_302:0 "La Paz"
+ STATE_303:0 "Lima"
+ STATE_304:1 "Panamá"
+ STATE_305:0 "Ecuador"
+ STATE_306:0 "Cundinamarca"
+ STATE_307:0 "Miranda"
+ STATE_308:0 "Montserrat" #KSR
+ STATE_309:0 "Suriname"
+ STATE_310:0 "Cayenne" #KSR
+ STATE_311:1 "Belize" #KSR
+ STATE_311_MEX:1 "Belice" #KSR
+ STATE_312:0 "Honduras"
+ STATE_313:0 "Guatemala"
+ STATE_314:0 "El Salvador"
+ STATE_315:0 "Cuba"
+ STATE_316:0 "Costa Rica"
+ STATE_317:0 "Nicaragua"
+ STATE_318:0 "Haiti"
+ STATE_319:0 "Dominican Republic"
+ STATE_320:0 "French India"
+ STATE_321:0 "Goa"
+ STATE_322:1 "Nagqu"
+ STATE_323:0 "Nepal"
+ STATE_324:0 "Bhutan"
+ STATE_325:0 "Yunnan"
+ STATE_326:0 "Hong Kong"
+ STATE_327:0 "Manila"
+ STATE_328:0 "Changchun" #KSR
+ STATE_328_JAP:0 "Xīnjīng" #KSR
+ STATE_329:0 "Tannu Tuva"
+ STATE_330:1 "Töv" #KSR
+ STATE_331:0 "Newfoundland"
+ STATE_332:0 "Labrador"
+ STATE_333:1 "North Borneo"
+ STATE_334:1 "Kalimantan"
+ STATE_335:0 "Java"
+ STATE_336:0 "Malaysia" #KSR
+ STATE_337:0 "Faroe Islands"
+ STATE_338:0 "Gloucestershire"
+ STATE_339:0 "Izmir"
+ STATE_339_GRE:0 "Smyrna" #KSR
+ STATE_340:0 "Bursa"
+ STATE_340_GRE:0 "Prusa" #KSR
+ STATE_341:1 "Edirne" #KSR
+ STATE_341_GRE:1 "Hadrianopolis" #KSR
+ STATE_341_BUL:1 "Odrin" #KSR
+ STATE_342:0 "Antalya"
+ STATE_343:0 "Afyon"
+ STATE_344:0 "Malatya"
+ STATE_345:0 "Mersin"
+ STATE_346:0 "Konya"
+ STATE_347:0 "Izmit"
+ STATE_348:0 "Kayseri"
+ STATE_349:0 "Sivas"
+ STATE_350:0 "Diyarbakır"
+ STATE_351:0 "Vologda"
+ STATE_352:0 "Hakkari"
+ STATE_353:1 "Tunceli"
+ STATE_354:0 "Trabzon"
+ STATE_355:0 "Samsun"
+ STATE_356:0 "Kastamonu"
+ STATE_357:0 "New England"
+ STATE_358:0 "New York"
+ STATE_359:0 "New Jersey"
+ STATE_360:0 "Pennsylvania"
+ STATE_361:0 "Maryland"
+ STATE_362:0 "Virginia"
+ STATE_363:0 "North Carolina"
+ STATE_364:0 "South Carolina"
+ STATE_365:0 "Georgia"
+ STATE_366:0 "Florida"
+ STATE_367:0 "Alabama"
+ STATE_368:0 "Tennessee"
+ STATE_369:0 "Kentucky"
+ STATE_370:0 "Mississippi"
+ STATE_371:0 "Louisiana"
+ STATE_372:0 "Arkansas"
+ STATE_373:0 "Missouri"
+ STATE_374:0 "Oklahoma"
+ STATE_375:0 "Texas"
+ STATE_376:0 "New Mexico"
+ STATE_377:0 "Arizona"
+ STATE_378:0 "California"
+ STATE_379:0 "Nevada"
+ STATE_380:0 "Utah"
+ STATE_381:0 "Wyoming"
+ STATE_382:0 "Colorado"
+ STATE_383:0 "Kansas"
+ STATE_384:0 "Nebraska"
+ STATE_385:0 "Oregon"
+ STATE_386:0 "Washington"
+ STATE_387:0 "Idaho"
+ STATE_388:0 "Montana"
+ STATE_389:0 "North Dakota"
+ STATE_390:0 "South Dakota"
+ STATE_391:0 "North Minnesota" #KSR
+ STATE_392:0 "Iowa"
+ STATE_393:0 "Michigan"
+ STATE_394:0 "Wisconsin"
+ STATE_395:0 "Illinois"
+ STATE_396:0 "Indiana"
+ STATE_397:0 "Syktyvkar"
+ STATE_398:0 "Perm"
+ STATE_399:1 "Udmurtia"
+ STATE_400:0 "Kirov" #KSR
+ STATE_400_SOV_TSARIST:0 "Vyatka" #KSR
+ STATE_401:1 "Balakovo"
+ STATE_402:0 "Akhtubinsk"
+ STATE_403:0 "Tyumen"
+ STATE_404:0 "Kyzyl Orda"
+ STATE_405:0 "Tashkent"
+ STATE_406:1 "Guryev"
+ STATE_407:1 "Ural'sk"
+ STATE_408:0 "Vladivostok" #KSR
+ STATE_408_JAP:0 "Urajio" #KSR
+ STATE_409:0 "Khabarovsk"
+ STATE_410:0 "Sistan"
+ STATE_411:0 "Isfahan"
+ STATE_412:0 "Fars"
+ STATE_413:0 "Khuzestan"
+ STATE_414:0 "Kerman"
+ STATE_415:0 "Herat"
+ STATE_416:0 "Khorasan"
+ STATE_417:0 "Hamadan"
+ STATE_418:0 "Semnan"
+ STATE_419:1 "Tibriz"
+ STATE_420:0 "Gilan"
+ STATE_421:0 "Kurdistan"
+ STATE_422:0 "Ceylon"
+ STATE_423:0 "Madurai"
+ STATE_424:0 "Madras"
+ STATE_425:0 "Mysore"
+ STATE_426:0 "Orissa"
+ STATE_427:0 "Hyderabad"
+ STATE_428:0 "Gujarat"
+ STATE_429:0 "Bombay"
+ STATE_430:0 "East Bengal"
+ STATE_431:0 "West Bengal"
+ STATE_432:0 "Assam"
+ STATE_433:0 "Rajahsthan"
+ STATE_434:0 "Arunachal Pradesh"
+ STATE_435:0 "Bihar"
+ STATE_436:0 "Jabalpur"
+ STATE_437:0 "Indore"
+ STATE_438:0 "Lucknow"
+ STATE_439:0 "Delhi"
+ STATE_440:0 "Punjab"
+ STATE_441:0 "Kashmir"
+ STATE_442:0 "Peshawar"
+ STATE_443:0 "Sind"
+ STATE_444:0 "Baluchistan"
+ STATE_445:0 "Quetta"
+ STATE_446:1 "Suez"
+ STATE_447:0 "Alexandria"
+ STATE_448:0 "Tripoli"
+ STATE_449:0 "El Agheila"
+ STATE_450:0 "Benghasi"
+ STATE_451:0 "Derna"
+ STATE_452:0 "Matrouh"
+ STATE_453:0 "Sinai"
+ STATE_454:0 "Tel Aviv" #KSR
+ STATE_455:0 "Jordan"
+ STATE_456:0 "Aswan"
+ STATE_457:1 "Eastern Desert"
+ STATE_458:0 "Tunisia"
+ STATE_459:0 "Algiers"
+ STATE_460:0 "Constantine"
+ STATE_461:0 "Casablanca"
+ STATE_462:0 "Marrakech"
+ STATE_463:0 "Alaska"
+ STATE_464:0 "Nova Scotia"
+ STATE_465:0 "New Brunswick"
+ STATE_466:1 "Nord du Quebec"
+ STATE_467:0 "Manitoba"
+ STATE_468:0 "Saint Lawrence"
+ STATE_469:0 "Saskatchewan"
+ STATE_470:0 "Alberta"
+ STATE_471:1 "Upper British Columbia"
+ STATE_472:1 "Northwest Territories"
+ STATE_473:0 "British Columbia"
+ STATE_474:0 "Yucatan"
+ STATE_475:0 "Chiapas"
+ STATE_476:0 "Oaxaca"
+ STATE_477:0 "Veracruz"
+ STATE_478:0 "Jalisco"
+ STATE_479:0 "Tamaulipas"
+ STATE_480:0 "Coahuila"
+ STATE_481:0 "Durango"
+ STATE_482:0 "Chihuahua"
+ STATE_483:0 "Sonora"
+ STATE_484:0 "Baja California"
+ STATE_485:0 "Guerrero"
+ STATE_486:0 "Orinoquía" #KSR
+ STATE_487:0 "Ángel Sandoval" #KSR
+ STATE_488:0 "Bolivar"
+ STATE_489:0 "Zulia"
+ STATE_490:0 "Pastaza"
+ STATE_491:0 "Loreto"
+ STATE_492:0 "Piura" #KSR
+ STATE_493:0 "Magdalena" #KSR
+ STATE_494:0 "Ucayali"
+ STATE_495:0 "Amazonas"
+ STATE_496:1 "Minas Gerais"
+ STATE_497:1 "Maranhão"
+ STATE_498:1 "Rio Grande do Norte"
+ STATE_499:0 "Bahia"
+ STATE_500:0 "Rio de Janeiro"
+ STATE_501:1 "São Paulo"
+ STATE_502:1 "Rio Grande do Sul"
+ STATE_503:0 "Santa Catarina"
+ STATE_504:1 "Punta Porá" # Was Iguaçú
+ STATE_505:1 "Goiás" 
+ STATE_506:0 "Antofagasta"
+ STATE_507:0 "Magallanes"
+ STATE_508:0 "Tucumán"
+ STATE_509:0 "Chaco Austral"
+ STATE_510:0 "Región Mesopotámica" # Was Mesopotamia
+ STATE_511:0 "Mendoza"
+ STATE_512:0 "Río Negro" # Was Patagonia
+ STATE_513:0 "Tlemcen"
+ STATE_514:0 "Algerian Desert"
+ STATE_515:0 "Southern Sahara"
+ STATE_516:2 "Dudinka"
+ STATE_517:0 "Victoria"
+ STATE_518:0 "Tasmania"
+ STATE_519:0 "South Australia"
+ STATE_520:0 "Northern Territory"
+ STATE_521:0 "Queensland"
+ STATE_522:0 "Western Australia"
+ STATE_523:1 "Papua"
+ STATE_524:0 "Taiwan"
+ STATE_525:0 "Seoul" #KSR
+ STATE_525_JAP:0 "Keijō" #KSR
+ STATE_526:0 "Okinawa"
+ STATE_527:0 "Pyongyang" #KSR
+ STATE_527_JAP:0 "Heijo" #KSR
+ STATE_528:0 "Kyushu"
+ STATE_529:0 "Chugoku"
+ STATE_530:0 "Shikoku"
+ STATE_531:0 "Kansai"
+ STATE_532:0 "Tokai"
+ STATE_533:0 "Tohoku"
+ STATE_534:0 "Hokuriku"
+ STATE_535:0 "Koshinetsu"
+ STATE_536:0 "Hokkaido"
+ STATE_537:0 "South Sakhalin" #KSR
+ STATE_537_JAP:0 "South Karafuto" #KSR
+ STATE_538:1 "Coquilhatville"
+ 538_autenticite_name: "Mbandaka"
+ STATE_539:0 "Gabon"
+ STATE_540:2 "Luanda"
+ STATE_541:1 "Khomas"
+ STATE_542:0 "Bechuanaland"
+ STATE_543:0 "Madagascar"
+ STATE_544:1 "Lourenço Marques"
+ STATE_545:0 "Rhodesia"
+ STATE_546:0 "Tanganyika"
+ STATE_547:1 "Nairobi"
+ STATE_548:0 "Uganda"
+ STATE_549:1 "Kurdufan"
+ STATE_550:0 "Eritrea"
+ STATE_551:0 "Khartoum"
+ STATE_552:0 "Western Desert"
+ STATE_553:0 "Lebanon"
+ STATE_554:0 "Damascus"
+ STATE_555:0 "Kuril Islands"
+ STATE_556:2 "Bamako"
+ STATE_557:0 "Mauritania"
+ STATE_558:1 "Lagos"
+ STATE_559:0 "Somaliland"
+ STATE_560:0 "Nikolayevsk"
+ STATE_561:0 "Amur"
+ STATE_562:0 "Okhotsk"
+ STATE_563:0 "Chita"
+ STATE_564:1 "Buryatia"
+ STATE_565:0 "Bodaybo"
+ STATE_566:0 "Irkutsk"
+ STATE_567:0 "Bratsk"
+ STATE_568:0 "Krasnoyarsk"
+ STATE_569:1 "Khakassia"
+ STATE_570:0 "Novosibirsk"
+ STATE_571:0 "Omsk"
+ STATE_572:0 "Chelyabinsk"
+ STATE_573:0 "Zlatoust"
+ STATE_574:0 "Yakutsk"
+ STATE_575:0 "Kirensk"
+ STATE_576:0 "Yeniseisk"
+ STATE_577:0 "Surgut"
+ STATE_578:0 "Tomsk"
+ STATE_579:0 "Salekhard"
+ STATE_580:0 "Tobolsk"
+ STATE_581:0 "Northern Urals"
+ STATE_582:0 "Magnitogorsk"
+ STATE_583:1 "Kostanay"
+ STATE_584:0 "Ashkhabad"
+ STATE_585:2 "Navoi"
+ STATE_586:0 "Alma-Ata"
+ STATE_587:0 "Ust Urt"
+ STATE_588:0 "Semipalatinsk"
+ STATE_589:0 "Ayaguz"
+ STATE_590:0 "Akmolinsk"
+ STATE_591:0 "Hainan"
+ STATE_592:0 "Guangzhou"
+ STATE_593:0 "Guangdong"
+ STATE_594:0 "Nanning"
+ STATE_595:0 "Fujian"
+ STATE_596:0 "Zhejiang"
+ STATE_597:0 "Shandong"
+ STATE_598:0 "Jiangsu"
+ STATE_599:0 "Guangxi"
+ STATE_600:0 "Jiangxi"
+ STATE_601:0 "Xikang"
+ STATE_602:0 "Hunan"
+ STATE_603:0 "Guizhou"
+ STATE_604:0 "Qinghai"
+ STATE_605:0 "Sichuan"
+ STATE_606:0 "Anhui"
+ STATE_607:0 "Henan"
+ STATE_608:0 "Beijing"
+ STATE_609:0 "East Hebei"
+ STATE_610:0 "Jinzhou" #KSR
+ STATE_611:0 "Zhangjiakou" #KSR
+ STATE_611_JAP:0 "Kalgan" #KSR
+ STATE_612:0 "Chahar"
+ STATE_613:2 "Shanghai"
+ STATE_614:0 "Hebei"
+ STATE_615:0 "Shanxi"
+ STATE_616:0 "Ningxia"
+ STATE_617:0 "Urumqi"
+ STATE_618:0 "Dzungaria"
+ STATE_619:0 "Yarkand"
+ STATE_620:0 "Hubei"
+ STATE_621:0 "Suiyuan"
+ STATE_622:0 "Shaanxi"
+ STATE_623:0 "Luzon"
+ STATE_624:0 "Central islands"
+ STATE_625:0 "Samar"
+ STATE_626:0 "Palawan"
+ STATE_627:0 "Mindanao"
+ STATE_628:0 "Cebu"
+ STATE_629:0 "Hawaii"
+ STATE_630:0 "Johnston Atoll"
+ STATE_631:0 "Midway Island"
+ STATE_632:0 "Wake Island"
+ STATE_633:0 "Marshall Islands"
+ STATE_634:0 "Solomon Islands"
+ STATE_635:0 "New Caledonia"
+ STATE_636:0 "Fiji"
+ STATE_637:0 "Kamchatka"
+ STATE_638:0 "Guam"
+ STATE_639:0 "Gilbert Islands"
+ STATE_640:0 "Mandalay"
+ STATE_641:0 "Tahiti"
+ STATE_642:0 "Phoenix Island"
+ STATE_643:0 "Ellice Islands"
+ STATE_644:1 "Kolyma"
+ STATE_645:0 "Iwo Jima"
+ STATE_646:0 "Saipan"
+ STATE_647:0 "Palau"
+ STATE_648:0 "Marcus Island"
+ STATE_649:0 "Galapagos Islands"
+ STATE_650:0 "Attu Island"
+ STATE_651:0 "Ufa"
+ STATE_652:0 "Orenburg"
+ STATE_653:0 "Yekaterinburg" #KSR
+ STATE_653_SOV_STALINIST:0 "Sverdlovsk" #KSR
+ STATE_654:1 "Oyrot Region"
+ STATE_655:0 "North Sakhalin" #KSR
+ STATE_655_JAP:0 "North Karafuto" #KSR
+ STATE_656:0 "Kuwait"
+ STATE_657:0 "Birobidzhan"
+ STATE_658:0 "Abu Dhabi"
+ STATE_659:0 "Aden"
+ STATE_660:0 "Equatorial Africa"
+ STATE_661:0 "Tripolitania"
+ STATE_662:0 "Sirte"
+ STATE_663:0 "Cyrenaica"
+ STATE_664:0 "Southern Slovakia"
+ STATE_665:1 "Gabès"
+ STATE_666:1 "Norrbotten"
+ STATE_667:0 "Lesser Sunda Islands"
+ STATE_668:0 "The Moluccas"
+ STATE_669:1 "West Papua"
+ STATE_670:0 "Laos"
+ STATE_671:0 "Tonkin"
+ STATE_672:0 "Sumatra"
+ STATE_673:0 "Sulawesi"
+ STATE_674:0 "Central Australia"
+ STATE_675:0 "Al Hajara"
+ STATE_676:0 "Mosul"
+ STATE_677:0 "Aleppo"
+ STATE_678:0 "Rub al Khali"
+ STATE_679:1 "Madinah"
+ STATE_680:0 "Deir-az-Zur"
+ STATE_681:0 "Cape"
+ STATE_682:0 "Northern Ontario"
+ STATE_683:1 "Nunavut"
+ STATE_684:0 "Caroline Islands"
+ STATE_685:1 "Panamá Canal"
+ STATE_686:0 "Puerto Rico"
+ STATE_687:0 "British Guyana"
+ STATE_688:0 "Chaco Boreal"
+ STATE_689:0 "Jamaica"
+ STATE_690:0 "Northern Bahamas"
+ STATE_691:0 "Trinidad"
+ STATE_692:0 "Barbados" #KSR
+ STATE_693:0 "Southern Bahamas"
+ STATE_694:0 "French Caribbean"
+ STATE_695:0 "Curaçao"
+ STATE_696:0 "Bermuda"
+ STATE_697:0 "Madeira"
+ STATE_698:0 "Azores"
+ STATE_699:0 "Rio de Oro"
+ STATE_700:0 "Sierra Leone"
+ STATE_701:0 "Gambia"
+ STATE_702:0 "Cape Verde"
+ STATE_703:0 "Ascension"
+ STATE_704:0 "Saint Helena"
+ STATE_705:0 "Sao Tome"
+ STATE_706:0 "Reunion"
+ STATE_707:0 "Mauritius"
+ STATE_708:0 "Comoro Islands"
+ STATE_709:0 "Seychelles"
+ STATE_710:0 "Diego Garcia"
+ STATE_711:0 "Christmas Island"
+ STATE_712:0 "Cocos Islands"
+ STATE_713:0 "Kerguelen"
+ STATE_714:0 "Heilungkiang"
+ STATE_715:0 "Bairin" #KSR
+ STATE_716:0 "Liaotung"
+ STATE_717:0 "Kiamusze" #KSR
+ STATE_718:0 "Stanleyville"
+ 718_autenticite_name: "Kisangani"
+ STATE_719:0 "Natal"
+ STATE_720:0 "South Georgia"
+ STATE_721:0 "Portuguese Timor"
+ STATE_722:0 "Petsamo"
+ STATE_723:0 "South Island"
+ STATE_724:0 "Northern Malay"
+ STATE_725:0 "Nauru"
+ STATE_726:0 "Samoa"
+ STATE_727:0 "Line Islands"
+ STATE_728:0 "Guangzhouwan"
+ STATE_729:0 "Macau"
+ STATE_730:0 "St Pierre and Miquelon"
+ STATE_731:0 "Central Macedonia"
+ STATE_732:0 "Pamir"
+ STATE_733:0 "Andaman"
+ STATE_734:0 "Nendo"
+ STATE_735:0 "Savoie" #KSR
+ STATE_735_ITA:0 "Savoia" #KSR
+ STATE_736:0 "Primorje" #KSR
+ STATE_736_ITA:0 "Litorale" #KSR
+ STATE_737:0 "Bismarck"
+ STATE_738:0 "Aru Islands"
+ STATE_739:0 "Haida Gwaii"
+ STATE_740:0 "Vancouver Island"
+ STATE_741:0 "Cambodia"
+ STATE_742:0 "Dashanube" #KSR
+ STATE_742_SOV_STALINIST:0 "Stalinabad" #KSR
+ STATE_743:0 "Qingdao"
+ STATE_744:0 "Xian"
+ STATE_745:0 "Dalian"
+ STATE_746:0 "Ordos"
+ STATE_747:0 "Dali"
+ STATE_748:0 "Zunyi"
+ STATE_749:0 "Huangshan"
+ STATE_750:0 "Changde"
+ STATE_751:0 "Liangshan"
+ STATE_752:1 "Ganzi"
+ STATE_753:0 "Gannan"
+ STATE_754:0 "Golog"
+ STATE_755:0 "Haixi"
+ STATE_756:0 "Jiuquan"
+ STATE_757:0 "Shigatse"
+ STATE_758:0 "Ngari"
+ STATE_759:1 "Kunlun Shan"
+ STATE_760:0 "Dabancheng"
+ STATE_761:0 "Hulunbuir"
+ STATE_762:1 "Katowice" #KSR
+ STATE_762_POL:0 "Katowice" #KSR
+ STATE_762_GER:0 "Kattowitz" #KSR
+ STATE_763:0 "Königsberg" #KSR
+ STATE_763_LIT:0 "Karaliaučius" #KSR
+ STATE_763_POL:0 "Królewiec" #KSR
+ STATE_763_SMG:0 "Karaliaučios" #KSR
+ STATE_763_SOV:0 "Kaliningrad" #KSR
+ STATE_764:0 "West Banat"
+ STATE_765:0 "Qatar"
+ STATE_766:0 "Southern Bessarabia"
+ STATE_767:0 "North Darfur"
+ STATE_768:0 "Rwanda"
+ STATE_769:0 "Burundi"
+ STATE_770:0 "Malawi"
+ STATE_771:0 "Zambia"
+ STATE_772:0 "Middle Congo"
+ STATE_773:0 "Cameroon"
+ STATE_774:0 "Chad"
+ STATE_775:0 "B.E.T."
+ STATE_776:0 "Dahomey"
+ STATE_777:0 "Togo"
+ STATE_778:0 "Upper Volta"
+ STATE_779:0 "Ivory Coast"
+ STATE_780:0 "Guinea"
+ STATE_781:0 "Niger"
+ STATE_782:0 "Tombouctou"
+ STATE_783:0 "Sidi Ifni"
+ STATE_784:1 "Vilnius" #KSR
+ STATE_784_POL:0 "Wilno" #KSR
+ STATE_784_SMG:0 "Vėlnius" #KSR
+ STATE_784_BLR:0 "Vilna" #KSR
+ STATE_785:0 "Picardy"
+ STATE_786:0 "Mauritanian Desert"
+ STATE_787:0 "Northern Kashmir"
+ STATE_788:0 "Salamanca"
+ STATE_789:0 "Córdoba"
+ STATE_790:0 "Asturias"
+ STATE_791:0 "Valladolid"
+ STATE_792:0 "País Vasco"
+ STATE_793:0 "Guadalajara"
+ STATE_794:0 "Eastern Aragón"
+ STATE_795:0 "Santarém"
+ STATE_796:0 "North Angola"
+ STATE_797:0 "Istanbul" #KSR
+ STATE_797_GRE:0 "Kōnstantinoupolis" #KSR
+ STATE_797_KONST:0 "Kostantînīyye" #KSR
+ STATE_798:0 "Amasya"
+ STATE_799:0 "Hatay"
+ STATE_800:0 "Van"
+ STATE_801:0 "Moesia"
+ STATE_802:0 "Kosovo"
+ STATE_802_ALB:0 "Kosova" #KSR
+ STATE_803:0 "Southern Serbia"
+ STATE_804:0 "Herzegovina"
+ STATE_805:0 "Northern Epirus"
+ STATE_806:0 "Pyrénées-Atlantiques"
+ STATE_807:0 "Gdynia" #KSR
+ STATE_807_POL:0 "Gdynia" #KSR
+ STATE_807_GER:0 "Gdingen" #KSR
+ STATE_808:1 "Rīga"
+ STATE_809:1 "Zemgale"
+ STATE_810:1 "Latgale" #KSR
+ STATE_810_SOV:0 "Latgaliya" #KSR
+ STATE_810_LTG:0 "Latgola" #KSR
+ STATE_811:0 "Saaremaa" #KSR
+ STATE_811_LAT:0 "Sāremā" #KSR
+ STATE_812:2 "Tallinn" #KSR
+ STATE_812_LAT:0 "Tallina" #KSR
+ STATE_813:1 "Virumaa"
+ STATE_814:1 "Marijampole" #KSR
+ STATE_814_POL:0 "Mariampol" #KSR
+ STATE_814_SMG:0 "Marijampuole" #KSR
+ STATE_814_BLR:0 "Maryjampal" #KSR
+ STATE_815:0 "Panevežys" #KSR
+ STATE_815_POL:0 "Poniewież" #KSR
+ STATE_815_SMG:0 "Paneviežis" #KSR
+ STATE_815_BLR:0 "Ponevezh" #KSR
+ STATE_816:0 "West Virginia"
+ STATE_817:0 "Ömnögovi" #KSR
+ STATE_818:0 "Khovd"
+ STATE_819:0 "Dornod"
+ STATE_820:0 "Khövsgöl"
+ STATE_821:0 "Chechnya-Ingushetia"
+ STATE_822:0 "Chukotka"
+ STATE_823:0 "Karakalpakstan"
+ STATE_824:0 "Yamalia"
+ STATE_825:0 "Nenets"
+ STATE_826:0 "Abkhazia"
+ STATE_827:0 "Kabardino-Balkaria"
+ STATE_828:0 "North Ossetia"
+ STATE_829:0 "Engels-Marxstadt" #KSR
+ STATE_829_SOV_TSARIST:0 "Pokrovsk-Baronsk" #KSR
+ STATE_830:0 "Bukhara"
+ STATE_831:0 "Khiva"
+ STATE_832:0 "Tashauz"
+ STATE_833:0 "Mari El"
+ STATE_834:0 "Balta" #KSR
+ STATE_835:0 "Hararghe"
+ STATE_836:0 "Bale"
+ STATE_837:0 "Sidamo"
+ STATE_838:0 "Illubabor-Kaffa"
+ STATE_839:0 "Welega"
+ STATE_840:0 "Gojjam"
+ STATE_841:0 "Begemder"
+ STATE_842:0 "Tigray"
+ STATE_843:0 "Wello"
+ STATE_844:0 "Jubaland"
+ STATE_845:0 "Jura Mountains"
+ STATE_846:0 "Ticino"
+ STATE_847:0 "Western Swiss Alps"
+ STATE_848:1 "Vorarlberg"
+ STATE_849:0 "Puglia"
+ STATE_850:0 "Trentino"
+ STATE_851:0 "Var"
+ STATE_852:0 "Istria"
+ STATE_853:0 "Ljubljana" #KSR
+ STATE_853_ITA:0 "Lubiana" #KSR
+ STATE_853_GER:0 "Laibach" #KSR
+ STATE_854:0 "Jawf"
+ STATE_855:0 "Tabuk"
+ STATE_856:0 "Asir-Makkah"
+ STATE_857:1 "Al-Qassim"
+ STATE_858:0 "Najiran"
+ STATE_859:0 "Dammam"
+ STATE_860: "Côte-Nord"
+ STATE_861:0 "Saguenay"
+ STATE_862:1 "Ouest du Quebec"
+ STATE_863:0 "Maurice"
+ STATE_864:1 "Yukon Territory"
+ STATE_865:0 "Northern Saskatchewan"
+ STATE_866:0 "Districts of Ontario"
+ STATE_867:0 "Northern Manitoba"
+ STATE_868:0 "Isan"
+ STATE_869:0 "Lanna"
+ STATE_870:0 "North West Australia"
+ STATE_871:0 "South West Australia"
+ STATE_872:0 "North Queensland"
+ STATE_873:0 "South West Queensland"
+ STATE_874:0 "Magadan"
+ STATE_875:0 "Chukchi Peninsula"
+ STATE_876:0 "Udachny"
+ STATE_877:0 "Verkhoyansk"
+ STATE_878:0 "Khatangsky"
+ STATE_879:0 "Kargopol"
+ STATE_880:0 "Kotlas"
+ STATE_881:0 "Karagandy"
+ STATE_882:0 "Pavlodar"
+ STATE_883:0 "Kassala"
+ STATE_884:0 "Upper Nile"
+ STATE_885:0 "Bahr al Ghazal"
+ STATE_886:0 "Blue Nile"
+ STATE_887:0 "South Darfur"
+ STATE_888:0 "Lusambo"
+ 888_autenticite_name: "Mbuji-Mayi"
+ STATE_889:0 "Elisabethville"
+ 889_autenticite_name: "Lubumbashi"
+ STATE_890:0 "Costermansville"
+ 890_autenticite_name: "Bukavu"
+ STATE_891:0 "Zambesi"
+ STATE_892:0 "South West Angola"
+ STATE_893:0 "Karas"
+ STATE_894:1 "Kunene"
+ STATE_895:1 "Otjozondjupa"
+ STATE_896:0 "Manica e Sofala"
+ STATE_897:0 "Zambezia-Moçambique"
+ STATE_898:0 "Gao"
+ STATE_899:0 "Kayes-Koulikoro"
+ STATE_900:0 "Benue"
+ STATE_901:0 "Borno"
+ STATE_902:0 "Sokoto"
+ STATE_903:0 "Garissa"
+ STATE_904:0 "Nyanza-Rift Valley"
+ STATE_905:0 "Mombasa"
+ STATE_906:0 "Socotra"
+ STATE_907:0 "Cairo"
+ STATE_908:0 "Afar"
+ STATE_909: "Schleswig"
+ STATE_909_DEN: "Sydslesvig"
+ STATE_910: "Bornholm"
+ STATE_911: "Fyn"
+ STATE_912: "Sønderjylland"
+ STATE_913: "Östergötland"
+ STATE_914: "Jan Mayen"
+ STATE_915: "Bohuslän"
+ STATE_916: "Dalarna"
+ STATE_917: "Jämtland"
+ STATE_918: "Västerbotten"
+ STATE_919: "Värmland"
+ STATE_920: "Opplandene"
+ STATE_921: "Telemark"
+ STATE_922: "Agder"
+ STATE_923: "Helgeland"
+ STATE_924: "Troms"
+ STATE_925: "Finnmark"
+ STATE_926: "Turku"
+ STATE_926_SWE: "Åbo"
+ STATE_927: "Häme"
+ STATE_927_SWE: "Tammerfors"
+ STATE_928: "Kymi"
+ STATE_928_SWE: "Villmanstrand"
+ STATE_929: "Oulu"
+ STATE_929_SWE: "Uleåborg"
+ STATE_930: "Mikkeli"
+ STATE_930_SWE: "St Michel"
+ STATE_931: "Cumbria"
+ STATE_932: "Isle of Man"
+ STATE_933: "Shetland Islands"
+ STATE_934: "Shkodër"
+ STATE_935: "Ceará"
+ STATE_936: "Pernambuco"
+ STATE_937: "Piauí"
+ STATE_938: "Pará"
+ STATE_939:1 "Amapá"
+ STATE_940: "Acre"
+ STATE_941: "Tocantins"
+ STATE_942: "Guaporé" # can be renamed to Rondônia later
+ STATE_943: "Espírito Santo"
+ STATE_944: "Paraná"
+ STATE_945: "Cerro Largo"
+ STATE_946: "Paysandú"
+ STATE_947: "Tacna-Moquegua"
+ STATE_948: "Easter Island"
+ STATE_949: "Aysén"
+ STATE_950: "Araucanía"
+ STATE_951: "Arica y Tarapacá"
+ STATE_952: "Atacama"
+ STATE_953: "Tierra del Fuego"
+ STATE_954: "Santa Cruz"
+ STATE_955: "Chubut"
+ STATE_956: "Santa Fe"
+ STATE_957: "Formosa"
+ STATE_958: "San Luis y La Pampa"
+ STATE_959: "Los Andes"
+ STATE_960: "San Juan y La Rioja"
+ STATE_961: "Amazon" # impassables
+ STATE_962: "Amazon" # impassables
+ STATE_963: "Amazon" # impassables
+ STATE_964: "Amazon" # impassables
+ STATE_965: "Amazon" # impassables
+ STATE_966: "Amazon" # impassables
+ STATE_967: "Amazon" # impassables
+ STATE_968: "Amazon" # impassables
+ STATE_969: "Rio Branco"
+ STATE_970: "Debar"
+ STATE_970_ALB: "Dibër"
+ ALB_STATE_970: "Dibër"
+ TUR_STATE_970: "Debre"
+ STATE_971: "Northern Dobruja"
+ STATE_972: "South Sudetenland"
+ GER_STATE_972: "Böhmerwaldgau"
+ STATE_973: "Bács-Kiskun" # was Bács-Bodrog
+ STATE_974: "South Transdanubia"
+ STATE_975: "Burgenland"
+ HUN_STATE_975: "Örvidék"
+ CRO_STATE_975: "Gradišće"
+ BAY_STATE_975: "Burgnland"
+ SLV_STATE_975: "Gradišchanska"
+ SLO_STATE_975: "Hradsko"
+ STATE_976:0 "Kärnten" #KSR
+ STATE_977: "Antwerp"
+ BEL_STATE_977: "Antwerpen"
+ HOL_STATE_977: "Antwerpen"
+ FRA_STATE_977: "Anvers"
+ STATE_978: "Karlsruhe"
+ STATE_979: "Kaiser-Wilhelmsland"
+ STATE_980: "Ardennes"
+ STATE_981: "Barotseland"
+ ENG_STATE_981: "Barotziland"
+ STATE_982:0 "Rzeszów" #KSR
+ STATE_983:0 "Nowy Sącz" #KSR
+ STATE_984:0 "Łuków" #KSR
+ STATE_985:0 "Ternopil" #KSR
+ STATE_985_POL:0 "Tarnopol" #KSR
+ STATE_985_SOV:0 "Ternopol" #KSR
+ STATE_985_LIT:0 "Ternopolis" #KSR
+ STATE_986:0 "Drohobych" #KSR
+ STATE_986_POL:0 "Drohobycz" #KSR
+ STATE_986_LIT:0 "Drohobyčas" #KSR
+ STATE_987:0 "Kovel" #KSR
+ STATE_987_POL:0 "Kowel" #KSR
+ STATE_987_SOV:0 "Kovel" #KSR
+ STATE_987_LIT:0 "Kovelis" #KSR
+ STATE_988:0 "Stolin" #KSR
+ STATE_988_LIT:0 "Stolinas" #KSR
+ STATE_989:0 "Brest" #KSR
+ STATE_989_POL:0 "Brześć nad Bugiem" #KSR
+ STATE_989_LIT:0 "Brasta" #KSR
+ STATE_990:0 "Pavlohrad" #KSR
+ STATE_990_SOV:0 "Pavlograd" #KSR
+ STATE_990_LIT:0 "Pavlohradas" #KSR
+ STATE_991:0 "Eastern Kyiv" #KSR
+ STATE_991_SOV:0 "Eastern Kiev" #KSR
+ STATE_991_POL:0 "Eastern Kijów" #KSR
+ STATE_991_LIT:0 "Eastern Kyjivas" #KSR
+ STATE_992:0 "Stolp" #KSR
+ STATE_992_GER:0 "Stolp" #KSR
+ STATE_992_POL:0 "Słupsk" #KSR
+ STATE_993:0 "Stettin" #KSR
+ STATE_993_GER:0 "Stettin" #KSR
+ STATE_993_POL:0 "Szczecin" #KSR
+ STATE_994:0 "Südschlesien" #KSR
+ STATE_994_GER:0 "Südschlesien" #KSR
+ STATE_994_POL:0 "Śląsk Południowy" #KSR
+ STATE_995:0 "Niederschlesien" #KSR
+ STATE_995_GER:0 "Niederschlesien" #KSR
+ STATE_995_POL:0 "Dolny Śląsk" #KSR
+ STATE_996:0 "Cottbus" #KSR
+ STATE_997:0 "Leipzig" #KSR
+ STATE_998:0 "Magdeburg" #KSR
+ STATE_999:0 "Bremen" #KSR
+ STATE_1000:0 "Bamberg" #KSR
+ STATE_1001:0 "Konstanz" #KSR
+ STATE_1002:0 "Regensburg" #KSR
+ STATE_1003:0 "Traunstein" #KSR
+ STATE_1004:0 "Garmisch-Partenkirchen" #KSR
+ STATE_1005:0 "Saarland" #KSR
+ STATE_1005_FRA:0 "La Sarre" #KSR
+ STATE_1006:0 "Emmen" #KSR
+ STATE_1007:0 "North Austria" #KSR
+ STATE_1008:0 "Toruń" #KSR
+ STATE_1008_POL:0 "Toruń" #KSR
+ STATE_1008_GER:0 "Thorn" #KSR
+ STATE_1009:0 "Plzen" #KSR
+ STATE_1010:0 "Liberec" #KSR
+ STATE_1010_CZE:0 "Liberec" #KSR
+ STATE_1010_GER:0 "Reichenberg" #KSR
+ STATE_1011:0 "Ermland" #KSR
+ STATE_1011_GER:0 "Ermland" #KSR
+ STATE_1011_POL:0 "Warmia" #KSR
+ STATE_1012:0 "Glatz" #KSR
+ STATE_1012_GER:0 "Glatz" #KSR
+ STATE_1012_POL:0 "Kłodzko" #KSR
+ STATE_1012_CZE:0 "Kladsko" #KSR
+ STATE_1013:0 "Ventspils" #KSR
+ STATE_1014:0 "Košice" #KSR
+ STATE_1014_CZE:0 "Košice" #KSR
+ STATE_1014_SLO:0 "Košice" #KSR
+ STATE_1014_HUN:0 "Kassa" #KSR
+ STATE_1015:0 "Kisvárda" #KSR
+ STATE_1016:0 "Miskolc" #KSR
+ STATE_1017:0 "Debrecen" #KSR
+ STATE_1018:0 "Elbing" #KSR
+ STATE_1018_GER:0 "Elbing" #KSR
+ STATE_1018_POL:0 "Elbląg" #KSR
+ STATE_1019:0 "Lyck" #KSR
+ STATE_1019_POL:0 "Ełk" #KSR
+ STATE_1020:0 "Szombathely" #KSR
+ STATE_1021:0 "Prekmurje" #KSR
+ STATE_1021_YUG:0 "Prekmurje" #KSR
+ STATE_1021_SLV:0 "Prekmurje" #KSR
+ STATE_1021_HUN:0 "Muravidék" #KSR
+ STATE_1022:0 "Beli Manastir" #KSR
+ STATE_1022_YUG:0 "Beli Manastir" #KSR
+ STATE_1022_CRO:0 "Beli Manastir" #KSR
+ STATE_1022_HUN:0 "Pélmonostor" #KSR
+ STATE_1023:0 "Osijek" #KSR
+ STATE_1023_YUG:0 "Osijek" #KSR
+ STATE_1023_CRO:0 "Osijek" #KSR
+ STATE_1023_HUN:0 "Eszék" #KSR
+ STATE_1024:0 "Sremska Mitrovica" #KSR
+ STATE_1024_YUG:0 "Sremska Mitrovica" #KSR
+ STATE_1024_SER:0 "Sremska Mitrovica" #KSR
+ STATE_1024_HUN:0 "Szávaszentdemeter" #KSR
+ STATE_1025:0 "Trieste" #KSR
+ STATE_1026:0 "Niš" #KSR
+ STATE_1027:0 "Novi Pazar" #KSR
+ STATE_1028:0 "Bosnian Posavina" #KSR
+ STATE_1029:0 "Mostar" #KSR
+ STATE_1030:0 "Bosnian Krajina" #KSR
+ STATE_1031:0 "Kandalaksha" #KSR
+ STATE_1031_FIN:0 "Kantalahti" #KSR
+ STATE_1032:0 "Kosovska Mitrovica" #KSR
+ STATE_1032_ALB:0 "Mitrovicë" #KSR
+ STATE_1033:0 "Kotor" #KSR
+ STATE_1033_ITA:0 "Cattaro" #KSR
+ STATE_1034:0 "Neum" #KSR
+ STATE_1035:0 "Lika-Krbava" #KSR
+ STATE_1035_YUG:0 "Lika-Krbava" #KSR
+ STATE_1035_CRO:0 "Lika-Krbava" #KSR
+ STATE_1035_HUN:0 "Lika-Korbava" #KSR
+ STATE_1035_ITA:0 "Quarnero" #KSR
+ STATE_1036:0 "Vidin" #KSR
+ STATE_1037:0 "Stara Zagora" #KSR
+ STATE_1038:0 "Bor" #KSR
+ STATE_1039:0 "Szeklerland" #KSR
+ STATE_1040:0 "Pridnestroviye" #KSR
+ STATE_1040_ROM:0 "Transnistria" #KSR
+ STATE_1040_MOL:0 "Transnistria" #KSR
+ STATE_1040_UKR:0 "Prydnistrovya" #KSR
+ STATE_1040_LIT:0 "Padniestrė" #KSR
+ STATE_1041:0 "East Muntenia" #KSR
+ STATE_1042:0 "Corfu" #KSR
+ STATE_1043:0 "Šibenik" #KSR
+ STATE_1043_ITA:0 "Sebenico" #KSR
+ STATE_1044:0 "Korcula-Mljet" #KSR
+ STATE_1045:0 "Split" #KSR
+ STATE_1045_ITA:0 "Spalato" #KSR
+ STATE_1046:0 "Ulcinj" #KSR
+ STATE_1046_ALB:0 "Ulqin" #KSR
+ STATE_1047:0 "Rožaje" #KSR
+ STATE_1047_ALB:0 "Rozhajë" #KSR
+ STATE_1048:0 "Tutin" #KSR
+ STATE_1049:0 "Al Hajara" #KSR
+ STATE_1050:0 "South Syria" #KSR
+ STATE_1051:0 "Mafraq" #KSR
+ STATE_1052:0 "Ma'an" #KSR
+ STATE_1053:0 "Sahra' Tabuk" #KSR
+ STATE_1054:0 "Yanbu Al Bahr" #KSR
+ STATE_1055:0 "Bisha" #KSR
+ STATE_1056:0 "Sahra' Yemen" #KSR
+ STATE_1057:0 "Nakchivan" #KSR
+ STATE_1058:0 "Palanga" #KSR
+ STATE_1058_POL:0 "Połąga" #KSR
+ STATE_1058_SMG:0 "Palonga" #KSR
+ STATE_1058_BLR:0 "Palanha" #KSR
+ STATE_1059:0 "Sēlija" #KSR
+ STATE_1060:0 "Abrene" #KSR
+ STATE_1060_LAT:0 "Jaunlatgale" #KSR
+ STATE_1060_LAT_2:0 "Abrene" #KSR
+ STATE_1060_SOV:0 "Pytalovo" #KSR
+ STATE_1061:0 "Krāslava" #KSR
+ STATE_1061_LAT:0 "Krāslava" #KSR
+ STATE_1061_SOV:0 "Kraslava" #KSR
+ STATE_1061_LTG:0 "Kruoslova" #KSR
+ STATE_1062:0 "Valmiera" #KSR
+ STATE_1063:0 "Madona" #KSR
+ STATE_1064:0 "Vierchniadzvinsk" #KSR
+ STATE_1064_SOV:0 "Verhnedvinsk" #KSR
+ STATE_1064_LIT:0 "Verchnedvinskas" #KSR
+ STATE_1064_POL:0 "Wierchniewińsk" #KSR
+ STATE_1065:0 "Opochka" #KSR
+ STATE_1065_SOV:0 "Opochka" #KSR
+ STATE_1065_LAT:0 "Opočka" #KSR
+ STATE_1066:0 "Voru" #KSR
+ STATE_1066_EST:0 "Võru" #KSR
+ STATE_1066_LAT:0 "Veru" #KSR
+ STATE_1067:0 "Valga" #KSR
+ STATE_1067_EST:0 "Valga" #KSR
+ STATE_1067_LAT:0 "Valka" #KSR
+ STATE_1068:0 "Kilingi-Nõmme" #KSR
+ STATE_1068_EST:0 "Kilingi-Nõmme" #KSR
+ STATE_1068_LAT:0 "Kilingi-Nemme" #KSR
+ STATE_1069:0 "Petseri" #KSR
+ STATE_1069_EST:0 "Petseri" #KSR
+ STATE_1069_LAT:0 "Petseri" #KSR
+ STATE_1069_SOV:0 "Pechory" #KSR
+ STATE_1070:0 "Jaanilinn" #KSR
+ STATE_1070_EST:0 "Jaanilinn" #KSR
+ STATE_1070_SOV:0 "Ivangorod" #KSR
+ STATE_1071:0 "Narva" #KSR
+ STATE_1072:0 "Hiiumaa" #KSR
+ STATE_1072_EST:0 "Hiiumaa" #KSR
+ STATE_1072_LAT:0 "Hījumā" #KSR
+ STATE_1073:0 "Kirishi" #KSR
+ STATE_1074:0 "Borovichi" #KSR
+ STATE_1075:0 "Velikiye Luki" #KSR
+ STATE_1076:0 "Belgorod" #KSR
+ STATE_1076_UKR:0 "Bilhorod" #KSR
+ STATE_1076_LIT:0 "Belgorodas" #KSR
+ STATE_1077:0 "Nevinnomyssk" #KSR
+ STATE_1078:0 "Novocherkassk" #KSR
+ STATE_1079:0 "Millerovo" #KSR
+ STATE_1080:0 "Boguchar" #KSR
+ STATE_1081:0 "Pavlovsk" #KSR
+ STATE_1082:0 "Lgov" #KSR
+ STATE_1082_UKR:0 "Lhiv" #KSR
+ STATE_1082_LIT:0 "Lgovas" #KSR
+ STATE_1083:0 "Klintsy" #KSR
+ STATE_1083_UKR:0 "Klyntsi" #KSR
+ STATE_1083_LIT:0 "Klincai" #KSR
+ STATE_1084:0 "Gomel" #KSR
+ STATE_1084_LIT:0 "Gomelis" #KSR
+ STATE_1084_POL:0 "Homel" #KSR
+ STATE_1084_BLR:0 "Homiel" #KSR
+ STATE_1084_UKR:0 "Homel" #KSR
+ STATE_1085:0 "Klimavichy" #KSR
+ STATE_1085_SOV:0 "Klimovichi" #KSR
+ STATE_1085_LIT:0 "Klimavičai" #KSR
+ STATE_1085_POL:0 "Klimowicz" #KSR
+ STATE_1086:0 "Sevastopol" #KSR
+ STATE_1086_CRI:0 "Aqyar" #KSR
+ STATE_1087:0 "Dzhankoi" #KSR
+ STATE_1087_CRI:0 "Canköy" #KSR
+ STATE_1088:0 "Kerch" #KSR
+ STATE_1088_CRI:0 "Keriç" #KSR
+ STATE_1089:0 "Mariupol" #KSR
+ STATE_1090:0 "Kramatorsk" #KSR
+ STATE_1091:0 "Lysychansk" #KSR
+ STATE_1091_SOV:0 "Lisichansk" #KSR #KSR
+ STATE_1092:0 "Gagauzia" #KSR
+ STATE_1093:0 "Barnaul" #KSR
+ STATE_1094:0 "Kalinkavichy" #KSR
+ STATE_1094_SOV:0 "Kalinkovichi" #KSR
+ STATE_1094_LIT:0 "Kalinkavičai" #KSR
+ STATE_1094_POL:0 "Kalinkowicze" #KSR
+ STATE_1094_UKR:0 "Kalinkovychi" #KSR
+ STATE_1095:0 "Gundorovka" #KSR
+ STATE_1096:0 "Taganrog" #KSR
+ STATE_1096_UKR:0 "Taganrig" #KSR
+ STATE_1097:0 "Novorossiysk" #KSR
+ STATE_1098:0 "Yeysk" #KSR
+ STATE_1099:0 "Izium" #KSR
+ STATE_1099_LIT:0 "Iziumas" #KSR
+ STATE_1100:0 "Nizhyn" #KSR
+ STATE_1100_SOV:0 "Nezhin" #KSR
+ STATE_1100_LIT:0 "Nižynas" #KSR
+ STATE_1101:0 "Chornobyl" #KSR
+ STATE_1101_POL:0 "Czarnobyl" #KSR
+ STATE_1101_SOV:0 "Chernobyl" #KSR
+ STATE_1101_LIT:0 "Černobilis" #KSR
+ STATE_1102:0 "Bila Tserkva" #KSR
+ STATE_1102_POL:0 "Biały Kościół" #KSR
+ STATE_1102_SOV:0 "Belaya Tserkov" #KSR
+ STATE_1102_LIT:0 "Bila Cerkva" #KSR
+ STATE_1103:0 "Smila" #KSR
+ STATE_1104:0 "Vyazma" #KSR
+ STATE_1104_LIT:0 "Viazma" #KSR
+ STATE_1105:0 "Podolsk" #KSR
+ STATE_1106:0 "Klin" #KSR
+ STATE_1107:0 "South Moskva" #KSR
+ STATE_1108:0 "Alekseyevka" #KSR
+ STATE_1109:0 "Aleksin" #KSR
+ STATE_1110:0 "Novorzhev" #KSR
+ STATE_1111:0 "Kromy" #KSR
+ STATE_1111_LIT:0 "Kromai" #KSR
+ STATE_1112:0 "Kirov" #KSR
+ STATE_1112_LIT:0 "Kirovas" #KSR
+ STATE_1113:0 "Lukovitsk" #KSR
+ STATE_1114:0 "Kolomna" #KSR
+ STATE_1115:0 "Sergijev Posad" #KSR
+ STATE_1116:0 "Reboly" #KSR
+ STATE_1117:0 "Kostomuksha" #KSR
+ STATE_1118:0 "Ganja" #KSR
+ STATE_1119:0 "Jalilabad" #KSR
+ STATE_1120:0 "Karabakh" #KSR
+ STATE_1121:0 "Poylu" #KSR
+ STATE_1122:0 "Shaki" #KSR
+ STATE_1123:0 "South Ossetia" #KSR
+ STATE_1124:0 "Rustavi" #KSR
+ STATE_1125:0 "Kutaisi" #KSR
+ STATE_1126:0 "Batumi" #KSR
+ STATE_1127:0 "Kapan" #KSR
+ STATE_1128:0 "Liechtenstein" #KSR
+ STATE_1129:0 "San Marino" #KSR
+ STATE_1130:0 "Vatican" #KSR
+ STATE_1131:0 "Monaco" #KSR
+ STATE_1132:0 "Andorra" #KSR
+ STATE_1133:0 "Gaza" #KSR
+ STATE_1134:0 "West Bank" #KSR
+ STATE_1135:0 "Jerusalem" #KSR
+ STATE_1136:0 "Golan" #KSR
+ STATE_1137:0 "Galilee" #KSR
+ STATE_1138:0 "Avshalom" #KSR
+ STATE_1139:0 "Ashkelon" #KSR
+ STATE_1140:0 "Negev" #KSR
+ STATE_1141:0 "Ostrów Mazowiecka" #KSR
+ STATE_1142:0 "Częstochowa" #KSR
+ STATE_1143:0 "Zawiercie" #KSR
+ STATE_1143_POL:0 "Zawiercie" #KSR
+ STATE_1143_GER:0 "Warthenau" #KSR
+ STATE_1144:0 "Oświęcim" #KSR
+ STATE_1144_GER:0 "Auschwitz" #KSR
+ STATE_1145:0 "Bielsko-Biała" #KSR
+ STATE_1145_POL:0 "Bielsko-Biała" #KSR
+ STATE_1145_GER:0 "Bielitz-Biala" #KSR
+ STATE_1146:0 "Trenčin" #KSR
+ STATE_1146_CZE:0 "Trenčin" #KSR
+ STATE_1146_SLO:0 "Trenčin" #KSR
+ STATE_1146_HUN:0 "Trencsén" #KSR
+ STATE_1147:0 "Bratislava" #KSR
+ STATE_1147_HUN:0 "Pozsony" #KSR
+ STATE_1148:0 "Sobrance" #KSR
+ STATE_1148_CZE:0 "Sobrance" #KSR
+ STATE_1148_HUN:0 "Szobránc" #KSR
+ STATE_1149:0 "Prešov" #KSR
+ STATE_1149_CZE:0 "Prešov" #KSR
+ STATE_1149_HUN:0 "Eperjes" #KSR
+ STATE_1150:0 "El Paso" #KSR
+ STATE_1151:0 "Roswell" #KSR
+ STATE_1152:0 "Hidalgo" #KSR
+ STATE_1153:0 "Gallup" #KSR
+ STATE_1154:0 "Red Valley" #KSR
+ STATE_1155:0 "Uintah" #KSR
+ STATE_1156:0 "Burlington" #KSR
+ STATE_1157:0 "Buffalo" #KSR
+ STATE_1158:0 "Western Montana" #KSR
+ STATE_1159:0 "Owyhee" #KSR
+ STATE_1160:0 "Wallowa-Whitman" #KSR
+ STATE_1161:0 "Spokane" #KSR
+ STATE_1162:0 "Thompson-Okanagan" #KSR
+ STATE_1163:0 "Northeast BC" #KSR
+ STATE_1164:0 "Elkwater" #KSR
+ STATE_1165:0 "Eastern Alberta" #KSR
+ STATE_1166:0 "Nahanni" #KSR
+ STATE_1167:0 "San Francisco" #KSR
+ STATE_1167_JAP:0 "Sanfuranshisuko" #KSR
+ STATE_1168:0 "Friuli" #KSR
+ STATE_1169:0 "Rijeka" #KSR
+ STATE_1169_ITA:0 "Fiume" #KSR
+ STATE_1170:0 "Porosozero" #KSR
+ STATE_1171:0 "Kestenga" #KSR
+ STATE_1172:0 "Šilute" #KSR
+ STATE_1172_POL:0 "Šilute" #KSR
+ STATE_1172_SMG:0 "Šilote" #KSR
+ STATE_1172_BLR:0 "Shilute" #KSR
+ STATE_1172_GER:0 "Heydekrug" #KSR
+ STATE_1173:0 "Braslav" #KSR
+ STATE_1173_POL:0 "Braslaw" #KSR
+ STATE_1173_LIT:0 "Breslauja" #KSR
+ STATE_1173_SMG:0 "Breslaujė" #KSR
+ STATE_1174:0 "Rugozero" #KSR
+ STATE_1175:0 "Padany" #KSR
+ STATE_1176:0 "Guyman" #KSR
+ STATE_1177:0 "Ulysses" #KSR
+ STATE_1178:0 "Lamar" #KSR
+ STATE_1179:0 "West Colorado" #KSR
+ STATE_1180:0 "South Wyoming" #KSR
+ STATE_1181:0 "East Thrace" #KSR
+ STATE_1182:0 "Saramiriza" #KSR
+ STATE_1183:0 "Putumayo" #KSR
+ STATE_1184:0 "Amacayacu" #KSR
+ STATE_1185:0 "Cusco" #KSR
+ STATE_1186:0 "Trujillo" #KSR
+ STATE_1187:0 "Guayaquil" #KSR
+ STATE_1188:0 "Napo" #KSR
+ STATE_1189:0 "Cuenca" #KSR
+ STATE_1190:0 "Cahuinarí" #KSR
+ STATE_1191:0 "Caqueta" #KSR
+ STATE_1192:0 "Vaupes" #KSR
+ STATE_1193:0 "Guainia" #KSR
+ STATE_1194:0 "Mirití-Paraná" #KSR
+ STATE_1195:0 "Requena" #KSR
+ STATE_1196:0 "Sanquianga" #KSR
+ STATE_1197:0 "Cali" #KSR
+ STATE_1198:0 "Choco" #KSR
+ STATE_1199:0 "Darién Colombiano" #KSR
+ STATE_1200:0 "Medellín" #KSR
+ STATE_1201:0 "Valledupar" #KSR
+ STATE_1202:0 "Villavicencio" #KSR
+ STATE_1203:0 "Maracaibo" #KSR
+ STATE_1204:0 "Cordillera De Mérida" #KSR
+ STATE_1205:0 "Apure" #KSR
+ STATE_1206:0 "Orinocco" #KSR
+ STATE_1207:0 "Cerro Marahuaca" #KSR
+ STATE_1208:0 "Puerto Ayacucho" #KSR
+ STATE_1209:0 "Canaima" #KSR
+ STATE_1210:0 "El Callao" #KSR
+ STATE_1211:0 "Delta Del Orinoco" #KSR
+ STATE_1212:0 "Anzoátegui" #KSR
+ STATE_1213:0 "Guárico" #KSR
+ STATE_1214:0 "Essequibo" #KSR
+ STATE_1215:0 "Darién Panameño" #KSR
+ STATE_1216:0 "Veraguas" #KSR
+ STATE_1217:0 "Tigri" #KSR
+ STATE_1218:0 "Arequipa" #KSR
+ STATE_1219:0 "Puno" #KSR
+ STATE_1220:0 "Madre De Dios" #KSR
+ STATE_1221:0 "Alto Rio Negro" #KSR
+ STATE_1222:0 "Juami-Japurá" #KSR
+ STATE_1223:0 "East Istanbul" #KSR
+ STATE_1223_GRE:0 "East Constantinople" #KSR
+ STATE_1223_KONST:0 "East Kostantînīyye" #KSR
+ STATE_1224:0 "Iquiri" #KSR
+ STATE_1225:0 "Pando" #KSR
+ STATE_1226:0 "Madidi" #KSR
+ STATE_1227:0 "Yacuma" #KSR
+ STATE_1228:0 "Iténez" #KSR
+ STATE_1229:0 "Santa Cruz" #KSR
+ STATE_1230:0 "Tarija" #KSR
+ STATE_1231:0 "Chuquisaca" #KSR
+ STATE_1232:0 "Potosí" #KSR
+ STATE_1233:0 "Upper Essequibo" #KSR
+ STATE_1234:0 "El Cobre" #KSR
+ STATE_1235:0 "Bahrain" #KSR
+ STATE_1236:0 "Šakiai" #KSR
+ STATE_1236_POL:0 "Szaki" #KSR
+ STATE_1236_SMG:0 "Šakē" #KSR
+ STATE_1236_BLR:0 "Shaki" #KSR
+ STATE_1237:0 "Telšiai" #KSR
+ STATE_1237_POL:0 "Telsze" #KSR
+ STATE_1237_SMG:0 "Telšē" #KSR
+ STATE_1237_BLR:0 "Telshi" #KSR
+ STATE_1238:0 "Druskininkai" #KSR
+ STATE_1238_POL:0 "Druskieniki" #KSR
+ STATE_1238_SMG:0 "Droskininkā" #KSR
+ STATE_1238_BLR:0 "Druskeniki" #KSR
+ STATE_1238_GER:0 "Druscheniken" #KSR
+ STATE_1239:0 "Hrodna" #KSR
+ STATE_1239_POL:0 "Grodno" #KSR
+ STATE_1239_LIT:0 "Gardinas" #KSR
+ STATE_1239_SMG:0 "Gardėns" #KSR
+ STATE_1239_SOV:0 "Grodno" #KSR
+ STATE_1239_GER:0 "Garten" #KSR
+ STATE_1240:0 "Vawkavysk" #KSR
+ STATE_1240_POL:0 "Wołkowysk" #KSR
+ STATE_1240_LIT:0 "Valkaviskas" #KSR
+ STATE_1240_SOV:0 "Volkovysk" #KSR
+ STATE_1240_GER:0 "Waukawisk" #KSR
+ STATE_1240_SMG:0 "Vuolkuovīsks" #KSR
+ STATE_1241:0 "Suwałki" #KSR
+ STATE_1241_LIT:0 "Suvalkai" #KSR
+ STATE_1241_SOV:0 "Suvalki" #KSR
+ STATE_1241_GER:0 "Sudauen" #KSR
+ STATE_1241_BLR:0 "Suvalki" #KSR
+ STATE_1241_SMG:0 "Sovalkā" #KSR
+ STATE_1242:0 "Augustów" #KSR
+ STATE_1242_LIT:0 "Augustavas" #KSR
+ STATE_1242_SOV:0 "Avgustov" #KSR
+ STATE_1242_GER:0 "Augustow" #KSR
+ STATE_1242_BLR:0 "Avgustov" #KSR
+ STATE_1242_SMG:0 "Augostavs" #KSR
+ STATE_1243:0 "Lida" #KSR
+ STATE_1243_LIT:0 "Lyda" #KSR
+ STATE_1243_SMG:0 "Līda" #KSR
+ STATE_1244:0 "Smarhon" #KSR
+ STATE_1244_POL:0 "Smorgonie" #KSR
+ STATE_1244_LIT:0 "Smurgainys" #KSR
+ STATE_1244_SOV:0 "Smorgon" #KSR
+ STATE_1244_SMG:0 "Smuorgainis" #KSR
+ STATE_1245:0 "Łomża" #KSR
+ STATE_1245_POL:0 "Łomża" #KSR
+ STATE_1245_GER:0 "Lomscha" #KSR
+ STATE_1245_LIT:0 "Lomža" #KSR
+ STATE_1246:0 "Zdzięcioł" #KSR
+ STATE_1246_POL:0 "Zdzięcioł" #KSR
+ STATE_1246_LIT:0 "Zietela" #KSR
+ STATE_1246_SOV:0 "Dyatlovo" #KSR
+ STATE_1247:0 "Šalcininkai" #KSR
+ STATE_1247_POL:0 "Soleczniki" #KSR
+ STATE_1247_SMG:0 "Šalcenenkā" #KSR
+ STATE_1247_BLR:0 "Saletchniki" #KSR
+ STATE_1248:0 "Švencionys" #KSR
+ STATE_1248_POL:0 "Święciany" #KSR
+ STATE_1248_SMG:0 "Švenciuonē" #KSR
+ STATE_1248_BLR:0 "Svianciany" #KSR
+ STATE_1249:0 "Tilsit" #KSR
+ STATE_1249_LIT:0 "Tilže" #KSR
+ STATE_1249_POL:0 "Tylża" #KSR
+ STATE_1249_SMG:0 "Telže" #KSR
+ STATE_1249_SOV:0 "Sovetsk" #KSR
+ STATE_1249_BLR:0 "Savieck" #KSR
+ STATE_1250:0 "Eupen-Malmedy" #KSR
+ STATE_1251:0 "Baden" #KSR
+ STATE_1252:0 "Włocławek" #KSR
+ STATE_1252_POL:0 "Włocławek" #KSR
+ STATE_1252_GER:0 "Leslau" #KSR
+ STATE_1253:0 "Essen" #KSR
+ STATE_1254:0 "Frankfurt" #KSR
+ STATE_1255:0 "Maastricht" #KSR
+ STATE_1256:0 "Siedlce" #KSR
+ STATE_1257:0 "Nancy" #KSR
+ STATE_1257_GER:0 "Nanzig" #KSR
+ STATE_1258:0 "Sedan" #KSR
+ STATE_1259:0 "Verdun" #KSR
+ STATE_1260:0 "Singapore" #KSR
+ STATE_1261:0 "Slonim" #KSR
+ STATE_1261_LIT:0 "Slanimas" #KSR
+ STATE_1262:0 "Tulchyn" #KSR
+ STATE_1262_POL:0 "Tulczyn" #KSR
+ STATE_1262_SOV:0 "Tulchin" #KSR
+ STATE_1262_LIT:0 "Tulčynas" #KSR
+ STATE_1262_ROM:0 "Tulcin" #KSR
+ STATE_1263:0 "Mahilyow" #KSR
+ STATE_1263_SOV:0 "Mogilyov" #KSR
+ STATE_1263_LIT:0 "Mogiliavas" #KSR
+ STATE_1263_POL:0 "Mohylew" #KSR
+ STATE_1264:0 "Orsha" #KSR
+ STATE_1264_LIT:0 "Orša" #KSR
+ STATE_1264_POL:0 "Orsza" #KSR
+ STATE_1265:0 "Rechytsa" #KSR
+ STATE_1265_SOV:0 "Rechitsa" #KSR
+ STATE_1265_LIT:0 "Rečyca" #KSR
+ STATE_1265_POL:0 "Rzeczyca" #KSR
+ STATE_1266:0 "Çorlu" #KSR
+ STATE_1266_GRE:0 "Tsórlou" #KSR
+ STATE_1267:0 "Southern Bucovina" #KSR
+ STATE_1268:0 "West Berlin" #KSR
+ STATE_1268_GGR:0 "West Germania" #KSR
+ STATE_1269:0 "East Berlin" #KSR
+ STATE_1269_GGR:0 "East Germania" #KSR
+ STATE_1270:0 "Erfurt" #KSR
+ STATE_1271:0 "Amazon" #KSR
+ STATE_1272:0 "Amazon" #KSR
+ STATE_1273:0 "Amazon" #KSR
+ STATE_1274:0 "Humaitá" #KSR
+ STATE_1275:0 "Parana do Boa Boa" #KSR
+ STATE_1276:0 "Amara" #KSR
+ STATE_1277:0 "Nasiriyah" #KSR
+ STATE_1278:0 "Basrah" #KSR
+ STATE_1279:0 "Sulaymaniyah" #KSR
+ STATE_1280:0 "Doma Idris" #KSR
+ STATE_1281:0 "Erbil" #KSR
+ STATE_1282:0 "Kirkuk" #KSR
+ STATE_1283:0 "Karbala" #KSR
+ STATE_1284:0 "Fallujah" #KSR
+ STATE_1285:0 "Najaf" #KSR
+ STATE_1286:0 "Kars" #KSR
+ STATE_1287:0 "Kagızman" #KSR
+ STATE_1288:0 "Ostelsburg" #KSR
+ STATE_1288_POL:0 "Szczytno" #KSR
+ STATE_1289:0 "Kirovsk" #KSR
+ STATE_1290:0 "Kingisepp" #KSR
+ STATE_1290_ING:0 "Jaama" #KSR
+ STATE_1291:0 "Hotin" #KSR
+ STATE_1291_SOV:0 "Khotin" #KSR
+ STATE_1291_UKR:0 "Khotyn" #KSR
+ STATE_1291_POL:0 "Chocim" #KSR
+ STATE_1292:0 "Rotterdam" #KSR
+ STATE_1293:0 "South Gelderland" #KSR
+ STATE_1294:0 "Užhorod" #KSR
+ STATE_1294_UKR:0 "Uzhhorod" #KSR
+ STATE_1294_SOV:0 "Užgorod" #KSR
+ STATE_1294_HUN:0 "Ungvár" #KSR
+ STATE_1295:0 "Constanta" #KSR
+ STATE_1295_BUL:0 "Kyustendzha" #KSR
+ STATE_1296:0 "Dubrovnik" #KSR
+ STATE_1296_ITA:0 "Rugusa" #KSR
+ STATE_1297:0 "Terneuzen" #KSR
+ STATE_1298:0 "Strumica" #KSR
+ STATE_1299:0 "Bosilegrad" #KSR
+ STATE_1300:0 "Dimitrovgrad" #KSR
+ STATE_1300_BUL:0 "Tsaribrod" #KSR
+ STATE_1301:0 "Menton" #KSR
+ STATE_1301_ITA:0 "Mentone" #KSR
+ STATE_1302:0 "Queyras" #KSR
+ STATE_1303:0 "Vanoise" #KSR
+ STATE_1304:0 "Mont Blanc" #KSR
+ STATE_1304_ITA:0 "Monte Bianco" #KSR
+ STATE_1305:0 "Nice" #KSR
+ STATE_1305_ITA:0 "Nizza" #KSR
+ STATE_1306:0 "Heutes-Alpes" #KSR
+ STATE_1307:0 "Štip" #KSR
+ STATE_1308:0 "Genova" #KSR
+ STATE_1309:0 "Oradea" #KSR
+ STATE_1309_HUN:0 "Nagyvárad" #KSR
+ STATE_1310:0 "Satu Mare" #KSR
+ STATE_1310_HUN:0 "Szatmárnémeti" #KSR
+ STATE_1311:0 "Jeju Island" #KSR
+ STATE_1311_JAP:0 "Saishu Island" #KSR
+ STATE_1312:0 "Gwangju" #KSR
+ STATE_1312_JAP:0 "Koshu" #KSR
+ STATE_1313:0 "South Gyeongsang" #KSR
+ STATE_1313_JAP:0 "South Keisho" #KSR
+ STATE_1314:0 "Busan" #KSR
+ STATE_1314_JAP:0 "Fusan" #KSR
+ STATE_1315:0 "Seosan" #KSR
+ STATE_1315_JAP:0 "Seizan" #KSR
+ STATE_1316:0 "North Chungcheong" #KSR
+ STATE_1316_JAP:0 "North Hokusei" #KSR
+ STATE_1317:0 "Chuncheon" #KSR
+ STATE_1317_JAP:0 "Shunsen" #KSR
+ STATE_1318:0 "Kaesong" #KSR
+ STATE_1318_JAP:0 "Kaijo" #KSR
+ STATE_1319:0 "South Kangwon" #KSR
+ STATE_1319_JAP:0 "South Kangwasei" #KSR
+ STATE_1320:0 "Sokcho" #KSR
+ STATE_1320_JAP:0 "Sokusetsu" #KSR
+ STATE_1321:0 "North Kangwon" #KSR
+ STATE_1321_JAP:0 "North Kangwasei" #KSR
+ STATE_1322:0 "Hwanghae" #KSR
+ STATE_1322_JAP:0 "Kokai" #KSR
+ STATE_1323:0 "Hamhung" #KSR
+ STATE_1323_JAP:0 "Kanko" #KSR
+ STATE_1324:0 "South Hamgyong" #KSR
+ STATE_1324_JAP:0 "South Kankyo" #KSR
+ STATE_1325:0 "North Hamgyong" #KSR
+ STATE_1325_JAP:0 "North Kankyo" #KSR
+ STATE_1326:0 "Yanggang" #KSR
+ STATE_1326_JAP:0 "Rikugun" #KSR
+ STATE_1327:0 "Chagang" #KSR
+ STATE_1327_JAP:0 "East Heian" #KSR
+ STATE_1328:0 "North Chagang" #KSR
+ STATE_1328_JAP:0 "Northeast Heian" #KSR
+ STATE_1329:0 "Pyongan" #KSR
+ STATE_1329_JAP:0 "West Heian" #KSR
+ STATE_1330:0 "Al Hasakah" #KSR
+ STATE_1331:0 "Tsushima Island" #KSR
+ STATE_1332:0 "Khasan" #KSR
+ STATE_1332_JAP:0 "Kazan" #KSR
+ STATE_1333:0 "Nakhodka" #KSR
+ STATE_1333_JAP:0 "Nako" #KSR
+ STATE_1334:0 "Sikhote-Alin" #KSR
+ STATE_1335:0 "Voroshilov" #KSR
+ STATE_1335_JAP:0 "Usuri" #KSR
+ STATE_1336:0 "Iman" #KSR
+ STATE_1336_JAP:0 "Yiman" #KSR
+ STATE_1337:0 "Tyndinsky" #KSR
+ STATE_1338:0 "Uda" #KSR
+ STATE_1339:0 "Brunei" #KSR
+ STATE_1340:0 "Temburong" #KSR
+ STATE_1341:0 "Oecusse-Ambeno" #KSR
+ STATE_1342:0 "Petén" #KSR
+ STATE_1343:0 "Alta Verapaz" #KSR
+ STATE_1344:0 "Cuchumatanes" #KSR
+ STATE_1345:0 "Escuintla" #KSR
+ STATE_1346:0 "New Orleans" #KSR
+ STATE_1346_FRA:0 "La Nouvelle-Orléans" #KSR
+ STATE_1347:0 "Baton Rouge" #KSR
+ STATE_1348:0 "Mississipi Delta" #KSR
+ STATE_1349:0 "North Louisiana" #KSR
+ STATE_1350:0 "Texarkana" #KSR
+ STATE_1351:0 "Amarillo" #KSR
+ STATE_1352:0 "Clayton" #KSR
+ STATE_1353:0 "Raton" #KSR
+ STATE_1354:0 "Pueblo" #KSR
+ STATE_1355:0 "White River" #KSR
+ STATE_1356:0 "Walden" #KSR
+ STATE_1357:0 "Rawlins" #KSR
+ STATE_1358:0 "Bridger-Teton" #KSR
+ STATE_1359:0 "Butte" #KSR
+ STATE_1360:0 "Blackfeet" #KSR
+ STATE_1361:0 "Bozeman" #KSR
+ STATE_1362:0 "Del Bonita" #KSR
+ STATE_1363:0 "Onefour" #KSR
+ STATE_1364:0 "Coronach" #KSR
+ STATE_1365:0 "Drift Prairie" #KSR
+ STATE_1366:0 "Lake Traverse" #KSR
+ STATE_1367:0 "South Minnesota" #KSR
+ STATE_1368:0 "Dangriga" #KSR
+ STATE_1368_ENG:0 "Stann Creek" #KSR
+ STATE_1369:0 "San Miguel" #KSR
+ STATE_1370:0 "Tobago" #KSR
+ STATE_1371:0 "Grenada" #KSR
+ STATE_1372:0 "Saint Vincent" #KSR
+ STATE_1373:0 "Saint Lucia" #KSR
+ STATE_1374:0 "Martinique" #KSR
+ STATE_1375:0 "Saint-Martin" #KSR
+ STATE_1376:0 "Sint Maarten" #KSR
+ STATE_1377:0 "Dominica" #KSR
+ STATE_1378:0 "Antigua-Barbuda" #KSR
+ STATE_1379:0 "Saint Kitts-Nevis" #KSR
+ STATE_1380:0 "Virgin Islands" #KSR
+ STATE_1381:0 "Roussillon" #KSR
+ STATE_1381_SPR:0 "Rosellón" #KSR
+ STATE_1381_CAT:0 "Rosselló" #KSR
+ STATE_1381_OCC:0 "Rosselhon" #KSR
+ STATE_1382:0 "Pontes e Lacerda" #KSR
+ STATE_1383:0 "Corumbá" #KSR
+ STATE_1384:0 "Sopron" #KSR
+ STATE_1384_GER:0 "Ödenburg" #KSR
+ STATE_1385:0 "Jabłonka" #KSR
+ STATE_1385_SLO:0 "Jablonka" #KSR
+ STATE_1386:0 "Nowa Biała" #KSR
+ STATE_1386_SLO:0 "Nová Belá" #KSR
+ STATE_1386_HUN:0 "Újbéla" #KSR
+ STATE_1387:0 "Turda" #KSR
+ STATE_1387_HUN:0 "Torda" #KSR
+ STATE_1388:0 "Bakar" #KSR
+ STATE_1388_ITA:0 "Buccari" #KSR
+ STATE_1388_HUN:0 "Szádrév" #KSR
+ STATE_1389:0 "Bygdoszcz" #KSR
+ STATE_1389_GER:0 "Bromberg" #KSR
+ STATE_1390:0 "Steiermark" #KSR
+ STATE_1391:0 "Outer Guiana" #KSR
+ STATE_1392:0 "Roraima" #KSR
+ STATE_1393:0 "Lawa" #KSR
+ STATE_1394:0 "Inini" #KSR
+ STATE_1395:0 "Pucacuro" #KSR
+ STATE_1396:0 "Alto Nangaritza" #KSR
+ STATE_1397:0 "Cerro Bravo" #KSR
+ STATE_1398:0 "Tumbes" #KSR
+ STATE_1399:0 "Ustrzyki Dolne" #KSR
+ STATE_1399_UKR:0 "Ustryky-Dolishni" #KSR
+ STATE_1399_SOV:0 "Ustriki-Dolnye" #KSR
+ STATE_1400:0 "Krystynopol" #KSR
+ STATE_1400_UKR:0 "Chervonohrad" #KSR
+ STATE_1400_SOV:0 "Chervonograd" #KSR
+ STATE_1401:0 "Somme" #KSR
+ STATE_1402:0 "Reims" #KSR
+ STATE_1403:0 "Le Havre" #KSR
+ STATE_1404:0 "Cassino" #KSR
+ STATE_1405:0 "Antrodoco" #KSR
+ STATE_1406:0 "Umbria" #KSR
+ STATE_1407:0 "Marche" #KSR
+ STATE_1408:0 "Casentinesi" #KSR
+ STATE_1409:0 "Romagna" #KSR
+ STATE_1410:0 "Medimurje" #KSR
+ STATE_1410_HUN:0 "Muraköz" #KSR
+ STATE_1411:0 "Preševo" #KSR
+ STATE_1411_BUL:0 "Preshevo" #KSR
+ STATE_1411_ALB:0 "Presheva" #KSR
+ STATE_1412:0 "Galicica" #KSR
+ STATE_1412_BUL:0 "Galichitsa" #KSR
+ STATE_1412_ALB:0 "Mali i Thatë" #KSR
+ STATE_1413:0 "Kassel" #KSR
+ STATE_1414:0 "Bonn" #KSR
+ STATE_1415:0 "Olympia" #KSR
+ STATE_1416:0 "Yanbian" #KSR
+ STATE_1416_JAP:0 "Jiandao" #KSR
+ STATE_1416_KOR:0 "Yeonbyeon" #KSR
+ STATE_1417:0 "Mudanjiang" #KSR
+ STATE_1417_JAP:0 "Botankou" #KSR
+ STATE_1418:0 "Qitaihe" #KSR
+ STATE_1419:0 "Jixi" #KSR
+ STATE_1420:0 "Shuangyashan" #KSR
+ STATE_1421:0 "Tongjiang" #KSR
+ STATE_1422:0 "Harbin" #KSR
+ STATE_1423:0 "North Harbin" #KSR
+ STATE_1424:0 "Hegang" #KSR
+ STATE_1425:0 "Yichun" #KSR
+ STATE_1426:0 "Suihua" #KSR
+ STATE_1427:0 "Daqing" #KSR
+ STATE_1428:0 "Qiqihar" #KSR
+ STATE_1429:0 "Jiagedaqi" #KSR
+ STATE_1430:0 "Daxinganling" #KSR
+ STATE_1431:0 "Heihe" #KSR
+ STATE_1432:0 "Khalkh" #KSR
+ STATE_1433:0 "Kelulun" #KSR
+ STATE_1434:0 "Baishan" #KSR
+ STATE_1435:0 "Tonghua" #KSR
+ STATE_1436:0 "Liaoyuan" #KSR
+ STATE_1437:0 "Jilin" #KSR
+ STATE_1438:0 "Siping" #KSR
+ STATE_1439:0 "Songyuan" #KSR
+ STATE_1440:0 "Baicheng" #KSR
+ STATE_1441:0 "Sain Chuulgan" #KSR
+ STATE_1442:0 "Khorgoljyn Khyar" #KSR
+ STATE_1443:0 "Hinggan" #KSR
+ STATE_1444:0 "Tongliao" #KSR
+ STATE_1445:0 "Jarud" #KSR
+ STATE_1446:0 "Ongniud" #KSR
+ STATE_1447:0 "Aohan" #KSR
+ STATE_1448:0 "Fuxin" #KSR
+ STATE_1449:0 "Fengning" #KSR
+ STATE_1450:0 "Jehol" #KSR
+ STATE_1451:0 "Nehe" #KSR
+ STATE_1452:0 "Wafangdian" #KSR
+ STATE_1453:0 "Anshan" #KSR
+ STATE_1454:0 "Andong" #KSR
+ STATE_1455:0 "Halha Horoo" #KSR
+ STATE_1456:0 "East Ujimqin" #KSR
+ STATE_1457:0 "Erdenetsagaan" #KSR
+ STATE_1458:0 "Dariganga" #KSR
+ STATE_1459:0 "Baruun-Urt" #KSR
+ STATE_1460:0 "Sukhbaatar" #KSR
+ STATE_1461:0 "Matad" #KSR
+ STATE_1462:0 "Khentii" #KSR
+ STATE_1463:0 "Dornogovi" #KSR
+ STATE_1464:0 "Dundgovi" #KSR
+ STATE_1465:0 "Övörkhangai" #KSR
+ STATE_1466:0 "Bayankhongor" #KSR
+ STATE_1467:0 "Govi-Altai" #KSR
+ STATE_1468:0 "Bayan-Ölgii" #KSR
+ STATE_1469:0 "Uvs" #KSR
+ STATE_1470:0 "Zavkhan" #KSR
+ STATE_1471:0 "Arkhangai" #KSR
+ STATE_1472:0 "Bulgan" #KSR
+ STATE_1473:0 "Selenge" #KSR
+ STATE_1474:0 "Ujimqin" #KSR
+ STATE_1475:0 "Sonid" #KSR
+ STATE_1476:0 "South Chahar" #KSR
+ STATE_1477:0 "Sombor" #KSR
+ STATE_1477_HUN:0 "Zombor" #KSR
+ STATE_1478:0 "Petrovgrad" #KSR
+ STATE_1478_HUN:0 "Nagybecskerek" #KSR
+ STATE_1478_ROM:0 "Becicherecu Mare" #KSR
+ STATE_1479:0 "East Banat" #KSR
+ STATE_1480:0 "Gurahont" #KSR
+ STATE_1480_HUN:0 "Gurahonc" #KSR
+ STATE_1481:0 "Kalisz" #KSR
+ STATE_1481_POL:0 "Kalisz" #KSR
+ STATE_1481_GER:0 "Kalisch" #KSR
+ STATE_1482:0 "Ostrolenka" #KSR
+ STATE_1482_POL:0 "Ostrołęka" #KSR
+ STATE_1482_GER:0 "Scharfenwiese" #KSR
+ STATE_1483:0 "Przemyśl" #KSR
+ STATE_1483_SOV:0 "Peremyshl" #KSR

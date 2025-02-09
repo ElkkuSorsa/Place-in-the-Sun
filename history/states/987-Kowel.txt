@@ -1,0 +1,26 @@
+state={
+	id=987
+	name="STATE_987"
+
+	history={
+		victory_points = {
+			422 3
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = POL
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		422 513 3412 11441 
+	}
+	manpower=795230
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

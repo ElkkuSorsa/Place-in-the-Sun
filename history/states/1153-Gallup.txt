@@ -1,0 +1,26 @@
+
+state={
+	id=1153
+	name="STATE_1153"
+	manpower = 21560
+	
+	state_category = pastoral
+	
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+		
+	}
+
+	provinces={
+		13702
+	}
+	
+
+	local_supplies=0.0 
+}

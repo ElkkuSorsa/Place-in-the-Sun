@@ -7,7 +7,7 @@ state=
 	
 	manpower = 294748
 	resources={
-		steel=14 # was: 5
+		steel=5 # was: 8
 	}
 
 	history=
@@ -18,7 +18,7 @@ state=
 			arms_factory = 1
 			industrial_complex = 3
 		}
-		victory_points = { 6583 5 }
+		victory_points = { 6583 3 }
 		add_core_of = LUX
 	}
 
