@@ -34,6 +34,14 @@ state = {
 		victory_points = {
 			11960 20 # Kyoto
 		}
+		
+		victory_points = {
+			13774 20 # Kobe
+		}
+		
+		victory_points = {
+			13775 10 # Sakai
+		}
 
 		1939.1.1 = {
 			buildings = {
@@ -45,7 +53,7 @@ state = {
 	}
 
 	provinces = {
-		1051 1067 1133 1136 4054 4142 7072 7113 9985 11960 12031 
+		1051 1067 1133 1136 4054 4142 7072 7113 9985 11960 12031 13774 13775
 	}
 
 	local_supplies = 9.0 

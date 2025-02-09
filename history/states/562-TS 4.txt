@@ -6,16 +6,17 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = RUS
+		owner = SOV
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = RUS
+		add_core_of = SOV
 		add_core_of = FER
 	}
 
 	provinces = {
-		1714 1805 4810 4881 7772 10572 10598 11607 12518 12551 12650  
+		1714 1772 1805 1807 4810 4881 7772 10572 10590 10598 11607 12518 12551 12650 13780
+		
 	}
 
 	local_supplies = 0.0 

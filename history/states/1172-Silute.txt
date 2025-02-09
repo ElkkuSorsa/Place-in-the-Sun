@@ -1,0 +1,28 @@
+state=
+{
+	id=1172
+	name="STATE_1172"
+	manpower = 51230
+	
+	
+	state_category = pastoral
+	
+	history = {
+		owner = LIT
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LIT
+		add_claim_by = SMG
+
+		1939.3.22 = {
+			owner = GER
+			controller = GER
+		}
+	}
+	provinces={
+		13378	
+	}
+
+	local_supplies=0.0 
+}

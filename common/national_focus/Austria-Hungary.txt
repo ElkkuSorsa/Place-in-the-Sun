@@ -150,7 +150,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_purge_of_unloyal_hungarians
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_killing_unloyal_officers
 		x = 22
 		y = 5
 

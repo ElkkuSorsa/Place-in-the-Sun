@@ -2,7 +2,7 @@
 state={
 	id=48
 	name="STATE_48"
-	manpower = 1685989
+	manpower = 1465989
 	resources={
 		aluminium = 2
 	}
@@ -15,19 +15,16 @@ state={
 		victory_points = { #Sofia
 			949 15 
 		}
-		victory_points = { #Vidin
-			9771 1
-		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 6
+			industrial_complex = 5
 			air_base = 3
 		}
 		add_core_of = BUL
 	}
 
 	provinces={
-		793 935 949 965 3908 3971 9771 11754 
+		935 949 3908 3971
 	}
 
 	local_supplies=0.0 

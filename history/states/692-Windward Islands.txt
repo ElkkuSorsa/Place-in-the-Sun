@@ -1,10 +1,11 @@
 state={
 	id=692
 	name="STATE_692"
-	manpower=76485
-	state_category = small_island
+	manpower=194230
+	state_category = rural
 
 	history={
+		add_core_of = BRB
 		add_core_of = BAS
 		owner = ENG
 		buildings = {
@@ -14,12 +15,12 @@ state={
 			}
 		}
 		victory_points = {
-			11350 1
+			11350 2
 		}
 	}
 	
 	provinces={
-		379 11106 11350 13009 
+		11350
 	}
 
 	local_supplies=4.0 
