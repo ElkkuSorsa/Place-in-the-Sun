@@ -6,15 +6,15 @@ state={
 	state_category = town
 	
 	history={
-		owner = AUS
+		owner = AUH
 		victory_points = {
 			6552 1
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 1
 		}
-		add_core_of = AUS
+		add_core_of = AUH
 
 		1938.3.12 = {
 			owner = GER

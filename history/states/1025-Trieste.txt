@@ -8,7 +8,7 @@ state = {
 		victory_points = {
 			6626 1
 		}
-		owner = ITA
+		owner = AUH
 		add_core_of = ITA
 		add_core_of = LBV
 		add_core_of = FRI
@@ -17,7 +17,7 @@ state = {
 			dockyard = 1
 			arms_factory = 1
 			6626 = {
-				naval_base = 5
+				naval_base = 1
 			}
 		}
 	}
