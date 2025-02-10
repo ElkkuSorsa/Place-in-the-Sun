@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = GER
 		add_dynamic_modifier = {
 			modifier = FRA_maginot_line_dynamic_modifier
 		}
