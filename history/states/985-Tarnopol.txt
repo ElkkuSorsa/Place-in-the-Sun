@@ -6,13 +6,12 @@ state={
 	state_category = town
 	
 	history={
-		owner = POL
+		owner = AUH
 		victory_points = {
 			3483 1
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 1
 		}
 		add_core_of = POL
 		add_core_of = UKR

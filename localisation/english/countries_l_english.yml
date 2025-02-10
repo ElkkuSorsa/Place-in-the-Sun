@@ -95,3 +95,23 @@
  EGY:0 "Egypt"
  EGY_DEF:0 "the Khedivate of Egypt"
  EGY_ADJ:0 "Egyptian"
+
+ MNT:0 "Montenegro"
+ MNT_DEF:0 "Montenegro"
+ MNT_ADJ:0 "Montenegrian"
+
+ GRE:0 "Greece"
+ GRE_DEF:0 "Kingdom of Greece"
+ GRE_ADJ:0 "Greek"
+
+ SER:0 "Serbia"
+ SER_DEF:0 "Serbia"
+ SER_ADJ:0 "Serbian"
+
+ TUR:0 "Ottoman Empire"
+ TUR_DEF:0 "Ottoman Empire"
+ TUR_ADJ:0 "Turk"
+
+ ROM:0 "Romania"
+ ROM_DEF:0 "Kingdom of Romania"
+ ROM_ADJ:0 "Romanian"

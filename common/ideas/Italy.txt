@@ -128,9 +128,20 @@ ideas = {
 		planning_speed = 0.15
 		}
 	}
+    	Northers_socialist_problem = {
+		picture = generic_economic_increase
+		modifier = {
+		consumer_goods_factor = 0.05
+		industrial_capacity_factory = -0.12
+        production_factory_efficiency_gain_factor = -0.05
+		production_speed_buildings_factor = -0.15
+		daily_communist_drift = 0.03
+		}
+
+
+	}
 
 
 
 }
-
 }

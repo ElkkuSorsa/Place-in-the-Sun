@@ -90,7 +90,9 @@
  STATE_70_HUN:0 "Zsolna" #KSR
  STATE_71:0 "Poprad" #KSR
  STATE_71_HUN:0 "Poprád" #KSR
- STATE_72:0 "Trans-Olza" #KSR
+ STATE_72:0 "Cieszyn" #KSR
+ CZE_STATE_72:0 "Těšín" #KSR
+ AUH_STATE_72:0 "Teschen" #KSR
  STATE_72_POL:0 "Zoalzie" #KSR
  STATE_72_GER:0 "Olsa-Gebiet" #KSR
  STATE_73:0 "Mukačevo" #KSR
@@ -1201,7 +1203,7 @@
  STATE_981: "Barotseland"
  ENG_STATE_981: "Barotziland"
  STATE_982:0 "Rzeszów" #KSR
- STATE_983:0 "Nowy Sącz" #KSR
+ AUH_STATE_983:0 "Neu Sandez" #KSR
  STATE_984:0 "Łuków" #KSR
  STATE_985:0 "Ternopil" #KSR
  STATE_985_POL:0 "Tarnopol" #KSR
@@ -1496,7 +1498,7 @@
  STATE_1144_GER:0 "Auschwitz" #KSR
  STATE_1145:0 "Bielsko-Biała" #KSR
  STATE_1145_POL:0 "Bielsko-Biała" #KSR
- STATE_1145_GER:0 "Bielitz-Biala" #KSR
+ STATE_1145_AUH:0 "Bielitz-Biala" #KSR
  STATE_1146:0 "Trenčin" #KSR
  STATE_1146_CZE:0 "Trenčin" #KSR
  STATE_1146_SLO:0 "Trenčin" #KSR
@@ -1530,6 +1532,7 @@
  STATE_1167_JAP:0 "Sanfuranshisuko" #KSR
  STATE_1168:0 "Friuli" #KSR
  STATE_1169:0 "Rijeka" #KSR
+ AUH_STATE_1169:0 "St. Veit am Flaum" #KSR
  STATE_1169_ITA:0 "Fiume" #KSR
  STATE_1170:0 "Porosozero" #KSR
  STATE_1171:0 "Kestenga" #KSR
@@ -1998,4 +2001,5 @@
  STATE_1482_POL:0 "Ostrołęka" #KSR
  STATE_1482_GER:0 "Scharfenwiese" #KSR
  STATE_1483:0 "Przemyśl" #KSR
+ AUH_STATE_1483:0 "Premißel"
  STATE_1483_SOV:0 "Peremyshl" #KSR

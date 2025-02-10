@@ -15,7 +15,7 @@ state={
 		owner = AUH
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			688 3 
@@ -29,7 +29,7 @@ state={
 		#victory_points = {
 		#	11612 3
 		#}
-		add_core_of = AUS
+		add_core_of = AUH
 
 		1938.3.12 = {
 			owner = GER
