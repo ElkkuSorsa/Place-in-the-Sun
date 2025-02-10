@@ -130,19 +130,19 @@ spriteTypes = {
 		name = "GFX_goal_turkish_question"
 		texturefile = "gfx/interface/goals/BUL/turkish_question.dds"
 	}
-		SpriteType = {
-		name = "GFX_goal_national_rev"
-		texturefile = "gfx/interface/goals/BUL/national_rev.dds"
+	SpriteType = {
+		name = "GFX_goal_national_revilisation"
+		texturefile = "gfx/interface/goals/BUL/national_revilisation.dds"
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_logistic_planning"
 		texturefile = "gfx/interface/goals/BUL/logistic_planning.dds"
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_prepeare_war_liberation"
 		texturefile = "gfx/interface/goals/BUL/prepeare_war_liberation.dds"
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_goal_going_alone"
 		texturefile = "gfx/interface/goals/BUL/going_alone.dds"
 	}

@@ -76,7 +76,7 @@ focus_tree = {
 			}
 		}
 	}
-
+ 
    	focus = {
 		id = ITA_invest_in_italcementi
 		icon = Gfx_focus_generic_monetary_union
@@ -106,7 +106,7 @@ focus_tree = {
 			}
 		} 
 
-	} 
+	}
     
 
 
@@ -139,7 +139,7 @@ focus_tree = {
        	focus = {
 		id = ITA_Modernizzare_il_sud
 		icon = GFX_
-		x = 9
+		x = 10
 		y = 5
 
 		prerequisite = { focus = ITA_industrial_innovation}
@@ -202,7 +202,6 @@ focus_tree = {
 		y = 7
 
 		prerequisite = { focus = ITA_work_with_ilva }
-		prerequisite = { focus = ITA_Modernizzare_il_sud }
 		cost = 5
         
 		available = { 	has_completed_focus = ITA_invest_in_italcementi }
@@ -310,7 +309,7 @@ focus_tree = {
 
 	} 
     
-    	   	focus = {
+    	focus = {
 		id = ITA_Breda_atrillery_depot
 		icon = Gfx_focus_generic_monetary_union
 		x = 9
@@ -329,12 +328,11 @@ focus_tree = {
 					type = 	arms_factory
 					level = 1
 					instant_build = yes
-				}
-					
+				}	
 			}
 		}
 	}        
-
+        # Italian Army Tree
 		focus = {
 		id = ITA_implement_army_reforms
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
@@ -404,7 +402,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-        Manpower = 20000
+        country_event = {
+		id = Army_commander_selection.1 
+		days = 2
+		}
 		}
 	}
     
@@ -417,7 +418,8 @@ focus_tree = {
         prerequisite = { focus = ITA_leadership_debate}
 		cost = 5
 
-		available = {
+        available = {
+		always = no
 		}
 
 		completion_reward = {
@@ -434,7 +436,8 @@ focus_tree = {
         prerequisite = { focus = ITA_leadership_debate}
 		cost = 5
 
-		available = {
+        available = {
+		always = no
 		}
 
 		completion_reward = {
@@ -480,7 +483,7 @@ focus_tree = {
 		}
 	}
         focus = {
-		id = ITA_Relentless_assoults
+		id = ITA_Relentless_assaults
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 16
 		y = 9
@@ -503,7 +506,7 @@ focus_tree = {
 		id = ITA_market_liberal_reforms
 		icon = Gfx_focus_generic_monetary_union
 		x = 8
-		y = 8
+		y = 10
 
 		prerequisite = { focus = ITA_urbanize_the_south}
         prerequisite = { focus = ITA_Breda_atrillery_depot }
@@ -524,7 +527,35 @@ focus_tree = {
 			}
 		}
 	} 
+       	focus = {
+		id = ITA_deal_with_the_northern_socialists
+		icon = Gfx_focus_generic_monetary_union
+		x = 9
+		y = 5
+        
+		
+		prerequisite = { focus = ITA_industrial_innovation}
+		cost = 5
 
+		available = { }
+
+		completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+                swap_ideas = { 
+                remove_idea = ITA_southern_problem_1 
+                add_idea = ITA_southern_problem_2
+                }	
+					
+			}
+		} 
+
+	}
 
 
 }
