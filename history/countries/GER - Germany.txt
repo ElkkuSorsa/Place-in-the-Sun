@@ -16,6 +16,9 @@ add_ideas = {
 	naval_race
 }
 
+create_faction = "Central Powers"
+add_to_faction = AUH
+
 #For start date 1939.1.1
 1939.1.1 = {
 	add_political_power = 1000
