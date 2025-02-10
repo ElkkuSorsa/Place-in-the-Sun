@@ -89,8 +89,8 @@ TUR = {
 }
 
 ROM = {
-	color = rgb { 194 239 46 }
-	color_ui = rgb { 194 239 46 }
+	color = rgb { 194 239 45 }
+	color_ui = rgb { 194 239 45 }
 }
 
 
