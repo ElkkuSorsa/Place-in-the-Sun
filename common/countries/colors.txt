@@ -67,3 +67,30 @@ EGY = {
 	color = rgb { 180 40 40 }
 	color_ui = rgb { 180 40 40 }
 }
+
+MNT = {
+	color = rgb { 17 68 134 }
+	color_ui = rgb { 17 68 134 }
+}
+
+GRE = {
+	color = rgb { 25 200 230 }
+	color_ui = rgb { 25 200 230 }
+}
+
+SER = {
+	color = rgb { 28 21 88 }
+	color_ui = rgb { 28 21 88 }
+}
+
+TUR = {
+	color = rgb { 200 19 19 }
+	color_ui = rgb { 200 19 19 }
+}
+
+ROM = {
+	color = rgb { 194 239 46 }
+	color_ui = rgb { 194 239 46 }
+}
+
+
