@@ -6,20 +6,20 @@ state={
 	
 	state_category = town
 	resources={
-		steel=3
+		steel=4
 	}
 
 	history={
-		owner = RUS
+		owner = SOV
 		victory_points = {
 			6414 3 
 		}
 		buildings = {
-			infrastructure = 2 #was: 8
-			arms_factory = 1
+			infrastructure = 4 #was: 8
+			arms_factory = 2
 			industrial_complex = 1
 		}
-		add_core_of = RUS
+		add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2
