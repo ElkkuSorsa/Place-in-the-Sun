@@ -1,0 +1,20 @@
+add_namespace = Army_commander_selection
+
+country_event = {
+	id = Army_commander_selection.1
+	title = "Question of Leadership"
+	desc = "Italy needs a great and competent officer to lead their army.  "
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "We need someone new and diffrent."
+		complete_national_focus = ITA_Armando_Dias
+	}
+
+	option = {
+		name = "We must keep Cadorna, old order shall not fall!"
+		complete_national_focus = ITA_Luigi_cadorna
+	}
+}
