@@ -12,7 +12,8 @@ state={
 		owner = RUS
 		add_core_of = KAZ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 3
 
 		}
 		victory_points = {

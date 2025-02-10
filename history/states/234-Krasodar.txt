@@ -6,12 +6,12 @@ state={
 	
 	state_category = large_town
 	resources={
-		tungsten=8 # was: 26
-		oil=5 # was: 18
+		tungsten=10 # was: 26
+		oil=7 # was: 18
 	}
 
 	history={
-		owner = RUS
+		owner = SOV
 		victory_points = {
 			3720 1 
 		}
@@ -19,9 +19,10 @@ state={
 			3734 5
 		}
 		buildings = {
-			infrastructure = 1 #was: 5
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
 		}
-		add_core_of = RUS
+		add_core_of = SOV
 		add_core_of = KUB
 	}
 
