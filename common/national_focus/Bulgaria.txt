@@ -12,59 +12,11 @@ focus_tree = {
 	default = no
     continuous_focus_position = { x = 100 y = 3000 }
 
-	# Army tree
-		
-		focus = {
-		id = BUL_bulgarian_armed_forces
-		icon = GFX_focus_chi_army_reform
-		x = 28
-		y = 1
-		
-		completion_reward = { add_political_power = 50
-        add_stability = 0.05
-        add_war_support = 0.05
-        }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-		focus = {
-		id = BUL_bulgarian_artillery
-		icon = GFX_goal_generic_army_artillery2
-		x = 27
-		y = 2
-		
-		prerequisite = { focus = BUL_bulgarian_armed_forces }
-		completion_reward = { add_political_power = 50
-        add_stability = 0.05
-        add_war_support = 0.05
-        }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = BUL_bulgarian_arms_effort
-		icon = GFX_focus_secret_rearmament
-		x = 29
-		y = 2
-		
-		prerequisite = { focus = BUL_bulgarian_armed_forces }
-		completion_reward = { add_political_power = 50
-        add_stability = 0.05
-        add_war_support = 0.05
-        }         
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
 	# 1st balkan war focus
 	
 	focus = {
 		id = BUL_national_revitalization
-		icon = GFX_focus_BUL_promote_bulgarian_nationalism
+		icon = GFX_goal_national_rev
 		x = 9
 		y = 1
 		
