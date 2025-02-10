@@ -1,34 +1,24 @@
-
 state={
 	id=212
 	name="STATE_212"
-	manpower = 1314936
-	
-	state_category = large_town
-
 	resources={
-		chromium = 1
+		chromium=1.000
+	}
+	provinces={
+		3937 6923 9862 
 	}
 
 	history={
 		owner = BUL
-		victory_points = { #Plovdiv
-			6923 10
-		}
-		victory_points = { #Haskovo
-			9862 1
-		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 1
 		}
 		add_core_of = BUL
+
 	}
 
-	provinces={
-		878 893 3937 6857 6923 9818 9862 11813 
-	}
-
-	local_supplies=5.0 
+	manpower=1314936
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=5.000
 }
