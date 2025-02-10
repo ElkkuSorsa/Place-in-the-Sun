@@ -50,12 +50,12 @@ country_event = {
 
 country_event = {
 	id = austria_hungary.5
-	title = "Future is Now"
+	title = "Iron and Blood, Even in Bosnia"
 	desc = austria_hungary.5.d
-	picture = GFX_office_meeting_maybe_giving
+	picture = GFX_little_girl_in_work_kids
 	is_triggered_only = yes
 
 	option = {
-		name = "Now we can't just stop"
+		name = "Let them starve, or, whatever"
 	}
 }

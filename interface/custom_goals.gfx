@@ -23,6 +23,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_serbians_on_their_own"
+	texturefile = "gfx/interface/goals/AUH/on_their_own.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_workplace_slavonia"
+	texturefile = "gfx/interface/goals/AUH/workplace_slavonia.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_eas_up_bureacoracy"
 	texturefile = "gfx/interface/goals/AUH/eas_up_bureacoracy.dds"			
 	}
