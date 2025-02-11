@@ -1,0 +1,31 @@
+focus_tree = {
+	id = ENG_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 501
+			tag = ENG
+			has_country_flag = ww1_victory
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3000 }
+
+	focus = {
+		id = ENG_example
+		icon = GFX_focus_chi_army_reform
+		x = 1
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+}
