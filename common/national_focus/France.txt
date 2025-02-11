@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = FRA_republican_era
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 25
+		x = 36
 		y = 1
 		
 		completion_reward = {
@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = FRA_maintain_liberal_coalition
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 20
+		x = 26
 		y = 2
 		prerequisite = { focus = FRA_republican_era }
 		mutually_exclusive = { focus = FRA_social_conservatist_coalition }
@@ -45,10 +45,141 @@ focus_tree = {
 
 	}
 
+		focus = {
+		id = FRA_memories_of_the_paris_commune
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 14
+		y = 2
+		prerequisite = { focus = FRA_republican_era }
+		mutually_exclusive = { focus = FRA_social_conservatist_coalition
+		focus = FRA_maintain_liberal_coalition 
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_revolutionary_spirit
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 12
+		y = 3
+		prerequisite = { focus = FRA_memories_of_the_paris_commune }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_demands_for_better_labour_laws
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 16
+		y = 3
+		prerequisite = { focus = FRA_memories_of_the_paris_commune }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_socialist_reforms
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 24
+		y = 3
+		prerequisite = { focus = FRA_maintain_liberal_coalition }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_social_welfare
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 24
+		y = 5
+		prerequisite = { focus = FRA_socialist_reforms }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_developing_poor_areas
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 28
+		y = 3
+		prerequisite = { focus = FRA_maintain_liberal_coalition }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_invest_in_the_rural_areas
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 28
+		y = 5
+		prerequisite = { focus = FRA_developing_poor_areas }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_crackdown_on_rightists
+		icon = GFX_focus_GER_fuhrerprinzip_himmler
+		x = 26
+		y = 4
+		prerequisite = { focus = FRA_maintain_liberal_coalition }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
 	focus = {
 		id = FRA_political_instability
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 25
+		x = 36
 		y = 3
 		prerequisite = { focus = FRA_maintain_liberal_coalition focus = FRA_social_conservatist_coalition } 
 		
@@ -64,7 +195,7 @@ focus_tree = {
 	focus = {
 		id = FRA_champagne_riots
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 25
+		x = 36
 		y = 4
 		prerequisite = { focus = FRA_political_instability } 
 		
@@ -80,7 +211,7 @@ focus_tree = {
 	focus = {
 		id = FRA_negotiate_with_rioters
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 26
+		x = 37
 		y = 5
 		prerequisite = { focus = FRA_champagne_riots } 
 		mutually_exclusive = { focus = FRA_supress_the_rioters }
@@ -97,7 +228,7 @@ focus_tree = {
     focus = {
 		id = FRA_supress_the_rioters
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 24
+		x = 35
 		y = 5
 		prerequisite = { focus = FRA_champagne_riots } 
 		mutually_exclusive = { focus = FRA_negotiate_with_rioters }
@@ -115,7 +246,7 @@ focus_tree = {
 	focus = {
 		id = FRA_end_the_riots
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 25
+		x = 36
 		y = 6
 		prerequisite = { focus = FRA_negotiate_with_rioters
 		focus = FRA_supress_the_rioters
@@ -133,7 +264,7 @@ focus_tree = {
 	focus = {
 		id = FRA_social_conservatist_coalition
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 30
+		x = 52
 		y = 2
 		prerequisite = { focus = FRA_republican_era }
 		mutually_exclusive = { focus = FRA_maintain_coalition }
@@ -150,7 +281,7 @@ focus_tree = {
 	focus = {
 		id = FRA_centrist_allies
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 32
+		x = 54
 		y = 3
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
@@ -164,9 +295,9 @@ focus_tree = {
 	}
 
 		focus = {
-		id = FRA_ymca
+		id = FRA_political_unity
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 32
+		x = 54
 		y = 5
 		prerequisite = { focus = FRA_centrist_allies }
 		
@@ -182,7 +313,7 @@ focus_tree = {
         focus = {
 		id = FRA_compromise_whit_monarchists
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 30
+		x = 52
 		y = 4
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
@@ -198,7 +329,7 @@ focus_tree = {
 		focus = {
 		id = FRA_crackdown_on_communists
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 28
+		x = 50
 		y = 3
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
@@ -214,7 +345,7 @@ focus_tree = {
 		focus = {
 		id = FRA_busines_investment
 		icon = GFX_focus_GER_fuhrerprinzip_himmler
-		x = 28
+		x = 50
 		y = 5
 		prerequisite = { focus = FRA_crackdown_on_communists }
 		
