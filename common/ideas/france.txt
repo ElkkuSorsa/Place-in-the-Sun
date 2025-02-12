@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+        disjointed_goverment = {
+
+            picture = generic_disjointed_gov
+
+			modifier = {
+             political_power_gain = -0.5
+             surrender_limit = -0.25
+             war_support_factor = -0.05
+             stability_factor = -0.05
+			}
+        }
+    }

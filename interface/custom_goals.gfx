@@ -156,4 +156,28 @@ spriteTypes = {
 		name = "GFX_goal_going_alone"
 		texturefile = "gfx/interface/goals/BUL/going_alone.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_conservative_france"
+		texturefile = "gfx/interface/goals/FRA/conservative_france.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_north_africa_colonialism"
+		texturefile = "gfx/interface/goals/FRA/north_africa_colonialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_paris_commune_memories"
+		texturefile = "gfx/interface/goals/FRA/paris_commune_memories.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_paris_development"
+		texturefile = "gfx/interface/goals/FRA/paris_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_revolutionary_spirit"
+		texturefile = "gfx/interface/goals/FRA/revolutionary_spirit.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_the_republic"
+		texturefile = "gfx/interface/goals/FRA/the_republic.dds"
+	}
 }

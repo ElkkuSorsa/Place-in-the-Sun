@@ -11,6 +11,7 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
+	disjointed_goverment
 }
 
 set_technology = {
