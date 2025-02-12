@@ -7,7 +7,7 @@ state={
 	state_category = large_town
 
 	history={
-		owner = SOV
+		owner = RUS
 		victory_points = {
 			6704 1
 		}
@@ -15,10 +15,9 @@ state={
 			705 3
 		}
 		buildings = {
-			infrastructure = 3
-			air_base = 3
+			infrastructure = 
 		}
-		add_core_of = SOV
+		add_core_of = RUS
 		add_core_of = CRI
 	}
 
