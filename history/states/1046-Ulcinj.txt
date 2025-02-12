@@ -5,7 +5,7 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = YUG
+		owner = TUR
 		add_core_of = YUG
 		add_core_of = MNT
 		buildings = {
