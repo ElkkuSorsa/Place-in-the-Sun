@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = LIT
+		owner = RUS
 		victory_points = {
 			6376 2
 		}
@@ -15,7 +15,7 @@ state={
 			3337 1
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 1 #was: 5
 			industrial_complex = 1
 		}
 		add_core_of = LIT

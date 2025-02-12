@@ -4,7 +4,7 @@ state={
 	name="STATE_11"
 
 	history={
-		owner = LIT
+		owner = RUS
 		victory_points = {
 			6296 5
 		}
@@ -12,9 +12,8 @@ state={
 			9404 1 #Ukmerge
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 1
 
 		}
 		add_core_of = LIT
