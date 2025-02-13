@@ -507,8 +507,7 @@ focus_tree = {
 		x = 8
 		y = 10
 
-		prerequisite = { focus = ITA_urbanize_the_south}
-        prerequisite = { focus = ITA_Breda_atrillery_depot }
+		prerequisite = { focus = ITA_urbanize_the_south focus = ITA_Breda_atrillery_depot}
 		cost = 5
 
 		available = {
@@ -569,15 +568,145 @@ focus_tree = {
 		x = 20
 		y = 8
         prerequisite = { focus = ITA_Armando_Dias focus = ITA_Luigi_cadorna}
+		cost = 10
+
+        available = {
+		}
+
+		completion_reward = {
+        add_research_slot = 1
+		}
+	}
+    	focus = {
+		id = ITA_Armor_innovation
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 19
+		y = 9
+        prerequisite = { focus = ITA_Army_innovation}
 		cost = 5
 
         available = {
 		}
 
 		completion_reward = {
-        Manpower = 20000
+        add_research_slot = 1
+		}
+	}
+
+        focus = {
+		id = ITA_Tackle_recruiment_issues
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 25
+		y = 8
+		
+        prerequisite = { focus = ITA_Armando_Dias}
+		cost = 7
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_4
+				add_idea = ITA_new_reforms_1
+			}
+		}
+	}
+		# Italian Political tree
+			
+        focus = {
+		id = ITA_italian_politics
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 45
+		y = 4
+		
+		cost = 5
+
+		available = { date > 1913.6.13
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+
+        focus = {
+		id = ITA_Stay_with_the_liberal_union
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 45
+		y = 6
+		prerequisite = { focus = ITA_italian_politics}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+	    focus = {
+		id = ITA_Campaign_for_PSI
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 40
+		y = 6
+		prerequisite = { focus = ITA_italian_politics}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+
+		focus = {
+		id = ITA_promote_socialist_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 39
+		y = 7
+		prerequisite = { focus = ITA_Campaign_for_PSI}
+		cost = 3
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_promise_voting_right_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 41
+		y = 7
+		prerequisite = { focus = ITA_Campaign_for_PSI}
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
 		}
 	}
 
 
+
+	    focus = {
+		id = ITA_Radicals_for_the_win
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 50
+		y = 6
+		prerequisite = { focus = ITA_italian_politics}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
 }
