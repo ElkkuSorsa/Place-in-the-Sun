@@ -288,8 +288,9 @@ focus_tree = {
 		prerequisite = {focus = AUH_slovenian_debate} 
 
 		completion_reward = {
-			
-			add_ideas = AUH_well_oiled_machine
+    	
+		add_ideas = AUH_well_oiled_machine
+		
 		}
 	}
 

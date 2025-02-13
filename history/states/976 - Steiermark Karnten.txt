@@ -6,7 +6,7 @@ state={
 	state_category = town
 	
 	resources = {
-		steel = 15 # was: 8
+		steel = 10 # was: 8
 		aluminium = 1 # was: 1
 	}
 
@@ -16,8 +16,8 @@ state={
 		add_core_of = AUH
 
 		buildings = {
-			infrastructure = 3 
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			3673 3
