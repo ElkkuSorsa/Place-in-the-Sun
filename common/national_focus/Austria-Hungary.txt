@@ -232,7 +232,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_slovenian_debate
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_slovenia_sign
 		x = 23
 		y = 6
 
@@ -245,12 +245,14 @@ focus_tree = {
 			add_state_core = 736
 			add_state_core = 853
 			add_state_core = 852
+			add_state_core = 1169
+			add_state_core = 1025
 		}
 	}
 
 		focus = {
 		id = AUH_austrian_sud_tirol
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_austrian_sud_tirol
 		x = 25
 		y = 6
 
@@ -276,7 +278,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_declare_the_revolt_uncostitutional
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_state_good
 		x = 24
 		y = 7
 

@@ -18,6 +18,21 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_slovenia_sign"
+	texturefile = "gfx/interface/goals/AUH/slovenia_sign.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_state_good"
+	texturefile = "gfx/interface/goals/AUH/declare_state_good.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_austrian_sud_tirol"
+	texturefile = "gfx/interface/goals/AUH/oesterreicher_tirol.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_problems_with_translatheinia"
 	texturefile = "gfx/interface/goals/AUH/problems_on_translethania.dds"			
 	}
