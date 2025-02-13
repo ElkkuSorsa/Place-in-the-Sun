@@ -8,7 +8,7 @@ state = {
 	}
 
 	history = {
-		owner = ALB
+		owner = TUR
 		victory_points = {
 			9914 5 
 		}
@@ -22,19 +22,12 @@ state = {
 			6900 2
 		}
 		buildings = {
-			infrastructure = 2 
+			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
-			11767 = {
-				naval_base = 4
-			}
-			13255 = {
-				naval_base = 2
-			}
-
 		}
 		add_core_of = ALB
-		add_claim_by = ITA
+		add_claim_by = TUR
 		1939.4.12 = {
 			owner = ITA
 			controller = ITA

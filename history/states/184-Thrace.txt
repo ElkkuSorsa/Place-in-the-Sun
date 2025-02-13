@@ -7,17 +7,16 @@ state={
 	state_category = rural
 
 	resources={
-		chromium=4
+		chromium=2
 	}
 
 	history={
 		victory_points = {
 			9930 1 
 		}
-		owner = GRE
+		owner = TUR
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
 		}
 		add_core_of = GRE
 		add_claim_by = BUL

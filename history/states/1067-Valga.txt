@@ -4,12 +4,12 @@ state={
 	name="STATE_1067"
 
 	history={
-		owner = EST
+		owner = RUS
 		victory_points = {
 			13659 1 #Valga
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 		}
 		add_core_of = EST
 

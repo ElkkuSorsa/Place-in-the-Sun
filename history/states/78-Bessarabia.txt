@@ -8,13 +8,12 @@ state=
 	
 	history= {
 		add_core_of = MOL
-		owner = ROM
+		owner = RUS
 		victory_points = {
 			3707 5
 		}
 		buildings = {
-			infrastructure = 2
-			air_base = 2
+			infrastructure = 1
 		}
 		add_core_of = ROM
 	}
