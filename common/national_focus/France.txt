@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = FRA_maintain_liberal_coalition
 		icon = GFX_focus_generic_social_democracy
-		x = 26
+		x = 21
 		y = 2
 		prerequisite = { focus = FRA_republican_era }
 		mutually_exclusive = { focus = FRA_social_conservatist_coalition }
@@ -48,12 +48,9 @@ focus_tree = {
 		focus = {
 		id = FRA_memories_of_the_paris_commune
 		icon = GFX_goal_paris_commune_memories
-		x = 14
-		y = 2
-		prerequisite = { focus = FRA_republican_era }
-		mutually_exclusive = { focus = FRA_social_conservatist_coalition
-		focus = FRA_maintain_liberal_coalition 
-		}
+		x = 12
+		y = 4
+        prerequisite = { focus = FRA_radicalist_reforms }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -67,8 +64,8 @@ focus_tree = {
 		focus = {
 		id = FRA_revolutionary_spirit
 		icon = GFX_focus_focus_fra_revolution_utmost
-		x = 12
-		y = 3
+		x = 10
+		y = 5
 		prerequisite = { focus = FRA_memories_of_the_paris_commune }
 		
 		completion_reward = {
@@ -83,8 +80,8 @@ focus_tree = {
 		focus = {
 		id = FRA_new_labour_laws
 		icon = GFX_focus_ICE_embrace_the_workers_revolution
-		x = 16
-		y = 3
+		x = 14
+		y = 5
 		prerequisite = { focus = FRA_memories_of_the_paris_commune }
 		
 		completion_reward = {
@@ -100,8 +97,8 @@ focus_tree = {
 		focus = {
 		id = FRA_path_to_power
 		icon = GFX_SOV_a_new_theory_of_revolution_ccp_2d_sov_compatibility
-		x = 14
-		y = 4
+		x = 12
+		y = 6
 		prerequisite = { focus = FRA_new_labour_laws
 		focus = FRA_revolutionary_spirit
 	    }
@@ -116,11 +113,28 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_socialist_reforms
+		id = FRA_radicalist_reforms
 		icon = GFX_focus_AUS_lawmaking_leniency
-		x = 24
+		x = 16
 		y = 3
 		prerequisite = { focus = FRA_maintain_liberal_coalition }
+		mutually_exclusive = { focus = FRA_socialist_reforms }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_social_welfare
+		icon = GFX_focus_AUS_lawmaking_leniency
+		x = 16
+		y = 5
+		prerequisite = { focus = FRA_radicalist_reforms }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -132,12 +146,29 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_universal_sufferage
+		id = FRA_socialist_reforms
 		icon = GFX_focus_generic_universal_suffrage
-		x = 24
+		x = 19
+		y = 3
+		prerequisite = { focus = FRA_maintain_liberal_coalition }
+		mutually_exclusive = { focus = FRA_radicalist_reforms }
+
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_basic_state_pension
+		icon = GFX_focus_generic_universal_suffrage
+		x = 19
 		y = 5
 		prerequisite = { focus = FRA_socialist_reforms }
-		
+
 		completion_reward = {
 			add_political_power = 100
 		}
@@ -150,7 +181,7 @@ focus_tree = {
 		focus = {
 		id = FRA_developing_poor_areas
 		icon = GFX_focus_generic_farmland
-		x = 28
+		x = 23
 		y = 3
 		prerequisite = { focus = FRA_maintain_liberal_coalition }
 		
@@ -166,7 +197,7 @@ focus_tree = {
 		focus = {
 		id = FRA_invest_in_the_rural_areas
 		icon = GFX_SOV_reverse_the_collectivization_process_ccp_2d_sov_compatibility
-		x = 28
+		x = 23
 		y = 5
 		prerequisite = { focus = FRA_developing_poor_areas }
 		
@@ -182,7 +213,7 @@ focus_tree = {
 		focus = {
 		id = FRA_crackdown_on_rightists
 		icon = GFX_focus_generic_attack_vichy_france
-		x = 26
+		x = 21
 		y = 4
 		prerequisite = { focus = FRA_maintain_liberal_coalition }
 		
@@ -283,7 +314,7 @@ focus_tree = {
 	focus = {
 		id = FRA_social_conservatist_coalition
 		icon = GFX_goal_conservative_france
-		x = 52
+		x = 51
 		y = 2
 		prerequisite = { focus = FRA_republican_era }
 		mutually_exclusive = { focus = FRA_maintain_coalition }
@@ -300,7 +331,7 @@ focus_tree = {
 	focus = {
 		id = FRA_centrist_allies
 		icon = GFX_goal_support_democracy
-		x = 54
+		x = 53
 		y = 3
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
@@ -316,7 +347,7 @@ focus_tree = {
 		focus = {
 		id = FRA_political_controll
 		icon = GFX_focus_ARG_keep_it_in_the_party
-		x = 54
+		x = 53
 		y = 5
 		prerequisite = { focus = FRA_centrist_allies }
 		
@@ -332,7 +363,7 @@ focus_tree = {
         focus = {
 		id = FRA_compromise_whit_monarchists
 		icon = GFX_focus_CHL_invite_french_aristocracy
-		x = 52
+		x = 51
 		y = 4
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
@@ -348,7 +379,7 @@ focus_tree = {
 		focus = {
 		id = FRA_crackdown_on_communists
 		icon = GFX_focus_CHL_chilean_anti_communist_action
-		x = 50
+		x = 49
 		y = 3
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
@@ -364,7 +395,7 @@ focus_tree = {
 		focus = {
 		id = FRA_busines_investment
 		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
-		x = 50
+		x = 49
 		y = 5
 		prerequisite = { focus = FRA_crackdown_on_communists }
 		
@@ -373,6 +404,22 @@ focus_tree = {
 		}
 
 		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_a_new_path
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = 51
+		y = 6
+		prerequisite = { focus = FRA_busines_investment focus = FRA_compromise_whit_monarchists focus = FRA_political_controll }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
