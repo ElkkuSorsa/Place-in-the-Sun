@@ -300,7 +300,7 @@ focus_tree = {
 		x = 17
 		y = 2
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}
 
@@ -315,7 +315,7 @@ focus_tree = {
 		focus = {
 		id = AUH_allow_scientific_research_in_languages
 		icon = GFX_goal_empire_of_franz_josef
-		x = 14
+		x = 13
 		y = 3
 
 		cost = 10
@@ -323,22 +323,32 @@ focus_tree = {
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
 		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
-				}
+		}
+	}
+
+		focus = {
+		id = AUH_celebration_of_international_christendom
+		icon = GFX_goal_empire_of_franz_josef
+		x = 15
+		y = 3
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_many_crowns_many_problems}
+
+		completion_reward = {
 		}
 	}
 
 		focus = {
 		id = AUH_second_language_german
 		icon = GFX_goal_empire_of_franz_josef
-		x = 16
-		y = 3
+		x = 15
+		y = 4
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_many_crowns_many_problems}
+		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
 
 		completion_reward = {
 					country_event = {
@@ -351,12 +361,30 @@ focus_tree = {
 		focus = {
 		id = AUH_propagate_loyal_culture
 		icon = GFX_goal_empire_of_franz_josef
-		x = 18
+		x = 17
 		y = 3
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_propagate_loyal_culture2
+		icon = GFX_goal_empire_of_franz_josef
+		x = 17
+		y = 4
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_propagate_loyal_culture}
 
 		completion_reward = {
 					country_event = {
@@ -387,15 +415,12 @@ focus_tree = {
 		focus = {
 		id = AUH_koening_reich_bohmen
 		icon = GFX_goal_empire_of_franz_josef
-		x = 15
-		y = 4
+		x = 16
+		y = 5
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_integrate_party_political}
-		prerequisite = {focus = AUH_propagate_loyal_culture}
 		prerequisite = {focus = AUH_second_language_german}
-		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
 
 		completion_reward = {
 					country_event = {
@@ -406,7 +431,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = AUH_galicin_integration
+		id = AUH_eas_up_pn_evidenzbureau
 		icon = GFX_goal_empire_of_franz_josef
 		x = 19
 		y = 4
@@ -414,9 +439,24 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_integrate_party_political}
-		prerequisite = {focus = AUH_propagate_loyal_culture}
-		prerequisite = {focus = AUH_second_language_german}
-		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_amnesty_to_ilegal_guns_owners
+		icon = GFX_goal_empire_of_franz_josef
+		x = 18
+		y = 5
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
 
 		completion_reward = {
 					country_event = {

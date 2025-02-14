@@ -59,3 +59,15 @@ country_event = {
 		name = "Let them starve, or, whatever"
 	}
 }
+
+country_event = {
+	id = austria_hungary.6
+	title = "Many Crowns, Many Issues"
+	desc = austria_hungary.6.d
+	picture = GFX_little_girl_in_work_kids
+	is_triggered_only = yes
+
+	option = {
+		name = "Emperor and King will never be stopped"
+	}
+}

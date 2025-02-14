@@ -83,7 +83,7 @@ ideas = {
 			resistance_damage_to_garrison = 0.15
 			resistance_growth = 0.10
 			subjects_autonomy_gain = 0.1
-			research_speed_factor = -0.05
+			research_speed_factor = -0.1
 			political_advisor_cost_factor = 0.1
 			}
 		}
