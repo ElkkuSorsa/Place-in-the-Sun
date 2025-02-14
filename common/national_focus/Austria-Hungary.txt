@@ -397,7 +397,7 @@ focus_tree = {
 		focus = {
 		id = AUH_integrate_party_political
 		icon = GFX_goal_empire_of_franz_josef
-		x = 20
+		x = 19
 		y = 3
 
 		cost = 10
@@ -413,7 +413,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = AUH_koening_reich_bohmen
+		id = AUH_bolster_youth_organisations
 		icon = GFX_goal_empire_of_franz_josef
 		x = 16
 		y = 5
@@ -457,6 +457,25 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_amnesty_to_ilegal_guns_owners
+		icon = GFX_goal_empire_of_franz_josef
+		x = 17
+		y = 6
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_amnesty_to_ilegal_guns_owners}
+		prerequisite = {focus = AUH_bolster_youth_organisations}
 
 		completion_reward = {
 					country_event = {
