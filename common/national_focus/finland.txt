@@ -467,12 +467,54 @@ focus_tree = {
     focus = {
     id = FIN_the_coronation
     icon = GFX_focus_FIN_the_finnish_throne
-    x = 22
-    y = 4
+    x = 21
+    y = 5
     cost = 10
-    prerequisite = {focus = FIN_favor_monarchy}
+    prerequisite = {focus = FIN_empower_white_guard}
+    prerequisite = {focus = FIN_rally_support}
     completion_reward = {
     
+    }
+    }
+
+focus = {
+    id = FIN_crush_the_left
+    icon = GFX_focus_FIN_the_finnish_throne
+    x = 24
+    y = 4
+    cost = 5
+    prerequisite = {focus = FIN_favor_monarchy}
+    completion_reward = {
+    add_stability = -0.05
+    add_popularity = {
+    ideology = communism popularity = -0.15
+    }
+    add_popularity = {
+    ideology = neutrality popularity = -0.15
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_prepare_monarchy
+    icon = GFX_focus_EST_national_pride_in_finland
+    x = 1
+    y = 1
+    cost = 5
+    completion_reward = {
+    add_political_power = 75
+    }
+    }
+
+    focus = {
+    id = FIN_choosing_a_king
+    icon = GFX_focus_EST_national_pride_in_finland
+    prerequisite = {focus = FIN_prepare_monarchy}
+    x = 1
+    y = 2
+    cost = 5
+    completion_reward = {
+    add_political_power = 75
     }
     }
 
