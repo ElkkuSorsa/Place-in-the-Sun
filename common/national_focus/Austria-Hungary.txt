@@ -17,7 +17,7 @@ focus_tree = {
 		focus = {
 		id = AUH_empire_of_franz_josef
 		icon = GFX_goal_empire_of_franz_josef
-		x = 21
+		x = 20
 		y = 1
 
 		cost = 10
@@ -291,6 +291,138 @@ focus_tree = {
     	
 		add_ideas = AUH_well_oiled_machine
 		
+		}
+	}
+
+		focus = {
+		id = AUH_many_crowns_many_problems
+		icon = GFX_goal_empire_of_franz_josef
+		x = 17
+		y = 2
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_empire_of_franz_josef}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_allow_scientific_research_in_languages
+		icon = GFX_goal_empire_of_franz_josef
+		x = 14
+		y = 3
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_many_crowns_many_problems}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_second_language_german
+		icon = GFX_goal_empire_of_franz_josef
+		x = 16
+		y = 3
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_many_crowns_many_problems}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_propagate_loyal_culture
+		icon = GFX_goal_empire_of_franz_josef
+		x = 18
+		y = 3
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_many_crowns_many_problems}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_integrate_party_political
+		icon = GFX_goal_empire_of_franz_josef
+		x = 20
+		y = 3
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_many_crowns_many_problems}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_koening_reich_bohmen
+		icon = GFX_goal_empire_of_franz_josef
+		x = 15
+		y = 4
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_integrate_party_political}
+		prerequisite = {focus = AUH_propagate_loyal_culture}
+		prerequisite = {focus = AUH_second_language_german}
+		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
+		}
+	}
+
+		focus = {
+		id = AUH_galicin_integration
+		icon = GFX_goal_empire_of_franz_josef
+		x = 19
+		y = 4
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_integrate_party_political}
+		prerequisite = {focus = AUH_propagate_loyal_culture}
+		prerequisite = {focus = AUH_second_language_german}
+		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.6
+					days = 1
+				}
 		}
 	}
 
