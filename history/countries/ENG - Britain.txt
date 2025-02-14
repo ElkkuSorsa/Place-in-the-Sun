@@ -1,4 +1,4 @@
-﻿oob = "ENG_1936"
+﻿set_oob = "ENG_1910"
 capital = 1
 set_research_slots = 3
 set_stability = 0.8

@@ -4,6 +4,9 @@ set_stability = 0.52
 set_war_support = 0.21
 set_convoys = 200
 
+create_faction = "Entente Cordiale"
+add_to_faction = RUS
+
 add_ideas = {
 	scraping_the_barrel
 	all_adults_serve
@@ -31,5 +34,5 @@ set_popularities = {
 	communism = 20
 	neutrality = 15
 }
-}
+
 

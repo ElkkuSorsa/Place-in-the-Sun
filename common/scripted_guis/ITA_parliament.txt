@@ -1,0 +1,7 @@
+scripted_gui = {
+    ITA_parliament = {
+        window_name = "Italian_parliament"
+        context_type = decision_category
+         
+	}
+}

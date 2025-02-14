@@ -1,0 +1,7 @@
+﻿l_english:
+ ITA_politics: "Italian Politics"
+ ITA_politics_desc: "\nThe United Kingdom is known for it's rich and stable politics, dominated by the Whigs for over a century. But now, in the 1910s, the Liberal party is struggling to form majority governments, how will the situation evolve?"
+ 
+ ITA_parliament_desc: "We need §Y255 §!seats out of total §Y508 §!seats \nto reign with majority, we have §Y[?ITA_govseats]."
+ ITA_parliament_parties: "Liberals\nSocialists\nRadicals\nRepublicans\nRight"
+ ITA_parliament_title: "§HParliament§1"
