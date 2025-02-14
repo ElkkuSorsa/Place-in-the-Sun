@@ -36,7 +36,7 @@ ideas = {
 			production_factory_efficiency_gain_factor = -0.05
 			army_defence_against_major_factor = -0.1
 			army_attack_against_major_factor = -0.1
-			stability_weekly = -0.001
+			stability_weekly = -0.002
 			democratic_drift = 0.2
 			drift_defence_factor = -0.15
 			industrial_capacity_factory = -0.1
@@ -78,13 +78,53 @@ ideas = {
 			resistance_growth = 0.15
 			war_support_factor = -0.3
 			stability_factor = -0.15
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.15
+			resistance_growth = 0.10
+			research_speed_factor = -0.1
+			political_advisor_cost_factor = 0.1
+			}
+		}
+
+			auh_Multiethnicity_1_right = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.15
+			war_support_factor = -0.25
+			stability_factor = -0.10
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.15
+			resistance_growth = 0.10
+			research_speed_factor = -0.1
+			}
+		}
+
+			auh_Multiethnicity_1_left = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.15
+			war_support_factor = -0.3
+			stability_factor = -0.15
 			compliance_gain = -0.1
 			root_out_resistance_effectiveness_factor = -0.25
 			resistance_damage_to_garrison = 0.15
 			resistance_growth = 0.10
 			subjects_autonomy_gain = 0.1
-			research_speed_factor = -0.1
+			research_speed_factor = -0.05
 			political_advisor_cost_factor = 0.1
+			}
+		}
+
+			auh_Multiethnicity3 = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.15
+			war_support_factor = -0.2
+			stability_factor = -0.1
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.15
+			resistance_growth = 0.10
+			research_speed_factor = -0.05
 			}
 		}
 

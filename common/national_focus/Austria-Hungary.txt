@@ -323,6 +323,19 @@ focus_tree = {
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
 		completion_reward = {
+				if = {
+				limit = { has_idea = auh_Multiethnicity }
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity
+					add_idea = auh_Multiethnicity_1_left
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity_1_right
+					add_idea = auh_Multiethnicity2
+				}
+			}
 		}
 	}
 
@@ -351,10 +364,19 @@ focus_tree = {
 		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
 
 		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
+				if = {
+				limit = { has_idea = auh_Multiethnicity }
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity2
+					add_idea = auh_Multiethnicity3
 				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity2_2
+					add_idea = auh_Multiethnicity3
+				}
+			}
 		}
 	}
 
@@ -405,10 +427,19 @@ focus_tree = {
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
 		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
+				if = {
+				limit = { has_idea = auh_Multiethnicity }
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity
+					add_idea = auh_Multiethnicity_1_right
 				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity_1_left
+					add_idea = auh_Multiethnicity_1_right
+				}
+			}
 		}
 	}
 
@@ -423,10 +454,19 @@ focus_tree = {
 		prerequisite = {focus = AUH_second_language_german}
 
 		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
+				if = {
+				limit = { has_idea = auh_Multiethnicity }
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity2
+					add_idea = auh_Multiethnicity3
 				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity2_2
+					add_idea = auh_Multiethnicity3
+				}
+			}
 		}
 	}
 
