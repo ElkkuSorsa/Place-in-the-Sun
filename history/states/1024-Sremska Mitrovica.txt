@@ -1,0 +1,23 @@
+
+state={
+	id=1024
+	name="STATE_1024"
+	manpower = 98520
+	
+	state_category = rural
+
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HUN
+		add_core_of = SER
+	}
+
+	provinces={
+		11577 11580
+	}
+
+	local_supplies=0.0 
+}

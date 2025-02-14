@@ -345,6 +345,76 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_guard_christian_values
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 33
+		y = 5
+		prerequisite = { focus = GER_zentrum }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_tax_cuts
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 33
+		y = 6
+		prerequisite = { focus = GER_guard_christian_values }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_moderate_reforms
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 31
+		y = 6
+		prerequisite = { focus = GER_guard_christian_values }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_expand_poor_laws
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 29
+		y = 7
+		prerequisite = { focus = GER_moderate_reforms }
+		prerequisite = { focus = GER_government_reform }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_towards_full_male_suffrage
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 31
+		y = 7
+		prerequisite = { focus = GER_moderate_reforms }
+		prerequisite = { focus = GER_government_reform }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_support_german_business
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 33
+		y = 7
+		prerequisite = { focus = GER_moderate_reforms }
+		prerequisite = { focus = GER_tax_cuts }
+		prerequisite = { focus = GER_government_reform }
+
+		cost = 5
+
+	}
+
+	focus = {
 		id = GER_new_constitution
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 37
@@ -397,6 +467,127 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = GER_snap_elections }
 		mutually_exclusive = { focus = GER_zentrum }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_central_power_unity
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 46
+		y = 4
+		prerequisite = { focus = GER_snap_elections }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_stir_up_nationalism
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 50
+		y = 5
+		prerequisite = { focus = GER_central_power_unity }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_restore_polish_kingdom
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 51
+		y = 6
+		prerequisite = { focus = GER_stir_up_nationalism }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_pre-emptive_strike_RUS
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 51
+		y = 7
+		prerequisite = { focus = GER_restore_polish_kingdom }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_pre-emptive_strike_FRA
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 53
+		y = 7
+		prerequisite = { focus = GER_restore_polish_kingdom }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_pressure_austria
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 45
+		y = 5
+		prerequisite = { focus = GER_central_power_unity }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_support_italian_claims
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 47
+		y = 5
+		prerequisite = { focus = GER_central_power_unity }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_expand_central_powers
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 46
+		y = 6
+		prerequisite = { focus = GER_central_power_unity }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_benelux
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 44
+		y = 7
+		prerequisite = { focus = GER_expand_central_powers }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_nordics
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 46
+		y = 7
+		prerequisite = { focus = GER_expand_central_powers }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_balkans
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 48
+		y = 7
+		prerequisite = { focus = GER_expand_central_powers }
 
 		cost = 5
 

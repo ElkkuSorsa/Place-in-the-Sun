@@ -1,0 +1,30 @@
+
+state={
+	id=1238
+	name="STATE_1238"
+	resources={
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			9274 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = POL
+		add_core_of = LIT
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		9274
+	}
+
+	local_supplies=0.0 
+	manpower=26589
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

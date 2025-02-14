@@ -1,0 +1,26 @@
+
+state = {
+	id=1017
+	name="STATE_1017"
+	manpower = 1125630
+
+	state_category = town
+
+	history = {
+		owner = HUN
+		buildings = {
+			infrastructure = 1 #was: 6
+			industrial_complex = 1
+		}
+		victory_points = {
+			11659 5 
+		}
+		add_core_of = HUN
+	}
+
+	provinces={
+		730 3730 6735 11659 
+	}
+
+	local_supplies=12.0 
+}

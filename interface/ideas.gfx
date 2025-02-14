@@ -31,6 +31,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_idea_AUH_well_oiled_machine"
+		texturefile = "gfx/interface/ideas/AUH/functioning_stuff_like_machine.dds"
+	}
+
+		spriteType = {
 		name = "GFX_idea_hun_economy_wasteland"
 		texturefile = "gfx/interface/ideas/AUH/economy_wasteland.dds"
 	}

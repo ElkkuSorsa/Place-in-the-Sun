@@ -1,0 +1,26 @@
+
+state={
+	id=1060
+	name="STATE_1060"
+
+	history={
+		owner = RUS
+		victory_points = {
+			13679 1 #Abrene
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LAT
+		add_core_of = LTG
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		13679
+	}
+	manpower=32300
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

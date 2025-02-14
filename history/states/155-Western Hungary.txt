@@ -1,37 +1,29 @@
-state = {
-	id = 155
-	name = "STATE_155" # North Transdanubia
-	manpower = 1465070 # was 2197605
+
+state={
+	id=155
+	name="STATE_155" # Transdanubia
+	manpower = 997605
 	
-	state_category = large_town # was city
-
-	resources = {
-		aluminium = 40 # moved from Northern Hungary, then was 60
+	state_category = town
+	resources={
+		aluminium=22
 	}
-
-	history = {
-
+	history={
 		owner = HUN
-		add_core_of = HUN
-
 		victory_points = {
-			6720 10 # Györ
-		} 
-
-		victory_points = {
-			686 1 # Sopron
-		} 
-
+			6720 3
+		}
 		buildings = {
-			infrastructure = 2 #was: 6
+			infrastructure = 3
+			industrial_complex = 1
 			arms_factory = 1
 		}
-		
+		add_core_of = HUN
 	}
 
-	provinces = {
-		686 701 3670 3683 6703 6720 9676 11627 11663 13125 
+	provinces={
+		701 3683 6703 6720 9676 11663 13125 
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

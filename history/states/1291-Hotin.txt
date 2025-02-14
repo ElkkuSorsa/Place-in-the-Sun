@@ -1,0 +1,26 @@
+state=
+{
+	id=1291
+	name="STATE_1291"
+	manpower = 46780
+	
+	state_category = pastoral
+	
+	history= {
+		add_core_of = UKR
+		add_claim_by = MOL
+		owner = RUS
+		victory_points = {
+			13748 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROM
+	}
+	provinces=
+	{
+		3407 13748
+	}
+	local_supplies=0.0 
+}

@@ -5,10 +5,10 @@ state={
 	history={
 		owner = AUH
 		victory_points = {
-			673 5 
+			673 3 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
 		}
@@ -20,9 +20,9 @@ state={
 		}
 	}
 	provinces={
-		668 671 673 3675 6673 9633 9636 11618 11634 
+		673 9633 9636 11618 11634
 	}
-	manpower=1500986
+	manpower=1100986
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=12.000

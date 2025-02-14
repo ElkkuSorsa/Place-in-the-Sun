@@ -1,0 +1,31 @@
+state={
+	id=1007
+	name="STATE_1007"
+	manpower = 352650
+	
+	state_category = town
+	
+	history={
+		owner = AUH
+		victory_points = {
+			6552 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = AUH
+
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+		}
+	}
+
+	provinces={
+		732 3718 6552 6723 6739 9527
+	}
+
+	local_supplies=0.0 
+}

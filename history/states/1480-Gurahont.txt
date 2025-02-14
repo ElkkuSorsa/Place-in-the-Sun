@@ -1,0 +1,23 @@
+
+state={
+	id=1480
+	name="STATE_1480"
+	manpower = 215630
+	
+	state_category = rural
+
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ROM
+		add_core_of = HUN
+	}
+
+	provinces={
+		696 9640 
+	}
+
+	local_supplies=0.0 
+}

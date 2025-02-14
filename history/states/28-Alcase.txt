@@ -16,9 +16,12 @@ state={
 		}
 		#victory_points = { 6529 1 }
 		#victory_points = { 549 1 }
-		victory_points = { 678 5 }
+		victory_points = { 678 3 }
 		victory_points = { 9503 5 }
-		victory_points = { 9559 10 }
+		victory_points = { 9559 3 }
+		victory_points = {
+			6529 3
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
@@ -53,7 +56,6 @@ state={
 
 		}
 		add_core_of = FRA
-		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

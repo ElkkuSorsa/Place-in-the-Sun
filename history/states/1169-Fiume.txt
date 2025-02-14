@@ -1,0 +1,27 @@
+
+state = {
+	id = 1169
+	name = "STATE_1169"
+	manpower = 75420
+
+	state_category = rural
+
+
+	history = {
+		owner = AUH
+		victory_points = {
+			13372 3 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CRO
+		add_core_of = LBV
+	}
+
+	provinces = {
+		13372
+	}
+
+	local_supplies = 0.0 
+}

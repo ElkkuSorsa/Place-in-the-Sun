@@ -1,0 +1,25 @@
+state={
+	id=1483
+	name="STATE_1483"
+
+	history={
+		owner = AUH
+		victory_points = {
+			3434 3
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = POL
+		add_core_of = GAL
+
+	}
+
+	provinces={
+		3434 9494
+	}
+	manpower=126520
+	state_category=rural
+
+	local_supplies=0.0 
+}

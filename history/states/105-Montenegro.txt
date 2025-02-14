@@ -11,18 +11,12 @@ state={
 		victory_points = {
 			9809 3 
 		}
-		victory_points = {
-			9821 1
-		}
-		owner = MNT
+		owner = TUR
 		add_core_of = MNT
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
 			9809 = {
-				naval_base = 1
-			}
-			9821 = {
 				naval_base = 1
 			}
 		}
@@ -33,7 +27,7 @@ state={
 	provinces={
 		937 6913 9809 9821 11858 
 	}
-	manpower=895500
+	manpower=880500
 	buildings_max_level_factor=1.000
 	state_category=rural
 

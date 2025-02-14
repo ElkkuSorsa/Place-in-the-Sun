@@ -1,0 +1,26 @@
+state={
+	id=985
+	name="STATE_985"
+	manpower = 1423980
+	
+	state_category = town
+	
+	history={
+		owner = AUH
+		victory_points = {
+			3483 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = POL
+		add_core_of = UKR
+		add_core_of = GAL
+	}
+
+	provinces={
+		438 491 3483 3562 9454 9558 11427 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,28 @@
+state={
+	id=982
+	name="STATE_982"
+	resources={
+		steel=2
+	}
+
+	history={
+		owner = AUH
+		victory_points = {
+			442 2 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = POL
+		add_core_of = GAL
+	}
+
+	provinces={
+		442 466 3410 6499 6522 11507 13640
+	}
+	manpower=956320
+	state_category=town
+
+	local_supplies=0.0 
+}

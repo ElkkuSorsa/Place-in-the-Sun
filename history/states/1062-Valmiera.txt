@@ -1,0 +1,25 @@
+
+state={
+	id=1062
+	name="STATE_1062"
+	manpower = 92305
+	
+	state_category = rural
+	
+	history={
+		owner = RUS
+		victory_points = {
+			9501 1 #Valmiera
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LAT
+	}
+
+	provinces={
+		3388 9317 9501 
+	}
+
+	local_supplies=0.0 
+}

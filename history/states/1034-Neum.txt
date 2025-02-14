@@ -1,0 +1,24 @@
+
+state={
+	id=1034
+	name="STATE_1034"
+	manpower = 9230
+
+	state_category = pastoral
+
+
+	history={
+		owner = AUH
+		buildings = {
+			infrastructure = 1
+		}
+		#add_claim_by = ITA #added by focus
+		add_core_of = BOS
+	}
+
+	provinces={
+		13643
+	}
+
+	local_supplies=0.0 
+}

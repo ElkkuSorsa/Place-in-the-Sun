@@ -1,0 +1,23 @@
+state={
+	id=1252
+	name="STATE_1252"
+	manpower = 215489
+	
+	state_category = rural
+	history={
+		victory_points = {
+			6401 1
+		}
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = POL
+	}
+
+	provinces={
+		548 6401 11515
+	}
+
+	local_supplies=0.0 
+}

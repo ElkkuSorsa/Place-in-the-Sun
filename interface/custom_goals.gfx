@@ -18,13 +18,43 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_slovenia_sign"
+	texturefile = "gfx/interface/goals/AUH/slovenia_sign.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_state_good"
+	texturefile = "gfx/interface/goals/AUH/declare_state_good.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_austrian_sud_tirol"
+	texturefile = "gfx/interface/goals/AUH/oesterreicher_tirol.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_problems_with_translatheinia"
 	texturefile = "gfx/interface/goals/AUH/problems_on_translethania.dds"			
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_serbians_on_their_own"
+	texturefile = "gfx/interface/goals/AUH/on_their_own.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_workplace_slavonia"
+	texturefile = "gfx/interface/goals/AUH/workplace_slavonia.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_eas_up_bureacoracy"
 	texturefile = "gfx/interface/goals/AUH/eas_up_bureacoracy.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_killing_unloyal_officers"
+	texturefile = "gfx/interface/goals/AUH/killing_unloyal_officers.dds"			
 	}
 
 	SpriteType = {
@@ -120,5 +150,49 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_balkan_cooperation"
 		texturefile = "gfx/interface/goals/BUL/balkan_cooperation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_turkish_question"
+		texturefile = "gfx/interface/goals/BUL/turkish_question.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_national_revilisation"
+		texturefile = "gfx/interface/goals/BUL/national_revilisation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_logistic_planning"
+		texturefile = "gfx/interface/goals/BUL/logistic_planning.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_prepeare_war_liberation"
+		texturefile = "gfx/interface/goals/BUL/prepeare_war_liberation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_going_alone"
+		texturefile = "gfx/interface/goals/BUL/going_alone.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_conservative_france"
+		texturefile = "gfx/interface/goals/FRA/conservative_france.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_north_africa_colonialism"
+		texturefile = "gfx/interface/goals/FRA/north_africa_colonialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_paris_commune_memories"
+		texturefile = "gfx/interface/goals/FRA/paris_commune_memories.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_paris_development"
+		texturefile = "gfx/interface/goals/FRA/paris_development.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_revolutionary_spirit"
+		texturefile = "gfx/interface/goals/FRA/revolutionary_spirit.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_the_republic"
+		texturefile = "gfx/interface/goals/FRA/the_republic.dds"
 	}
 }

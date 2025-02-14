@@ -1,0 +1,30 @@
+
+state={
+	id=991
+	name="STATE_991"
+	manpower = 1156860
+	resources={
+		oil=3 # was: 14
+		aluminium=3 # was: 12
+	}
+	
+	state_category = large_town
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 2 #was: 7
+		}
+		victory_points = {
+			11557 1
+		}
+		add_core_of = RUS
+		add_core_of = UKR
+	}
+
+	provinces={
+		489 582 9491 9543 11530 11557 
+	}
+
+	local_supplies=0.0 
+}

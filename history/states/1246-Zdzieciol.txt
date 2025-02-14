@@ -1,0 +1,23 @@
+state={
+	id=1246
+	name="STATE_1246"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BLR
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		6359
+	}
+	manpower=27980
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

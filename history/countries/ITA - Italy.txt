@@ -5,6 +5,7 @@ set_stability = 0.5
 set_war_support = 0.5
 set_convoys = 0
 
+recruit_character = ITA_giovanni_giolitti
 
 add_ideas = {
 	scraping_the_barrel
@@ -13,11 +14,14 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
-	ITA_problema_del_sud_1
+	ITA_southern_problem_1
+	ITA_under_supplied_army_1
+	Colonial_ambitions
+	Northers_socialist_problem_1
 }
 
 
-
+recruit_character = 
 
 #For start date 1939.1.1
 1939.1.1 = {
@@ -48,7 +52,6 @@ set_popularities = {
 		neutrality = 25
 	}
 }
-
 
 
 

@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = ITA_industrial_innovation
 		icon = GFX_focus_generic_modernize_industry
-		x = 5
+		x = 8
 		y = 4
 
 		cost = 5
@@ -44,10 +44,10 @@ focus_tree = {
 
 		completion_reward = {
 			159 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = 	industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -56,7 +56,7 @@ focus_tree = {
 
 
     	focus = {
-		id = ITA_steel_production_in_Calabria
+		id = ITA_steel_mills_in_calabria
 		icon = GFX_focus_generic_steel
 		x = 6
 		y = 6
@@ -76,19 +76,19 @@ focus_tree = {
 			}
 		}
 	}
-
+ 
    	focus = {
 		id = ITA_invest_in_italcementi
-		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		icon = Gfx_focus_generic_monetary_union
 		x = 7
 		y = 7
-
+        
+		
 		prerequisite = { focus = ITA_Facilate_industrial_growth}
-        prerequisite = { focus = ITA_steel_production_in_Calabria }
-		cost = 5
+        prerequisite = { focus = ITA_steel_mills_in_calabria }
+		cost = 10
 
-		available = {
-		}
+		available = { }
 
 		completion_reward = {
 			159 = {
@@ -98,30 +98,18 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-					remove_idea = ITA_problema_del_sud_1
-					add_idea = ITA_problema_del_sud_2
+                swap_ideas = { 
+                remove_idea = ITA_southern_problem_1 
+                add_idea = ITA_southern_problem_2
+                }	
+					
 			}
-		}
-	} 
+		} 
+
+	}
     
 
-		focus = {
-		id = ITA_give_funds_to_universarities
-		icon = GFX_focus_ETH_protector_of_the_somalis
-		x = 3
-		y = 6
 
-		prerequisite = { focus = ITA_industrial_innovation }
-		
-		cost = 15
-
-		available = {
-		}
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
     
 		focus = {
 		id = ITA_fund_lancia
@@ -137,7 +125,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			11 = {
+			160 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	arms_factory
@@ -150,8 +138,8 @@ focus_tree = {
     
        	focus = {
 		id = ITA_Modernizzare_il_sud
-		icon = GFX_focus_CHL_enlarge_the_textile_industries
-		x = 9
+		icon = GFX_
+		x = 11
 		y = 5
 
 		prerequisite = { focus = ITA_industrial_innovation}
@@ -185,13 +173,12 @@ focus_tree = {
         }
 	} 
 
-        	focus = {
+        focus = {
 		id = ITA_work_with_ilva
 		icon = GFX_focus_generic_steel
-		x = 10
+		x = 11
 		y = 6
 
-		prerequisite = { focus = ITA_industrial_innovation }
         prerequisite = { focus = ITA_Modernizzare_il_sud }
 		cost = 5
 
@@ -214,11 +201,9 @@ focus_tree = {
 		y = 7
 
 		prerequisite = { focus = ITA_work_with_ilva }
-		prerequisite = { focus = ITA_Modernizzare_il_sud }
 		cost = 5
-
-		available = {
-		}
+        
+		available = { 	has_completed_focus = ITA_invest_in_italcementi }
 
 		completion_reward = {
 			115 = {
@@ -228,10 +213,500 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				swap_ideas = { 
+                remove_idea = ITA_southern_problem_2
+                add_idea = ITA_southern_problem_3
+                }
+                add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons 
+			}
+
+
+			}
+
+		}
+
+
+		}
+	 
+    
+	   	focus = {
+		id = ITA_final_plan
+		icon = Gfx_focus_generic_monetary_union
+		x = 8
+		y = 8
+
+		prerequisite = { focus = ITA_arms_contract_with_berretta}
+        prerequisite = { focus = ITA_invest_in_italcementi }
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+					
 			}
 		}
 	} 
-
     
+   	focus = {
+		id = ITA_urbanize_the_south
+		icon = Gfx_focus_generic_monetary_union
+		x = 7
+		y = 9
+        
+		
+		prerequisite = { focus = ITA_final_plan}
+		cost = 10
 
+		available = { }
+
+		completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 2
+                swap_ideas = { 
+                remove_idea = ITA_southern_problem_3 
+                add_idea = ITA_southern_problem_4
+                }	
+					
+			}
+		} 
+
+	} 
+
+       	focus = {
+		id = ITA_electrify_the_countryside
+		icon = Gfx_focus_generic_monetary_union
+		x = 7
+		y = 11
+        
+		
+		prerequisite = { focus = ITA_urbanize_the_south}
+		cost = 5
+
+		available = { }
+
+		completion_reward = {
+			115 = {
+				add_extra_state_shared_building_slots = 1
+                swap_ideas = { 
+                remove_idea = ITA_southern_problem_4 
+                add_idea = ITA_southern_problem_5
+                }	
+					
+			}
+		} 
+
+	} 
+    
+    	focus = {
+		id = ITA_Breda_atrillery_depot
+		icon = Gfx_focus_generic_monetary_union
+		x = 9
+		y = 9
+
+		prerequisite = { focus = ITA_final_plan}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}	
+			}
+		}
+	}        
+        # Italian Army Tree
+		focus = {
+		id = ITA_implement_army_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 20
+		y = 4
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_1
+				add_idea = ITA_under_supplied_army_2
+			}
+		}
+	}
+    
+    	focus = {
+		id = ITA_supply_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 19
+		y = 5
+		
+        prerequisite = { focus = ITA_implement_army_reforms}
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_2
+				add_idea = ITA_under_supplied_army_3
+			}
+		}
+	}
+        focus = {
+		id = ITA_recruiment_drive
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 21
+		y = 5
+		
+        prerequisite = { focus = ITA_implement_army_reforms}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        Manpower = 20000
+		}
+	}
+    
+        focus = {
+		id = ITA_leadership_debate
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 20
+		y = 6
+		
+        prerequisite = { focus = ITA_recruiment_drive}
+		prerequisite = { focus = ITA_supply_reforms}
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+        country_event = {
+		id = Army_commander_selection.1 
+		days = 2
+		}
+		}
+	}
+    
+        focus = {
+		id = ITA_Luigi_cadorna
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 16
+		y = 7
+		mutually_exclusive = { focus = ITA_Armando_Dias }
+        prerequisite = { focus = ITA_leadership_debate}
+		cost = 5
+
+        available = {
+		always = no
+		}
+
+		completion_reward = {
+        Manpower = 20000
+		}
+	}
+    
+        focus = {
+		id = ITA_Armando_Dias
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 24
+		y = 7
+		mutually_exclusive = { focus = ITA_Luigi_cadorna }
+        prerequisite = { focus = ITA_leadership_debate}
+		cost = 5
+
+        available = {
+		always = no
+		}
+
+		completion_reward = {
+        Manpower = 20000
+		}
+	}
+        focus = {
+		id = ITA_Slowly_but_surely
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 23
+		y = 8
+		
+        prerequisite = { focus = ITA_Armando_Dias}
+		cost = 7
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_3
+				add_idea = ITA_under_supplied_army_4
+			}
+		}
+	}
+        focus = {
+		id = ITA_quick_victory
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 17
+		y = 8
+		
+        prerequisite = { focus = ITA_Luigi_cadorna}
+		cost = 7
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_3
+				add_idea = ITA_under_supplied_army_5
+			}
+		}
+	}
+        focus = {
+		id = ITA_Relentless_assaults
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 16
+		y = 9
+		
+        prerequisite = { focus = ITA_quick_victory}
+		cost = 7
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_3
+				add_idea = ITA_under_supplied_army_5
+			}
+		}
+	}
+    
+		focus = {
+		id = ITA_market_liberal_reforms
+		icon = Gfx_focus_generic_monetary_union
+		x = 8
+		y = 10
+
+		prerequisite = { focus = ITA_urbanize_the_south focus = ITA_Breda_atrillery_depot}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+					
+			}
+		}
+	} 
+       	focus = {
+		id = ITA_deal_with_the_northern_socialists
+		icon = Gfx_focus_generic_monetary_union
+		x = 13
+		y = 5
+        
+		
+		prerequisite = { focus = ITA_industrial_innovation}
+		cost = 5
+
+		available = { }
+
+		completion_reward = {
+                swap_ideas = { 
+                remove_idea = Northers_socialist_problem_1
+                add_idea = Northers_socialist_problem_2
+                }	
+					
+			
+		} 
+
+	}
+        focus = {
+		id = ITA_promote_young_talents
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 23
+		y = 9
+        prerequisite = { focus = ITA_Slowly_but_surely}
+		cost = 5
+
+        available = {
+		}
+
+		completion_reward = {
+        Manpower = 20000
+		}
+	}
+	    focus = {
+		id = ITA_Army_innovation
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 20
+		y = 8
+        prerequisite = { focus = ITA_Armando_Dias focus = ITA_Luigi_cadorna}
+		cost = 10
+
+        available = {
+		}
+
+		completion_reward = {
+        add_research_slot = 1
+		}
+	}
+    	focus = {
+		id = ITA_Armor_innovation
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 19
+		y = 9
+        prerequisite = { focus = ITA_Army_innovation}
+		cost = 5
+
+        available = {
+		}
+
+		completion_reward = {
+        add_research_slot = 1
+		}
+	}
+
+        focus = {
+		id = ITA_Tackle_recruiment_issues
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 25
+		y = 8
+		
+        prerequisite = { focus = ITA_Armando_Dias}
+		cost = 7
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_4
+				add_idea = ITA_new_reforms_1
+			}
+		}
+	}
+		# Italian Political tree
+			
+        focus = {
+		id = ITA_italian_politics
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 45
+		y = 4
+		
+		cost = 5
+
+		available = { date > 1913.6.13
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+
+        focus = {
+		id = ITA_Stay_with_the_liberal_union
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 45
+		y = 6
+		prerequisite = { focus = ITA_italian_politics}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+	    focus = {
+		id = ITA_Campaign_for_PSI
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 40
+		y = 6
+		prerequisite = { focus = ITA_italian_politics}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+
+		focus = {
+		id = ITA_promote_socialist_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 39
+		y = 7
+		prerequisite = { focus = ITA_Campaign_for_PSI}
+		cost = 3
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_promise_voting_right_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 41
+		y = 7
+		prerequisite = { focus = ITA_Campaign_for_PSI}
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+
+
+
+	    focus = {
+		id = ITA_Radicals_for_the_win
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 50
+		y = 6
+		prerequisite = { focus = ITA_italian_politics}
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
 }

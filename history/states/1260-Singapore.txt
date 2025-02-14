@@ -1,0 +1,43 @@
+
+state = {
+	id = 1260
+	name = "STATE_1260"
+	manpower = 725600
+	
+	state_category = town
+	
+	resources = {
+		rubber = 40
+		steel = 5
+		tungsten = 25
+		aluminium = 5
+	}
+
+	history = {
+
+		owner = MAL
+		add_core_of = MAL
+		add_core_of = SGP
+
+		victory_points = {
+			12299 10
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 6
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		
+	}
+
+	provinces = {
+		12299
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,21 @@
+state={
+	id=1242
+	name="STATE_1242"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = POL
+		add_core_of = RUS
+		add_claim_by = LIT
+	}
+
+	provinces={
+		400
+	}
+	manpower=48950
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

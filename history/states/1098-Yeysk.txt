@@ -1,0 +1,23 @@
+
+state={
+	id=1098
+	name="STATE_1098"
+	manpower = 223050
+	
+	state_category = rural
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1 #was: 5
+		}
+		add_core_of =RUS
+		add_core_of = KUB
+	}
+
+	provinces={
+		750 6741 6755 6783 11729 
+	}
+
+	local_supplies=0.0 
+}

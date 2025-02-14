@@ -1,0 +1,29 @@
+state={
+	id=1009
+	name="STATE_1009"
+	manpower = 1765989
+	
+	state_category = town
+	
+	history={
+		owner = AUH
+		victory_points = { 6418 5 }
+		victory_points = { 9569 1 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+		}
+		add_core_of = CZE
+
+		1939.3.14 = {
+			owner = RKH
+			controller = RKH
+		}
+	}
+
+	provinces={
+		6418 6592 9421 9541 9569 11556
+	}
+
+	local_supplies=0.0 
+}
