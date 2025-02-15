@@ -73,7 +73,7 @@ ideas = {
 		}
 
 			AUH_deutsche_ritter_ordnung = {
-			picture = landtags_in_revolt
+			picture = auh_teutonic
 			modifier = {
 			war_support_factor = 0.05
 			army_defence_against_major_factor = 0.025

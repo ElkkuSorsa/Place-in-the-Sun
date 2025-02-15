@@ -17,9 +17,19 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/AUH/allow_minority_language.dds"			
 	}
 
-		SpriteType = {
+	SpriteType = {
 	name = "GFX_goal_AUH_sceience_language"
 	texturefile = "gfx/interface/goals/AUH/science_luanguage.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_politics_stuff"
+	texturefile = "gfx/interface/goals/AUH/political_party_stuff_split.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_teutonic_order"
+	texturefile = "gfx/interface/goals/AUH/teutonic_order.dds"			
 	}
 
 	SpriteType = {

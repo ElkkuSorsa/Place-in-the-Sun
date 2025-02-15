@@ -26,6 +26,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_idea_auh_teutonic"
+		texturefile = "gfx/interface/ideas/AUH/last_stand_teutonic.dds"
+	}
+
+		spriteType = {
 		name = "GFX_idea_celebration_of_international_christendom"
 		texturefile = "gfx/interface/ideas/AUH/christendom.dds"
 	}

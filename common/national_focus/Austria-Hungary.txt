@@ -390,7 +390,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_last_stand_deutsche_ritter
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_teutonic_order
 		x = 16
 		y = 4
 
@@ -424,7 +424,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_integrate_party_political
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_politics_stuff
 		x = 18
 		y = 4
 
