@@ -2782,7 +2782,11 @@ focus_tree = {
 		completion_reward = {
 			activate_advisor = ENG_bonar_law
 			ENG_bonar_law = {
+<<<<<<< Updated upstream
 				
+=======
+				slot = political_advisor
+>>>>>>> Stashed changes
 				set_can_be_fired_in_advisor_role = no
 			}
 			swap_ideas = {

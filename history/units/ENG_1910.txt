@@ -11,14 +11,57 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 2 }
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
+<<<<<<< Updated upstream
 		infantry = { x = 3 y = 2 }
+=======
+		cavalry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+
+>>>>>>> Stashed changes
 	}
 	support = {
 		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name ="Colonial Garrison"
+	division_names_group = ENG_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+
 	}
 }
 
@@ -87,6 +130,28 @@ units = {
 		}
 		location = 540  # Vienna
 		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9392  # Vienna
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 3379  # Vienna
+		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
