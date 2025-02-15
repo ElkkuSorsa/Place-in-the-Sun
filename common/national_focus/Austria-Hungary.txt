@@ -181,7 +181,7 @@ focus_tree = {
 		x = 24
 		y = 5
 
-		cost = 4.3
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
@@ -282,21 +282,22 @@ focus_tree = {
 		x = 24
 		y = 7
 
-		cost = 2.9
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_austrian_sud_tirol}  
 		prerequisite = {focus = AUH_slovenian_debate} 
 
 		completion_reward = {
-    	
-		add_ideas = AUH_well_oiled_machine
-		
+		swap_ideas = { 
+    	remove_idea = AUH_landtags_in_active_revolt_better
+    	add_idea = AUH_well_oiled_machine
+    }
 		}
 	}
 
 		focus = {
 		id = AUH_many_crowns_many_problems
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_crown_head
 		x = 17
 		y = 2
 
@@ -315,10 +316,10 @@ focus_tree = {
 		focus = {
 		id = AUH_allow_scientific_research_in_languages
 		icon = GFX_goal_empire_of_franz_josef
-		x = 13
+		x = 16
 		y = 3
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
@@ -327,13 +328,7 @@ focus_tree = {
 				limit = { has_idea = auh_Multiethnicity }
 				swap_ideas = {
 					remove_idea = auh_Multiethnicity
-					add_idea = auh_Multiethnicity_1_left
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity_1_right
-					add_idea = auh_Multiethnicity2
+					add_idea = auh_Multiethnicity_scientific
 				}
 			}
 		}
@@ -342,40 +337,35 @@ focus_tree = {
 		focus = {
 		id = AUH_celebration_of_international_christendom
 		icon = GFX_goal_empire_of_franz_josef
-		x = 15
+		x = 18
 		y = 3
 
-		cost = 10
+		cost = 4.3
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
 		completion_reward = {
+				add_timed_idea = {
+				days = 75
+				idea = AUH_christendom_celebrated
+			}
 		}
 	}
 
 		focus = {
 		id = AUH_second_language_german
 		icon = GFX_goal_empire_of_franz_josef
-		x = 15
-		y = 4
+		x = 16
+		y = 5
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
+		prerequisite = {focus = AUH_integrate_party_political}
 
 		completion_reward = {
-				if = {
-				limit = { has_idea = auh_Multiethnicity }
 				swap_ideas = {
-					remove_idea = auh_Multiethnicity2
-					add_idea = auh_Multiethnicity3
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity2_2
-					add_idea = auh_Multiethnicity3
-				}
+				remove_idea = auh_Multiethnicity_political_party
+				add_idea = auh_Multiethnicity_second_language
 			}
 		}
 	}
@@ -383,12 +373,12 @@ focus_tree = {
 		focus = {
 		id = AUH_propagate_loyal_culture
 		icon = GFX_goal_empire_of_franz_josef
-		x = 17
-		y = 3
+		x = 18
+		y = 5
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_many_crowns_many_problems}
+		prerequisite = {focus = AUH_integrate_party_political}
 
 		completion_reward = {
 					country_event = {
@@ -399,10 +389,26 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_last_stand_deutsche_ritter
+		icon = GFX_goal_empire_of_franz_josef
+		x = 16
+		y = 4
+
+		cost = 7.2
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_celebration_of_international_christendom}
+
+		completion_reward = {
+		
+		add_ideas = AUH_deutsche_ritter_ordnung
+		}
+	}
+
+		focus = {
 		id = AUH_propagate_loyal_culture2
 		icon = GFX_goal_empire_of_franz_josef
-		x = 17
-		y = 4
+		x = 16
+		y = 6
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -419,25 +425,18 @@ focus_tree = {
 		focus = {
 		id = AUH_integrate_party_political
 		icon = GFX_goal_empire_of_franz_josef
-		x = 19
-		y = 3
+		x = 18
+		y = 4
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_many_crowns_many_problems}
+		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
 
 		completion_reward = {
 				if = {
-				limit = { has_idea = auh_Multiethnicity }
 				swap_ideas = {
-					remove_idea = auh_Multiethnicity
-					add_idea = auh_Multiethnicity_1_right
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity_1_left
-					add_idea = auh_Multiethnicity_1_right
+					remove_idea = auh_Multiethnicity_scientific
+					add_idea = auh_Multiethnicity_political_party
 				}
 			}
 		}
@@ -447,24 +446,17 @@ focus_tree = {
 		id = AUH_bolster_youth_organisations
 		icon = GFX_goal_empire_of_franz_josef
 		x = 16
-		y = 5
+		y = 7
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_second_language_german}
+		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
 
 		completion_reward = {
-				if = {
-				limit = { has_idea = auh_Multiethnicity }
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity2
-					add_idea = auh_Multiethnicity3
-				}
-			}
 			else = {
 				swap_ideas = {
-					remove_idea = auh_Multiethnicity2_2
-					add_idea = auh_Multiethnicity3
+					remove_idea = auh_Multiethnicity_evidenzburo
+					add_idea = auh_Multiethnicity_bolster_youth
 				}
 			}
 		}
@@ -473,49 +465,42 @@ focus_tree = {
 		focus = {
 		id = AUH_eas_up_pn_evidenzbureau
 		icon = GFX_goal_empire_of_franz_josef
-		x = 19
-		y = 4
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_integrate_party_political}
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
-				}
-		}
-	}
-
-		focus = {
-		id = AUH_amnesty_to_ilegal_guns_owners
-		icon = GFX_goal_empire_of_franz_josef
 		x = 18
-		y = 5
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
-				}
-		}
-	}
-
-		focus = {
-		id = AUH_amnesty_to_ilegal_guns_owners
-		icon = GFX_goal_empire_of_franz_josef
-		x = 17
 		y = 6
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_amnesty_to_ilegal_guns_owners}
+		prerequisite = {focus = AUH_second_language_german}
+
+		completion_reward = {
+				swap_ideas = {
+					remove_idea = auh_Multiethnicity_second_language
+					add_idea = auh_Multiethnicity_evidenzburo
+				}
+			}
+		}
+		focus = {
+		id = AUH_amnesty_to_ilegal_guns_owners
+		icon = GFX_goal_empire_of_franz_josef
+		x = 6
+		y = 5
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_bolster_youth_organisations}
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = AUH_amnesty_to_ilegal_guns_owners2
+		icon = GFX_goal_empire_of_franz_josef
+		x = 17
+		y = 9
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 					country_event = {

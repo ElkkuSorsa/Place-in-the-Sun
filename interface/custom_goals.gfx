@@ -23,6 +23,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_crown_head"
+	texturefile = "gfx/interface/goals/AUH/emoire_meny_crowns.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_state_good"
 	texturefile = "gfx/interface/goals/AUH/declare_state_good.dds"			
 	}
