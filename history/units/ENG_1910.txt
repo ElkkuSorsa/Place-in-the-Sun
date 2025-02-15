@@ -15,6 +15,7 @@ division_template = {
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		infantry = { x = 3 y = 2 }
 =======
 		cavalry = { x = 3 y = 2 }
@@ -42,6 +43,11 @@ division_template = {
 		cavalry = { x = 2 y = 0 }
 		cavalry = { x = 2 y = 1 }
 		cavalry = { x = 2 y = 2 }
+=======
+		cavalry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+>>>>>>> Stashed changes
 
 	}
 	support = {
@@ -50,6 +56,30 @@ division_template = {
 }
 
 division_template = {
+<<<<<<< Updated upstream
+=======
+	name = "Cavalry Division"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+>>>>>>> Stashed changes
 	name ="Colonial Garrison"
 	division_names_group = ENG_INF_02
 

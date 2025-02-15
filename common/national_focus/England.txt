@@ -2783,7 +2783,11 @@ focus_tree = {
 			activate_advisor = ENG_bonar_law
 			ENG_bonar_law = {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				
+=======
+				slot = political_advisor
+>>>>>>> Stashed changes
 =======
 				slot = political_advisor
 >>>>>>> Stashed changes
