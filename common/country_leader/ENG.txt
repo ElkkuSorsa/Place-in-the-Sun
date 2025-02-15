@@ -6,4 +6,13 @@ leader_traits = {
 		political_power_factor = 0.1
 		consumer_goods_factor = 0.05
 	}
+
+	liberal_politician = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = -0.05
+		political_power_factor = 0.1
+		consumer_goods_factor = -0.05
+		democratic_drift = 0.01
+	}
 }

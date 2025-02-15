@@ -1,0 +1,38 @@
+ai_historical_focus_list_ENG = {
+	ai_national_focuses = {
+		ENG_liberal_reforms
+		ENG_parliament_act
+		ENG_engage_in_europe
+		ENG_limited_homerule
+		ENG_increase_conscription
+		ENG_haldane_reforms
+		ENG_industrial_powerhouse
+		ENG_lessons_of_war
+		ENG_expeditionary_force
+		ENG_territorial_force
+		ENG_expand_education_access
+		ENG_officer_training_corps
+		ENG_military_industries
+		ENG_two_power_standard_focus
+		ENG_british_navy
+		ENG_vickers_limited
+		ENG_prepare_for_war
+		ENG_support_arms_factories
+		ENG_haldane_reforms_completed
+		ENG_develop_textile_industry
+		ENG_heavy_industry
+		ENG_steel_industries
+		ENG_home_industries
+		ENG_develop_home_counties
+		ENG_military_innovation
+		ENG_weapon_reasearch
+		ENG_machine_guns
+		ENG_scottish_rare_metals
+		ENG_utilize_colony_resources
+		ENG_assembly_line
+		ENG_develop_home_counties
+		ENG_fund_universities
+		ENG_healthcare_reform
+		ENG_national_insurance_act
+	}
+}
