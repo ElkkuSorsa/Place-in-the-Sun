@@ -58,6 +58,7 @@ country_event = {
 		set_politics = {
 			ruling_party = fascism
 		}
+		news_event = ENG_news.3
 	}
 }
 
@@ -196,6 +197,19 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = ENG_parliament_act.4
+	title = "Parliament Act Ratified"
+	desc = "After new elections, tenacious efforts and a lot of political power, the Parliament Act has been ratified. The House of Lords has lost most of it's power and the House of Commons is now the supreme legislative body in the United Kingdom."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Finally!"
+	}
+}
+
 add_namespace = ENG_elections
 country_event = {
 	id = ENG_elections.1
@@ -225,6 +239,7 @@ country_event = {
 
 	option = {
 		name = "Conservatives Win by a Slight Majority!"
+		news_event = ENG_news.5
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_conservative_victory
 		hidden_effect = {
@@ -252,6 +267,7 @@ country_event = {
 		custom_effect_tooltip = historical_event_option
 		activate_mission = ENG_irish_excpectations
 		complete_national_focus = ENG_government_of_liberals
+		news_event = ENG_news.4
 	}
 
 	option = {
@@ -488,7 +504,7 @@ add_namespace = pinstability
 news_event = {
 	id = pinstability.1
 	title = "Herbert Henry Asquith Resign"
-	desc = "The political chaos in the United Kingdom has led to the unpopular prime minister's resignation in favor of David Lloyd George."
+	desc = "The political chaos in the United Kingdom has led to the unpopular prime minister resigning. The king has appointed a new prime minister, David Llyod George to form a new government. George is a member of the war cabinet and staunch supporter of the liberal-conservative cabinet."
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -674,5 +690,99 @@ country_event = {
 			id = ENG_english_society_bop
 		}
 		unlock_national_focus = ENG_english_society
+	}
+}
+
+add_namespace = ENG_news
+news_event = {
+	id = ENG_news.1
+	title = "Britain announces ambitions in Europe"
+	desc = "The United Kingdom has announced greater support of the Entente and their ambitions in Europe. The British government has announced that they will support the French and the Belgians in their fight against the Germans. If the Germans were to attack Belgium, the British would declare war on them."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "Pax Britannica no more..."
+	}
+}
+
+news_event = {
+	id = ENG_news.2
+	title = "United Kingdom enters the Great War"
+	desc = "The United Kingdom has sided with the Entente against Germany and it's allies after German invasion of Belgium. The British government sees it's their duty after the London Conference to guarantee Beglian independence and neutrality from outside threats."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "War to end all wars..."
+	}
+}
+
+news_event = {
+	id = ENG_news.3
+	title = "Martial Law in United Kingdom"
+	desc = "The United Kingdom is in political turmoil after the resignation of Herbert Henry Asquith. The military has taken control of the country and the government has been dissolved. The king has been temporarily stripped of his legal powers in this unsual situation. The army restored control over London and other major cities quickly after the chaos begun."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Unusual times..."
+	}
+}
+
+news_event = {
+	id = ENG_news.4
+	title = "Liberal Victory in British Elections"
+	desc = "The Liberal Party, led by Herbert Henry Asquith has won the elections in the United Kingdom. The party has been in power since 1905 and has been the leading party in the UK for a long time. They probably will continue the steady liberal policies of the Liberal Party as usual."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Not very unexpected..."
+	}
+}
+
+news_event = {
+	id = ENG_news.5
+	title = "Conservative Victory in British Elections"
+	desc = "The Conservative party has unexpectedly won the elections in the United Kingdom. The party has been in opposition since 1905 and has been the leading opposition party in the UK for a long time. They probably will continue the steady conservative policies of the Conservative Party as usual."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "This was really unexpected..."
+	}
+}
+
+add_namespace = ENG_misc
+country_event = {
+	id = ENG_misc.1
+	title = "Parliament Dissolved"
+	desc = "We have dissolved the unruly and ineffective parliament, so we have now the full control of all affairs of our great state. We can expect some backlash from the people, but we must stay strong and united."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Rule by Decree"
+		add_ideas = ENG_rule_by_decree
+	}
+
+	option = {
+		name = "Appoint a Privy Council"
+		add_ideas = ENG_privy_council
 	}
 }
