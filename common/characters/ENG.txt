@@ -25,6 +25,27 @@ characters = {
 		}
 	}
 
+	ENG_bonar_law = {
+		name = "Andrew Bonar Law"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = conservatism
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_bonar_law
+			traits = { conservative_grandee }
+			available = {
+				OR = {
+					has_completed_focus = ENG_appoint_bonar_law
+					has_completed_focus = ENG_balfour
+				}
+			}
+		}
+		portraits = {
+		}
+	}
+
 	ENG_george_v = {
 		name = "George V"
 		country_leader = {

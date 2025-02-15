@@ -198,6 +198,7 @@ ENG_politics = {
 					check_variable = { var = govseats  value = 330  compare = greater_than }
 				}
 				custom_effect_tooltip = ENG_law_pass
+				country_event = ENG_parliament.4
 				set_country_flag = ENG_parliament_act
 				swap_ideas = {
 					remove_idea = ENG_house_of_lords
@@ -246,6 +247,50 @@ ENG_politics = {
 					popularity = -0.05
 				}
 				add_stability = 0.05
+			}
+		}
+	}
+
+	ENG_trade_union_act = {
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The House of Commons Passed This Law"
+				always = no
+			}
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 50
+
+		priority = 90
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { var = govseats  value = 331  compare = less_than }
+				}
+				custom_effect_tooltip = ENG_law_not_pass
+				add_stability = -0.1
+			}
+			
+			else_if = {
+				limit = {
+					check_variable = { var = govseats  value = 330  compare = greater_than }
+				}
+				custom_effect_tooltip = ENG_law_pass
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_stability = 0.05
+				add_war_support = 0.05
 			}
 		}
 	}

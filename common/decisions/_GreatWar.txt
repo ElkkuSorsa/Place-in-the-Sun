@@ -24,14 +24,18 @@ greatwar = {
 		fire_only_once = yes
 
 		remove_effect = {
+			news_event = ENG_news.2
 			declare_war_on = {
 				target = GER
 				type = puppet_wargoal_focus
 			}
-
-			FRA = {
-				add_to_faction = ENG
+			if = {
+				limit = { NOT = has_war_with = FRA }
+				FRA = {
+					add_to_faction = ENG
+				}
 			}
+
 		}
 	}
 

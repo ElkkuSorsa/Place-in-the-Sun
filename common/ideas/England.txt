@@ -347,5 +347,48 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+
+		ENG_expand_education_access = {
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.07
+			}
+		}
+
+		ENG_rule_by_decree = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		ENG_privy_council = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		ENG_democratic_legitimacy_1 = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+
+		ENG_democratic_legitimacy_2 = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
 	}
 }
