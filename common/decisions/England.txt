@@ -251,6 +251,45 @@ ENG_politics = {
 		}
 	}
 
+	ENG_mobilization = {
+
+		available = {
+			has_completed_focus = ENG_engage_in_europe
+		}
+
+		days_remove = 50
+
+		priority = 90
+
+		ai_will_do = {
+			base = 100
+		}
+
+		is_good = yes
+
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = { var = govseats  value = 331  compare = less_than }
+				}
+				custom_effect_tooltip = ENG_law_not_pass
+				add_stability = -0.1
+				add_war_support = -0.2
+			}
+			
+			else_if = {
+				limit = {
+					check_variable = { var = govseats  value = 330  compare = greater_than }
+				}
+				custom_effect_tooltip = ENG_law_pass
+				set_country_flag = ENG_mobilization_passed
+				custom_effect_tooltip = "We may increase our mobilization."
+				add_stability = 0.05
+				add_war_support = 0.1
+			}
+		}
+	}
+
 	ENG_trade_union_act = {
 
 		activation = {

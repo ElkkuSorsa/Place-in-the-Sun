@@ -647,6 +647,10 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = ENG_government_of_liberals }
 
+		ai_will_do = {
+			base = 100
+		}
+
 		offset = {
 			x = -20
 			trigger = {
@@ -1077,6 +1081,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
+		ai_will_do = {
+			base = 100
+		}
+
 		offset = {
 			x = -20
 			trigger = {
@@ -1145,6 +1153,10 @@ focus_tree = {
 		}
 
 		cost = 5
+
+		ai_will_do = {
+			base = 100
+		}
 
 		completion_reward = {
 			give_guarantee = fra
@@ -1257,6 +1269,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
+		ai_will_do = {
+			base = 100
+		}
+
 		offset = {
 			x = -32
 			trigger = {
@@ -1298,6 +1314,10 @@ focus_tree = {
 		prerequisite = { focus = ENG_the_last_liberals }
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		ai_will_do = {
+			base = 100
+		}
 
 		offset = {
 			x = -20
@@ -1381,6 +1401,7 @@ focus_tree = {
 		}
 
 		available = {
+			has_completed_focus = ENG_haldane_reforms_completed
 			custom_trigger_tooltip = {
 				tooltip = great_war
 			}
@@ -1388,6 +1409,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = extensive_conscription
+		}
+
+		ai_will_do = {
+			base = 100
 		}
 
 		cost = 5
@@ -1701,7 +1726,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_anatolian_lands
-		icon = GFX_focus_ETH_an_arabic_base
+		icon = GFX_focus_generic_attack_turkey
 		x = 53
 		y = 8
 		prerequisite = { focus = ENG_middle_east }
@@ -2308,7 +2333,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_march_for_change
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_BRA_end_the_state_of_emergency
 		x = 17
 		y = 1
 		mutually_exclusive = { focus = ENG_1910_elections }
@@ -2349,7 +2374,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = {
-				name = "Military Government"
+				name = "Herbert Kitchener"
 				ruling_only = yes
 			}
 		}
@@ -4249,6 +4274,10 @@ focus_tree = {
 			}
 		}
 
+		ai_will_do = {
+			base = 80
+		}
+
 		offset = {
 			x = -40
 			trigger = {
@@ -4358,6 +4387,10 @@ focus_tree = {
 			}
 		}
 
+		ai_will_do = {
+			base = 80
+		}
+
 		offset = {
 			x = -40
 			trigger = {
@@ -4395,6 +4428,10 @@ focus_tree = {
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
+		}
+
+		ai_will_do = {
+			base = 80
 		}
 
 		offset = {
@@ -4436,6 +4473,10 @@ focus_tree = {
 		x = 89
 		y = 3
 		prerequisite = { focus = ENG_lessons_of_war }
+
+		ai_will_do = {
+			base = 80
+		}
 
 		offset = {
 			x = -27
@@ -4492,6 +4533,10 @@ focus_tree = {
 			}
 		}
 
+		ai_will_do = {
+			base = 80
+		}
+
 		offset = {
 			x = -40
 			trigger = {
@@ -4531,6 +4576,10 @@ focus_tree = {
 			}
 		}
 
+		ai_will_do = {
+			base = 80
+		}
+
 		offset = {
 			x = -40
 			trigger = {
@@ -4548,6 +4597,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = "We may now increase our conscription laws."
 			remove_ideas = ENG_haldane_reforms_idea
 		}
 	}
@@ -4895,7 +4945,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_british_navy
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_generic_navy_battleship
 		x = 105
 		y = 2
 		prerequisite = { focus = ENG_two_power_standard_focus }
@@ -4929,7 +4979,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_expand_dockyards
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_FIN_acquire_andros_dockyards
 		x = 106
 		y = 3
 		prerequisite = { focus = ENG_british_navy }
@@ -4964,7 +5014,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_end_to_the_race
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 105
 		y = 4
 		prerequisite = { focus = ENG_expand_dockyards }
@@ -4999,7 +5049,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_naval_treaty_GER
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_ger_accept_british_naval_dominance
 		x = 105
 		y = 5
 		prerequisite = { focus = ENG_end_to_the_race }
@@ -5033,7 +5083,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_divert_resources
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_generic_resource_extraction
 		x = 107
 		y = 4
 		prerequisite = { focus = ENG_expand_dockyards }
@@ -5072,7 +5122,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_more_dockyards
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 107
 		y = 5
 		prerequisite = { focus = ENG_divert_resources }
@@ -5106,7 +5156,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_naval_innovation
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_generic_build_navy
 		x = 102
 		y = 3
 		prerequisite = { focus = ENG_british_navy }
@@ -5141,7 +5191,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_heavy_ships
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_generic_navy_battleship
 		x = 101
 		y = 4
 		prerequisite = { focus = ENG_naval_innovation }
@@ -5175,7 +5225,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_light_ships
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_generic_refit_civilian_ships
 		x = 103
 		y = 4
 		prerequisite = { focus = ENG_naval_innovation }
