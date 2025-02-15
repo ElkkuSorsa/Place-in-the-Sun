@@ -11,7 +11,7 @@
  ENG_parties.2: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §RLabour Party Radicals§!: [?socseats]\n\nOpposition:\n - §2Conservative Party§!: [?conseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]"
  ENG_parties.3: "§!Government:\n - §RLabour Party Radicals§!: [?socseats]\n"
  ENG_parties.4: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §2Conservative Party§!: [?conseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:"
- ENG_parties.5: "§!Government:\n - §2Conservative Party§!: [?conseats]\n\nOpposition:\n - Liberal Party§!: [?libseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]"
+ ENG_parties.5: "§!Government:\n - §2Conservative Party§!: [?conseats]\n\nOpposition:\n - §YLiberal Party§!: [?libseats]\n - §GIrish Parliamentary Party§!: [?ireseats]\n - §tLabour Party§!: [?labseats]"
  ENG_parties.6: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:\n - §2Conservative Party§!: [?conseats]\n - §GIrish Parliamentary Party§!: [?ireseats]"
  ENG_parties.7: "§!Government:\n - §YLiberal Party§!: [?libseats]\n - §2Conservative Party§!: [?conseats]\n - §tLabour Party§!: [?labseats]\n\nOpposition:\n - §GIrish Parliamentary Party§!: [?ireseats]"
  

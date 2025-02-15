@@ -4,6 +4,10 @@ on_actions = {
 			ENG = {
 				if = {
 					limit = { date < 1911.1.1 }
+					news_event = {
+						id = ENG_news.6
+						days = 6
+					}
 					country_event = {
 						id = ENG_parliament_act.1
 						days = 44

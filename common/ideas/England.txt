@@ -62,7 +62,7 @@ ideas = {
 			picture = generic_monarchist_uprising
 			modifier = {
 				stability_factor = -0.05
-				political_power_factor = -0.3
+				political_power_factor = -0.5
 			}
 		}
 
@@ -196,7 +196,7 @@ ideas = {
 		ENG_british_politics_dem = {
 			picture = ARG_envoy_to_london
 			modifier = {
-				political_power_factor = 0.1
+				political_power_factor = -0.1
 				stability_factor = 0.15
 			}
 		}

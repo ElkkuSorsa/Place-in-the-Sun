@@ -66,6 +66,7 @@ recruit_character = ENG_asquith
 recruit_character = ENG_lloyd_george
 recruit_character = ENG_bonar_law
 recruit_character = ENG_kitchener
+recruit_character = ENG_haldane
 set_cosmetic_tag = ENG_democratic
 set_country_flag = ENG_lib_his
 set_variable = { libseats = 274 }

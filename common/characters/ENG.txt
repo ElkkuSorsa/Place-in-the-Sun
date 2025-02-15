@@ -32,6 +32,7 @@ characters = {
 		country_leader = {
 			expire = "1940.1.1"
 			ideology = conservatism
+			traits = { SWE_ardent_conservative }
 		}
 		advisor = {
 			slot = political_advisor
@@ -39,9 +40,26 @@ characters = {
 			traits = { SWE_ardent_conservative }
 			available = {
 				OR = {
-					has_completed_focus = ENG_appoint_bonar_law
+					has_completed_focus = ENG_collaborate_conservatives
 					has_completed_focus = ENG_balfour
 				}
+			}
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_bonar_law.png"
+			}
+		}
+	}
+
+	ENG_haldane = {
+		name = "Richard Haldane"
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_haldane
+			traits = { army_reformer }
+			available = {
+				has_completed_focus = ENG_haldane_reforms
 			}
 		}
 		portraits = {
@@ -71,7 +89,7 @@ characters = {
 		}
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ENG/ENG_george_v.png"
+				large = "gfx/leaders/ENG/ENG_kitchener.png"
 			}
 		}
 	}

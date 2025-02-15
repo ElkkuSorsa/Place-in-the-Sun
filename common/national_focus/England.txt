@@ -1890,6 +1890,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			promote_character = ENG_bonar_law
 		}
 	}
 
@@ -2690,6 +2691,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+
 			add_war_support = 0.1
 			add_stability = 0.1
 		}
@@ -2788,7 +2790,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_democratic_legitimacy_1
+			add_political_power = 50
+			country_event = ENG_restored_monarchy.2
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_bonar_law
 		}
 	}
 
@@ -4295,7 +4300,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			country_event = ENG_misc.3
 			add_ideas = ENG_haldane_reforms_idea
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_haldane
 		}
 	}
 
