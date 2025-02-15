@@ -26,6 +26,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_idea_celebration_of_international_christendom"
+		texturefile = "gfx/interface/ideas/AUH/christendom.dds"
+	}
+
+		spriteType = {
 		name = "GFX_idea_hun_magyarization"
 		texturefile = "gfx/interface/ideas/AUH/magyarization.dds"
 	}

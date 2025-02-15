@@ -17,6 +17,16 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/AUH/allow_minority_language.dds"			
 	}
 
+		SpriteType = {
+	name = "GFX_goal_AUH_sceience_language"
+	texturefile = "gfx/interface/goals/AUH/science_luanguage.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_celebrate_christendom"
+	texturefile = "gfx/interface/goals/AUH/celebrate_christendom.dds"			
+	}
+
 	SpriteType = {
 	name = "GFX_goal_AUH_slovenia_sign"
 	texturefile = "gfx/interface/goals/AUH/slovenia_sign.dds"			

@@ -315,7 +315,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_allow_scientific_research_in_languages
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_sceience_language
 		x = 16
 		y = 3
 
@@ -336,7 +336,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_celebration_of_international_christendom
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_celebrate_christendom
 		x = 18
 		y = 3
 

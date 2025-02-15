@@ -64,7 +64,7 @@ country_event = {
 	id = austria_hungary.6
 	title = "Many Crowns, Many Issues"
 	desc = austria_hungary.6.d
-	picture = GFX_little_girl_in_work_kids
+	picture = GFX_franz_josef_meeting_fezs
 	is_triggered_only = yes
 
 	option = {

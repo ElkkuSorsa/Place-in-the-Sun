@@ -61,7 +61,7 @@ ideas = {
 		}
 
 			AUH_christendom_celebrated = {
-			picture = landtags_in_revolt
+			picture = celebration_of_international_christendom
 			modifier = {
 			stability_factor = 0.15
 			army_defence_against_major_factor = 0.05
