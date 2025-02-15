@@ -2781,13 +2781,13 @@ focus_tree = {
 
 		completion_reward = {
 			activate_advisor = ENG_bonar_law
-			ENG_bonar_law = {
-				
-				set_can_be_fired_in_advisor_role = no
+			set_can_be_fired_in_advisor_role = {
+				character = ENG_bonar_law
+				value = no
 			}
 			swap_ideas = {
-				add_idea = ENG_democratic_legitimacy_1
-				remove_idea = ENG_democratic_legitimacy_2
+				add_idea = ENG_democratic_legitimacy_2
+				remove_idea = ENG_democratic_legitimacy_1
 			}
 		}
 	}
@@ -2846,7 +2846,7 @@ focus_tree = {
 		x = 14
 		y = 5
 		prerequisite = { focus = ENG_embrace_german_heritage }
-		mutually_exclusive = { focus = ENG_pax_britannica }
+		mutually_exclusive = { focus = ENG_pax_britannica_focus }
 
 		cost = 10
 
@@ -2946,8 +2946,8 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 14
 		y = 8
-		prerequisite = { focus = ENG_anglo_german_alliance focus = ENG_britain_leads focus = ENG_romanov_alliance }
-		prerequisite = { focus = ENG_reinstate_claims focus = ENG_britain_leads focus = ENG_romanov_alliance }
+		prerequisite = { focus = ENG_anglo_german_alliance focus = ENG_stand_alone focus = ENG_romanov_alliance }
+		prerequisite = { focus = ENG_reinstate_claims focus = ENG_stand_alone focus = ENG_romanov_alliance }
 		mutually_exclusive = { focus = ENG_slay_the_eagle }
 
 		will_lead_to_war_with = FRA
@@ -3233,7 +3233,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_pax_britannica
+		id = ENG_pax_britannica_focus
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = 17
 		y = 5
@@ -3252,7 +3252,7 @@ focus_tree = {
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 17
 		y = 6
-		prerequisite = { focus = ENG_pax_britannica }
+		prerequisite = { focus = ENG_pax_britannica_focus }
 
 		cost = 5
 
@@ -3264,7 +3264,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_britain_leads
+		id = ENG_stand_alone
 		icon = GFX_focus_generic_support_the_left_right
 		x = 17
 		y = 7
@@ -3274,11 +3274,17 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			is_faction_leader = yes
 		}
 
 		completion_reward = {
+			leave_faction = yes
 			add_ideas = ENG_stand_alone
+			set_rule = {
+				can_create_factions = no
+			}
+			set_rule = {
+				can_join_factions = no
+			}
 		}
 	}
 
@@ -3308,7 +3314,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 18
 		y = 8
-		prerequisite = { focus = ENG_britain_leads focus = ENG_romanov_alliance }
+		prerequisite = { focus = ENG_stand_alone focus = ENG_romanov_alliance }
 		mutually_exclusive = { focus = ENG_avenge_the_hundred_years_war }
 
 		will_lead_to_war_with = GER
