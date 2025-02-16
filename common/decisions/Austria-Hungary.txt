@@ -40,31 +40,3 @@ hun_trust = {
 		}
 	}
 }
-
-	AUH_dismantle_czechoslovakian_forts = {
-		icon = generic_construction
-
-		available = {
-		@
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		ai_will_do = {
-			@
-		}
-		visible = {
-			@
-		}
-		days_remove = 180
-		modifier = {
-			civilian_factory_use = 1
-		}
-		remove_effect = {
-			@
-			}
-		}
-		complete_effect = {
-			@
-}
