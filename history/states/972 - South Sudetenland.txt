@@ -21,11 +21,6 @@ state = {
 		buildings = {
 		
 			infrastructure = 2
-
-			5283 = {
-				bunker = 1
-			}
-
 		}
 
 		1938.9.30 = {
