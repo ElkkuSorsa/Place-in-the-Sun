@@ -63,8 +63,8 @@ hun_trust = {
 		}
 		remove_effect = {
 			@
-			}
 		}
 		complete_effect = {
 			@
+		}
 }
