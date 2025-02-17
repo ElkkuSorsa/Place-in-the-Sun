@@ -70,7 +70,9 @@ X_AUH_propaganda_campaigns = {
 		days_re_enable = 30
 		cost = X_AUH_propaganda_5_cost
 		modifier = {
-			industrial_capacity_factory = 0.1
+			industrial_capacity_factory = 0.75
+			production_factory_efficiency_gain_factor = 0.025
+			line_change_production_efficiency_factor = 0.025
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 5 }
