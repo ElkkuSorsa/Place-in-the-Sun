@@ -75,6 +75,17 @@ activate_advisor = AUH_friedrich_von_georgi
 activate_advisor = auh_conrad_hotzendorff
 activate_advisor = AUH_alois_lexa_von_aehrenthal
 
+set_variable = { X_AUH_propaganda_3_cost = 90 }
+set_variable = { X_AUH_propaganda_4_cost = 90 }
+set_variable = { X_AUH_propaganda_5_cost = 90 }
+set_variable = { X_AUH_propaganda_6_cost = 90 }
+set_variable = { X_AUH_propaganda_7_cost = 90 }
+set_variable = { X_AUH_propaganda_8_cost = 90 }
+set_variable = { X_AUH_propaganda_9_cost = 90 }
+set_variable = { X_AUH_propaganda_10_cost = 90 }
+set_variable = { X_AUH_propaganda_11_cost = 90 }
+set_variable = { X_AUH_propaganda_12_cost = 90 }
+set_variable = { X_AUH_propaganda_13_cost = 90 }
 
 *hun_trust = yes*
 *set_country_flag = HUN_ind*

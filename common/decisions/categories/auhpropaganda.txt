@@ -1,0 +1,14 @@
+
+X_AUH_propaganda_campaigns = {
+	priority = 100
+	icon = SOV_propaganda
+	scripted_gui = AUH_propaganda_campaigns_ui
+	allowed = {
+		original_tag = AUH
+	}
+
+	visible = {
+		not = { has_government = communism }
+		has_civil_war = no
+	}
+}
