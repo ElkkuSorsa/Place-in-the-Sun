@@ -47,7 +47,7 @@ characters = {
 		}
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/ENG/ENG_bonar_law.png"
+				small = "gfx/interface/ideas/ENG/bonar_law.png"
 			}
 		}
 	}
@@ -63,6 +63,9 @@ characters = {
 			}
 		}
 		portraits = {
+			civilian = {
+                small = "GFX_idea_advisor_halden"
+		    }
 		}
 	}
 

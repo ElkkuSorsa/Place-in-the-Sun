@@ -74,7 +74,7 @@ X_AUH_propaganda_campaigns = {
 			production_factory_efficiency_gain_factor = 0.025
 			line_change_production_efficiency_factor = 0.025
 			production_speed_buildings_factor = 0.05
-			consumer_goods_factor = 0.65
+			consumer_goods_factor = 0.065
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 5 }
@@ -95,11 +95,13 @@ X_AUH_propaganda_campaigns = {
 		visible = {
 			not = { has_government = communism } 
 		}
-		days_remove = 180
-		days_re_enable = 100
+		days_remove = 90
+		days_re_enable = 30
 		cost = X_AUH_propaganda_6_cost
 		modifier = {
-			war_support_weekly = 0.001
+			compliance_gain = 0.15
+			resistance_damage_to_garrison = -0.10
+			resistance_growth = -0.05
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 6 }

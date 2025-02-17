@@ -214,6 +214,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/first_primeminister.png"
 	}
 
+		SpriteType = {
+		name = "GFX_idea_advisor_bonar_law"
+		texturefile = "gfx/interface/ideas/ENG/bonar_law.png"
+	}
+
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
