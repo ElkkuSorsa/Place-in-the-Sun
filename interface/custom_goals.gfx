@@ -18,6 +18,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_propagate_loyal_culture"
+	texturefile = "gfx/interface/goals/AUH/celebrate_our_heores_even_if_they_are_not_ourrs_hehehehe.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_die_muskete"
+	texturefile = "gfx/interface/goals/AUH/muskete_focus.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_sceience_language"
 	texturefile = "gfx/interface/goals/AUH/science_luanguage.dds"			
 	}

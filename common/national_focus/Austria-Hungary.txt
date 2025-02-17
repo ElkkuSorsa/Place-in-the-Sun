@@ -358,7 +358,7 @@ focus_tree = {
 		x = 16
 		y = 5
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_integrate_party_political}
 
@@ -372,19 +372,16 @@ focus_tree = {
 
 		focus = {
 		id = AUH_propagate_loyal_culture
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_propagate_loyal_culture
 		x = 18
 		y = 5
 
-		cost = 10
+		cost = 4.4
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_integrate_party_political}
 
 		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
-				}
+		add_political_power = 15
 		}
 	}
 
@@ -406,19 +403,16 @@ focus_tree = {
 
 		focus = {
 		id = AUH_propagate_loyal_culture2
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_goal_AUH_die_muskete
 		x = 16
 		y = 6
 
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		cost = 4.4
+		search_filters =
 		prerequisite = {focus = AUH_propagate_loyal_culture}
 
 		completion_reward = {
-					country_event = {
-					id = austria_hungary.6
-					days = 1
-				}
+		unlock_decision_category_tooltip = custom_effect_tooltip = slovakia_lock_propaganda_tt
 		}
 	}
 
@@ -428,7 +422,7 @@ focus_tree = {
 		x = 18
 		y = 4
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
 
@@ -468,7 +462,7 @@ focus_tree = {
 		x = 18
 		y = 6
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_second_language_german}
 
