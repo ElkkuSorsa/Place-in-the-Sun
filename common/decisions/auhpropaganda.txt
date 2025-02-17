@@ -124,6 +124,7 @@ X_AUH_propaganda_campaigns = {
 		modifier = {
 			cavalry_attack_factor = 0.025
 			cavalry_defence_factor = 0.05
+			army_infantry_defence_factor = -0.05
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 7 }
@@ -149,6 +150,7 @@ X_AUH_propaganda_campaigns = {
 		modifier = {
 			army_artillery_attack_factor = 0.025
 			army_artillery_defence_factor = 0.05
+			army_infantry_defence_factor = -0.05
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 8 }
@@ -174,6 +176,8 @@ X_AUH_propaganda_campaigns = {
 		modifier = {
 			special_forces_attack_factor = 0.025
 			special_forces_defence_factor = 0.05
+			army_infantry_defence_factor = -0.1
+			army_infantry_defence_factor = -0.05
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 9 }
@@ -228,8 +232,8 @@ X_AUH_propaganda_campaigns = {
 		days_re_enable = 100
 		cost = X_AUH_propaganda_12_cost
 		modifier = {
-			army_morale_factor = 0.1
-			army_attack_factor = 0.1
+			army_infantry_attack_factor = 0.10
+			army_infantry_defence_factor = 0.05
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 12 }
@@ -238,7 +242,6 @@ X_AUH_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { X_AUH_propaganda_campaign_to_remove = 12 }
 			X_AUH_reset_propaganda_campaign_slot_effect = yes
-			multiply_variable = { X_AUH_propaganda_12_cost = 2 }
 		}
 	}
 	X_AUH_propaganda_13 = { # ID = 13
@@ -254,9 +257,8 @@ X_AUH_propaganda_campaigns = {
 		days_re_enable = 100
 		cost = X_AUH_propaganda_13_cost
 		modifier = {
-			max_dig_in = 0.2
-			dig_in_speed_factor = 0.2
-			army_defence_factor = 0.1
+			max_dig_in = 2.5
+			dig_in_speed_factor = 0.1
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 13 }
@@ -265,7 +267,6 @@ X_AUH_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { X_AUH_propaganda_campaign_to_remove = 13 }
 			X_AUH_reset_propaganda_campaign_slot_effect = yes
-			multiply_variable = { X_AUH_propaganda_13_cost = 2 }
 		}
 	}
 }
