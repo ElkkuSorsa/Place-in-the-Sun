@@ -8,7 +8,6 @@ X_AUH_propaganda_campaigns = {
 	}
 
 	visible = {
-		not = { has_government = communism }
-		has_civil_war = no
+		has_completed_focus = AUH_propagate_loyal_culture2
 	}
 }

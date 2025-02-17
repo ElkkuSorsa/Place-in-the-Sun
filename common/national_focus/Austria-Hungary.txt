@@ -412,6 +412,10 @@ focus_tree = {
 		prerequisite = {focus = AUH_propagate_loyal_culture}
 
 		completion_reward = {
+			hidden_effect = {
+				X_AUH_pick_propaganda_campaign_slot_effect = yes
+			}
+			unlock_decision_category_tooltip = X_AUH_propaganda_campaigns
 		}
 	}
 
