@@ -7,6 +7,7 @@ set_convoys = 500
 
 
 add_ideas = {
+	free_trade
 	scraping_the_barrel
 	all_adults_serve
 	extensive_conscription
