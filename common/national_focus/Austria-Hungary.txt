@@ -412,7 +412,11 @@ focus_tree = {
 		prerequisite = {focus = AUH_propagate_loyal_culture}
 
 		completion_reward = {
-		unlock_decision_category_tooltip = custom_effect_tooltip = slovakia_lock_propaganda_tt
+
+			hidden_effect = {
+				AUH_unlock_propaganda_campaign_slot_effect = yes
+			}
+			unlock_decision_category_tooltip = AUH_propaganda_campaigns
 		}
 	}
 

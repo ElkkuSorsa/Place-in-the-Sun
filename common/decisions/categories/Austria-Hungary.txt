@@ -9,3 +9,22 @@ hun_trust = {
     icon = POL_category
     visible_when_empty = yes
 }
+
+AUH_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = SOV_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = AUH
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = AUH_propagate_loyal_culture2
+			has_country_flag = SOV_debug_show_propaganda_system_flag #Debug
+		}
+	}
+}
