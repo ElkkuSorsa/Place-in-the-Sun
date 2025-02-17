@@ -222,7 +222,7 @@ AUH_propaganda_campaigns = {
 		}
 
 		available = {
-			SOV_propaganda_poster_slot_available = yes
+			AUH_propaganda_poster_slot_available = yes
 
 			has_war = yes
 			any_enemy_country = {
