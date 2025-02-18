@@ -87,8 +87,6 @@ set_variable = { X_AUH_propaganda_11_cost = 90 }
 set_variable = { X_AUH_propaganda_12_cost = 90 }
 set_variable = { X_AUH_propaganda_13_cost = 90 }
 
-*hun_trust = yes*
-*set_country_flag = HUN_ind*
 add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity

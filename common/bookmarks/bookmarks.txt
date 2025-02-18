@@ -2,6 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = bookmark_1910
 		date = 1910.5.1
+		picture = "GFX_select_date_1936"
 
 		default = yes
 		default_country = GER
@@ -54,6 +55,7 @@ bookmarks = {
 bookmark = {
 		name = bookmark_1914
 		date = 1914.7.1
+		picture = "GFX_select_date_1939"
 
 		default_country = GER
 
