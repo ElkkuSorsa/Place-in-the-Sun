@@ -34,6 +34,20 @@ spriteTypes = {
 	}
 }
 
+spriteTypes = {
+		spriteType = {
+		name = "GFX_winged_hussar"
+		texturefile = "gfx/event_pictures/winged_hussar.dds"
+	}
+}
+
+spriteTypes = {
+		spriteType = {
+		name = "GFX_many_crowns"
+		texturefile = "gfx/event_pictures/franz_josef_crown.dds"
+	}
+}
+
 
 
 

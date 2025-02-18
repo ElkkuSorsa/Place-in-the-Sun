@@ -382,6 +382,10 @@ focus_tree = {
 
 		completion_reward = {
 		add_political_power = 15
+					country_event = {
+					id = austria_hungary.7
+					days = 1
+				}
 		}
 	}
 
@@ -501,7 +505,23 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.025
 			}
+		}
+	}
 
+		focus = {
+		id = AUH_construction_funds
+		icon = GFX_goal_equal_court
+		x = 11
+		y = 2
+
+		cost = 5
+		prerequisite = {focus = AUH_empire_of_franz_josef}
+
+		completion_reward = {
+				add_timed_idea = {
+				days = 120
+				idea = auh_construction_funds
+			}
 		}
 	}
 

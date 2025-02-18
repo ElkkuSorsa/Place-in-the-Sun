@@ -26,6 +26,14 @@ ideas = {
 			}
 		}
 
+			auh_construction_funds = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			}
+		}
+
 			AUH_landtags_in_active_revolt = {
 			picture = landtags_in_revolt
 			modifier = {
