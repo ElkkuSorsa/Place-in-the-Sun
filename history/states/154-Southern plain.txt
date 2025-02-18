@@ -9,9 +9,7 @@ state = {
 	history = {
 		owner = HUN
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 1
-			air_base = 2
+			infrastructure = 1 #was: 6
 		}
 		victory_points = {
 			9656 1 

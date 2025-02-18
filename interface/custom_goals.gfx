@@ -23,6 +23,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_push_for_austrian_identity"
+	texturefile = "gfx/interface/goals/AUH/all_of_us_are_austrian.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_creating_evidenz"
+	texturefile = "gfx/interface/goals/AUH/evidenz.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_die_muskete"
 	texturefile = "gfx/interface/goals/AUH/muskete_focus.dds"			
 	}
