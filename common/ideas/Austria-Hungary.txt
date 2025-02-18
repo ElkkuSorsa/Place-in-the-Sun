@@ -36,8 +36,10 @@ ideas = {
 			production_factory_efficiency_gain_factor = -0.05
 			army_defence_against_major_factor = -0.1
 			army_attack_against_major_factor = -0.1
-			stability_weekly = -0.002
-			democratic_drift = 0.2
+			stability_weekly = -0.001
+			democratic_drift = 0.05
+			communism_drift = 0.05
+			fascism_drift = 0.05
 			drift_defence_factor = -0.15
 			industrial_capacity_factory = -0.1
 			political_power_factor = -0.15
@@ -53,7 +55,6 @@ ideas = {
 			production_factory_start_efficiency_factor = -0.05
 			army_defence_against_major_factor = -0.05
 			army_attack_against_major_factor = -0.05
-			stability_weekly = -0.001
 			drift_defence_factor = -0.1
 			industrial_capacity_factory = -0.05
 			political_power_factor = -0.1
@@ -78,7 +79,7 @@ ideas = {
 			war_support_factor = 0.05
 			army_defence_against_major_factor = 0.025
 			army_attack_against_major_factor = 0.025
-			weekly_casualties_war_support = 0.0025
+			weekly_casualties_war_support = 0.05
 			custom_modifier_tooltip = FIN_lotta_svard_support_battalions_bonus_tt
 			}
 		}
@@ -89,9 +90,9 @@ ideas = {
 			stability_factor = 0.05
 			trade_laws_cost_factor = -0.15
 			line_change_production_efficiency_factor = 0.035
-			production_factory_start_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.025
 			production_factory_efficiency_gain_factor = 0.025
-			industrial_capacity_factory = 0.03
+			industrial_capacity_factory = 0.05
 			}
 		}
 			auh_Multiethnicity = {
@@ -101,11 +102,11 @@ ideas = {
 			stability_weekly = -0.001
 			war_support_factor = -0.3
 			stability_factor = -0.15
-			compliance_gain = -0.1
+			compliance_gain = -0.05
 			root_out_resistance_effectiveness_factor = -0.25
 			resistance_damage_to_garrison = 0.15
-			resistance_growth = 0.10
-			research_speed_factor = -0.1
+			resistance_growth = 0.15
+			research_speed_factor = -0.15
 			political_advisor_cost_factor = 0.1
 			}
 		}
@@ -117,11 +118,20 @@ ideas = {
 			stability_weekly = -0.001
 			war_support_factor = -0.3
 			stability_factor = -0.15
-			compliance_gain = -0.1
 			root_out_resistance_effectiveness_factor = -0.25
 			resistance_damage_to_garrison = 0.15
 			resistance_growth = 0.10
 			political_advisor_cost_factor = 0.1
+			}
+		}
+
+			auh_passive_resistence_youth = {
+			picture = auh_passive_youth
+			modifier = {
+			root_out_resistance_effectiveness_factor = -0.05
+			resistance_damage_to_garrison = 0.05
+			conscription = 0.005
+			democratic_drift = 0.05
 			}
 		}
 

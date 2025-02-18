@@ -23,6 +23,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_youth_sokol"
+	texturefile = "gfx/interface/goals/AUH/youth_sokol.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_equal_court"
+	texturefile = "gfx/interface/goals/AUH/equal_court.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_push_for_austrian_identity"
 	texturefile = "gfx/interface/goals/AUH/all_of_us_are_austrian.dds"			
 	}
