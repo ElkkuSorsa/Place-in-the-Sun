@@ -1,0 +1,16 @@
+characters={
+	FRA_aristide_briand={ #Democratic Leader
+		name=FRA_aristide_briand
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_FRA_aristide_briand"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
