@@ -2,8 +2,8 @@ characters={
 	FRA_aristide_briand={
 		name = "Aristide Briand"
 			civilian = {
-				large = "GFX_portrait_FRA_aristide_briand"
-                small = "GFX_portrait_FRA_aristide_briand"
+				large = "gfx/leaders/FRA/aristide_briand.png"
+                small = "gfx/leaders/FRA/aristide_briand.png"
 		    }
 		country_leader={
 			ideology=liberalism
