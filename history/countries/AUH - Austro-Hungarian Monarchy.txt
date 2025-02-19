@@ -3,7 +3,7 @@ capital = 4
 set_research_slots = 2
 set_stability = 0.2
 set_war_support = 0.1
-set_convoys = 0
+set_convoys = 25
 
 
 add_ideas = {
@@ -303,12 +303,6 @@ set_autonomy = {
 	set_compliance = 10
 	set_resistance = 40
 }
-
-
-
-
-
-
 
 #Politics for 1939.1.1
 1939.1.1 = {
