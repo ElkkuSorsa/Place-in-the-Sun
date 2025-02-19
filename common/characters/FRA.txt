@@ -1,15 +1,14 @@
 characters={
-	FRA_aristide_briand={
+	FRA_aristide_briand = {
 		name = "Aristide Briand"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = socialism
+		}
+		portraits = {
 			civilian = {
 				large = "gfx/leaders/FRA/aristide_briand.png"
-                small = "gfx/leaders/FRA/aristide_briand.png"
-		    }
-		country_leader={
-			ideology=liberalism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
+			}
 		}
 	}
 }
