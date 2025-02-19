@@ -1,11 +1,10 @@
 characters={
-	FRA_aristide_briand={ #Democratic Leader
-		name=FRA_aristide_briand
-		portraits={
-			civilian={
-				large="GFX_portrait_fra_FRA_aristide_briand"
-			}
-		}
+	FRA_aristide_briand={
+		name = "Aristide Briand"
+			civilian = {
+				large = "GFX_portrait_FRA_aristide_briand"
+                small = "GFX_portrait_FRA_aristide_briand"
+		    }
 		country_leader={
 			ideology=liberalism
 			traits={  }

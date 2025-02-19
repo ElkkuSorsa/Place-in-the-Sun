@@ -18,13 +18,13 @@ spriteTypes = {
 	}
 
 		spriteType = {
-		name = "GFX_portrait_fra_FRA_aristide_briand"
-		texturefile = "gfx/leaders/AUH/aristide_briand.png"
+		name = "GFX_portrait_AUH_kovesz_koveshaza"
+		texturefile = "gfx/leaders/AUH/kovesz.png"
 	}
 
 		spriteType = {
-		name = "GFX_portrait_AUH_kovesz_koveshaza"
-		texturefile = "gfx/leaders/AUH/kovesz.png"
+		name = "GFX_portrait_FRA_aristide_briand"
+		texturefile = "gfx/leaders/FRA/aristide_briand.png"
 	}
 
 		spriteType = {
