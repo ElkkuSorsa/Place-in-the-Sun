@@ -29,7 +29,27 @@ focus_tree = {
 			}
 		}
 	}
-    
+		focus = {
+		id = ITA_light_industry_buildup
+		icon = GFX_focus_generic_modernize_industry
+		x = 9
+		y = 5
+		prerequisite = { focus = ITA_industrial_innovation }
+		cost = 5
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+
+
+
+
        	focus = {
 		id = ITA_Facilate_industrial_growth
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
@@ -78,7 +98,7 @@ focus_tree = {
 	}
  
    	focus = {
-		id = ITA_invest_in_italcementi
+		id = ITA_expand_italcementi
 		icon = Gfx_focus_generic_monetary_union
 		x = 7
 		y = 7
@@ -203,7 +223,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_work_with_ilva }
 		cost = 5
         
-		available = { 	has_completed_focus = ITA_invest_in_italcementi }
+		available = { 	has_completed_focus = ITA_expand_italcementi }
 
 		completion_reward = {
 			115 = {
@@ -239,7 +259,7 @@ focus_tree = {
 		y = 8
 
 		prerequisite = { focus = ITA_arms_contract_with_berretta}
-        prerequisite = { focus = ITA_invest_in_italcementi }
+        prerequisite = { focus = ITA_expand_italcementi }
 		cost = 5
 
 		available = {
@@ -500,6 +520,29 @@ focus_tree = {
 			}
 		}
 	}
+	    focus = {
+		id = ITA_overwelhm_the_enemy
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 15
+		y = 8
+		
+        prerequisite = { focus = ITA_Luigi_cadorna}
+		cost = 7
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_under_supplied_army_3
+				add_idea = ITA_under_supplied_army_5
+			}
+		}
+	}
+
+
+
+
     
 		focus = {
 		id = ITA_market_liberal_reforms
@@ -578,7 +621,7 @@ focus_tree = {
 		}
 	}
     	focus = {
-		id = ITA_Armor_innovation
+		id = ITA_The_Fiat_3000
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 19
 		y = 9
@@ -589,9 +632,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
-        add_research_slot = 1
+        		add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = armor
+			}
 		}
 	}
+	    focus = {
+		id = ITA_Aerial_innovation
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 21
+		y = 9
+        prerequisite = { focus = ITA_Army_innovation}
+		cost = 5
+
+        available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
 
         focus = {
 		id = ITA_Tackle_recruiment_issues
@@ -612,6 +674,29 @@ focus_tree = {
 			}
 		}
 	}
+	    focus = {
+		id = ITA_reform_soldier_conditions
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 25
+		y = 9
+		
+        prerequisite = { focus = ITA_Tackle_recruiment_issues}
+		cost = 7
+
+		available = { has_completed_focus = ITA_promote_young_talents
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_new_reforms_1
+				add_idea = ITA_new_reforms_2
+			}
+		}
+	}
+
+
+
+
 		# Italian Political tree
 			
         focus = {
@@ -637,7 +722,8 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = ITA_italian_politics}
 		cost = 5
-
+		mutually_exclusive = { focus = ITA_Stay_with_the_liberal_union }
+		mutually_exclusive = { focus = ITA_Campaign_for_PSI }
 		available = {
 		}
 
@@ -652,7 +738,8 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = ITA_italian_politics}
 		cost = 5
-
+		mutually_exclusive = { focus = ITA_Stay_with_the_liberal_union }
+		mutually_exclusive = { focus = ITA_Radicals_for_the_win }
 		available = {
 		}
 
@@ -701,6 +788,37 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = ITA_italian_politics}
 		cost = 5
+		mutually_exclusive = { focus = ITA_Stay_with_the_liberal_union }
+		mutually_exclusive = { focus = ITA_Campaign_for_PSI }
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+	    focus = {
+		id = ITA_Coalition_with_the_radicals
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 40
+		y = 8
+		prerequisite = { focus = ITA_Campaign_for_PSI}
+		prerequisite = { focus = ITA_promise_voting_right_reforms}
+		cost = 5
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_Bolster_italian_nationalism
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 45
+		y = 7
+		prerequisite = { focus = ITA_Stay_with_the_liberal_union}
+		cost = 2
 
 		available = {
 		}
@@ -708,5 +826,178 @@ focus_tree = {
 		completion_reward = {
         add_political_power = 70
 		}
+	}
+		focus = {
+		id = ITA_Building_an_empire
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 60
+		y = 4
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_Claim_libya
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 59
+		y = 5
+		cost = 5
+		prerequisite = { focus = ITA_Building_an_empire}
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_Send_the_ultimatum
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 59
+		y = 6
+		cost = 5
+		prerequisite = { focus = ITA_Claim_libya}
+		available = {
+		}
+
+		completion_reward = {
+        
+		}
+	}
+		focus = {
+		id = ITA_Libyan_disaster
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 58
+		y = 7
+		cost = 5
+		mutually_exclusive = { focus = ITA_victory_over_the_turks }
+		prerequisite = { focus = ITA_Send_the_ultimatum}
+		available = { 
+		}
+
+		completion_reward = {
+        war_support = -0.1
+		add_political_power = -100
+		}
+	}
+		focus = {
+		id = ITA_victory_over_the_turks
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 60
+		y = 7
+		cost = 5
+		mutually_exclusive = { focus = ITA_Libyan_disaster }
+		prerequisite = { focus = ITA_Send_the_ultimatum}
+		available = { 
+		}
+
+		completion_reward = {
+        war_support = 0.05
+		add_political_power = 50
+		}
+	}
+		focus = {
+		id = ITA_negotiate_with_austria
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 63
+		y = 5
+		cost = 5
+		prerequisite = { focus = ITA_Building_an_empire}
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_negotiate_with_austria
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 63
+		y = 5
+		cost = 5
+		prerequisite = { focus = ITA_Building_an_empire}
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_negotiations_fail
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 64
+		y = 6
+		cost = 5
+		prerequisite = { focus = ITA_negotiate_with_austria}
+		mutually_exclusive = { focus = ITA_negotiations_succeed }
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		focus = {
+		id = ITA_negotiations_succeed
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 62
+		y = 6
+		cost = 5
+		prerequisite = { focus = ITA_negotiate_with_austria}
+		mutually_exclusive = { focus = ITA_negotiations_fail }
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+		
+		focus = {
+		id = ITA_join_central_powers
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 62
+		y = 7
+		cost = 5
+		mutually_exclusive = { focus = ITA_join_entente }
+		prerequisite = { focus = ITA_negotiations_succeed}
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+
+		focus = {
+		id = ITA_join_entente
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 64
+		y = 7
+		cost = 5
+		mutually_exclusive = { focus = ITA_join_central_powers }
+		prerequisite = { focus = ITA_negotiations_fail focus = ITA_negotiations_succeed }
+		available = {
+		}
+
+		completion_reward = {
+        add_political_power = 70
+		}
+			if = {
+			limit = { has_completed_focus = ITA_negotiations_succeed }
+		completion_reward = {
+        add_war_support = -0.25
+		}
+		}
+
+
+
 	}
 }
