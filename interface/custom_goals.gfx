@@ -18,8 +18,63 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+	name = "GFX_goal_AUH_propagate_loyal_culture"
+	texturefile = "gfx/interface/goals/AUH/celebrate_our_heores_even_if_they_are_not_ourrs_hehehehe.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_youth_sokol"
+	texturefile = "gfx/interface/goals/AUH/youth_sokol.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_equal_court"
+	texturefile = "gfx/interface/goals/AUH/equal_court.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_push_for_austrian_identity"
+	texturefile = "gfx/interface/goals/AUH/all_of_us_are_austrian.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_creating_evidenz"
+	texturefile = "gfx/interface/goals/AUH/evidenz.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_die_muskete"
+	texturefile = "gfx/interface/goals/AUH/muskete_focus.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_sceience_language"
+	texturefile = "gfx/interface/goals/AUH/science_luanguage.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_politics_stuff"
+	texturefile = "gfx/interface/goals/AUH/political_party_stuff_split.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_teutonic_order"
+	texturefile = "gfx/interface/goals/AUH/teutonic_order.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_AUH_celebrate_christendom"
+	texturefile = "gfx/interface/goals/AUH/celebrate_christendom.dds"			
+	}
+
+	SpriteType = {
 	name = "GFX_goal_AUH_slovenia_sign"
 	texturefile = "gfx/interface/goals/AUH/slovenia_sign.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_crown_head"
+	texturefile = "gfx/interface/goals/AUH/emoire_meny_crowns.dds"			
 	}
 
 	SpriteType = {

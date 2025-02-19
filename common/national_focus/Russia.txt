@@ -1637,6 +1637,22 @@ focus = {
 	add_political_power = 50
 	}
 	}
+
+focus = {
+	id = RUS_rasputin
+	icon = GFX_focus_SOV_the_true_tsars
+	x = 200
+	y = 1
+	cost = 10
+	completion_reward = {
+	add_stability = -0.1
+	add_political_power = 100
+	add_war_support = 0.05
+	add_popularity = {
+	ideology = fascism popularity 0.15
+	}
+	}
+	}
 	
 	
 }

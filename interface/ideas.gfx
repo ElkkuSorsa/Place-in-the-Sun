@@ -26,6 +26,21 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_idea_auh_passive_youth"
+		texturefile = "gfx/interface/ideas/AUH/passive_resistance_youth.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_auh_teutonic"
+		texturefile = "gfx/interface/ideas/AUH/last_stand_teutonic.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_celebration_of_international_christendom"
+		texturefile = "gfx/interface/ideas/AUH/christendom.dds"
+	}
+
+		spriteType = {
 		name = "GFX_idea_hun_magyarization"
 		texturefile = "gfx/interface/ideas/AUH/magyarization.dds"
 	}
@@ -202,6 +217,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_Richard_von_bienerth_schmerling"
 		texturefile = "gfx/interface/ideas/AUH/first_primeminister.png"
+	}
+
+		SpriteType = {
+		name = "GFX_idea_advisor_bonar_law"
+		texturefile = "gfx/interface/ideas/ENG/bonar_law.png"
 	}
 
 	SpriteType = {

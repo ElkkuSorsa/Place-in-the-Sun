@@ -26,6 +26,14 @@ ideas = {
 			}
 		}
 
+			auh_construction_funds = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			}
+		}
+
 			AUH_landtags_in_active_revolt = {
 			picture = landtags_in_revolt
 			modifier = {
@@ -37,7 +45,9 @@ ideas = {
 			army_defence_against_major_factor = -0.1
 			army_attack_against_major_factor = -0.1
 			stability_weekly = -0.001
-			democratic_drift = 0.2
+			democratic_drift = 0.05
+			communism_drift = 0.05
+			fascism_drift = 0.05
 			drift_defence_factor = -0.15
 			industrial_capacity_factory = -0.1
 			political_power_factor = -0.15
@@ -53,10 +63,32 @@ ideas = {
 			production_factory_start_efficiency_factor = -0.05
 			army_defence_against_major_factor = -0.05
 			army_attack_against_major_factor = -0.05
-			stability_weekly = -0.001
 			drift_defence_factor = -0.1
 			industrial_capacity_factory = -0.05
 			political_power_factor = -0.1
+			}
+		}
+
+			AUH_christendom_celebrated = {
+			picture = celebration_of_international_christendom
+			modifier = {
+			stability_factor = 0.15
+			army_defence_against_major_factor = 0.05
+			army_attack_against_major_factor = 0.05
+			stability_weekly = 0.001
+			drift_defence_factor = 0.1
+			political_power_factor = 0.05
+			}
+		}
+
+			AUH_deutsche_ritter_ordnung = {
+			picture = auh_teutonic
+			modifier = {
+			war_support_factor = 0.05
+			army_defence_against_major_factor = 0.025
+			army_attack_against_major_factor = 0.025
+			weekly_casualties_war_support = 0.05
+			custom_modifier_tooltip = FIN_lotta_svard_support_battalions_bonus_tt
 			}
 		}
 
@@ -66,25 +98,100 @@ ideas = {
 			stability_factor = 0.05
 			trade_laws_cost_factor = -0.15
 			line_change_production_efficiency_factor = 0.035
-			production_factory_start_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.025
 			production_factory_efficiency_gain_factor = 0.025
-			democratic_drift = 0.02
-			industrial_capacity_factory = 0.03
+			industrial_capacity_factory = 0.05
 			}
 		}
 			auh_Multiethnicity = {
 			picture = empire_of_old_habsburg
 			modifier = {
 			resistance_growth = 0.15
+			stability_weekly = -0.001
 			war_support_factor = -0.3
 			stability_factor = -0.15
-			compliance_gain = -0.1
+			compliance_gain = -0.05
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.15
+			resistance_growth = 0.15
+			research_speed_factor = -0.15
+			political_advisor_cost_factor = 0.1
+			}
+		}
+
+			auh_Multiethnicity_scientific = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.15
+			stability_weekly = -0.001
+			war_support_factor = -0.3
+			stability_factor = -0.15
 			root_out_resistance_effectiveness_factor = -0.25
 			resistance_damage_to_garrison = 0.15
 			resistance_growth = 0.10
-			subjects_autonomy_gain = 0.1
-			research_speed_factor = -0.1
 			political_advisor_cost_factor = 0.1
+			}
+		}
+
+			auh_passive_resistence_youth = {
+			picture = auh_passive_youth
+			modifier = {
+			root_out_resistance_effectiveness_factor = -0.05
+			resistance_damage_to_garrison = 0.05
+			conscription = 0.005
+			democratic_drift = 0.05
+			}
+		}
+
+			auh_Multiethnicity_political_party = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.15
+			war_support_factor = -0.25
+			stability_factor = -0.10
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.1
+			resistance_growth = 0.05
+			}
+		}
+
+			auh_Multiethnicity_second_language = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			resistance_growth = 0.10
+			war_support_factor = -0.20
+			stability_factor = -0.05
+			root_out_resistance_effectiveness_factor = -0.10
+			resistance_damage_to_garrison = 0.1
+			resistance_growth = 0.05
+			}
+		}
+
+			auh_Multiethnicity_evidenzburo = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			war_support_factor = -0.15
+			root_out_resistance_effectiveness_factor = -0.05
+			resistance_damage_to_garrison = 0.05
+			resistance_growth = 0.05
+			}
+		}
+
+			auh_Multiethnicity_bolster_youth = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			war_support_factor = -0.05
+			root_out_resistance_effectiveness_factor = -0.05
+			resistance_damage_to_garrison = 0.05
+			}
+		}
+
+			auh_Multiethnicity_amnesty_gunowners = {
+			picture = empire_of_old_habsburg
+			modifier = {
+			war_support_factor = -0.05
+			root_out_resistance_effectiveness_factor = -0.05
+			resistance_damage_to_garrison = 0.05
 			}
 		}
 

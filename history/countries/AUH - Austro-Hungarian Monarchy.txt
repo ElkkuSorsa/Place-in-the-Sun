@@ -1,8 +1,8 @@
 oob = "AUH_1936"
 capital = 4
 set_research_slots = 2
-set_stability = 0.3
-set_war_support = 0.2
+set_stability = 0.2
+set_war_support = 0.1
 set_convoys = 0
 
 
@@ -75,9 +75,18 @@ activate_advisor = AUH_friedrich_von_georgi
 activate_advisor = auh_conrad_hotzendorff
 activate_advisor = AUH_alois_lexa_von_aehrenthal
 
+set_variable = { X_AUH_propaganda_3_cost = 90 }
+set_variable = { X_AUH_propaganda_4_cost = 90 }
+set_variable = { X_AUH_propaganda_5_cost = 90 }
+set_variable = { X_AUH_propaganda_6_cost = 90 }
+set_variable = { X_AUH_propaganda_7_cost = 90 }
+set_variable = { X_AUH_propaganda_8_cost = 90 }
+set_variable = { X_AUH_propaganda_9_cost = 90 }
+set_variable = { X_AUH_propaganda_10_cost = 90 }
+set_variable = { X_AUH_propaganda_11_cost = 90 }
+set_variable = { X_AUH_propaganda_12_cost = 90 }
+set_variable = { X_AUH_propaganda_13_cost = 90 }
 
-*hun_trust = yes*
-*set_country_flag = HUN_ind*
 add_ideas = {
 	auh_underfunded_army
 	auh_Multiethnicity
@@ -110,79 +119,79 @@ set_autonomy = {
 
 9 = {
 	start_resistance = yes
-	set_compliance = 40
+	set_compliance = 35
 	set_resistance = 5
 }
 
 75 = {
 	start_resistance = yes
-	set_compliance = 40
+	set_compliance = 35
 	set_resistance = 5
 }
 
 88 = {
 	start_resistance = yes
-	set_compliance = 50
+	set_compliance = 45
 	set_resistance = 0
 }
 
 89 = {
 	start_resistance = yes
-	set_compliance = 50
+	set_compliance = 45
 	set_resistance = 0
 }
 
 91 = {
 	start_resistance = yes
-	set_compliance = 50
+	set_compliance = 45
 	set_resistance = 0
 }
 
 80 = {
 	start_resistance = yes
-	set_compliance = 50
+	set_compliance = 45
 	set_resistance = 0
 }
 
 664 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 163 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 73 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 70 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 71 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 644 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 10
 }
 
 76 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 10
 }
 
@@ -194,104 +203,104 @@ set_autonomy = {
 
 155 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 10
 }
 
 43 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 10
 }
 
 974 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 10
 }
 
 973 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 154 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 84 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 83 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 82 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 764 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 45 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 109 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 103 = {
 	start_resistance = yes
-	set_compliance = 35
+	set_compliance = 30
 	set_resistance = 5
 }
 
 104 = {
 	start_resistance = yes
-	set_compliance = 40
+	set_compliance = 35
 }
 
 804 = {
 	start_resistance = yes									
-	set_compliance = 40
+	set_compliance = 35
 }
 
 736 = {
 	start_resistance = no									
-	set_compliance = 40
+	set_compliance = 35
 }
 
 853 = {
 	start_resistance = no									
-	set_compliance = 65
+	set_compliance = 60
 }
 
 852 = {
 	start_resistance = yes					
-	set_compliance = 25
+	set_compliance = 20
 }
 
 850 = {
 	start_resistance = yes					
-	set_compliance = 15
+	set_compliance = 10
 	set_resistance = 40
 }
 

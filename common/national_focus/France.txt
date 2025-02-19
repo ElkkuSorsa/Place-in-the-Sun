@@ -131,10 +131,76 @@ focus_tree = {
 
 		focus = {
 		id = FRA_social_welfare
-		icon = GFX_focus_AUS_lawmaking_leniency
+		icon = GFX_focus_ARG_women_in_industry
 		x = 16
 		y = 5
 		prerequisite = { focus = FRA_radicalist_reforms }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_defend_the_revolution
+		icon = GFX_SOV_carry_revolution_east_ccp_2d_sov_compatibility
+		x = 15
+		y = 6
+		prerequisite = { focus = FRA_social_welfare }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_communist_militia
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 14
+		y = 7
+		prerequisite = { focus = FRA_path_to_power } 
+		prerequisite = { focus = FRA_defend_the_revolution }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_spread_the_revolution
+		icon = GFX_focus_CHL_union_of_hispanic_republics
+		x = 10
+		y = 7
+		prerequisite = { focus = FRA_path_to_power } 
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+
+		focus = {
+		id = FRA_anti_monarchist_propaganda
+		icon = GFX_SOV_coup_detat_ccp_2d_sov_compatibility
+		x = 17
+		y = 6
+		prerequisite = { focus = FRA_social_welfare }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -164,7 +230,7 @@ focus_tree = {
 
 		focus = {
 		id = FRA_basic_state_pension
-		icon = GFX_focus_generic_universal_suffrage
+		icon = GFX_focus_ARG_anti_corruption_policies
 		x = 19
 		y = 5
 		prerequisite = { focus = FRA_socialist_reforms }
@@ -222,6 +288,22 @@ focus_tree = {
 		}
 
 		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_socialist_republic
+		icon = GFX_focus_BRA_socialist_theologians
+		x = 21
+		y = 6
+		prerequisite = { focus = FRA_crackdown_on_rightists focus = FRA_invest_in_the_rural_areas focus = FRA_basic_state_pension }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}

@@ -45,19 +45,16 @@ country_event = {
 		custom_effect_tooltip = "Parliament will be dissolved"
 		set_country_flag = ENG_parliament_disabled
 		add_political_power = 50
-		create_country_leader = {
-			name = "Military Government"
-			picture = "portrait_eng_fallen_government.dds"
-			ideology = fascism_ideology
-		}
+		promote_character = ENG_kitchener
 		set_party_name = {
 			ideology = fascism
-			long_name = "Provisional Government"
-			name = "Provisional Government"
+			long_name = "The British War Office"
+			name = "War Office"
 		}
 		set_politics = {
 			ruling_party = fascism
 		}
+		news_event = ENG_news.3
 	}
 }
 
@@ -75,8 +72,8 @@ country_event = {
 		complete_national_focus = ENG_hand_over_to_king
 		set_politics = {
 			ruling_party = neutrality
-			promote_character = ENG_george_v
 		}
+		promote_character = ENG_george_v
 	}
 
 	option = {
@@ -84,7 +81,7 @@ country_event = {
 		add_political_power = 50
 		set_country_flag = miladminextended
 		complete_national_focus = ENG_extended_military_admin
-		custom_effect_tooltip = "This will have serious consuquenses!"
+		custom_effect_tooltip = consuquenses_event_option
 		hidden_effect = {
 			activate_mission = ENG_civil_war
 		}
@@ -161,6 +158,9 @@ country_event = {
 				days = 148
 			}
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 }
 
@@ -179,6 +179,9 @@ country_event = {
 			id = ENG_parliament_act.3
 			days = 2
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 }
 
@@ -192,7 +195,23 @@ country_event = {
 
 	option = {
 		name = "May the Best Party Win!"
+		ai_chance = {
+			base = 100
+		}
 		activate_mission = ENG_elections_1910
+	}
+}
+
+country_event = {
+	id = ENG_parliament_act.4
+	title = "Parliament Act Ratified"
+	desc = "After new elections, tenacious efforts and a lot of political power, the Parliament Act has been ratified. The House of Lords has lost most of it's power and the House of Commons is now the supreme legislative body in the United Kingdom."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Finally!"
 	}
 }
 
@@ -210,6 +229,14 @@ country_event = {
 		custom_effect_tooltip = historical_event_option
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_the_last_liberals
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+				add = 100
+			}
+		}
 		hidden_effect = {
 			set_variable = { libseats = 272 }
 			set_variable = { conseats = 271 }
@@ -225,6 +252,12 @@ country_event = {
 
 	option = {
 		name = "Conservatives Win by a Slight Majority!"
+		news_event = ENG_news.5
+		set_party_name = {
+			ideology = democratic
+			long_name = "the Conservative Party"
+			name = "Conservative Party"
+		}
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_conservative_victory
 		hidden_effect = {
@@ -252,6 +285,15 @@ country_event = {
 		custom_effect_tooltip = historical_event_option
 		activate_mission = ENG_irish_excpectations
 		complete_national_focus = ENG_government_of_liberals
+		news_event = ENG_news.4
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+				add = 100
+			}
+		}
 	}
 
 	option = {
@@ -488,7 +530,7 @@ add_namespace = pinstability
 news_event = {
 	id = pinstability.1
 	title = "Herbert Henry Asquith Resign"
-	desc = "The political chaos in the United Kingdom has led to the unpopular prime minister's resignation in favor of David Lloyd George."
+	desc = "The political chaos in the United Kingdom has led to the unpopular prime minister resigning. The king has appointed a new prime minister, David Llyod George to form a new government. George is a member of the war cabinet and staunch supporter of the liberal-conservative cabinet."
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -652,7 +694,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Salty and Savoury"
+		name = "Salty and Sweet"
 		add_political_power = -150
 	}
 }
@@ -674,5 +716,161 @@ country_event = {
 			id = ENG_english_society_bop
 		}
 		unlock_national_focus = ENG_english_society
+	}
+}
+
+country_event = {
+	id = ENG_restored_monarchy.2
+	title = "Democratic Collaboration"
+	desc = "Our new royalist and absolutist government has merely no legitimacy at all. Popular sovereignity has been the idea in the United Kingdom that states that legitimacy comes from the people. After we dissolved parliament we lost that legitimacy. We must restore it by collaborating with some conservative politics."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Ask Bonar Law to form a government!"
+		add_ideas = ENG_democratic_legitimacy_1
+	}
+}
+
+add_namespace = ENG_news
+news_event = {
+	id = ENG_news.1
+	title = "Britain announces ambitions in Europe"
+	desc = "The United Kingdom has announced greater support of the Entente and their ambitions in Europe. The British government has announced that they will support the French and the Belgians in their fight against the Germans. If the Germans were to attack Belgium, the British would declare war on them."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "Pax Britannica no more..."
+	}
+}
+
+news_event = {
+	id = ENG_news.2
+	title = "United Kingdom enters the Great War"
+	desc = "The United Kingdom has sided with the Entente against Germany and it's allies after German invasion of Belgium. The British government sees it's their duty after the London Conference to guarantee Beglian independence and neutrality from outside threats."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "War to end all wars..."
+	}
+}
+
+news_event = {
+	id = ENG_news.3
+	title = "Martial Law in United Kingdom"
+	desc = "The United Kingdom is in political turmoil after the resignation of Herbert Henry Asquith. The military has taken control of the country and the government has been dissolved. The king has been temporarily stripped of his legal powers in this unsual situation. The army restored control over London and other major cities quickly after the chaos begun."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Unusual times..."
+	}
+}
+
+news_event = {
+	id = ENG_news.4
+	title = "Liberal Victory in British Elections"
+	desc = "The Liberal Party, led by Herbert Henry Asquith has won the elections in the United Kingdom. The party has been in power since 1905 and has been the leading party in the UK for a long time. They probably will continue the steady liberal policies of the Liberal Party as usual."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Not very unexpected..."
+	}
+}
+
+news_event = {
+	id = ENG_news.5
+	title = "Conservative Victory in British Elections"
+	desc = "The Conservative party has unexpectedly won the elections in the United Kingdom. The party has been in opposition since 1905 and has been the leading opposition party in the UK for a long time. They probably will continue the steady conservative policies of the Conservative Party as usual."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "This was really unexpected..."
+	}
+}
+
+news_event = {
+	id = ENG_news.6
+	title = "Death of Edward VII"
+	desc = "The Royal Family and the British government have today announced that the beloved king, Edward VII has passed away today. Edward was known as popular figurehead and he was popular amongst the British people. His successor is also very popular as he is a staunch constitutionalist."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "God save the king!"
+		if = {
+			limit = { original_tag = ENG }
+			swap_ideas = {
+				add_idea = ENG_george_v
+				remove_idea = ENG_edward_vii
+			}
+		}
+	}
+}
+
+add_namespace = ENG_misc
+country_event = {
+	id = ENG_misc.1
+	title = "Parliament Dissolved"
+	desc = "We have dissolved the unruly and ineffective parliament, so we have now the full control of all affairs of our great state. We can expect some backlash from the people, but we must stay strong and united."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Rule by Decree"
+		add_ideas = ENG_rule_by_decree
+	}
+
+	option = {
+		name = "Appoint a Privy Council"
+		add_ideas = ENG_privy_council
+	}
+}
+
+country_event = {
+	id = ENG_misc.2
+	title = "British Politics"
+	desc = "The United Kingdom was ruled by the Liberal Party for centuries. The Liberal Party has been very divided in to even factions within factions. But now we live exceptional times, and the Liberal Party hasn't been doing so well in the latest elections. The Conservatives could even in the next elections take the place."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Fascinating"
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = ENG_misc.3
+	title = "Haldane Reforms"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Let's get this over"
 	}
 }

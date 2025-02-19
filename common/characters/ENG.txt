@@ -4,6 +4,7 @@ characters = {
 		country_leader = {
 			expire = "1940.1.1"
 			ideology = liberalism
+			traits = { liberal_politician }
 		}
 		portraits = {
 			civilian = {
@@ -17,11 +18,54 @@ characters = {
 		country_leader = {
 			expire = "1940.1.1"
 			ideology = liberalism
+			traits = { backed_by_political_coalition }
 		}
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ENG/ENG_lloyd_george.png"
 			}
+		}
+	}
+
+	ENG_bonar_law = {
+		name = "Andrew Bonar Law"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = conservatism
+			traits = { SWE_ardent_conservative }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_bonar_law
+			traits = { SWE_ardent_conservative }
+			available = {
+				OR = {
+					has_completed_focus = ENG_collaborate_conservatives
+					has_completed_focus = ENG_balfour
+				}
+			}
+		}
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ENG/bonar_law.png"
+			}
+		}
+	}
+
+	ENG_haldane = {
+		name = "Richard Haldane"
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_haldane
+			traits = { army_reformer }
+			available = {
+				has_completed_focus = ENG_haldane_reforms
+			}
+		}
+		portraits = {
+			civilian = {
+                small = "GFX_idea_advisor_halden"
+		    }
 		}
 	}
 
@@ -35,6 +79,20 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ENG/ENG_george_v.png"
+			}
+		}
+	}
+
+	ENG_kitchener = {
+		name = "Herbert Kitchener"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = militarism
+			traits = { DEN_fascist_militarist }
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/ENG_kitchener.png"
 			}
 		}
 	}

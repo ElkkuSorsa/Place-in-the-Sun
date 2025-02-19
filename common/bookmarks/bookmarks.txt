@@ -2,8 +2,63 @@ bookmarks = {
 	bookmark = {
 		name = bookmark_1910
 		date = 1910.5.1
+		desc = "bookmark_1910_desc"
+		picture = "GFX_select_date_1936"
 
 		default = yes
+		default_country = GER
+
+		ENG = {
+			history = ENG_history
+			ideology = democratic
+
+			focuses = { ENG_government_of_liberals ENG_british_federation ENG_pax_britannica }
+			ideas = { ENG_british_politics_dem ENG_haldane_reform_1 ENG_house_of_lords }
+		}
+
+		FRA = {
+			history = FRA_history
+			ideology = democratic
+		}
+
+		BUL = {
+			minor = yes
+			history = BUL_history
+			ideology = democratic
+		}
+
+		RUS = {
+			history = RUS_history
+			ideology = neutrality
+
+			focuses = { RUS_politics RUS_take_loans RUS_russification }
+			ideas = { stolypin_reform outdated_industry RUS_outdated_army }
+		}
+
+		GER = {
+			history = GER_history
+			ideology = neutrality
+		}
+
+		AUH = {
+			history = AUH_history
+			ideology = neutrality
+			ideas = {
+				auh_underfunded_army
+				auh_Multiethnicity
+				auh_ghostofthepast
+			}
+
+			focuses = { AUH_empire_of_franz_josef AUH_government_funds_austria AUH_army_leadership_question }
+		}
+	}
+
+bookmark = {
+		name = bookmark_1914
+		date = 1914.7.1
+		desc = "bookmark_1914_desc"
+		picture = "GFX_select_date_1939"
+
 		default_country = GER
 
 		ENG = {

@@ -1,0 +1,13 @@
+
+X_AUH_propaganda_campaigns = {
+	priority = 100
+	icon = SOV_propaganda
+	scripted_gui = AUH_propaganda_campaigns_ui
+	allowed = {
+		original_tag = AUH
+	}
+
+	visible = {
+		has_completed_focus = AUH_propagate_loyal_culture2
+	}
+}

@@ -1,0 +1,21 @@
+
+scripted_gui = {
+	AUH_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "AUH_propaganda_campaigns_ui_window"
+		properties = {
+			propaganda_poster_AUH_left = {
+				image = "[GetAUHPropagandaLeftSlotAge]"
+				frame = X_AUH_poster_left_icon_frame
+			}
+			propaganda_poster_AUH_center = {
+				image = "[GetAUHPropagandaCenterSlotAge]"
+				frame = X_AUH_poster_center_icon_frame
+			}
+			propaganda_poster_AUH_right = {
+				image = "[GetAUHPropagandaRightSlotAge]"
+				frame = X_AUH_poster_right_icon_frame
+			}
+		}
+	}
+}

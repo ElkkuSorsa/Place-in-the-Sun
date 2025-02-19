@@ -1,4 +1,4 @@
-﻿oob = "ENG_1936"
+﻿set_oob = "ENG_1910"
 capital = 1
 set_research_slots = 3
 set_stability = 0.8
@@ -7,6 +7,7 @@ set_convoys = 500
 
 
 add_ideas = {
+	free_trade
 	scraping_the_barrel
 	all_adults_serve
 	extensive_conscription
@@ -64,6 +65,9 @@ set_autonomy = {
 recruit_character = ENG_george_v
 recruit_character = ENG_asquith
 recruit_character = ENG_lloyd_george
+recruit_character = ENG_bonar_law
+recruit_character = ENG_kitchener
+recruit_character = ENG_haldane
 set_cosmetic_tag = ENG_democratic
 set_country_flag = ENG_lib_his
 set_variable = { libseats = 274 }

@@ -62,7 +62,7 @@ ideas = {
 			picture = generic_monarchist_uprising
 			modifier = {
 				stability_factor = -0.05
-				political_power_factor = -0.3
+				political_power_factor = -0.5
 			}
 		}
 
@@ -196,7 +196,7 @@ ideas = {
 		ENG_british_politics_dem = {
 			picture = ARG_envoy_to_london
 			modifier = {
-				political_power_factor = 0.1
+				political_power_factor = -0.1
 				stability_factor = 0.15
 			}
 		}
@@ -260,7 +260,8 @@ ideas = {
 		ENG_haldane_reforms_idea = {
 			picture = SOV_rebuild_the_nation_ccp_sov_compatibility
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
+				civilian_factory_use = 3
 				political_power_cost = 0.5
 			}
 		}
@@ -272,6 +273,13 @@ ideas = {
 				army_org_factor = 0.15
 				army_defence_factor = -0.15
 				supply_consumption_factor = 0.15
+				experience_gain_army_factor = -0.2
+				land_reinforce_rate = -0.3
+				mobilization_speed = -0.5
+				non_core_manpower = -1
+				army_morale_factor = -0.3
+				dig_in_speed_factor = -0.5
+				max_dig_in_factor = -0.5
 			}
 		}
 
@@ -282,6 +290,13 @@ ideas = {
 				army_defence_factor = -0.1
 				conscription_factor = -0.75
 				supply_consumption_factor = 0.1
+				experience_gain_army_factor = -0.15
+				land_reinforce_rate = -0.2
+				mobilization_speed = -0.4
+				non_core_manpower = -0.75
+				army_morale_factor = -0.2
+				dig_in_speed_factor = -0.35
+				max_dig_in_factor = -0.35
 			}
 		}
 
@@ -292,6 +307,13 @@ ideas = {
 				army_defence_factor = -0.075
 				conscription_factor = -0.5
 				supply_consumption_factor = 0.1
+				experience_gain_army_factor = -0.10
+				land_reinforce_rate = -0.1
+				mobilization_speed = -0.25
+				non_core_manpower = -0.45
+				army_morale_factor = -0.05
+				dig_in_speed_factor = -0.15
+				max_dig_in_factor = -0.15
 			}
 		}
 
@@ -301,6 +323,11 @@ ideas = {
 				army_org_factor = 0.05
 				conscription_factor = -0.25
 				supply_consumption_factor = 0.05
+				land_reinforce_rate = -0.1
+				mobilization_speed = -0.1
+				non_core_manpower = -0.15
+				dig_in_speed_factor = -0.05
+				max_dig_in_factor = -0.05
 			}
 		}
 
@@ -310,6 +337,9 @@ ideas = {
 				army_org_factor = 0.1
 				army_defence_factor = -0.075
 				conscription_factor = 0.05
+				dig_in_speed_factor = 0.05
+				mobilization_speed = 0.1
+				max_dig_in_factor = 0.05
 			}
 		}
 
@@ -345,6 +375,49 @@ ideas = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
 				consumer_goods_factor = -0.05
+			}
+		}
+
+		ENG_expand_education_access = {
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.07
+			}
+		}
+
+		ENG_rule_by_decree = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		ENG_privy_council = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		ENG_democratic_legitimacy_1 = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+
+		ENG_democratic_legitimacy_2 = {
+			picture = generic_foreign_capital
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
 			}
 		}
 	}

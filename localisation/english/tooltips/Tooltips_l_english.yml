@@ -1,13 +1,14 @@
 ﻿l_english:
- entente_victory:0 "Entente Victory"
- entente_defeat:0 "Central Powers Victory"
- entente_defeat_austria:0 "German Victory"
+ entente_victory: "Entente Victory"
+ entente_defeat: "Central Powers Victory"
+ entente_defeat_austria: "German Victory"
 
- great_war:0 "The Great War"
+ great_war: "The Great War"
 
- cannot_train_units_tt:0 ""
+ cannot_train_units_tt: ""
 
- dugin_will_rise:0 "§RDugin will rise..."
- eurasia_will_rise:0 "§RWe shall secure the Eurasian dream..."
+ dugin_will_rise: "§RDugin will rise..."
+ eurasia_will_rise: "§RWe shall secure the Eurasian dream..."
 
- historical_event_option:0 "§OThis is the historical option§!"
+ historical_event_option: "§OThis is the historical option§!"
+ consuquenses_event_option: "§RThis will have serious consequences!§!"

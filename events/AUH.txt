@@ -64,10 +64,22 @@ country_event = {
 	id = austria_hungary.6
 	title = "Many Crowns, Many Issues"
 	desc = austria_hungary.6.d
-	picture = GFX_little_girl_in_work_kids
+	picture = GFX_many_crowns
 	is_triggered_only = yes
 
 	option = {
 		name = "Emperor and King will never be stopped"
+	}
+}
+
+country_event = {
+	id = austria_hungary.7
+	title = "Loyalty is what we Count with"
+	desc = austria_hungary.7.d
+	picture = GFX_winged_hussar
+	is_triggered_only = yes
+
+	option = {
+		name = "Unsere Waffenbrüder"
 	}
 }

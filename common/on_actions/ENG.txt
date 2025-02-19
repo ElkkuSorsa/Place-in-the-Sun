@@ -2,10 +2,19 @@ on_actions = {
 	on_startup = {
 		effect = {
 			ENG = {
-				country_event = {
-					id = ENG_parliament_act.1
-					days = 44
+				if = {
+					limit = { date < 1911.1.1 }
+					news_event = {
+						id = ENG_news.6
+						days = 6
+					}
+					country_event = {
+						id = ENG_parliament_act.1
+						days = 44
+					}
 				}
+
+				country_event = ENG_misc.2
 			}
 		}
 	}
