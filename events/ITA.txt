@@ -17,4 +17,54 @@ country_event = {
 		name = "We must keep Cadorna, old order shall not fall!"
 		complete_national_focus = ITA_Luigi_cadorna
 	}
+
+
+	country_event = {
+	id = ITA_Electoral_reform.1
+	title = "Italian electoral reform of 1912 begins"
+	desc = "its finally time to reform our voting system. This reforms will allow literate men over the age of 21, illerirate men over 30 and soldiers to vote. "
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "More reforms are always good."
+		complete_national_focus = 
+	}
+
+	option = {
+		name = "No we musnt give the poor more rights!"
+		complete_national_focus = 
+	}
+	trigger = {
+		date = 1912.4.29
+	}
+
+	id = Libya_or_war.1
+	title = "Libya or war"
+	desc = "italian diplomats have presented us demands concerning the status of libya.  "
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = "We shall accept the demands."
+		complete_national_focus = ITA_victory_over_the_turks
+	}
+
+	option = {
+		name = "Italy may perhaps be intersted in negotiations"
+		complete_national_focus = ITA_victory_over_the_turks
+	}
+		option = {
+		name = "we shall never give up libya!"
+		complete_national_focus = ITA_Libyan_disaster
+	}
+
+
+
+
+
+
+}
 }
