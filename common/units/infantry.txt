@@ -91,9 +91,8 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 500
-			support_equipment = 650
+			support_equipment = 500
 		}
-	}
 
 		forest = {
 			movement = 0.00
@@ -157,18 +156,19 @@ sub_units = {
 		max_strength = 20
 		max_organisation = 50
 		default_morale = 0.2
-		manpower = 500
+		manpower = 650
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 160
 		suppression = 0.5
-		weight = 0.5
+		weight = 0.6
 		
-		supply_consumption = 0.05
+		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 500
-			support_equipment = 500
+			infantry_equipment = 650
+			support_equipment = 650
+			specialforces_equipment = 650
 		}
 
 		marsh = {
@@ -214,19 +214,21 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 70
-		default_morale = 0.4
-		manpower = 1000
+		max_organisation = 50
+		default_morale = 0.2
+		manpower = 650
 
 		#Misc Abilities
-		training_time = 120
-		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.05
-		breakthrough = 0.3
+		training_time = 160
+		suppression = 0.5
+		weight = 0.6
+		
+		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 150
+			infantry_equipment = 650
+			support_equipment = 650
+			specialforces_equipment = 650
 		}
 
 		marsh = {
@@ -271,21 +273,24 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 70
-		default_morale = 0.4
-		manpower = 1000
+		max_organisation = 50
+		default_morale = 0.2
+		manpower = 650
 
 		#Misc Abilities
-		training_time = 120
-		suppression = 1
-		weight = 0.5
+		training_time = 160
+		suppression = 0.5
+		weight = 0.6
 		
-		supply_consumption = 0.05
-		breakthrough = 0.3
+		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 140
+			infantry_equipment = 650
+			support_equipment = 650
+			specialforces_equipment = 650
 		}
+		supply_consumption = 0.05
+		breakthrough = 0.3
 
 		hills = {
 			attack = 0.2
@@ -338,6 +343,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		supply_consumption = 0.05
+
 
 		can_be_parachuted = yes
 	

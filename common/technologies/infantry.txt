@@ -57,7 +57,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech =
+			leads_to_tech = machinegun_interwar1
 			research_cost_coeff = 1
 		}
 
@@ -77,6 +77,116 @@ technologies = {
 		}
 	}
 
+		machinegun_interwar1 = {
+
+		infantry_heavy = {
+			soft_attack = 0.025
+			max_organisation = 2.5
+		}
+
+			path = {
+			leads_to_tech = machinegun_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1905
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 2 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		machinegun_weapons2 = {
+
+		enable_equipments = {
+			machinegun_equipment2
+		}
+
+		path = {
+			leads_to_tech = machinegun_interwar2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1910
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 5 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		machinegun_interwar2 = {
+
+		infantry_heavy = {
+			soft_attack = 0.025
+			max_organisation = 2.5
+		}
+
+			path = {
+			leads_to_tech = machinegun_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1905
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 7 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		machinegun_weapons3 = {
+
+		enable_equipments = {
+			machinegun_equipment3
+		}
+
+		path = {
+			leads_to_tech =
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1910
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 10 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 		specialforces_weapons = {
 
 		enable_equipments = {
@@ -85,7 +195,7 @@ technologies = {
 
 
 		path = {
-			leads_to_tech =
+			leads_to_tech = special_forces_upgrade1
 			research_cost_coeff = 1
 		}
 
@@ -105,16 +215,43 @@ technologies = {
 		}
 	}
 
+	specialforces_weapons1 = {
+
+		enable_equipments = {
+			specialforces_equipment1
+		}
+
+		path = {
+			leads_to_tech = special_forces_upgrade3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1916
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 		advanced_interwar1 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		category_cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		category_vehicle_infantry = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 
 			path = {
@@ -146,13 +283,13 @@ technologies = {
 		advanced_interwar2 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.03
 		}
 		category_cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.03
 		}
 		category_vehicle_infantry = {
-			soft_attack = 0.1
+			soft_attack = 0.075
 		}
 
 			path = {
@@ -226,15 +363,15 @@ technologies = {
 	infantry_weapons2 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 
 		category_cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 
 		category_vehicle_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 
 		path = {
@@ -279,6 +416,174 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1939.1.1"
+			}
+		}
+	}
+
+		special_forces_upgrade1 = {
+
+		marine = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		mountaineers = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		paratrooper = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech = special_forces_upgrade2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1910
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 5 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 5
+			}
+		}
+	}
+
+		special_forces_upgrade2 = {
+
+		marine = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		mountaineers = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		paratrooper = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech = specialforces_weapons1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1914
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 7 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 5
+			}
+		}
+	}
+
+		special_forces_upgrade3 = {
+
+		marine = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		mountaineers = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		paratrooper = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech = special_forces_upgrade4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 13 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 5
+			}
+		}
+	}
+
+		special_forces_upgrade4 = {
+
+				marine = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		mountaineers = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		paratrooper = {
+			max_organisation = 2.5
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech =
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1922
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 17 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 5
 			}
 		}
 	}
@@ -443,13 +748,13 @@ technologies = {
 	advanced_infantry_weapons2 = {
 
 		category_light_infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		category_cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		category_vehicle_infantry = {
-			soft_attack = 0.1
+			soft_attack = 0.025
 		}
 
 		research_cost = 1.5
