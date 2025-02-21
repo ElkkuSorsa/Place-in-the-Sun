@@ -1,10 +1,9 @@
 ideas = {
 	country = {
-		stolypin_reform = {
+		RUS_stolypin_reform = {
 			modifier = {
-            production_speed_buildings_factor = 0.1
+            production_speed_buildings_factor = 0.05
             consumer_goods_factor = -0.15
-            stability_factor = -0.05
 			}
 		}
     }
@@ -259,13 +258,9 @@ ideas = {
 	country = {
 	    RUS_independence_movements = {
 			modifier = {
-			stability_factor = -0.25
-			war_support_factor = -0.15
-			political_power_factor = -0.2
-			production_speed_buildings_factor = -0.1
-			stability_weekly = -0.002
-			drift_defence_factor = -0.15
-			neutrality_drift = -0.03
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			political_power_factor = -0.1
 			}
 		}
 	}
@@ -275,7 +270,6 @@ ideas = {
 			modifier = {
 			stability_factor = -0.15
 			communism_drift = 0.04
-			stability_weekly = -0.002
 			industrial_capacity_factory = -0.2
 			}
 		}
@@ -284,13 +278,9 @@ ideas = {
 	country = {
 	    RUS_independence_movements2 = {
 			modifier = {
-			stability_factor = -0.2
-			war_support_factor = -0.1
-			political_power_factor = -0.15
-			production_speed_buildings_factor = -0.1
-			stability_weekly = -0.002
-			drift_defence_factor = -0.1
-			neutrality_drift = -0.03
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			political_power_factor = -0.05
 			}
 		}
 	}
@@ -362,7 +352,6 @@ ideas = {
 			modifier = {
 			stability_factor = -0.1
 			communism_drift = 0.002
-			stability_weekly = -0.001
 			industrial_capacity_factory = -0.15
 			}
 		}
@@ -433,6 +422,50 @@ ideas = {
 			conscription_factor = 0.1
 			army_org_factor = 0.05
 			army_defence_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_nationalist_propaganda = {
+			modifier = {
+			war_support_factor = 0.05
+			conscription_factor = 0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_reformist_program_idea = {
+			modifier = {
+			political_power_factor = 0.1
+			add_stability = 0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_swift_agrarian_reform = {
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.1
+			}
+		}
+	}
+
+	country = {
+	    RUS_slow_agrarian_reform = {
+			modifier = {
+			production_speed_buildings_factor = -0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+	}
+
+	country = {
+	    RUS_undermined_opposition = {
+			modifier = {
+			political_power_factor = 0.1
 			}
 		}
 	}

@@ -65,6 +65,12 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = "superevents_RUS_civil_war"		
+			quadTextureSprite ="GFX_superevents_RUS_civil_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
 		
 		buttonType ={
 			name = "superevents_button"
