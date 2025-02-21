@@ -34,13 +34,13 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 35
-		max_organisation = 65
+		max_organisation = 50
 		default_morale = 0.5
 		manpower = 750
 
 		#Misc Abilities
-		training_time = 160
-		suppression = 1
+		training_time = 180
+		suppression = 0.5
 		weight = 0.9
 		
 		supply_consumption = 0.09
@@ -48,7 +48,51 @@ sub_units = {
 		need = {
 			infantry_equipment = 750
 			support_equipment = 750
-			machinegun_equipment = 75
+			machinegun_equipment = 95
+		}
+
+		forest = {
+			movement = -0.05
+		}
+		hills = {
+			movement = -0.1
+			attack = -0.025
+		}
+		mountain = {
+			movement = -0.1
+			attack = -0.025
+		}
+		marsh = {
+			movement = -0.05
+		}
+		plains = {
+			movement = -0.05
+		}
+		urban = {
+			movement =- 0.2
+			attack = 0.025
+		}
+		desert = {
+			movement = -0.05
+			attack = 0.025
+		}
+		river = {
+			movement = -0.1
+		}
+		amphibious = {
+			movement = -0.5
+		}
+			marsh = {
+			attack = -0.05
+			movement = -0.05
+		}
+		river = {
+			attack = -0.05
+			movement = -0.05
+		}
+		amphibious = {
+			attack = -0.05
+			movement = -0.05
 		}
 	}
 }
