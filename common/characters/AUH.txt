@@ -1390,4 +1390,35 @@ AUH_franzjosef = {
         }
     }
 }
+
+AUH_viktor_adlerr = {
+    name = "Viktor Adler"
+    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = { }
+        expire = "1995.1.1"
+        ideology = socialism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
+        }
+    }
+}
+
+AUH_viktor_adlerrr = {
+    name = "Viktor Adler"
+    country_leader = {
+        desc = ""
+		traits = { }
+        expire = "1972.1.1"
+        ideology = marxism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
+        }
+    }
+}
+
 }
