@@ -1445,7 +1445,10 @@ focus = {
 	cost = 5
 	completion_reward = {
 	add_stability = 0.05
-	give_guarantee = FRA
+	reverse_add_opinion_modifier = {
+	target = FRA
+	modifier = large_increase
+	}
 	}
 	}
 focus = {
@@ -1650,6 +1653,21 @@ focus = {
 	add_war_support = 0.05
 	add_popularity = {
 	ideology = fascism popularity 0.15
+	}
+	}
+	}
+focus = {
+	id = RUS_invoke_panslavic_nationalism
+	icon = GFX_focus_SOV_the_true_tsars
+	x = 80
+	y = 4
+	cost = 10
+	prerequisite = {focus = RUS_european_affairs}
+	completion_reward = {
+	add_ideas = RUS_panslavic_nationalism
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.05
 	}
 	}
 	}

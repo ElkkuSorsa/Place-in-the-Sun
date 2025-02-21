@@ -518,5 +518,50 @@ focus = {
     }
     }
 
+    focus = {
+    id = FIN_ties_with_germany
+    icon = GFX_focus_ger_revive_kaiserreich
+    prerequisite = {focus = FIN_the_coronation}
+    x = 23
+    y = 6
+    cost = 5
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+	target = FRA
+	modifier = large_increase 
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_join_central_powers
+    icon = GFX_focus_GER_appease_the_wehrmacht
+    prerequisite = {focus = FIN_ties_with_germany}
+    x = 23
+    y = 7
+    cost = 5
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+	target = FRA
+	modifier = large_increase 
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_train
+    icon = GFX_focus_GER_appease_the_wehrmacht
+    prerequisite = {focus = FIN_ties_with_germany}
+    x = 21
+    y = 7
+    cost = 5
+    completion_reward = {
+    reverse_add_opinion_modifier = {
+	target = FRA
+	modifier = large_increase 
+    }
+    }
+    }
+
 }
 

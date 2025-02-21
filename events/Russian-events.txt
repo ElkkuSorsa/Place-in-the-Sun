@@ -1,0 +1,61 @@
+add_namespace = the_IV_duma
+
+country_event = {
+	id = IV_duma.1
+	title = "The Fourth Duma"
+	desc = my_event.1.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Conservative Majority"
+		
+	}
+	option = {
+		name = "Liberal Majority"
+		
+	}
+}
+
+add_namespace = stolypin_assasination
+
+country_event = {
+	id = stolypin_assasination.1
+	title = "Stolypin Assasinated!"
+	desc = my_event.1.desc
+
+	fire_only_once = yes
+
+	option = {
+		name = "The OHL shall take control for the duration of the war."
+		unlock_national_focus = GER_OHL
+	}
+	option = {
+		name = "The Kaiser will continue his rule."
+		unlock_national_focus = GER_kaiser
+	}
+}
+
+add_namespace = dealing_with_agrarianism
+
+country_event = {
+	id = dealing_with_agrarianism.1
+	title = "Agrarian Reform Question"
+	desc = my_event.1.desc
+
+	fire_only_once = yes
+
+    is_triggered_only = yes
+
+	option = {
+		name = "We should focus on swift reforms."
+		add_stability = -0.05
+        add_timed_idea = { idea = RUS_swift_agrarian_reform days = 180}
+	}
+	option = {
+		name = "Slow and steady wins the race!"
+		add_stability = 0.05
+        add_political_power = 50
+        add_timed_idea = { idea = RUS_slow_agrarian_reform days = 180}
+	}
+}
