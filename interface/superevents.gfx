@@ -36,7 +36,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_superevents_fall_france"
-		textureFile = "/gfx/superevents_pictures/GFX_superevents_fall_france.dds"
+		textureFile = "/gfx/superevents_pictures/superevents_fall_france.dds"
 	}
 	spriteType = {
 		name = "GFX_superevents_unification_rome"
@@ -44,6 +44,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_superevents_bolshevik"
-		textureFile = "/gfx/superevents_pictures/GFX_superevents_bolshevik.dds"
+		textureFile = "/gfx/superevents_pictures/superevents_bolshevik.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_RUS_civil_war"
+		textureFile = "/gfx/superevents_pictures/superevents_RUS_civil_war.dds"
 	}
 }

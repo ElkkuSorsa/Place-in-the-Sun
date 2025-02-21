@@ -46,4 +46,10 @@ defined_text = {
 		}
 		localization_key = SE_rome_unified_remark
 	}
+	text = {
+		trigger = {
+			has_global_flag = SE_RUS_civil_war
+		}
+		localization_key = SE_RUS_civil_war_remark
+	}
 }
