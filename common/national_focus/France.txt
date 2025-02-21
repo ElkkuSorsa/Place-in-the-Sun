@@ -231,6 +231,10 @@ focus_tree = {
 				elections_allowed = no
 			}
 			set_cosmetic_tag = TFC_FRA
+			add_popularity = {
+				ideloogy = communism
+				popularity = 0.3
+			}
 		}
 
 		cost = 5
@@ -254,6 +258,43 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
+
+		focus = {
+		id = FRA_agressive_foreing_policy
+		icon = GFX_focus_focus_fra_border
+		x = 15
+		y = 9
+		prerequisite = { focus = FRA_foreing_policy_question }
+		mutually_exclusive = { focus = FRA_peacful_foreing_policy }
+		
+		completion_reward = {
+			add_war_support = 0.05
+			add_ideas = { french expansionism }
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_peacful_foreing_policy
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 19
+		y = 9
+		prerequisite = { focus = FRA_foreing_policy_question }
+		mutually_exclusive = { focus = FRA_agressive_foreing_policy }
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = { friendly_neighbour }
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
 
 
 		focus = {
@@ -561,7 +602,10 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_maintain_liberal_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
 		}
 
 		cost = 5
@@ -577,7 +621,8 @@ focus_tree = {
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
+			add_political_power = 50
 		}
 
 		cost = 5
@@ -593,7 +638,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_centrist_allies }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { total_controll }
 		}
 
 		cost = 5
@@ -609,7 +654,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { monachists_in_the_coalition }
 		}
 
 		cost = 5
@@ -625,7 +670,11 @@ focus_tree = {
 		prerequisite = { focus = FRA_social_conservatist_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = { 
+				ideology = communism
+				popularity = -0.5
+			}
+			stability = -0.15
 		}
 
 		cost = 5
