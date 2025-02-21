@@ -34,7 +34,6 @@ state = {
 			}
 			13070 = {
 				# HM Dockyard, Chatham
-				naval_facility = 1
 			}
 		}
 		
