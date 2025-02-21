@@ -21,6 +21,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 100
+			add_stability = 0.05
 		}
 
 		cost = 5
@@ -37,7 +38,11 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_social_conservatist_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+           }
+		   add_stability = 0.03
 		}
 
 		cost = 5
@@ -53,7 +58,11 @@ focus_tree = {
         prerequisite = { focus = FRA_invite_sfio }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.1
+			}
+			add_stability = -0.05
 		}
 
 		cost = 5
@@ -69,7 +78,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_memories_of_the_paris_commune }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { revolutionary_spirit }
 		}
 
 		cost = 5
@@ -85,7 +94,12 @@ focus_tree = {
 		prerequisite = { focus = FRA_memories_of_the_paris_commune }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			    
 		}
 
 		cost = 5
@@ -105,6 +119,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 100
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 
 		cost = 5
@@ -122,6 +140,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 100
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 
 		cost = 5
@@ -137,7 +159,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_invite_sfio }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { social_welfare }
 		}
 
 		cost = 5
@@ -153,7 +175,8 @@ focus_tree = {
 		prerequisite = { focus = FRA_social_welfare }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 
 		cost = 5
@@ -170,7 +193,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_defend_the_revolution }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { communist_militas }
 		}
 
 		cost = 5
@@ -186,7 +209,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_path_to_power } 
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { the_new_revolution }
 		}
 
 		cost = 5
@@ -203,7 +226,11 @@ focus_tree = {
 	    prerequisite = { focus = FRA_communist_militia } 
 		
 		completion_reward = {
-			add_political_power = 100
+            set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			set_cosmetic_tag = TFC_FRA
 		}
 
 		cost = 5
@@ -220,7 +247,7 @@ focus_tree = {
 	    prerequisite = { focus = FRA_communist_militia } 
 		
 		completion_reward = {
-			add_political_power = 100
+			add_war_support = 0.05
 		}
 
 		cost = 5
@@ -237,7 +264,11 @@ focus_tree = {
 		prerequisite = { focus = FRA_social_welfare }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.5
+			}
+			add_stability = -0.05
 		}
 
 		cost = 5
@@ -254,7 +285,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_invite_sfio }
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { socialist_reforms }
 		}
 
 		cost = 5
@@ -270,8 +301,9 @@ focus_tree = {
 		prerequisite = { focus = FRA_socialist_reforms }
 
 		completion_reward = {
-			add_political_power = 100
-		}
+			add_political_power = -50
+			add_stability = 0.05
+		} 
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -286,7 +318,22 @@ focus_tree = {
 		prerequisite = { focus = FRA_maintain_liberal_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+        1306 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+		}
+		735 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes
+		}
+		}
+		}
 		}
 
 		cost = 5
@@ -302,7 +349,20 @@ focus_tree = {
 		prerequisite = { focus = FRA_developing_poor_areas }
 		
 		completion_reward = {
-			add_political_power = 100
+		33 = {
+	    add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+		}
+		26 = {
+	    add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+		}
+		}
+		}
 		}
 
 		cost = 5
@@ -318,7 +378,11 @@ focus_tree = {
 		prerequisite = { focus = FRA_maintain_liberal_coalition }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.5
+			}
+			add_stability = -0.05
 		}
 
 		cost = 5
@@ -327,8 +391,8 @@ focus_tree = {
 	}
 
 		focus = {
-		id = FRA_socialist_republic
-		icon = GFX_focus_BRA_socialist_theologians
+		id = FRA_free_republic
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		x = 21
 		y = 6
 		prerequisite = { focus = FRA_basic_state_pension }
@@ -336,7 +400,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_crackdown_on_rightists }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = { strong_and_free }
 		}
 
 		cost = 10
@@ -349,10 +413,25 @@ focus_tree = {
 		icon = GFX_focus_generic_advanced_military_studies
 		x = 20
 		y = 7
-		prerequisite = { focus = FRA_socialist_republic }
+		prerequisite = { focus = FRA_free_republic }
 		
 		completion_reward = {
-			add_political_power = 100
+		19 = {
+	    add_building_construction = {
+		add_extra_state_shared_building_slots = 2
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+		}
+		31 = {
+	    add_building_construction = {
+		add_extra_state_shared_building_slots = 2
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+		}
+		}
+		}
 		}
 
 		cost = 10
@@ -365,26 +444,14 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 22
 		y = 7
-		prerequisite = { focus = FRA_socialist_republic }
+		prerequisite = { focus = FRA_free_republic }
 		
 		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_political_instability
-		icon = GFX_goal_generic_war_with_comintern
-		x = 26
-		y = 3
-		prerequisite = { focus = FRA_maintain_liberal_coalition focus = FRA_social_conservatist_coalition } 
-		
-		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+                ideology = neutrality
+                popularity = -0.1         
+            }
+			add_stability = 0.1
 		}
 
 		cost = 5
@@ -393,14 +460,31 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_champagne_riots
-		icon = GFX_goal_generic_attack_allies
+		id = FRA_control_political_instability
+		icon = GFX_focus_HUN_reinstate_the_lenin_boys
 		x = 26
-		y = 4
-		prerequisite = { focus = FRA_political_instability } 
+		y = 3
+		prerequisite = { focus = FRA_maintain_liberal_coalition focus = FRA_social_conservatist_coalition } 
 		
 		completion_reward = {
-			add_political_power = 100
+			remove_ideas = { political_violence }
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_address_the_champagne_riots
+		icon = GFX_focus_ETH_addressing_the_league_of_nations
+		x = 26
+		y = 4
+		prerequisite = { focus = FRA_control_political_instability } 
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
 		}
 
 		cost = 5
@@ -410,34 +494,40 @@ focus_tree = {
 
 	focus = {
 		id = FRA_negotiate_with_rioters
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_por_workers_of_iberia
 		x = 27
 		y = 5
-		prerequisite = { focus = FRA_champagne_riots } 
+		prerequisite = { focus = FRA_address_the_champagne_riots } 
 		mutually_exclusive = { focus = FRA_supress_the_rioters }
 		
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_ideas = FRA_champagne_riot
+				add_ideas = FRA_negotiate_with_rioters 
+			}
 		}
 
-		cost = 8
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
     focus = {
 		id = FRA_supress_the_rioters
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
 		x = 25
 		y = 5
-		prerequisite = { focus = FRA_champagne_riots } 
+		prerequisite = { focus = FRA_address_the_champagne_riots } 
 		mutually_exclusive = { focus = FRA_negotiate_with_rioters }
 		
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_ideas = FRA_champagne_riot
+				add_ideas = FRA_riots_supressed
+			}
 		}
 
-		cost = 15
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
@@ -445,7 +535,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_end_the_riots
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_generic_workers
 		x = 26
 		y = 6
 		prerequisite = { focus = FRA_negotiate_with_rioters
@@ -453,7 +543,8 @@ focus_tree = {
 		} 
 		
 		completion_reward = {
-			add_political_power = 100
+			remove_ideas = { riots_supressed }
+			remove_ideas = { negotiate_with_rioters }
 		}
 
 		cost = 10
@@ -467,7 +558,7 @@ focus_tree = {
 		x = 31
 		y = 2
 		prerequisite = { focus = FRA_republican_era }
-		mutually_exclusive = { focus = FRA_maintain_coalition }
+		mutually_exclusive = { focus = FRA_maintain_liberal_coalition }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -917,3 +1008,4 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
+}

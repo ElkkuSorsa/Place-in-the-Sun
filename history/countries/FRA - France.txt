@@ -18,6 +18,7 @@ add_ideas = {
 	french_army
 	political_violence
 	lacking_industry
+	champagne_riots
 }
 
 recruit_character = FRA_aristide_briand

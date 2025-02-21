@@ -3,6 +3,11 @@ Chi_christ_wtf = {
     color_ui = rgb { 001 127 014 }
 }
 
+TFC_FRA = {
+    color = rgb { 112 19 19 }
+    color_ui = rgb { 112 19 19 }
+}
+
 
 MAL_UK = {
     color = rgb { 201 56 93 }
