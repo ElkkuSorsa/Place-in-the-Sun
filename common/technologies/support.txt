@@ -530,10 +530,6 @@ technologies = {
 			recon = 1.50
 		}
 
-		helicopter_recon = {
-			recon = 1.50
-		}
-
 		path = {
 			leads_to_tech = tech_recon3
 			research_cost_coeff = 1
@@ -566,9 +562,6 @@ technologies = {
 			recon = 1.50
 		}
 
-		helicopter_recon = {
-			recon = 1.50
-		}
 
 		path = {
 			leads_to_tech = tech_recon4
@@ -597,9 +590,6 @@ technologies = {
 			recon = 1.50
 		}
 
-		helicopter_recon = {
-			recon = 1.50
-		}
 			path = {
 			leads_to_tech = tech_recon5
 			research_cost_coeff = 1
@@ -625,10 +615,6 @@ technologies = {
 		tech_recon5 = {
 
 		category_recon = {
-			recon = 1.50
-		}
-
-		helicopter_recon = {
 			recon = 1.50
 		}
 
@@ -659,9 +645,6 @@ technologies = {
 			recon = 1.50
 		}
 
-		helicopter_recon = {
-			recon = 1.50
-		}
 
 		research_cost = 2
 		start_year = 1922
@@ -690,9 +673,6 @@ technologies = {
 			recon = 1.50
 		}
 
-		helicopter_recon = {
-			recon = 1.50
-		}
 			path = {
 			leads_to_tech = tech_recon8
 			research_cost_coeff = 1
@@ -721,9 +701,6 @@ technologies = {
 			recon = 1.50
 		}
 
-		helicopter_recon = {
-			recon = 1.50
-		}
 
 		research_cost = 2.50
 		start_year = 1933
@@ -1164,11 +1141,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_helicopter_med_evac_tech
-			research_cost_coeff = 1
-		}
-
 		dependencies = {
 			motorised_infantry = 1
 		}
@@ -1432,11 +1404,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_helicopter_transport_pods_tech
-			research_cost_coeff = 1
-		}
-
 		dependencies = {
 			motorised_infantry = 1
 		}
@@ -1465,10 +1432,6 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
-		}
-
-		helicopter_transport = {
-			supply_consumption_factor = -0.12
 		}
 
 		path = {
@@ -1502,14 +1465,6 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		helicopter_transport = {
-			supply_consumption_factor = -0.12
-		}
-
-		helicopter_brigade = {
-			supply_consumption_factor = -0.12
-		}
-
 		path = {
 			leads_to_tech = tech_logistics_company4
 			research_cost_coeff = 1
@@ -1538,10 +1493,6 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
-		}
-
-		helicopter_transport = {
-			supply_consumption_factor = -0.15
 		}
 
 			path = {
@@ -1574,11 +1525,6 @@ technologies = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
-
-		helicopter_transport = {
-			supply_consumption_factor = -0.15
-		}
-
 
 		research_cost = 2.50
 		start_year = 1933
@@ -1886,52 +1832,6 @@ technologies = {
 
 		ai_will_do = {
 			base = 1
-		}
-	}
-
-		sp_armored_motorized_military_police_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_land_military_engineering_vehicles
-			}
-		}
-
-		is_special_project_tech = yes
-
-		force_use_small_tech_layout = yes
-		show_equipment_icon = yes
-
-		research_cost = 2.0
-		start_year = 1938
-		folder = {
-			name = support_folder
-			position = { x = 5 y = @1938 }
-		}
-
-		categories = {
-			support_tech
-			military_police_tech
-		}
-
-		enable_subunits = {
-			motorized_military_police
-		}
-
-		enable_equipments = {
-			motorbike_equipment_1
-		}
-
-		ai_will_do = {
-			base = 2
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
 		}
 	}
 }
