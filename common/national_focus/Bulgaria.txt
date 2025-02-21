@@ -16,7 +16,7 @@ focus_tree = {
 		
 		focus = {
 		id = BUL_bulgarian_armed_forces
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		x = 28
 		y = 1
 		
@@ -30,8 +30,8 @@ focus_tree = {
 	}
 		focus = {
 		id = BUL_bulgarian_artillery
-		icon = GFX_goal_generic_army_artillery2
-		x = 27
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
+		x = 26
 		y = 2
 		
 		prerequisite = { focus = BUL_bulgarian_armed_forces }
@@ -46,8 +46,8 @@ focus_tree = {
 
 		focus = {
 		id = BUL_bulgarian_arms_effort
-		icon = GFX_focus_secret_rearmament
-		x = 29
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 30
 		y = 2
 		
 		prerequisite = { focus = BUL_bulgarian_armed_forces }
