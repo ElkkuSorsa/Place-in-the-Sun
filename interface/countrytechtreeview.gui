@@ -421,17 +421,6 @@ guiTypes = {
 					position = { x = 1210 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1944"
-					maxWidth = 170
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-				instantTextBoxType = {
-					name = "support_year12"
-					position = { x = 1363 y = 50 }
-					font = "hoi_36header"
-					borderSize = { x = 0 y = 0}
 					text = "1933"
 					maxWidth = 170
 					maxHeight = 32
