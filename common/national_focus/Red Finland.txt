@@ -1,0 +1,105 @@
+focus_tree = {
+    id = RED_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 50
+            tag = SUO
+        }
+    }
+
+    default = no
+
+    focus = {
+    id = RED_long_live_the_revolution
+    icon = GFX_focus_FIN_suomalainen_sosialismi
+    x = 15
+    y = 1
+    cost = 5
+    completion_reward = {
+    add_political_power = 75
+    add_popularity = {
+    ideology = communism
+    popularity = 0.1
+    }
+    }
+    }
+
+    focus = {
+    id = RED_utilize_red_guards
+    icon = GFX_focus_GER_liberate_exploited_colonial_workers
+    x = 15
+    y = 2
+    cost = 5
+    prerequisite = {focus = RED_long_live_the_revolution}
+    completion_reward = {
+    add_manpower = 15000
+    add_war_support = 0.1
+    }
+    }
+
+    focus = {
+    id = RED_rally_the_proletariat
+    icon = GFX_focus_generic_workers
+    x = 13
+    y = 2
+    cost = 5
+    prerequisite = {focus = RED_long_live_the_revolution}
+    completion_reward = {
+    add_stability = 0.1
+    add_war_support = 0.1
+    add_popularity = {
+    ideology = communism
+    popularity = 0.1
+    }
+    add_political_power = 50
+    }
+    }
+
+    focus = {
+    id = RED_utilize_factories
+    icon = GFX_focus_SOV_builder_of_the_red_army
+    x = 17
+    y = 2
+    cost = 5
+    prerequisite = {focus = RED_long_live_the_revolution}
+    completion_reward = {
+    111 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+    }
+    }
+    }
+    }
+
+    focus = {
+    id = RED_complete_the_revolution
+    icon = GFX_focus_GER_factories_for_resources
+    x = 15
+    y = 3
+    cost = 10
+    prerequisite = {focus = RED_long_live_the_revolution}
+    prerequisite = {focus = RED_rally_the_proletariat}
+    prerequisite = {focus = RED_utilize_factories}
+    completion_reward = {
+    add_stability = 0.15
+    }
+    }
+
+    focus = {
+    id = RED_proclaim_peoples_republic
+    icon = GFX_focus_SWE_finnish_communists
+    x = 15
+    y = 4
+    cost = 10
+    prerequisite = {focus = RED_complete_the_revolution}
+    
+    completion_reward = {
+
+    }
+    }
+}
