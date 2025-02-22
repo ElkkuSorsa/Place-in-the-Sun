@@ -25,3 +25,30 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = superevents.2
+	title = "The Russian Civil War"
+	desc = ""
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		RUS = {
+			has_civil_war = yes
+		}
+	}
+
+	option = {
+		name = "The Russian Bear has Destroyed Itself"
+		if = {
+			limit = { NOT = { has_country_flag = SE_superevents_enabled } }
+			set_country_flag = SE_superevents_activate
+			set_global_flag = SE_RUS_civil_war
+			hidden_effect = {
+				play_song = "SE_Kerenski"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+ENG_ireland_modifier = {
+	icon = generic_war_preparation
+	enable = { owner = { original_tag = ENG } }
+
+	custom_modifier_tooltip = "These modifiers will only apply if controlled by the United Kingdom."
+	resistance_growth = 0.05
+	resistance_target = 1
+	compliance_gain = -0.05
+}

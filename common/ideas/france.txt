@@ -130,8 +130,7 @@ ideas = {
 		communist_militas = {
 			picture = MEX_revolutionary_army
 			modifier = {
-                recruitable_population = 0.005
-                recruitable_population_factor = 0.1
+                conscript = 0.025
             }
 		}
 	}
@@ -157,4 +156,29 @@ ideas = {
             }
 		}
 	}
-}
+        country = {
+		friendly_neighbour = {
+			picture = soviet_german_friendship
+			modifier = {
+                stability = 0.15
+                production_speed_buildings_factor = 0.2
+                consumer_goods_factor = -0.1
+                surrender_limit = 0.1
+                trade_opinion_factor = 0.2
+                opinion_gain_monthly_factor = 0.3
+            }
+		}
+	}
+        country = {
+		french_expansionism = {
+			picture = FRA_la_deluge
+			modifier = {
+                justify_war_goal_time = -0.5
+                war_support_factor = 0.15
+                consumer_goods_factor = -0.05
+                surrender_limit = 0.2
+                production_speed_buildings_factor = -0.05
+            }
+		}
+	}
+} 
