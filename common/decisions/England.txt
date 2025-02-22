@@ -406,10 +406,13 @@ ENG_politics = {
 		}
 	}
 
-	grand_coalition = {
+	ENG_grand_coalition = {
 		available = {
-			always = yes
-		#	has_country_flag = ENG_instability
+			has_completed_focus = ENG_form_war_cabinet
+		}
+
+		visible = {
+			has_completed_focus = ENG_form_war_cabinet
 		}
 
 		fire_only_once = yes
@@ -423,7 +426,7 @@ ENG_politics = {
 		}
 	}
 
-	resign_asquith = {
+	ENG_resign_asquith = {
 		available = {
 			always = yes
 		#	has_country_flag = ENG_instability

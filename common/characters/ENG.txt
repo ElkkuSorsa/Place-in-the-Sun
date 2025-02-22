@@ -48,6 +48,24 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/ENG/bonar_law.png"
+				large = "gfx/leaders/ENG/ENG_bonar_law.png"
+			}
+		}
+	}
+
+	ENG_churchill = {
+		name = "Winston Churchill"
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_churchill
+			traits = { minister_of_munitions }
+			available = {
+				has_completed_focus = ENG_shell_crisis
+			}
+		}
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/ENG/churchill.png"
 			}
 		}
 	}
