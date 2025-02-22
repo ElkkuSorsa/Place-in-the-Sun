@@ -34,6 +34,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+			path = {
+			leads_to_tech = uniforms_weapons
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2.4
 		start_year = 1890
 		folder = {
@@ -270,10 +275,10 @@ technologies = {
 		}
 	}
 
-		specialforces_weapons = {
+		uniforms_weapons = {
 
 		enable_equipments = {
-			specialforces_equipment_0
+			uniforms_equipment_0
 		}
 
 
@@ -286,7 +291,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 2 }
+			position = { x = 15 y = -1 }
 		}
 
 		categories = {
@@ -298,10 +303,10 @@ technologies = {
 		}
 	}
 
-	specialforces_weapons1 = {
+	uniforms_weapons1 = {
 
 		enable_equipments = {
-			specialforces_equipment1
+			uniforms_equipment1
 		}
 
 		path = {
@@ -313,7 +318,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 10 }
+			position = { x = 15 y = 10 }
 		}
 
 		categories = {
@@ -339,11 +344,6 @@ technologies = {
 
 			path = {
 			leads_to_tech = infantry_weapons1
-			research_cost_coeff = 1
-		}
-
-			path = {
-			leads_to_tech = specialforces_weapons
 			research_cost_coeff = 1
 		}
 
@@ -529,7 +529,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 5 }
+			position = { x = 15 y = 5 }
 		}
 
 		categories = {
@@ -563,7 +563,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = specialforces_weapons1
+			leads_to_tech = uniforms_weapons1
 			research_cost_coeff = 1
 		}
 
@@ -571,7 +571,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 7 }
+			position = { x = 15 y = 7 }
 		}
 
 		categories = {
@@ -613,7 +613,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 13 }
+			position = { x = 15 y = 13 }
 		}
 
 		categories = {
@@ -655,7 +655,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 17 }
+			position = { x = 15 y = 17 }
 		}
 
 		categories = {
