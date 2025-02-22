@@ -291,7 +291,7 @@ technologies = {
 		start_year = 1905
 		folder = {
 			name = infantry_folder
-			position = { x = 15 y = -1 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -318,7 +318,7 @@ technologies = {
 		start_year = 1916
 		folder = {
 			name = infantry_folder
-			position = { x = 15 y = 10 }
+			position = { x = 0 y = 10 }
 		}
 
 		categories = {
@@ -505,18 +505,13 @@ technologies = {
 
 		special_forces_upgrade1 = {
 
-		marine = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_light_infantry = {
+			soft_attack = 0.015
 		}
-
-		mountaineers = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_cavalry = {
+			soft_attack = 0.015
 		}
-
-		paratrooper = {
-			max_organisation = 2.5
+		category_vehicle_infantry = {
 			soft_attack = 0.025
 		}
 
@@ -529,7 +524,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = infantry_folder
-			position = { x = 15 y = 5 }
+			position = { x = 0 y = 5 }
 		}
 
 		categories = {
@@ -547,18 +542,13 @@ technologies = {
 
 		special_forces_upgrade2 = {
 
-		marine = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_light_infantry = {
+			soft_attack = 0.015
 		}
-
-		mountaineers = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_cavalry = {
+			soft_attack = 0.015
 		}
-
-		paratrooper = {
-			max_organisation = 2.5
+		category_vehicle_infantry = {
 			soft_attack = 0.025
 		}
 
@@ -571,7 +561,7 @@ technologies = {
 		start_year = 1914
 		folder = {
 			name = infantry_folder
-			position = { x = 15 y = 7 }
+			position = { x = 0 y = 7 }
 		}
 
 		categories = {
@@ -589,18 +579,13 @@ technologies = {
 
 		special_forces_upgrade3 = {
 
-		marine = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_light_infantry = {
+			soft_attack = 0.015
 		}
-
-		mountaineers = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_cavalry = {
+			soft_attack = 0.015
 		}
-
-		paratrooper = {
-			max_organisation = 2.5
+		category_vehicle_infantry = {
 			soft_attack = 0.025
 		}
 
@@ -613,7 +598,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 15 y = 13 }
+			position = { x = 0 y = 13 }
 		}
 
 		categories = {
@@ -631,18 +616,13 @@ technologies = {
 
 		special_forces_upgrade4 = {
 
-				marine = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_light_infantry = {
+			soft_attack = 0.015
 		}
-
-		mountaineers = {
-			max_organisation = 2.5
-			soft_attack = 0.025
+		category_cavalry = {
+			soft_attack = 0.015
 		}
-
-		paratrooper = {
-			max_organisation = 2.5
+		category_vehicle_infantry = {
 			soft_attack = 0.025
 		}
 
@@ -655,7 +635,7 @@ technologies = {
 		start_year = 1922
 		folder = {
 			name = infantry_folder
-			position = { x = 15 y = 17 }
+			position = { x = 0 y = 17 }
 		}
 
 		categories = {
