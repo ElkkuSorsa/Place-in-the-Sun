@@ -12,3 +12,12 @@
 
  historical_event_option: "§OThis is the historical option§!"
  consuquenses_event_option: "§RThis will have serious consequences!§!"
+
+ unlock_focuses: "§OThis will unlock new focuses!§!"
+
+
+ ENG_unlock_war_cabinet_decision: "Available as decision: §Y£GFX_decision_icon_small Form a War Cabinet§!"
+ ENG_parliament_act_law: "Starts enacting §Y£GFX_decision_icon_small Parliament Act §!as a law"
+ ENG_nat_inc_law: "Starts enacting §Y£GFX_decision_icon_small National Insurance Act §!as a law"
+ ENG_tuc_law: "Starts enacting §Y£GFX_decision_icon_small Trade Union Act §!as a law"
+ ENG_ire_1911_law: "Starts enacting §Y£GFX_decision_icon_small Irish Home Rule Act §!as a law"
