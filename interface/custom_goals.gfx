@@ -319,3 +319,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/FRA/socialist_reforms.dds"
 	}
 
+		SpriteType = {
+		name = "GFX_goal_anti_communism"
+		texturefile = "gfx/interface/goals/FRA/anti_communism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_anti_conservatism"
+		texturefile = "gfx/interface/goals/FRA/anti_conservatism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_russo_french_friendship"
+		texturefile = "gfx/interface/goals/FRA/russo_french_friendship.dds"
+	}
+
