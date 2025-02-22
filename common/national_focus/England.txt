@@ -323,7 +323,7 @@ focus_tree = {
 	focus = {
 		id = ENG_draft_constitution
 		icon = GFX_focus_generic_universal_suffrage
-		x = 32
+		x = 30
 		y = 10
 		prerequisite = { focus = ENG_presidental_elections }
 
@@ -371,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_state_pension
 		icon = GFX_focus_generic_universal_suffrage
-		x = 30
+		x = 28
 		y = 10
 		prerequisite = { focus = ENG_presidental_elections }
 
@@ -395,7 +395,7 @@ focus_tree = {
 	focus = {
 		id = ENG_democratize_the_army
 		icon = GFX_focus_generic_universal_suffrage
-		x = 28
+		x = 26
 		y = 10
 		prerequisite = { focus = ENG_presidental_elections }
 
@@ -419,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = ENG_support_russian_liberals
 		icon = GFX_focus_generic_universal_suffrage
-		x = 36
+		x = 32
 		y = 10
 		prerequisite = { focus = ENG_presidental_elections }
 
@@ -641,6 +641,124 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_campaign_for_democracy
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 4
+		prerequisite = { focus = ENG_government_of_liberals }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_times_of_desperation
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 5
+		prerequisite = { focus = ENG_campaign_for_democracy }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_business_as_usual
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 6
+		prerequisite = { focus = ENG_times_of_desperation }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_form_war_cabinet
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 7
+		prerequisite = { focus = ENG_business_as_usual }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_unlock_war_cabinet_decision
+			custom_effect_tooltip = unlock_focuses
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
 		id = ENG_liberal_reforms
 		icon = GFX_focus_TUR_reform_the_balkan_pact
 		x = 36
@@ -795,7 +913,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			activate_mission = ENG_national_insurance_act
+			custom_effect_tooltip = ENG_nat_inc_law
+			hidden_effect = {
+				activate_mission = ENG_national_insurance_act
+			}
 		}
 	}
 
@@ -822,7 +943,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			activate_mission = ENG_trade_union_act
+			custom_effect_tooltip = ENG_tuc_law
+			hidden_effect = {
+				activate_mission = ENG_trade_union_act
+			}
 		}
 	}
 
@@ -906,7 +1030,7 @@ focus_tree = {
 		cost = 5
 
 		allow_branch = {
-			has_completed_focus = ENG_government_of_liberals
+			has_completed_focus = ENG_form_war_cabinet
 		}
 
 		available = {
@@ -1099,7 +1223,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			activate_mission = ENG_parliament_act
+			custom_effect_tooltip = ENG_parliament_act_law
+			hidden_effect = {
+				activate_mission = ENG_parliament_act
+			}
 		}
 	}
 
@@ -1238,8 +1365,9 @@ focus_tree = {
 			is_in_faction_with = USA
 		}
 
-		trigger = {
+		available = {
 			date > 1918.1.1
+			has_war_with = GER
 		}
 
 		offset = {
@@ -1273,8 +1401,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		trigger = {
+		available = {
 			is_in_faction_with = USA
+			has_war_with = GER
 		}
 
 		offset = {
@@ -1476,8 +1605,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			activate_mission = ENG_gov_of_ire_1911
+			custom_effect_tooltip = ENG_ire_1911_law
 			hidden_effect = {
+				activate_mission = ENG_gov_of_ire_1911
 				country_event = {
 					days = 45
 					id = ENG_ireland.7
@@ -2928,6 +3058,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			country_event = ENG_restored_monarchy.2
+			custom_effect_tooltip = "   "
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_bonar_law
 		}
@@ -2951,6 +3082,7 @@ focus_tree = {
 				character = ENG_bonar_law
 				value = no
 			}
+			custom_effect_tooltip = "   "
 			swap_ideas = {
 				add_idea = ENG_democratic_legitimacy_2
 				remove_idea = ENG_democratic_legitimacy_1
@@ -3697,8 +3829,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = -0.1
-			add_stability = 0.05
+		#	add_war_support = -0.1
+		#	add_stability = 0.05
+		#	custom_effect_tooltip = "   "
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_churchill
 		}
 	}
 
@@ -4440,6 +4575,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = ENG_misc.3
 			add_ideas = ENG_haldane_reforms_idea
+			custom_effect_tooltip = "   "
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_haldane
 		}

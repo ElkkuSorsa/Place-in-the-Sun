@@ -426,8 +426,9 @@ focus_tree = {
     create_wargoal = {
     type = puppet_wargoal_focus
     target = SOV
-    add_threat = 5
+    
     }
+    add_threat = 5
     }
     }
 
@@ -549,17 +550,55 @@ focus = {
     }
 
     focus = {
-    id = FIN_train
+    id = FIN_train_more_jagers
     icon = GFX_focus_GER_appease_the_wehrmacht
     prerequisite = {focus = FIN_ties_with_germany}
     x = 21
     y = 7
     cost = 5
     completion_reward = {
-    reverse_add_opinion_modifier = {
-	target = FRA
-	modifier = large_increase 
+    add_war_support = 0.05
+    add_manpower = 7000
     }
+    }
+
+    focus = {
+    id = FIN_undermine_parliament
+    icon = GFX_focus_ETH_re-convene_the_parliament
+    prerequisite = {focus = FIN_the_coronation}
+    prerequisite = {focus = FIN_rally_support}
+    x = 20
+    y = 6
+    cost = 5
+    completion_reward = {
+    add_popularity = {
+    ideology = democratic
+    popularity = -0.15
+    }
+    add_political_power = 100
+    }
+    }
+
+    focus = {
+    id = FIN_towards_greater_finland
+    icon = GFX_focus_FIN_greater_finland
+    prerequisite = {focus = FIN_train_more_jagers}
+    prerequisite = {focus = FIN_join_central_powers}
+    x = 22
+    y = 8
+    cost = 10
+    completion_reward = {
+    add_war_support = 0.05
+    add_timed_idea = { idea = FIN_war_against_soviet days = 180}
+    create_wargoal = {
+    type = puppet_wargoal_focus
+    target = SOV
+    }
+    add_threat = 5
+    add_state_claim = 722
+    add_state_claim = 213
+    add_state_claim = 216
+    add_state_claim = 215
     }
     }
 
