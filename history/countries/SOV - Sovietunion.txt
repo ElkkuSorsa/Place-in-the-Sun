@@ -1,0 +1,12 @@
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	partial_mobilisation
+    Sov_disorganized_military_1
+}
+
+
+
