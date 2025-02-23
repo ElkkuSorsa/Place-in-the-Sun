@@ -218,17 +218,17 @@ equipments = {
 		abbreviation = "lt2"
 		derived_variant_name = light_tank_equipment_2
 		visual_level = 1
-		year = 1936
+		year = 1916
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 1.6
 		maximum_speed = 6
-		reliability = 1.1
-		armor_value = 20
+		build_cost_ic = 10
+		reliability = 0.6
+		armor_value = 10
 		resources = {
-			steel = 1
+			steel = 3
 		}
 	}
 
