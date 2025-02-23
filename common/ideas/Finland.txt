@@ -83,6 +83,18 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+		FIN_war_against_soviet = {
+			picture = FIN_opposition_to_winter_war
+			modifier = {
+				conscription_factor = 0.2
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+	}
 }
 
  
