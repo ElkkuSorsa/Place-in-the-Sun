@@ -497,29 +497,6 @@ focus = {
     }
 
     focus = {
-    id = FIN_prepare_monarchy
-    icon = GFX_focus_EST_national_pride_in_finland
-    x = 1
-    y = 1
-    cost = 5
-    completion_reward = {
-    add_political_power = 75
-    }
-    }
-
-    focus = {
-    id = FIN_choosing_a_king
-    icon = GFX_focus_EST_national_pride_in_finland
-    prerequisite = {focus = FIN_prepare_monarchy}
-    x = 1
-    y = 2
-    cost = 5
-    completion_reward = {
-    add_political_power = 75
-    }
-    }
-
-    focus = {
     id = FIN_ties_with_germany
     icon = GFX_focus_ger_revive_kaiserreich
     prerequisite = {focus = FIN_the_coronation}
@@ -599,6 +576,87 @@ focus = {
     add_state_claim = 213
     add_state_claim = 216
     add_state_claim = 215
+    }
+    }
+
+    focus = {
+    id = FIN_bolster_the_army
+    icon = GFX_focus_FIN_suomen_maavoimat
+    x = 30
+    y = 1
+    cost = 5
+    completion_reward = {
+    add_ideas = FIN_army_spirit
+    }
+    }
+
+    focus = {
+    id = FIN_favor_mobile_tactics
+    icon = GFX_focus_FIN_suomen_maavoimat
+    x = 28
+    y = 2
+    cost = 10
+    mutually_exclusive = {focus = FIN_trench_warfare}
+    prerequisite = {focus = FIN_bolster_the_army}
+    completion_reward = {
+    army_experience = 15
+    swap_ideas = {
+    remove_idea = FIN_army_spirit
+    add_idea = FIN_army_spirit_fast
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_trench_warfare
+    icon = GFX_focus_FIN_suomen_maavoimat
+    x = 32
+    y = 2
+    cost = 10
+    prerequisite = {focus = FIN_bolster_the_army}
+    mutually_exclusive = {focus = FIN_favor_mobile_tactics}
+    completion_reward = {
+    army_experience = 15
+    swap_ideas = {
+    remove_idea = FIN_army_spirit
+    add_idea = FIN_army_spirit_trench
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_recruitment_campaign
+    icon = GFX_focus_FIN_suomen_maavoimat
+    x = 32
+    y = 3
+    cost = 10
+    prerequisite = {focus = FIN_bolster_the_army}
+    completion_reward = {
+    swap_ideas = {
+    remove_idea = FIN_army_spirit_trench
+    add_idea = FIN_army_spirit_trench2
+    }
+    }
+    }
+
+    focus = {
+    id = FIN_increase_budget
+    icon = GFX_focus_FIN_suomen_maavoimat
+    x = 30
+    y = 3
+    cost = 10
+    prerequisite = {focus = FIN_trench_warfare 
+    focus = FIN_favor_mobile_tactics}
+    completion_reward = {
+    army_experience = 5
+    927 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+    }
+    }
     }
     }
 
