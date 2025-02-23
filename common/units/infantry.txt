@@ -173,6 +173,7 @@ sub_units = {
 			infantry_equipment = 650
 			support_equipment = 850
 			uniforms_equipment = 650
+			machinegun_equipment = 95
 		}
 
 		marsh = {
@@ -233,7 +234,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 650
 			support_equipment = 850
-			uniforms_equipment = 500
+			uniforms_equipment = 650
+			machinegun_equipment = 95
 		}
 
 		marsh = {
@@ -293,7 +295,8 @@ sub_units = {
 		need = {
 			infantry_equipment = 650
 			support_equipment = 850
-		uniforms_equipment = 500
+			uniforms_equipment = 500
+			machinegun_equipment = 95
 		}
 		supply_consumption = 0.025
 		breakthrough = 0.15
@@ -356,6 +359,7 @@ sub_units = {
 			infantry_equipment = 650
 			support_equipment = 850
 			uniforms_equipment = 500
+			machinegun_equipment = 95
 		}
 		can_be_parachuted = yes
 	}
