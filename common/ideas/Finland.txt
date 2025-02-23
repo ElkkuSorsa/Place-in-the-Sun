@@ -85,16 +85,59 @@ ideas = {
 	}
 
 	country = {
-		FIN_war_against_soviet = {
-			picture = FIN_opposition_to_winter_war
+		FIN_army_spirit = {
+			picture = FIN_finnish_army
 			modifier = {
-				conscription_factor = 0.2
-				army_attack_factor = 0.05
-				army_org_factor = 0.1
 				army_defence_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+				army_core_attack_factor = 0.1
+
+
+			}
+		}
+	}
+
+	country = {
+		FIN_army_spirit_fast = {
+			picture = FIN_finnish_army
+			modifier = {
+				army_defence_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_speed_factor = 0.1
+
+			}
+		}
+	}
+
+
+	country = {
+		FIN_army_spirit_trench = {
+			picture = FIN_finnish_army
+			modifier = {
+				army_defence_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.05
+				army_core_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+
+
+			}
+		}
+	}
+
+	country = {
+		FIN_army_spirit_trench2 = {
+			picture = FIN_finnish_army
+			modifier = {
+				army_defence_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.05
+				army_core_attack_factor = 0.1
+				dig_in_speed_factor = 0.1
+				conscription = 0.02
+
+
 			}
 		}
 	}
 }
-
  
