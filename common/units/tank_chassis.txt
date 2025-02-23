@@ -186,10 +186,14 @@ equipments = {
 		abbreviation = "lt0"
 		derived_variant_name = light_tank_equipment_0
 		visual_level = 0
-		year = 1922
+		year = 1934
 		archetype = light_tank_chassis
 		priority = 2000
 		module_slots = inherit
+		maximum_speed = 5
+		build_cost_ic = 1.25
+		reliability = 0.95
+		armor_value = 15
 
 		upgrades = {
 			tank_nsb_engine_upgrade
