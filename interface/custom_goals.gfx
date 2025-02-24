@@ -331,4 +331,8 @@ spriteTypes = {
 		name = "GFX_goal_russo_french_friendship"
 		texturefile = "gfx/interface/goals/FRA/russo_french_friendship.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_flag_germany"
+		texturefile = "gfx/interface/goals/FRA/flag_germany.dds"
+	}
 

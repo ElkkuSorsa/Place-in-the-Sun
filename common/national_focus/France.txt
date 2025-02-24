@@ -243,6 +243,104 @@ focus_tree = {
 	}
 
 		focus = {
+		id = FRA_internal_policies
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		x = 16
+		y = 9
+		prerequisite = { focus = FRA_the_french_revolution }
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_command_economy
+		icon = GFX_focus_generic_communist_industry
+		x = 16
+		y = 10
+		prerequisite = { focus = FRA_internal_policies }
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_new_political_system
+		icon = GFX_focus_usa_voter_registration_act
+		x = 16
+		y = 11
+		prerequisite = { focus = FRA_command_economy }
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_religion_debate
+		icon = GFX_focus_generic_catholic_dominion
+		x = 16
+		y = 12
+		prerequisite = { focus = FRA_new_political_system }
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_allow_religion
+		icon = GFX_focus_generic_vatican_state
+		x = 14
+		y = 13
+		prerequisite = { focus = FRA_religion_debate }
+		mutually_exclusive = { focus = FRA_state_atheism }
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_state_atheism
+		icon = GFX_focus_BRA_state_atheism
+		x = 18
+		y = 13
+		prerequisite = { focus = FRA_religion_debate }
+		mutually_exclusive = { focus = FRA_allow_religion }
+		
+		completion_reward = {
+			add_war_support = 0.05
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
 		id = FRA_foreing_policy_question
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = 10
@@ -307,7 +405,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = FRA_germanic_benelux
+		id = FRA_invasion_of_germanic_benelux
 		icon = GFX_focus_BEL_dietsland
 		x = 7
 		y = 12
@@ -315,6 +413,20 @@ focus_tree = {
 		
 		completion_reward = { create_wargoal = { type = annex_everything target = LUX } }
 		completion_reward = { create_wargoal = { type = annex_everything target = HOL } }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_destroy_the_fake_state
+		icon = GFX_focus_attack_switzerland
+		x = 9
+		y = 11
+		prerequisite = { focus = FRA_agressive_foreing_policy }
+		
+		completion_reward = { create_wargoal = { type = annex_everything target = SWI } }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -339,9 +451,72 @@ focus_tree = {
 
 	}
 
+		focus = {
+		id = FRA_ally_the_swiss
+		icon = GFX_focus_generic_befriend_switzerland
+		x = 13
+		y = 11
+		prerequisite = { focus = FRA_peacful_foreing_policy }
+		
+		completion_reward = {
+			add_political_power = 100
+			}
 
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
 
 		focus = {
+		id = FRA_spanish_revolution
+		icon = GFX_focus_generic_befriend_communist_spain_focus
+		x = 13
+		y = 12
+		prerequisite = { focus = FRA_ally_the_swiss }
+		
+		completion_reward = {
+			add_political_power = 100
+			}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_divide_belgium
+		icon = GFX_focus_BEL_multi_language_courses
+		x = 11
+		y = 11
+		prerequisite = { focus = FRA_peacful_foreing_policy }
+		
+		completion_reward = {
+			add_political_power = 100
+			}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_alliance_whit_netherlands
+		icon = GFX_focus_hol_oranje_boven
+		x = 11
+		y = 12
+		prerequisite = { focus = FRA_divide_belgium }
+		
+		completion_reward = {
+			add_political_power = 100
+			}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+
+        focus = {
 		id = FRA_anti_monarchist_propaganda
 		icon = GFX_SOV_coup_detat_ccp_2d_sov_compatibility
 		x = 17
@@ -541,7 +716,23 @@ focus_tree = {
 	}
 
 		focus = {
-		id = FRA_mandatory_service
+		id = FRA_colonial_army
+		icon = GFX_focus_CONGO_congo_army
+		x = 18
+		y = 10
+		prerequisite = { focus = FRA_prepearing_for_a_war }
+		
+		completion_reward = {
+        add_ideas = {}
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_increase_conscription
 		icon = GFX_focus_SWE_varnplikt
 		x = 19
 		y = 9
@@ -558,8 +749,24 @@ focus_tree = {
 	}
 
 		focus = {
+		id = FRA_fortifying_the_german_border
+		icon = GFX_SOV_far_east_fortification_ccp_2d_sov_compatibility
+		x = 19
+		y = 11
+		prerequisite = { focus = FRA_increase_conscription }
+		
+		completion_reward = {
+		add_political_power = 100
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
 		id = FRA_attack_the_conservatists
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_BRA_end_the_state_of_emergency
 		x = 23
 		y = 7
 		prerequisite = { focus = FRA_free_republic }
@@ -579,7 +786,7 @@ focus_tree = {
 
 		focus = {
 		id = FRA_political_monopoly
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_ARG_keep_it_in_the_party
 		x = 23
 		y = 9
 		prerequisite = { focus = FRA_attack_the_conservatists }
@@ -598,11 +805,61 @@ focus_tree = {
 	}
 
 		focus = {
+		id = FRA_aproach_the_italians
+		icon = GFX_focus_befriend_italy
+		x = 23
+		y = 11
+		prerequisite = { focus = FRA_political_monopoly }
+		
+		completion_reward = {
+        add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
 		id = FRA_tripple_entente
 		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
 		x = 21
 		y = 8
 		prerequisite = { focus = FRA_free_republic }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_the_threat_of_the_east
+		icon = GFX_goal_flag_germany
+		x = 21
+		y = 10
+		prerequisite = { focus = FRA_tripple_entente }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_skibidi_france
+		icon = GFX_goal_flag_germany
+		x = 21
+		y = 12
+		prerequisite = { focus = FRA_the_threat_of_the_east }
+		prerequisite = { focus = FRA_aproach_the_italians }
+		prerequisite = { focus = FRA_fortifying_the_german_border }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -1513,7 +1770,7 @@ focus_tree = {
 		id = FRA_wadai_war
 		icon = GFX_focus_generic_africa_liberation
 		x = 60
-		y = 6
+		y = 5
 		
 		completion_reward = {
 			add_political_power = 100
@@ -1525,11 +1782,43 @@ focus_tree = {
 	}
 
 		focus = {
+		id = FRA_memories_of_the_franco_prussian_war
+		icon = GFX_goal_memories_of_the_franco_prussian_war
+		x = 59
+		y = 6
+		prerequisite = { focus = FRA_wadai_war }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
+		id = FRA_funds_for_arms_manufacturers
+		icon = GFX_focus_AUS_raid_military_storages
+		x = 61
+		y = 6
+		prerequisite = { focus = FRA_wadai_war }
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+		focus = {
 		id = FRA_proper_army_funding
 		icon = GFX_goal_french_army
 		x = 68
 		y = 7
-		prerequisite = { focus = FRA_wadai_war }
+		prerequisite = { focus = FRA_memories_of_the_franco_prussian_war }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -1609,7 +1898,7 @@ focus_tree = {
 		icon = GFX_goal_french_army
 		x = 60
 		y = 7
-		prerequisite = { focus = FRA_wadai_war }
+		prerequisite = { focus = FRA_memories_of_the_franco_prussian_war }
 		
 		completion_reward = {
 			add_political_power = 100
@@ -1693,7 +1982,7 @@ focus_tree = {
 		icon = GFX_goal_french_army
 		x = 50
 		y = 7
-		prerequisite = { focus = FRA_wadai_war }
+		prerequisite = { focus = FRA_memories_of_the_franco_prussian_war }
 		
 		completion_reward = {
 			add_political_power = 100
