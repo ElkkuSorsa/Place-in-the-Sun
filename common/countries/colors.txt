@@ -98,4 +98,18 @@ MON = {
 	color_ui = rgb { 68 94 68 }
 }
 
+QIN = {
+	color = rgb {179 131 20}
+	color_ui = rgb {179 131 20}
+}
 
+CHI = {
+	color = rgb {15 11 128 }
+	color_ui = rgb {15 11 128 }
+}
+
+JAP = {
+	color = rgb {255 255 255}
+	color_ui = rgb {255 255 255}
+
+}
