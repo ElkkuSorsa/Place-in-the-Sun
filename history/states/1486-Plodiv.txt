@@ -1,0 +1,28 @@
+state={
+	id=1486
+	name="STATE_1486"
+	manpower = 414025
+	
+	state_category = large_town
+
+	resources={
+		chromium = 1
+	}
+
+	history={
+		owner = BUL
+		victory_points = { #Plovdiv
+			6923 10
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BUL
+	}
+
+	provinces={
+		3937 6923 
+	}
+
+	local_supplies=2.0 
+}

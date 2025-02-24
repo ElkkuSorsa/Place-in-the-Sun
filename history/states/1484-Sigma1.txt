@@ -1,21 +1,16 @@
 state={
-	id=185
-	name="STATE_185"
-	resources={
-		chromium=12.000
-		steel=13.000
-	}
+	id=1484
+	name="STATE_1484"
 	provinces={
-		841 3914 3980 9805 9916 
+		1106 1205 11786 11895 12001 
 	}
-	manpower=713897
+	manpower=21003
 	buildings_max_level_factor=1.000
 	state_category=rural
-	local_supplies=6.000
-
+	local_supplies=3.000
 	history = {
 
-		owner = TUR
+		owner = GRE
 		add_core_of = GRE
 
 		buildings = {
@@ -26,6 +21,4 @@ state={
 		}
 		
 	}
-}
-
 }
