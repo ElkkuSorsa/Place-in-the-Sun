@@ -11,7 +11,7 @@ state={
 		victory_points = {
 			9809 3 
 		}
-		owner = TUR
+		owner = MNT
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 1
@@ -20,12 +20,12 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = YUG
+		add_core_of = MNT
 
 	}
 
 	provinces={
-		937 6913 9809 9821 11858 
+		6913 9809 9821 11858 
 	}
 	manpower=880500
 	buildings_max_level_factor=1.000
