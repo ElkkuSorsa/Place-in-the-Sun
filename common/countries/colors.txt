@@ -93,4 +93,9 @@ ROM = {
 	color_ui = rgb { 194 239 45 }
 }
 
+MON = {
+	color = rgb { 68 94 68 }
+	color_ui = rgb { 68 94 68 }
+}
+
 
