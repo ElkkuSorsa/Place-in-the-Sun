@@ -30,20 +30,7 @@ state={
 		add_core_of = WPH
 		add_core_of = PRE
 
-		1939.1.1 ={
-			buildings = {
-				radar_station = 1
-				arms_factory = 6
-				industrial_complex = 3
-			}
-		}
-		
-		set_demilitarized_zone = yes
-	
-	
-		1936.3.7 = {
-			set_demilitarized_zone = no
-		}
+
 	}
 
 	provinces={

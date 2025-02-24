@@ -1,0 +1,18 @@
+state={
+	id=1488
+	name="STATE_1488"
+	provinces={
+		3526 
+	}
+	manpower=0
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
+	history={
+		owner = TUR
+		add_core_of = BUL
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

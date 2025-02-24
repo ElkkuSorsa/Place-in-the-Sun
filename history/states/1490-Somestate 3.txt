@@ -1,0 +1,18 @@
+state={
+	id=1490
+	name="STATE_1490"
+	provinces={
+		 6857 9818 11813 
+	}
+	state_category = rural
+	manpower=0
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
+	history={
+		owner = TUR
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

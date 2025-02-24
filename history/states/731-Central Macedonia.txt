@@ -5,21 +5,18 @@ state={
 
 	history={
 		owner = TUR
-		victory_points = {
-			11818 5 
-		}
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TUR
+		add_core_of = TUR, GRE
 		add_claim_by = BUL
 
 	}
 
 	provinces={
-		895 936 966 3526 3844 3936 9837 10163 11818 
+		936 9837 10163 
 	}
-	manpower=1155700
+	manpower=994500
 	buildings_max_level_factor=1.000
 	state_category=town
 
