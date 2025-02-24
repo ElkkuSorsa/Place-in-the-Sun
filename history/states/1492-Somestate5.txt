@@ -1,0 +1,17 @@
+state={
+	id=1492
+	name="STATE_1492"
+	provinces={
+		9906 
+	}
+	manpower=0
+	buildings_max_level_factor=0.000
+	local_supplies=0.000
+	history={
+		owner = SER
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

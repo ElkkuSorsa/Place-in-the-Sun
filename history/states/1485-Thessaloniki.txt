@@ -15,7 +15,7 @@ state={
 		add_core_of = TUR
 		add_core_of = GRE
 		add_claim_by = BUL
-
+	}
 	manpower=161200
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
