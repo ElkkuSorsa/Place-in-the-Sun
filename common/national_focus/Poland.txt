@@ -1,0 +1,321 @@
+focus_tree = {
+	id = POL_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			original_tag = POL
+			OR = {
+				is_subject = no
+				is_subject_of = GER
+				is_subject_of = AUH
+			}
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = POL_independence_struggle
+
+		x = 25
+		y = 1
+	}
+
+	focus = {
+		id = POL_first_sejm
+
+		x = 25
+		y = 2
+
+		prerequisite = { focus = POL_independence_struggle }
+	}
+
+	focus = {
+		id = POL_honour_royal_legacy
+
+		x = 21
+		y = 3
+
+		prerequisite = { focus = POL_first_sejm }
+		mutually_exclusive = { focus = POL_pilsudski }
+	}
+
+	focus = {
+		id = POL_promise_constitutionalism
+
+		x = 20
+		y = 4
+
+		prerequisite = { focus = POL_honour_royal_legacy }
+	}
+
+	focus = {
+		id = POL_invite_candidates
+
+		x = 22
+		y = 4
+
+		prerequisite = { focus = POL_honour_royal_legacy }
+	}
+
+	focus = {
+		id = POL_negotiate_with_entente
+
+		x = 21
+		y = 5
+
+		prerequisite = { focus = POL_promise_constitutionalism }
+		prerequisite = { focus = POL_invite_candidates }
+	}
+
+	focus = {
+		id = POL_brest_litovsk
+
+		x = 18
+		y = 5
+
+	}
+
+	focus = {
+		id = POL_german_king
+
+		x = 18
+		y = 6
+
+		prerequisite = { focus = POL_negotiate_with_entente focus = POL_brest_litovsk }
+	}
+
+	focus = {
+		id = POL_austrian_king
+
+		x = 21
+		y = 6
+
+		prerequisite = { focus = POL_negotiate_with_entente focus = POL_brest_litovsk }
+	}
+
+	focus = {
+		id = POL_polish_king
+
+		x = 24
+		y = 6
+
+		prerequisite = { focus = POL_negotiate_with_entente }
+	}
+
+	focus = {
+		id = POL_polish_nationalism
+
+		x = 25
+		y = 7
+
+		prerequisite = { focus = POL_polish_king focus = POL_polish_separatism }
+	}
+
+	focus = {
+		id = POL_war_against_russia
+
+		x = 25
+		y = 8
+
+		prerequisite = { focus = POL_polish_nationalism }
+	}
+
+	focus = {
+		id = POL_pilsudski
+
+		x = 29
+		y = 3
+
+		prerequisite = { focus = POL_first_sejm }
+		mutually_exclusive = { focus = POL_honour_royal_legacy }
+	}
+
+	focus = {
+		id = POL_polish_ukrainian_war
+
+		x = 27
+		y = 4
+
+		cost = 2
+
+		prerequisite = { focus = POL_pilsudski }
+	}
+
+	focus = {
+		id = POL_greater_polish_uprising
+
+		x = 29
+		y = 4
+
+		cost = 2
+
+		prerequisite = { focus = POL_pilsudski }
+
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = POL_little_constitution
+
+		x = 30
+		y = 5
+
+		cost = 5
+
+		prerequisite = { focus = POL_greater_polish_uprising }
+	}
+
+	focus = {
+		id = POL_reaffirm_republic
+
+		x = 30
+		y = 6
+
+		cost = 5
+
+		prerequisite = { focus = POL_little_constitution }
+		mutually_exclusive = { focus = POL_consolidate_pilsudski }
+	}
+
+	focus = {
+		id = POL_march_constitution
+
+		x = 30
+		y = 7
+
+		cost = 5
+
+		prerequisite = { focus = POL_reaffirm_republic }
+	}
+
+	focus = {
+		id = POL_pilsudski_end
+
+		x = 30
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = POL_march_constitution }
+	}
+
+	focus = {
+		id = POL_consolidate_pilsudski
+
+		x = 34
+		y = 6
+
+		cost = 5
+
+		prerequisite = { focus = POL_little_constitution }
+		mutually_exclusive = { focus = POL_reaffirm_republic }
+	}
+
+	focus = {
+		id = POL_military_administration
+
+		x = 33
+		y = 7
+
+		cost = 5
+
+		prerequisite = { focus = POL_consolidate_pilsudski }
+	}
+
+	focus = {
+		id = POL_dreams_of_greater_poland
+
+		x = 37
+		y = 7
+
+		cost = 5
+
+		prerequisite = { focus = POL_consolidate_pilsudski }
+	}
+
+	focus = {
+		id = POL_second_polish_russian_war
+
+		x = 37
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = POL_dreams_of_greater_poland }
+	}
+
+	focus = {
+		id = POL_conquer_lithuania
+
+		x = 35
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = POL_dreams_of_greater_poland }
+	}
+
+	focus = {
+		id = POL_conquer_ukraine
+
+		x = 39
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = POL_dreams_of_greater_poland }
+	}
+
+	focus = {
+		id = POL_support_republic
+
+		x = 28
+		y = 5
+
+		cost = 2
+
+		prerequisite = { focus = POL_greater_polish_uprising }
+	}
+
+	focus = {
+		id = POL_polish_separatism
+
+		x = 26
+		y = 6
+
+		cost = 2
+
+		prerequisite = { focus = POL_support_republic }
+	}
+
+	focus = {
+		id = POL_parliamentary_elections
+
+		x = 28
+		y = 6
+
+		cost = 2
+
+		prerequisite = { focus = POL_support_republic }
+	}
+
+	focus = {
+		id = POL_industrialization
+
+		x = 28
+		y = 7
+
+		cost = 2
+
+		prerequisite = { focus = POL_parliamentary_elections }
+	}
+
+}
