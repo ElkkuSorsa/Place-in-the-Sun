@@ -1029,6 +1029,17 @@ focus_tree = {
 
 		cost = 5
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		allow_branch = {
 			has_completed_focus = ENG_form_war_cabinet
 		}
@@ -1050,6 +1061,17 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_war_cabinet }
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		cost = 5
 
 		completion_reward = {
@@ -1065,6 +1087,17 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_war_cabinet }
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		cost = 5
 
 		completion_reward = {
@@ -1079,6 +1112,17 @@ focus_tree = {
 		y = 10
 
 		prerequisite = { focus = ENG_war_cabinet }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
 
 		cost = 5
 
@@ -1097,6 +1141,17 @@ focus_tree = {
 		prerequisite = { focus = ENG_restore_the_public_trust }
 		prerequisite = { focus = ENG_continue_social_welfare }
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		cost = 5
 
 		completion_reward = {
@@ -1114,6 +1169,17 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_reign_of_asquith }
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		cost = 5
 
 		completion_reward = {
@@ -1128,6 +1194,17 @@ focus_tree = {
 		y = 13
 
 		prerequisite = { focus = ENG_battle_the_party_influence }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
 
 		cost = 5
 
@@ -1144,6 +1221,17 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_reign_of_asquith }
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		cost = 5
 
 		completion_reward = {
@@ -1158,6 +1246,17 @@ focus_tree = {
 		y = 13
 
 		prerequisite = { focus = ENG_discredit_liberals }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
 
 		cost = 5
 
@@ -1174,6 +1273,17 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_reign_of_asquith }
 
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
 		cost = 5
 
 		completion_reward = {
@@ -1188,6 +1298,17 @@ focus_tree = {
 		y = 13
 
 		prerequisite = { focus = ENG_endorse_conservatives }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
 
 		cost = 5
 
@@ -3674,7 +3795,7 @@ focus_tree = {
 	focus = {
 		id = ENG_military_industries
 		icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
-		x = 80
+		x = 79
 		y = 2
 
 		prerequisite = { focus = ENG_industrial_powerhouse }
@@ -3705,10 +3826,10 @@ focus_tree = {
 
 		completion_reward = {
 			random_core_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3718,7 +3839,7 @@ focus_tree = {
 	focus = {
 		id = ENG_field_artillery
 		icon = GFX_goal_generic_army_artillery2
-		x = 80
+		x = 79
 		y = 3
 
 		prerequisite = { focus = ENG_military_industries }
@@ -3758,7 +3879,7 @@ focus_tree = {
 	focus = {
 		id = ENG_shell_factories
 		icon = GFX_goal_generic_army_artillery
-		x = 80
+		x = 79
 		y = 4
 
 		prerequisite = { focus = ENG_field_artillery }
@@ -3801,7 +3922,7 @@ focus_tree = {
 	focus = {
 		id = ENG_shell_crisis
 		icon = GFX_goal_generic_army_artillery
-		x = 78
+		x = 77
 		y = 4
 
 		offset = {
@@ -3840,7 +3961,7 @@ focus_tree = {
 	focus = {
 		id = ENG_emergancy_factories
 		icon = GFX_focus_GER_factories_for_resources
-		x = 80
+		x = 79
 		y = 5
 
 		prerequisite = { focus = ENG_shell_factories }
@@ -3894,7 +4015,7 @@ focus_tree = {
 	focus = {
 		id = ENG_convert_civilian_industries
 		icon = GFX_focus_GER_integrated_economies
-		x = 80
+		x = 79
 		y = 6
 
 		prerequisite = { focus = ENG_emergancy_factories }
@@ -3952,6 +4073,49 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_support_english_military_industry
+		icon = GFX_goal_generic_small_arms
+		x = 82
+		y = 2
+
+		offset = {
+			x = -27
+			trigger = {
+				has_completed_focus = ENG_conservative_victory
+			}
+		}
+
+		offset = {
+			x = -40
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_march_for_change
+				}
+			}
+		}
+
+		prerequisite = { focus = ENG_haldane_reforms }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_vickers_limited
 		icon = GFX_goal_generic_small_arms
 		x = 83
@@ -3975,7 +4139,7 @@ focus_tree = {
 			}
 		}
 
-		prerequisite = { focus = ENG_military_industries }
+		prerequisite = { focus = ENG_support_english_military_industry }
 
 		cost = 5
 
@@ -3983,6 +4147,79 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_armstrong_whitworth
+		icon = GFX_goal_generic_small_arms
+		x = 81
+		y = 3
+
+		offset = {
+			x = -27
+			trigger = {
+				has_completed_focus = ENG_conservative_victory
+			}
+		}
+
+		offset = {
+			x = -40
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_march_for_change
+				}
+			}
+		}
+
+		prerequisite = { focus = ENG_support_english_military_industry }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_rsaf
+		icon = GFX_goal_generic_small_arms
+		x = 82
+		y = 4
+
+		offset = {
+			x = -27
+			trigger = {
+				has_completed_focus = ENG_conservative_victory
+			}
+		}
+
+		offset = {
+			x = -40
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_march_for_change
+				}
+			}
+		}
+
+		prerequisite = { focus = ENG_vickers_limited }
+		prerequisite = { focus = ENG_armstrong_whitworth }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = ENG_rsaf_enfield_organization
 		}
 	}
 
@@ -4088,9 +4325,49 @@ focus_tree = {
 		id = ENG_industrial_innovation
 		icon = GFX_focus_generic_modernize_industry
 		x = 75
-		y = 4
+		y = 3
 
 		prerequisite = { focus = ENG_industrial_powerhouse }
+
+		offset = {
+			x = -27
+			trigger = {
+				has_completed_focus = ENG_conservative_victory
+			}
+		}
+
+		offset = {
+			x = -40
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_march_for_change
+				}
+			}
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_support_private_construction
+		icon = GFX_focus_generic_modernize_industry
+		x = 75
+		y = 4
+
+		prerequisite = { focus = ENG_industrial_innovation }
 
 		offset = {
 			x = -27
@@ -4130,7 +4407,7 @@ focus_tree = {
 		x = 75
 		y = 5
 
-		prerequisite = { focus = ENG_industrial_innovation }
+		prerequisite = { focus = ENG_support_private_construction }
 		prerequisite = { focus = ENG_utilize_colony_resources }
 
 		offset = {
@@ -4167,7 +4444,7 @@ focus_tree = {
 	focus = {
 		id = ENG_develop_textile_industry
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
-		x = 72
+		x = 73
 		y = 2
 
 		prerequisite = { focus = ENG_industrial_powerhouse }
@@ -4341,7 +4618,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = 	arms_factory
+					type = 	infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -4354,7 +4631,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = 	arms_factory
+					type = 	infrastructure
 					level = 1
 					instant_build = yes
 				}
@@ -4434,7 +4711,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4442,7 +4719,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4485,7 +4762,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4691,6 +4968,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+
 			swap_ideas = {
 				remove_idea = ENG_haldane_reform_1
 				add_idea = ENG_haldane_reform_2
@@ -4881,6 +5164,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = "We may now increase our conscription laws."
 			remove_ideas = ENG_haldane_reforms_idea
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.2
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -4915,6 +5204,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = ENG_military_research_1
 		}
 	}
 
@@ -4949,6 +5239,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_military_research_2
+				remove_idea = ENG_military_research_1
+			}
 		}
 	}
 
@@ -5021,7 +5315,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_machine_guns
+		id = ENG_rifle_improvements
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		x = 91
 		y = 4
@@ -5051,6 +5345,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -5059,7 +5358,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		x = 93
 		y = 5
-		prerequisite = { focus = ENG_machine_guns }
+		prerequisite = { focus = ENG_rifle_improvements }
 		prerequisite = { focus = ENG_heavy_howitzer }
 		prerequisite = { focus = ENG_poison_gas }
 
@@ -5087,6 +5386,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = armor
+			}
 		}
 	}
 
@@ -5121,6 +5425,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.2
+				uses = 2
+				category = interwar_doctrine
+			}
 		}
 	}
 
@@ -5155,6 +5464,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = light_air
+			}
 		}
 	}
 

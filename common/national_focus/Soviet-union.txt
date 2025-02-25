@@ -123,6 +123,34 @@ focus_tree = {
         add_political_power = 70
 		}
 	}
+	    focus = {
+		id = SOV_support_the_pannonian_reds
+		icon = Focus_HUN_reinstate_the_lenin_boys
+		x = 59
+		y = 7
+		cost = 5
+
+		available = {
+		}
+        prerequisite = { focus = SOV_recognise_finland }
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
+	    focus = {
+		id = SOV_support_finnish_reds
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 57
+		y = 7
+		cost = 5
+
+		available = {
+		}
+         prerequisite = { focus = SOV_recognise_finland }
+		completion_reward = {
+        add_political_power = 70
+		}
+	}
         focus = {
 		id = SOV_crush_the_ukrainian_rebellions
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
@@ -260,13 +288,13 @@ focus_tree = {
 	}
 	# Soviet Political Tree
 	    focus = {
-		id = SOV_Adress_the_nation
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		id = SOV_12th_party_congress
+		icon = GFX_focus_SOV_the_supreme_soviet
 		x = 40
 		y = 5
 		cost = 5
 
-		available = {
+		available = { 
 		}
 
 		completion_reward = {
@@ -275,29 +303,145 @@ focus_tree = {
 	}
 		focus = {
 		id = SOV_choose_the_successor
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		x = 40
 		y = 6
 		cost = 5
-		prerequisite = { focus = SOV_Adress_the_nation }
+		prerequisite = { focus = SOV_12th_party_congress }
 		available = {
 		}
 
-		completion_reward = {
-        country_event = {
-		id = SOV_successor.1 
-		days = 2
-		}
+			completion_reward = {
+        	country_event = {
+			id = SOV_successor.1 
+			days = 1
+			}
 		}
 	}
 		focus = {
 		id = SOV_premier_bukharin
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 43
+		icon = GFX_focus_SOV_bukharinists
+		x = 40
 		y = 7
 		cost = 5
 		prerequisite = { focus = SOV_choose_the_successor }
 		available = {	always = no
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_Ally_with_stalin
+		icon = GFX_
+		x = 40
+		y = 8
+		cost = 5
+		prerequisite = { focus = SOV_premier_bukharin}
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_premier_zinovyev
+		icon = GFX_focus_SOV_zinovyevists
+		x = 46
+		y = 7
+		cost = 5
+		prerequisite = { focus = SOV_choose_the_successor }
+		available = {	always = no
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_premier_Kamenev
+		icon = GFX_focus_SOV_zinovyevists
+		x = 49
+		y = 7
+		cost = 5
+		prerequisite = { focus = SOV_choose_the_successor }
+		available = {	always = no
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+		focus = {
+		id = SOV_Coalition_with_zinovyev
+		icon = GFX_
+		x = 50
+		y = 8
+		cost = 5
+		mutually_exclusive = { focus = SOV_Coalition_with_Kamenev }
+		prerequisite = { focus = SOV_premier_Kamenev }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_Coalition_with_Kamenev
+		icon = GFX_
+		x = 48
+		y = 8
+		cost = 5
+		mutually_exclusive = { focus = SOV_Coalition_with_zinovyev }	
+		prerequisite = { focus = SOV_premier_zinovyev }
+		available = {	
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_Alliance_with_trotsky?
+		icon = GFX_
+		x = 49
+		y = 9
+		cost = 5	
+		prerequisite = { focus = SOV_Coalition_with_zinovyev focus = SOV_Coalition_with_Kamenev }
+		available = {	
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_increase_cooperation
+		icon = GFX_focus_SOV_zinovyevists
+		x = 47
+		y = 9
+		cost = 5
+		prerequisite = { focus = SOV_Coalition_with_Kamenev focus = SOV_Coalition_with_zinovyev}
+		prerequisite = { focus = SOV_gain_support_from_moderates}
+		available = {	
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_convince_party_members
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 42
+		y = 8
+		cost = 5
+		prerequisite = { focus = SOV_premier_bukharin focus = SOV_premier_Trotsky focus = SOV_premier_zinovyev }
+		available = {	
 		}
 
 		completion_reward = {
@@ -310,7 +454,7 @@ focus_tree = {
 		x = 44
 		y = 8
 		cost = 5
-		prerequisite = { focus = SOV_premier_bukharin}
+		prerequisite = { focus = SOV_premier_bukharin focus = SOV_premier_zinovyev focus = SOV_premier_Trotsky}
 		available = {
 		}
 
@@ -319,8 +463,122 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = SOV_premier_Stalin
+		id = SOV_rightful_successor
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 44
+		y = 10
+		cost = 5
+		prerequisite = { focus = SOV_internationalistic_propaganda }
+		prerequisite = { focus = SOV_expose_stalins_lies }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_Approach_the_radicals
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 44
+		y = 11
+		cost = 5
+		prerequisite = { focus = SOV_internationalistic_propaganda }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_gain_support_from_moderates
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 46
+		y = 8
+		cost = 3
+		prerequisite = { focus = SOV_premier_bukharin focus = SOV_premier_zinovyev focus = SOV_premier_Kamenev}
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_gain_gain_lenins_support
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 45
+		y = 9
+		cost = 5
+		prerequisite = { focus = SOV_expose_stalins_lies focus = SOV_gain_support_from_moderates focus = SOV_premier_Stalin}
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = SOV_Red_army_takeover
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 34
+		y = 7
+		cost = 5
+		prerequisite = { focus = SOV_choose_the_successor }
+		available = { always = no
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_Arrest_the_contenderds
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 34
+		y = 8
+		cost = 5
+		prerequisite = { focus = SOV_Red_army_takeover }
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_Martial_law
+		icon = GFX_
+		x = 32
+		y = 8
+		cost = 5
+		prerequisite = { focus = SOV_Red_army_takeover }
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_Keep_trotsky
+		icon = GFX_
+		x = 33
+		y = 9
+		mutually_exclusive = { focus = SOV_Fire_trotsky }
+		cost = 5
+		prerequisite = { focus = SOV_Red_army_takeover }
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_premier_Stalin
+		icon = GFX_focus_fra_loyalty_stalin
 		x = 37
 		y = 7
 		cost = 5
@@ -338,7 +596,22 @@ focus_tree = {
 		x = 36
 		y = 8
 		cost = 5
-		prerequisite = { focus = SOV_premier_Stalin }
+		prerequisite = { focus = SOV_premier_Stalin focus = SOV_Red_army_takeover }
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_Fire_trotsky
+		icon = GFX_focus_SOV_purge_trotskyists
+		x = 35
+		y = 9
+		mutually_exclusive = { focus = SOV_Keep_trotsky }
+		cost = 5
+		prerequisite = { focus = SOV_premier_Stalin focus = SOV_Red_army_takeover }
 		available = { 
 		}
 
@@ -359,11 +632,25 @@ focus_tree = {
 		completion_reward = {
 		
 		}
+	}
+		focus = {
+		id = SOV_Ally_with_bukharin
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 37
+		y = 9
+		cost = 5
+		prerequisite = { focus = SOV_premier_Stalin }
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
 	}	
 		focus = {
 		id = SOV_premier_Trotsky
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 40
+		icon = GFX_focus_fra_loyalty_trotzky
+		x = 43
 		y = 7
 		cost = 5
 		prerequisite = { focus = SOV_choose_the_successor }
@@ -375,12 +662,12 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = SOV_begin_societal_reforms
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 40
-		y = 8
+		id = SOV_internationalistic_propaganda
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
+		x = 43
+		y = 9
 		cost = 5
-
+		prerequisite = { focus = SOV_premier_Trotsky}
 		available = {
 		}
 
@@ -435,7 +722,7 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = SOV_forced_industrialisation
+		id = SOV_forced_industrialization
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 39
 		y = 9
@@ -449,12 +736,12 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = SOV_complete_nationalisation
+		id = SOV_complete_nationalization
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 38
 		y = 10
 		cost = 5
-		prerequisite = { focus = SOV_forced_industrialisation }
+		prerequisite = { focus = SOV_forced_industrialization }
 		available = {
 		}
 		completion_reward = {
@@ -462,21 +749,8 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = SOV_force_peasants_to_factories
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 38
-		y = 11
-		cost = 5
-		prerequisite = { focus = SOV_complete_nationalisation }
-		available = {
-		}
-		completion_reward = {
-		add_stability_factor = -0.05
-		}
-	}
-		focus = {
 		id = SOV_free_healthcare
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		icon = Focus_generic_field_hostpital
 		x = 40
 		y = 10
 		cost = 5
@@ -487,57 +761,7 @@ focus_tree = {
 		add_ideas = { SOV_free_healtcare }
 		}
 	}
-		focus = {
-		id = SOV_public_schooling
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 41
-		y = 11
-		cost = 5
-		prerequisite = { focus = SOV_forced_industrialisation focus = SOV_Continue_the_NEP }
-		available = {
-		}
-		completion_reward = {
-		add_ideas = { SOV_free_healtcare }
-		}
-	}
-		focus = {
-		id = SOV_Housing_programs
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 39
-		y = 12
-		cost = 5
-		prerequisite = { focus = SOV_forced_industrialisation }
-		prerequisite = { focus = SOV_force_peasants_to_factories }
-		available = {
-		}
-		completion_reward = {
-		add_ideas = { SOV_free_healtcare }
-		}
-	}
-		focus = {
-		id = SOV_Military_oriented_economy
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 39
-		y = 13
-		cost = 5
-		prerequisite = { focus = SOV_forced_industrialisation focus = SOV_Continue_the_NEP }
-		available = {
-		}
-		completion_reward = {
-		add_ideas = { SOV_free_healtcare }
-		}
-	}
-		focus = {
-		id = SOV_civilian_oriented_econmy
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 41
-		y = 12
-		cost = 5
-		prerequisite = { focus = SOV_forced_industrialisation focus = SOV_Continue_the_NEP }
-		available = {
-		}
-		completion_reward = {
-		add_ideas = { SOV_free_healtcare }
-		}
-	}
+
+
+
 }

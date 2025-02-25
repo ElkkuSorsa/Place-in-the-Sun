@@ -256,7 +256,7 @@
  STATE_182:0 "Crete"
  STATE_183:0 "Cyprus"
  STATE_184:0 "West Thrace" #KSR
- STATE_185:0 "Epirus"
+ STATE_185:0 "Central Epirus"
  STATE_186:0 "Peloponnese"
  STATE_187:0 "Aegean Islands"
  STATE_188:0 "Klaipeda" #KSR
@@ -330,7 +330,7 @@
  STATE_210:0 "Nevel" #KSR
  STATE_210_LIT:0 "Nevelis" #KSR
  STATE_211:0 "Burgas"
- STATE_212:0 "Plovdiv"
+ STATE_212:0 "Haskovo"
  STATE_213:0 "Murmansk"
  STATE_213_FIN: "Kuolan Niemimaa"
  STATE_214:0 "Arkhangelsk"
@@ -2003,4 +2003,7 @@
  STATE_1483:0 "Przemyśl" #KSR
  AUH_STATE_1483:0 "Premißel"
  STATE_1483_SOV:0 "Peremyshl" #KSR
- STATE_1484:0 "South Plovdiv"
+ STATE_1484:0 "Southern Epirus"
+ STATE_1485:0 "Thessaloniki"
+ STATE_1486:0 "Plovdiv"
+ STATE_1487:0 "Cyclades"

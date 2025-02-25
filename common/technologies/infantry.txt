@@ -283,7 +283,7 @@ technologies = {
 
 
 		path = {
-			leads_to_tech = special_forces_upgrade1
+			leads_to_tech = uniformupgrade1
 			research_cost_coeff = 1
 		}
 
@@ -310,7 +310,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = special_forces_upgrade3
+			leads_to_tech = uniformupgrade3
 			research_cost_coeff = 1
 		}
 
@@ -503,7 +503,7 @@ technologies = {
 		}
 	}
 
-		special_forces_upgrade1 = {
+		uniformupgrade1 = {
 
 		category_light_infantry = {
 			soft_attack = 0.015
@@ -516,7 +516,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = special_forces_upgrade2
+			leads_to_tech = uniformupgrade2
 			research_cost_coeff = 1
 		}
 
@@ -540,7 +540,7 @@ technologies = {
 		}
 	}
 
-		special_forces_upgrade2 = {
+		uniformupgrade2 = {
 
 		category_light_infantry = {
 			soft_attack = 0.015
@@ -577,7 +577,7 @@ technologies = {
 		}
 	}
 
-		special_forces_upgrade3 = {
+		uniformupgrade3 = {
 
 		category_light_infantry = {
 			soft_attack = 0.015
@@ -590,7 +590,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = special_forces_upgrade4
+			leads_to_tech = uniformupgrade4
 			research_cost_coeff = 1
 		}
 
@@ -614,7 +614,7 @@ technologies = {
 		}
 	}
 
-		special_forces_upgrade4 = {
+		uniformupgrade4 = {
 
 		category_light_infantry = {
 			soft_attack = 0.015

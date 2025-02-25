@@ -1,0 +1,23 @@
+state={
+	id=1485
+	name="STATE_1485"
+	provinces={
+		895 3936 11818 
+	}
+	history={
+		owner = TUR
+		victory_points = {
+			11818 5 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TUR
+		add_core_of = GRE
+		add_claim_by = BUL
+	}
+	manpower=161200
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

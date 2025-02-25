@@ -93,4 +93,33 @@ ROM = {
 	color_ui = rgb { 194 239 45 }
 }
 
+MON = {
+	color = rgb { 68 94 68 }
+	color_ui = rgb { 68 94 68 }
+}
 
+QIN = {
+	color = rgb {232 166 51}
+	color_ui = rgb {232 166 51}
+}
+
+CHI = {
+	color = rgb {15 11 128 }
+	color_ui = rgb {15 11 128 }
+}
+
+JAP = {
+	color = rgb {255 255 255}
+	color_ui = rgb {255 255 255}
+
+}
+Kor = {
+	color = rgb {255 255 255}
+	color_ui = rgb {255 255 255}
+
+}
+DEN = {
+	color = rgb {100 0 0}
+	color_ui = rgb {100 0 0}
+
+}

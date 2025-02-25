@@ -1,37 +1,31 @@
-
 state={
 	id=185
 	name="STATE_185"
-	manpower = 715900
-	
-	state_category = rural
-	
 	resources={
-		chromium=12 # was: 20
-		steel = 13 # was: 20
+		chromium=12.000
+		steel=13.000
 	}
+	provinces={
+		841 3914 3980 9805 9916 
+	}
+	manpower=713897
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
 
-	history={
-		victory_points = {
-			10203 1
-		}
-		victory_points = {
-			3914 3
-		}
-		victory_points = {
-			1205 1
-		}
+	history = {
+
 		owner = TUR
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-		}
 		add_core_of = GRE
-	}
 
-	provinces = {
-		841 1106 1205 3914 3980 9805 9916 11786 11895 12001 
+		buildings = {
+			infrastructure = 2
+			1205 = {
+				naval_base = 1
+			}
+		}
+		
 	}
+}
 
-	local_supplies=9.0 
 }

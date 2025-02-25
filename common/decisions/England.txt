@@ -419,6 +419,7 @@ ENG_politics = {
 		is_good = yes
 		
 		complete_effect = {
+			complete_national_focus = ENG_war_cabinet
 			custom_effect_tooltip = ENG_con_join_gov
 			clr_country_flag = ENG_lib_his
 			set_country_flag = ENG_lib_con
