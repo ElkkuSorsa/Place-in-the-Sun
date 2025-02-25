@@ -139,5 +139,20 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+		FIN_army_spirit_fast2 = {
+			picture = FIN_finnish_army
+			modifier = {
+				army_defence_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_speed_factor = 0.1
+				breakthrough_factor = 0.05
+				initiative_factor = 0.05
+
+			}
+		}
+	}
 }
  

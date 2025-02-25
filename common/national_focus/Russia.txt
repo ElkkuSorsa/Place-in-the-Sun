@@ -430,7 +430,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -438,7 +438,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -456,7 +456,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -464,7 +464,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -482,7 +482,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -490,7 +490,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -508,7 +508,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -516,7 +516,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -534,7 +534,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -542,7 +542,7 @@ focus = {
 	add_extra_state_shared_building_slots = 2
 	add_building_construction = {
 	type = industrial_complex
-	level = 2
+	level = 1
 	instant_build = yes
 	}
 	}
@@ -903,48 +903,7 @@ focus = {
 	}
 	}
 
-focus = {
-	id = RUS_russification_debate
-	icon = GFX_focus_generic_self_management
-	x = 16
-	y = 8
-	cost = 10
-	completion_reward = {
-	add_political_power = 100
-	add_stability = 0.05
-	}
-	
-}
-focus = {
-	id = RUS_russification
-	icon = GFX_goal_generic_political_pressure
-	x = 12
-	y = 9
-	cost = 10
-	mutually_exclusive = {focus = RUS_autonomy}
-	prerequisite = {focus = RUS_russification_debate}
-	completion_reward = {
-	add_political_power = 50
-	add_stability = -0.05
-	add_war_support = 0.05
-	add_ideas = RUS_russification_policies
-	}
-	
-}
-focus = {
-	id = RUS_autonomy
-	icon = GFX_focus_generic_treaty
-	x = 20
-	y = 9
-	cost = 5
-	mutually_exclusive = {focus = RUS_russification}
-	prerequisite = {focus = RUS_russification_debate}
-	completion_reward = {
-	add_stability = 0.1
-	add_political_power = 75
-	}
-	
-}
+
 focus = {
 	id = RUS_naval_tactics
 	icon = GFX_goal_generic_navy_doctrines_tactics
@@ -1116,50 +1075,9 @@ focus = {
 	completion_reward = {
 	}
 }
-focus = {
-	id = RUS_russian_language_in_schools
-	icon = GFX_goal_generic_political_pressure
-	x = 12
-	y = 10
-	cost = 10
-	prerequisite = {focus = RUS_russification}
-	completion_reward = {
-	add_stability = -0.05
-	add_political_power = 50
-	swap_ideas = { 
-	remove_idea = RUS_independence_movements 
-	add_idea = RUS_independence_movements2
-	}
-	}
+
 	
-}
-focus = {
-	id = RUS_annex_finland
-	icon = GFX_goal_generic_political_pressure
-	x = 8
-	y = 11
-	cost = 10
-	mutually_exclusive = {focus = RUS_continue_finnish_autonomy}
-	prerequisite = {focus = RUS_russian_language_in_schools}
-	completion_reward = {
-	add_stability = -0.1
-	annex_country = { target = FIN transfer_troops = yes }
-	}
-	
-}
-focus = {
-	id = RUS_continue_finnish_autonomy
-	icon = GFX_goal_generic_political_pressure
-	x = 10
-	y = 11
-	cost = 5
-	mutually_exclusive = {focus = RUS_annex_finland}
-	prerequisite = {focus = RUS_russian_language_in_schools}
-	completion_reward = {
-	add_stability = 0.1
-	}
-	
-}
+
 focus = {
 	id = RUS_control_duma
 	icon = GFX_focus_GER_total_control_over_domestic_affairs
@@ -1334,7 +1252,7 @@ focus = {
 	x = 54
 	y = 5
 	cost = 10
-
+	mutually_exclusive = {focus = RUS_improve_workers_rights}
 	prerequisite = {focus = RUS_crush_trade_unions}
 	completion_reward = {
 	add_stability = 0.05
@@ -1344,22 +1262,7 @@ focus = {
 	}
 	}
 	}
-focus = {
-	id = RUS_improve_workers_rights
-	icon = GFX_goal_anti_comintern_pact
-	x = 54
-	y = 5
-	cost = 10
 
-	prerequisite = {focus = RUS_crush_trade_unions}
-	completion_reward = {
-	add_stability = 0.05
-	swap_ideas = {
-	remove_idea = RUS_communist_revolutionaries2
-	add_idea = RUS_communist_revolutionaries3
-	}
-	}
-	}
 focus = {
 	id = RUS_democratizing_the_system
 	icon = GFX_goal_support_democracy
@@ -1669,6 +1572,52 @@ focus = {
 	ideology = neutrality
 	popularity = 0.05
 	}
+	}
+	}
+focus = {
+	id = RUS_hard_line_against_socialists
+	icon = GFX_goal_anti_comintern_pact
+	x = 60
+	y = 5
+	cost = 10
+
+	prerequisite = {focus = RUS_crush_trade_unions}
+	mutually_exclusive = {focus = RUS_improve_workers_rights}
+	completion_reward = {
+	add_stability = 0.05
+	swap_ideas = {
+	remove_idea = RUS_communist_revolutionaries2
+	add_idea = RUS_communist_revolutionaries3
+	}
+	}
+	}
+
+focus = {
+	id = RUS_continue_russification
+	icon = GFX_focus_SOV_the_true_tsars
+	x = 63
+	y = 5
+	cost = 5
+	prerequisite = {focus = RUS_iron_fist}
+	completion_reward = {
+	add_political_power = 25
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.05
+	}
+	add_stability = 0.05
+	}
+	}
+
+focus = {
+	id = RUS_honor_the_military
+	icon = GFX_focus_SOV_the_true_tsars
+	x = 65
+	y = 5
+	cost = 10
+	prerequisite = {focus = RUS_iron_fist}
+	completion_reward = {
+	add_war_support = 0.1
 	}
 	}
 	
