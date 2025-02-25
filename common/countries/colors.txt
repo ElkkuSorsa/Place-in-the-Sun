@@ -119,8 +119,8 @@ Kor = {
 
 }
 DEN = {
-	color = rgb {100 0 0}
-	color_ui = rgb {100 0 0}
+	color = rgb {80 0 0}
+	color_ui = rgb {80 0 0}
 
 }
 USA = {
