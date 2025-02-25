@@ -123,3 +123,8 @@ DEN = {
 	color_ui = rgb {100 0 0}
 
 }
+USA = {
+	color = rgb {9 37 179}
+	color_ui = rgb {9 37 179}
+
+}
