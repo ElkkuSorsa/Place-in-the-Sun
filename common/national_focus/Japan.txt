@@ -1,0 +1,319 @@
+focus_tree = {
+	id = JAP_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 500
+			tag = JAP
+		}
+	}
+
+	default = no
+
+    focus = {
+	id = JAP_industry
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 8
+	y = 0
+	cost = 10
+	completion_reward = {
+	282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+    534 = {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+
+	}
+	}
+
+    focus = {
+	id = JAP_reinforce_bank_of_japan
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 6
+	y = 1
+	cost = 10
+    prerequisite = { focus = JAP_industry}
+	completion_reward = {
+	add_ideas = JAP_bank_of_japan
+	}
+	}
+
+    focus = {
+	id = JAP_invest_in_industry
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 7
+	y = 2
+	cost = 10
+    prerequisite = { focus = JAP_reinforce_bank_of_japan}
+    prerequisite = { focus = JAP_military_factories}
+	completion_reward = {
+    add_ideas = JAP_investments
+	282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+    add_tech_bonus = {
+    bonus = 1
+    uses = 2
+    category = industry
+    }
+	}
+	}
+
+    focus = {
+	id = JAP_encourage_entrepenourship
+	icon = GFX_focus_DEN_no_regulations
+	x = 3
+	y = 2
+	cost = 10
+    prerequisite = { focus = JAP_reinforce_bank_of_japan}
+    available = {has_idea = JAP_investments}
+	completion_reward = {
+    swap_ideas = {
+    remove_idea = JAP_investments
+    add_idea = JAP_investments2
+    }
+	}
+	}
+
+    focus = {
+	id = JAP_state_subsidies
+	icon = GFX_focus_DEN_no_regulations
+	x = 5
+	y = 3
+	cost = 10
+    mutually_exclusive = {focus = JAP_free_market_policies}
+    prerequisite = { focus = JAP_encourage_entrepenourship}
+	completion_reward = {
+    282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+    534	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+	}
+	}
+
+    focus = {
+	id = JAP_free_market_policies
+	icon = GFX_focus_GER_rally_the_industrialists
+	x = 1
+	y = 3
+	cost = 10
+    mutually_exclusive = {focus = JAP_state_subsidies}
+    prerequisite = { focus = JAP_encourage_entrepenourship}
+	completion_reward = {
+    swap_ideas = {
+    remove_idea = JAP_investments2
+    add_idea = JAP_investments3
+    }
+	}
+	}
+
+    focus = {
+	id = JAP_expand_naval_facilities
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 10
+	y = 1
+	cost = 5
+    prerequisite = { focus = JAP_industry}
+	completion_reward = {
+	282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = dockyard
+	level = 2
+	instant_build = yes
+	}
+	}
+	}
+	}
+
+    focus = {
+	id = JAP_naval_investments
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = 10
+	y = 2
+	cost = 10
+    prerequisite = { focus = JAP_expand_naval_facilities}
+    prerequisite = { focus = JAP_military_factories}
+	completion_reward = {
+	add_ideas = JAP_naval_expansion
+	}
+	}
+
+    focus = {
+	id = JAP_universities
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 8
+	y = 3
+	cost = 10
+    prerequisite = { focus = JAP_invest_in_industry}
+	completion_reward = {
+    add_ideas = JAP_university
+    add_research_slot = 1
+	}
+	}
+
+    focus = {
+	id = JAP_military_factories
+	icon = GFX_focus_generic_military_industry
+	x = 8
+	y = 1
+	cost = 10
+    prerequisite = { focus = JAP_industry}
+	completion_reward = {
+	282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+	}
+	}
+	}
+	}
+
+    focus = {
+	id = JAP_korean_factories
+	icon = GFX_focus_generic_industry_3
+	x = 12
+	y = 1
+	cost = 5
+    prerequisite = { focus = JAP_industry}
+	completion_reward = {
+	525	= {
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+	type = dockyard
+	level = 1
+	instant_build = yes
+	}
+	}
+    527	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+	}
+	}
+
+    focus = {
+	id = JAP_free_trade
+	icon = GFX_goal_generic_positive_trade_relations
+	x = 2
+	y = 4
+	cost = 5
+    prerequisite = { focus = JAP_free_market_policies}
+	completion_reward = {
+	add_ideas = free_trade
+	}
+	}
+
+    focus = {
+	id = JAP_resource_extraction
+	icon = GFX_focus_generic_resource_extraction
+	x = 6
+	y = 4
+	cost = 5
+    prerequisite = { focus = JAP_free_market_policies focus = JAP_state_subsidies}
+    prerequisite = { focus = JAP_universities}
+	completion_reward = {
+	add_resource = {
+    type = steel
+    amount = 20
+    state = 528
+    }
+    add_resource = {
+    type = oil
+    amount = 10
+    state = 536
+    }    
+	}
+	}
+
+    focus = {
+	id = JAP_boost_military_production
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 9
+	y = 4
+	cost = 10
+    
+    prerequisite = { focus = JAP_naval_investments}
+    prerequisite = { focus = JAP_universities}
+    available = {has_war = yes}
+	completion_reward = {
+    282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+	}
+	}
+    534	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+    534	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+	}
+	}
+	}
+	}
+
+    focus = {
+	id = JAP_invite_congromelates
+	icon = GFX_goal_generic_positive_trade_relations
+	x = 0
+	y = 4
+	cost = 5
+    prerequisite = { focus = JAP_free_market_policies}
+	completion_reward = {
+	swap_ideas = {
+    remove_idea = JAP_investments3
+    add_idea = JAP_investments4
+    }
+	}
+	}
+
+    
+
+}

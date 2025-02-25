@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+		JAP_bank_of_japan = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			consumer_goods_factor = -0.1
+			}
+		}
+	}
+
+    country = {
+		JAP_investments = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			production_speed_industrial_complex_factor = 0.1
+            
+			}
+		}
+	}
+
+    country = {
+		JAP_investments2 = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			production_speed_industrial_complex_factor = 0.1
+            consumer_goods_factor = -0.05
+            industrial_capacity_factory = 0.1
+			}
+		}
+	}
+
+    country = {
+		JAP_investments3 = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			production_speed_buildings_factor = 0.1
+            consumer_goods_factor = -0.15
+            industrial_capacity_factory = 0.1
+            production_factory_max_efficiency_factor = 0.1
+            production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+
+    country = {
+		JAP_naval_expansion = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			production_speed_dockyard_factor = 0.05
+            industrial_capacity_dockyard = 0.1
+			}
+		}
+	}
+
+    country = {
+		JAP_university = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			research_speed_factor = 0.05
+
+			}
+		}
+	}
+
+    country = {
+		JAP_investments4 = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+			production_speed_buildings_factor = 0.15
+            consumer_goods_factor = -0.2
+            industrial_capacity_factory = 0.1
+            production_factory_max_efficiency_factor = 0.1
+            production_factory_efficiency_gain_factor = 0.05
+
+			}
+		}
+	}
+}
