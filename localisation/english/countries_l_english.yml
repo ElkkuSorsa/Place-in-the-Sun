@@ -184,3 +184,27 @@
  KOR:0 "Imperial Korea"
  KOR_DEF:0 "the Empire of Korea"
  KOR_ADJ:0 "Korean" 
+
+ SWE:0 "Kingdom of Sweden"
+ SWE_DEF:0 "the Kingdom of Sweden"
+ SWE_ADJ:0 "Swedish" 
+ 
+ NOR:0 "Kingdom of Norway"
+ NOR_DEF:0 "the Kingdom of Norway"
+ NOR_ADJ:0 "Norwegian"
+
+ HOL:0 "Kingdom of Netherlands"
+ HOL_DEF:0 "the Kingdom of Netherlands"
+ HOL_ADJ:0 "Dutch"
+
+ HOL:0 "Kingdom of Netherlands"
+ HOL_DEF:0 "the Kingdom of Netherlands"
+ HOL_ADJ:0 "Dutch"
+
+ BEL:0 "Kingdom of Belgium"
+ BEL_DEF:0 "the Kingdom of Belgium"
+ BEL_ADJ:0 "Belgian"
+
+ LUX:0 "Grand duchy of Luxemburg"
+ LUX_DEF:0 "the Grand duchy of Luxemburg"
+ LUX_ADJ:0 "Luxemburgish"

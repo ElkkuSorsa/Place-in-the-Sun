@@ -118,3 +118,8 @@ Kor = {
 	color_ui = rgb {255 255 255}
 
 }
+DEN = {
+	color = rgb {100 0 0}
+	color_ui = rgb {100 0 0}
+
+}
