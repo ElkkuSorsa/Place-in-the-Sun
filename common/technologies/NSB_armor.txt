@@ -825,6 +825,7 @@ technologies = {
 				}
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_land_land_cruiser
 				}
 			}
 		}
@@ -914,7 +915,7 @@ technologies = {
 	armor_tech_3 = {
 
 		enable_equipment_modules = {
-			lc_armored_skirts
+			lc_armored_skirts #Module for Land Cruiser
 		}
 
 		path = {
@@ -1116,6 +1117,7 @@ technologies = {
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	NOR_rikstanken_tech = {
@@ -1154,6 +1156,7 @@ technologies = {
 
 		allow = {
 			ROOT = {
+				is_special_project_completed = sp:sp_land_flamethrower_tank
 			}
 		}
 
@@ -1261,6 +1264,7 @@ technologies = {
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	sp_armored_lc_naval_engine_conversion_tech = {
@@ -1360,6 +1364,13 @@ technologies = {
 		allow_branch = {
 			 has_dlc = "Gotterdammerung"
 		}
+
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_land_land_cruiser
+			}
+		}
+
 
 		super_heavy_armor = {
 			breakthrough = 0.15
