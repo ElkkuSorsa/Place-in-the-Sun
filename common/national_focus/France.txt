@@ -853,8 +853,8 @@ focus_tree = {
 	}
 
 		focus = {
-		id = FRA_skibidi_france
-		icon = GFX_goal_flag_germany
+		id = FRA_liberte_egalite
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = 21
 		y = 12
 		prerequisite = { focus = FRA_the_threat_of_the_east }
