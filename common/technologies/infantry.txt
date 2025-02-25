@@ -303,19 +303,20 @@ technologies = {
 		}
 	}
 
-	uniforms_weapons1 = {
+		uniforms_weapons2 = {
 
 		enable_equipments = {
 			uniforms_equipment1
 		}
 
+
 		path = {
-			leads_to_tech = uniformupgrade3
+			leads_to_tech = uniformupgrade1
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.1
-		start_year = 1916
+		research_cost = 2.3
+		start_year = 1905
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = 10 }
@@ -553,7 +554,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = uniforms_weapons1
+			leads_to_tech = uniforms_weapons2
 			research_cost_coeff = 1
 		}
 
