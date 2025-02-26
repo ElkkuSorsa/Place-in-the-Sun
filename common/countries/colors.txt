@@ -127,3 +127,7 @@ USA = {
 	color = rgb { 12 93 235 }
 	color_ui = rgb { 12 93 235 }
 }
+SWI = {
+	color = rgb { 230 55 55 }
+	color_ui = rgb { 230 55 55 }
+}
