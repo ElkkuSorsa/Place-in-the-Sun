@@ -1,0 +1,13 @@
+focus_tree = {
+    id = Morocco_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 50
+            tag = MOR
+        }
+    }
+    default = no
+}
+

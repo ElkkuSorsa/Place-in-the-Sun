@@ -205,6 +205,9 @@
  USA_DEF:0 "the United States of America"
  USA_ADJ:0 "American" 
 
+ MOR_neutrality:0 "Morocco"
+ MOR_neutrality_def:0 "the Morocco"
+ MOR_neutrality_adj:0 "Moroccan"
  SPR_democratic:0 "Rebublic of Spain"
  SPR_democratic_def:0 "the Rebublic of Spain"
  SPR_democratic_adj:0 "Spanish"
@@ -221,11 +224,11 @@
  SPR_DEF:0 "the Rebublic of Spain"
  SPR_ADJ:0 "Spanish" 
 
-  SWI:0 "Swiss Confederation"
+ SWI:0 "Swiss Confederation"
  SWI_DEF:0 "the Swiss Confederation"
  SWI_ADJ:0 "Swiss"
 
-  POR_democratic:0 "first Portugese Rebublic "
+ POR_democratic:0 "first Portugese Rebublic "
  POR_democratic_def:0 "the first Portugese Rrbublic"
  POR_democratic_adj:0 "portugese"
  POR_neutrality:0 "Kingdom of Portugal"
