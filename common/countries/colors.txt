@@ -89,8 +89,8 @@ TUR = {
 }
 
 ROM = {
-	color = rgb { 194 239 45 }
-	color_ui = rgb { 194 239 45 }
+	color = rgb { 184 178 13 }
+	color_ui = rgb { 184 178 13 }
 }
 
 MON = {
@@ -124,6 +124,6 @@ DEN = {
 
 }
 USA = {
-	color = rgb { 9 37 250 }
-	color_ui = rgb { 9 37 250 }
+	color = rgb { 12 93 235 }
+	color_ui = rgb { 12 93 235 }
 }
