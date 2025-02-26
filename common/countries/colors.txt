@@ -135,3 +135,12 @@ SWI = {
 	color = rgb { 230 55 55 }
 	color_ui = rgb { 230 55 55 }
 }
+PER = {
+	color = rgb { 17 31 3 }
+	color_ui = rgb { 17 31 3 }
+}
+AFG = {
+	color = rgb { 208 213 214 }
+	color_ui = rgb { 208 213 214 }
+}
+
