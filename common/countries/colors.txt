@@ -127,3 +127,7 @@ USA = {
 	color = rgb { 12 93 235 }
 	color_ui = rgb { 12 93 235 }
 }
+MOR = {
+	color = rgb { 90 80 40 }
+	color_ui = rgb { 90 80 40 }
+}

@@ -750,7 +750,7 @@ focus_tree = {
 
 		focus = {
 		id = FRA_fortifying_the_german_border
-		icon = GFX_SOV_far_east_fortification_ccp_2d_sov_compatibility
+		icon = GFX_focus_NOR_drobak_coastal_fort
 		x = 19
 		y = 11
 		prerequisite = { focus = FRA_increase_conscription }

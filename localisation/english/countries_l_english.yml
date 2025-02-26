@@ -204,3 +204,7 @@
  USA:0 "United States"
  USA_DEF:0 "the United States of America"
  USA_ADJ:0 "American" 
+
+ MOR_neutrality:0 "Morocco"
+ MOR_neutrality_def:0 "the Morocco"
+ MOR_neutrality_adj:0 "Moroccan"
