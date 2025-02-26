@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = qing_focus_1
+	id = china_republic_focus
 	
 	country = {
 		factor = 11
