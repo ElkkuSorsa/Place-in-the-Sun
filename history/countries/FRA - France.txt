@@ -18,7 +18,6 @@ add_ideas = {
 	french_army
 	political_violence
 	lacking_industry
-	champagne_riot
 }
 
 recruit_character = FRA_aristide_briand
@@ -31,7 +30,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1906.3.3"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 
 }
 
