@@ -208,8 +208,9 @@
  MOR_neutrality:0 "Morocco"
  MOR_neutrality_def:0 "the Morocco"
  MOR_neutrality_adj:0 "Moroccan"
- SPR_democratic:0 "Rebublic of Spain"
- SPR_democratic_def:0 "the Rebublic of Spain"
+ 
+ SPR_democratic:0 "Kingdom of Spain"
+ SPR_democratic_def:0 "the Kingdom of Spain"
  SPR_democratic_adj:0 "Spanish"
  SPR_neutrality:0 "Kingdom of Spain"
  SPR_neutrality_def:0 "the Kingdom of Spain"
@@ -228,8 +229,8 @@
  SWI_DEF:0 "the Swiss Confederation"
  SWI_ADJ:0 "Swiss"
 
- POR_democratic:0 "first Portugese Rebublic "
- POR_democratic_def:0 "the first Portugese Rrbublic"
+ POR_democratic:0 "Kingdom of Portugal "
+ POR_democratic_def:0 "the Kingdom of Portugal"
  POR_democratic_adj:0 "portugese"
  POR_neutrality:0 "Kingdom of Portugal"
  POR_neutrality_def:0 "the Kingdom of Portugal"
@@ -240,6 +241,16 @@
  POR_communism:0 "Portugese People`s Rebublic "
  POR_communism_def:0 "the Portugese People`s Rebublic "
  POR_communism_adj:0 "Portugese"
- POR:0 "first Portugese Rebublic"
- POR_DEF:0 "the First Porugese Rebublic"
+ POR:0 "Kingdom of portugal"
+ POR_DEF:0 "the Kingdom of Portugal"
  POR_ADJ:0 "Portugese" 
+
+ PER:0 "Imperial State of Persia"
+ PER_DEF:0 "the Imperial State of Persia "
+ PER_ADJ:0 "Persian" 
+
+ AFG:0 "Afganistan"
+ AFG_DEF:0 "the Afganistan"
+ AFG_ADJ:0 "Afgan" 
+ 
+ 
