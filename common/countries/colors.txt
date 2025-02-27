@@ -152,6 +152,15 @@ BHU = {
 	color_ui = rgb { 196 141 102 }
 }
 MEX = {
-	color = rgb { 26 74 26 }
-	color_ui = rgb {26 74 26 }
+	color = rgb { 55 110 32 }
+	color_ui = rgb { 55 110 32 }
+}
+
+GUA = {
+	color = rgb { 65 4 130  }
+	color_ui = rgb { 65 4 130 }
+}
+ELS = {
+	color = rgb { 232 224 65  }
+	color_ui = rgb { 232 224 65 }
 }

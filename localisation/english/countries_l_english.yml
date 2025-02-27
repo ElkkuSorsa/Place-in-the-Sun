@@ -117,7 +117,7 @@
  ROM_ADJ:0 "Romanian"
 
  MON_democratic:0 "Mongolia"
- MON_democratic_def:0 "the Mongolian republic"
+ MON_democratic_def:0 "the Mongolian Republic"
  MON_democratic_adj:0 "Mongolian"
  MON_neutrality:0 "Bogd Khanate"
  MON_neutrality_def:0 "the Bogd Khanate"
@@ -130,11 +130,11 @@
  MON_communism_adj:0 "Mongolian"
  
 
- CHI_communism:0 "People`s Rebublic of China"
- CHI_communism_def:0 "the People`s Rebublic of China"
+ CHI_communism:0 "People`s Rebuplic of China"
+ CHI_communism_def:0 "the People`s Republic of China"
  CHI_communism_adj:0 "Chinese"
  CHI:0 "Rebublic of China"
- CHI_DEF:0 "the Rebublic of China"
+ CHI_DEF:0 "the Rebuplic of China"
  CHI_ADJ:0 "Chinese"
 
  QIN:0 "Qing Empire"
@@ -154,8 +154,8 @@
  DEN_facism:0 "Staten Danmark"
  DEN_facism_def:0 "Staten Danmark"
  DEN_fascism_adj:0 "Danish"
- DEN_communism:0 "Danish People`s Rebublic"
- DEN_communism_def:0 "Danish People`s Rebublic"
+ DEN_communism:0 "Danish People`s Republic"
+ DEN_communism_def:0 "Danish People`s Republic"
  DEN_communism_adj:0 "Danish"
  DEN:0 "Kingdom of Denmark"
  DEN_DEF:0 "the Kingdom of Denmark"
@@ -173,8 +173,8 @@
  NOR_DEF:0 "the Kingdom of Norway"
  NOR_ADJ:0 "Norwegian"
 
- HOL:0 "Kingdom of Netherlands"
- HOL_DEF:0 "the Kingdom of Netherlands"
+ HOL:0 "Kingdom of the Netherlands"
+ HOL_DEF:0 "the Kingdom of the Netherlands"
  HOL_ADJ:0 "Dutch"
 
  HOL:0 "Kingdom of Netherlands"
@@ -221,8 +221,8 @@
  SPR_communism:0 "Spanish Commune"
  SPR_communism_def:0 "the Spanish Commune "
  SPR_communism_adj:0 "Spanish"
- SPR:0 "Rebublic of Spain"
- SPR_DEF:0 "the Rebublic of Spain"
+ SPR:0 "Republic of Spain"
+ SPR_DEF:0 "the Republic of Spain"
  SPR_ADJ:0 "Spanish" 
 
  SWI:0 "Swiss Confederation"
@@ -238,10 +238,10 @@
  POR_facism:0 "Portugese State "
  POR_facism_def:0 "the Portugese State"
  POR_fascism_adj:0 "Portugese"
- POR_communism:0 "Portugese People`s Rebublic "
- POR_communism_def:0 "the Portugese People`s Rebublic "
+ POR_communism:0 "Portugese People`s Republic "
+ POR_communism_def:0 "the Portugese People`s Republic "
  POR_communism_adj:0 "Portugese"
- POR:0 "Kingdom of portugal"
+ POR:0 "Kingdom of Portugal"
  POR_DEF:0 "the Kingdom of Portugal"
  POR_ADJ:0 "Portugese" 
 
@@ -264,3 +264,12 @@
  MEX:0 "Mexican Rebublic"
  MEX_DEF:0 "the Mexican Rebublic"
  MEX_ADJ:0 "Mexican"
+
+ GUA:0 "Rebublic of Guatemala"
+ GUA_DEF:0 "the Rebublic of Guatemala"
+ GUA_ADJ:0 "Guatemalan"
+
+ ELS:0 "Rebublic of El Salvador"
+ ELS_DEF:0 "the Rebublic of El Salvador"
+ ELS_ADJ:0 "Salvadorian" 
+ 
