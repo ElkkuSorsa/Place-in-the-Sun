@@ -10,7 +10,7 @@
 		}
 	
 	}
-	continuous_focus_position = { x = 50 y = 5500 }
+#	continuous_focus_position = { x = 50 y = 5500 }
 	default = no
 
 	focus = {
@@ -24,7 +24,7 @@
 	focus = {
 		id = QIN_manchu_cabinet
 
-		prerequisite = { QIN_great_empire }
+		prerequisite = { focus = QIN_great_empire }
 		mutually_exclusive = { focus = QIN_relieve_ethnic_tensions }
 
 		x = 41
@@ -209,7 +209,7 @@
 	focus = {
 		id = QIN_relieve_ethnic_tensions
 
-		prerequisite = { QIN_great_empire }
+		prerequisite = { focus = QIN_great_empire }
 		mutually_exclusive = { focus = QIN_manchu_cabinet }
 
 		x = 39
