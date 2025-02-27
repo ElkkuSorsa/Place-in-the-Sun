@@ -43,7 +43,12 @@ ideas = {
 			}
 		}
     }
-
+		SOV_leadership_struggle = {
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
 
 	}
 }
