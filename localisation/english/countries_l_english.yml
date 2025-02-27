@@ -234,7 +234,7 @@
  POR_democratic_adj:0 "portugese"
  POR_neutrality:0 "Kingdom of Portugal"
  POR_neutrality_def:0 "the Kingdom of Portugal"
- POR_neutrality_adj:0 "portugese"
+ POR_neutrality_adj:0 "Portugese"
  POR_facism:0 "Portugese State "
  POR_facism_def:0 "the Portugese State"
  POR_fascism_adj:0 "Portugese"
@@ -253,4 +253,14 @@
  AFG_DEF:0 "the Afganistan"
  AFG_ADJ:0 "Afgan" 
  
- 
+ NEP:0 "Kingdom of Nepal"
+ NEP_DEF:0 "the Kingdom of Nepal"
+ NEP_ADJ:0 "Nepalese"
+
+  BHU:0 "Kingdom of Bhutan"
+ BHU_DEF:0 "the Wangchuck Dynasty of Bhutan"
+ BHU_ADJ:0 "Bhutanese"
+
+ MEX:0 "Mexican Rebublic"
+ MEX_DEF:0 "the Mexican Rebublic"
+ MEX_ADJ:0 "Mexican"
