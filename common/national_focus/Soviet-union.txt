@@ -406,7 +406,7 @@ focus_tree = {
 		}
 	}
 		focus = {
-		id = SOV_Alliance_with_trotsky?
+		id = SOV_anti_trotskyite_block
 		icon = GFX_
 		x = 49
 		y = 9
@@ -435,17 +435,45 @@ focus_tree = {
 		}
 	}
 		focus = {
+		id = SOV_Dual_leadership
+		icon = GFX_focus_SOV_zinovyevists
+		x = 46
+		y = 10
+		cost = 5
+		prerequisite = { focus = SOV_increase_cooperation }
+		prerequisite = { focus = SOV_gain_gain_lenins_support}
+		available = {	
+		}
+		
+		completion_reward = {
+		country_event = SOV_Dual_leadership.1 
+		}
+	}
+		focus = {
+		id = SOV_coup_against_stalin
+		icon = GFX_focus_SOV_zinovyevists
+		x = 48
+		y = 10
+		cost = 5
+		prerequisite = { }
+		available = { always = no	
+		}
+
+		completion_reward = { 
+		custom_effect_tooltip = "Stalins power has grown too much."
+		}
+	}
+		focus = {
 		id = SOV_convince_party_members
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_SOV_russian_corporate_state_ccp_2d_sov_compatibility
 		x = 42
 		y = 8
 		cost = 5
-		prerequisite = { focus = SOV_premier_bukharin focus = SOV_premier_Trotsky focus = SOV_premier_zinovyev }
-		available = {	
+		prerequisite = { focus = SOV_premier_bukharin focus = SOV_premier_Trotsky focus = SOV_premier_zinovyev focus = SOV_premier_Kamenev }
+		available = { 
 		}
 
 		completion_reward = {
-
 		}
 	}
 		focus = {
@@ -483,7 +511,7 @@ focus_tree = {
 		x = 44
 		y = 11
 		cost = 5
-		prerequisite = { focus = SOV_internationalistic_propaganda }
+		prerequisite = { focus = SOV_rightful_successor }
 		available = {
 		}
 
@@ -538,7 +566,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		x = 34
 		y = 8
-		cost = 5
+		cost = 2
 		prerequisite = { focus = SOV_Red_army_takeover }
 		available = { 
 		}
@@ -563,7 +591,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SOV_Keep_trotsky
-		icon = GFX_
+		icon = GFX_SOV_the_permanent_revolution_ccp_2d_sov_compatibility
 		x = 33
 		y = 9
 		mutually_exclusive = { focus = SOV_Fire_trotsky }
@@ -573,7 +601,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		
+		custom_effect_tooltip = "This may cause some unexpected consequences."
 		}
 	}
 		focus = {
@@ -605,6 +633,49 @@ focus_tree = {
 		}
 	}
 		focus = {
+		id = SOV_Alliance_with_zinonyev_and_kamenev
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 36
+		y = 10
+		cost = 5
+		prerequisite = { focus = SOV_appoint_loyal_ministers }
+		prerequisite = { focus = SOV_Ally_with_bukharin }
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_Depower_kamenev
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 35
+		y = 11
+		cost = 5
+		prerequisite = { focus = SOV_Alliance_with_zinonyev_and_kamenev}
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = SOV_Destroy_zinonyev
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 37
+		y = 11
+		cost = 5
+		prerequisite = { focus = SOV_Alliance_with_zinonyev_and_kamenev}
+		available = { 
+		}
+
+		completion_reward = {
+		
+		}
+	}
+		focus = {
 		id = SOV_Fire_trotsky
 		icon = GFX_focus_SOV_purge_trotskyists
 		x = 35
@@ -621,7 +692,7 @@ focus_tree = {
 	}	
 		focus = {
 		id = SOV_expand_General_Secretary_power
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		icon = GFX_SOV_architect_of_communism_ccp_2d_sov_compatibility
 		x = 38
 		y = 8
 		cost = 5
