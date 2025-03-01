@@ -1,0 +1,223 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SOV_successor"
+		position = { x = 0 y = 0 }
+		size = { width = 5000 height= 700 }
+		
+		containerWindowType = {
+			name = "decision_fix"
+			position = { x = -6 y = 0 }
+			
+			containerWindowType = {
+				name = "text_window"
+		
+				
+			}
+			
+			containerWindowType = {
+				name = "icon_window"
+				position = { x = 0 y = 50 }
+			
+				
+				#iconType = {
+				#	name ="sov_factionalism_hammer_and_sickle"
+				#	spriteType = "GFX_sov_factionalism_hammer_and_sickle"
+				#	position = { x = 75 y = 90 } 
+				#
+				#}
+				
+				containerWindowType = {
+					name = "text_window"
+					position = { x = 0 y = -15 }
+					
+					instantTextBoxType = {
+						name ="sov_title"
+						position = { x = 0 y = 0 }
+						font = "hoi_30header"
+						text = "Operation Successor"
+						format = center
+						maxHeight = 0
+						maxWidth = 500
+					}
+					
+					instantTextBoxType = {
+						name = sov_current_successor_loc
+						position = { x = 0 y = 25 }
+						font = "hoi_24header"
+						text = sov_current_successor_text
+						format = center
+						maxHeight = 0
+						maxWidth = 500
+					}
+				}
+				
+				containerWindowType = {
+					name = "centrist_window"
+					position = { x = 0 y = 0 }
+					
+					iconType = {
+						name ="sov_centrist_icon"
+						spriteType = "GFX_sov_centrist_icon"
+						position = { x=160 y=50 } 
+						pdx_tooltip = sov_hardliner_localisation_tt
+						pdx_tooltip_delayed = sov_hardliner_influance_text_loc
+						frame = 1
+					}
+
+					instantTextBoxType = {
+						name ="sov_centrist_text"
+						position = { x = 160 y = 165 }
+						font = "hoi_18mbs"
+						text = "Josif Stalin"
+						format = center
+						maxHeight = 0
+						maxWidth = 175
+					}
+					
+					instantTextBoxType = {
+						name ="sov_centrist_influence_text"
+						position = { x = 160 y = 190 }
+						font = "hoi_16mbs"
+						text = "sov_centrist_influence_text_loc"
+						format = center
+						maxHeight = 0
+						maxWidth = 250
+					}
+				}
+
+				containerWindowType = {
+					name = "left_window"
+					position = { x = -30 y = 200 }
+					
+					iconType = {
+						name ="sov_left_icon"
+						spriteType = "GFX_sov_left_icon"
+						position = { x=78	 y=55 } 
+						pdx_tooltip = sov_reformist_localisation_tt
+						frame = 1
+					}
+					
+					instantTextBoxType = {
+						name ="sov_left_text"
+						position = { x = 50 y = 165 }
+						font = "hoi_18mbs"
+						text = "Leon Trotsky"
+						format = center
+						maxHeight = 0
+						maxWidth = 175
+					}
+					
+					instantTextBoxType = {
+						name ="sov_left_influance_text"
+						position = { x = 20 y = 190 }
+						font = "hoi_16mbs"
+						text = sov_left_influence_text_loc
+						format = center
+						maxHeight = 0
+						maxWidth = 250
+					}
+				}
+				
+				containerWindowType = {
+					name = "right_window"
+					position = { x = 245 y = 200 }
+					
+					iconType = {
+						name ="sov_right_icon"
+						spriteType = "GFX_sov_army_icon"
+						position = { x=65	 y=50 } 
+						pdx_tooltip = sov_militarist_localisation_tt
+						frame = 1
+					}
+					
+					instantTextBoxType = {
+						name ="sov_right_text"
+						position = { x = 50 y = 165 }
+						font = "hoi_18mbs"
+						text = "Nikolai Bukharin"
+						format = center
+						maxHeight = 0
+						maxWidth = 175
+					}
+					
+					instantTextBoxType = {
+						name ="sov_right_influance_text"
+						position = { x = 0 y = 190 }
+						font = "hoi_16mbs"
+						text = sov_right_influence_text_loc
+						format = center
+						maxHeight = 0
+						maxWidth = 250
+					}
+				}
+				
+				containerWindowType = {
+					name = "kamenev_window"
+					position = { x = -30 y = 400 }
+					
+					iconType = {
+						name ="sov_kamenev_icon"
+						spriteType = "GFX_sov_reformist_icon"
+						position = { x=78	 y=55 } 
+						pdx_tooltip = sov_reformist_localisation_tt
+						frame = 1
+					}
+					
+					instantTextBoxType = {
+						name ="sov_kamenev_text"
+						position = { x = 50 y = 165 }
+						font = "hoi_18mbs"
+						text = "Lev Kamenev"
+						format = center
+						maxHeight = 0
+						maxWidth = 175
+					}
+					
+					instantTextBoxType = {
+						name ="sov_kamenev_influance_text"
+						position = { x = 20 y = 190 }
+						font = "hoi_16mbs"
+						text = sov_kamenev_influence_text_loc
+						format = center
+						maxHeight = 0
+						maxWidth = 250
+					}
+				}
+				
+				containerWindowType = {
+					name = "zinovyev_window"
+					position = { x = 245 y = 400 }
+					
+					iconType = {
+						name ="sov_zinovyev_icon"
+						spriteType = "GFX_sov_kgb_icon"
+						position = { x=93	 y=50 } 
+						pdx_tooltip = sov_kgb_localisation_tt
+						frame = 1
+					}
+					
+					instantTextBoxType = {
+						name ="sov_zinovyev_text"
+						position = { x = 50 y = 165 }
+						font = "hoi_18mbs"
+						text = "Grigory Zinoviev"
+						format = center
+						maxHeight = 0
+						maxWidth = 175
+					}
+					
+					instantTextBoxType = {
+						name ="sov_zinovyev_influance_text"
+						position = { x = 0 y = 190 }
+						font = "hoi_16mbs"
+						text = sov_zinovyev_influence_text_loc
+						format = center
+						maxHeight = 0
+						maxWidth = 250
+					}
+				}
+			}
+		}
+	}
+
+}
