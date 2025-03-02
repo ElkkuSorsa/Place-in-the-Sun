@@ -1,3 +1,4 @@
 ﻿l_english:
-    autonomy_real_union:0 "Real Union"
-    autonomy_personal_union:0 "Personal Union"
+ autonomy_real_union: "Real Union"
+ autonomy_personal_union: "Personal Union"
+ autonomy_collaboration_government: "Military Occupation"

@@ -1,0 +1,18 @@
+﻿l_english:
+ SOV_successor_dec: "Operation Successor"
+ SOV_successor_dec_desc: ""
+
+ sov_current_successor_text: "[sov_current_successor]"
+
+ sov_current.1: "The Current Successor is §YStalin.§!"
+ sov_current.2: "The Current Successor is §YBukharin.§!"
+ sov_current.3: "The Current Successor is §YTrotsky.§!"
+ sov_current.4: "The Current Successor is §YKamenev.§!"
+ sov_current.5: "The Current Successor is §YZinovyev.§!"
+ sov_current.6: "The Current Successor is §YInconclusive.§!"
+
+ sov_left_influence_text_loc: "Influence: §Y[?trotsky_inf]§!"
+ sov_centrist_influence_text_loc: "Influence: §Y[?stalin_inf]§!"
+ sov_right_influence_text_loc: "Influence: §Y[?bukharin_inf]§!"
+ sov_kamenev_influence_text_loc: "Influence: §Y[?kamenev_inf]§!"
+ sov_zinovyev_influence_text_loc: "Influence: §Y[?zinovyev_inf]§!"

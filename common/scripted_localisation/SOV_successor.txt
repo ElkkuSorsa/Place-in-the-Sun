@@ -1,0 +1,56 @@
+defined_text = {
+	name = sov_current_successor
+	text = {
+		trigger = {
+			check_variable = { var = stalin_inf value = bukharin_inf compare = greater_than }
+			check_variable = { var = stalin_inf value = trotsky_inf compare = greater_than }
+			check_variable = { var = stalin_inf value = kamenev_inf compare = greater_than }
+			check_variable = { var = stalin_inf value = zinovyev_inf compare = greater_than }
+		}
+		localization_key = sov_current.1
+	}
+
+	text = {
+		trigger = {
+			check_variable = { var = bukharin_inf value = stalin_inf compare = greater_than }
+			check_variable = { var = bukharin_inf value = trotsky_inf compare = greater_than }
+			check_variable = { var = bukharin_inf value = kamenev_inf compare = greater_than }
+			check_variable = { var = bukharin_inf value = zinovyev_inf compare = greater_than }
+		}
+		localization_key = sov_current.2
+	}
+
+	text = {
+		trigger = {
+			check_variable = { var = trotsky_inf value = bukharin_inf compare = greater_than }
+			check_variable = { var = trotsky_inf value = stalin_inf compare = greater_than }
+			check_variable = { var = trotsky_inf value = kamenev_inf compare = greater_than }
+			check_variable = { var = trotsky_inf value = zinovyev_inf compare = greater_than }
+		}
+		localization_key = sov_current.3
+	}
+
+	text = {
+		trigger = {
+			check_variable = { var = kamenev_inf value = bukharin_inf compare = greater_than }
+			check_variable = { var = kamenev_inf value = trotsky_inf compare = greater_than }
+			check_variable = { var = kamenev_inf value = stalin_inf compare = greater_than }
+			check_variable = { var = kamenev_inf value = zinovyev_inf compare = greater_than }
+		}
+		localization_key = sov_current.4
+	}
+
+	text = {
+		trigger = {
+			check_variable = { var = zinovyev_inf value = bukharin_inf compare = greater_than }
+			check_variable = { var = zinovyev_inf value = trotsky_inf compare = greater_than }
+			check_variable = { var = zinovyev_inf value = kamenev_inf compare = greater_than }
+			check_variable = { var = zinovyev_inf value = stalin_inf compare = greater_than }
+		}
+		localization_key = sov_current.5
+	}
+
+	text = {
+		localization_key = sov_current.6
+	}
+}
