@@ -182,7 +182,6 @@ focus_tree = {
 		cost = 5
 
 		prerequisite = { focus = POL_little_constitution }
-		mutually_exclusive = { focus = POL_consolidate_pilsudski }
 	}
 
 	focus = {
@@ -216,7 +215,10 @@ focus_tree = {
 		cost = 5
 
 		prerequisite = { focus = POL_little_constitution }
-		mutually_exclusive = { focus = POL_reaffirm_republic }
+
+		available = {
+			always = no
+		}
 	}
 
 	focus = {
