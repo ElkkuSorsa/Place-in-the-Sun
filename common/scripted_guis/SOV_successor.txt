@@ -1,0 +1,7 @@
+scripted_gui = {
+    SOV_successor = {
+        window_name = "SOV_successor"
+        context_type = decision_category
+         
+	}
+}

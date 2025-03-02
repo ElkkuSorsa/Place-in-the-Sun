@@ -1,0 +1,17 @@
+﻿focus_tree = {
+	id = china_republic_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = CHI
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 5500 }
+	default = no
+
+
+}

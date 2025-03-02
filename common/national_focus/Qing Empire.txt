@@ -1,0 +1,228 @@
+﻿focus_tree = {
+	id = qing_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = QIN
+		}
+	
+	}
+#	continuous_focus_position = { x = 50 y = 5500 }
+	default = no
+
+	focus = {
+		id = QIN_great_empire
+
+		x = 40
+		y = 1
+
+	}
+
+	focus = {
+		id = QIN_manchu_cabinet
+
+		prerequisite = { focus = QIN_great_empire }
+		mutually_exclusive = { focus = QIN_relieve_ethnic_tensions }
+
+		x = 41
+		y = 2
+
+	}
+
+	focus = {
+		id = QIN_continue_regency_council
+
+		prerequisite = { focus = QIN_manchu_cabinet }
+
+		x = 41
+		y = 3
+
+	}
+
+	focus = {
+		id = QIN_xinhai_revolution
+
+		prerequisite = { focus = QIN_han_chinese_rights focus = QIN_continue_regency_council }
+
+		x = 40
+		y = 4
+
+		available = { always = no }
+
+	}
+
+	focus = {
+		id = QIN_continue_manchu_domination
+
+		prerequisite = { focus = QIN_continue_regency_council }
+		prerequisite = { focus = QIN_xinhai_revolution }
+
+		x = 45
+		y = 5
+
+	}
+
+	focus = {
+		id = QIN_constitutionalisation
+
+		prerequisite = { focus = QIN_han_chinese_rights }
+		prerequisite = { focus = QIN_xinhai_revolution }
+
+		x = 35
+		y = 5
+
+	}
+
+	focus = {
+		id = QIN_continue_regional_elections
+
+		prerequisite = { focus = QIN_constitutionalisation }
+
+		x = 39
+		y = 6
+
+	}
+
+	focus = {
+		id = QIN_draft_constitution
+
+		prerequisite = { focus = QIN_constitutionalisation }
+
+		x = 35
+		y = 6
+
+	}
+
+	focus = {
+		id = QIN_benefit_people
+
+		prerequisite = { focus = QIN_draft_constitution }
+
+		x = 36
+		y = 7
+
+	}
+
+	focus = {
+		id = QIN_male_suffrage
+
+		prerequisite = { focus = QIN_benefit_people }
+
+		x = 36
+		y = 8
+
+	}
+
+	focus = {
+		id = QIN_elected_regency_council
+
+		prerequisite = { focus = QIN_male_suffrage }
+
+		x = 38
+		y = 9
+
+	}
+
+	focus = {
+		id = QIN_true_constitutional_monarchy
+
+		prerequisite = { focus = QIN_male_suffrage }
+
+		x = 36
+		y = 9
+
+	}
+
+	focus = {
+		id = QIN_benefit_government
+
+		prerequisite = { focus = QIN_draft_constitution }
+
+		x = 34
+		y = 7
+
+	}
+
+	focus = {
+		id = QIN_wealth_voting
+
+		prerequisite = { focus = QIN_benefit_government }
+
+		x = 34
+		y = 8
+
+	}
+
+	focus = {
+		id = QIN_limited_constitutionalism
+
+		prerequisite = { focus = QIN_wealth_voting }
+
+		x = 34
+		y = 9
+
+	}
+
+	focus = {
+		id = QIN_complete_constitution
+
+		prerequisite = { focus = QIN_limited_constitutionalism focus = QIN_true_constitutional_monarchy }
+
+		x = 35
+		y = 10
+
+	}
+
+	focus = {
+		id = QIN_parliamentary_elections
+
+		prerequisite = { focus = QIN_complete_constitution }
+
+		x = 35
+		y = 11
+
+	}
+
+	focus = {
+		id = QIN_limited_imperial_powers
+
+		prerequisite = { focus = QIN_benefit_government }
+
+		x = 32
+		y = 8
+
+	}
+
+	focus = {
+		id = QIN_appoint_new_regency
+
+		prerequisite = { focus = QIN_limited_imperial_powers }
+
+		x = 32
+		y = 9
+
+	}
+
+	focus = {
+		id = QIN_relieve_ethnic_tensions
+
+		prerequisite = { focus = QIN_great_empire }
+		mutually_exclusive = { focus = QIN_manchu_cabinet }
+
+		x = 39
+		y = 2
+
+	}
+
+	focus = {
+		id = QIN_han_chinese_rights
+
+		prerequisite = { focus = QIN_relieve_ethnic_tensions }
+		x = 39
+		y = 3
+
+	}
+}

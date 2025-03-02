@@ -33,6 +33,11 @@ add_ideas = {
 }
 
 set_autonomy = {
+	target = EGY
+	autonomy_state = autonomy_protected_state
+}
+
+set_autonomy = {
 	target = RAJ
 	autonomy_state = autonomy_colony
 }

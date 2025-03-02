@@ -306,7 +306,7 @@ technologies = {
 		uniforms_weapons2 = {
 
 		enable_equipments = {
-			uniforms_equipment1
+			uniforms_equipment_1
 		}
 
 

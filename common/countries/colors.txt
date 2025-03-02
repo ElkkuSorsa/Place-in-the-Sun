@@ -135,3 +135,32 @@ SWI = {
 	color = rgb { 230 55 55 }
 	color_ui = rgb { 230 55 55 }
 }
+PER = {
+	color = rgb { 2 71 36 }
+	color_ui = rgb { 2 71 36 }
+}
+AFG = {
+	color = rgb { 208 213 214 }
+	color_ui = rgb { 208 213 214 }
+}
+NEP = {
+	color = rgb { 84 67 61 }
+	color_ui = rgb { 84 67 61 }
+}
+BHU = {
+	color = rgb { 196 141 102 }
+	color_ui = rgb { 196 141 102 }
+}
+MEX = {
+	color = rgb { 55 110 32 }
+	color_ui = rgb { 55 110 32 }
+}
+
+GUA = {
+	color = rgb { 65 4 130  }
+	color_ui = rgb { 65 4 130 }
+}
+ELS = {
+	color = rgb { 232 224 65  }
+	color_ui = rgb { 232 224 65 }
+}
