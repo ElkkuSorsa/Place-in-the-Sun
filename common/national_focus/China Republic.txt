@@ -2,216 +2,216 @@
 	id = china_republic_focus
 	
 	country = {
-		factor = 11
+		factor = 0
 		
 		modifier = {
 			add = 50
 			tag = CHI
 		}
 	
-  }
+	}
 	continuous_focus_position = { x = 50 y = 5500 }
 	default = no
 
 	focus = {
-  id = Place_of_the_gov
-  icon = GFX_goal_generic_intelligence_exchange
-  x = 6
-  y = 0
-  cost = 1
-  completion_reward = {
+	id = Place_of_the_gov
+	icon = GFX_goal_generic_intelligence_exchange
+	x = 6
+	y = 0
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = de_plans_sofr_the_futer
-  icon = GFX_focus_man_claim_the_mandate_of_heaven
-   prerequisite = { focus = Place_of_the_gov }
-  x = 6
-  y = 1
-  cost = 1
-  completion_reward = {
+	id = de_plans_sofr_the_futer
+	icon = GFX_focus_man_claim_the_mandate_of_heaven
+	 prerequisite = { focus = Place_of_the_gov }
+	x = 6
+	y = 1
+	cost = 1
+	completion_reward = {
 country_event = { id = chinaa.1 }
-  }
+	}
  
 }
 
 focus = {
-  id = help_the_colapsing_empire
-  icon = GFX_focus_generic_monarchy_1
-   prerequisite = { focus = de_plans_sofr_the_futer }
+	id = help_the_colapsing_empire
+	icon = GFX_focus_generic_monarchy_1
+	 prerequisite = { focus = de_plans_sofr_the_futer }
  mutually_exclusive = { focus = end_the_qing_faster }
-  x = 8
-  y = 2
-  cost = 1
-  completion_reward = {
+	x = 8
+	y = 2
+	cost = 1
+	completion_reward = {
  
-  }
+	}
  
 }
 
 focus = {
-  id = end_the_qing_faster
-  icon = GFX_focus_generic_pope
-   prerequisite = { focus = de_plans_sofr_the_futer }
+	id = end_the_qing_faster
+	icon = GFX_focus_generic_pope
+	 prerequisite = { focus = de_plans_sofr_the_futer }
  mutually_exclusive = { focus = help_the_colapsing_empire }
-  x = 4
-  y = 2
-  cost = 1
-  completion_reward = {
+	x = 4
+	y = 2
+	cost = 1
+	completion_reward = {
  add_ideas = {christian_opo}
-  }
+	}
  
 }
 
 focus = {
-  id = plan_the_new_secret_gaverment
-  icon = GFX_goal_generic_major_war
-   prerequisite = { focus = end_the_qing_faster }
-  x = 4
-  y = 3
-  cost = 1
-  completion_reward = {
+	id = plan_the_new_secret_gaverment
+	icon = GFX_goal_generic_major_war
+	 prerequisite = { focus = end_the_qing_faster }
+	x = 4
+	y = 3
+	cost = 1
+	completion_reward = {
  add_ideas = {christian_opo_gav}
-  add_political_power = -100
-  
-  }
+	add_political_power = -100
+	
+	}
  
 }
 
 focus = {
-  id = Contact_the_church
-  icon = GFX_focus_generic_vatican_state
-   prerequisite = { focus = plan_the_new_secret_gaverment }
-  x = 6
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = Contact_the_church
+	icon = GFX_focus_generic_vatican_state
+	 prerequisite = { focus = plan_the_new_secret_gaverment }
+	x = 6
+	y = 4
+	cost = 1
+	completion_reward = {
  add_political_power = -100
  add_war_support = -0.05
-  }
+	}
  
 }
 
 focus = {
-  id = establish_a_bais_in_hunan
-  icon = GFX_focus_generic_home_defense
-   prerequisite = { focus = Contact_the_church focus = Contact_the_Christian_minorities }
-  x = 4
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = establish_a_bais_in_hunan
+	icon = GFX_focus_generic_home_defense
+	 prerequisite = { focus = Contact_the_church focus = Contact_the_Christian_minorities }
+	x = 4
+	y = 5
+	cost = 1
+	completion_reward = {
  country_event = { id = chinaa.2 }
-  }
+	}
  
 }
 
 focus = {
-  id = Contact_the_Christian_minorities
-  icon = GFX_focus_generic_industrialists
-   prerequisite = { focus = plan_the_new_secret_gaverment }
-  x = 2
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = Contact_the_Christian_minorities
+	icon = GFX_focus_generic_industrialists
+	 prerequisite = { focus = plan_the_new_secret_gaverment }
+	x = 2
+	y = 4
+	cost = 1
+	completion_reward = {
  add_political_power = -100
-  add_stability = -0.05
-  }
+	add_stability = -0.05
+	}
  
 }
 
 focus = {
-  id = Start_the_disdzioting_the_gov
-  icon = GFX_focus_attack_china
-   prerequisite = { focus = establish_a_bais_in_hunan }
-  x = 2
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = Start_the_disdzioting_the_gov
+	icon = GFX_focus_attack_china
+	 prerequisite = { focus = establish_a_bais_in_hunan }
+	x = 2
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {opo_1}
-  }
+	}
  
 }
 
 focus = {
-  id = influenc_the_gov
-  icon = GFX_focus_ARG_chilean_ultimatum
-   prerequisite = { focus = establish_a_bais_in_hunan }
-  x = 4
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = influenc_the_gov
+	icon = GFX_focus_ARG_chilean_ultimatum
+	 prerequisite = { focus = establish_a_bais_in_hunan }
+	x = 4
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {opo_2}
-  }
+	}
  
 }
 
 focus = {
-  id = Plan_the_quo
-  icon = GFX_focus_generic_conspiracy
-   prerequisite = { focus = influenc_the_gov focus = Start_the_disdzioting_the_gov }
-  x = 3
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = Plan_the_quo
+	icon = GFX_focus_generic_conspiracy
+	 prerequisite = { focus = influenc_the_gov focus = Start_the_disdzioting_the_gov }
+	x = 3
+	y = 7
+	cost = 1
+	completion_reward = {
  add_political_power = -100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = expant_the_bas
-  icon = GFX_goal_generic_defence
-   prerequisite = { focus = Plan_the_quo }
-  x = 3
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = expant_the_bas
+	icon = GFX_goal_generic_defence
+	 prerequisite = { focus = Plan_the_quo }
+	x = 3
+	y = 8
+	cost = 1
+	completion_reward = {
  country_event = { id = chinaa.3 }
-  }
+	}
  
 }
 
 focus = {
-  id = start_the_qou
-  icon = GFX_focus_RAJ_indian_gurkhas
-   prerequisite = { focus = expant_the_bas focus = expant_the_arms focus = expant_the_gard }
-  x = 3
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = start_the_qou
+	icon = GFX_focus_RAJ_indian_gurkhas
+	 prerequisite = { focus = expant_the_bas focus = expant_the_arms focus = expant_the_gard }
+	x = 3
+	y = 9
+	cost = 1
+	completion_reward = {
  country_event = { id = chinaa.4 }
-  }
+	}
  
 }
 
 focus = {
-  id = expant_the_arms
-  icon = GFX_focus_ETH_freedom_at_gunpoint
-   prerequisite = { focus = Plan_the_quo }
-  x = 5
-  y = 8
-  cost = 1
-  completion_reward = {
-  add_ideas = {enemy_arms}
-  }
+	id = expant_the_arms
+	icon = GFX_focus_ETH_freedom_at_gunpoint
+	 prerequisite = { focus = Plan_the_quo }
+	x = 5
+	y = 8
+	cost = 1
+	completion_reward = {
+	add_ideas = {enemy_arms}
+	}
  
 }
 
 focus = {
-  id = expant_the_gard
-  icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
-   prerequisite = { focus = Plan_the_quo }
-  x = 1
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = expant_the_gard
+	icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+	 prerequisite = { focus = Plan_the_quo }
+	x = 1
+	y = 8
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
@@ -220,41 +220,41 @@ focus = {
 ###################################################
 
 focus = {
-  id = Questions_of_aouer_mefeds
-  icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
-   prerequisite = { focus = help_the_colapsing_empire }
-  x = 8
-  y = 3
-  cost = 1
-  completion_reward = {
+	id = Questions_of_aouer_mefeds
+	icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+	 prerequisite = { focus = help_the_colapsing_empire }
+	x = 8
+	y = 3
+	cost = 1
+	completion_reward = {
  country_event = { id = chinaa.5 }
-  }
+	}
  
 }
 
 focus = {
-  id = Contyni_tradysions
-  icon = GFX_focus_FIN_pragmatic_socialism
-   prerequisite = { focus = Questions_of_aouer_mefeds }
-   mutually_exclusive = { focus = Start_modernaz }
-  x = 14
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = Contyni_tradysions
+	icon = GFX_focus_FIN_pragmatic_socialism
+	 prerequisite = { focus = Questions_of_aouer_mefeds }
+	 mutually_exclusive = { focus = Start_modernaz }
+	x = 14
+	y = 4
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = Reylay_build
-  icon = GFX_focus_generic_railroad
-   prerequisite = { focus = Contyni_tradysions }
-  x = 15
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = Reylay_build
+	icon = GFX_focus_generic_railroad
+	 prerequisite = { focus = Contyni_tradysions }
+	x = 15
+	y = 5
+	cost = 1
+	completion_reward = {
  build_railway = { 
 						level = 2 
 						start_state = 613
@@ -265,18 +265,18 @@ build_railway = {
 						start_state = 613
 						target_state = 603
 					}
-  }
+	}
  
 }
 
 focus = {
-  id = Hevey_indystry
-  icon = GFX_goal_generic_construct_infrastructure
-   prerequisite = { focus = Contyni_tradysions }
-  x = 13
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = Hevey_indystry
+	icon = GFX_goal_generic_construct_infrastructure
+	 prerequisite = { focus = Contyni_tradysions }
+	x = 13
+	y = 5
+	cost = 1
+	completion_reward = {
 random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
@@ -313,18 +313,18 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  }
+	}
  
 }
 
 focus = {
-  id = expand_ninjang_indystry
-  icon = GFX_focus_generic_industry_3
-   prerequisite = { focus = Hevey_indystry focus = Reylay_build  }
-  x = 14
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = expand_ninjang_indystry
+	icon = GFX_focus_generic_industry_3
+	 prerequisite = { focus = Hevey_indystry focus = Reylay_build  }
+	x = 14
+	y = 6
+	cost = 1
+	completion_reward = {
 random_owned_controlled_state = {
 				prioritize = { 613 }
 				limit = {									
@@ -361,18 +361,18 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  }
-  }
+	}
+	}
  
 
 focus = {
-  id = develop_manguko_regin
-  icon = GFX_focus_jap_cast_the_die
-   prerequisite = { focus = expand_ninjang_indystry }
-  x = 14
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = develop_manguko_regin
+	icon = GFX_focus_jap_cast_the_die
+	 prerequisite = { focus = expand_ninjang_indystry }
+	x = 14
+	y = 8
+	cost = 1
+	completion_reward = {
  random_owned_controlled_state = {
 				prioritize = { 716 }
 				limit = {									
@@ -406,18 +406,18 @@ focus = {
 				state = 717
 			}
 		}
-  
+	
  
 }
 
 focus = {
-  id = focus_on_mangoku
-  icon = GFX_focus_generic_modernize_industry
-   prerequisite = { focus = develop_manguko_regin }
-  x = 15
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = focus_on_mangoku
+	icon = GFX_focus_generic_modernize_industry
+	 prerequisite = { focus = develop_manguko_regin }
+	x = 15
+	y = 9
+	cost = 1
+	completion_reward = {
  random_owned_controlled_state = {
 				prioritize = { 328 }
 				limit = {									
@@ -436,19 +436,19 @@ focus = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  }
-  
+	}
+	
  
 }
 
 focus = {
-  id = specal_manguco_indystry_plans
-  icon = GFX_focus_generic_mining_industry
-   prerequisite = { focus = develop_manguko_regin }
-  x = 13
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = specal_manguco_indystry_plans
+	icon = GFX_focus_generic_mining_industry
+	 prerequisite = { focus = develop_manguko_regin }
+	x = 13
+	y = 9
+	cost = 1
+	completion_reward = {
  add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -464,18 +464,18 @@ focus = {
 				state = 328
 			}
 		}
-  }
+	}
  
 
 
 focus = {
-  id = lite_indystry
-  icon = GFX_focus_generic_industry_1
-   prerequisite = { focus = specal_manguco_indystry_plans focus = focus_on_mangoku  }
-  x = 14
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = lite_indystry
+	icon = GFX_focus_generic_industry_1
+	 prerequisite = { focus = specal_manguco_indystry_plans focus = focus_on_mangoku  }
+	x = 14
+	y = 10
+	cost = 1
+	completion_reward = {
 random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
@@ -494,18 +494,18 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  }
+	}
  
 }
 
 focus = {
-  id = industrial_complek
-  icon = GFX_focus_NORDIC_com_civilian
-   prerequisite = { focus = lite_indystry }
-  x = 14
-  y = 11
-  cost = 1
-  completion_reward = {
+	id = industrial_complek
+	icon = GFX_focus_NORDIC_com_civilian
+	 prerequisite = { focus = lite_indystry }
+	x = 14
+	y = 11
+	cost = 1
+	completion_reward = {
  random_owned_controlled_state = {
 				prioritize = { 69 }
 				limit = {									
@@ -542,8 +542,8 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  }
-  
+	}
+	
  
 }
 
@@ -553,41 +553,41 @@ random_owned_controlled_state = {
 ###################################################
 
 focus = {
-  id = Start_modernaz
-  icon = GFX_focus_SWE_refuge_from_war
-   prerequisite = { focus = Questions_of_aouer_mefeds }
-  mutually_exclusive = { focus = Contyni_tradysions }
-  x = 8
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = Start_modernaz
+	icon = GFX_focus_SWE_refuge_from_war
+	 prerequisite = { focus = Questions_of_aouer_mefeds }
+	mutually_exclusive = { focus = Contyni_tradysions }
+	x = 8
+	y = 4
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = somfing_new
-  icon = GFX_goal_continuous_boost_freedom
-   prerequisite = { focus = Start_modernaz }
-  x = 8
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = somfing_new
+	icon = GFX_goal_continuous_boost_freedom
+	 prerequisite = { focus = Start_modernaz }
+	x = 8
+	y = 5
+	cost = 1
+	completion_reward = {
  add_ideas = {new_start}
-  }
+	}
  
 }
 
 focus = {
-  id = Help_the_pipul_of_the_coust
-  icon = GFX_focus_generic_military_industry
-   prerequisite = { focus = somfing_new }
-  x = 8
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = Help_the_pipul_of_the_coust
+	icon = GFX_focus_generic_military_industry
+	 prerequisite = { focus = somfing_new }
+	x = 8
+	y = 6
+	cost = 1
+	completion_reward = {
 random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
@@ -648,13 +648,13 @@ random_owned_controlled_state = {
 
 
 focus = {
-  id = Help_the_pipul_of_the_thesert
-  icon = GFX_goal_generic_construction
-   prerequisite = { focus = somfing_new }
-  x = 10
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = Help_the_pipul_of_the_thesert
+	icon = GFX_goal_generic_construction
+	 prerequisite = { focus = somfing_new }
+	x = 10
+	y = 6
+	cost = 1
+	completion_reward = {
  random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
@@ -710,18 +710,18 @@ random_owned_controlled_state = {
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
 }
-  }
+	}
  
 
 
 focus = {
-  id = Bild_ports_for_the_coust
-  icon = GFX_goal_generic_navy_anti_submarine
-   prerequisite = { focus = Help_the_pipul_of_the_coust}
-  x = 8
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = Bild_ports_for_the_coust
+	icon = GFX_goal_generic_navy_anti_submarine
+	 prerequisite = { focus = Help_the_pipul_of_the_coust}
+	x = 8
+	y = 7
+	cost = 1
+	completion_reward = {
 random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
@@ -762,13 +762,13 @@ random_owned_controlled_state = {
 }
 
 focus = {
-  id = Help_the_pipul_of_the_mautyn
-  icon = GFX_focus_generic_railway_gun
-   prerequisite = { focus = Help_the_pipul_of_the_thesert }
-  x = 10
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = Help_the_pipul_of_the_mautyn
+	icon = GFX_focus_generic_railway_gun
+	 prerequisite = { focus = Help_the_pipul_of_the_thesert }
+	x = 10
+	y = 7
+	cost = 1
+	completion_reward = {
 build_railway = { 
 						level = 2 
 						start_state = 613
@@ -785,74 +785,74 @@ build_railway = {
 						target_state = 615
 					}
 }
-  }
+	}
  
 
 
 focus = {
-  id = pay_off_same_of_the_det
-  icon = GFX_goal_generic_consumer_goods
-   prerequisite = { focus = Bild_ports_for_the_coust focus = Help_the_pipul_of_the_mautyn }
-  x = 9
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = pay_off_same_of_the_det
+	icon = GFX_goal_generic_consumer_goods
+	 prerequisite = { focus = Bild_ports_for_the_coust focus = Help_the_pipul_of_the_mautyn }
+	x = 9
+	y = 8
+	cost = 1
+	completion_reward = {
  remove_ideas = {det_chi}
  add_ideas = {det_chi_smoler}
 
-  }
+	}
  
 }
 
 focus = {
-  id = raze_the_leg
-  icon = GFX_focus_CHL_la_corporacion_araucania
-   prerequisite = { focus = pay_off_same_of_the_det }
-  x = 9
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = raze_the_leg
+	icon = GFX_focus_CHL_la_corporacion_araucania
+	 prerequisite = { focus = pay_off_same_of_the_det }
+	x = 9
+	y = 9
+	cost = 1
+	completion_reward = {
  remove_ideas = {low_legit}
-  }
+	}
  
 }
 
 focus = {
-  id = monar_reform
-  icon = GFX_focus_CHL_invite_french_aristocracy
-   prerequisite = { focus = raze_the_leg }
-  x = 8
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = monar_reform
+	icon = GFX_focus_CHL_invite_french_aristocracy
+	 prerequisite = { focus = raze_the_leg }
+	x = 8
+	y = 10
+	cost = 1
+	completion_reward = {
  add_ideas = {mono_regf}
-  }
+	}
  
 }
 
 focus = {
-  id = demo_reform
-  icon = GFX_focus_generic_improve_the_administration
-   prerequisite = { focus = raze_the_leg }
-  x = 10
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = demo_reform
+	icon = GFX_focus_generic_improve_the_administration
+	 prerequisite = { focus = raze_the_leg }
+	x = 10
+	y = 10
+	cost = 1
+	completion_reward = {
  add_ideas = {demo_regf}
-  }
+	}
  
 }
 
 focus = {
-  id = a_new_free_era
-  icon = GFX_focus_ARG_strengthening_the_concordancia
-   prerequisite = { focus = monar_reform focus = demo_reform }
-  x = 9
-  y = 11
-  cost = 1
-  completion_reward = {
+	id = a_new_free_era
+	icon = GFX_focus_ARG_strengthening_the_concordancia
+	 prerequisite = { focus = monar_reform focus = demo_reform }
+	x = 9
+	y = 11
+	cost = 1
+	completion_reward = {
  add_ideas = {new_era_of_democry}
-  }
+	}
  
 }
 
@@ -862,209 +862,209 @@ focus = {
 ###################################################
 
 focus = {
-  id = anarcy_off_chiaina
-  icon = GFX_focus_spr_crush_the_revolution
-  x = 30
-  y = 15
-  cost = 1
-  completion_reward = {
+	id = anarcy_off_chiaina
+	icon = GFX_focus_spr_crush_the_revolution
+	x = 30
+	y = 15
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = a_new_era_of_anarcist_freedom
-  icon = GFX_focus_spr_torchbearers_of_tomorrow
-   prerequisite = { focus = anarcy_off_chiaina }
-  x = 28
-  y = 16
-  cost = 1
-  completion_reward = {
+	id = a_new_era_of_anarcist_freedom
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	 prerequisite = { focus = anarcy_off_chiaina }
+	x = 28
+	y = 16
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = army_off_the_anarst_chaina
-  icon = GFX_focus_SOV_builder_of_the_red_army
-   prerequisite = { focus = anarcy_off_chiaina }
-  x = 32
-  y = 16
-  cost = 1
-  completion_reward = {
+	id = army_off_the_anarst_chaina
+	icon = GFX_focus_SOV_builder_of_the_red_army
+	 prerequisite = { focus = anarcy_off_chiaina }
+	x = 32
+	y = 16
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = freedom_is_anarcy
-  icon = GFX_focus_spr_masters_of_our_own_fate
-   prerequisite = { focus = a_new_era_of_anarcist_freedom }
-  x = 29
-  y = 17
-  cost = 1
-  completion_reward = {
+	id = freedom_is_anarcy
+	icon = GFX_focus_spr_masters_of_our_own_fate
+	 prerequisite = { focus = a_new_era_of_anarcist_freedom }
+	x = 29
+	y = 17
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = ther_ys_no_laws_agents_freedom
-  icon = GFX_focus_por_workers_of_iberia
-   prerequisite = { focus = army_off_the_anarst_chaina }
-  x = 31
-  y = 17
-  cost = 1
-  completion_reward = {
+	id = ther_ys_no_laws_agents_freedom
+	icon = GFX_focus_por_workers_of_iberia
+	 prerequisite = { focus = army_off_the_anarst_chaina }
+	x = 31
+	y = 17
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = pepol_are_importent
-  icon = GFX_focus_generic_population_growth
-   prerequisite = { focus = freedom_is_anarcy focus = ther_ys_no_laws_agents_freedom }
-  x = 30
-  y = 18
-  cost = 1
-  completion_reward = {
+	id = pepol_are_importent
+	icon = GFX_focus_generic_population_growth
+	 prerequisite = { focus = freedom_is_anarcy focus = ther_ys_no_laws_agents_freedom }
+	x = 30
+	y = 18
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = freedom_is_coming
-  icon = GFX_focus_ETH_freedom_at_gunpoint
-   prerequisite = { focus = pepol_are_importent }
-  x = 30
-  y = 19
-  cost = 1
-  completion_reward = {
+	id = freedom_is_coming
+	icon = GFX_focus_ETH_freedom_at_gunpoint
+	 prerequisite = { focus = pepol_are_importent }
+	x = 30
+	y = 19
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = arms_for_the_pipul
-  icon = GFX_focus_NORDIC_com_selector_army
-   prerequisite = { focus = freedom_is_coming }
-  x = 28
-  y = 22
-  cost = 1
-  completion_reward = {
+	id = arms_for_the_pipul
+	icon = GFX_focus_NORDIC_com_selector_army
+	 prerequisite = { focus = freedom_is_coming }
+	x = 28
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = help_difend_the_pipul
-  icon = GFX_focus_generic_total_war
-   prerequisite = { focus = freedom_is_coming }
-  x = 32
-  y = 22
-  cost = 1
-  completion_reward = {
+	id = help_difend_the_pipul
+	icon = GFX_focus_generic_total_war
+	 prerequisite = { focus = freedom_is_coming }
+	x = 32
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = start_the_revolusins
-  icon = GFX_focus_ARG_strengthening_the_concordancia
-   prerequisite = { focus = help_difend_the_pipul focus = arms_for_the_pipul }
-  x = 30
-  y = 23
-  cost = 1
-  completion_reward = {
+	id = start_the_revolusins
+	icon = GFX_focus_ARG_strengthening_the_concordancia
+	 prerequisite = { focus = help_difend_the_pipul focus = arms_for_the_pipul }
+	x = 30
+	y = 23
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = free_the_afgans_and_the_taies
-  icon = GFX_focus_SWE_attack_landsorganisationen
-   prerequisite = { focus = start_the_revolusins }
-  x = 28
-  y = 26
-  cost = 1
-  completion_reward = {
+	id = free_the_afgans_and_the_taies
+	icon = GFX_focus_SWE_attack_landsorganisationen
+	 prerequisite = { focus = start_the_revolusins }
+	x = 28
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = free_the_indians
-  icon = GFX_focus_RAJ_indianisation_of_army
-   prerequisite = { focus = start_the_revolusins }
-  x = 30
-  y = 26
-  cost = 1
-  completion_reward = {
+	id = free_the_indians
+	icon = GFX_focus_RAJ_indianisation_of_army
+	 prerequisite = { focus = start_the_revolusins }
+	x = 30
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = help_the_arabs
-  icon = GFX_focus_generic_attack_iran
-   prerequisite = { focus = start_the_revolusins}
-  x = 32
-  y = 26
-  cost = 1
-  completion_reward = {
+	id = help_the_arabs
+	icon = GFX_focus_generic_attack_iran
+	 prerequisite = { focus = start_the_revolusins}
+	x = 32
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = help_the_japanis
-  icon = GFX_focus_CHL_protect_the_easter_island
-   prerequisite = { focus = start_the_revolusins}
-  x = 26
-  y = 26
-  cost = 1
-  completion_reward = {
+	id = help_the_japanis
+	icon = GFX_focus_CHL_protect_the_easter_island
+	 prerequisite = { focus = start_the_revolusins}
+	x = 26
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = help_the_rusions
-  icon = GFX_focus_attack_soviet
-   prerequisite = { focus = start_the_revolusins}
-  x = 34
-  y = 26
-  cost = 1
-  completion_reward = {
+	id = help_the_rusions
+	icon = GFX_focus_attack_soviet
+	 prerequisite = { focus = start_the_revolusins}
+	x = 34
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = pan_asian_difens_caousyl
-  icon = GFX_focus_usa_focus_on_asia
-   prerequisite = { focus = free_the_afgans_and_the_taies focus = free_the_indians focus = help_the_arabs focus = help_the_japanis focus = help_the_rusions }
-  x = 30
-  y = 28
-  cost = 1
-  completion_reward = {
+	id = pan_asian_difens_caousyl
+	icon = GFX_focus_usa_focus_on_asia
+	 prerequisite = { focus = free_the_afgans_and_the_taies focus = free_the_indians focus = help_the_arabs focus = help_the_japanis focus = help_the_rusions }
+	x = 30
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
@@ -1073,186 +1073,186 @@ focus = {
 ###################################################
 
 focus = {
-  id = secses_fo_the_qou
-  icon = GFX_focus_generic_monarchy_2
-   #prerequisite = { focus = f }
-  x = 27
-  y = 1
-  cost = 1
-  completion_reward = {
+	id = secses_fo_the_qou
+	icon = GFX_focus_generic_monarchy_2
+	 #prerequisite = { focus = f }
+	x = 27
+	y = 1
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = foren_monarc_plan
-  icon = GFX_goal_anschluss
-   prerequisite = { focus = secses_fo_the_qou }
-  x = 27
-  y = 2
-  cost = 1
-  completion_reward = {
+	id = foren_monarc_plan
+	icon = GFX_goal_anschluss
+	 prerequisite = { focus = secses_fo_the_qou }
+	x = 27
+	y = 2
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = plan_the_secsesers
-  icon = GFX_focus_ETH_re-convene_the_parliament
-   prerequisite = { focus = foren_monarc_plan }
-  x = 27
-  y = 3
-  cost = 1
-  completion_reward = {
+	id = plan_the_secsesers
+	icon = GFX_focus_ETH_re-convene_the_parliament
+	 prerequisite = { focus = foren_monarc_plan }
+	x = 27
+	y = 3
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_habsburg
-  icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-   prerequisite = { focus = plan_the_secsesers }
-  x = 25
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = the_habsburg
+	icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+	 prerequisite = { focus = plan_the_secsesers }
+	x = 25
+	y = 4
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_Hohenzollernowie
-  icon = GFX_focus_ger_revive_kaiserreich
-   prerequisite = { focus = plan_the_secsesers }
-  x = 21
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = the_Hohenzollernowie
+	icon = GFX_focus_ger_revive_kaiserreich
+	 prerequisite = { focus = plan_the_secsesers }
+	x = 21
+	y = 4
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_Saksonii_Coburga_Gothy
-  icon = GFX_focus_mex_restore_the_army_of_christ
-   prerequisite = { focus = plan_the_secsesers }
-  x = 29
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = the_Saksonii_Coburga_Gothy
+	icon = GFX_focus_mex_restore_the_army_of_christ
+	 prerequisite = { focus = plan_the_secsesers }
+	x = 29
+	y = 4
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_Romanowow
-  icon = GFX_focus_SOV_the_true_tsars
-   prerequisite = { focus = plan_the_secsesers }
-  x = 32
-  y = 4
-  cost = 1
-  completion_reward = {
+	id = the_Romanowow
+	icon = GFX_focus_SOV_the_true_tsars
+	 prerequisite = { focus = plan_the_secsesers }
+	x = 32
+	y = 4
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = contact_the_germans
-  icon = GFX_focus_ger_oppose_hitler
-   prerequisite = { focus = the_Hohenzollernowie }
-  x = 21
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = contact_the_germans
+	icon = GFX_focus_ger_oppose_hitler
+	 prerequisite = { focus = the_Hohenzollernowie }
+	x = 21
+	y = 5
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = joine_the_central_powers
-  icon = GFX_goal_generic_national_unity
-   prerequisite = { focus = contact_the_germans }
-  mutually_exclusive = { focus = the_new_germany }
-  x = 20
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = joine_the_central_powers
+	icon = GFX_goal_generic_national_unity
+	 prerequisite = { focus = contact_the_germans }
+	mutually_exclusive = { focus = the_new_germany }
+	x = 20
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_new_germany
-  icon = GFX_focus_ger_return_of_the_kaiser
-   prerequisite = { focus = contact_the_germans }
+	id = the_new_germany
+	icon = GFX_focus_ger_return_of_the_kaiser
+	 prerequisite = { focus = contact_the_germans }
  mutually_exclusive = { focus = joine_the_central_powers }
-  x = 22
-  y = 6
-  cost = 1
-  completion_reward = {
+	x = 22
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = solidify_the_new_ruler
-  icon = GFX_focus_GER_prussian_legacy
-   prerequisite = { focus = the_new_germany focus = joine_the_central_powers }
-  x = 21
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = solidify_the_new_ruler
+	icon = GFX_focus_GER_prussian_legacy
+	 prerequisite = { focus = the_new_germany focus = joine_the_central_powers }
+	x = 21
+	y = 7
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = pan_prusian_millitery
-  icon = GFX_focus_GER_glory_to_the_imperial_army
-   prerequisite = { focus = solidify_the_new_ruler }
-  x = 20
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = pan_prusian_millitery
+	icon = GFX_focus_GER_glory_to_the_imperial_army
+	 prerequisite = { focus = solidify_the_new_ruler }
+	x = 20
+	y = 8
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = rebilt_the_nation
-  icon = GFX_focus_GER_autarky_ambitions
-   prerequisite = { focus = solidify_the_new_ruler }
-  x = 22
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = rebilt_the_nation
+	icon = GFX_focus_GER_autarky_ambitions
+	 prerequisite = { focus = solidify_the_new_ruler }
+	x = 22
+	y = 8
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = prusia_of_asia
-  icon = GFX_focus_GER_hegemony_of_the_ss
-   prerequisite = { focus = rebilt_the_nation focus = pan_prusian_millitery }
-  x = 21
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = prusia_of_asia
+	icon = GFX_focus_GER_hegemony_of_the_ss
+	 prerequisite = { focus = rebilt_the_nation focus = pan_prusian_millitery }
+	x = 21
+	y = 10
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
@@ -1261,114 +1261,114 @@ focus = {
 ###################################################
 
 focus = {
-  id = the_habsburg_rul
-  icon = GFX_focus_hun_elect_a_king
-   prerequisite = { focus = the_habsburg }
-  x = 25
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = the_habsburg_rul
+	icon = GFX_focus_hun_elect_a_king
+	 prerequisite = { focus = the_habsburg }
+	x = 25
+	y = 5
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = joine_the_central_powers_2
-  icon = GFX_goal_generic_national_unity
-   prerequisite = { focus = the_habsburg_rul }
-  mutually_exclusive = { focus = the_new_hubsburg }
-  x = 24
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = joine_the_central_powers_2
+	icon = GFX_goal_generic_national_unity
+	 prerequisite = { focus = the_habsburg_rul }
+	mutually_exclusive = { focus = the_new_hubsburg }
+	x = 24
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_new_hubsburg
-  icon = GFX_focus_AUS_bring_back_the_habsburg_rule
-   prerequisite = { focus = the_habsburg_rul }
+	id = the_new_hubsburg
+	icon = GFX_focus_AUS_bring_back_the_habsburg_rule
+	 prerequisite = { focus = the_habsburg_rul }
  mutually_exclusive = { focus = joine_the_central_powers_2 }
-  x = 26
-  y = 6
-  cost = 1
-  completion_reward = {
+	x = 26
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = inviet_hubsburg
-  icon = GFX_focus_AUS_proclaim_austrian_empire
-   prerequisite = { focus = joine_the_central_powers_2 focus = the_new_hubsburg }
-  x = 25
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = inviet_hubsburg
+	icon = GFX_focus_AUS_proclaim_austrian_empire
+	 prerequisite = { focus = joine_the_central_powers_2 focus = the_new_hubsburg }
+	x = 25
+	y = 7
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = the_hubsburc_councul
-  icon = GFX_focus_AUS_legitimistische_jugend
-   prerequisite = { focus = inviet_hubsburg }
-  x = 25
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = the_hubsburc_councul
+	icon = GFX_focus_AUS_legitimistische_jugend
+	 prerequisite = { focus = inviet_hubsburg }
+	x = 25
+	y = 8
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = pan_austro_chianis
-  icon = GFX_focus_AUS_bring_generals_out_of_retirement
-   prerequisite = { focus = the_hubsburc_councul }
-  x = 24
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = pan_austro_chianis
+	icon = GFX_focus_AUS_bring_generals_out_of_retirement
+	 prerequisite = { focus = the_hubsburc_councul }
+	x = 24
+	y = 9
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = impruw_the_nation
-  icon = GFX_focus_AUS_the_evidenzburo
-   prerequisite = { focus = the_hubsburc_councul }
-  x = 26
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = impruw_the_nation
+	icon = GFX_focus_AUS_the_evidenzburo
+	 prerequisite = { focus = the_hubsburc_councul }
+	x = 26
+	y = 9
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = the_hubsburg_chaina
-  icon = GFX_focus_AUS_heritage_of_an_empire
-   prerequisite = { focus = impruw_the_nation focus = pan_austro_chianis }
-  x = 25
-  y = 11
-  cost = 1
-  completion_reward = {
+	id = the_hubsburg_chaina
+	icon = GFX_focus_AUS_heritage_of_an_empire
+	 prerequisite = { focus = impruw_the_nation focus = pan_austro_chianis }
+	x = 25
+	y = 11
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
@@ -1379,128 +1379,128 @@ focus = {
 
 
 focus = {
-  id = the_english_rul
-  icon = GFX_focus_eng_the_sun_never_sets
-   prerequisite = { focus = the_Saksonii_Coburga_Gothy }
-  x = 29
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = the_english_rul
+	icon = GFX_focus_eng_the_sun_never_sets
+	 prerequisite = { focus = the_Saksonii_Coburga_Gothy }
+	x = 29
+	y = 5
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = joine_the_Entant
-  icon = GFX_focus_generic_little_entente
-   prerequisite = { focus = the_english_rul }
-  mutually_exclusive = { focus = the_new_Englent }
-  x = 28
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = joine_the_Entant
+	icon = GFX_focus_generic_little_entente
+	 prerequisite = { focus = the_english_rul }
+	mutually_exclusive = { focus = the_new_Englent }
+	x = 28
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_new_Englent
-  icon = GFX_focus_eng_decolonization
-   prerequisite = { focus = the_english_rul }
+	id = the_new_Englent
+	icon = GFX_focus_eng_decolonization
+	 prerequisite = { focus = the_english_rul }
  mutually_exclusive = { focus = joine_the_Entant }
-  x = 30
-  y = 6
-  cost = 1
-  completion_reward = {
+	x = 30
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = bild_a_monument_for_the_GB
-  icon = GFX_SOV_foreign_experts_ccp_2d_sov_compatibility
-   prerequisite = { focus = joine_the_Entant focus = the_new_Englent }
-  x = 29
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = bild_a_monument_for_the_GB
+	icon = GFX_SOV_foreign_experts_ccp_2d_sov_compatibility
+	 prerequisite = { focus = joine_the_Entant focus = the_new_Englent }
+	x = 29
+	y = 7
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = a_constytusinal_monorcy
-  icon = GFX_focus_POL_complete_april_constitution
-   prerequisite = { focus = bild_a_monument_for_the_GB }
-  x = 29
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = a_constytusinal_monorcy
+	icon = GFX_focus_POL_complete_april_constitution
+	 prerequisite = { focus = bild_a_monument_for_the_GB }
+	x = 29
+	y = 8
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = English_Chianis_militery_trening
-  icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
-   prerequisite = { focus = a_constytusinal_monorcy  }
-  x = 29
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = English_Chianis_militery_trening
+	icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+	 prerequisite = { focus = a_constytusinal_monorcy  }
+	x = 29
+	y = 9
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = reqest_english_colonis
-  icon = GFX_focus_hol_the_foundations_of_defense
-   prerequisite = { focus = English_Chianis_militery_trening }
-  x = 29
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = reqest_english_colonis
+	icon = GFX_focus_hol_the_foundations_of_defense
+	 prerequisite = { focus = English_Chianis_militery_trening }
+	x = 29
+	y = 10
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = reqest_recognision_of_claims_in_japan
-  icon = GFX_focus_jap_pacific_guardian
-   prerequisite = { focus = a_constytusinal_monorcy }
-  x = 31
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = reqest_recognision_of_claims_in_japan
+	icon = GFX_focus_jap_pacific_guardian
+	 prerequisite = { focus = a_constytusinal_monorcy }
+	x = 31
+	y = 10
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
-  id = The_grate_chaina
-  icon = GFX_focus_generic_china1
-   prerequisite = { focus = reqest_english_colonis focus = English_Chianis_militery_trening focus = reqest_recognision_of_claims_in_japan }
-  x = 29
-  y = 12
-  cost = 1
-  completion_reward = {
+	id = The_grate_chaina
+	icon = GFX_focus_generic_china1
+	 prerequisite = { focus = reqest_english_colonis focus = English_Chianis_militery_trening focus = reqest_recognision_of_claims_in_japan }
+	x = 29
+	y = 12
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
@@ -1509,121 +1509,121 @@ focus = {
 ###################################################
 
 focus = {
-  id = contact_the_Rusians
-  icon = GFX_focus_SOV_rebuild_the_savior_cathedral
-   prerequisite = { focus = the_Romanowow }
-  x = 32
-  y = 5
-  cost = 1
-  completion_reward = {
+	id = contact_the_Rusians
+	icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+	 prerequisite = { focus = the_Romanowow }
+	x = 32
+	y = 5
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = joine_the_Entant_2
-  icon = GFX_focus_generic_little_entente
-   prerequisite = { focus = contact_the_Rusians }
-  mutually_exclusive = { focus = the_new_Rusia }
-  x = 33
-  y = 6
-  cost = 1
-  completion_reward = {
+	id = joine_the_Entant_2
+	icon = GFX_focus_generic_little_entente
+	 prerequisite = { focus = contact_the_Rusians }
+	mutually_exclusive = { focus = the_new_Rusia }
+	x = 33
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_new_Rusia
-  icon = GFX_focus_SOV_transcaucasian_republic
-   prerequisite = { focus = contact_the_Rusians }
+	id = the_new_Rusia
+	icon = GFX_focus_SOV_transcaucasian_republic
+	 prerequisite = { focus = contact_the_Rusians }
  mutually_exclusive = { focus = joine_the_Entant_2 }
-  x = 35
-  y = 6
-  cost = 1
-  completion_reward = {
+	x = 35
+	y = 6
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = solidify_the_new_ruler_2
-  icon = GFX_goal_generic_small_arms
-   prerequisite = { focus = the_new_Rusia focus = joine_the_Entant_2 }
-  x = 34
-  y = 7
-  cost = 1
-  completion_reward = {
+	id = solidify_the_new_ruler_2
+	icon = GFX_goal_generic_small_arms
+	 prerequisite = { focus = the_new_Rusia focus = joine_the_Entant_2 }
+	x = 34
+	y = 7
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = pan_Rusian_millitery
-  icon = GFX_focus_generic_military_mission
-   prerequisite = { focus = solidify_the_new_ruler_2 }
-  x = 34
-  y = 8
-  cost = 1
-  completion_reward = {
+	id = pan_Rusian_millitery
+	icon = GFX_focus_generic_military_mission
+	 prerequisite = { focus = solidify_the_new_ruler_2 }
+	x = 34
+	y = 8
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = pro_rusian_infristrasion
-  icon = GFX_goal_generic_construct_infrastructure
-   prerequisite = { focus = pan_Rusian_millitery }
-  x = 35
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = pro_rusian_infristrasion
+	icon = GFX_goal_generic_construct_infrastructure
+	 prerequisite = { focus = pan_Rusian_millitery }
+	x = 35
+	y = 9
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = reqest_recognision_of_claims_in_japan_2
-  icon = GFX_focus_jap_pacific_guardian
-   prerequisite = { focus = pan_Rusian_millitery }
-  x = 33
-  y = 9
-  cost = 1
-  completion_reward = {
+	id = reqest_recognision_of_claims_in_japan_2
+	icon = GFX_focus_jap_pacific_guardian
+	 prerequisite = { focus = pan_Rusian_millitery }
+	x = 33
+	y = 9
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = reqest_old_teritorys
-  icon = GFX_focus_SOV_reinforce_eastern_naval_bases
-   prerequisite = { focus = pro_rusian_infristrasion }
-  x = 35
-  y = 10
-  cost = 1
-  completion_reward = {
+	id = reqest_old_teritorys
+	icon = GFX_focus_SOV_reinforce_eastern_naval_bases
+	 prerequisite = { focus = pro_rusian_infristrasion }
+	x = 35
+	y = 10
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
 focus = {
-  id = the_rusia_of_asia
-  icon = GFX_focus_chi_one_china_policy
-   prerequisite = { focus = reqest_old_teritorys focus = reqest_recognision_of_claims_in_japan_2 }
-  x = 34
-  y = 12
-  cost = 1
-  completion_reward = {
+	id = the_rusia_of_asia
+	icon = GFX_focus_chi_one_china_policy
+	 prerequisite = { focus = reqest_old_teritorys focus = reqest_recognision_of_claims_in_japan_2 }
+	x = 34
+	y = 12
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
  
 }
 
@@ -1638,57 +1638,57 @@ focus = {
 
 
 focus = {
-  id = stand_whit_tongmenghul
-  icon = GFX_focus_chi_legislative_yuan
-   #prerequisite = { focus = f }
-  x = 14
-  y = 14
-  cost = 1
-  completion_reward = {
+	id = stand_whit_tongmenghul
+	icon = GFX_focus_chi_legislative_yuan
+	 #prerequisite = { focus = f }
+	x = 14
+	y = 14
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  add_stability = 0.05
-  }
+	add_stability = 0.05
+	}
  
 }
 
 focus = {
 id = establish_the_prov_goc
-  icon = GFX_focus_NOR_continue_nygaardsvold_government
-   prerequisite = { focus = stand_whit_tongmenghul }
-  x = 14
-  y = 15
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_NOR_continue_nygaardsvold_government
+	 prerequisite = { focus = stand_whit_tongmenghul }
+	x = 14
+	y = 15
+	cost = 1
+	completion_reward = {
  add_political_power = 50
 
-  }
+	}
 
 }
 
 focus = {
 id = tongmenghul_cabnit
-  icon = GFX_focus_generic_improve_the_administration
-   prerequisite = { focus = establish_the_prov_goc }
-  x = 14
-  y = 16
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_improve_the_administration
+	 prerequisite = { focus = establish_the_prov_goc }
+	x = 14
+	y = 16
+	cost = 1
+	completion_reward = {
 add_political_power = 100
-  add_war_support = 0.05
-  }
+	add_war_support = 0.05
+	}
 
 }
 
 focus = {
 id = nasonal_assembli
-  icon = GFX_focus_SWE_organize_a_putsch
-   prerequisite = { focus = tongmenghul_cabnit }
-  x = 14
-  y = 18
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_organize_a_putsch
+	 prerequisite = { focus = tongmenghul_cabnit }
+	x = 14
+	y = 18
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -1699,105 +1699,105 @@ id = nasonal_assembli
 
 focus = {
 id = baizing_army
-  icon = GFX_focus_NORDIC_com_army
-   prerequisite = { focus = nasonal_assembli }
-  x = 10
-  y = 19
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_NORDIC_com_army
+	 prerequisite = { focus = nasonal_assembli }
+	x = 10
+	y = 19
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Replais_the_gov
-  icon = GFX_
-   prerequisite = { focus = baizing_army }
-  x = 10
-  y = 20
-  cost = 1
-  completion_reward = {
+	icon = GFX_
+	 prerequisite = { focus = baizing_army }
+	x = 10
+	y = 20
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = more_powe_to_the_army
-  icon = GFX_focus_NORDIC_com_selector_army
-   prerequisite = { focus = Replais_the_gov }
-  x = 9
-  y = 21
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_NORDIC_com_selector_army
+	 prerequisite = { focus = Replais_the_gov }
+	x = 9
+	y = 21
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = expand_the_arsenal
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = Replais_the_gov }
-  x = 11
-  y = 21
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = Replais_the_gov }
+	x = 11
+	y = 21
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = presidat_loyolty
-  icon = GFX_goal_generic_political_pressure
-   prerequisite = { focus = expand_the_arsenal focus = more_powe_to_the_army }
-  x = 10
-  y = 22
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_political_pressure
+	 prerequisite = { focus = expand_the_arsenal focus = more_powe_to_the_army }
+	x = 10
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = supper_nationalizm
-  icon = GFX_focus_generic_china1
-   prerequisite = { focus = expand_the_arsenal focus = more_powe_to_the_army }
-  x = 12
-  y = 22
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_china1
+	 prerequisite = { focus = expand_the_arsenal focus = more_powe_to_the_army }
+	x = 12
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = economic_assets
-  icon = GFX_focus_generic_monetary_union
-   prerequisite = {  focus = expand_the_arsenal focus = more_powe_to_the_army }
-  x = 8
-  y = 22
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_monetary_union
+	 prerequisite = {  focus = expand_the_arsenal focus = more_powe_to_the_army }
+	x = 8
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = parlamental_liqudi
-  icon = GFX_focus_generic_improve_the_administration
-   prerequisite = { focus = economic_assets focus = presidat_loyolty focus = supper_nationalizm }
-  x = 10
-  y = 23
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_improve_the_administration
+	 prerequisite = { focus = economic_assets focus = presidat_loyolty focus = supper_nationalizm }
+	x = 10
+	y = 23
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -1808,105 +1808,105 @@ id = parlamental_liqudi
 
 focus = {
 id = Maintain_status_que
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = parlamental_liqudi }
-  x = 11
-  y = 24
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = parlamental_liqudi }
+	x = 11
+	y = 24
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Beiyang_menditator
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = Maintain_status_que }
-  x = 11
-  y = 25
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = Maintain_status_que }
+	x = 11
+	y = 25
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = southern_campromise
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = Beiyang_menditator }
-  x = 10
-  y = 26
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = Beiyang_menditator }
+	x = 10
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = li_duan_conflict
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = Beiyang_menditator }
-  x = 11
-  y = 27
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = Beiyang_menditator }
+	x = 11
+	y = 27
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = provincial_autonmomy
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = li_duan_conflict }
-  x = 9
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = li_duan_conflict }
+	x = 9
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = confudixism_in_consitiutin
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = li_duan_conflict }
-  x = 11
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = li_duan_conflict }
+	x = 11
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = who_leads_the_army
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = li_duan_conflict }
-  x = 13
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = li_duan_conflict }
+	x = 13
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = declare_constitution
-  icon = GFX_focus_SWE_let_fly_all_guns
-   prerequisite = { focus = who_leads_the_army focus = confudixism_in_consitiutin focus = provincial_autonmomy}
-  x = 11
-  y = 30
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_let_fly_all_guns
+	 prerequisite = { focus = who_leads_the_army focus = confudixism_in_consitiutin focus = provincial_autonmomy}
+	x = 11
+	y = 30
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -1918,157 +1918,157 @@ id = declare_constitution
 
 focus = {
 id = Creat_the_federasion
-  icon = GFX_focus_generic_improve_the_administration
-   prerequisite = { focus = parlamental_liqudi }
-  x = 3
-  y = 24
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_improve_the_administration
+	 prerequisite = { focus = parlamental_liqudi }
+	x = 3
+	y = 24
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = establish_the_steats
-  icon = GFX_focus_ICE_break_with_the_crown
-   prerequisite = { focus = Creat_the_federasion }
-  x = 3
-  y = 26
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ICE_break_with_the_crown
+	 prerequisite = { focus = Creat_the_federasion }
+	x = 3
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = federal_Uniti_programs
-  icon = GFX_goal_generic_propaganda
-   prerequisite = { focus = Creat_the_federasion }
-  x = 2
-  y = 25
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_propaganda
+	 prerequisite = { focus = Creat_the_federasion }
+	x = 2
+	y = 25
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = The_unios_trete
-  icon = GFX_focus_eng_concessions_to_the_trade_unions
-   prerequisite = { focus = establish_the_steats }
-  x = 1
-  y = 27
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	 prerequisite = { focus = establish_the_steats }
+	x = 1
+	y = 27
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = union_off_the_ekonomes
-  icon = GFX_focus_generic_military_industry
-   prerequisite = { focus = The_unios_trete }
-  x = 0
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_military_industry
+	 prerequisite = { focus = The_unios_trete }
+	x = 0
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = ekonomic_programs
-  icon = GFX_focus_mex_privatisation
-   prerequisite = { focus = The_unios_trete }
-  x = 2
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_mex_privatisation
+	 prerequisite = { focus = The_unios_trete }
+	x = 2
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = ekonomic_federesions_laws
-  icon = GFX_focus_AUS_lawmaking_leniency
-   prerequisite = { focus = union_off_the_ekonomes focus = ekonomic_programs }
-  x = 1
-  y = 29
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_AUS_lawmaking_leniency
+	 prerequisite = { focus = union_off_the_ekonomes focus = ekonomic_programs }
+	x = 1
+	y = 29
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Federal_army
-  icon = GFX_focus_NORDIC_mon_selector_army
-   prerequisite = { focus = establish_the_steats }
-  x = 5
-  y = 27
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_NORDIC_mon_selector_army
+	 prerequisite = { focus = establish_the_steats }
+	x = 5
+	y = 27
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = federal_army_treining
-  icon = GFX_goal_generic_army_doctrines
-   prerequisite = { focus = Federal_army }
-  x = 6
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_army_doctrines
+	 prerequisite = { focus = Federal_army }
+	x = 6
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = army_expens
-  icon = GFX_focus_NORDIC_com_capstone_army
-   prerequisite = { focus = Federal_army }
-  x = 4
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_NORDIC_com_capstone_army
+	 prerequisite = { focus = Federal_army }
+	x = 4
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = freedom_off_armyes
-  icon = GFX_focus_CONGO_congo_army
-   prerequisite = { focus = army_expens focus = federal_army_treining }
-  x = 5
-  y = 29
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_CONGO_congo_army
+	 prerequisite = { focus = army_expens focus = federal_army_treining }
+	x = 5
+	y = 29
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Fredom_off_democryci
-  icon = GFX_focus_ARG_defense_and_democracy
-   prerequisite = { focus = establish_the_steats }
-  x = 3
-  y = 30
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ARG_defense_and_democracy
+	 prerequisite = { focus = establish_the_steats }
+	x = 3
+	y = 30
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -2080,29 +2080,29 @@ id = Fredom_off_democryci
 
 focus = {
 id = democrycy
-  icon = GFX_focus_generic_blue_flags
-   mutually_exclusive = { focus = socjalizm }
-   prerequisite = { focus = Fredom_off_democryci }
-  x = 1
-  y = 31
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_blue_flags
+	 mutually_exclusive = { focus = socjalizm }
+	 prerequisite = { focus = Fredom_off_democryci }
+	x = 1
+	y = 31
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = socjalizm
-  icon = GFX_focus_generic_red_flags
-   mutually_exclusive = { focus = democrycy }
-   prerequisite = { focus = Fredom_off_democryci }
-  x = 5
-  y = 31
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_red_flags
+	 mutually_exclusive = { focus = democrycy }
+	 prerequisite = { focus = Fredom_off_democryci }
+	x = 5
+	y = 31
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -2113,118 +2113,118 @@ id = socjalizm
 
 focus = {
 id = Free_chaina
-  icon = GFX_goal_continuous_boost_freedom
-   prerequisite = { focus = democrycy }
-  x = 1
-  y = 32
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_continuous_boost_freedom
+	 prerequisite = { focus = democrycy }
+	x = 1
+	y = 32
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Fredom_laws
-  icon = GFX_goal_continuous_def_against_influence
-   prerequisite = { focus = Free_chaina }
-  x = 0
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_continuous_def_against_influence
+	 prerequisite = { focus = Free_chaina }
+	x = 0
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Support_chainis_unity
-  icon = GFX_goal_continuous_increase_nu
-   prerequisite = { focus = Free_chaina }
-  x = 2
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_continuous_increase_nu
+	 prerequisite = { focus = Free_chaina }
+	x = 2
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Contact_the_becon_off_democrosy
-  icon = GFX_focus_generic_befriend_usa
-   prerequisite = { focus = Support_chainis_unity focus = Fredom_laws }
-  x = 1
-  y = 34
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_befriend_usa
+	 prerequisite = { focus = Support_chainis_unity focus = Fredom_laws }
+	x = 1
+	y = 34
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = recuest_french_colonis
-  icon = GFX_focus_attack_france
-   prerequisite = { focus = Contact_the_becon_off_democrosy }
-  x = 0
-  y = 35
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_attack_france
+	 prerequisite = { focus = Contact_the_becon_off_democrosy }
+	x = 0
+	y = 35
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = recuest_british_colonis
-  icon = GFX_focus_attack_britain
-   prerequisite = { focus = Contact_the_becon_off_democrosy }
-  x = 2
-  y = 35
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_attack_britain
+	 prerequisite = { focus = Contact_the_becon_off_democrosy }
+	x = 2
+	y = 35
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = recuest_dutch_colonis
-  icon = GFX_focus_hol_oranje_boven
-   prerequisite = { focus = Contact_the_becon_off_democrosy }
-  x = 4
-  y = 35
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_hol_oranje_boven
+	 prerequisite = { focus = Contact_the_becon_off_democrosy }
+	x = 4
+	y = 35
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = setap_more_federal_stats
-  icon = GFX_focus_SWI_dissolve_the_federal_council
-   prerequisite = { focus = recuest_dutch_colonis focus = recuest_british_colonis focus = recuest_french_colonis }
-  x = 2
-  y = 36
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWI_dissolve_the_federal_council
+	 prerequisite = { focus = recuest_dutch_colonis focus = recuest_british_colonis focus = recuest_french_colonis }
+	x = 2
+	y = 36
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Govermat_reform
-  icon = GFX_focus_ETH_re-convene_the_parliament
-   prerequisite = { focus = setap_more_federal_stats}
-  x = 2
-  y = 37
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ETH_re-convene_the_parliament
+	 prerequisite = { focus = setap_more_federal_stats}
+	x = 2
+	y = 37
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -2238,118 +2238,118 @@ id = Govermat_reform
 
 focus = {
 id = A_socjolist_federesion
-  icon = GFX_focus_SWE_socialist_reforms
-   prerequisite = { focus = socjalizm }
-  x = 5
-  y = 32
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_socialist_reforms
+	 prerequisite = { focus = socjalizm }
+	x = 5
+	y = 32
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = The_Workers_rights_2
-  icon = GFX_focus_generic_workers
-   prerequisite = { focus = A_socjolist_federesion }
-  x = 5
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_workers
+	 prerequisite = { focus = A_socjolist_federesion }
+	x = 5
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = political_indoctrination
-  icon = GFX_goal_generic_war_with_comintern
-   prerequisite = { focus = A_socjolist_federesion }
-  x = 7
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_war_with_comintern
+	 prerequisite = { focus = A_socjolist_federesion }
+	x = 7
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = contact_the_communist_off_the_world
-  icon = GFX_focus_SOV_international_union_of_soviet_republics
-   prerequisite = { focus = political_indoctrination focus = The_Workers_rights_2 }
-  x = 6
-  y = 34
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SOV_international_union_of_soviet_republics
+	 prerequisite = { focus = political_indoctrination focus = The_Workers_rights_2 }
+	x = 6
+	y = 34
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = ouer_new_moto
-  icon = GFX_focus_GER_proletarian_solidarity
-   prerequisite = { focus = contact_the_communist_off_the_world focus = Anti_colonial_demands }
-  x = 6
-  y = 36
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_GER_proletarian_solidarity
+	 prerequisite = { focus = contact_the_communist_off_the_world focus = Anti_colonial_demands }
+	x = 6
+	y = 36
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = A...The_hands_do...
-  icon = GFX_goal_generic_demand_territory
-   prerequisite = { focus = ouer_new_moto }
-  x = 6
-  y = 37
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_demand_territory
+	 prerequisite = { focus = ouer_new_moto }
+	x = 6
+	y = 37
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = A...The_Workers_work_...
-  icon = GFX_focus_generic_workers_and_farmers_rise
-   prerequisite = { focus = ouer_new_moto }
-  x = 8
-  y = 37
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_workers_and_farmers_rise
+	 prerequisite = { focus = ouer_new_moto }
+	x = 8
+	y = 37
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = A...the_govermant_see
-  icon = GFX_focus_SWI_embrace_rote_drei
-   prerequisite = { focus = A...The_Workers_work_... focus = A...The_hands_do... }
-  x = 7
-  y = 38
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWI_embrace_rote_drei
+	 prerequisite = { focus = A...The_Workers_work_... focus = A...The_hands_do... }
+	x = 7
+	y = 38
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Anti_colonial_demands
-  icon = GFX_goal_generic_alliance
-   prerequisite = { focus = contact_the_communist_off_the_world }
-  x = 7
-  y = 35
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_alliance
+	 prerequisite = { focus = contact_the_communist_off_the_world }
+	x = 7
+	y = 35
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -2400,118 +2400,118 @@ id = Anti_colonial_demands
 
 focus = {
 id = a_onother_revolution
-  icon = GFX_focus_generic_spur_communist_revolutions
-   prerequisite = { focus = nasonal_assembli }
-  x = 18
-  y = 19
-  cost = 1
+	icon = GFX_focus_generic_spur_communist_revolutions
+	 prerequisite = { focus = nasonal_assembli }
+	x = 18
+	y = 19
+	cost = 1
  completion_reward = {
-  add_political_power = 30
+	add_political_power = 30
  add_popularity = {
-    ideology = Communism
-    popularity = 0.15
-  }
-  }
-  }
+		ideology = Communism
+		popularity = 0.15
+	}
+	}
+	}
 
 
 focus = {
 id = Fore_the_pepoul
-  icon = GFX_focus_generic_workers_and_farmers_rise
-   prerequisite = { focus = a_onother_revolution }
-  x = 17
-  y = 20
-  cost = 1
-  completion_reward = {
-  add_political_power = 100
-  add_stability = 0.05
+	icon = GFX_focus_generic_workers_and_farmers_rise
+	 prerequisite = { focus = a_onother_revolution }
+	x = 17
+	y = 20
+	cost = 1
+	completion_reward = {
+	add_political_power = 100
+	add_stability = 0.05
  add_popularity = {
-    ideology = Communism
-    popularity = 0.05
-  }
-  }
+		ideology = Communism
+		popularity = 0.05
+	}
+	}
 
 }
 
 focus = {
 id = fore_the_workers
-  icon = GFX_focus_ICE_embrace_the_workers_revolution
-   prerequisite = { focus = a_onother_revolution }
-  x = 19
-  y = 20
-  cost = 1
-  completion_reward = {
-  add_manpower = 5000
-  add_political_power = 100
-  add_war_support = 0.05
-  }
+	icon = GFX_focus_ICE_embrace_the_workers_revolution
+	 prerequisite = { focus = a_onother_revolution }
+	x = 19
+	y = 20
+	cost = 1
+	completion_reward = {
+	add_manpower = 5000
+	add_political_power = 100
+	add_war_support = 0.05
+	}
 
 }
 
 focus = {
 id = The_comune_off_chaina
-  icon = GFX_focus_prc_proclaim_the_peoples_republic
-   prerequisite = { focus = fore_the_workers focus = Fore_the_pepoul }
-  x = 18
-  y = 21
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_prc_proclaim_the_peoples_republic
+	 prerequisite = { focus = fore_the_workers focus = Fore_the_pepoul }
+	x = 18
+	y = 21
+	cost = 1
+	completion_reward = {
 country_event = { id = chinaa.8 }
-  }
+	}
 
 }
 
 focus = {
 id = The_army_off_pepoul
-  icon = GFX_focus_prc_infiltration
-   prerequisite = { focus = The_comune_off_chaina }
-  x = 16
-  y = 22
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_prc_infiltration
+	 prerequisite = { focus = The_comune_off_chaina }
+	x = 16
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {come_chaina_army_TEST}
-  }
+	}
 
 }
 
 focus = {
 id = ekonomy_offf_the_workers
-  icon = GFX_focus_generic_communist_industry
-   prerequisite = { focus = The_comune_off_chaina }
-  x = 20
-  y = 22
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_communist_industry
+	 prerequisite = { focus = The_comune_off_chaina }
+	x = 20
+	y = 22
+	cost = 1
+	completion_reward = {
  add_ideas = {
-        come_chaina
-    }
-  }
+				come_chaina
+		}
+	}
 
 }
 
 focus = {
 id = the_communist_futer
-  icon = GFX_focus_SOV_the_last_purge
-   prerequisite = { focus = The_comune_off_chaina }
-  x = 18
-  y = 25
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SOV_the_last_purge
+	 prerequisite = { focus = The_comune_off_chaina }
+	x = 18
+	y = 25
+	cost = 1
+	completion_reward = {
  add_ideas = {commune_of_china}
 remove_ideas = {low_legit}
-  }
+	}
 
 }
 
 focus = {
 id = The_MEN
-  icon = GFX_focus_SOV_mobilization_plan
-   prerequisite = { focus = The_army_off_pepoul }
-  x = 15
-  y = 23
-  cost = 1
-  completion_reward = {
-  random_owned_controlled_state = {
+	icon = GFX_focus_SOV_mobilization_plan
+	 prerequisite = { focus = The_army_off_pepoul }
+	x = 15
+	y = 23
+	cost = 1
+	completion_reward = {
+	random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
 					free_building_slots = {
@@ -2529,25 +2529,25 @@ id = The_MEN
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  add_tech_bonus = {
+	add_tech_bonus = {
 				name = POL_army_modernisation
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
-  add_manpower = 5000
-  }
+	add_manpower = 5000
+	}
 
 }
 
 focus = {
 id = The_GUNS
-  icon = GFX_focus_SOV_merge_plants
-   prerequisite = { focus = The_army_off_pepoul }
-  x = 17
-  y = 23
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SOV_merge_plants
+	 prerequisite = { focus = The_army_off_pepoul }
+	x = 17
+	y = 23
+	cost = 1
+	completion_reward = {
 random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
@@ -2566,7 +2566,7 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  random_owned_controlled_state = {
+	random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
 					free_building_slots = {
@@ -2584,7 +2584,7 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  random_owned_controlled_state = {
+	random_owned_controlled_state = {
 				prioritize = { 86 }
 				limit = {									
 					free_building_slots = {
@@ -2602,367 +2602,367 @@ random_owned_controlled_state = {
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
 			}
-  }
+	}
 
 }
 
 focus = {
 id = Expant_militery_uniwersitis
-  icon = GFX_focus_generic_university_1
-   mutually_exclusive = { focus = The_Workers_mind }
-   prerequisite = { focus = The_MEN focus = The_GUNS }
-  x = 16
-  y = 24
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_university_1
+	 mutually_exclusive = { focus = The_Workers_mind }
+	 prerequisite = { focus = The_MEN focus = The_GUNS }
+	x = 16
+	y = 24
+	cost = 1
+	completion_reward = {
  add_popularity = {
-    ideology = Communism
-    popularity = 0.05
-  }
+		ideology = Communism
+		popularity = 0.05
+	}
  army_experience = 15
-  add_war_support = 0.15
+	add_war_support = 0.15
  add_research_slot = 1
-  }
+	}
 
 }
 
 focus = {
 id = The_Workers_rights
-  icon = GFX_focus_generic_workers
-   prerequisite = { focus = ekonomy_offf_the_workers }
-  x = 19
-  y = 23
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_workers
+	 prerequisite = { focus = ekonomy_offf_the_workers }
+	x = 19
+	y = 23
+	cost = 1
+	completion_reward = {
  add_ideas = {Workers_rights_idea}
-  }
+	}
 
 }
 
 focus = {
 id = The_Workers_lives
-  icon = GFX_focus_ITA_peasants_rise
-   prerequisite = { focus = ekonomy_offf_the_workers }
-  x = 21
-  y = 23
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ITA_peasants_rise
+	 prerequisite = { focus = ekonomy_offf_the_workers }
+	x = 21
+	y = 23
+	cost = 1
+	completion_reward = {
  add_stability = 0.05
  add_popularity = {
-    ideology = Communism
-    popularity = 0.05
-  }
-  }
+		ideology = Communism
+		popularity = 0.05
+	}
+	}
 
 }
 
 focus = {
 id = The_Workers_mind
-  icon = GFX_focus_NORDIC_com_research
-   mutually_exclusive = { focus = Expant_militery_uniwersitis }
-   prerequisite = { focus = The_Workers_lives focus = The_Workers_rights }
-  x = 20
-  y = 24
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_NORDIC_com_research
+	 mutually_exclusive = { focus = Expant_militery_uniwersitis }
+	 prerequisite = { focus = The_Workers_lives focus = The_Workers_rights }
+	x = 20
+	y = 24
+	cost = 1
+	completion_reward = {
 add_popularity = {
-    ideology = Communism
-    popularity = 0.05
-  }
+		ideology = Communism
+		popularity = 0.05
+	}
 add_political_power = 15
 add_stability = 0.15
-  add_research_slot = 1
-  }
+	add_research_slot = 1
+	}
 
 }
 
 focus = {
 id = Plans_to_Reconcer_CHAINA
-  icon = GFX_focus_chi_united_front
-   prerequisite = { focus = the_communist_futer }
-  x = 18
-  y = 26
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_chi_united_front
+	 prerequisite = { focus = the_communist_futer }
+	x = 18
+	y = 26
+	cost = 1
+	completion_reward = {
  add_ideas = {Plans_to_Reconcer_chi_idea}
  add_popularity = {
-    ideology = Communism
-    popularity = 0.05
-  }
-  }
+		ideology = Communism
+		popularity = 0.05
+	}
+	}
 
 }
 
 focus = {
 id = Influenc_the_warlords
-  icon = GFX_goal_generic_war_with_comintern
-   prerequisite = { focus = Plans_to_Reconcer_CHAINA }
-  x = 16
-  y = 27
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_war_with_comintern
+	 prerequisite = { focus = Plans_to_Reconcer_CHAINA }
+	x = 16
+	y = 27
+	cost = 1
+	completion_reward = {
  add_political_power = 100
-  }
+	}
 
 }
 
 focus = {
 id = Start_Influenc_the_cost_warlords
-  icon = GFX_goal_generic_navy_anti_submarine
-   prerequisite = { focus = Influenc_the_warlords }
-  x = 15
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_navy_anti_submarine
+	 prerequisite = { focus = Influenc_the_warlords }
+	x = 15
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Start_Influenc_the_desert_warlords
-  icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
-   prerequisite = { focus = Influenc_the_warlords }
-  x = 17
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+	 prerequisite = { focus = Influenc_the_warlords }
+	x = 17
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Demand_thet_subju
-  icon = GFX_focus_generic_total_war
-   prerequisite = { focus = Start_Influenc_the_desert_warlords focus = Start_Influenc_the_cost_warlords }
-  x = 16
-  y = 29
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_total_war
+	 prerequisite = { focus = Start_Influenc_the_desert_warlords focus = Start_Influenc_the_cost_warlords }
+	x = 16
+	y = 29
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = A_new_era_off_chaina
-  icon = GFX_focus_prc_agrarian_socialism
-   prerequisite = { focus = Plans_to_Reconcer_CHAINA }
-  x = 20
-  y = 27
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_prc_agrarian_socialism
+	 prerequisite = { focus = Plans_to_Reconcer_CHAINA }
+	x = 20
+	y = 27
+	cost = 1
+	completion_reward = {
  add_ideas = {new_era_off_chaina_idea_C}
-  }
+	}
 
 }
 
 focus = {
 id = Finish_off_the_war_lords
-  icon = GFX_focus_hol_war_on_pacifism
-   prerequisite = { focus =A_new_era_off_chaina }
-  x = 19
-  y = 28
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_hol_war_on_pacifism
+	 prerequisite = { focus =A_new_era_off_chaina }
+	x = 19
+	y = 28
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = demand_the_colonis
-  icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-   prerequisite = { focus = A_new_era_off_chaina }
-  x = 20
-  y = 29
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+	 prerequisite = { focus = A_new_era_off_chaina }
+	x = 20
+	y = 29
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Empawer_the_state
-  icon = GFX_focus_prc_infiltration
-   prerequisite = { focus = demand_the_colonis focus = Demand_thet_subju }
-  x = 18
-  y = 30
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_prc_infiltration
+	 prerequisite = { focus = demand_the_colonis focus = Demand_thet_subju }
+	x = 18
+	y = 30
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Decler_a_union_of_chainas
-  icon = GFX_focus_CHL_union_of_hispanic_republics
-   prerequisite = { focus = Empawer_the_state }
-  x = 18
-  y = 31
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_CHL_union_of_hispanic_republics
+	 prerequisite = { focus = Empawer_the_state }
+	x = 18
+	y = 31
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Britin_of_asia
-  icon = GFX_focus_eng_concessions_to_the_trade_unions
-   prerequisite = { focus = Decler_a_union_of_chainas }
-  x = 15
-  y = 32
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	 prerequisite = { focus = Decler_a_union_of_chainas }
+	x = 15
+	y = 32
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Demand_thet_Filipins
-  icon = GFX_focus_ARG_anti_american_propaganda
-   prerequisite = { focus = Britin_of_asia }
-  x = 14
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ARG_anti_american_propaganda
+	 prerequisite = { focus = Britin_of_asia }
+	x = 14
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Demand_thet_east_indis
-  icon = GFX_focus_hol_oranje_boven
-   prerequisite = { focus = Britin_of_asia }
-  x = 16
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_hol_oranje_boven
+	 prerequisite = { focus = Britin_of_asia }
+	x = 16
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Suport_a_revolution_in_the_raj
-  icon = GFX_focus_RAJ_seek_help_from_soviet
-   prerequisite = { focus = Britin_of_asia  }
-  x = 15
-  y = 34
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_RAJ_seek_help_from_soviet
+	 prerequisite = { focus = Britin_of_asia  }
+	x = 15
+	y = 34
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Prusian_indistry_of_asia
-  icon = GFX_focus_GER_prussian_legacy
-   prerequisite = { focus = Decler_a_union_of_chainas  }
-  x = 21
-  y = 32
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_GER_prussian_legacy
+	 prerequisite = { focus = Decler_a_union_of_chainas  }
+	x = 21
+	y = 32
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Indystry_off_the_pepul
-  icon = GFX_focus_generic_communist_industry
-   prerequisite = { focus = Prusian_indistry_of_asia }
-  x = 20
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_communist_industry
+	 prerequisite = { focus = Prusian_indistry_of_asia }
+	x = 20
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Women_off_indystry
-  icon = GFX_focus_ARG_women_in_industry
-   prerequisite = { focus = Prusian_indistry_of_asia }
-  x = 22
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ARG_women_in_industry
+	 prerequisite = { focus = Prusian_indistry_of_asia }
+	x = 22
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Economic_supper_power
-  icon = GFX_focus_CHL_suppress_the_nacistas
-   prerequisite = { focus = Women_off_indystry focus = Indystry_off_the_pepul }
-  x = 21
-  y = 34
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_CHL_suppress_the_nacistas
+	 prerequisite = { focus = Women_off_indystry focus = Indystry_off_the_pepul }
+	x = 21
+	y = 34
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Army_off_the_world
-  icon = GFX_focus_ETH_callout_to_the_world
-   prerequisite = { focus = Decler_a_union_of_chainas }
-  x = 18
-  y = 32
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_ETH_callout_to_the_world
+	 prerequisite = { focus = Decler_a_union_of_chainas }
+	x = 18
+	y = 32
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Spred_Socjalizm_fro_war
-  icon = GFX_focus_SOV_proclaim_soviet_hegemony
-   prerequisite = { focus = Army_off_the_world }
-  x = 18
-  y = 33
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SOV_proclaim_soviet_hegemony
+	 prerequisite = { focus = Army_off_the_world }
+	x = 18
+	y = 33
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Glory_off_the_red_chains_soliders
-  icon = GFX_focus_SOV_builder_of_the_red_army
-   prerequisite = { focus = Spred_Socjalizm_fro_war  }
-  x = 18
-  y = 34
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SOV_builder_of_the_red_army
+	 prerequisite = { focus = Spred_Socjalizm_fro_war  }
+	x = 18
+	y = 34
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = one_thousand_week_chaina
-  icon = GFX_focus_SOV_the_supreme_soviet
-   prerequisite = { focus = Glory_off_the_red_chains_soliders focus = Economic_supper_power focus = Suport_a_revolution_in_the_raj }
-  x = 18
-  y = 35
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SOV_the_supreme_soviet
+	 prerequisite = { focus = Glory_off_the_red_chains_soliders focus = Economic_supper_power focus = Suport_a_revolution_in_the_raj }
+	x = 18
+	y = 35
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
@@ -2991,165 +2991,165 @@ id = one_thousand_week_chaina
 
 focus = {
 id = Join_the_great_war
-  icon = GFX_focus_generic_total_war
-   #prerequisite = { focus = }
-  x = 3
-  y = 12
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_total_war
+	 #prerequisite = { focus = }
+	x = 3
+	y = 12
+	cost = 1
+	completion_reward = {
  add_ideas = {enemy_null}
-  }
+	}
 
 }
 
 focus = {
 id = Pick_a_side
-  icon = GFX_focus_POL_support_global_falangism
-   prerequisite = { focus = Join_the_great_war }
-  x = 3
-  y = 13
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_POL_support_global_falangism
+	 prerequisite = { focus = Join_the_great_war }
+	x = 3
+	y = 13
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = The_germans
-  icon = GFX_focus_GER_prussian_legacy
-   mutually_exclusive = { focus = the_Brits }
-   mutually_exclusive = { focus = on_are_own }
-   prerequisite = { focus = Pick_a_side }
-  x = 1
-  y = 14
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_GER_prussian_legacy
+	 mutually_exclusive = { focus = the_Brits }
+	 mutually_exclusive = { focus = on_are_own }
+	 prerequisite = { focus = Pick_a_side }
+	x = 1
+	y = 14
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = on_are_own
-  icon = GFX_focus_SWE_lottakoren
-   mutually_exclusive = { focus = the_Brits }
-   mutually_exclusive = { focus = The_germans }
-   prerequisite = { focus = Pick_a_side }
-  x = 3
-  y = 14
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_SWE_lottakoren
+	 mutually_exclusive = { focus = the_Brits }
+	 mutually_exclusive = { focus = The_germans }
+	 prerequisite = { focus = Pick_a_side }
+	x = 3
+	y = 14
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 
 focus = {
 id = the_Brits
-  icon = GFX_focus_eng_the_sun_never_sets
-  mutually_exclusive = { focus = The_germans }
-   mutually_exclusive = { focus = on_are_own }
-   prerequisite = { focus = Pick_a_side }
-  x = 5
-  y = 14
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_eng_the_sun_never_sets
+	mutually_exclusive = { focus = The_germans }
+	 mutually_exclusive = { focus = on_are_own }
+	 prerequisite = { focus = Pick_a_side }
+	x = 5
+	y = 14
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = Preper_for_war
-  icon = GFX_focus_generic_army_doctrines_2
-   prerequisite = { focus = the_Brits focus = The_germans  focus = on_are_own }
-  x = 3
-  y = 15
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_army_doctrines_2
+	 prerequisite = { focus = the_Brits focus = The_germans  focus = on_are_own }
+	x = 3
+	y = 15
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 
 focus = {
 id = demand_Afganistan_sub
-  icon = GFX_focus_generic_strike_at_democracy1
-   prerequisite = { focus = Preper_for_war }
-  x = 4
-  y = 16
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_strike_at_democracy1
+	 prerequisite = { focus = Preper_for_war }
+	x = 4
+	y = 16
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = demand_Pusrian_sub
-  icon = GFX_focus_generic_attack_iran
-   prerequisite = { focus = demand_Afganistan_sub }
-  x = 4
-  y = 17
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_attack_iran
+	 prerequisite = { focus = demand_Afganistan_sub }
+	x = 4
+	y = 17
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = war_ekonomic_refoms
-  icon = GFX_goal_generic_production
-   prerequisite = { focus = Preper_for_war }
-  x = 2
-  y = 16
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_production
+	 prerequisite = { focus = Preper_for_war }
+	x = 2
+	y = 16
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = army_refoms
-  icon = GFX_focus_chi_army_reform
-   prerequisite = { focus = war_ekonomic_refoms }
-  x = 2
-  y = 17
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_chi_army_reform
+	 prerequisite = { focus = war_ekonomic_refoms }
+	x = 2
+	y = 17
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = navel_refoms
-  icon = GFX_goal_generic_navy_battleship
-   prerequisite = { focus = war_ekonomic_refoms }
-  x = 0
-  y = 17
-  cost = 1
-  completion_reward = {
+	icon = GFX_goal_generic_navy_battleship
+	 prerequisite = { focus = war_ekonomic_refoms }
+	x = 0
+	y = 17
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 
 focus = {
 id = 17_your_olds_to_the_army
-  icon = GFX_focus_generic_population_growth
-   prerequisite = { focus = army_refoms }
-  x = 2
-  y = 18
-  cost = 1
-  completion_reward = {
+	icon = GFX_focus_generic_population_growth
+	 prerequisite = { focus = army_refoms }
+	x = 2
+	y = 18
+	cost = 1
+	completion_reward = {
 
-  }
+	}
 
 }
 

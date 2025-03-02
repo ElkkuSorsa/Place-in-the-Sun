@@ -2,3 +2,7 @@
  autonomy_real_union: "Real Union"
  autonomy_personal_union: "Personal Union"
  autonomy_collaboration_government: "Military Occupation"
+
+ autonomy_protected_state: "Protected State"
+ autonomy_protectorate: "Protectorate"
+ autonomy_integrated_protectorate: "Integrated Protectorate"
