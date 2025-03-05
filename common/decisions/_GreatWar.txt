@@ -126,4 +126,81 @@ greatwar = {
 			
 		}
 	}
+
+	mobilization = {
+		ai_will_do = {
+			base = 5000
+		}
+
+		visible = {
+			is_in_faction_with = RUS
+			RUS = {
+				is_in_faction_with = FRA
+			}
+		}
+
+		available = {
+			has_active_mission = european_crisis
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { original_tag = RUS }
+				give_guarantee = SER
+			}
+		}
+	}
+
+	european_crisis = {
+		activation = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The Great War"
+				always = no
+			}
+		}
+
+		days_mission_timeout = 30
+
+		is_good = no
+
+		timeout_effect = {
+			AUH = {
+				declare_war_on = {
+					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			
+			if = {
+				limit = { 
+					SER = { 
+						is_guaranteed_by = RUS
+					}
+				}
+				if = {
+					limit = { RUS = { is_in_faction_with = FRA } }
+					FRA = { add_to_faction = SER }
+				}
+
+				else = {
+					if = {
+						limit = { RUS = { is_faction_leader = yes }}
+						RUS = { add_to_faction = SER }
+					}
+					else = {
+						RUS = {
+							create_faction = "Slavic Pact"
+							add_to_faction = SER
+						}
+					}
+				}
+			}
+		}
+	}
 }

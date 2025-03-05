@@ -1,0 +1,65 @@
+add_namespace = ww1
+news_event = {
+	id = ww1.1
+	title = "Assassination of Franz Ferdinand"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Did Serbia do this?"
+	}
+}
+
+country_event = {
+	id = ww1.2
+	title = "Assassination of Franz Ferdinand"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+
+	option = {
+		name = "Serbia must pay!"
+		SER = {
+			country_event = ww1.3
+		}
+		hidden_effect = {
+			news_event = ww1.1
+		}
+	}
+}
+
+country_event = {
+	id = ww1.3
+	title = "Austro-Hungarian Demands"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+
+	option = {
+		name = "Never shall we pay!"
+		hidden_effect = {
+			news_event = ww1.4
+		}
+	}
+}
+
+news_event = {
+	id = ww1.4
+	title = "Serbia refuses Austrian demands"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		activate_mission = european_crisis
+	}
+
+	option = {
+		name = "The world is on fire"
+	}
+}
