@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 501
+			add = 500
 			tag = ENG
 			has_country_flag = ww1_victory
 		}
