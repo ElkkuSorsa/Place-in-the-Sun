@@ -24,5 +24,5 @@ state={
 			limit = { has_dlc = "Battle for the Bosporus"}
 	}
 
-	local_supplies=0.0 
+
 }
