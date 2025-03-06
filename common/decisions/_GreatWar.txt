@@ -201,6 +201,12 @@ greatwar = {
 					}
 				}
 			}
+			else = {
+				RUS = {
+					remove_idea = RUS_protector_of_slavs
+					custom_effect_tooltip "Russia will no longer be seen as the protector of Slavs."
+				}
+			}
 		}
 	}
 }
