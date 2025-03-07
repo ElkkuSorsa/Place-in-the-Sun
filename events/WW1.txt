@@ -56,7 +56,9 @@ news_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		activate_mission = european_crisis
+		every_country = {
+			activate_mission = european_crisis
+		}
 	}
 
 	option = {
