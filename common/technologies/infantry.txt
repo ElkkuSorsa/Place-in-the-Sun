@@ -311,15 +311,43 @@ technologies = {
 
 
 		path = {
-			leads_to_tech = uniformupgrade1
+			leads_to_tech = uniformupgrade3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2.3
-		start_year = 1905
+		start_year = 1916
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		uniforms_weapons3 = {
+
+		enable_equipments = {
+			uniforms_equipment_2
+		}
+
+
+		path = {
+			leads_to_tech = uniformupgrade3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.3
+		start_year = 1928
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 20 }
 		}
 
 		categories = {
@@ -628,7 +656,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech =
+			leads_to_tech = uniforms_weapons3
 			research_cost_coeff = 1
 		}
 
