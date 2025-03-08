@@ -20,6 +20,10 @@ country_event = {
 
 	fire_only_once = yes
 
+	trigger = {
+		date = 1910.6.15
+	}
+
 	option = {
 		name = "Serbia must pay!"
 		SER = {
@@ -37,6 +41,7 @@ country_event = {
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = "Never shall we pay!"

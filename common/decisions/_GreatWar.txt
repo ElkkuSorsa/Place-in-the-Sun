@@ -24,6 +24,7 @@ greatwar = {
 		fire_only_once = yes
 
 		remove_effect = {
+			custom_effect_tooltip = historical_event_option
 			news_event = ENG_news.2
 			declare_war_on = {
 				target = GER
@@ -53,6 +54,7 @@ greatwar = {
 		fire_only_once = yes
 
 		remove_effect = {
+			custom_effect_tooltip = historical_event_option
 			add_timed_idea = {
 				idea = GER_schlieffen_plan_idea
 				days = 45
@@ -146,6 +148,7 @@ greatwar = {
 		fire_only_once = yes
 
 		complete_effect = {
+			custom_effect_tooltip = historical_event_option
 			if = {
 				limit = { original_tag = RUS }
 				give_guarantee = SER
@@ -203,8 +206,90 @@ greatwar = {
 			}
 			else = {
 				RUS = {
-					remove_idea = RUS_protector_of_slavs
+					remove_ideas = RUS_protector_of_slavs
 					custom_effect_tooltip "Russia will no longer be seen as the protector of Slavs."
+				}
+			}
+		}
+	}
+}
+
+agadir_crisis = {
+
+	agadir_timer = {
+		activation = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Agadir Crisis"
+				always = no
+			}
+		}
+
+		days_mission_timeout = 90
+
+		is_good = no
+
+		priority = 10
+
+		complete_effect = {
+			clr_global_flag = agadir_crisis
+		}
+
+		timeout_effect = {
+			add_threat = -5
+			news_event = agadir.9
+		}
+	}
+
+	GER_intervene_in_morocco = {
+		ai_will_do = {
+			base = 5000
+		}
+
+		visible = {
+			original_tag = GER
+			has_global_flag = agadir_crisis
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = historical_event_option
+			hidden_effect = {
+				news_event = agadir.2
+				news_event = {
+					id = agadir.8
+					days = 21
+				}
+				every_country = {
+					remove_mission = agadir_timer
+				}
+			}
+			remove_mission = agadir_timer
+		}
+	}
+
+	GER_withdraw_morocco = {
+		ai_will_do = {
+			base = 5000
+		}
+
+		visible = {
+			original_tag = GER
+			has_global_flag = agadir_crash
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = historical_event_option
+			FRA = {
+				country_event = {
+					id = agadir.4
+					days = 3
 				}
 			}
 		}

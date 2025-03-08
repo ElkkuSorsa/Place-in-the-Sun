@@ -14,5 +14,17 @@ ideas = {
 				attack_bonus_against = 0.3
 			}
 		}
+
+		GER_agadir_crash_idea = {
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_buildings_factor = -0.3
+				production_factory_max_efficiency_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
+			}
+		}
 	}
 }

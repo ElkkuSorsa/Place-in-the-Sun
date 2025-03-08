@@ -1,0 +1,207 @@
+add_namespace = agadir
+news_event = {
+	id = agadir.1
+	title = "Morocco becomes a French Protected State"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				activate_mission = agadir_timer
+			}
+			add_threat = 10
+		}
+	}
+
+	option = {
+		name = "Germans won't like this..."
+		if = {
+			limit = { original_tag = GER }
+			custom_effect_tooltip = GER_intervene_morocco_decision
+		}
+		set_global_flag = agadir_crisis
+	}
+}
+
+news_event = {
+	id = agadir.2
+	title = "Germany intervenes in Morocco"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_threat = 5
+		}
+	}
+
+	option = {
+		name = "Crisis brews..."
+	}
+}
+
+news_event = {
+	id = agadir.3
+	title = "France and Germany make compromise on Morocco"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "So no war this year then?"
+	}
+}
+
+country_event = {
+	id = agadir.4
+	title = "Germany offers compromise"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Offer them Neukamerun as a compromise"
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+				add = 100
+			}
+		}
+		add_threat = 5
+		custom_effect_tooltip = historical_event_option
+		GER = {
+			country_event = {
+				id = agadir.5
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = "Leave Morocco"
+		add_threat = -15
+		add_political_power = -100
+		add_war_support = -0.1
+		set_autonomy = {
+			target = MOR 
+			autonomy_state = autonomy_free
+		}
+		hidden_effect = {
+			news_event = agadir.6
+		}
+	}
+
+	option = {
+		name = "We never back down!"
+		add_threat = 20
+		add_war_support = 0.1
+		GER = {
+			create_wargoal = {
+				target = FRA
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			news_event = agadir.7
+		}
+	}
+}
+
+country_event = {
+	id = agadir.5
+	title = "France cedes Neukamerun as a compromise"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Nothing to lose"
+		hidden_effect = {
+			news_event = agadir.3
+		}
+		add_threat = -5
+		clr_global_flag = agadir_crisis
+	}
+}
+
+news_event = {
+	id = agadir.6
+	title = "France leaves Morocco"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Disaster for France"
+		clr_global_flag = agadir_crisis
+	}
+}
+
+news_event = {
+	id = agadir.7
+	title = "Agadir Crisis remains unsolved"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Will they really start a war?"
+		clr_global_flag = agadir_crisis
+	}
+}
+
+news_event = {
+	id = agadir.8
+	title = "Agadir Financial Crash"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = GER_agadir_crash_idea
+		}
+	}
+
+	option = {
+		name = "Maybe this will bring peace?"
+		if = {
+			limit = { original_tag = GER }
+			custom_effect_tooltip = GER_withdraw_morocco_decision
+		}
+		set_global_flag = agadir_crash
+	}
+}
+
+news_event = {
+	id = agadir.9
+	title = "Germany stays out of Morocco"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Vive la France"
+	}
+}
