@@ -15,6 +15,8 @@
 
  unlock_focuses: "§OThis will unlock new focuses!§!"
 
+ GER_intervene_morocco_decision: "Available as decision: §Y£GFX_decision_icon_small Intervene in Morocco§!"
+ GER_withdraw_morocco_decision: "Available as decision: §Y£GFX_decision_icon_small Withdraw from Morocco§!"
 
  ENG_unlock_war_cabinet_decision: "Available as decision: §Y£GFX_decision_icon_small Form a War Cabinet§!"
  ENG_parliament_act_law: "Starts enacting §Y£GFX_decision_icon_small Parliament Act §!as a law"

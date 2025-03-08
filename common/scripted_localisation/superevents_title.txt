@@ -14,7 +14,7 @@
 
 #text = {
 #	trigger = {
-#		has_global_flag = SE_
+#		has_country_flag = SE_
 #	}
 #	localization_key = SE__title
 #}
@@ -24,49 +24,49 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_global_flag = SE_ww1
+			has_country_flag = SE_ww1
 		}
 		localization_key = SE_ww1_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_fall_france
+			has_country_flag = SE_fall_france
 		}
 		localization_key = SE_fall_france_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_french_empire
+			has_country_flag = SE_french_empire
 		}
 		localization_key = SE_french_empire_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_french_communism
+			has_country_flag = SE_french_communism
 		}
 		localization_key = SE_french_communism_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_radicals_uk
+			has_country_flag = SE_radicals_uk
 		}
 		localization_key = SE_radicals_uk_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_bolshevik
+			has_country_flag = SE_bolshevik
 		}
 		localization_key = SE_bolshevik_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_unification_rome
+			has_country_flag = SE_unification_rome
 		}
 		localization_key = SE_unification_rome_title
 	}
 	text = {
 		trigger = {
-			has_global_flag = SE_RUS_civil_war
+			has_country_flag = SE_RUS_civil_war
 		}
 		localization_key = SE_RUS_civil_war_title
 	}

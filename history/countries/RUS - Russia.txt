@@ -19,6 +19,7 @@ add_ideas = {
 	RUS_independence_movements
 	RUS_communist_revolutionaries
 	RUS_agrarian_empire
+	RUS_protector_of_slavs
 }
 
 
