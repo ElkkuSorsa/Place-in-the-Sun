@@ -1,19 +1,18 @@
 add_namespace = agadir
 news_event = {
 	id = agadir.1
-	title = "Morocco becomes a French Protected State"
-	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+	title = "French intervention in Morocco"
+	desc = "After an rebellion against the autocratic sultan of Morocco, France send garrison to secure their interests and at the same time effectively imposed a protectorate over Morocco. Morocco has been very sensitive area for Germans and French, and a German intervention is a likely outcome, but will this lead to a greater European war?"
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
+	fire_for_sender = no
 
 	immediate = {
 		hidden_effect = {
 			every_country = {
 				activate_mission = agadir_timer
 			}
-			add_threat = 10
 		}
 	}
 
@@ -32,9 +31,9 @@ news_event = {
 	title = "Germany intervenes in Morocco"
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
+	fire_for_sender = no
 
 	immediate = {
 		hidden_effect = {
@@ -52,12 +51,15 @@ news_event = {
 	title = "France and Germany make compromise on Morocco"
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
 
 	option = {
 		name = "So no war this year then?"
+		if = {
+			limit = { original_tag = MOR }
+			country_event = agadir.11
+		}
 	}
 }
 
@@ -94,10 +96,6 @@ country_event = {
 		add_threat = -15
 		add_political_power = -100
 		add_war_support = -0.1
-		set_autonomy = {
-			target = MOR 
-			autonomy_state = autonomy_free
-		}
 		hidden_effect = {
 			news_event = agadir.6
 		}
@@ -142,13 +140,21 @@ news_event = {
 	title = "France leaves Morocco"
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
 
 	option = {
 		name = "Disaster for France"
 		clr_global_flag = agadir_crisis
+		FRA = {
+			set_autonomy = {
+				target = MOR
+				autonomy_state = autonomy_free
+			}
+		}
+		MOR = {
+			remove_idea = MOR_occupation
+		}
 	}
 }
 
@@ -157,13 +163,16 @@ news_event = {
 	title = "Agadir Crisis remains unsolved"
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
 
 	option = {
 		name = "Will they really start a war?"
 		clr_global_flag = agadir_crisis
+		if = {
+			limit = { original_tag = MOR }
+			country_event = agadir.11
+		}
 	}
 }
 
@@ -172,7 +181,6 @@ news_event = {
 	title = "Agadir Financial Crash"
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
 
@@ -197,11 +205,191 @@ news_event = {
 	title = "Germany stays out of Morocco"
 	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
-	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
 
 	option = {
 		name = "Vive la France"
+		if = {
+			limit = { original_tag = MOR }
+			country_event = agadir.11
+		}
+	}
+}
+
+country_event = {
+	id = agadir.10
+	title = "Rebellion in Morocco"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = FRA
+		date = 1911.7.10
+	}
+
+	option = {
+		name = "We must intervene"
+		custom_effect_tooltip = historical_event_option
+		add_war_support = 0.05
+		hidden_effect = {
+			add_threat = 10
+			news_event = agadir.1
+		}
+		MOR = {
+			add_ideas = MOR_occupation
+		}
+		set_autonomy = {
+			target = MOR
+			autonomy_state = autonomy_protected_state
+		}
+	}
+
+	option = {
+		name = "This could lead to war..."
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = agadir.11
+	title = "French Occupation"
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "This is beneficial"
+		custom_effect_tooltip = historical_event_option
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+				add = 100
+			}
+		}
+	}
+
+	option = {
+		name = "We will fight against oppression"
+		FRA = {
+			set_autonomy = {
+				target = MOR
+				autonomy_state = autonomy_free
+			}
+		}
+		leave_faction = yes
+		declare_war_on = {
+			target = FRA
+			type = independence_wargoal
+		}
+		add_ideas = MOR_liberation
+		remove_ideas = MOR_occupation
+		add_war_support = 0.15
+		add_stability = 0.15
+		news_event = agadir.12
+	}
+}
+
+news_event = {
+	id = agadir.12
+	title = "Morocco revolts against France"
+	desc = "od"
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "Agadir Crisis Continues"
+	}
+}
+
+country_event = {
+	id = agadir.13
+	title = "Victory over French Occupiers"
+	desc = ""
+
+	fire_only_once = yes
+
+	trigger = {
+		has_war_with = FRA
+		controls_province = 7132
+		controls_province = 7069
+	}
+
+	immediate = {
+		white_peace = FRA
+	}
+
+	option = {
+		name = "Vive la Morocco"
+		remove_ideas = MOR_liberation
+		hidden_effect = {
+			news_event = agadir.15
+		}
+		set_global_flag = morocco_won
+	}
+}
+
+country_event = {
+	id = agadir.14
+	title = "French have defeated us"
+	desc = ""
+
+	fire_only_once = yes
+
+	trigger = {
+		has_war_with = FRA
+		surrender_progress > 0.5
+	}
+
+	immediate = {
+		white_peace = FRA
+	}
+
+	option = {
+		name = "Staggering Failure"
+		remove_ideas = MOR_liberation
+		
+		add_ideas = MOR_occupation
+		FRA = {
+			set_autonomy = {
+				target = MOR
+				autonomy_state = autonomy_protectorate
+			}
+		}
+		hidden_effect = {
+			news_event = agadir.16
+		}
+	}
+}
+
+news_event = {
+	id = agadir.15
+	title = "France defeated in Morocco"
+	desc = ""
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Staggering Failure"
+	}
+}
+
+news_event = {
+	id = agadir.16
+	title = "French victory over Morocco"
+	desc = ""
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Expected Outcome"
 	}
 }

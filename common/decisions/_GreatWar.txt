@@ -277,12 +277,18 @@ agadir_crisis = {
 			base = 5000
 		}
 
-		visible = {
+		activation = {
 			original_tag = GER
 			has_global_flag = agadir_crash
 		}
 
+		days_mission_timeout = 60
+
+		is_good = no
+
 		fire_only_once = yes
+
+		selectable_mission = yes
 
 		complete_effect = {
 			custom_effect_tooltip = historical_event_option
@@ -292,6 +298,13 @@ agadir_crisis = {
 					days = 3
 				}
 			}
+			remove_ideas = GER_agadir_crash_idea
+		}
+
+		timeout_effect = {
+			add_threat = -15
+			news_event = agadir.9
+			remove_ideas = GER_agadir_crash_idea
 		}
 	}
 }

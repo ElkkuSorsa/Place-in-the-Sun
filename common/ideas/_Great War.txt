@@ -26,5 +26,23 @@ ideas = {
 				war_support_weekly = -0.001
 			}
 		}
+
+		MOR_occupation = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				cic_to_overlord_factor = 0.3
+				mic_to_overlord_factor = 0.3
+				lend_lease_tension_with_overlord = -0.3
+			}
+		}
+
+		MOR_liberation = {
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.3
+				defence_bonus_against = 0.3
+			}
+			supply_consumption_factor = -0.1
+		}
 	}
 }
