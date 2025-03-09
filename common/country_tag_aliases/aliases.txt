@@ -1,4 +1,15 @@
 UOB = {
 	original_tag = ENG
-	has_country_flag = ENG_socialist_england
+	OR = {
+		has_country_flag = communist_uk
+		has_country_flag = ENG_socialist_england
+	}
+}
+
+SOB = {
+	original_tag = ENG
+	OR = {
+		has_country_flag = military_uk
+		has_country_flag = ENG_fascist_england
+	}
 }

@@ -97,6 +97,7 @@ country_event = {
 
 	trigger = {
 		has_civil_war = yes
+		has_government = fascism
 	}
 
 	option = {
@@ -884,5 +885,236 @@ country_event = {
 
 	option = {
 		name = "Let's get this over"
+	}
+}
+
+add_namespace = ENG_defeat
+country_event = {
+	id = ENG_defeat.1
+	title = "Dark future ahead of us"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Declare State of Emergency"
+		set_country_flag = sided_with_military
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = ENG_side_mil
+		add_ideas = ENG_loyal_military
+		add_ideas = ENG_state_of_emergency_mil
+		country_event = {
+			id = ENG_defeat.2
+			days = 6
+		}
+		custom_effect_tooltip = unlock_focuses
+	}
+
+	option = {
+		name = "Canterbury Falls"
+		set_country_flag = sided_with_socialists
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = ENG_side_soc
+		add_ideas = ENG_relative_support
+		add_ideas = ENG_disloyal_army
+		country_event = {
+			id = ENG_defeat.2
+			days = 6
+		}
+		custom_effect_tooltip = unlock_focuses
+	}
+}
+
+country_event = {
+	id = ENG_defeat.2
+	title = "TUC declares general strike"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Our economy has shattered already!"
+		add_ideas = general_strike_1
+
+	}
+}
+
+country_event = {
+	id = ENG_defeat.3
+	title = "Germany imposes tremendous sanctions"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "This looks bad!"
+		
+	}
+}
+
+news_event = {
+	id = ENG_defeat.4
+	title = "London falls to militias"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "Sun has set on the British Empire"
+	}
+}
+
+country_event = {
+	id = ENG_defeat.5
+	title = "Fate of the king"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Arrest him!"
+	}
+
+	option = {
+		name = "Execute him!"
+	}
+}
+
+country_event = {
+	id = ENG_defeat.6
+	title = "Military attacks at Canterbury"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Raise the workers militias!"
+		hidden_effect = {
+			country_event = {
+				id = ENG_defeat.7
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ENG_defeat.7
+	title = "Workers militias clash with the military"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "We must continue!"
+		add_manpower = -1237
+		hidden_effect = {
+			country_event = {
+				id = ENG_defeat.8
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ENG_defeat.8
+	title = "Military retrieves to west"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Standoff in the UK"
+		hidden_effect = {
+			country_event = {
+				id = ENG_defeat.9
+				days = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ENG_defeat.9
+	title = "War office declares war!"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Onwards, for the revolution!"
+		custom_effect_tooltip = unlock_focuses
+		start_civil_war = {
+			ideology = fascism
+			ruling_party = communism
+			states = {
+				122 123 338 127 931 131
+			}
+			size = 0
+			navy_ratio = 0.9
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+			hidden_effect = {
+				set_cosmetic_tag = ENG_fascism
+			}
+			set_country_flag = military_uk
+			mark_focus_tree_layout_dirty = yes
+			PREV = {
+				if = {
+					limit = { has_completed_focus = ENG_arm_the_people }
+					add_equipment_to_stockpile = {
+    					type = infantry_equipment
+    					amount = 750
+    					producer = ENG
+					}
+				}
+				set_country_flag = communist_uk
+				set_cosmetic_tag = ENG_communism
+				hidden_effect = {
+					add_ideas = {
+						ENG_workers_militias
+						shame_of_defeat
+						general_strike_2
+						ENG_relative_support
+						ENG_disloyal_army
+					}
+					news_event = {
+						id = ENG_defeat.10
+						days = 25
+					}
+					load_focus_tree = ENG_focus_tree_cw_soc
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = ENG_defeat.10
+	title = "Scotland breaks free!"
+	desc = "The British army is very ineffective and minimal focused to fight in the colonies and to secure so called Pax Britannica. The times of Pax Britannica are over though, so we need to reform our army for it to be able to fight in Europe and engage in continental affairs. These reforms will be very expensive and time-taking, but very necessary."
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			release = SCO
+		}
+	}
+
+	option = {
+		name = "Civil war has taken its toll"
 	}
 }

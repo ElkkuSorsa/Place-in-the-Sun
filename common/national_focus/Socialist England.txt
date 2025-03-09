@@ -5,7 +5,8 @@ focus_tree = {
 
 		modifier = {
 			add = 50
-			tag = UOB
+			original_tag = ENG
+			has_country_flag = ENG_socialist_england
 		}
 	}
 
