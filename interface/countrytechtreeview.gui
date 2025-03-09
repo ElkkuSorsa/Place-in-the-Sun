@@ -1129,7 +1129,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "nig"
+					text = "Mortars"
 					maxWidth = 210
 					maxHeight = 22
 					format = center
