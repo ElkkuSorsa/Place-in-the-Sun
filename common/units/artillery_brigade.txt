@@ -255,7 +255,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			howitzer_artillery_equipment = 100
+			howitzer_equipment = 100
 		}
 		
 		manpower = 300
