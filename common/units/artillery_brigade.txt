@@ -24,9 +24,12 @@ sub_units = {
 
 		combat_width = 3
 
-		manpower = 300
+		manpower = 500
 		need = {
-			artillery_equipment = 100
+			artillery_equipment = 250
+			infantry_equipment = 500
+			support_equipment = 550
+			uniforms_equipment = 500
 		}
 		
 		max_strength = 0.5

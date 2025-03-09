@@ -36,7 +36,7 @@ sub_units = {
 		max_strength = 2
 		max_organisation = 2
 		default_morale = 0.2
-		manpower = 250
+		manpower = 500
 
 		#Misc Abilities
 		training_time = 180
@@ -46,10 +46,10 @@ sub_units = {
 		supply_consumption = 0.12
 	
 		need = {
-			infantry_equipment = 250
-			support_equipment = 220
-			machinegun_equipment = 110
-			uniforms_equipment = 250
+			infantry_equipment = 500
+			support_equipment = 550
+			machinegun_equipment = 125
+			uniforms_equipment = 500
 		}
 
 		forest = {

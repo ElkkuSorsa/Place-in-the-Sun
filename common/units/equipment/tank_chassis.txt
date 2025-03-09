@@ -211,7 +211,7 @@ equipments = {
 		maximum_speed = 5
 		build_cost_ic = 1.25
 		reliability = 0.95
-		armor_value = 15
+		armor_value = 5
 	}
 
 	light_tank_chassis_2 = {
@@ -226,7 +226,7 @@ equipments = {
 		build_cost_ic = 1.6
 		maximum_speed = 6
 		reliability = 1.1
-		armor_value = 20
+		armor_value = 7
 		resources = {
 			steel = 1
 		}
@@ -244,7 +244,7 @@ equipments = {
 		build_cost_ic = 2
 		maximum_speed = 7
 		reliability = 1.3
-		armor_value = 25
+		armor_value = 9
 		resources = {
 			steel = 2
 		}
