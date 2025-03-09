@@ -1,0 +1,702 @@
+focus_tree = {
+	id = ENG_focus_tree_defeat
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 500
+			original_tag = ENG
+			has_country_flag = ww1_defeat
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3000 }
+
+	focus = {
+		id = ENG_national_catastrophe
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 1
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+			country_event = ENG_defeat.3
+		}
+	}
+
+	focus = {
+		id = ENG_shameful_defeat
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 2
+
+		prerequisite = { focus = ENG_national_catastrophe }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = shame_of_defeat
+		}
+	}
+
+	focus = {
+		id = ENG_dark_future_ahead_of_us
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 3
+
+		prerequisite = { focus = ENG_shameful_defeat }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			country_event = ENG_defeat.1
+		}
+	}
+
+	focus = {
+		id = ENG_fall_of_london
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 4
+
+		prerequisite = { focus = ENG_dark_future_ahead_of_us }
+
+		allow_branch = {
+			has_country_flag = sided_with_socialists
+		}
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+			news_event = ENG_defeat.4
+		}
+	}
+
+	focus = {
+		id = ENG_establish_workers_councils
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 4
+
+		prerequisite = { focus = ENG_dark_future_ahead_of_us }
+
+		allow_branch = {
+			has_country_flag = sided_with_socialists
+		}
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = general_strike_2
+				remove_idea = general_strike_1
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_arrest_king
+		icon = GFX_focus_chi_army_reform
+		x = 13
+		y = 5
+
+		prerequisite = { focus = ENG_establish_workers_councils }
+
+		cost = 3
+
+		available = {
+		}
+
+		completion_reward = {
+			country_event = ENG_defeat.5
+		}
+	}
+
+	focus = {
+		id = ENG_workers_militias
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 5
+
+		prerequisite = { focus = ENG_establish_workers_councils focus = ENG_fall_of_london }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = "We will gain 7 extra militia divisions at the start of the civil war."
+			add_ideas = ENG_workers_militias
+		}
+	}
+
+	focus = {
+		id = ENG_arm_the_people
+		icon = GFX_focus_chi_army_reform
+		x = 17
+		y = 5
+
+		prerequisite = { focus = ENG_fall_of_london }
+
+		cost = 3
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = "We will gain extra equipment at the start of the civil war."
+			set_country_flag = ENG_soc_extra_equip
+		}
+	}
+
+	focus = {
+		id = ENG_purge_military
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 6
+
+		prerequisite = { focus = ENG_workers_militias }
+		prerequisite = { focus = ENG_arm_the_people focus = ENG_arrest_king }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = it_begins
+			hidden_effect = {
+
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_establish_curfews
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 4
+
+		prerequisite = { focus = ENG_dark_future_ahead_of_us }
+
+		allow_branch = {
+			has_country_flag = sided_with_military
+		}
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_reform_war_office
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 4
+
+		prerequisite = { focus = ENG_dark_future_ahead_of_us }
+
+		allow_branch = {
+			has_country_flag = sided_with_military
+		}
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_provisional_government
+		icon = GFX_focus_chi_army_reform
+		x = 13
+		y = 5
+
+		prerequisite = { focus = ENG_reform_war_office }
+
+		cost = 3
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_king_arrest
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 5
+
+		prerequisite = { focus = ENG_reform_war_office focus = ENG_establish_curfews }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_cencorship
+		icon = GFX_focus_chi_army_reform
+		x = 17
+		y = 5
+
+		prerequisite = { focus = ENG_establish_curfews }
+
+		cost = 3
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_purge_government
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 6
+
+		prerequisite = { focus = ENG_king_arrest }
+		prerequisite = { focus = ENG_provisional_government focus = ENG_cencorship }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = it_begins
+		}
+	}
+}
+
+focus_tree = {
+	id = ENG_focus_tree_cw_soc
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 600
+			tag = UOB
+			has_country_flag = communist_uk
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3000 }
+
+	focus = {
+		id = ENG_standoff_in_uk
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 1
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_raise_additional_militias
+		icon = GFX_focus_chi_army_reform
+		x = 13
+		y = 2
+
+		prerequisite = { focus = ENG_standoff_in_uk }
+
+		cost = 5
+
+		bypass = {
+			has_civil_war = no
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_army_of_militias
+		icon = GFX_focus_chi_army_reform
+		x = 12
+		y = 3
+
+		prerequisite = { focus = ENG_raise_additional_militias }
+		mutually_exclusive = { focus = ENG_army_reform }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_army_reform
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 3
+
+		prerequisite = { focus = ENG_raise_additional_militias }
+		mutually_exclusive = { focus = ENG_army_of_militias }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_promise_reforms
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 2
+
+		prerequisite = { focus = ENG_standoff_in_uk }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_establish_tuc
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 3
+
+		prerequisite = { focus = ENG_promise_reforms }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_socialist_policies
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 4
+
+		prerequisite = { focus = ENG_establish_tuc }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_rebuilding_our_country
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 4
+
+		allow_branch = {
+			has_civil_war = no
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_first_tuc
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 5
+
+		cost = 5
+
+		prerequisite = { focus = ENG_rebuilding_our_country }
+
+		prerequisite = { focus = ENG_socialist_policies }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_radical_socialism
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 6
+
+		cost = 5
+
+		prerequisite = { focus = ENG_first_tuc }
+		mutually_exclusive = { focus = ENG_totalism }
+		mutually_exclusive = { focus = ENG_syndicalism }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_tuc_supremacy
+		icon = GFX_focus_chi_army_reform
+		x = 12
+		y = 7
+
+		cost = 5
+
+		prerequisite = { focus = ENG_radical_socialism focus = ENG_syndicalism }
+		mutually_exclusive = { focus = ENG_concentrate_power }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_totalism
+		icon = GFX_focus_chi_army_reform
+		x = 18
+		y = 6
+
+		cost = 5
+
+		prerequisite = { focus = ENG_first_tuc }
+		mutually_exclusive = { focus = ENG_syndicalism }
+		mutually_exclusive = { focus = ENG_radical_socialism }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_concentrate_power
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 7
+
+		cost = 5
+
+		prerequisite = { focus = ENG_radical_socialism focus = ENG_totalism }
+		mutually_exclusive = { focus = ENG_tuc_supremacy }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_silence_opposition
+		icon = GFX_focus_chi_army_reform
+		x = 18
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = ENG_totalism }
+		prerequisite = { focus = ENG_concentrate_power }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_legacy_of_weltkrieg
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = ENG_tuc_supremacy focus = ENG_concentrate_power }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_syndicalism
+		icon = GFX_focus_chi_army_reform
+		x = 10
+		y = 6
+
+		cost = 5
+
+		prerequisite = { focus = ENG_first_tuc }
+		mutually_exclusive = { focus = ENG_totalism }
+		mutually_exclusive = { focus = ENG_radical_socialism }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_establish_syndicates
+		icon = GFX_focus_chi_army_reform
+		x = 10
+		y = 8
+
+		cost = 5
+
+		prerequisite = { focus = ENG_syndicalism}
+		prerequisite = { focus = ENG_tuc_supremacy }
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_socialist_internationale
+		icon = GFX_focus_chi_army_reform
+		x = 25
+		y = 1
+
+		allow_branch = {
+			has_civil_war = no
+		}
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_scotland_crisis
+		icon = GFX_focus_chi_army_reform
+		x = 8
+		y = 1
+
+		cost = 5
+
+		available = {
+			country_exists = SCO
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_promise_autonomy
+		icon = GFX_focus_chi_army_reform
+		x = 9
+		y = 2
+
+		prerequisite = { focus = ENG_scotland_crisis }
+		mutually_exclusive = { focus = ENG_no_deal_with_traitors }
+
+		cost = 5
+
+		available = {
+			country_exists = SCO
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_no_deal_with_traitors
+		icon = GFX_focus_chi_army_reform
+		x = 7
+		y = 2
+
+		prerequisite = { focus = ENG_scotland_crisis }
+		mutually_exclusive = { focus = ENG_promise_autonomy }
+
+		cost = 5
+
+		available = {
+			country_exists = SCO
+		}
+
+		completion_reward = {
+		}
+	}
+}

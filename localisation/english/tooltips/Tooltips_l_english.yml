@@ -14,6 +14,7 @@
  consuquenses_event_option: "§RThis will have serious consequences!§!"
 
  unlock_focuses: "§OThis will unlock new focuses!§!"
+ it_begins: "§RIt begins...§!"
 
  GER_intervene_morocco_decision: "Available as decision: §Y£GFX_decision_icon_small Intervene in Morocco§!"
  GER_withdraw_morocco_decision: "Available as decision: §Y£GFX_decision_icon_small Withdraw from Morocco§!"
@@ -23,3 +24,6 @@
  ENG_nat_inc_law: "Starts enacting §Y£GFX_decision_icon_small National Insurance Act §!as a law"
  ENG_tuc_law: "Starts enacting §Y£GFX_decision_icon_small Trade Union Act §!as a law"
  ENG_ire_1911_law: "Starts enacting §Y£GFX_decision_icon_small Irish Home Rule Act §!as a law"
+
+ ENG_side_mil: "We will side with the §gmilitary§!."
+ ENG_side_soc: "We will side with the §Rsocialists§!."

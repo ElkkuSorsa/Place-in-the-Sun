@@ -214,9 +214,9 @@ ideas = {
 		ENG_workers_militias = {
 			picture = generic_communist_army
 			modifier = {
-				army_org_factor = -0.2
-				army_attack_factor = -0.1
-				army_defence_factor = 0.1
+				army_org_factor = -0.3
+				army_attack_factor = -0.2
+				army_defence_factor = 0.2
 			}
 		}
 
@@ -434,6 +434,79 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.08
 				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		ENG_loyal_military = {
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				conscription_factor = 0.05
+				stability_factor = -0.2
+				war_support_factor = 0.1
+			}
+		}
+
+		ENG_disloyal_army = {
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_factor = -0.5
+				army_defence_factor = -0.3
+				conscription_factor = -0.3
+				stability_factor = -0.2
+				war_support_factor = -0.3
+			}
+		}
+
+		ENG_relative_support = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+				war_support_factor = -0.2
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+	
+		ENG_state_of_emergency_mil = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		general_strike_1 = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = 0.6
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = -0.5
+			}
+		}
+
+		general_strike_2 = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		shame_of_defeat = {
+			picture = chi_army_corruption3
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
 			}
 		}
 	}
