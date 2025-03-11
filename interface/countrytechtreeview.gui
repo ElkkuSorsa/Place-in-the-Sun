@@ -2314,7 +2314,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1933"
+					text = "1910"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2327,7 +2327,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1914"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2340,7 +2340,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1916"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2353,7 +2353,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1944"
+					text = "1918"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2366,20 +2366,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1945"
-					maxWidth = 170
-					maxHeight = 32
-					format = right
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "airtech_year7"
-					position = { x = 60 y = 998 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1950"
+					text = "1922"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2607,7 +2594,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1933"
+				text = "1910"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2620,7 +2607,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1936"
+				text = "1914"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2633,7 +2620,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1940"
+				text = "1916"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2646,7 +2633,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1944"
+				text = "1918"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2659,20 +2646,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1945"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "airtech_year7"
-				position = { x = 30 y = 998 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1950"
+				text = "1922"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2691,7 +2665,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1933"
+					text = "1910"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2704,7 +2678,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1936"
+					text = "1914"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2717,7 +2691,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1916"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2730,7 +2704,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1944"
+					text = "1918"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2743,20 +2717,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1945"
-					maxWidth = 170
-					maxHeight = 32
-					format = right
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "airtech_year7"
-					position = { x = 60 y = 998 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1950"
+					text = "1922"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
