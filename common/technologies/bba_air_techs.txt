@@ -798,7 +798,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 1 y = 12 }
 		}
 		
 		categories = {
@@ -807,7 +807,6 @@ technologies = {
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-		special_project_specialization = { specialization_air }
 		
 		ai_will_do = {
 			factor = 1
@@ -820,49 +819,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				tag = USA
-			}
-		}
-	}
-	
-	modern_large_airframe = {
-
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
-
-		is_special_project_tech = yes
-
-		enable_equipments = {
-			large_plane_airframe_4
-			large_plane_maritime_patrol_plane_airframe_4
-		}
-		
-		research_cost = 2
-		start_year = 1945
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		categories = {
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
-			mio_cat_all_heavy_aircraft_and_modules
-		}
-		special_project_specialization = { specialization_air }
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = strategic_bomber
-				}
-				factor = 4.5
 			}
 		}
 	}
