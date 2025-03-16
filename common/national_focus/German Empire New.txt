@@ -28,6 +28,7 @@ focus_tree = {
 		x = 17
 		y = 2
 		prerequisite = { focus = GER_legacy_of_bismarck }
+		mutually_exclusive = { focus = GER_balance_constituencies }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -316,6 +317,7 @@ focus_tree = {
 		x = 33
 		y = 2
 		prerequisite = { focus = GER_legacy_of_bismarck }
+		mutually_exclusive = { focus = GER_continue_weltpolitik }
 
 		cost = 5
 
@@ -345,7 +347,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_guard_christian_values
+		id = GER_safeguard_christian_values
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 33
 		y = 5
@@ -360,7 +362,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 33
 		y = 6
-		prerequisite = { focus = GER_guard_christian_values }
+		prerequisite = { focus = GER_safeguard_christian_values }
 
 		cost = 5
 
@@ -371,7 +373,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 31
 		y = 6
-		prerequisite = { focus = GER_guard_christian_values }
+		prerequisite = { focus = GER_safeguard_christian_values }
 
 		cost = 5
 
@@ -473,7 +475,52 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_central_power_unity
+		id = GER_social_programs
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 41
+		y = 5
+		prerequisite = { focus = GER_spd }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_protect_workers_rights
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 41
+		y = 6
+		prerequisite = { focus = GER_social_programs }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_tax_the_nobility
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 43
+		y = 6
+		prerequisite = { focus = GER_social_programs }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_democratize_army
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 42
+		y = 7
+		prerequisite = { focus = GER_protect_workers_rights }
+		prerequisite = { focus = GER_tax_the_nobility }
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = GER_abandon_weltpolitik
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 46
 		y = 4
@@ -488,7 +535,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 50
 		y = 5
-		prerequisite = { focus = GER_central_power_unity }
+		prerequisite = { focus = GER_abandon_weltpolitik }
 
 		cost = 5
 
@@ -532,7 +579,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 45
 		y = 5
-		prerequisite = { focus = GER_central_power_unity }
+		prerequisite = { focus = GER_abandon_weltpolitik }
 
 		cost = 5
 
@@ -543,7 +590,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 47
 		y = 5
-		prerequisite = { focus = GER_central_power_unity }
+		prerequisite = { focus = GER_abandon_weltpolitik }
 
 		cost = 5
 
@@ -554,7 +601,7 @@ focus_tree = {
 		icon = GFX_focus_ger_revive_kaiserreich
 		x = 46
 		y = 6
-		prerequisite = { focus = GER_central_power_unity }
+		prerequisite = { focus = GER_abandon_weltpolitik }
 
 		cost = 5
 
