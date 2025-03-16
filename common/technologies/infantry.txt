@@ -892,10 +892,10 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1905
+		start_year = 1922
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 2 y = 17 }
 		}
 
 		on_research_complete_limit = {
@@ -967,10 +967,10 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1914
+		start_year = 1928
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 7 }
+			position = { x = 2 y = 21 }
 		}
 
 		categories = {
@@ -991,10 +991,10 @@ technologies = {
 
 
 		research_cost = 3
-		start_year = 1928
+		start_year = 1933
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = 20 }
+			position = { x = 2 y = 23 }
 		}
 
 		categories = {

@@ -70,7 +70,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 0.89
+		build_cost_ic = 0.85
 		resources = {
 			steel = 1
 		}
@@ -113,7 +113,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 1.15
+		build_cost_ic = 0.95
 		resources = {
 			steel = 1
 		}
@@ -147,7 +147,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
-		build_cost_ic = 1.40
+		build_cost_ic = 1.05
 		resources = {
 			steel = 1
 		}
@@ -185,7 +185,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 2
 		
-		build_cost_ic = 2
+		build_cost_ic = 2.25
 		resources = {
 			steel = 2
 		}
@@ -229,7 +229,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 2
 		
-		build_cost_ic = 2.55
+		build_cost_ic = 2.50
 		resources = {
 			steel = 2
 		}
@@ -304,7 +304,7 @@ equipments = {
 		
 		build_cost_ic = 3.10
 		resources = {
-			steel = 4
+			steel = 3
 		}
 	}
 
