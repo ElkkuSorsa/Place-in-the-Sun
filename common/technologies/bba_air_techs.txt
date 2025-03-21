@@ -16,8 +16,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		start_year = 1933
+		research_cost = 2.5
+		start_year = 1910
 
 		folder = {
 			name = bba_air_techs_folder
@@ -28,14 +28,8 @@ technologies = {
 			air_equipment
 			transport_planes_cat
 		}
-		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
 		}
 	}
 
@@ -50,8 +44,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		start_year = 1940
+		research_cost = 2.5
+		start_year = 1916
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -62,14 +56,8 @@ technologies = {
 			air_equipment
 			transport_planes_cat
 		}
-		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
 		}
 	}
 
@@ -79,8 +67,8 @@ technologies = {
 			transport_plane_equipment_3
 		}
 		
-		research_cost = 2
-		start_year = 1945
+		research_cost = 2.5
+		start_year = 1922
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -91,14 +79,8 @@ technologies = {
 			air_equipment
 			transport_planes_cat
 		}
-		special_project_specialization = { specialization_air }
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
 		}
 	}
 	
@@ -682,6 +664,149 @@ technologies = {
 				}
 				factor = 5
 			}
+		}
+	}
+
+	iw_large_airframe = {
+
+		enable_equipments = {
+			large_plane_airframe_0
+			large_plane_maritime_patrol_plane_airframe_0
+		}
+	
+		path = {
+			leads_to_tech = basic_large_airframe
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1910
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	basic_large_airframe = {
+
+		enable_equipments = {
+			large_plane_airframe_1
+			large_plane_maritime_patrol_plane_airframe_1
+		}
+	
+		path = {
+			leads_to_tech = improved_large_airframe
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1916
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 1 y = 6}
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		}
+	}
+	
+	improved_large_airframe = {
+
+		on_research_complete = {
+			if = {
+				limit = { has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_air_intercontinental_bomber	
+				}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_air_mothership_aircraft	
+				}						
+			}
+		}
+		enable_equipments = {
+			large_plane_airframe_2
+			large_plane_maritime_patrol_plane_airframe_2
+		}
+	
+		path = {
+			leads_to_tech = advanced_large_airframe
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = reinforced_wings_mothership
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1918
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	advanced_large_airframe = {
+
+		enable_equipments = {
+			large_plane_airframe_3
+			large_plane_maritime_patrol_plane_airframe_3
+		}
+		
+		path = {
+			leads_to_tech = modern_large_airframe
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1922
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		categories = {
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
