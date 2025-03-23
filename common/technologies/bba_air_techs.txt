@@ -1312,11 +1312,6 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = range_improvements
-			research_cost_coeff = 1
-		}
-
-		path = {
 			leads_to_tech = aircraft_construction
 			research_cost_coeff = 1
 		}
@@ -1382,8 +1377,8 @@ technologies = {
 				PROJECT = sp_air_jet_engine	
 			}
 		}		
-		research_cost = 1
-		start_year = 1936
+		research_cost = 1.75
+		start_year = 1914
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1406,7 +1401,6 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		special_project_specialization = { specialization_air }
 
 		ai_will_do = {
 			factor = 5
@@ -1458,6 +1452,11 @@ technologies = {
 
 		path = {
 			leads_to_tech = engines_4
+			research_cost_coeff = 1
+		}
+
+				path = {
+			leads_to_tech = range_improvements
 			research_cost_coeff = 1
 		}
 
@@ -1569,12 +1568,12 @@ technologies = {
 			drop_tanks
 		}
 		
-		research_cost = 1
-		start_year = 1936
+		research_cost = 1.75
+		start_year = 1916
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 4 }
+			position = { x = -2 y = 6 }
 		}
 
 		categories = {
@@ -1587,7 +1586,6 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		special_project_specialization = { specialization_air }
 
 		ai_will_do = {
 			factor = 5
