@@ -24,8 +24,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 15
-			build_cost_ic = 20
-			fuel_consumption = 0.25
+			build_cost_ic = 22.50
+			fuel_consumption = 0.30
 		}
 	}
 
@@ -36,8 +36,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 20
-			build_cost_ic = 35
-			fuel_consumption = 0.30
+			build_cost_ic = 30
+			fuel_consumption = 0.40
 		}
 	}
 
@@ -47,8 +47,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 30
-			build_cost_ic = 45
+			thrust = 25
+			build_cost_ic = 37.50
 			fuel_consumption = 0.50
 		}
 	}
@@ -59,9 +59,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			thrust = 40
-			build_cost_ic = 55
-			fuel_consumption = 0.65
+			thrust = 29
+			build_cost_ic = 43.75
+			fuel_consumption = 0.60
 		}
 	}
 
@@ -72,13 +72,13 @@ equipment_modules = {
 		parent = engine_1_1x
 
 		add_stats = {
-			thrust = 16
-			build_cost_ic = 14
-			fuel_consumption = 0.16
+			thrust = 12.5
+			build_cost_ic = 20
+			fuel_consumption = 0.25
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.20
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -94,13 +94,13 @@ equipment_modules = {
 		parent = engine_1_2x
 
 		add_stats = {
-			thrust = 25
-			build_cost_ic = 28
-			fuel_consumption = 0.32
+			thrust = 18.75
+			build_cost_ic = 30
+			fuel_consumption = 0.35
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.20
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -116,13 +116,13 @@ equipment_modules = {
 		parent = engine_1_3x
 
 		add_stats = {
-			thrust = 32
-			build_cost_ic = 42
-			fuel_consumption = 0.48
+			thrust = 25
+			build_cost_ic = 40
+			fuel_consumption = 0.45
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.20
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -138,13 +138,13 @@ equipment_modules = {
 		parent = engine_1_4x
 
 		add_stats = {
-			thrust = 40
-			build_cost_ic = 56
-			fuel_consumption = 0.64
+			thrust = 31.25
+			build_cost_ic = 60
+			fuel_consumption = 0.55
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.20
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -160,9 +160,9 @@ equipment_modules = {
 		parent = engine_1_6x
 
 		add_stats = {
-			thrust = 56
-			build_cost_ic = 80
-			fuel_consumption = 0.8
+			thrust = 46.25
+			build_cost_ic = 90
+			fuel_consumption = 0.65
 		}
 
 		multiply_stats = {
@@ -182,13 +182,13 @@ equipment_modules = {
 		parent = engine_2_1x
 
 		add_stats = {
-			thrust = 25
-			build_cost_ic = 16
-			fuel_consumption = 0.16
+			thrust = 15
+			build_cost_ic = 25
+			fuel_consumption = 0.35
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.30
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -204,13 +204,13 @@ equipment_modules = {
 		parent = engine_2_2x
 
 		add_stats = {
-			thrust = 38
-			build_cost_ic = 32
-			fuel_consumption = 0.32
+			thrust = 22.5
+			build_cost_ic = 27.5
+			fuel_consumption = 0.45
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.30
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -226,13 +226,13 @@ equipment_modules = {
 		parent = engine_2_3x
 
 		add_stats = {
-			thrust = 51
-			build_cost_ic = 48
-			fuel_consumption = 0.48
+			thrust = 30
+			build_cost_ic = 36.6
+			fuel_consumption = 0.55
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.30
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -248,13 +248,13 @@ equipment_modules = {
 		parent = engine_2_4x
 
 		add_stats = {
-			thrust = 64
-			build_cost_ic = 64
-			fuel_consumption = 0.64
+			thrust = 37.5
+			build_cost_ic = 48
+			fuel_consumption = 0.65
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.30
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -270,13 +270,13 @@ equipment_modules = {
 		parent = engine_2_6x
 
 		add_stats = {
-			thrust = 90
-			build_cost_ic = 92
-			fuel_consumption = 0.8
+			thrust = 43.6
+			build_cost_ic = 56
+			fuel_consumption = 0.75
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.30
+			maximum_speed = 0.10
 		}
 
 		can_convert_from = {
@@ -292,13 +292,13 @@ equipment_modules = {
 		parent = engine_3_1x
 
 		add_stats = {
-			thrust = 30
-			build_cost_ic = 18
-			fuel_consumption = 0.16
+			thrust = 17.5
+			build_cost_ic = 30
+			fuel_consumption = 0.45
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.45
+			maximum_speed = 0.15
 		}
 
 		can_convert_from = {
@@ -314,13 +314,13 @@ equipment_modules = {
 		parent = engine_3_2x
 
 		add_stats = {
-			thrust = 45
-			build_cost_ic = 36
-			fuel_consumption = 0.32
+			thrust = 26.25
+			build_cost_ic = 45
+			fuel_consumption = 0.55
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.45
+			maximum_speed = 0.15
 		}
 
 		can_convert_from = {
@@ -336,13 +336,13 @@ equipment_modules = {
 		parent = engine_3_3x
 
 		add_stats = {
-			thrust = 60
-			build_cost_ic = 54
-			fuel_consumption = 0.48
+			thrust = 34.90
+			build_cost_ic = 60
+			fuel_consumption = 0.65
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.45
+			maximum_speed = 0.15
 		}
 
 		can_convert_from = {
@@ -358,13 +358,13 @@ equipment_modules = {
 		parent = engine_3_4x
 
 		add_stats = {
-			thrust = 75
-			build_cost_ic = 72
-			fuel_consumption = 0.64
+			thrust = 43.65
+			build_cost_ic = 75
+			fuel_consumption = 0.75
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.45
+			maximum_speed = 0.15
 		}
 
 		can_convert_from = {
@@ -380,13 +380,13 @@ equipment_modules = {
 		parent = engine_3_6x
 
 		add_stats = {
-			thrust = 105
-			build_cost_ic = 108
-			fuel_consumption = 0.8
+			thrust = 50.92
+			build_cost_ic = 87.5
+			fuel_consumption = 0.85
 		}
 
 		multiply_stats = {
-			maximum_speed = 0.45
+			maximum_speed = 0.15
 		}
 
 		can_convert_from = {

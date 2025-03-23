@@ -230,6 +230,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
+					recon_camera
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
