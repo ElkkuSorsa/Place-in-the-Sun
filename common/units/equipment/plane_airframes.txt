@@ -67,17 +67,6 @@ equipments = {
 				}
 			}
 
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
-				}
-			}
-
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -86,17 +75,6 @@ equipments = {
 			}
 
 			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-				}
-			}
-
-			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
@@ -258,6 +236,17 @@ equipments = {
 				}
 			}
 
+				fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					fighter_weapon
+					cas_weapon
+					nav_bomber_weapon
+					kamikaze_bomber_weapon
+				}
+			}
+
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -274,7 +263,17 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
+				}
+			}
+
+				special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_small
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
 				}
 			}
 		}
@@ -354,7 +353,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -366,7 +364,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -378,7 +375,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 		}
@@ -467,7 +463,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -479,7 +474,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 			special_type_slot_3 = {
@@ -490,7 +484,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -502,7 +495,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 		}
@@ -593,7 +585,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -605,7 +596,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 			special_type_slot_3 = {
@@ -616,7 +606,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -628,7 +617,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 		}
@@ -727,7 +715,6 @@ equipments = {
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
 				}
 			}
 
@@ -735,7 +722,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -918,7 +904,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -930,7 +915,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1009,7 +993,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1021,7 +1004,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1033,7 +1015,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1121,7 +1102,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1133,7 +1113,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1144,7 +1123,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1234,7 +1212,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1246,7 +1223,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1257,256 +1233,12 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
-					plane_special_module_defense_turret
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 				}
 			}
-		}
-	}
-
-	zeppelin_plane_airframe = {
-		year = 1910
-
-		can_be_produced = {
-		}
-
-		is_archetype = yes
-		is_convertable = yes
-		picture = archetype_strat_bomber_equipment
-		is_buildable = no
-		type = tactical_bomber
-		type_override = fixed_main_weapon_slot
-		allowed_types = {
-			tactical_bomber
-			heavy_fighter
-			scout_plane
-		}
-		allow_mission_type = training
-		group_by = archetype
-		sprite = medium_plane
-		air_map_icon_frame = 6
-		interface_category = interface_category_air
-		
-		interface_overview_category_index = 4
-		air_superiority = 1.25
-		reliability = 0.15
-		naval_strike_attack = 1.25
-		naval_strike_targetting = 1.25
-		lend_lease_cost = 30
-		manpower = 150
-		fuel_consumption = 0
-		build_cost_ic = 10
-		resources = {
-			aluminium = 3
-			rubber = 4
-			steel = 3
-			tungsten = 4
-		}
-
-		module_slots = {
-			fixed_main_weapon_slot = {
-				required = yes
-				allowed_module_categories = {
-					tac_weapon
-					fighter_weapon
-					recon_camera
-				}
-			}
-
-			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
-				allowed_module_categories = {
-					mine_warfare_offense
-					recon_camera
-					tac_weapon
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_2 = { 
-				required = no
-				allowed_module_categories = {
-					mine_warfare_offense
-					recon_camera
-					tac_weapon
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-				}
-			}
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					mine_warfare_offense
-					recon_camera
-					tac_weapon
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-				}
-			}
-
-			engine_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					twin_plane_engine_type
-					medium_plane_engine_type
-					quad_large_plane_engine_type
-				}
-			}
-
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_medium
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-				}
-			}
-
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_medium
-				}
-			}
-
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_medium
-				}
-			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					mine_warfare_defense
-					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_medium
-				}
-			}
-		}
-
-		module_count_limit = {
-			module = fixed_explosive_charge
-			count < 2
-		}
-
-		module_count_limit = {
-			module = self_sealing_fuel_tanks_medium
-			count < 2
-		}
-
-		module_count_limit = {
-			module = non_strategic_materials_medium
-			count < 2
-		}
-
-		module_count_limit = {
-			module = flying_boat_medium
-			count < 2
-		}
-
-		module_count_limit = {
-			module = recon_camera
-			count < 2
-		}
-
-		module_count_limit = {
-			module = small_bomb_bay
-			count < 3
-		}
-
-		module_count_limit = {
-			module = torpedo_mounting
-			count < 3
-		}
-
-		module_count_limit = {
-			module = tank_buster_1
-			count < 4
-		}
-
-		module_count_limit = {
-			module = tank_buster_2
-			count < 2
-		}
-
-		module_count_limit = {
-			module = medium_bomb_bay
-			count < 3
-		}
-
-		module_count_limit = {
-			module = demining_coil
-			count < 2
-		}
-
-		module_count_limit = {
-			category = nav_bomber_weapon
-			count < 3
-		}
-
-		module_count_limit = {
-			category = plane_special_module_bomb_sights
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_radio_navigation
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_air_ground_radar
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_air_air_radar
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_defense_turret
-			count < 3
-		}
-
-		default_modules = {
-			fixed_main_weapon_slot = empty
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
 		}
 	}
 
@@ -1612,7 +1344,6 @@ equipments = {
 					plane_special_module_air_air_radar
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 				}
 			}
 
@@ -1621,7 +1352,6 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_defense
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1635,7 +1365,6 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_defense
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1842,7 +1571,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1856,7 +1584,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1869,7 +1596,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1883,7 +1609,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1977,7 +1702,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1991,7 +1715,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2004,7 +1727,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2018,7 +1740,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2032,7 +1753,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2139,7 +1859,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2153,7 +1872,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2166,7 +1884,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2180,7 +1897,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2194,7 +1910,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2303,7 +2018,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2317,7 +2031,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2330,7 +2043,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2344,7 +2056,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2358,7 +2069,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}

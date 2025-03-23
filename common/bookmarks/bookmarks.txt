@@ -6,7 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 
 		default = yes
-		default_country = GER
+		default_country = ENG
 
 		ENG = {
 			history = ENG_history
@@ -14,6 +14,11 @@ bookmarks = {
 
 			focuses = { ENG_government_of_liberals ENG_british_federation ENG_pax_britannica }
 			ideas = { ENG_british_politics_dem ENG_haldane_reform_1 ENG_house_of_lords }
+		}
+
+			USA = {
+			history = FRA_history
+			ideology = democratic
 		}
 
 		FRA = {
@@ -50,6 +55,58 @@ bookmarks = {
 			}
 
 			focuses = { AUH_empire_of_franz_josef AUH_government_funds_austria AUH_army_leadership_question }
+		}
+
+		TUR = {
+			history =
+			ideology = neutrality
+		}
+
+		SWE = {
+			minor = yes
+			history =
+			ideology = neutrality
+		}
+
+		POR = {
+			minor = yes
+			history =
+			ideology = neutrality
+		}
+
+		QIN = {
+			history =
+			ideology = neutrality
+		}
+
+		ITA = {
+			minor = yes
+			history =
+			ideology = democratic
+		}
+
+		EGY = {
+			minor = yes
+			history =
+			ideology = democratic
+		}
+
+		CAN = {
+			minor = yes
+			history =
+			ideology = democratic
+		}
+
+		ROM = {
+			minor = yes
+			history =
+			ideology = neutrality
+		}
+
+		SER = {
+			minor = yes
+			history =
+			ideology = democratic
 		}
 	}
 
