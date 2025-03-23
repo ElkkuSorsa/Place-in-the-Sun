@@ -2,7 +2,16 @@ technologies = {
 	
 	basic_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.025
+		production_factory_start_efficiency_factor = 0.025
+		industrial_capacity_factory = 0.025
+		production_factory_efficiency_gain_factor = 0.025
+		industry_repair_factor = 0.025
+		industrial_capacity_dockyard = 0.025
+		production_lack_of_resource_penalty_factor = -0.025
+		line_change_production_efficiency_factor = 0.025
+		conversion_cost_mil_to_civ_factor = -0.25
+		consumer_goods_factor = 0.025
 
 		
 		path = {
@@ -22,11 +31,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
-		start_year = 1910
+		research_cost = 3.5
+		start_year = 1890
 		folder = {
 			name = industry_folder
-			position = { x = 11 y = -2 }
+			position = { x = 11 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -40,24 +49,23 @@ technologies = {
 	}
 	early_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.03
-		industrial_capacity_factory = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-		production_speed_industrial_complex_factor = -0.02
-		production_speed_arms_factory_factor = -0.02
+		production_factory_max_efficiency_factor = 0.025
+		production_factory_start_efficiency_factor = 0.025
+		industrial_capacity_factory = 0.025
+		production_factory_efficiency_gain_factor = 0.025
+		industry_repair_factor = 0.025
 
 		path = {
 			leads_to_tech = machine_tools2
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		start_year = 1905
+		research_cost = 3.5
+		start_year = 1890
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = -1 }
+			position = { x = 11 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -278,9 +286,11 @@ technologies = {
 	}	
 	tool_maintenance = {
 	
-		production_factory_max_efficiency_factor = 0.05
-		industrial_capacity_factory = 0.05
-		industry_repair_factor = 0.05
+		industrial_capacity_dockyard = 0.025
+		production_lack_of_resource_penalty_factor = -0.025
+		line_change_production_efficiency_factor = 0.025
+		conversion_cost_mil_to_civ_factor = -0.25
+		consumer_goods_factor = 0.025
 		
 		path = {
 			leads_to_tech = worker_training 
@@ -291,7 +301,7 @@ technologies = {
 		start_year = 1911
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 2 }
+			position = { x = 11 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -307,12 +317,11 @@ technologies = {
 		}
 	}
 	worker_training = {
-		industry_repair_factor = 0.25
-		production_factory_max_efficiency_factor = 0.05
-		industrial_capacity_factory = 0.05
-		line_change_production_efficiency_factor = 0.05
-		production_factory_start_efficiency_factor = 0.05
-		industrial_capacity_dockyard = 0.05
+		production_factory_max_efficiency_factor = 0.025
+		production_factory_start_efficiency_factor = 0.025
+		industrial_capacity_factory = 0.025
+		production_factory_efficiency_gain_factor = 0.025
+		industry_repair_factor = 0.025
 		
 		path = {
 			leads_to_tech = worker_colleges
@@ -327,7 +336,7 @@ technologies = {
 		start_year = 1912
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 3 }
+			position = { x = 11 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -357,7 +366,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 6 }
+			position = { x = 6 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -373,9 +382,11 @@ technologies = {
 		}
 	}
 	on_spot_training = {
-		industry_repair_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.2
-		line_change_production_efficiency_factor = 0.05
+		industrial_capacity_dockyard = 0.025
+		production_lack_of_resource_penalty_factor = -0.025
+		line_change_production_efficiency_factor = 0.025
+		conversion_cost_mil_to_civ_factor = -0.25
+		consumer_goods_factor = 0.025
 		
 		path = {
 			leads_to_tech = foriegn_labour
@@ -386,7 +397,7 @@ technologies = {
 		start_year = 1915
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 6 }
+			position = { x = 11 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -399,17 +410,17 @@ technologies = {
 	}
 	foriegn_labour = {
 		
-		industrial_capacity_factory = 0.05
-		industrial_capacity_dockyard = 0.05
-		production_factory_efficiency_gain_factor = -0.15
-		line_change_production_efficiency_factor = -0.1
-		industry_repair_factor = -0.25
+		production_factory_max_efficiency_factor = 0.025
+		production_factory_start_efficiency_factor = 0.025
+		industrial_capacity_factory = 0.025
+		production_factory_efficiency_gain_factor = 0.025
+		industry_repair_factor = 0.025
 		
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 9 }
+			position = { x = 11 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -3059,39 +3070,6 @@ technologies = {
 			modifier = {
 				factor = 0.1
 				num_of_military_factories < 40
-			}
-		}
-		categories = {
-			industry
-		}
-	}
-	improved_medical_research = {
-		sickness_chance = -0.10
-		
-		path = {
-			leads_to_tech = antimicrobial_sulfa_drugs
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = immunization_advances
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = improved_blood_transfusions
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1912
-		folder = {
-			name = industry_folder
-			position = { x = 10 y = 3 }
-		}
-
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 5
 			}
 		}
 		categories = {
