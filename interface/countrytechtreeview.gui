@@ -2539,14 +2539,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-
-			gridboxtype = {
-				name = "experimental_rockets_tree"
-				position = { x = 540 y = 0 }
-				size = { width = 400 height = 400 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
 		}
 
 
@@ -2861,14 +2853,6 @@ guiTypes = {
 			gridboxtype = {
 				name = "air_torpedoe_1_tree"
 				position = { x = 1630 y = 32 }
-				size = { width = 400 height = 400 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "experimental_rockets_tree"
-				position = { x = 540 y = 0 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -3502,31 +3486,6 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-
-				instantTextBoxType = {
-					name = "experimental_rockets_subtitle"
-					position = { x = 1200 y = 230 }
-					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
-					text = "TITLE_EXP_ROCKETS_SUBTITLE"
-					maxWidth = 200
-					maxHeight = 122
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "atomic_research_subtitle"
-					position = { x = 1000 y = 100 }
-					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
-					text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
-					maxWidth = 200
-					maxHeight = 122
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-
 			gridboxtype = {
 				name = "electronic_mechanical_engineering_tree"
 				position = { x=0 y=172 }
@@ -3547,15 +3506,6 @@ guiTypes = {
 				name = "basic_fortification_tech_tree"
 				position = { x=400 y=172 }
 				size = { width = 680 height = 800 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-			}
-
-
-			gridboxtype = {
-				name = "experimental_rockets_tree"
-				position = { x=1050 y=172 }
-				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 			}
@@ -3583,16 +3533,6 @@ guiTypes = {
 			#	slotsize = { width=60 height= 60 }
 			#	format = "UP"
 			#}  
-
-			gridboxtype = {
-				name = "atomic_research_tree"
-				position = { x=750 y=172 }
-				size = { width = 680 height = 500 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-
-			}
-
 		}
 
 		containerWindowType = {

@@ -823,19 +823,10 @@ technologies = {
 		coastal_bunker_max_level_terrain_limit = 1
 
 		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_land_stronghold_network	
-				}
-			}
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1912
 		folder = {
 			name = electronics_folder
 			position = { x = 1 y = 0 }
