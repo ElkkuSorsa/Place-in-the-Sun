@@ -22,6 +22,10 @@ technologies = {
 			leads_to_tech = radio 
 			research_cost_coeff = 1
 		}
+			path = {
+			leads_to_tech = torpedotech1
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = mechanical_computing 
 			research_cost_coeff = 1
@@ -31,8 +35,11 @@ technologies = {
 			leads_to_tech = cavity_magnatron 
 			research_cost_coeff = 1
 		}
-		
 
+			path = {
+			leads_to_tech = ww1_fortification1
+			research_cost_coeff = 1
+		}
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_0
@@ -801,142 +808,161 @@ technologies = {
 		}
 	}
 
+	torpedotech1 = {
 
-###  ##  ###  ### ### ### ###  ##   ##  ### ###  ##  #  #     ### ###  ##  #  # #  #  ##  #    ##   ##  #   #     
-#   #  # #  #  #   #  #    #  #  # #  #  #   #  #  # ## #      #  #   #  # #  # ## # #  # #   #  # #     # #      
-##  #  # ###   #   #  ##   #  #    ####  #   #  #  # # ##      #  ##  #    #### # ## #  # #   #  # # ##   #       
-#   #  # #  #  #   #  #    #  #  # #  #  #   #  #  # #  #      #  #   #  # #  # #  # #  # #   #  # #  #   #       
-#    ##  #  #  #  ### #   ###  ##  #  #  #  ###  ##  #  #      #  ###  ##  #  # #  #  ##  ###  ##   ##    #       
-
-	basic_fortification_tech = {
-			
-		path = {
-			leads_to_tech = coastal_fort_tech_1 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = land_fort_tech_1 
-			research_cost_coeff = 1
-		}
-
-		on_research_complete = {
-
-		enable_building = {
-			building = bunker
-			level = 1
-		}
-
-		}
+		navy_submarine_attack_factor = 0.025
 		
-		research_cost = 1.5
+		path = {
+			leads_to_tech = subhulltech1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.0
 		start_year = 1912
+		
 		folder = {
 			name = electronics_folder
-			position = { x = 1 y = 2 }
+			position = { x = 5 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 		
 		categories = {
-			cat_fortification
+			electronics
+			computing_tech
 		}
-
 	}
 
+	subhulltech1 = { # Improved Submarine Compartments
 
-	land_fort_tech_1 = {
-
-		enable_equipment_modules = {
-			lc_bunker_emplacement #Module for Land Cruiser
+		submarine = {
+			max_organisation = 5
 		}
-			
+	
 		path = {
-			leads_to_tech = land_fort_tech_2 
+			leads_to_tech = torpedotech2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1914
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		categories = {
+			electronics
+		}		
+	}
+
+	torpedotech2 = {
+
+		navy_submarine_attack_factor = 0.025
+		
+		path = {
+			leads_to_tech = torpedotech3
 			research_cost_coeff = 1
 		}
 
-		bunker_max_level_terrain_limit = 1
+		research_cost = 1.25
+		start_year = 1916
 		
-		research_cost = 1.5
-		start_year = 1938
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 5}
+			position = { x = 5 y = 7 }
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 6
 		}
 		
 		categories = {
-			cat_fortification
+			electronics
+			computing_tech
 		}
-		
-
 	}
 
-	land_fort_tech_2 = {
+	torpedotech3 = {
 
-		bunker_max_level_terrain_limit = 1
+		navy_submarine_attack_factor = 0.03
 		
-		research_cost = 1.5
-		start_year = 1940
+		research_cost = 1.25
+		start_year = 1918
+		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 10 }
+			position = { x = 5 y = 9 }
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 6
 		}
 		
 		categories = {
-			cat_fortification
+			electronics
+			computing_tech
 		}
-		
-
 	}
 
 
-	coastal_fort_tech_1 = {
 
-			
+	mechanical_computing = {
+
+		# small boost to research speed
+		research_speed_factor = 0.01
+		
 		path = {
-			leads_to_tech = coastal_fort_tech_2 
+			leads_to_tech = tankaircraft1
 			research_cost_coeff = 1
 		}
 
-		coastal_bunker_max_level_terrain_limit = 1
+		path = {
+			leads_to_tech = hoi4tgw_decryption
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = hoi4tgw_encryption
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.0
+		start_year = 1907
 		
-		research_cost = 1.5
-		start_year = 1936
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 6
 		}
 		
 		categories = {
-			cat_fortification
+			electronics
+			computing_tech
 		}
-		
-
 	}
 
-	coastal_fort_tech_2 = {
 
-		coastal_bunker_max_level_terrain_limit = 2
+	hoi4tgw_decryption = {
+
+		# decryption 1
+		decryption = 1
 		
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 1907
+		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 10 }
+			position = { x = 4 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -944,11 +970,34 @@ technologies = {
 		}
 		
 		categories = {
-			cat_fortification
+			electronics
+			decryption_tech
+		}
+	}
+
+	hoi4tgw_encryption = {
+
+		# encryption 1
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1907
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
 		}
 		
-
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
 	}
+
 	########## SPECIAL PROJECTS ##########
 
 	#############################

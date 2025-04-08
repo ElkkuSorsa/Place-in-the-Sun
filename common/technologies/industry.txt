@@ -3,6 +3,35 @@ technologies = {
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.025
+			enable_building = {
+			building = rail_way
+			level = 3
+		}
+
+			enable_building = {
+			building = supply_node
+			level = 1
+		}
+
+			enable_building = {
+			building = infrastructure
+			level = 1
+		}
+
+					enable_building = {
+			building = infrastructure
+			level = 2
+		}
+
+					enable_building = {
+			building = infrastructure
+			level = 3
+		}
+
+					enable_building = {
+			building = infrastructure
+			level = 4
+		}
 
 		
 		path = {
@@ -35,6 +64,161 @@ technologies = {
 			industry
 			cat_production
 		}
+	}
+
+	ww1_fortification1 = {
+
+		enable_building = {
+			building = industrial_expansion
+			level = 1
+		}
+
+			enable_building = {
+			building = coastal_bunker
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_fortification2
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.10
+		start_year = 1905
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = { industry }
+	}
+
+		ww1_fortification2 = {
+
+		enable_building = {
+			building = industrial_expansion
+			level = 2
+		}
+
+			enable_building = {
+			building = coastal_bunker
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = ww1_fortification3
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.10
+		start_year = 1912
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = { industry }
+	}
+
+		ww1_fortification3 = {
+
+		enable_building = {
+			building = industrial_expansion
+			level = 3
+		}
+
+			enable_building = {
+			building = coastal_bunker
+			level = 3
+		}
+		
+		path = {
+			leads_to_tech = ww1_fortification4
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.10
+		start_year = 1916
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = { industry }
+	}
+
+		ww1_fortification4 = {
+
+		enable_building = {
+			building = industrial_expansion
+			level = 4
+		}
+
+			enable_building = {
+			building = coastal_bunker
+			level = 4
+		}
+		
+		path = {
+			leads_to_tech = ww1_fortification5
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1.10
+		start_year = 1920
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = { industry }
+	}
+
+		ww1_fortification5 = {
+
+		enable_building = {
+			building = industrial_expansion
+			level = 5
+		}
+
+			enable_building = {
+			building = coastal_bunker
+			level = 5
+		}
+	
+		research_cost = 1.10
+		start_year = 1924
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = { industry }
 	}
 
 	#Machine tools branch	
@@ -2373,6 +2557,11 @@ technologies = {
 			leads_to_tech = construction2
 			research_cost_coeff = 1
 		}
+
+			path = {
+			leads_to_tech = ww1_fortification1
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 1905
@@ -2450,6 +2639,10 @@ technologies = {
 
 		production_speed_buildings_factor = 0.025
 		industry_repair_factor = 0.025
+					enable_building = {
+			building = infrastructure
+			level = 5
+		}
 		
 		path = {
 			leads_to_tech = construction3 
@@ -2535,6 +2728,10 @@ technologies = {
 
 		production_speed_buildings_factor = 0.025
 		industry_repair_factor = 0.025
+					enable_building = {
+			building = infrastructure
+			level = 6
+		}
 		path = {
 			leads_to_tech = construction4 
 			research_cost_coeff = 1
@@ -2634,6 +2831,10 @@ technologies = {
 
 		production_speed_buildings_factor = 0.025
 		industry_repair_factor = 0.025
+			enable_building = {
+			building = infrastructure
+			level = 7
+		}
 
 		on_research_complete = {
 			custom_effect_tooltip = {
@@ -2764,6 +2965,10 @@ technologies = {
 
 		production_speed_buildings_factor = 0.025
 		industry_repair_factor = 0.025
+			enable_building = {
+			building = infrastructure
+			level = 8
+		}
 		
 		research_cost = 2
 		start_year = 1918
@@ -2835,6 +3040,10 @@ technologies = {
 
 		production_speed_buildings_factor = 0.025
 		industry_repair_factor = 0.025
+			enable_building = {
+			building = infrastructure
+			level = 9
+		}
 		
 		research_cost = 2
 		start_year = 1922
@@ -2939,6 +3148,15 @@ technologies = {
 
 		production_speed_buildings_factor = 0.025
 		industry_repair_factor = 0.025
+			enable_building = {
+			building = naval_facility
+		}
+			enable_building = {
+			building = land_facility
+		}
+			enable_building = {
+			building = air_facility
+		}
 		
 		research_cost = 2
 		start_year = 1928
