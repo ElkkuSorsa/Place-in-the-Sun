@@ -51,7 +51,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 500
 		}
 	}
 
@@ -78,7 +78,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 500
 		}
 	}
 
@@ -106,7 +106,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 450
 		}
 	}
 
@@ -133,7 +133,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 450
 		}
 	}
 
@@ -188,7 +188,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 450
 		}
 	}
 
@@ -216,7 +216,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 450
 		}
 	}
 
@@ -243,7 +243,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 450
 		}
 	}
 
@@ -299,7 +299,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 350
 		}
 	}
 
@@ -327,7 +327,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 350
 		}
 	}
 
@@ -355,7 +355,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 350
 		}
 	}
 
@@ -388,7 +388,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 
@@ -421,7 +421,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 
