@@ -1,5 +1,12 @@
 ﻿l_english:
- communism:0 "Communist"
+ paternal_autocrat:0 "Paternal Autocracy"
+ authoritarian_democrat:0 "Authoritarian Democracy"
+ social_conservative:0 "Social Conservatism"
+ social_liberal:0 "Social Liberalism"
+ social_democrat:0 "Social Democracy"
+ radical_socialist:0 "Radical Socialism"
+ syndicalist:0 "Syndicalism"
+  communism:0 "Communist"
  communism_noun:0 "Communism"
  democratic:0 "Democratic"
  democratic_noun:0 "Democracy"
