@@ -1,0 +1,14 @@
+characters={
+	USA_william_howard_taft = {
+		name = "William Howard Taft"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = liberalism
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/william_howard_taft.png"
+			}
+		}
+	}
+}
