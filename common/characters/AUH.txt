@@ -956,6 +956,34 @@ characters = {
     }
 }
 
+
+    auh_burstyn = {
+    name = "Gunther Adolf Burstyn"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_gunther_burstyn"
+                small = "GFX_advisor_gunther_burstyn"
+		    }
+		}
+    advisor = {
+        slot = high_command
+        traits = { panzer_expertise }
+        cost = 200
+        can_be_fired = yes
+        idea_token = auh_leopold_von_hauer
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
     auh_emil_uzelac = {
     name = "Emil Uzelac"
             portraits = {

@@ -33,6 +33,19 @@ leader_traits = {
 		special_forces_cap_flat = 2.5
 	}
 
+		panzer_expertise = {
+		random = no
+				equipment_bonus = {
+			armor = {
+				soft_attack = 0.03
+				armor_value = 0.03
+			}
+		}
+		army_armor_attack_factor = 0.07
+	    army_armor_defence_factor = 0.07
+
+	}
+
 		conrad_hotzendorf = {
 		random = no
 		army_attack_factor = 0.075

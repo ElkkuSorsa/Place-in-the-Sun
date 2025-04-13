@@ -70,6 +70,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/AUH/hazai_theorst.png"
 	}
 
+		spriteType = {
+		name = "GFX_advisor_gunther_burstyn"
+		texturefile = "gfx/interface/ideas/AUH/burstyn.png"
+	}
+
 	spriteType = {
 		name = "GFX_advisor_AUH_eugen_habsburg"
 		texturefile = "gfx/interface/ideas/AUH/eugen_teschen.png"

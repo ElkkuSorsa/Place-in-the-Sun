@@ -47,6 +47,7 @@ recruit_character = AUH_stefan_burian
 recruit_character = AUH_rudolf_brudermann
 recruit_character = AUH_viktor_krasnik
 recruit_character = AUH_arz_straussenburg
+recruit_character = auh_burstyn
 recruit_character = AUH_claudius_czibulka
 recruit_character = AUH_kovesz_koveshaza
 recruit_character = AUH_karl_huyn

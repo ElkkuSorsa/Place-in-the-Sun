@@ -1327,7 +1327,6 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		special_project_specialization = { specialization_air }
 
 		ai_will_do = {
 			factor = 1
@@ -1443,11 +1442,11 @@ technologies = {
 			}
 		}		
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 1918
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 
 		path = {
@@ -1471,7 +1470,6 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		special_project_specialization = { specialization_air }
 
 		ai_will_do = {
 			factor = 5
@@ -1509,11 +1507,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 1922
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 12 }
 		}
 
 		path = {
@@ -1532,7 +1530,6 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
 		}
-		special_project_specialization = { specialization_air }
 
 		ai_will_do = {
 			factor = 5
@@ -1573,7 +1570,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 6 }
+			position = { x = -2 y = 8 }
 		}
 
 		categories = {
@@ -1678,59 +1675,6 @@ technologies = {
 			factor = 0
 		}
 		################
-	}
-
-
-
-	##### SPECIAL PROJECTS #####
-
-	sp_centrifugal_jet_tech = {
-		allow_branch = {
-			has_dlc = "Gotterdammerung"
-		}
-		
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_jet_engine
-			} 
-		}
-
-		is_special_project_tech = yes
-
-		research_cost = 2
-		start_year = 1945
-		
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 0 y = 12 }
-		}
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 4 y = 12 }
-		}
-		
-		categories = {
-			jet_technology
-			cat_air_engine
-			helicopter_tech
-		}
-
-		category_helicopter_support_companies = {
-			fuel_consumption = -0.05
-			maximum_speed = 0.1
-			defense = 0.05
-			breakthrough = 0.05
-		}
-
-		special_project_specialization = { specialization_air }	
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 4
-			}
-		}
 	}
 
 	miniature_fighters = {

@@ -29,8 +29,53 @@ ideas = {
 			auh_construction_funds = {
 			picture = bad_funding_army
 			modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.15
 			production_speed_buildings_factor = 0.1
+			}
+		}
+
+			auh_construction_mils = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = 0.025
+			industrial_capacity_factory = 0.025
+			}
+		}
+
+			auh_construction_mils2 = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = 0.050
+			}
+		}
+			auh_construction_mils3 = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = 0.075
+			industrial_capacity_factory = 0.075
+			line_change_production_efficiency_factor = 0.025
+			}
+		}
+
+			auh_construction_mils4 = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = 0.09
+			industrial_capacity_factory = 0.09
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+			auh_construction_mils5 = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = 0.11
+			industrial_capacity_factory = 0.12
+			line_change_production_efficiency_factor = 0.075
+			production_factory_start_efficiency_factor = 0.075
+			production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 
