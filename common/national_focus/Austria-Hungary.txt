@@ -9,6 +9,8 @@ focus_tree = {
 		}
 	}
 
+	continuous_focus_position = { x = 50 y = 2000 }
+
 	default = no
 
 	# Political and Coring Tree
@@ -511,12 +513,12 @@ focus_tree = {
 
 		focus = {
 		id = AUH_construction_mils
-		icon = GFX_goal_equal_court
-		x = 31
-		y = 2
+		icon = GFX_goal_AUH_problems_with_translatheinia
+		x = 7
+		y = 3
 
-		cost = 5
-		prerequisite = { focus = AUH_empire_of_franz_josef }
+		cost = 6
+		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
 			add_ideas = auh_construction_mils
@@ -524,59 +526,138 @@ focus_tree = {
 		}
 
 		focus = {
-		id = AUH_construction_bruh
+		id = AUH_pilsen_military_odrders
 		icon = GFX_goal_equal_court
-		x = 31
+		x = 10
+		y = 6
+
+		cost = 5
+		prerequisite = { focus = AUH_german_sudetenland_expansion }
+		prerequisite = { focus = AUH_buda_military_works }
+
+		completion_reward = {
+				1009 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+			}
+		}
+
+		focus = {
+		id = AUH_oweg_in_vienna
+		icon = GFX_goal_equal_court
+		x = 8
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_construction_bruh }
+		prerequisite = { focus = AUH_buda_military_works }
+
+		completion_reward = {
+				1009 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+			}
+		}
+
+		focus = {
+		id = AUH_buda_military_works
+		icon = GFX_goal_equal_court
+		x = 9
+		y = 5
+
+		cost = 5
+		prerequisite = { focus = AUH_transylvanian_mines }
+		prerequisite = { focus = AUH_bielitz_works }
+
+		completion_reward = {
+				43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+			}
+		}
+
+		focus = {
+		id = AUH_bielitz_works
+		icon = GFX_goal_equal_court
+		x = 8
 		y = 4
 
 		cost = 5
 		prerequisite = { focus = AUH_construction_mils }
+		prerequisite = { focus = AUH_the_silesian_resources }
 
 		completion_reward = {
-			add_ideas = auh_construction_mils2
+				1145 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
 			}
+			}
+		}
+
+		focus = {
+		id = AUH_construction_bruh
+		icon = GFX_goal_equal_court
+		x = 7
+		y = 5
+
+		cost = 6
+		prerequisite = { focus = AUH_construction_mils }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_construction_mils
+    	add_idea = auh_construction_mils2
+    }
+		}
 		}
 
 		focus = {
 		id = AUH_hate_monkey
 		icon = GFX_goal_equal_court
-		x = 31
-		y = 6
+		x = 9
+		y = 7
 
-		cost = 5
-		prerequisite = { focus = AUH_construction_bruh }
+		cost = 6
+		prerequisite = { focus = AUH_oweg_in_vienna }
+		prerequisite = { focus = AUH_pilsen_military_odrders }
 
 		completion_reward = {
-			add_ideas = auh_construction_mils3
-			}
+		swap_ideas = { 
+    	remove_idea = auh_construction_mils2
+    	add_idea = auh_construction_mils3
+    }
 		}
-
-		focus = {
-		id = AUH_hoho_how_original
-		icon = GFX_goal_equal_court
-		x = 31
-		y = 8
-
-		cost = 5
-		prerequisite = { focus = AUH_hate_monkey }
-
-		completion_reward = {
-			add_ideas = auh_construction_mils4
-			}
-		}
-
-		focus = {
-		id = AUH_bro_not_again
-		icon = GFX_goal_equal_court
-		x = 31
-		y = 10
-
-		cost = 5
-		prerequisite = { focus = AUH_hoho_how_original }
-
-		completion_reward = {
-			add_ideas = auh_construction_mils5
-			}
 		}
 
 		focus = {
@@ -585,7 +666,7 @@ focus_tree = {
 		x = 11
 		y = 2
 
-		cost = 6
+		cost = 4
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -602,7 +683,7 @@ focus_tree = {
 		x = 11
 		y = 3
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -642,10 +723,15 @@ focus_tree = {
 		x = 13
 		y = 3
 
-		cost = 6
+		cost = 7
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_ghostofthepast
+    	add_idea = auh_ghostofthepast2
+    }
+
 			850 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -690,7 +776,7 @@ focus_tree = {
 		x = 9
 		y = 3
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -754,12 +840,11 @@ focus_tree = {
 		id = AUH_german_sudetenland_expansion
 		icon = GFX_goal_equal_court
 		x = 11
-		y = 4
+		y = 5
 
-		cost = 6
-		prerequisite = { focus = AUH_build_of_danubian_dam }
-		prerequisite = { focus = AUH_the_silesian_resources }
-		prerequisite = { focus = AUH_improve_the_tyrol_mines }
+		cost = 5
+		prerequisite = { focus = AUH_transylvanian_mines }
+		prerequisite = { focus = AUH_upper_hungarian_development }
 
 		completion_reward = {
 			1010 = {
@@ -825,10 +910,10 @@ focus_tree = {
 	focus = {
 		id = AUH_transylvanian_mines
 		icon = GFX_goal_equal_court
-		x = 9
+		x = 10
 		y = 4
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_the_silesian_resources }
 
@@ -888,10 +973,10 @@ focus_tree = {
 		focus = {
 		id = AUH_upper_hungarian_development
 		icon = GFX_goal_equal_court
-		x = 13
+		x = 12
 		y = 4
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_improve_the_tyrol_mines }
 
@@ -933,20 +1018,192 @@ focus_tree = {
 				amount = 2
 				}
 			}
+				add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
 		}
 	}
+
+		focus = {
+		id = AUH_core_land_of_austria
+		icon = GFX_goal_equal_court
+		x = 13
+		y = 5
+
+		cost = 7
+		prerequisite = { focus = AUH_upper_hungarian_development }
+		prerequisite = { focus = AUH_improve_the_tyrol_mines }
+
+		completion_reward = {
+			swap_ideas = { 
+    		remove_idea = auh_ghostofthepast2
+    		add_idea = auh_ghostofthepast3
+   		}
+			152 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+		}
+			153 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+		}
+	}
+}
+
+	focus = {
+		id = AUH_austrian_development_twice
+		icon = GFX_goal_equal_court
+		x = 13
+		y = 7
+
+		cost = 7
+		prerequisite = { focus = AUH_vienna_of_the_east }
+		prerequisite = { focus = AUH_core_land_of_austria }
+
+		completion_reward = {
+			swap_ideas = { 
+    		remove_idea = auh_ghostofthepast2
+    		add_idea = auh_ghostofthepast3
+   		}
+			88 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+		}
+				983 = {
+				add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+						province = {
+						id = 11666
+					}
+				}
+			}
+
+				1144 = {
+				add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+						province = {
+						id = 11666
+					}
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_development_of_kingdom_of_bohemia
+		icon = GFX_goal_equal_court
+		x = 11
+		y = 7
+
+		cost = 5
+		prerequisite = { focus = AUH_vienna_of_the_east }
+		prerequisite = { focus = AUH_german_sudetenland_expansion }
+
+		completion_reward = {
+			9 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+		}
+			75 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+				}
+			}
+		}
+		}
+	}
+
+		focus = {
+		id = AUH_expansion_of_vienna_school
+		icon = GFX_goal_equal_court
+		x = 12
+		y = 8
+
+		cost = 10
+		prerequisite = { focus = AUH_austrian_development_twice }
+		prerequisite = { focus = AUH_development_of_kingdom_of_bohemia }
+
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}	
 
 	focus = {
 		id = AUH_vienna_of_the_east
 		icon = GFX_goal_equal_court
-		x = 11
-		y = 5
+		x = 12
+		y = 6
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_german_sudetenland_expansion }
+		prerequisite = { focus = AUH_core_land_of_austria }
 
 		completion_reward = {
-			add_research_slot = 1
 			91 = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
