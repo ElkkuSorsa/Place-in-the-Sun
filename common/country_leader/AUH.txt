@@ -51,10 +51,10 @@ leader_traits = {
 		army_attack_factor = 0.075
 		army_org_factor = 0.025
 		attrition = 0.05
-		experience_gain_army = 0.25
-		non_core_manpower = -0.015
-		command_power_gain_mult = -0.1
-		experience_loss_factor = 0.05
+		experience_gain_army = 0.2
+		non_core_manpower = -0.06
+		command_power_gain_mult = -0.15
+		experience_loss_factor = 0.2
 	}
 
 		leopold_von_hauer = {
