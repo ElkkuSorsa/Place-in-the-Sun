@@ -1,9 +1,11 @@
 ﻿oob = "ITA_1936"
 capital = 1
-set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.5
-set_convoys = 0
+set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.05
+set_convoys = 35
+
+recruit_character = USA_william_howard_taft
 
 add_ideas = {
 	scraping_the_barrel
@@ -14,22 +16,18 @@ add_ideas = {
 	civilian_economy
 }
 
-
-recruit_character = TUR_mehmed_v
-
-
 #Politics for 1936.1.1
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.6.15"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 100
-	fascism = 0
-	communism = 0
-	neutrality = 0
+	democratic = 35
+	fascism = 10
+	communism = 5
+	neutrality = 50
 }
 
 #Politics for 1939.1.1

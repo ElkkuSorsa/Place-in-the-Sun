@@ -1,8 +1,8 @@
 ﻿oob = "ITA_1936"
 capital = 1
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = 0.7
+set_war_support = 0.2
 set_convoys = 0
 
 recruit_character = USA_william_howard_taft
@@ -14,33 +14,25 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
-	ITA_southern_problem_1
-	ITA_under_supplied_army_1
-	Colonial_ambitions
-	Northers_socialist_problem_1
 }
 
-
-recruit_character = 
-
-#For start date 1939.1.1
-1939.1.1 = {
-	add_political_power = 1000
-	oob =
+set_autonomy = {
+	target = KOR
+	autonomy_state = autonomy_real_union
 }
 
 #Politics for 1936.1.1
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1935.6.15"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 100
-	fascism = 0
-	communism = 0
-	neutrality = 0
+	democratic = 35
+	fascism = 10
+	communism = 5
+	neutrality = 50
 }
 
 #Politics for 1939.1.1

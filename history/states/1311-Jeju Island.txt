@@ -7,7 +7,7 @@ state=
 	state_category = rural
 	history=
 	{
-		owner = JAP
+		owner = KOR
 		buildings = {
 			infrastructure = 1
 			1177 = {
