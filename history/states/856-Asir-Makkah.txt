@@ -5,7 +5,7 @@ state={
 		1923 5037 8073 12883 13654 13655
 	}
 	history = {
-		owner = SAU
+		owner = TUR
 		add_core_of	= SAU
 		buildings = {
 			infrastructure = 1
