@@ -760,7 +760,7 @@ focus_tree = {
     	remove_idea = auh_armeereform_focus_six_bojna
     	add_idea = auh_armeereform_focus_seven_bojna
     		}
-			
+
     	}
 	}
 
@@ -781,6 +781,69 @@ focus_tree = {
 		swap_ideas = { 
     	remove_idea = auh_armeereform_focus_three
     	add_idea = auh_armeereform_focus_four_friedrich
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_friedrich_doctrine_balance_of_tactics
+		icon = GFX_goal_equal_court
+		x = 31
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_friedrich_doctrine }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_friedrich
+    	add_idea = auh_armeereform_focus_five_friedrich
+    		}
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 2
+				uses = 2
+				category = land_doctrine
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_friedrich_improve_communication_ours
+		icon = GFX_goal_equal_court
+		x = 31
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_friedrich_doctrine_balance_of_tactics }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_friedrich
+    	add_idea = auh_armeereform_focus_six_friedrich
+    		}
+				add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_friedrich_decentralize_give_more_freedom
+		icon = GFX_goal_equal_court
+		x = 31
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_friedrich_improve_communication_ours }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_friedrich
+    	add_idea = auh_armeereform_focus_seven_friedrich
     		}
     	}
 	}
