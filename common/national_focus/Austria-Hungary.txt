@@ -732,8 +732,8 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_two
-    	add_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_three
+    	add_idea = auh_armeereform_focus_four_hauer
     		}
     	}
 	}
