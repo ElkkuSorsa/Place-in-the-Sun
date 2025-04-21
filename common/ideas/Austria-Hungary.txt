@@ -250,6 +250,7 @@ ideas = {
 			production_speed_bunker_factor = 0.05
 			production_speed_coastal_bunker_factor = 0.05
 			consumer_goods_factor = 0.1
+			army_machinegun_battalion_attack_factor = 0.025
 
 			}
 
@@ -317,6 +318,7 @@ ideas = {
 			experience_loss_factor = 0.25
 			max_dig_in = -5
 			consumer_goods_factor = 0.1
+			non_core_manpower = -0.09
 			}
 
 		}
