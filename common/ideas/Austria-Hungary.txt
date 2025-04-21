@@ -26,6 +26,54 @@ ideas = {
 			}
 		}
 
+			auh_underfunded_army_two = {
+			picture = bad_funding_army
+			modifier = {
+				war_support_factor = -0.025
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.075
+				army_morale_factor = -0.075
+				mobilization_speed = -0.075
+				experience_gain_army_factor = -0.025
+				experience_gain_army_unit_factor = -0.075
+				army_speed_factor = -0.15
+				dig_in_speed_factor = -0.15
+				max_planning_factor = -0.15
+				planning_speed = -0.2
+				army_chief_cost_factor = 0.1
+				navy_chief_cost_factor = 0.1
+				air_chief_cost_factor = 0.2
+				high_command_cost_factor = 0.1
+				theorist_cost_factor = 0.2
+				command_power_gain_mult = -0.1
+				air_training_xp_gain_factor = -0.075
+			}
+		}
+
+			auh_underfunded_army_three = {
+			picture = bad_funding_army
+			modifier = {
+				army_attack_factor = -0.025
+				army_defence_factor = -0.025
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				mobilization_speed = -0.05
+				experience_gain_army_unit_factor = -0.05
+				army_speed_factor = -0.1
+				dig_in_speed_factor = -0.1
+				max_planning_factor = -0.1
+				planning_speed = -0.1
+				army_chief_cost_factor = 0.05
+				navy_chief_cost_factor = 0.05
+				air_chief_cost_factor = 0.05
+				high_command_cost_factor = 0.05
+				theorist_cost_factor = 0.1
+				command_power_gain_mult = -0.05
+				air_training_xp_gain_factor = -0.05
+			}
+		}
+
 			auh_construction_funds = {
 			picture = bad_funding_army
 			modifier = {
@@ -243,7 +291,7 @@ ideas = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
 			army_speed_factor = 0.025
-			army_defence_factor = 0.015
+			army_defence_factor = 0.025
 			dig_in_speed_factor = 0.025
 			max_dig_in = 5
 			dig_in_speed_factor = 0.05
@@ -251,7 +299,7 @@ ideas = {
 			production_speed_coastal_bunker_factor = 0.05
 			production_speed_bunker_factor = 0.05
 			consumer_goods_factor = 0.1
-			army_machinegun_battalion_attack_factor = 0.025
+			planning_speed = 0.15
 
 			}
 
@@ -283,6 +331,39 @@ ideas = {
 			cavalry_defence_factor = 0.025
 			cavalry_attack_factor = 0.025
 			experience_gain_army_unit_factor = 0.1
+			consumer_goods_factor = 0.1
+			}
+
+		}
+
+			auh_armeereform_focus_four_mass = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.05
+			army_org_factor = 0.05
+			army_speed_factor = 0.025
+			consumer_goods_factor = 0.075
+			conscription = 0.01
+			army_speed_factor = 0.05
+			army_morale_factor = 0.1
+			mobilization_speed = 0.075
 			}
 
 		}
@@ -315,8 +396,9 @@ ideas = {
 			cavalry_defence_factor = 0.015
 			cavalry_attack_factor = 0.015
 			consumer_goods_factor = 0.05
-			experience_gain_army_factor = 0.05
-			experience_gain_army_unit_factor = 0.05
+			experience_gain_army_factor = 0.025
+			experience_gain_army_unit_factor = 0.025
+			planning_speed = 0.05
 			}
 
 		}
@@ -354,6 +436,7 @@ ideas = {
 			non_core_manpower = -0.09
 			max_planning_factor = 0.075
 			experience_gain_army_unit_factor = 0.1
+			planning_speed = -0.20
 			}
 
 		}

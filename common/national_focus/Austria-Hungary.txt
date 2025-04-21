@@ -633,6 +633,10 @@ focus_tree = {
 
 		completion_reward = {
     		add_ideas = auh_armeereform_focus_one
+		swap_ideas = { 
+    	remove_idea = auh_underfunded_army
+    	add_idea = auh_underfunded_army_two
+    		}
     	}
 	}
 
@@ -666,6 +670,10 @@ focus_tree = {
 		swap_ideas = { 
     	remove_idea = auh_armeereform_focus_two
     	add_idea = auh_armeereform_focus_three
+    		}
+		swap_ideas = { 
+    	remove_idea = auh_underfunded_army_two
+    	add_idea = auh_underfunded_army_three
     		}
     	}
 	}
@@ -749,8 +757,8 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_two
-    	add_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_three
+    	add_idea = auh_armeereform_focus_four_mass
     		}
     	}
 	}
