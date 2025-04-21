@@ -294,15 +294,123 @@ ideas = {
 			army_defence_factor = 0.025
 			dig_in_speed_factor = 0.025
 			max_dig_in = 5
-			dig_in_speed_factor = 0.05
 			production_speed_bunker_factor = 0.05
 			production_speed_coastal_bunker_factor = 0.05
-			production_speed_bunker_factor = 0.05
 			consumer_goods_factor = 0.1
 			planning_speed = 0.15
 
 			}
 
+		}
+
+			auh_armeereform_focus_five_bojna = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_defence_factor = 0.05
+			dig_in_speed_factor = 0.05
+			max_dig_in = 7
+			production_speed_bunker_factor = 0.075
+			production_speed_coastal_bunker_factor = 0.075
+			consumer_goods_factor = 0.15
+			planning_speed = 0.2
+			mobilization_speed = 0.05
+
+			}
+
+		}
+
+			auh_armeereform_focus_six_bojna = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_defence_factor = 0.075
+			dig_in_speed_factor = 0.075
+			max_dig_in = 10
+			production_speed_bunker_factor = 0.01
+			production_speed_coastal_bunker_factor = 0.1
+			consumer_goods_factor = 0.2
+			planning_speed = 0.25
+			mobilization_speed = 0.1
+			army_morale_factor = 0.05
+			army_attack_factor = 0.025
+
+			}
+		}
+
+			auh_armeereform_focus_seven_bojna = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_defence_factor = 0.1
+			dig_in_speed_factor = 0.1
+			max_dig_in = 15
+			production_speed_bunker_factor = 0.015
+			production_speed_coastal_bunker_factor = 0.15
+			consumer_goods_factor = 0.25
+			planning_speed = 0.3
+			mobilization_speed = 0.15
+			army_morale_factor = 0.1
+			army_attack_factor = 0.035
+
+			}
 		}
 
 			auh_armeereform_focus_four_hauer = {

@@ -628,7 +628,7 @@ focus_tree = {
 		x = 33
 		y = 2
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -646,7 +646,7 @@ focus_tree = {
 		x = 33
 		y = 3
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_finish_1908_armeereform }
 
 		completion_reward = {
@@ -663,7 +663,7 @@ focus_tree = {
 		x = 33
 		y = 4
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_simplify_military_production }
 
 		completion_reward = {
@@ -684,8 +684,13 @@ focus_tree = {
 		x = 29
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
+		
 
 		completion_reward = {
 		swap_ideas = { 
@@ -696,13 +701,81 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_bojna_preparade_position
+		icon = GFX_goal_equal_court
+		x = 29
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_bojna_doctrine }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_bojna
+    	add_idea = auh_armeereform_focus_five_bojna
+    		}
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 0.25
+				uses = 2
+				category = infantry_weapons
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_bojna_use_of_mountains
+		icon = GFX_goal_equal_court
+		x = 29
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_bojna_preparade_position }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_bojna
+    	add_idea = auh_armeereform_focus_six_bojna
+    		}
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 0.5
+				uses = 1
+				category = mountaineers_tech
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_bojna_defensive_army
+		icon = GFX_goal_equal_court
+		x = 29
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_bojna_use_of_mountains }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_bojna
+    	add_idea = auh_armeereform_focus_seven_bojna
+    		}
+			
+    	}
+	}
+
+		focus = {
 		id = AUH_friedrich_doctrine
 		icon = GFX_goal_equal_court
 		x = 31
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
@@ -718,8 +791,12 @@ focus_tree = {
 		x = 33
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
@@ -735,8 +812,12 @@ focus_tree = {
 		x = 35
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
@@ -752,8 +833,12 @@ focus_tree = {
 		x = 37
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
