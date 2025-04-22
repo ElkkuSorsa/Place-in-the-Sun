@@ -23,6 +23,7 @@ ideas = {
 				theorist_cost_factor = 0.4
 				command_power_gain_mult = -0.2
 				air_training_xp_gain_factor = -0.15
+				recon_factor = -0.35
 			}
 		}
 
@@ -48,6 +49,7 @@ ideas = {
 				theorist_cost_factor = 0.2
 				command_power_gain_mult = -0.1
 				air_training_xp_gain_factor = -0.075
+				recon_factor = -0.25
 			}
 		}
 
@@ -71,6 +73,7 @@ ideas = {
 				theorist_cost_factor = 0.1
 				command_power_gain_mult = -0.05
 				air_training_xp_gain_factor = -0.05
+				recon_factor = -0.05
 			}
 		}
 
@@ -370,8 +373,10 @@ ideas = {
 			consumer_goods_factor = 0.2
 			planning_speed = 0.25
 			mobilization_speed = 0.1
+			terrain_penalty_reduction = 0.1
 			army_morale_factor = 0.05
 			army_attack_factor = 0.025
+			recon_factor = 0.1
 
 			}
 		}
@@ -398,6 +403,8 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
+			recon_factor = 0.1
+			terrain_penalty_reduction = 0.15
 			army_speed_factor = 0.025
 			army_defence_factor = 0.1
 			dig_in_speed_factor = 0.1
@@ -507,6 +514,7 @@ ideas = {
 			experience_gain_army_factor = 0.025
 			experience_gain_army_unit_factor = 0.025
 			planning_speed = 0.05
+			coordination_bonus = 0.05
 			}
 
 		}
@@ -544,6 +552,7 @@ ideas = {
 			planning_speed = 0.075
 			army_artillery_attack_factor = 0.015
 			army_artillery_defence_factor = 0.015
+			coordination_bonus = 0.1
 			}
 
 		}
@@ -582,6 +591,7 @@ ideas = {
 			army_artillery_attack_factor = 0.015
 			army_artillery_defence_factor = 0.015
 			army_morale_factor = 0.025
+			coordination_bonus = 0.15
 			}
 
 		}
@@ -620,6 +630,7 @@ ideas = {
 			army_artillery_attack_factor = 0.03
 			army_artillery_defence_factor = 0.03
 			army_morale_factor = 0.05
+			coordination_bonus = 0.2
 			}
 
 		}
@@ -654,10 +665,98 @@ ideas = {
 			experience_loss_factor = 0.25
 			max_dig_in = -5
 			consumer_goods_factor = 0.1
-			non_core_manpower = -0.09
+			special_forces_cap = -0.25
+			non_core_manpower = -0.12
 			max_planning_factor = 0.075
 			experience_gain_army_unit_factor = 0.1
-			planning_speed = -0.20
+			planning_speed = -0.25
+			acclimatization_hot_climate_gain_factor = -0.05
+			acclimatization_cold_climate_gain_factor = -0.05
+			attrition = 0.05
+			}
+
+		}
+
+			auh_armeereform_focus_five_hotzendorf = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.07
+			army_org_factor = 0.05
+			army_infantry_attack_factor = 0.1
+			army_infantry_defence_factor = 0.05
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.05
+			minimum_training_level = -0.2
+			experience_loss_factor = 0.3
+			max_dig_in = -7
+			consumer_goods_factor = 0.15
+			non_core_manpower = -0.16
+			max_planning_factor = 0.1
+			experience_gain_army_unit_factor = 0.15
+			planning_speed = -0.3
+			breakthrough_factor = 0.075
+			pocket_penalty = 0.25
+			recon_factor = 0.05
+			attrition = 0.075
+			}
+
+		}
+
+			auh_armeereform_focus_six_hotzendorf = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.07
+			army_org_factor = 0.05
+			army_infantry_attack_factor = 0.125
+			army_infantry_defence_factor = 0.075
+			army_artillery_attack_factor = 0.125
+			army_artillery_defence_factor = 0.075
+			minimum_training_level = -0.25
+			experience_loss_factor = 0.35
+			max_dig_in = -10
+			consumer_goods_factor = 0.20
+			non_core_manpower = -0.20
+			max_planning_factor = 0.15
+			experience_gain_army_unit_factor = 0.2
+			planning_speed = -0.35
+			breakthrough_factor = 0.1
+			pocket_penalty = 0.5
+			recon_factor = 0.075
+			attrition = 0.1
 			}
 
 		}

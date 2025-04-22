@@ -870,6 +870,27 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_ohoh_hotzendorf_war_like_trainings
+		icon = GFX_goal_equal_court
+		x = 33
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_ohoh_hotzendorf_doctrine }
+
+			available = {
+			always = no
+		}
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_hotzendorf
+    	add_idea = auh_armeereform_focus_five_hotzendorf
+    		}
+    	}
+	}
+
+		focus = {
 		id = AUH_hauer_cav_doctrine
 		icon = GFX_goal_equal_court
 		x = 35
