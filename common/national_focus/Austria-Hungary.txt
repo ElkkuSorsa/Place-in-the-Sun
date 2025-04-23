@@ -147,7 +147,13 @@ focus_tree = {
     	remove_idea = AUH_landtags_in_active_revolt
     	add_idea = AUH_landtags_in_active_revolt_better
     }
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 4
+				uses = 2
+				category = military_police_tech
 		}
+	}
 	}
 
 		focus = {
@@ -878,14 +884,51 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = AUH_ohoh_hotzendorf_doctrine }
 
-			available = {
-			always = no
-		}
-
 		completion_reward = {
 		swap_ideas = { 
     	remove_idea = auh_armeereform_focus_four_hotzendorf
     	add_idea = auh_armeereform_focus_five_hotzendorf
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins
+		icon = GFX_goal_equal_court
+		x = 33
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_ohoh_hotzendorf_war_like_trainings }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_hotzendorf
+    	add_idea = auh_armeereform_focus_six_hotzendorf
+    		}
+
+				add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 1
+				uses = 2
+				category = artillery
+		}
+    	}
+	}
+
+		focus = {
+		id = AUH_hotzendorf_officers_must_do
+		icon = GFX_goal_equal_court
+		x = 33
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_hotzendorf
+    	add_idea = auh_armeereform_focus_seven_hotzendorf
     		}
     	}
 	}
