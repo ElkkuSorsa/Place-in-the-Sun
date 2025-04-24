@@ -855,28 +855,6 @@ news_event = {
 
 	option = {
 		name = "A great occasion"
-		if = {
-			limit = { original_tag = ENG }
-			reverse_add_opinion_modifier = {
-				tag = NZL
-				modifier = happy_dominions
-			}
-
-			reverse_add_opinion_modifier = {
-				tag = AST
-				modifier = happy_dominions
-			}
-
-			reverse_add_opinion_modifier = {
-				tag = CAN
-				modifier = happy_dominions
-			}
-
-			reverse_add_opinion_modifier = {
-				tag = SAF
-				modifier = happy_dominions
-			}
-		}
 	}
 }
 
