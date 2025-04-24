@@ -1,10 +1,10 @@
 focus_tree = {
 	id = default_focus
 	country = {
-		factor = 11
+		factor = 1
 	}
 
-	shared_focus = ENT_entente_cordiale_1
+	default = yes
 
 	focus = {
 		id = focus_tree
