@@ -12,13 +12,24 @@ focus_tree = {
 	default = no 
 	continuous_focus_position = { x = 120 y = 1800 }
 
+	focus = {
+		id = ITA_giolitti_era
+		icon = GFX_focus_generic_modernize_industry
+		x = 30
+		y = 4
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
 	# Italian Industry Tree
+
 	focus = {
 		id = ITA_industrial_innovation
 		icon = GFX_focus_generic_modernize_industry
 		x = 8
 		y = 4
-		prerequisite = { focus = ITA_giolitti_era }
 
 		cost = 5
 
@@ -30,7 +41,8 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	
+	focus = {
 		id = ITA_light_industry_buildup
 		icon = GFX_focus_generic_modernize_industry
 		x = 9
@@ -47,11 +59,7 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-	   	focus = {
+	focus = {
 		id = ITA_Facilate_industrial_growth
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		x = 7
@@ -76,7 +84,7 @@ focus_tree = {
 	} 
 
 
-		focus = {
+	focus = {
 		id = ITA_steel_mills_in_calabria
 		icon = GFX_focus_generic_steel
 		x = 6
@@ -132,7 +140,7 @@ focus_tree = {
 
 
 	
-		focus = {
+	focus = {
 		id = ITA_fund_lancia
 		icon = GFX_focus_generic_tank_production
 		x = 5
@@ -157,7 +165,7 @@ focus_tree = {
 		}
 	} 
 	
-	   	focus = {
+	focus = {
 		id = ITA_Modernizzare_il_sud
 		icon = GFX_
 		x = 11
@@ -194,7 +202,7 @@ focus_tree = {
 		}
 	} 
 
-		focus = {
+	focus = {
 		id = ITA_work_with_ilva
 		icon = GFX_focus_generic_steel
 		x = 11
@@ -215,7 +223,7 @@ focus_tree = {
 		}
 	}
 
-		   	focus = {
+	focus = {
 		id = ITA_arms_contract_with_berretta
 		icon = GFX_focus_generic_modernize_industry
 		x = 9
@@ -253,7 +261,7 @@ focus_tree = {
 		}
 	 
 	
-	   	focus = {
+	focus = {
 		id = ITA_invest_into_central_italy
 		icon = Gfx_focus_generic_monetary_union
 		x = 8
@@ -304,7 +312,7 @@ focus_tree = {
 
 	} 
 
-	   	focus = {
+	focus = {
 		id = ITA_electrify_the_countryside
 		icon = Gfx_focus_generic_monetary_union
 		x = 7
@@ -329,7 +337,7 @@ focus_tree = {
 
 	} 
 	
-		focus = {
+	focus = {
 		id = ITA_Breda_atrillery_depot
 		icon = Gfx_focus_generic_monetary_union
 		x = 9
@@ -353,12 +361,11 @@ focus_tree = {
 		}
 	}        
 		# Italian Army Tree
-		focus = {
+	focus = {
 		id = ITA_implement_army_reforms
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 20
 		y = 4
-		prerequisite = { focus = ITA_giolitti_era }
 
 		cost = 10
 
@@ -373,7 +380,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = ITA_supply_reforms
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 19
@@ -392,7 +399,7 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = ITA_recruiment_drive
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 21
@@ -409,7 +416,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = ITA_leadership_debate
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 20
@@ -423,577 +430,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		country_event = {
-		id = Army_commander_selection.1 
-		days = 2
-		}
-		}
-	}
-	
-		focus = {
-		id = ITA_Luigi_cadorna
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 16
-		y = 7
-		mutually_exclusive = { focus = ITA_Armando_Dias }
-		prerequisite = { focus = ITA_leadership_debate}
-		cost = 5
-
-		available = {
-		always = no
-		}
-
-		completion_reward = {
-		Manpower = 20000
-		}
-	}
-	
-		focus = {
-		id = ITA_Armando_Dias
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 24
-		y = 7
-		mutually_exclusive = { focus = ITA_Luigi_cadorna }
-		prerequisite = { focus = ITA_leadership_debate}
-		cost = 5
-
-		available = {
-		always = no
-		}
-
-		completion_reward = {
-		Manpower = 20000
-		}
-	}
-		focus = {
-		id = ITA_Slowly_but_surely
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 23
-		y = 8
-		
-		prerequisite = { focus = ITA_Armando_Dias}
-		cost = 7
-
-		available = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_under_supplied_army_3
-				add_idea = ITA_under_supplied_army_4
+			country_event = {
+				id = Army_commander_selection.1 
+				days = 2
 			}
 		}
-	}
-		focus = {
-		id = ITA_quick_victory
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 17
-		y = 8
-		
-		prerequisite = { focus = ITA_Luigi_cadorna}
-		cost = 7
-
-		available = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_under_supplied_army_3
-				add_idea = ITA_under_supplied_army_5
-			}
-		}
-	}
-		focus = {
-		id = ITA_Relentless_assaults
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 16
-		y = 9
-		
-		prerequisite = { focus = ITA_quick_victory}
-		cost = 7
-
-		available = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_under_supplied_army_3
-				add_idea = ITA_under_supplied_army_5
-			}
-		}
-	}
-		focus = {
-		id = ITA_overwelhm_the_enemy
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 15
-		y = 8
-		
-		prerequisite = { focus = ITA_Luigi_cadorna}
-		cost = 7
-
-		available = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_under_supplied_army_3
-				add_idea = ITA_under_supplied_army_5
-			}
-		}
-	}
-
-
-
-
-	
-		focus = {
-		id = ITA_market_liberal_reforms
-		icon = Gfx_focus_generic_monetary_union
-		x = 8
-		y = 10
-
-		prerequisite = { focus = ITA_urbanize_the_south focus = ITA_Breda_atrillery_depot}
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-			159 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = 	industrial_complex
-					level = 1
-					instant_build = yes
-				}
-					
-			}
-		}
-	} 
-	   	focus = {
-		id = ITA_deal_with_the_northern_socialists
-		icon = Gfx_focus_generic_monetary_union
-		x = 13
-		y = 5
-		
-		
-		prerequisite = { focus = ITA_industrial_innovation}
-		cost = 5
-
-		available = { }
-
-		completion_reward = {
-				swap_ideas = { 
-				remove_idea = Northers_socialist_problem_1
-				add_idea = Northers_socialist_problem_2
-				}	
-					
-			
-		} 
-
-	}
-		focus = {
-		id = ITA_promote_young_talents
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 23
-		y = 9
-		prerequisite = { focus = ITA_Slowly_but_surely}
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-		Manpower = 20000
-		}
-	}
-		focus = {
-		id = ITA_Army_innovation
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 20
-		y = 8
-		prerequisite = { focus = ITA_Armando_Dias focus = ITA_Luigi_cadorna}
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		add_research_slot = 1
-		}
-	}
-		focus = {
-		id = ITA_The_Fiat_3000
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 19
-		y = 9
-		prerequisite = { focus = ITA_Army_innovation}
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-				add_tech_bonus = {
-				bonus = 0.75
-				uses = 1
-				category = armor
-			}
-		}
-	}
-		focus = {
-		id = ITA_Aerial_innovation
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 21
-		y = 9
-		prerequisite = { focus = ITA_Army_innovation}
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-
-		focus = {
-		id = ITA_Tackle_recruiment_issues
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 25
-		y = 8
-		
-		prerequisite = { focus = ITA_Armando_Dias}
-		cost = 7
-
-		available = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_under_supplied_army_4
-				add_idea = ITA_new_reforms_1
-			}
-		}
-	}
-		focus = {
-		id = ITA_reform_soldier_conditions
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 25
-		y = 9
-		
-		prerequisite = { focus = ITA_Tackle_recruiment_issues}
-		cost = 7
-
-		available = { has_completed_focus = ITA_promote_young_talents
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_new_reforms_1
-				add_idea = ITA_new_reforms_2
-			}
-		}
-	}
-
-
-
-
-		# Italian Political tree
-			
-	focus = {
-		id = ITA_giolitti_era
-
-		x = 35
-		y = 3
-
-		available = {
-
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ITA_parliamentary_dictator
-
-		x = 35
-		y = 4
-
-		prerequisite = { focus = ITA_giolitti_era }
-
-		available = {
-
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ITA_continue_liberal_policies
-
-		x = 43
-		y = 5
-
-		prerequisite = { focus = ITA_parliamentary_dictator }
-
-		available = {
-
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ITA_work_with_nationalists
-
-		x = 32
-		y = 5
-
-		prerequisite = { focus = ITA_parliamentary_dictator }
-
-		available = {
-
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ITA_royalist_conspiracy
-
-		x = 31
-		y = 6
-
-		prerequisite = { focus = ITA_work_with_nationalists }
-		mutually_exclusive = { focus = ITA_parliamentary_coup }
-
-		available = {
-
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ITA_parliamentary_coup
-
-		x = 33
-		y = 6
-
-		prerequisite = { focus = ITA_work_with_nationalists }
-		mutually_exclusive = { focus = ITA_royalist_conspiracy }
-
-		available = {
-
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-		focus = {
-		id = ITA_Building_an_empire
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 50
-		y = 4
-		cost = 5
-		prerequisite = { focus = ITA_giolitti_era }
-
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-		focus = {
-		id = ITA_Claim_libya
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 49
-		y = 5
-		cost = 5
-		prerequisite = { focus = ITA_Building_an_empire}
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-		focus = {
-		id = ITA_Send_the_ultimatum
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 49
-		y = 6
-		cost = 5
-		prerequisite = { focus = ITA_Claim_libya}
-		available = {
-		}
-
-		completion_reward = {
-		
-		}
-	}
-		focus = {
-		id = ITA_Libyan_disaster
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 48
-		y = 7
-		cost = 5
-		mutually_exclusive = { focus = ITA_victory_over_the_turks }
-		prerequisite = { focus = ITA_Send_the_ultimatum}
-		available = { 
-		}
-
-		completion_reward = {
-		war_support = -0.1
-		add_political_power = -100
-		}
-	}
-		focus = {
-		id = ITA_victory_over_the_turks
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 50
-		y = 7
-		cost = 5
-		mutually_exclusive = { focus = ITA_Libyan_disaster }
-		prerequisite = { focus = ITA_Send_the_ultimatum}
-		available = { 
-		}
-
-		completion_reward = {
-		war_support = 0.05
-		add_political_power = 50
-		}
-	}
-		focus = {
-		id = ITA_revenge_of_1885
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 49
-		y = 8
-		cost = 5
-		prerequisite = { focus = ITA_Libyan_disaster focus = ITA_victory_over_the_turks }
-		available = { 
-		}
-
-		completion_reward = {
-		war_support = 0.05
-		add_political_power = 50
-		}
-	}
-
-
-
-
-		focus = {
-		id = ITA_negotiate_with_austria
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 53
-		y = 5
-		cost = 5
-		prerequisite = { focus = ITA_Building_an_empire}
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-		focus = {
-		id = ITA_negotiate_with_austria
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 53
-		y = 5
-		cost = 5
-		prerequisite = { focus = ITA_Building_an_empire}
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-		focus = {
-		id = ITA_negotiations_fail
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 54
-		y = 6
-		cost = 5
-		prerequisite = { focus = ITA_negotiate_with_austria}
-		mutually_exclusive = { focus = ITA_negotiations_succeed }
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-		focus = {
-		id = ITA_negotiations_succeed
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 52
-		y = 6
-		cost = 5
-		prerequisite = { focus = ITA_negotiate_with_austria}
-		mutually_exclusive = { focus = ITA_negotiations_fail }
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-		
-		focus = {
-		id = ITA_join_central_powers
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 52
-		y = 7
-		cost = 5
-		mutually_exclusive = { focus = ITA_join_entente }
-		prerequisite = { focus = ITA_negotiations_succeed}
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-	}
-
-		focus = {
-		id = ITA_join_entente
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 54
-		y = 7
-		cost = 5
-		mutually_exclusive = { focus = ITA_join_central_powers }
-		prerequisite = { focus = ITA_negotiations_fail focus = ITA_negotiations_succeed }
-		available = {
-		}
-
-		completion_reward = {
-		add_political_power = 70
-		}
-			if = {
-			limit = { has_completed_focus = ITA_negotiations_succeed }
-		completion_reward = {
-		add_war_support = -0.25
-		}
-		}
-
-
-
 	}
 }

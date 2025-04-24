@@ -1,4 +1,5 @@
 add_namespace = balkan_league
+add_namespace = balkan_wars
 
 country_event = {
 	id = balkan_league.1

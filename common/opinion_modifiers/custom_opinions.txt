@@ -1,6 +1,11 @@
 opinion_modifiers = {
 	ENG_embrace_german_heritage_modi = {
 		value = 20
-		decay = 0
+		decay = 0.5
+	}
+
+	happy_dominions = {
+		value = 20
+		decay = 0.5
 	}
 }

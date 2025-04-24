@@ -255,7 +255,7 @@ technologies = {
 		}
 
 			path = {
-			leads_to_tech =
+		#	leads_to_tech =
 			research_cost_coeff = 1
 		}
 

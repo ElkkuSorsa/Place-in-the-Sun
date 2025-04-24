@@ -1,7 +1,9 @@
-add_namespace = Army_commander_selection
+add_namespace = ITA_army_commander_selection
+add_namespace = ITA_libya
+add_namespace = ITA_Electoral_reform
 
 country_event = {
-	id = Army_commander_selection.1
+	id = ITA_army_commander_selection.1
 	title = "Question of Leadership"
 	desc = "Italy needs a great and competent officer to lead their army.  "
 
@@ -17,9 +19,10 @@ country_event = {
 		name = "We must keep Cadorna, old order shall not fall!"
 		complete_national_focus = ITA_Luigi_cadorna
 	}
+}
 
 
-	country_event = {
+country_event = {
 	id = ITA_Electoral_reform.1
 	title = "Italian electoral reform of 1912 begins"
 	desc = "its finally time to reform our voting system. This reforms will allow literate men over the age of 21, illerirate men over 30 and soldiers to vote. "
@@ -29,7 +32,7 @@ country_event = {
 
 	option = {
 		name = "More reforms are always good."
-		complete_national_focus = 
+	#	complete_national_focus = 
 	}
 
 	option = {
@@ -39,32 +42,109 @@ country_event = {
 	trigger = {
 		date = 1912.4.29
 	}
+}
 
-	id = Libya_or_war.1
-	title = "Libya or war"
-	desc = "italian diplomats have presented us demands concerning the status of libya.  "
+news_event = {
+	id = ITA_libya.1
+	picture = GFX_news_event_generic_south_american_dreadnought_race
+	title = "Italo-Turkish War"
+	desc = "After the Ottoman Empire rejected the Italians demands to annex Libya, Italy has declared war for the Ottoman Empire. The empire is weak and struggling in the Balkans, so victory for them will be uncertain."
 
 	is_triggered_only = yes
-	fire_only_once = no
+	fire_only_once = yes
+	major = yes
 
 	option = {
-		name = "We shall accept the demands."
-		complete_national_focus = ITA_victory_over_the_turks
+		name = "The sick man falls into coma..."
 	}
-
-	option = {
-		name = "Italy may perhaps be intersted in negotiations"
-		complete_national_focus = ITA_victory_over_the_turks
-	}
-		option = {
-		name = "we shall never give up libya!"
-		complete_national_focus = ITA_Libyan_disaster
-	}
-
-
-
-
-
-
 }
+
+country_event = {
+	id = ITA_libya.2
+	picture = GFX_news_event_ast_navy
+	title = "Italy demands Libya"
+	desc = "We have received a warning ultimatum from the Kingdom of Italy demanding the full annexation of Libya. If we don't accept it, this will likely lead to war with the Italians. We are a weak empire and the war could be a catastrophe for us..."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "We must protect the empire!"
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+				add = 100
+			}
+		}
+	}
+
+	option = {
+		name = "We must agree to save the empire."
+	}
+}
+
+news_event = {
+	id = ITA_libya.3
+	picture = GFX_news_event_generic_read_write
+	title = "Treaty of Ouchy"
+	desc = "The Ottoman Empire has lost its war against the kingdom of Italy after the invasion of Libya. The outcome was excpected as the Ottomans are weaker since the Balkan situation has escalated to new levels."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		hidden_effect = {
+			ITA = {
+				transfer_state = 448
+				transfer_state = 661
+				transfer_state = 662
+				transfer_state = 449
+				transfer_state = 450
+				transfer_state = 451
+				transfer_state = 483
+				transfer_state = 273
+			}
+		}
+	}
+
+	option = {
+		name = "Interesting..."
+	}
+}
+
+news_event = {
+	id = ITA_libya.4
+	picture = GFX_news_event_generic_read_write
+	title = "Ottoman victory in Libya"
+	desc = "The Ottoman Empire has defeated Italy unexpectedly as the Italians were stronger than the so called sick man of Europe, the Ottoman Empire."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			ITA = {
+				transfer_state = 448
+				transfer_state = 661
+				transfer_state = 662
+				transfer_state = 449
+				transfer_state = 450
+				transfer_state = 451
+				transfer_state = 483
+				transfer_state = 273
+			}
+		}
+	}
+
+	option = {
+		name = "Interesting..."
+	}
 }

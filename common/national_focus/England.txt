@@ -212,7 +212,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-
+			custom_effect_tooltip = "This is not ready!!!!!!!!!!!!! DONT PLAY!!!"
 		}
 	}
 
@@ -813,7 +813,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_private_schools
+		id = ENG_neo_liberalism
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		x = 39
 		y = 7
@@ -927,7 +927,7 @@ focus_tree = {
 		y = 8
 		prerequisite = { focus = ENG_poor_laws }
 		prerequisite = { focus = ENG_national_insurance_act }
-		prerequisite = { focus = ENG_private_schools }
+		prerequisite = { focus = ENG_neo_liberalism }
 
 		offset = {
 			x = -20
@@ -1862,8 +1862,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			add_ideas = agressive_diplomacy
 		}
 	}
 
@@ -2281,225 +2280,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ENG_dreams_of_federation
-		icon = GFX_focus_generic_support_the_left_right
-		x = 66
-		y = 5
-		prerequisite = { focus = ENG_law focus = ENG_balfour }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 20
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_develop_oceania
-		icon = GFX_goal_reichsautobahn
-		x = 65
-		y = 7
-		prerequisite = { focus = ENG_dreams_of_federation }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_develop_canada
-		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = 64
-		y = 6
-		prerequisite = { focus = ENG_dreams_of_federation }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_malaysian_dominion
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 66
-		y = 6
-		prerequisite = { focus = ENG_dreams_of_federation }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_develop_south_africa
-		icon = GFX_focus_generic_africa_infrastructure
-		x = 68
-		y = 6
-		prerequisite = { focus = ENG_dreams_of_federation }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_develop_egypt
-		icon = GFX_goal_generic_production2
-		x = 67
-		y = 7
-		prerequisite = { focus = ENG_dreams_of_federation }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_question_of_raj
-		icon = GFX_focus_RAJ_british_investors
-		x = 66
-		y = 8
-		prerequisite = { focus = ENG_develop_canada }
-		prerequisite = { focus = ENG_develop_egypt }
-		prerequisite = { focus = ENG_develop_oceania }
-		prerequisite = { focus = ENG_develop_south_africa }
-		prerequisite = { focus = ENG_malaysian_dominion }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_imperial_conference_con
-		icon = GFX_focus_generic_improve_the_administration
-		x = 66
-		y = 9
-		prerequisite = { focus = ENG_question_of_raj }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_british_federation
-		icon = GFX_focus_eng_imperial_federation
-		x = 66
-		y = 10
-		prerequisite = { focus = ENG_imperial_conference_con }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 30
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
 
 	focus = {
 		id = ENG_constitutionalism
@@ -3267,12 +3047,17 @@ focus_tree = {
 		prerequisite = { focus = ENG_embrace_german_heritage }
 		mutually_exclusive = { focus = ENG_pax_britannica_focus }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
 
+		bypass = {
+			has_completed_focus = ENG_divert_resources
+		}
+
 		completion_reward = {
+			add_ideas = agressive_diplomacy
 		}
 	}
 
@@ -3767,7 +3552,7 @@ focus_tree = {
 		cost = 10
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -3802,7 +3587,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_haldane_reforms }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -3845,7 +3630,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_military_industries }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -3885,7 +3670,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_field_artillery }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -3926,7 +3711,7 @@ focus_tree = {
 		y = 4
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -3968,7 +3753,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_shell_crisis }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4021,7 +3806,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_emergancy_factories }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4079,7 +3864,7 @@ focus_tree = {
 		y = 2
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4122,7 +3907,7 @@ focus_tree = {
 		y = 3
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4157,7 +3942,7 @@ focus_tree = {
 		y = 3
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4192,7 +3977,7 @@ focus_tree = {
 		y = 4
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4232,7 +4017,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_industrial_powerhouse }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4295,7 +4080,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_further_infra }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4330,7 +4115,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_industrial_powerhouse }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4370,7 +4155,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_industrial_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4411,7 +4196,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_utilize_colony_resources }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4450,7 +4235,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_industrial_powerhouse }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4493,7 +4278,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_develop_textile_industry }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4533,7 +4318,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_steel_industries }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4587,7 +4372,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_utilize_colony_resources }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4648,7 +4433,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_develop_home_counties }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4684,7 +4469,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_develop_textile_industry }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4733,7 +4518,7 @@ focus_tree = {
 		y = 3
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4786,7 +4571,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_home_industries focus = ENG_heavy_industry focus = ENG_steel_industries }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4823,7 +4608,7 @@ focus_tree = {
 		y = 1
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4866,7 +4651,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_haldane_reforms }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4906,7 +4691,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_vickers_limited }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4940,7 +4725,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_haldane_reforms }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -4989,7 +4774,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_lessons_of_war }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5044,7 +4829,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5092,7 +4877,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_expeditionary_force }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5135,7 +4920,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_support_arms_factories }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5181,7 +4966,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_haldane_reforms }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5216,7 +5001,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_military_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5254,7 +5039,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_weapon_reasearch }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5271,24 +5056,29 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 
 	focus = {
-		id = ENG_poison_gas
+		id = ENG_machine_guns
 		icon = GFX_goal_generic_build_tank
 		x = 95
 		y = 4
 		prerequisite = { focus = ENG_weapon_reasearch }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5305,7 +5095,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -5322,7 +5112,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_weapon_reasearch }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5339,7 +5129,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -5363,7 +5153,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_poison_gas }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5402,7 +5192,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_tanks }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5441,7 +5231,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_military_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5467,7 +5257,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 2
-				category = light_air
+				category = air_equipment
 			}
 		}
 	}
@@ -5480,7 +5270,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_royal_airforce }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5497,12 +5287,20 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 15
 
 		available = {
 		}
 
 		completion_reward = {
+			127 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -5513,7 +5311,7 @@ focus_tree = {
 		y = 1
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5547,7 +5345,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_two_power_standard_focus }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5582,7 +5380,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_military_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5617,7 +5415,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_divert_resources }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5636,6 +5434,10 @@ focus_tree = {
 
 		cost = 10
 
+		bypass = {
+			has_completed_focus = ENG_divert_resources
+		}
+
 		available = {
 		}
 
@@ -5651,7 +5453,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_end_to_the_race }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5686,7 +5488,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_end_to_the_race }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5706,6 +5508,9 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			not = {
+				has_completed_focus = ENG_divert_resources
+			}
 		}
 
 		completion_reward = {
@@ -5724,7 +5529,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_divert_resources }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5759,7 +5564,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_military_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5793,7 +5598,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_naval_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5827,7 +5632,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_naval_innovation }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5860,7 +5665,7 @@ focus_tree = {
 		y = 1
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5894,7 +5699,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_south_africa_act }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5928,7 +5733,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_south_africa_act }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5962,7 +5767,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_commonwealth }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -5996,7 +5801,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_commonwealth }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -6030,7 +5835,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_commonwealth }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -6064,7 +5869,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_oceania }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -6098,7 +5903,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_oceania }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -6132,7 +5937,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_commonwealth }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}
@@ -6166,7 +5971,7 @@ focus_tree = {
 		prerequisite = { focus = ENG_commonwealth }
 
 		offset = {
-			x = -27
+			x = -35
 			trigger = {
 				has_completed_focus = ENG_conservative_victory
 			}

@@ -80,6 +80,16 @@ ideas = {
 			}
 		}
 
+		agressive_diplomacy = {
+			picture = generic_navy_bonus
+			modifier = {
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -0.3
+				lend_lease_tension = -0.7
+				send_volunteers_tension = -0.5
+			}
+		}
+
 		naval_race = {
 			picture = generic_navy_bonus
 			modifier = {
