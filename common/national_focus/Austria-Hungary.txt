@@ -147,7 +147,13 @@ focus_tree = {
     	remove_idea = AUH_landtags_in_active_revolt
     	add_idea = AUH_landtags_in_active_revolt_better
     }
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 4
+				uses = 2
+				category = military_police_tech
 		}
+	}
 	}
 
 		focus = {
@@ -628,11 +634,15 @@ focus_tree = {
 		x = 33
 		y = 2
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
     		add_ideas = auh_armeereform_focus_one
+		swap_ideas = { 
+    	remove_idea = auh_underfunded_army
+    	add_idea = auh_underfunded_army_two
+    		}
     	}
 	}
 
@@ -642,7 +652,7 @@ focus_tree = {
 		x = 33
 		y = 3
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_finish_1908_armeereform }
 
 		completion_reward = {
@@ -659,13 +669,17 @@ focus_tree = {
 		x = 33
 		y = 4
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_simplify_military_production }
 
 		completion_reward = {
 		swap_ideas = { 
     	remove_idea = auh_armeereform_focus_two
     	add_idea = auh_armeereform_focus_three
+    		}
+		swap_ideas = { 
+    	remove_idea = auh_underfunded_army_two
+    	add_idea = auh_underfunded_army_three
     		}
     	}
 	}
@@ -676,8 +690,13 @@ focus_tree = {
 		x = 29
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
+		
 
 		completion_reward = {
 		swap_ideas = { 
@@ -688,13 +707,81 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_bojna_preparade_position
+		icon = GFX_goal_equal_court
+		x = 29
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_bojna_doctrine }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_bojna
+    	add_idea = auh_armeereform_focus_five_bojna
+    		}
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 0.25
+				uses = 2
+				category = infantry_weapons
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_bojna_use_of_mountains
+		icon = GFX_goal_equal_court
+		x = 29
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_bojna_preparade_position }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_bojna
+    	add_idea = auh_armeereform_focus_six_bojna
+    		}
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 0.5
+				uses = 1
+				category = mountaineers_tech
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_bojna_defensive_army
+		icon = GFX_goal_equal_court
+		x = 29
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_bojna_use_of_mountains }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_bojna
+    	add_idea = auh_armeereform_focus_seven_bojna
+    		}
+
+    	}
+	}
+
+		focus = {
 		id = AUH_friedrich_doctrine
 		icon = GFX_goal_equal_court
 		x = 31
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
@@ -705,13 +792,80 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_friedrich_doctrine_balance_of_tactics
+		icon = GFX_goal_equal_court
+		x = 31
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_friedrich_doctrine }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_friedrich
+    	add_idea = auh_armeereform_focus_five_friedrich
+    		}
+			add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 2
+				uses = 2
+				category = land_doctrine
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_friedrich_improve_communication_ours
+		icon = GFX_goal_equal_court
+		x = 31
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_friedrich_doctrine_balance_of_tactics }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_friedrich
+    	add_idea = auh_armeereform_focus_six_friedrich
+    		}
+				add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_friedrich_decentralize_give_more_freedom
+		icon = GFX_goal_equal_court
+		x = 31
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_friedrich_improve_communication_ours }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_friedrich
+    	add_idea = auh_armeereform_focus_seven_friedrich
+    		}
+    	}
+	}
+
+		focus = {
 		id = AUH_ohoh_hotzendorf_doctrine
 		icon = GFX_goal_equal_court
 		x = 33
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
@@ -722,18 +876,80 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_ohoh_hotzendorf_war_like_trainings
+		icon = GFX_goal_equal_court
+		x = 33
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_ohoh_hotzendorf_doctrine }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_hotzendorf
+    	add_idea = auh_armeereform_focus_five_hotzendorf
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins
+		icon = GFX_goal_equal_court
+		x = 33
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_ohoh_hotzendorf_war_like_trainings }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_hotzendorf
+    	add_idea = auh_armeereform_focus_six_hotzendorf
+    		}
+
+				add_tech_bonus = {
+				name = DEN_expand_haerens_tekniske_korps
+				bonus = 1
+				uses = 2
+				category = artillery
+		}
+    	}
+	}
+
+		focus = {
+		id = AUH_hotzendorf_officers_must_do
+		icon = GFX_goal_equal_court
+		x = 33
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_hotzendorf
+    	add_idea = auh_armeereform_focus_seven_hotzendorf
+    		}
+    	}
+	}
+
+		focus = {
 		id = AUH_hauer_cav_doctrine
 		icon = GFX_goal_equal_court
 		x = 35
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_two
-    	add_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_three
+    	add_idea = auh_armeereform_focus_four_hauer
     		}
     	}
 	}
@@ -744,13 +960,17 @@ focus_tree = {
 		x = 37
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
+
+			available = {
+			always = no
+		}
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_two
-    	add_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_three
+    	add_idea = auh_armeereform_focus_four_mass
     		}
     	}
 	}

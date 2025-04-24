@@ -23,6 +23,57 @@ ideas = {
 				theorist_cost_factor = 0.4
 				command_power_gain_mult = -0.2
 				air_training_xp_gain_factor = -0.15
+				recon_factor = -0.35
+			}
+		}
+
+			auh_underfunded_army_two = {
+			picture = bad_funding_army
+			modifier = {
+				war_support_factor = -0.025
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.075
+				army_morale_factor = -0.075
+				mobilization_speed = -0.075
+				experience_gain_army_factor = -0.025
+				experience_gain_army_unit_factor = -0.075
+				army_speed_factor = -0.15
+				dig_in_speed_factor = -0.15
+				max_planning_factor = -0.15
+				planning_speed = -0.2
+				army_chief_cost_factor = 0.1
+				navy_chief_cost_factor = 0.1
+				air_chief_cost_factor = 0.2
+				high_command_cost_factor = 0.1
+				theorist_cost_factor = 0.2
+				command_power_gain_mult = -0.1
+				air_training_xp_gain_factor = -0.075
+				recon_factor = -0.25
+			}
+		}
+
+			auh_underfunded_army_three = {
+			picture = bad_funding_army
+			modifier = {
+				army_attack_factor = -0.025
+				army_defence_factor = -0.025
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				mobilization_speed = -0.05
+				experience_gain_army_unit_factor = -0.05
+				army_speed_factor = -0.1
+				dig_in_speed_factor = -0.1
+				max_planning_factor = -0.1
+				planning_speed = -0.1
+				army_chief_cost_factor = 0.05
+				navy_chief_cost_factor = 0.05
+				air_chief_cost_factor = 0.05
+				high_command_cost_factor = 0.05
+				theorist_cost_factor = 0.1
+				command_power_gain_mult = -0.05
+				air_training_xp_gain_factor = -0.05
+				recon_factor = -0.05
 			}
 		}
 
@@ -246,11 +297,188 @@ ideas = {
 			army_defence_factor = 0.025
 			dig_in_speed_factor = 0.025
 			max_dig_in = 5
-			dig_in_speed_factor = 0.05
 			production_speed_bunker_factor = 0.05
 			production_speed_coastal_bunker_factor = 0.05
 			consumer_goods_factor = 0.1
+			planning_speed = 0.15
 
+			}
+
+		}
+
+			auh_armeereform_focus_five_bojna = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_defence_factor = 0.05
+			dig_in_speed_factor = 0.05
+			max_dig_in = 7
+			production_speed_bunker_factor = 0.075
+			production_speed_coastal_bunker_factor = 0.075
+			consumer_goods_factor = 0.15
+			planning_speed = 0.2
+			mobilization_speed = 0.05
+
+			}
+
+		}
+
+			auh_armeereform_focus_six_bojna = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_defence_factor = 0.075
+			dig_in_speed_factor = 0.075
+			max_dig_in = 10
+			production_speed_bunker_factor = 0.01
+			production_speed_coastal_bunker_factor = 0.1
+			consumer_goods_factor = 0.2
+			planning_speed = 0.25
+			mobilization_speed = 0.1
+			terrain_penalty_reduction = 0.1
+			army_morale_factor = 0.05
+			army_attack_factor = 0.025
+			recon_factor = 0.1
+
+			}
+		}
+
+			auh_armeereform_focus_seven_bojna = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			recon_factor = 0.1
+			terrain_penalty_reduction = 0.15
+			army_speed_factor = 0.025
+			army_defence_factor = 0.1
+			dig_in_speed_factor = 0.1
+			max_dig_in = 15
+			production_speed_bunker_factor = 0.015
+			production_speed_coastal_bunker_factor = 0.15
+			consumer_goods_factor = 0.25
+			planning_speed = 0.3
+			mobilization_speed = 0.15
+			army_morale_factor = 0.1
+			army_attack_factor = 0.035
+
+			}
+		}
+
+			auh_armeereform_focus_four_hauer = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.05
+			army_speed_factor = 0.025
+			cavalry_defence_factor = 0.025
+			cavalry_attack_factor = 0.025
+			experience_gain_army_unit_factor = 0.1
+			consumer_goods_factor = 0.1
+			}
+
+		}
+
+			auh_armeereform_focus_four_mass = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.05
+			army_org_factor = 0.05
+			army_speed_factor = 0.025
+			consumer_goods_factor = 0.075
+			conscription = 0.01
+			army_speed_factor = 0.05
+			army_morale_factor = 0.1
+			mobilization_speed = 0.075
 			}
 
 		}
@@ -278,11 +506,131 @@ ideas = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
 			army_speed_factor = 0.025
-			army_infantry_attack_factor = 0.025
-			army_infantry_defence_factor = 0.025
-			cavalry_defence_factor = 0.05
-			cavalry_attack_factor = 0.05
+			army_infantry_attack_factor = 0.015
+			army_infantry_defence_factor = 0.015
+			cavalry_defence_factor = 0.015
+			cavalry_attack_factor = 0.015
+			consumer_goods_factor = 0.05
+			experience_gain_army_factor = 0.025
+			experience_gain_army_unit_factor = 0.025
+			planning_speed = 0.05
+			coordination_bonus = 0.05
+			}
+
+		}
+
+			auh_armeereform_focus_five_friedrich = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_infantry_attack_factor = 0.03
+			army_infantry_defence_factor = 0.03
+			cavalry_defence_factor = 0.03
+			cavalry_attack_factor = 0.03
 			consumer_goods_factor = 0.1
+			experience_gain_army_factor = 0.05
+			experience_gain_army_unit_factor = 0.05
+			planning_speed = 0.075
+			army_artillery_attack_factor = 0.015
+			army_artillery_defence_factor = 0.015
+			coordination_bonus = 0.1
+			}
+
+		}
+
+			auh_armeereform_focus_six_friedrich = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_infantry_attack_factor = 0.045
+			army_infantry_defence_factor = 0.045
+			cavalry_defence_factor = 0.045
+			cavalry_attack_factor = 0.045
+			consumer_goods_factor = 0.15
+			experience_gain_army_factor = 0.05
+			experience_gain_army_unit_factor = 0.05
+			planning_speed = 0.075
+			army_artillery_attack_factor = 0.015
+			army_artillery_defence_factor = 0.015
+			army_morale_factor = 0.025
+			coordination_bonus = 0.15
+			}
+
+		}
+
+			auh_armeereform_focus_seven_friedrich = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_speed_factor = 0.025
+			army_infantry_attack_factor = 0.06
+			army_infantry_defence_factor = 0.06
+			cavalry_defence_factor = 0.06
+			cavalry_attack_factor = 0.06
+			consumer_goods_factor = 0.2
+			experience_gain_army_factor = 0.075
+			experience_gain_army_unit_factor = 0.075
+			planning_speed = 0.1
+			army_artillery_attack_factor = 0.03
+			army_artillery_defence_factor = 0.03
+			army_morale_factor = 0.05
+			coordination_bonus = 0.2
 			}
 
 		}
@@ -309,14 +657,148 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.065
 			army_org_factor = 0.05
-			army_infantry_attack_factor = 0.075
+			army_infantry_attack_factor = 0.05
 			army_infantry_defence_factor = 0.025
-			army_artillery_attack_factor = 0.075
+			army_artillery_attack_factor = 0.05
 			army_artillery_defence_factor = 0.025
-			minimum_training_level = -0.15
-			experience_loss_factor = 0.25
-			max_dig_in = -5
+			max_dig_in = -2
 			consumer_goods_factor = 0.1
+			special_forces_cap = 0.10
+			non_core_manpower = -0.15
+			max_planning_factor = 0.1
+			experience_gain_army_unit_factor = 0.1
+			planning_speed = -0.25
+			acclimatization_hot_climate_gain_factor = -0.05
+			acclimatization_cold_climate_gain_factor = -0.15
+			attrition = 0.1
+			recon_factor = 0.075
+			pocket_penalty = 0.25
+			}
+
+		}
+
+			auh_armeereform_focus_five_hotzendorf = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.065
+			army_org_factor = 0.05
+			army_infantry_attack_factor = 0.075
+			army_infantry_defence_factor = 0.05
+			army_artillery_attack_factor = 0.075
+			army_artillery_defence_factor = 0.05
+			max_dig_in = -4
+			consumer_goods_factor = 0.15
+			special_forces_cap = 0.20
+			non_core_manpower = -0.25
+			max_planning_factor = 0.15
+			experience_gain_army_unit_factor = 0.15
+			planning_speed = -0.3
+			acclimatization_hot_climate_gain_factor = -0.025
+			acclimatization_cold_climate_gain_factor = -0.1
+			attrition = 0.15
+			recon_factor = 0.1
+			pocket_penalty = 0.5
+			}
+
+		}
+
+			auh_armeereform_focus_six_hotzendorf = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.065
+			army_org_factor = 0.05
+			army_infantry_attack_factor = 0.1
+			army_infantry_defence_factor = 0.075
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.075
+			max_dig_in = -6
+			consumer_goods_factor = 0.2
+			special_forces_cap = 0.25
+			non_core_manpower = -0.35
+			max_planning_factor = 0.2
+			experience_gain_army_unit_factor = 0.20
+			planning_speed = -0.35
+			acclimatization_cold_climate_gain_factor = -0.075
+			attrition = 0.2
+			recon_factor = 0.15
+			pocket_penalty = 0.75
+			}
+
+		}
+
+			auh_armeereform_focus_seven_hotzendorf = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+					support_equipment = {
+					build_cost_ic = -0.05
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.05
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.025
+				}
+			}
+			modifier = {
+			army_org_regain = 0.065
+			army_org_factor = 0.05
+			army_infantry_attack_factor = 0.15
+			army_infantry_defence_factor = 0.1
+			army_artillery_attack_factor = 0.15
+			army_artillery_defence_factor = 0.1
+			max_dig_in = -8
+			consumer_goods_factor = 0.25
+			special_forces_cap = 0.3
+			non_core_manpower = -0.45
+			max_planning_factor = 0.25
+			experience_gain_army_unit_factor = 0.25
+			planning_speed = -0.4
+			acclimatization_cold_climate_gain_factor = -0.05
+			attrition = 0.25
+			recon_factor = 0.2
+			army_breakthrough_against_minor_factor = 0.05
+			army_breakthrough_against_major_factor = 0.025
+			pocket_penalty = 0.75
 			}
 
 		}
