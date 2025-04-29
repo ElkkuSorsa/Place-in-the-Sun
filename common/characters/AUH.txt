@@ -596,6 +596,24 @@ characters = {
 				}
 			}
 		}
+
+	 advisor = {
+        slot = army_chief
+        traits = { friedrich_habsburg }
+        cost = 150
+        can_be_fired = yes
+        idea_token = AUH_friedrich_habsburg
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
 	}
 
 		AUH_claudius_czibulka = {
@@ -929,34 +947,6 @@ characters = {
 		}
 	}
 
-    auh_leopold_von_hauer = {
-    name = "Leopold von Hauer"
-            portraits = {
-			civilian = {
-				large = "GFX_portrait_auh_leopold_hauer"
-                small = "GFX_advisor_auh_leopold_hauer"
-		    }
-		}
-    advisor = {
-        slot = army_chief
-        traits = { leopold_von_hauer }
-        cost = 150
-        can_be_fired = yes
-        idea_token = auh_leopold_von_hauer
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
-        available = {
-            always = yes
-        }
-    }
-}
-
-
     auh_burstyn = {
     name = "Gunther Adolf Burstyn"
             portraits = {
@@ -1029,6 +1019,33 @@ characters = {
         allowed = {
             OR = {
                 always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    auh_leopold_von_hauer = {
+    name = "Leopold von Hauer"
+            portraits = {
+			civilian = {
+				large = "GFX_portrait_auh_leopold_hauer"
+                small = "GFX_advisor_auh_leopold_hauer"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { leopold_von_hauer }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_leopold_von_hauer
+
+        allowed = {
+            OR = {
+                always = YES
             }
         }
 

@@ -138,6 +138,16 @@ leader_traits = {
 		experience_gain_army = 0.15
 	}
 
+		friedrich_habsburg = {
+		random = no
+		army_attack_factor = 0.025
+		army_defence_factor = 0.025
+		army_org_factor = 0.05
+		experience_gain_army = 0.75
+		army_artillery_defence_factor = 0.025
+		army_artillery_attack_factor = 0.025
+	}
+
 		goglia_lipa = {
 		random = no
 		army_artillery_attack_factor = 0.1

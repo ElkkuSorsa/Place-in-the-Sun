@@ -88,7 +88,6 @@ recruit_character = auh_arthur_giesling
 recruit_character = AUH_otto_ellison_nidlef
 recruit_character = auh_rudolf_stoger_steinstatten
 activate_advisor = AUH_friedrich_von_georgi
-activate_advisor = auh_conrad_hotzendorff
 activate_advisor = AUH_alois_lexa_von_aehrenthal
 
 set_variable = { X_AUH_propaganda_3_cost = 90 }

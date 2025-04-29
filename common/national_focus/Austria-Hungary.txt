@@ -681,6 +681,10 @@ focus_tree = {
     	remove_idea = auh_underfunded_army_two
     	add_idea = auh_underfunded_army_three
     		}
+					country_event = {
+					id = austria_hungary.8
+					days = 1
+				}
     	}
 	}
 
@@ -1022,6 +1026,78 @@ focus_tree = {
 		swap_ideas = { 
     	remove_idea = auh_armeereform_focus_three
     	add_idea = auh_armeereform_focus_four_mass
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_moblilization_of_the_masses
+		icon = GFX_goal_equal_court
+		x = 37
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_mass_assault_doctrine }
+
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_mass
+    	add_idea = auh_armeereform_focus_five_mass
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_reorganize_recruiting_schema
+		icon = GFX_goal_equal_court
+		x = 37
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_we_must_fill_the_ranks }
+
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_five_mass
+    	add_idea = auh_armeereform_focus_six_mass
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_swarms_of_men
+		icon = GFX_goal_equal_court
+		x = 37
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_reorganize_recruiting_schema }
+
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_six_mass
+    	add_idea = auh_armeereform_focus_seven_mass
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_we_must_fill_the_ranks
+		icon = GFX_goal_equal_court
+		x = 37
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_mass_assault_doctrine }
+
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_four_mass
+    	add_idea = auh_armeereform_focus_five_mass
     		}
     	}
 	}

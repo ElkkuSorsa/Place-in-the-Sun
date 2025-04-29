@@ -83,3 +83,40 @@ country_event = {
 		name = "Unsere Waffenbrüder"
 	}
 }
+
+country_event = {
+	id = austria_hungary.8
+	title = "New leadership of AOK"
+	desc = austria_hungary.8.d
+	picture = GFX_winged_hussar
+	is_triggered_only = yes
+
+	option = {
+		name = "Svetozar Boroević von Bojna"
+		complete_national_focus = AUH_bojna_doctrine
+		activate_advisor = auh_svetozar_bojna
+	}
+
+		option = {
+		name = "Friedrich Habsburg-Teschen"
+		complete_national_focus = AUH_friedrich_doctrine
+		activate_advisor = AUH_friedrich_habsburg
+	}
+
+		option = {
+		name = "Franz Conrad von Hötzendorf"
+		complete_national_focus = AUH_ohoh_hotzendorf_doctrine
+		activate_advisor =  auh_conrad_hotzendorff
+	}
+
+		option = {
+		name = "Leopold von Hauer"
+		complete_national_focus = AUH_hauer_cav_doctrine
+		activate_advisor =  auh_leopold_von_hauer
+	}
+
+		option = {
+		name = "Actually, none, we believe in superiority of men"
+		complete_national_focus = AUH_mass_assault_doctrine
+	}
+}
