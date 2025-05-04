@@ -5150,7 +5150,7 @@ focus_tree = {
 		y = 5
 		prerequisite = { focus = ENG_rifle_improvements }
 		prerequisite = { focus = ENG_heavy_howitzer }
-		prerequisite = { focus = ENG_poison_gas }
+		prerequisite = { focus = ENG_machine_guns }
 
 		offset = {
 			x = -35
@@ -5397,7 +5397,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -5432,7 +5432,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		bypass = {
 			has_completed_focus = ENG_divert_resources
@@ -5470,7 +5470,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -5505,7 +5505,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 			not = {
@@ -5546,7 +5546,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -5581,12 +5581,17 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = naval_equipment
+			}
 		}
 	}
 
@@ -5615,12 +5620,17 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 2
 
 		available = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = mio_cat_tech_all_capital_ship_and_modules
+			}
 		}
 	}
 
@@ -5649,12 +5659,17 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 2
 
 		available = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = mio_cat_tech_all_destroyer_and_modules
+			}
 		}
 	}
 
