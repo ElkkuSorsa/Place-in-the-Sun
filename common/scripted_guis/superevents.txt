@@ -19,6 +19,7 @@ scripted_gui = {
 			clr_country_flag = SE_bolshevik
 			clr_country_flag = SE_unification_rome
 			clr_country_flag = SE_RUS_civil_war
+			clr_country_flag = SE_RUS_february
 		}
     }
 
@@ -46,6 +47,9 @@ scripted_gui = {
 		}
 		superevents_RUS_civil_war_visible = {
 			has_country_flag = SE_RUS_civil_war
+		}
+		superevents_RUS_february_visible = {
+			has_country_flag = SE_RUS_february
 		}
 		
     }

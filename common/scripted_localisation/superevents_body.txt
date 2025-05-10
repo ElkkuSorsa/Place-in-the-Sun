@@ -58,4 +58,10 @@ defined_text = {
 		}
 		localization_key = SE_RUS_civil_war_body
 	}
+	text = {
+		trigger = {
+			has_country_flag = SE_RUS_february
+		}
+		localization_key = SE_RUS_february_body
+	}
 }

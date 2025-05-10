@@ -2,6 +2,11 @@
  SE_ww1_title: "The Great War"
  SE_ww1_body: "No compromise on the main purpose; no peace till victory; no pact with unrepentant wrong! \n\n-Winston Churchill"
  SE_ww1_remark: "War to end all wars!"
+ 
  SE_RUS_civil_war_title: "The Russian Civil War"
- SE_RUS_civil_war_body: "The Russian Civil War"
- SE_RUS_civil_war_remark: "The Russian Civil War"
+ SE_RUS_civil_war_body: "What is going to happen to me and all of Russia? I am not prepared to be a Tsar. I never wanted to become one. I know nothing of the business of ruling. \n\n-Nicholas II"
+ SE_RUS_civil_war_remark: "End to the eastern aristocracy!"
+
+ SE_RUS_february_title: "[GetMonth] Revolution"
+ SE_RUS_february_body: "Forward to the battle for freedom. I summon you not to a feast but death! \n\n-Alexandr Kerensky"
+ SE_RUS_february_remark: "Will this last?"

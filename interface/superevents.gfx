@@ -16,8 +16,9 @@ spriteTypes = {
 		name = "GFX_supereventsoverlay"
 		textureFile = "/gfx/superevents_gui/supereventsoverlay.dds"
 	}
-	
-	#meat and potatoes
+
+
+
 	spriteType = {
 		name = "GFX_superevents_ww1"
 		textureFile = "/gfx/superevents_pictures/superevents_ww1.dds"
@@ -49,5 +50,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_superevents_RUS_civil_war"
 		textureFile = "/gfx/superevents_pictures/superevents_RUS_civil_war.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_RUS_february"
+		textureFile = "/gfx/superevents_pictures/superevents_RUS_february.dds"
 	}
 }
