@@ -162,7 +162,7 @@ focus_tree = {
 		x = 22
 		y = 5
 
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
@@ -189,7 +189,7 @@ focus_tree = {
 		x = 24
 		y = 5
 
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
@@ -218,7 +218,7 @@ focus_tree = {
 		x = 26
 		y = 5
 
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
@@ -243,7 +243,7 @@ focus_tree = {
 		x = 23
 		y = 6
 
-		cost = 3
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
 		prerequisite = {focus = AUH_purge_of_unloyal_hungarians} 
@@ -263,7 +263,7 @@ focus_tree = {
 		x = 25
 		y = 6
 
-		cost = 3
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
 		prerequisite = {focus = AUH_serbians_on_their_own} 
@@ -289,7 +289,7 @@ focus_tree = {
 		x = 24
 		y = 7
 
-		cost = 6
+		cost = 7
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_austrian_sud_tirol}  
 		prerequisite = {focus = AUH_slovenian_debate} 
@@ -353,7 +353,7 @@ focus_tree = {
 			always = no
 		}
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_elections_1911}
 
@@ -368,7 +368,7 @@ focus_tree = {
 		x = 0
 		y = 4
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_victory_of_cs}
 
@@ -386,7 +386,7 @@ focus_tree = {
 		x = 0
 		y = 5
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_safeguard_traditions_cs}
 
@@ -404,7 +404,7 @@ focus_tree = {
 		x = 0
 		y = 6
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_award_new_titles_cs}
 
@@ -422,7 +422,7 @@ focus_tree = {
 		x = 1
 		y = 7
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_the_socialists_parties_cs}
 
@@ -535,7 +535,7 @@ focus_tree = {
 			always = no
 		}
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_elections_1911}
 
@@ -551,7 +551,7 @@ focus_tree = {
 		x = 4
 		y = 4
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_victory_of_sdap}
 
@@ -569,7 +569,7 @@ focus_tree = {
 		x = 4
 		y = 5
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_improve_the_workers_rights_sdap}
 
@@ -587,7 +587,7 @@ focus_tree = {
 		x = 4
 		y = 6
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_naturfreunde_sdap}
 
@@ -605,7 +605,7 @@ focus_tree = {
 		x = 3
 		y = 7
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_implement_women_universal_suffrage_sdap}
 
@@ -623,7 +623,7 @@ focus_tree = {
 		x = 16
 		y = 3
 
-		cost = 5
+		cost = 11
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
@@ -662,7 +662,7 @@ focus_tree = {
 		x = 16
 		y = 5
 
-		cost = 5
+		cost = 7
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_integrate_party_political}
 
@@ -680,7 +680,7 @@ focus_tree = {
 		x = 18
 		y = 5
 
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_integrate_party_political}
 
@@ -715,7 +715,7 @@ focus_tree = {
 		x = 16
 		y = 6
 
-		cost = 4
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_propagate_loyal_culture }
 
@@ -753,7 +753,7 @@ focus_tree = {
 		x = 18
 		y = 6
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_second_language_german}
 
@@ -781,7 +781,7 @@ focus_tree = {
 		x = 17
 		y = 7
 
-		cost = 5
+		cost = 8
 		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
 		prerequisite = {focus = AUH_propagate_loyal_culture2}
 
@@ -839,7 +839,7 @@ focus_tree = {
 		x = 8
 		y = 6
 
-		cost = 6
+		cost = 7
 		prerequisite = { focus = AUH_construction_bruh }
 		prerequisite = { focus = AUH_buda_military_works }
 
@@ -931,7 +931,7 @@ focus_tree = {
 		x = 33
 		y = 2
 
-		cost = 6
+		cost = 8
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -944,12 +944,79 @@ focus_tree = {
 	}
 
 		focus = {
+		id = AUH_naval_rearnamnet
+		icon = GFX_goal_equal_court
+		x = 43
+		y = 2
+
+		cost = 6
+		prerequisite = { focus = AUH_empire_of_franz_josef }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_study_of_submarines
+		icon = GFX_goal_equal_court
+		x = 41
+		y = 3
+
+		cost = 6
+		prerequisite = { focus = AUH_naval_rearnamnet }
+		mutually_exclusive = {focus = AUH_focus_on_bigger_ships}
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_give_uboots_greenlight
+		icon = GFX_goal_equal_court
+		x = 41
+		y = 4
+
+		cost = 6
+		prerequisite = { focus = AUH_study_of_submarines }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_focus_on_bigger_ships
+		icon = GFX_goal_equal_court
+		x = 43
+		y = 3
+
+		cost = 6
+		prerequisite = { focus = AUH_naval_rearnamnet }
+		mutually_exclusive = {focus = AUH_study_of_submarines}
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_hotzendorf_doctrine_on_ships
+		icon = GFX_goal_equal_court
+		x = 43
+		y = 4
+
+		cost = 6
+		prerequisite = { focus = AUH_focus_on_bigger_ships }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
 		id = AUH_simplify_military_production
 		icon = GFX_goal_equal_court
 		x = 33
 		y = 3
 
-		cost = 6
+		cost = 9
 		prerequisite = { focus = AUH_finish_1908_armeereform }
 
 		completion_reward = {
@@ -962,11 +1029,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_we_must_pick_aok_leader
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_AUH_army_leadership_question
 		x = 33
 		y = 4
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_simplify_military_production }
 
 		completion_reward = {
@@ -1419,11 +1486,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_construction_funds
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_AUH_government_funds_austria
 		x = 11
 		y = 2
 
-		cost = 4
+		cost = 5
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -1440,7 +1507,7 @@ focus_tree = {
 		x = 11
 		y = 3
 
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1480,7 +1547,7 @@ focus_tree = {
 		x = 13
 		y = 3
 
-		cost = 7
+		cost = 8
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1533,7 +1600,7 @@ focus_tree = {
 		x = 9
 		y = 3
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1599,7 +1666,7 @@ focus_tree = {
 		x = 11
 		y = 5
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_transylvanian_mines }
 		prerequisite = { focus = AUH_upper_hungarian_development }
 
@@ -1670,7 +1737,7 @@ focus_tree = {
 		x = 10
 		y = 4
 
-		cost = 5
+		cost = 7
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_the_silesian_resources }
 
@@ -1733,7 +1800,7 @@ focus_tree = {
 		x = 12
 		y = 4
 
-		cost = 5
+		cost = 6
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_improve_the_tyrol_mines }
 
@@ -1789,7 +1856,7 @@ focus_tree = {
 		x = 13
 		y = 5
 
-		cost = 7
+		cost = 8
 		prerequisite = { focus = AUH_upper_hungarian_development }
 		prerequisite = { focus = AUH_improve_the_tyrol_mines }
 
@@ -1829,7 +1896,7 @@ focus_tree = {
 		x = 13
 		y = 7
 
-		cost = 7
+		cost = 8
 		prerequisite = { focus = AUH_vienna_of_the_east }
 		prerequisite = { focus = AUH_core_land_of_austria }
 
@@ -1898,7 +1965,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 						province = {
 						id = 11666
@@ -1941,7 +2008,7 @@ focus_tree = {
 		x = 12
 		y = 8
 
-		cost = 10
+		cost = 13
 		prerequisite = { focus = AUH_austrian_development_twice }
 		prerequisite = { focus = AUH_development_of_kingdom_of_bohemia }
 
@@ -1956,7 +2023,7 @@ focus_tree = {
 			x = 12
 			y = 6
 
-			cost = 5
+			cost = 6
 			prerequisite = { focus = AUH_german_sudetenland_expansion }
 			prerequisite = { focus = AUH_core_land_of_austria }
 
@@ -1990,32 +2057,6 @@ focus_tree = {
 			986 = {
 			add_extra_state_shared_building_slots = 2
 		}
-	}
-}
-	focus = {
-		id = AUH_government_funds_austria
-		icon = GFX_goal_AUH_government_funds_austria
-		x = 1
-		y = 1
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = AUH_army_leadership_question
-		icon = GFX_goal_AUH_army_leadership_question
-		x = 2
-		y = 1
-		army_leadership_question
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		add_political_power = 100
 	}
 }
 }

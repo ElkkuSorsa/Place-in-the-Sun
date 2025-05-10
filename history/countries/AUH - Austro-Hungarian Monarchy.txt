@@ -1,8 +1,8 @@
 oob = "AUH_1936"
 capital = 4
 set_research_slots = 2
-set_stability = 0.43
-set_war_support = 0.2
+set_stability = 0.4
+set_war_support = 0.15
 set_convoys = 61
 
 
