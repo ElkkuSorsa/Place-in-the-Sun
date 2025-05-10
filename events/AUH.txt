@@ -134,7 +134,7 @@ country_event = {
 	}
 
 		option = {
-		name = "Deutscher Nationalverband"
+		name = "Deutscher Nationalverband (DO NOT CLICK NOW)"
 		complete_national_focus = AUH_victory_of_dfp
 	}
 

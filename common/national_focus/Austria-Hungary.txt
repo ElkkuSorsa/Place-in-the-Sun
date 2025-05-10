@@ -137,7 +137,7 @@ focus_tree = {
 		x = 24
 		y = 4
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_give_jobs_to_regionals}
 		prerequisite = {focus = AUH_give_rights_to_no_hungarian_minorities}    
@@ -289,7 +289,7 @@ focus_tree = {
 		x = 24
 		y = 7
 
-		cost = 5
+		cost = 6
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_austrian_sud_tirol}  
 		prerequisite = {focus = AUH_slovenian_debate} 
@@ -330,6 +330,10 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}
+
+		available = {
+		date > 1911.6.20
+		}
 
 		completion_reward = {
 		country_event = {
