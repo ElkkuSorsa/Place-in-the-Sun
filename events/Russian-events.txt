@@ -45,17 +45,43 @@ country_event = {
 
 	fire_only_once = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = "We should focus on swift reforms."
 		add_stability = -0.05
-        add_timed_idea = { idea = RUS_swift_agrarian_reform days = 180}
+		add_timed_idea = { idea = RUS_swift_agrarian_reform days = 180}
 	}
 	option = {
 		name = "Slow and steady wins the race!"
 		add_stability = 0.05
-        add_political_power = 50
-        add_timed_idea = { idea = RUS_slow_agrarian_reform days = 180}
+		add_political_power = 50
+		add_timed_idea = { idea = RUS_slow_agrarian_reform days = 180}
+	}
+}
+
+add_namespace = RUS_revolution
+
+country_event = {
+	id = RUS_revolution.1
+	title = "Tsar Nicholas II abdicates"
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Provisional government rules Russia!"
+		add_stability = 0.05
+		set_politics = {
+			ruling_party = neutrality
+		}
+		promote_character = RUS_george_lvov
+		set_party_name = {
+			ideology = neutrality
+			name = "Provisional Government"
+			long_name = "Provisional Russian Government"
+		}
+		set_cosmetic_tag = RUS_PRO
+		load_focus_tree = RUS_pro_focus_tree
 	}
 }

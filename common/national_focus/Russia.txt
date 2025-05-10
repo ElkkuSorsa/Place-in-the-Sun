@@ -1624,7 +1624,9 @@ focus = {
 	
 }
 
-
+focus_tree = {
+	id = RUS_pro_focus_tree
+}
 
 
 
