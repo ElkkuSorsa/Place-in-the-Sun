@@ -120,3 +120,26 @@ country_event = {
 		complete_national_focus = AUH_mass_assault_doctrine
 	}
 }
+
+country_event = {
+	id = austria_hungary.9
+	title = "Elections of 1911"
+	desc = austria_hungary.9.d
+	picture = GFX_winged_hussar
+	is_triggered_only = yes
+
+	option = {
+		name = "Christlichsoziale Partei"
+		complete_national_focus = AUH_victory_of_cs
+	}
+
+		option = {
+		name = "Deutscher Nationalverband"
+		complete_national_focus = AUH_victory_of_dfp
+	}
+
+		option = {
+		name = "Sozialdemokratische Arbaiter Partei"
+		complete_national_focus = AUH_victory_of_dfp
+	}
+}

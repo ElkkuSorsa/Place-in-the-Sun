@@ -297,6 +297,7 @@ focus_tree = {
 		completion_reward = {
 		swap_ideas = { 
     	remove_idea = AUH_landtags_in_active_revolt_better
+		
     	add_idea = AUH_well_oiled_machine
     }
 		}
@@ -316,6 +317,298 @@ focus_tree = {
 		country_event = {
 		id = austria_hungary.6
 		days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_elections_1911
+		icon = GFX_goal_crown_head
+		x = 2
+		y = 2
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_empire_of_franz_josef}
+
+		completion_reward = {
+		country_event = {
+		id = austria_hungary.9
+		days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_victory_of_cs
+		icon = GFX_goal_crown_head
+		x = 0
+		y = 3
+
+			available = {
+			always = no
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_elections_1911}
+
+		completion_reward = {
+			add_ideas = AUH_victory_of_the_css
+		}
+	}
+
+		focus = {
+		id = AUH_safeguard_traditions_cs
+		icon = GFX_goal_crown_head
+		x = 0
+		y = 4
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_victory_of_cs}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_css
+				add_idea = AUH_victory_of_the_css2
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_award_new_titles_cs
+		icon = GFX_goal_crown_head
+		x = 0
+		y = 5
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_safeguard_traditions_cs}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_css2
+				add_idea = AUH_victory_of_the_css3
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_limit_the_socialists_parties_cs
+		icon = GFX_goal_crown_head
+		x = 0
+		y = 6
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_award_new_titles_cs}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_css3
+				add_idea = AUH_victory_of_the_css4
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_tradition_lives_on_cs
+		icon = GFX_goal_crown_head
+		x = 1
+		y = 7
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_limit_the_socialists_parties_cs}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_css4
+				add_idea = AUH_victory_of_the_css5
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_victory_of_dfp
+		icon = GFX_goal_crown_head
+		x = 2
+		y = 3
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_elections_1911}
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			add_ideas = AUH_victory_of_the_dfp
+		}
+	}
+
+		focus = {
+		id = AUH_sideline_minorities_dfp
+		icon = GFX_goal_crown_head
+		x = 2
+		y = 4
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_victory_of_dfp}
+
+		completion_reward = {
+		country_event = {
+		id = austria_hungary.6
+		days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_expand_trade_with_germany_dfp
+		icon = GFX_goal_crown_head
+		x = 2
+		y = 5
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_sideline_minorities_dfp}
+
+		completion_reward = {
+		country_event = {
+		id = austria_hungary.6
+		days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_invite_german_advisors_dfp
+		icon = GFX_goal_crown_head
+		x = 2
+		y = 6
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_expand_trade_with_germany_dfp}
+
+		completion_reward = {
+		country_event = {
+		id = austria_hungary.6
+		days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_is_this_the_pan_german_dream_dfp
+		icon = GFX_goal_crown_head
+		x = 2
+		y = 8
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_invite_german_advisors_dfp}
+
+		completion_reward = {
+		country_event = {
+		id = austria_hungary.6
+		days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_victory_of_sdap
+		icon = GFX_goal_crown_head
+		x = 4
+		y = 3
+
+		available = {
+			always = no
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_elections_1911}
+
+		completion_reward = {
+			
+			add_ideas = AUH_victory_of_the_sdap
+		}
+	}
+
+		focus = {
+		id = AUH_improve_the_workers_rights_sdap
+		icon = GFX_goal_crown_head
+		x = 4
+		y = 4
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_victory_of_sdap}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_sdap
+				add_idea = AUH_victory_of_the_sdap2
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_naturfreunde_sdap
+		icon = GFX_goal_crown_head
+		x = 4
+		y = 5
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_improve_the_workers_rights_sdap}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_sdap2
+				add_idea = AUH_victory_of_the_sdap3
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_implement_women_universal_suffrage_sdap
+		icon = GFX_goal_crown_head
+		x = 4
+		y = 6
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_naturfreunde_sdap}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_sdap3
+				add_idea = AUH_victory_of_the_sdap4
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_dream_of_austromarxists_sdap
+		icon = GFX_goal_crown_head
+		x = 3
+		y = 7
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		prerequisite = {focus = AUH_implement_women_universal_suffrage_sdap}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_victory_of_the_sdap4
+				add_idea = AUH_victory_of_the_sdap5
 			}
 		}
 	}
