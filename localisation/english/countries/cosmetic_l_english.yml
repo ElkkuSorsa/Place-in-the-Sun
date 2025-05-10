@@ -1,14 +1,16 @@
 ﻿l_english:
- AGE:0 "Angevin Empire"
- AGE_DEF:0 "the Angevin Empire"
- AGE_ADJ:0 "Angevin"
+ AGE: "Angevin Empire"
+ AGE_DEF: "the Angevin Empire"
+ AGE_ADJ: "Angevin"
  
- AUH:0 "Austro-Hungarian Empire"
- AUH_DEF:0 "Austro-Hungarian Empire"
- AUH_ADJ:0 "Austro-Hungarian Empire"
+ AUH: "Austro-Hungarian Empire"
+ AUH_DEF: "Austro-Hungarian Empire"
 
- ENG_republic:0 "Republic of Britain"
- ENG_republic_DEF:0 "the Republic of Great Britain"
+ ENG_republic: "Republic of Britain"
+ ENG_republic_DEF: "the Republic of Great Britain"
 
- TFC_FRA:0 "French Commune"
- TFC_FRA_DEF:0 "the French Commune"
+ TFC_FRA: "French Commune"
+ TFC_FRA_DEF: "the French Commune"
+
+ RUS_PRO: "Russian Provisional Government"
+ RUS_PRO_DEF: "the Russian Provisional Government"

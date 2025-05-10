@@ -56,3 +56,30 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = superevents.3
+	title = "Russian revolution"
+
+	fire_only_once = yes
+	major = yes
+	hidden = yes
+
+	immediate = {
+		RUS = {
+			country_event = RUS_revolution.1
+		}
+	}
+
+	trigger = {
+		RUS = {
+		#	casualties_k > 1000
+		#	has_stability < 0.5
+			has_country_leader = {
+				character = RUS_nikolai_II
+				ruling_only = yes
+			}
+		}
+	}
+}
+
