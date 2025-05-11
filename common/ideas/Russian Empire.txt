@@ -2,51 +2,51 @@
 	country = {
 		RUS_stolypin_reform = {
 			modifier = {
-            production_speed_buildings_factor = 0.05
-            consumer_goods_factor = -0.15
+			production_speed_buildings_factor = 0.05
+			consumer_goods_factor = -0.15
 			}
 		}
-    }
+	}
 
-    country = {
+	country = {
 		supress_marxists = {
 			modifier = {
-            communism_drift = -0.03
+			communism_drift = -0.03
 			}
 		}
-    }
+	}
 
-    country = {
+	country = {
 		controlling_duma = {
 			modifier = {
-            political_power_factor = 0.15
-            consumer_goods_factor = 0.1
+			political_power_factor = 0.15
+			consumer_goods_factor = 0.1
 			}
 		}
-    }
+	}
 
 	country = {
 		industrial_loans = {
 			modifier = {
-            consumer_goods_factor = -0.25
+			consumer_goods_factor = -0.25
 			production_speed_buildings_factor = 0.05
 			production_factory_efficiency_gain_factor = 0.05
 			production_factory_max_efficiency_factor = 0.05
 			production_factory_start_efficiency_factor = 0.05
 			}
 			on_remove = {
-    		add_ideas = paying_off_loans
+			add_ideas = paying_off_loans
 			}
 		}
-    }
+	}
 
 	country = {
 		paying_off_loans = {
 			modifier = {
-            consumer_goods_factor = 0.5
+			consumer_goods_factor = 0.5
 			}
 		}
-    }
+	}
 
 	country = {
 		foreign_researchers = {
@@ -54,7 +54,7 @@
 			research_speed_factor = 0.05
 			}
 		}
-    }
+	}
 
 	country = {
 		modernized_trade_policy = {
@@ -62,7 +62,7 @@
 			consumer_goods_factor = -0.15
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_agrarian_reform = {
@@ -70,7 +70,7 @@
 			stability_weekly = 0.002
 			}
 		}
-    }
+	}
 
 	country = {
 		outdated_industry = {
@@ -81,7 +81,7 @@
 			research_speed_factor = -0.05
 			}
 		}
-    }
+	}
 
 	country = {
 		arms_industry_focus = {
@@ -89,7 +89,7 @@
 			production_speed_arms_factory_factor = 0.1
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_outdated_army = {
@@ -103,7 +103,7 @@
 			conscription_factor = -0.15
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_outdated_army2 = {
@@ -116,7 +116,7 @@
 			conscription_factor = -0.15
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_outdated_army3 = {
@@ -128,7 +128,7 @@
 			army_speed_factor = -0.1
 			}
 		}
-    }
+	}
 
 	country = {
 		improved_recruitment_system = {
@@ -136,7 +136,7 @@
 			conscription_factor = 0.1
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_outdated_army4 = {
@@ -148,7 +148,7 @@
 			army_speed_factor = -0.1
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_outdated_army5 = {
@@ -159,7 +159,7 @@
 			army_org_factor = -0.05
 			}
 		}
-    }
+	}
 
 	country = {
 		army_drills = {
@@ -168,7 +168,7 @@
 			experience_gain_army_factor = 0.15
 			}
 		}
-    }
+	}
 
 	country = {
 		RUS_outdated_army6 = {
@@ -177,7 +177,7 @@
 			army_attack_factor = -0.1
 			}
 		}
-    }
+	}
 
 	country = {
 		elite_army = {
@@ -190,10 +190,10 @@
 			conscription_factor = -0.25
 			}
 		}
-    }
+	}
 
-    country = {
-	    RUS_outdated_army7 = {
+	country = {
+		RUS_outdated_army7 = {
 			modifier = {
 			war_support_factor = -0.1
 			army_attack_factor = -0.1
@@ -203,7 +203,7 @@
 	}
 
 	country = {
-	    RUS_russification_policies = {
+		RUS_russification_policies = {
 			modifier = {
 			political_power_factor = -0.05
 			stability_weekly = 0.002
@@ -212,7 +212,7 @@
 	}
 
 	country = {
-	    RUS_tsushima_humiliation = {
+		RUS_tsushima_humiliation = {
 			modifier = {
 			war_support_factor = -0.15
 			naval_accidents_chance = 0.2
@@ -224,7 +224,7 @@
 	}
 
 	country = {
-	    RUS_tsushima_humiliation2 = {
+		RUS_tsushima_humiliation2 = {
 			modifier = {
 			war_support_factor = -0.15
 			naval_accidents_chance = 0.1
@@ -236,7 +236,7 @@
 	}
 
 	country = {
-	    RUS_tsushima_humiliation3 = {
+		RUS_tsushima_humiliation3 = {
 			modifier = {
 			naval_accidents_chance = 0.05
 			naval_coordination = -0.05
@@ -247,7 +247,7 @@
 	}
 
 	country = {
-	    RUS_naval_production_focus = {
+		RUS_naval_production_focus = {
 			modifier = {
 			production_speed_dockyard_factor = 0.1
 
@@ -256,7 +256,7 @@
 	}
 
 	country = {
-	    RUS_independence_movements = {
+		RUS_independence_movements = {
 			modifier = {
 			stability_factor = -0.05
 			war_support_factor = -0.05
@@ -266,7 +266,7 @@
 	}
 
 	country = {
-	    RUS_communist_revolutionaries = {
+		RUS_communist_revolutionaries = {
 			modifier = {
 			stability_factor = -0.15
 			communism_drift = 0.04
@@ -276,7 +276,7 @@
 	}
 
 	country = {
-	    RUS_independence_movements2 = {
+		RUS_independence_movements2 = {
 			modifier = {
 			stability_factor = -0.05
 			war_support_factor = -0.05
@@ -286,7 +286,7 @@
 	}
 
 	country = {
-	    RUS_industrial_focus = {
+		RUS_industrial_focus = {
 			modifier = {
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_infrastructure_factor = 0.1
@@ -296,7 +296,7 @@
 	}
 
 	country = {
-	    RUS_agrarian_empire = {
+		RUS_agrarian_empire = {
 			modifier = {
 			local_building_slots_factor	= -0.35
 			production_speed_industrial_complex_factor = -0.15
@@ -308,7 +308,7 @@
 	}
 
 	country = {
-	    RUS_control_duma = {
+		RUS_control_duma = {
 			modifier = {
 			political_power_factor = 0.15
 			}
@@ -316,7 +316,7 @@
 	}
 
 	country = {
-	    RUS_agrarian_empire2 = {
+		RUS_agrarian_empire2 = {
 			modifier = {
 			local_building_slots_factor	= -0.25
 			production_speed_industrial_complex_factor = -0.15
@@ -328,7 +328,7 @@
 	}
 
 	country = {
-	    RUS_liberal_cooperation = {
+		RUS_liberal_cooperation = {
 			modifier = {
 			political_power_factor = 0.05
 			democratic_drift = 0.01
@@ -339,7 +339,7 @@
 	}
 
 	country = {
-	    RUS_empowering_tsar = {
+		RUS_empowering_tsar = {
 			modifier = {
 			stability_weekly = 0.001
 			political_power_factor = -0.05
@@ -348,7 +348,7 @@
 	}
 
 	country = {
-	    RUS_communist_revolutionaries2 = {
+		RUS_communist_revolutionaries2 = {
 			modifier = {
 			stability_factor = -0.1
 			communism_drift = 0.002
@@ -358,7 +358,7 @@
 	}
 
 	country = {
-	    RUS_ramp_up_military_excercises = {
+		RUS_ramp_up_military_excercises = {
 			modifier = {
 			experience_gain_army_factor	= 0.25
 			war_support_weekly = 0.001
@@ -367,7 +367,7 @@
 	}
 
 	country = {
-	    RUS_eurasian_dream = {
+		RUS_eurasian_dream = {
 			modifier = {
 			political_power_factor = 0.3
 			stability_weekly = 0.1
@@ -377,7 +377,7 @@
 	}
 
 	country = {
-	    RUS_companies = {
+		RUS_companies = {
 			modifier = {
 			industrial_capacity_factory = 0.1
 			}
@@ -385,7 +385,7 @@
 	}
 
 	country = {
-	    RUS_communist_revolutionaries3 = {
+		RUS_communist_revolutionaries3 = {
 			modifier = {
 			stability_factor = -0.05
 			communism_drift = 0.002
@@ -395,7 +395,7 @@
 	}
 
 	country = {
-	    RUS_communist_revolutionaries4 = {
+		RUS_communist_revolutionaries4 = {
 			modifier = {
 			stability_factor = -0.05
 			communism_drift = 0.001
@@ -405,7 +405,7 @@
 	}
 
 	country = {
-	    RUS_revoked_the_convention = {
+		RUS_revoked_the_convention = {
 			modifier = {
 			war_support_factor = 0.05
 			justify_war_goal_time = -0.35
@@ -416,7 +416,7 @@
 	}
 
 	country = {
-	    RUS_panslavic_nationalism = {
+		RUS_panslavic_nationalism = {
 			modifier = {
 			war_support_factor = 0.05
 			conscription_factor = 0.1
@@ -427,7 +427,7 @@
 	}
 
 	country = {
-	    RUS_nationalist_propaganda = {
+		RUS_nationalist_propaganda = {
 			modifier = {
 			war_support_factor = 0.05
 			conscription_factor = 0.05
@@ -436,7 +436,7 @@
 	}
 
 	country = {
-	    RUS_reformist_program_idea = {
+		RUS_reformist_program_idea = {
 			modifier = {
 			political_power_factor = 0.1
 			add_stability = 0.05
@@ -445,7 +445,7 @@
 	}
 
 	country = {
-	    RUS_swift_agrarian_reform = {
+		RUS_swift_agrarian_reform = {
 			modifier = {
 			production_speed_buildings_factor = 0.1
 			industrial_capacity_factory = 0.1
@@ -454,7 +454,7 @@
 	}
 
 	country = {
-	    RUS_slow_agrarian_reform = {
+		RUS_slow_agrarian_reform = {
 			modifier = {
 			production_speed_buildings_factor = -0.05
 			industrial_capacity_factory = -0.05
@@ -463,17 +463,24 @@
 	}
 
 	country = {
-	    RUS_undermined_opposition = {
+		RUS_undermined_opposition = {
 			modifier = {
 			political_power_factor = 0.1
 			}
 		}
 	}
 	country = {
-	    RUS_protector_of_slavs = {
+		RUS_protector_of_slavs = {
 			modifier = {
 				political_power_factor = 0.05
 				war_support_factor = 0.15
+			}
+		}
+
+		RUS_dual_power_1 = {
+			modifier = {
+				political_power_factor = -0.03
+				power_balance_weekly = -0.01
 			}
 		}
 	}

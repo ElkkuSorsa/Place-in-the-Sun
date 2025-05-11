@@ -30,6 +30,7 @@ add_ideas = {
 
 #Politics for 1936.1.1
 recruit_character = RUS_nikolai_II
+recruit_character = RUS_kerensky
 
 set_autonomy = {
 	target = FIN 
@@ -50,15 +51,6 @@ set_popularities = {
 	neutrality = 50
 }
 
-#Politics for 1939.1.1
-1939.1.1 = {
-	set_popularities = {
-		democratic = 25
-		fascism = 25
-		communism = 25
-		neutrality = 25
-	}
-}
 
 
 

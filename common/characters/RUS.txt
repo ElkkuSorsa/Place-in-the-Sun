@@ -4,10 +4,25 @@ characters = {
 		country_leader = {
 			expire = "1940.1.1"
 			ideology = monarchism
+			traits = { unpopular_autocrat }
 		}
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/RUS/RUS_nikolai_II.png"
+			}
+		}
+	}
+
+	RUS_kerensky = {
+		name = "Alexandr Kerensky"
+		country_leader = {
+			expire = "1940.1.1"
+			ideology = socialism
+			traits = { moderate_socialist }
+		}
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/RUS_kerensky.png"
 			}
 		}
 	}

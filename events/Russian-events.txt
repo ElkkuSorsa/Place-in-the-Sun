@@ -65,6 +65,7 @@ add_namespace = RUS_revolution
 country_event = {
 	id = RUS_revolution.1
 	title = "Tsar Nicholas II abdicates"
+	desc = "After disastrous failing at war against Germany and Austria, the tsar Nicholas II has been forced to give up his power and abdicate. His brother Mikhail refused the crown and it seems that the provisional government will govern Russia from here. The tsar has been placed in a safe house in Yekaterinburg where he can live luxorius life."
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -73,15 +74,37 @@ country_event = {
 		name = "Provisional government rules Russia!"
 		add_stability = 0.05
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = democratic
 		}
 		promote_character = RUS_george_lvov
 		set_party_name = {
-			ideology = neutrality
+			ideology = democratic
 			name = "Provisional Government"
 			long_name = "Provisional Russian Government"
 		}
 		set_cosmetic_tag = RUS_PRO
 		load_focus_tree = RUS_pro_focus_tree
+		set_power_balance = {
+			id = RUS_dual_power
+			set_value = -0.1
+		}
+		news_event = {
+			id = RUS_revolution.2
+			days = 10
+		}
+		add_ideas = RUS_dual_power_1
+	}
+}
+
+news_event = {
+	id = RUS_revolution.2
+	title = "Provisional government takes control in Russia"
+	desc = "After the bloodless revolution that overthrew the autocratic tsar and established a power vacuum, the moderate forces have taken the control and established a provisional government aiming at holding elections and creating a republican constitution for Russia. The situtation is not easy though as German forces are well into Russia."
+
+	is_triggered_only = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Can they really stabilize Russia?"
 	}
 }
