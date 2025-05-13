@@ -270,6 +270,11 @@ country_event = {
 			set_variable = { labseats = 22 }
 			ENG_calc_gov = yes
 		}
+		create_country_leader = {
+			name = "House of Commons"
+			picture = "portrait_eng_fallen_government.dds"
+			ideology = conservatism
+		}
 	}
 }
 
@@ -313,13 +318,19 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Negotiate only with Labour Radicals."
-		complete_national_focus = ENG_minority_government
-		set_variable = { labseats = 31 }
-		set_variable = { socseats = 12 }
-		clr_country_flag = ENG_lib_his
-		set_country_flag = ENG_lib_soc
-		ENG_calc_gov = yes
+		name = "Trust the Irish and Labour Party"
+		custom_effect_tooltip = historical_event_option
+		activate_mission = ENG_irish_excpectations
+		complete_national_focus = ENG_government_of_liberals
+		news_event = ENG_news.4
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+				add = 100
+			}
+		}
 	}
 
 	option = {

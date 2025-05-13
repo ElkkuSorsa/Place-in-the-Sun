@@ -548,7 +548,10 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_completed_focus = ENG_form_war_cabinet
+			not = {
+				has_completed_focus = ENG_march_for_change
+				has_completed_focus = ENG_conservative_victory
+			}
 		}
 
 		available = {
