@@ -33,7 +33,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -30
+			x = -27
 			trigger = {
 				OR = {
 					has_completed_focus = ENG_minority_government
@@ -65,7 +65,7 @@ focus_tree = {
 	focus = {
 		id = ENG_the_last_liberals
 		icon = GFX_focus_generic_strike_at_democracy2
-		x = 30
+		x = 40
 		y = 2
 		prerequisite = { focus = ENG_1910_elections }
 		mutually_exclusive = { focus = ENG_conservative_victory	}
@@ -82,7 +82,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -20
+			x = -17
 			trigger = {
 				OR = {
 					has_completed_focus = ENG_minority_government
@@ -93,7 +93,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = 5
+			x = -5
 			trigger = {
 				OR = {
 					has_completed_focus = ENG_minority_government
@@ -106,501 +106,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_minority_government
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 28
-		y = 3
-		prerequisite = { focus = ENG_the_last_liberals }
-		mutually_exclusive = { focus = ENG_government_of_liberals }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = "The liberals failed to negotiate government coalition."
-				always = no
-			}
-		}
-
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-			add_stability = -0.2
-		}
-	}
-
-	focus = {
-		id = ENG_socialists_lead
-		icon = GFX_focus_SWE_socialist_reforms
-		x = 28
-		y = 4
-		prerequisite = { focus = ENG_minority_government }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_timed_idea = {
-				days = 180
-				idea = ENG_socialist_influence
-			}
-			set_politics = {
-				ruling_party = communism
-			}
-			set_popularities = {
-				democratic = 45
-				communism = 45
-				fascism = 5
-				neutrality = 5
-			}
-			set_party_name = {
-				ideology = communism
-				long_name = "Socialist-Liberal Coalition"
-				name = "SocLib-Coalition"
-			}
-			set_party_name = {
-				ideology = democratic
-				long_name = "Socialist-Liberal Coalition"
-				name = "SocLib-Coalition"
-			}
-		}
-	}
-
-	focus = {
-		id = ENG_social_democracy
-		icon = GFX_focus_BRA_socialist_theologians
-		x = 30
-		y = 5
-		prerequisite = { focus = ENG_socialists_lead }
-		mutually_exclusive = { focus = ENG_red_star_in_the_sky }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			custom_effect_tooltip = "This is not ready!!!!!!!!!!!!! DONT PLAY!!!"
-		}
-	}
-
-	focus = {
-		id = ENG_welfare_reforms
-		icon = GFX_focus_FIN_socialist_welfare
-		x = 30
-		y = 6
-		prerequisite = { focus = ENG_social_democracy }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_ideas = ENG_socialist_reforms
-		}
-	}
-
-	focus = {
-		id = ENG_women_suffrage
-		icon = GFX_focus_generic_universal_suffrage
-		x = 30
-		y = 7
-		prerequisite = { focus = ENG_welfare_reforms }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ENG_republican_movement
-		icon = GFX_focus_generic_universal_suffrage
-		x = 30
-		y = 8
-		prerequisite = { focus = ENG_women_suffrage }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			remove_idea = GFX_idea_ENG_george_v
-			news_event = {
-				id = communist_britain.2
-				days = 3
-			}
-			set_cosmetic_tag = ENG_republic
-		}
-	}
-
-	focus = {
-		id = ENG_presidental_elections
-		icon = GFX_focus_generic_universal_suffrage
-		x = 30
-		y = 9
-		prerequisite = { focus = ENG_republican_movement }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_draft_constitution
-		icon = GFX_focus_generic_universal_suffrage
-		x = 30
-		y = 10
-		prerequisite = { focus = ENG_presidental_elections }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_lower_income_tax_cuts
-		icon = GFX_focus_generic_universal_suffrage
-		x = 34
-		y = 10
-		prerequisite = { focus = ENG_presidental_elections }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_expand_state_pension
-		icon = GFX_focus_generic_universal_suffrage
-		x = 28
-		y = 10
-		prerequisite = { focus = ENG_presidental_elections }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_democratize_the_army
-		icon = GFX_focus_generic_universal_suffrage
-		x = 26
-		y = 10
-		prerequisite = { focus = ENG_presidental_elections }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_support_russian_liberals
-		icon = GFX_focus_generic_universal_suffrage
-		x = 32
-		y = 10
-		prerequisite = { focus = ENG_presidental_elections }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_red_star_in_the_sky
-		icon = GFX_focus_ger_great_red_menace
-		x = 26
-		y = 5
-		prerequisite = { focus = ENG_socialists_lead }
-		mutually_exclusive = { focus = ENG_social_democracy }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = ENG_oust_the_liberal_ministers
-		icon = GFX_focus_spr_crush_the_revolution
-		x = 26
-		y = 6
-		prerequisite = { focus = ENG_red_star_in_the_sky }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.3
-			}
-			set_party_name = {
-				ideology = communism
-				long_name = "British Union of Socialists"
-				name = "Socialists"
-			}
-			set_party_name = {
-				ideology = democratic
-				long_name = "Liberal Party"
-				name = "Liberals"
-			}
-		}
-	}
-
-	focus = {
-		id = ENG_workers_dictatorship
-		icon = GFX_goal_support_communism
-		x = 26
-		y = 7
-		prerequisite = { focus = ENG_oust_the_liberal_ministers }
-
-		cost = 5
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		completion_reward = {
-			remove_idea = GFX_idea_ENG_george_v
-			custom_effect_tooltip = "Parliament will be dissolved."
-			set_country_flag = ENG_parliament_disabled
-			news_event = {
-				id = communist_britain.1
-				days = 3
-			}
-			hidden_effect = {
-				add_popularity = {
-					ideology = communism
-					popularity = 0.5
-				}
-			}
-			set_cosmetic_tag = ENG_republic
-		}
-	}
-
-	focus = {
-		id = ENG_united_forever
-		icon = GFX_goal_support_communism
-		x = 27
-		y = 8
-		prerequisite = { focus = ENG_workers_dictatorship }
-		mutually_exclusive = { focus = ENG_repeal_acts_of_union }
-
-		cost = 10
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = "This will establish a one party state and switch to new focus tree!"
-			hidden_effect = {
-				set_country_flag = socialist_england
-				load_focus_tree = ENG_COM_focus_tree
-			}
-		}
-	}
-
-	focus = {
-		id = ENG_repeal_acts_of_union
-		icon = GFX_goal_support_communism
-		x = 25
-		y = 8
-		prerequisite = { focus = ENG_workers_dictatorship }
-		mutually_exclusive = { focus = ENG_united_forever }
-
-		offset = {
-			x = -20
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			custom_effect_tooltip = "This will establish a one party state and switch to new focus tree!"
-			hidden_effect = {
-				set_country_flag = socialist_england
-				load_focus_tree = ENG_COM_focus_tree
-			}
-			release_puppet_on_controlled = SCO 
-			release_puppet_on_controlled = IRE
 		}
 	}
 
@@ -961,6 +466,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 		}
+
+		allow_branch = { always = no }
 	}
 
 	focus = {
@@ -1845,7 +1352,7 @@ focus_tree = {
 	focus = {
 		id = ENG_agressive_diplomacy
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 51
+		x = 49
 		y = 4
 		prerequisite = { focus = ENG_conservative_victory }
 		prerequisite = { focus = ENG_engage_in_europe }
@@ -1869,7 +1376,7 @@ focus_tree = {
 	focus = {
 		id = ENG_entente_con
 		icon = GFX_goal_generic_alliance
-		x = 51
+		x = 49
 		y = 5
 		prerequisite = { focus = ENG_agressive_diplomacy }
 
@@ -1904,7 +1411,7 @@ focus_tree = {
 	focus = {
 		id = ENG_entente_conference
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 50
+		x = 47
 		y = 6
 		prerequisite = { focus = ENG_entente_con }
 
@@ -2039,83 +1546,9 @@ focus_tree = {
 	focus = {
 		id = ENG_colonial_ambitions
 		icon = GFX_focus_ARG_revive_the_colonial_plan
-		x = 54
+		x = 50
 		y = 6
 		prerequisite = { focus = ENG_entente_con }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_abyssinia
-		icon = GFX_focus_ETH_protector_of_the_somalis
-		x = 56
-		y = 7
-		prerequisite = { focus = ENG_colonial_ambitions }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = ETH
-			}
-		}
-	}
-
-	focus = {
-		id = ENG_middle_east
-		icon = GFX_focus_ETH_an_arabic_base
-		x = 54
-		y = 7
-		prerequisite = { focus = ENG_colonial_ambitions }
-
-		offset = {
-			x = -32
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-				}
-			}
-		}
-
-		cost = 10
-
-		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = ENG_anatolian_lands
-		icon = GFX_focus_generic_attack_turkey
-		x = 53
-		y = 8
-		prerequisite = { focus = ENG_middle_east }
 
 		offset = {
 			x = -32
@@ -2308,9 +1741,9 @@ focus_tree = {
 	focus = {
 		id = ENG_limited_reformism
 		icon = GFX_focus_DEN_limited_regulations
-		x = 60
-		y = 6
-		prerequisite = { focus = ENG_royal_veto focus = ENG_constitutionalism }
+		x = 54
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory }
 
 		offset = {
 			x = -32
@@ -2332,8 +1765,8 @@ focus_tree = {
 	focus = {
 		id = ENG_repeal_people_budget
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		x = 59
-		y = 7
+		x = 53
+		y = 4
 		prerequisite = { focus = ENG_limited_reformism }
 
 		offset = {
@@ -2356,8 +1789,8 @@ focus_tree = {
 	focus = {
 		id = ENG_draft_budget
 		icon = GFX_focus_generic_treaty
-		x = 58
-		y = 8
+		x = 52
+		y = 5
 		prerequisite = { focus = ENG_repeal_people_budget }
 
 		offset = {
@@ -2380,8 +1813,8 @@ focus_tree = {
 	focus = {
 		id = ENG_limit_free_trade
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 61
-		y = 7
+		x = 55
+		y = 4
 		prerequisite = { focus = ENG_limited_reformism }
 
 		offset = {
@@ -2404,8 +1837,8 @@ focus_tree = {
 	focus = {
 		id = ENG_veteran_pensions
 		icon = GFX_focus_generic_military_mission
-		x = 62
-		y = 8
+		x = 56
+		y = 5
 		prerequisite = { focus = ENG_limit_free_trade }
 
 		offset = {
@@ -2428,8 +1861,8 @@ focus_tree = {
 	focus = {
 		id = ENG_promote_english_church
 		icon = GFX_focus_mex_triumph_over_the_cristeros
-		x = 60
-		y = 8
+		x = 54
+		y = 5
 		prerequisite = { focus = ENG_limit_free_trade }
 		prerequisite = { focus = ENG_repeal_people_budget }
 
@@ -2453,8 +1886,8 @@ focus_tree = {
 	focus = {
 		id = ENG_new_conservative_england
 		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
-		x = 60
-		y = 9
+		x = 54
+		y = 6
 		prerequisite = { focus = ENG_veteran_pensions }
 		prerequisite = { focus = ENG_promote_english_church }
 		prerequisite = { focus = ENG_draft_budget }
@@ -2502,7 +1935,7 @@ focus_tree = {
 	focus = {
 		id = ENG_march_for_change
 		icon = GFX_focus_BRA_end_the_state_of_emergency
-		x = 17
+		x = 22
 		y = 1
 		mutually_exclusive = { focus = ENG_1910_elections }
 
@@ -2534,7 +1967,7 @@ focus_tree = {
 	focus = {
 		id = ENG_question_of_future
 		icon = GFX_goal_tripartite_pact
-		x = 17
+		x = 22
 		y = 2
 		prerequisite = { focus = ENG_march_for_change }
 
@@ -2558,7 +1991,7 @@ focus_tree = {
 	focus = {
 		id = ENG_hand_over_to_king
 		icon = GFX_focus_generic_home_defense
-		x = 14
+		x = 19
 		y = 3
 		prerequisite = { focus = ENG_question_of_future }
 		mutually_exclusive = { focus = ENG_extended_military_admin }
@@ -2590,7 +2023,7 @@ focus_tree = {
 	focus = {
 		id = ENG_revert_the_democratic_reforms
 		icon = GFX_focus_generic_strike_at_democracy2
-		x = 11
+		x = 14
 		y = 4
 		prerequisite = { focus = ENG_hand_over_to_king }
 
@@ -2616,7 +2049,7 @@ focus_tree = {
 	focus = {
 		id = ENG_deal_with_ireland
 		icon = GFX_goal_generic_dangerous_deal
-		x = 7
+		x = 14
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
@@ -2633,7 +2066,7 @@ focus_tree = {
 	focus = {
 		id = ENG_english_society
 		icon = GFX_focus_CHL_revise_the_social_classes
-		x = 2
+		x = 7
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms }
 
@@ -2648,12 +2081,14 @@ focus_tree = {
 				id = ENG_english_society_bop
 			}
 		}
+
+		allow_branch = { always = no }
 	}
 
 	focus = {
 		id = ENG_side_with_nobility
 		icon = GFX_focus_CONGO_gold_and_diamonds
-		x = 3
+		x = 8
 		y = 6
 		prerequisite = { focus = ENG_english_society }
 		mutually_exclusive = { focus = ENG_side_with_people }
@@ -2674,7 +2109,7 @@ focus_tree = {
 	focus = {
 		id = ENG_restore_noble_privileges
 		icon = GFX_focus_generic_home_defense
-		x = 3
+		x = 8
 		y = 8
 		prerequisite = { focus = ENG_side_with_nobility }
 		prerequisite = { focus = ENG_maintain_balance }
@@ -2695,7 +2130,7 @@ focus_tree = {
 	focus = {
 		id = ENG_side_with_people
 		icon = GFX_focus_GER_the_peoples_victory
-		x = 1
+		x = 6
 		y = 6
 		prerequisite = { focus = ENG_english_society }
 		mutually_exclusive = { focus = ENG_side_with_nobility }
@@ -2716,7 +2151,7 @@ focus_tree = {
 	focus = {
 		id = ENG_workers_rights
 		icon = GFX_focus_generic_workers
-		x = 1
+		x = 6
 		y = 8
 		prerequisite = { focus = ENG_side_with_people }
 		prerequisite = { focus = ENG_maintain_balance }
@@ -2737,7 +2172,7 @@ focus_tree = {
 	focus = {
 		id = ENG_maintain_balance
 		icon = GFX_goal_generic_neutrality_focus
-		x = 2
+		x = 7
 		y = 7
 		prerequisite = { focus = ENG_side_with_nobility focus = ENG_side_with_people }
 
@@ -2754,7 +2189,7 @@ focus_tree = {
 	focus = {
 		id = ENG_social_divides
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 2
+		x = 7
 		y = 9
 		prerequisite = { focus = ENG_workers_rights focus = ENG_restore_noble_privileges }
 
@@ -2804,7 +2239,7 @@ focus_tree = {
 	focus = {
 		id = ENG_crown_of_ireland
 		icon = GFX_focus_ETH_the-italo_ethiopian_empire
-		x = 6
+		x = 13
 		y = 6
 		prerequisite = { focus = ENG_deal_with_ireland }
 		mutually_exclusive = { focus = ENG_under_control_ireland }
@@ -2829,7 +2264,7 @@ focus_tree = {
 	focus = {
 		id = ENG_under_control_ireland
 		icon = GFX_goal_generic_position_armies
-		x = 8
+		x = 15
 		y = 6
 		prerequisite = { focus = ENG_deal_with_ireland }
 		mutually_exclusive = { focus = ENG_crown_of_ireland }
@@ -2848,7 +2283,7 @@ focus_tree = {
 	focus = {
 		id = ENG_nation_united_once_more
 		icon = GFX_goal_generic_national_unity
-		x = 7
+		x = 14
 		y = 7
 		prerequisite = { focus = ENG_under_control_ireland focus = ENG_crown_of_ireland }
 
@@ -2867,7 +2302,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_conference
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = 7
+		x = 14
 		y = 8
 		prerequisite = { focus = ENG_nation_united_once_more }
 		mutually_exclusive = { focus = ENG_angevin_empire }
@@ -2884,7 +2319,7 @@ focus_tree = {
 	focus = {
 		id = ENG_imperial_federation
 		icon = GFX_focus_eng_imperial_federation
-		x = 7
+		x = 14
 		y = 9
 		prerequisite = { focus = ENG_imperial_conference }
 
@@ -2901,7 +2336,7 @@ focus_tree = {
 	focus = {
 		id = ENG_thirteen_colonies
 		icon = GFX_focus_eng_imperial_federation
-		x = 7
+		x = 14
 		y = 10
 		prerequisite = { focus = ENG_imperial_federation }
 
@@ -2923,9 +2358,9 @@ focus_tree = {
 	focus = {
 		id = ENG_disband_the_house_of_commons
 		icon = GFX_focus_SWI_dissolve_the_federal_council
-		x = 11
+		x = 18
 		y = 5
-		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+		prerequisite = { focus = ENG_revert_the_democratic_reforms focus = ENG_embrace_german_heritage }
 
 		cost = 5
 
@@ -2947,7 +2382,7 @@ focus_tree = {
 	focus = {
 		id = ENG_collaborate_conservatives
 		icon = GFX_goal_continuous_boost_freedom
-		x = 10
+		x = 17
 		y = 6
 		prerequisite = { focus = ENG_disband_the_house_of_commons }
 
@@ -2968,7 +2403,7 @@ focus_tree = {
 	focus = {
 		id = ENG_appoint_bonar_law
 		icon = GFX_goal_generic_major_alliance
-		x = 10
+		x = 17
 		y = 7
 		prerequisite = { focus = ENG_collaborate_conservatives }
 
@@ -2994,7 +2429,7 @@ focus_tree = {
 	focus = {
 		id = ENG_empower_loyal_nobility
 		icon = GFX_focus_generic_monarchy_1
-		x = 12
+		x = 19
 		y = 6
 		prerequisite = { focus = ENG_disband_the_house_of_commons }
 
@@ -3022,7 +2457,7 @@ focus_tree = {
 	focus = {
 		id = ENG_embrace_german_heritage
 		icon = GFX_focus_generic_monarchy_2
-		x = 14
+		x = 21
 		y = 4
 		prerequisite = { focus = ENG_hand_over_to_king }
 
@@ -3040,48 +2475,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_anglo_german_naval_treaty
-		icon = GFX_focus_generic_treaty
-		x = 14
-		y = 5
-		prerequisite = { focus = ENG_embrace_german_heritage }
-		mutually_exclusive = { focus = ENG_pax_britannica_focus }
-
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-			has_completed_focus = ENG_divert_resources
-		}
-
-		completion_reward = {
-			add_ideas = agressive_diplomacy
-		}
-	}
-
-	focus = {
-		id = ENG_blockade_france
-		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-		x = 14
-		y = 6
-		prerequisite = { focus = ENG_anglo_german_naval_treaty }
-
-		cost = 5
-
-		available = {
-		}
-
-		completion_reward = {
-			send_embargo = FRA
-		}
-	}
-
-	focus = {
 		id = ENG_reinstate_claims
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 12
+		x = 19
 		y = 7
 		prerequisite = { focus = ENG_blockade_france }
 		prerequisite = { focus = ENG_empower_loyal_nobility }
@@ -3100,7 +2496,7 @@ focus_tree = {
 	focus = {
 		id = ENG_future_of_empire
 		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = 10
+		x = 12
 		y = 8
 		prerequisite = { focus = ENG_reinstate_claims }
 		prerequisite = { focus = ENG_nation_united_once_more }
@@ -3123,32 +2519,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_anglo_german_alliance
-		icon = GFX_goal_generic_alliance
-		x = 14
-		y = 7
-		prerequisite = { focus = ENG_blockade_france }
-
-		cost = 10
-
-		bypass = {
-			OR = {
-				is_in_faction_with = RUS
-				is_in_faction_with = GER
-			}
-		}
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
 		id = ENG_avenge_the_hundred_years_war
 		icon = GFX_goal_generic_major_war
-		x = 14
+		x = 19
 		y = 8
 		prerequisite = { focus = ENG_anglo_german_alliance focus = ENG_stand_alone focus = ENG_romanov_alliance }
 		prerequisite = { focus = ENG_reinstate_claims focus = ENG_stand_alone focus = ENG_romanov_alliance }
@@ -3172,7 +2545,7 @@ focus_tree = {
 	focus = {
 		id = ENG_extended_military_admin
 		icon = GFX_focus_generic_military_dictatorship
-		x = 20
+		x = 25
 		y = 3
 		prerequisite = { focus = ENG_question_of_future }
 		mutually_exclusive = { focus = ENG_hand_over_to_king }
@@ -3191,7 +2564,7 @@ focus_tree = {
 	focus = {
 		id = ENG_appoint_leader
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = 20
+		x = 25
 		y = 4
 		prerequisite = { focus = ENG_extended_military_admin }
 
@@ -3325,7 +2698,7 @@ focus_tree = {
 	focus = {
 		id = ENG_abolish_nobility
 		icon = GFX_focus_rom_abdicate
-		x = 22
+		x = 27
 		y = 5
 		prerequisite = { focus = ENG_appoint_leader }
 
@@ -3350,7 +2723,7 @@ focus_tree = {
 	focus = {
 		id = ENG_exile_the_royals
 		icon = GFX_focus_rom_handle_king
-		x = 23
+		x = 28
 		y = 6
 		prerequisite = { focus = ENG_abolish_nobility }
 
@@ -3368,7 +2741,7 @@ focus_tree = {
 	focus = {
 		id = ENG_purge_the_government
 		icon = GFX_focus_SOV_military_purge
-		x = 23
+		x = 28
 		y = 7
 		prerequisite = { focus = ENG_exile_the_royals }
 
@@ -3386,7 +2759,7 @@ focus_tree = {
 	focus = {
 		id = ENG_war_budget
 		icon = GFX_focus_generic_total_war
-		x = 21
+		x = 26
 		y = 6
 		prerequisite = { focus = ENG_abolish_nobility }
 
@@ -3408,7 +2781,7 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_conscription
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		x = 21
+		x = 26
 		y = 7
 		prerequisite = { focus = ENG_war_budget }
 
@@ -3422,7 +2795,7 @@ focus_tree = {
 	focus = {
 		id = ENG_dissolve_parliament
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		x = 22
+		x = 27
 		y = 8
 		prerequisite = { focus = ENG_expand_conscription focus = ENG_purge_the_government }
 
@@ -3439,7 +2812,7 @@ focus_tree = {
 	focus = {
 		id = ENG_pax_britannica_focus
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = 17
+		x = 22
 		y = 5
 		prerequisite = { focus = ENG_appoint_leader focus = ENG_embrace_german_heritage }
 		mutually_exclusive = { focus = ENG_anglo_german_naval_treaty }
@@ -3454,7 +2827,7 @@ focus_tree = {
 	focus = {
 		id = ENG_abandon_two_power_standard
 		icon = GFX_focus_generic_strike_at_democracy2
-		x = 17
+		x = 22
 		y = 6
 		prerequisite = { focus = ENG_pax_britannica_focus }
 
@@ -3470,7 +2843,7 @@ focus_tree = {
 	focus = {
 		id = ENG_stand_alone
 		icon = GFX_focus_generic_support_the_left_right
-		x = 17
+		x = 21
 		y = 7
 		prerequisite = { focus = ENG_abandon_two_power_standard }
 		mutually_exclusive = { focus = ENG_romanov_alliance }
@@ -3495,7 +2868,7 @@ focus_tree = {
 	focus = {
 		id = ENG_romanov_alliance
 		icon = GFX_focus_generic_home_defense
-		x = 19
+		x = 23
 		y = 7
 		prerequisite = { focus = ENG_abandon_two_power_standard }
 		mutually_exclusive = { focus = ENG_britain_leads }
@@ -3516,7 +2889,7 @@ focus_tree = {
 	focus = {
 		id = ENG_slay_the_eagle
 		icon = GFX_goal_generic_major_war
-		x = 18
+		x = 23
 		y = 8
 		prerequisite = { focus = ENG_stand_alone focus = ENG_romanov_alliance }
 		mutually_exclusive = { focus = ENG_avenge_the_hundred_years_war }
