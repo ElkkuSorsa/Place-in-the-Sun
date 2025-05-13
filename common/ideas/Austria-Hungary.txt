@@ -27,6 +27,50 @@ ideas = {
 			}
 		}
 
+			auh_kuk_kriegsmarine = {
+			picture = bad_funding_army
+			modifier = {
+			naval_accidents_chance = -0.05
+			naval_coordination = 0.025
+			experience_gain_navy = 0.025
+			consumer_goods_factor = 0.025
+			}
+		}
+
+			auh_kuk_luftfahrtruppen = {
+			picture = bad_funding_army
+			modifier = {
+			consumer_goods_factor = 0.025
+			}
+		}
+
+			auh_kuk_kriegsmarine_hotz = {
+			picture = bad_funding_army
+			modifier = {
+			naval_accidents_chance = -0.075
+			naval_coordination = 0.05
+			naval_detection = 0.05
+			experience_gain_navy = 0.05
+			shore_bombardment_bonus = 0.075
+			naval_damage_factor = 0.025
+			consumer_goods_factor = 0.05
+			}
+		}
+
+			auh_kuk_kriegsmarine_greenlight = {
+			picture = bad_funding_army
+			modifier = {
+			naval_accidents_chance = -0.075
+			naval_coordination = 0.05
+			naval_detection = 0.05
+			experience_gain_navy = 0.05
+			naval_damage_factor = 0.025
+			convoy_raiding_efficiency_factor = 0.1
+			consumer_goods_factor = 0.05
+
+			}
+		}
+
 			auh_underfunded_army_two = {
 			picture = bad_funding_army
 			modifier = {
@@ -301,7 +345,6 @@ ideas = {
 			industrial_capacity_factory = 0.03
 			monthly_population = 0.05
 			extra_trade_to_target_factor = 0.25
-			consumer_goods_factor = -0.05
 			production_speed_arms_factory_factor = -0.03
 
 			}
@@ -318,7 +361,6 @@ ideas = {
 			war_support_factor = -0.25
 			compliance_gain = 0.075
 			line_change_production_efficiency_factor = 0.06
-			industrial_capacity_factory = 0.06
 			monthly_population = 0.1
 			extra_trade_to_target_factor = 0.25
 			production_speed_arms_factory_factor = -0.04
@@ -338,7 +380,6 @@ ideas = {
 			war_support_factor = -0.25
 			compliance_gain = 0.075
 			line_change_production_efficiency_factor = 0.08
-			industrial_capacity_factory = 0.08
 			monthly_population = 0.15
 			extra_trade_to_target_factor = 0.25
 			resistance_activity = -0.05
@@ -445,16 +486,37 @@ ideas = {
 			}
 				equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 					support_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 					machinegun_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 					uniforms_equipment = {
-					build_cost_ic = -0.025
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+			auh_armeereform_focus_four = {
+			picture = auh_passive_youth
+			modifier = {
+				conscription = 0.005
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+					support_equipment = {
+					build_cost_ic = -0.1
+				}
+					machinegun_equipment = {
+					build_cost_ic = -0.1
+				}
+					uniforms_equipment = {
+					build_cost_ic = -0.05
 				}
 			}
 			modifier = {

@@ -143,3 +143,21 @@ country_event = {
 		complete_national_focus = AUH_victory_of_dfp
 	}
 }
+
+country_event = {
+	id = austria_hungary.10
+	title = "Byzantic System back in Place"
+	desc = austria_hungary.10.d
+	picture = GFX_winged_hussar
+	is_triggered_only = no 
+	fire_only_once = yes
+
+	trigger = {
+		has_completed_focus = AUH_construction_funds
+	}
+
+	option = {
+		name = "Back to normal I guess..."
+		remove_ideas = AUH_well_oiled_machine
+	}
+}

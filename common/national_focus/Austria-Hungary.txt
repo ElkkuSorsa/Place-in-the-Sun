@@ -944,22 +944,233 @@ focus_tree = {
 	}
 
 		focus = {
-		id = AUH_naval_rearnamnet
+		id = AUH_creation_of_kuk_luftfahrtruppen
 		icon = GFX_goal_equal_court
-		x = 43
+		x = 45
 		y = 2
 
 		cost = 6
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
+		add_ideas = auh_kuk_luftfahrtruppen
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppens_training_ground
+		icon = GFX_goal_equal_court
+		x = 45
+		y = 3
+
+		cost = 6
+		prerequisite = { focus = AUH_creation_of_kuk_luftfahrtruppen }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_give_allow_uzelac_free_space
+		icon = GFX_goal_equal_court
+		x = 45
+		y = 5
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_detached_working_center
+		icon = GFX_goal_equal_court
+		x = 44
+		y = 4
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_hungarian_training_center
+		icon = GFX_goal_equal_court
+		x = 46
+		y = 4
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_dedicated_organisation
+		icon = GFX_goal_equal_court
+		x = 44
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_divert_money_towards
+		icon = GFX_goal_equal_court
+		x = 46
+		y = 6
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_creation_of_first_fliks
+		icon = GFX_goal_equal_court
+		x = 45
+		y = 7
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
+		prerequisite = { focus = AUH_luftfahrtruppen_divert_money_towards }
+		prerequisite = { focus = AUH_luftfahrtruppen_dedicated_organisation }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_importance_of_recon
+		icon = GFX_goal_equal_court
+		x = 44
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_in_need_of_engines
+		icon = GFX_goal_equal_court
+		x = 46
+		y = 8
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_implement_basic_arms
+		icon = GFX_goal_equal_court
+		x = 47
+		y = 9
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_experiment_designs_shall_lead
+		icon = GFX_goal_equal_court
+		x = 43
+		y = 9
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_luftfahrtruppen_zelacs_dream_reafirmed
+		icon = GFX_goal_equal_court
+		x = 45
+		y = 10
+
+		cost = 6
+		prerequisite = { focus = AUH_luftfahrtruppen_experiment_designs_shall_lead }
+		prerequisite = { focus = AUH_luftfahrtruppen_implement_basic_arms }
+		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
+		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
+
+		completion_reward = {
+    	}
+	}
+
+		focus = {
+		id = AUH_naval_rearnamnet
+		icon = GFX_goal_equal_court
+		x = 39
+		y = 2
+
+		cost = 6
+		prerequisite = { focus = AUH_empire_of_franz_josef }
+
+		completion_reward = {
+		add_ideas = auh_kuk_kriegsmarine
+		1025 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
+		}
+	}
+
+		1388 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
+		}
+	}
+
+		1043 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
+		}
+	}
+
+		1045 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
+		}
+	}
     	}
 	}
 
 		focus = {
 		id = AUH_study_of_submarines
 		icon = GFX_goal_equal_court
-		x = 41
+		x = 38
 		y = 3
 
 		cost = 6
@@ -967,26 +1178,36 @@ focus_tree = {
 		mutually_exclusive = {focus = AUH_focus_on_bigger_ships}
 
 		completion_reward = {
+				add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
     	}
 	}
 
 		focus = {
 		id = AUH_give_uboots_greenlight
 		icon = GFX_goal_equal_court
-		x = 41
+		x = 38
 		y = 4
 
 		cost = 6
 		prerequisite = { focus = AUH_study_of_submarines }
 
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = auh_kuk_kriegsmarine
+				add_idea = auh_kuk_kriegsmarine_greenlight
+			}
+
     	}
 	}
 
 		focus = {
 		id = AUH_focus_on_bigger_ships
 		icon = GFX_goal_equal_court
-		x = 43
+		x = 40
 		y = 3
 
 		cost = 6
@@ -994,19 +1215,51 @@ focus_tree = {
 		mutually_exclusive = {focus = AUH_study_of_submarines}
 
 		completion_reward = {
+				add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ca_tech
+				category = cl_tech
+				category = bb_tech
+			}
     	}
 	}
 
 		focus = {
 		id = AUH_hotzendorf_doctrine_on_ships
 		icon = GFX_goal_equal_court
-		x = 43
+		x = 40
 		y = 4
 
 		cost = 6
 		prerequisite = { focus = AUH_focus_on_bigger_ships }
 
 		completion_reward = {
+		
+				swap_ideas = {
+				remove_idea = auh_kuk_kriegsmarine
+				add_idea = auh_kuk_kriegsmarine_hotz
+			}
+    	}
+	}
+
+		focus = {
+		id = AUH_kuk_navy_support
+		icon = GFX_goal_equal_court
+		x = 39
+		y = 5
+
+		cost = 6
+		prerequisite = { focus = AUH_hotzendorf_doctrine_on_ships }
+		prerequisite = { focus = AUH_give_uboots_greenlight}
+
+		completion_reward = {
+		
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 5
+				category = naval_doctrine
+			}
     	}
 	}
 
@@ -1028,8 +1281,8 @@ focus_tree = {
 	}
 
 		focus = {
-		id = AUH_we_must_pick_aok_leader
-		icon = GFX_goal_AUH_army_leadership_question
+		id = AUH_prove_to_investors
+		icon = GFX_goal_equal_court
 		x = 33
 		y = 4
 
@@ -1040,6 +1293,23 @@ focus_tree = {
 		swap_ideas = { 
     	remove_idea = auh_armeereform_focus_two
     	add_idea = auh_armeereform_focus_three
+    		}
+    	}
+	}
+
+		focus = {
+		id = AUH_we_must_pick_aok_leader
+		icon = GFX_goal_AUH_army_leadership_question
+		x = 33
+		y = 5
+
+		cost = 11
+		prerequisite = { focus = AUH_prove_to_investors }
+
+		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_armeereform_focus_three
+    	add_idea = auh_armeereform_focus_four
     		}
 		swap_ideas = { 
     	remove_idea = auh_underfunded_army_two
@@ -1056,7 +1326,7 @@ focus_tree = {
 		id = AUH_bojna_doctrine
 		icon = GFX_goal_equal_court
 		x = 29
-		y = 5
+		y = 6
 
 		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
@@ -1078,7 +1348,7 @@ focus_tree = {
 		id = AUH_bojna_preparade_position
 		icon = GFX_goal_equal_court
 		x = 29
-		y = 6
+		y = 7
 
 		cost = 6
 		prerequisite = { focus = AUH_bojna_doctrine }
@@ -1101,7 +1371,7 @@ focus_tree = {
 		id = AUH_bojna_use_of_mountains
 		icon = GFX_goal_equal_court
 		x = 29
-		y = 7
+		y = 8
 
 		cost = 6
 		prerequisite = { focus = AUH_bojna_preparade_position }
@@ -1124,7 +1394,7 @@ focus_tree = {
 		id = AUH_bojna_defensive_army
 		icon = GFX_goal_equal_court
 		x = 29
-		y = 8
+		y = 9
 
 		cost = 6
 		prerequisite = { focus = AUH_bojna_use_of_mountains }
@@ -1142,7 +1412,7 @@ focus_tree = {
 		id = AUH_friedrich_doctrine
 		icon = GFX_goal_equal_court
 		x = 31
-		y = 5
+		y = 6
 
 		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
@@ -1163,7 +1433,7 @@ focus_tree = {
 		id = AUH_friedrich_doctrine_balance_of_tactics
 		icon = GFX_goal_equal_court
 		x = 31
-		y = 6
+		y = 7
 
 		cost = 6
 		prerequisite = { focus = AUH_friedrich_doctrine }
@@ -1186,7 +1456,7 @@ focus_tree = {
 		id = AUH_friedrich_improve_communication_ours
 		icon = GFX_goal_equal_court
 		x = 31
-		y = 7
+		y = 8
 
 		cost = 6
 		prerequisite = { focus = AUH_friedrich_doctrine_balance_of_tactics }
@@ -1209,7 +1479,7 @@ focus_tree = {
 		id = AUH_friedrich_decentralize_give_more_freedom
 		icon = GFX_goal_equal_court
 		x = 31
-		y = 8
+		y = 9
 
 		cost = 6
 		prerequisite = { focus = AUH_friedrich_improve_communication_ours }
@@ -1226,7 +1496,7 @@ focus_tree = {
 		id = AUH_ohoh_hotzendorf_doctrine
 		icon = GFX_goal_equal_court
 		x = 33
-		y = 5
+		y = 6
 
 		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
@@ -1247,7 +1517,7 @@ focus_tree = {
 		id = AUH_ohoh_hotzendorf_war_like_trainings
 		icon = GFX_goal_equal_court
 		x = 33
-		y = 6
+		y = 7
 
 		cost = 6
 		prerequisite = { focus = AUH_ohoh_hotzendorf_doctrine }
@@ -1264,7 +1534,7 @@ focus_tree = {
 		id = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins
 		icon = GFX_goal_equal_court
 		x = 33
-		y = 7
+		y = 8
 
 		cost = 6
 		prerequisite = { focus = AUH_ohoh_hotzendorf_war_like_trainings }
@@ -1288,7 +1558,7 @@ focus_tree = {
 		id = AUH_hotzendorf_officers_must_do
 		icon = GFX_goal_equal_court
 		x = 33
-		y = 8
+		y = 9
 
 		cost = 6
 		prerequisite = { focus = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins }
@@ -1305,7 +1575,7 @@ focus_tree = {
 		id = AUH_hauer_cav_doctrine
 		icon = GFX_goal_equal_court
 		x = 35
-		y = 5
+		y = 6
 
 		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
@@ -1326,7 +1596,7 @@ focus_tree = {
 		id = AUH_hauer_squadron_tactics
 		icon = GFX_goal_equal_court
 		x = 35
-		y = 6
+		y = 7
 
 		cost = 6
 		prerequisite = { focus = AUH_hauer_cav_doctrine }
@@ -1343,7 +1613,7 @@ focus_tree = {
 		id = AUH_hauer_live_of_the_land
 		icon = GFX_goal_equal_court
 		x = 35
-		y = 7
+		y = 8
 
 		cost = 6
 		prerequisite = { focus = AUH_hauer_squadron_tactics }
@@ -1360,7 +1630,7 @@ focus_tree = {
 		id = AUH_hauer_lead_by_tasks
 		icon = GFX_goal_equal_court
 		x = 35
-		y = 8
+		y = 9
 
 		cost = 6
 		prerequisite = { focus = AUH_hauer_live_of_the_land }
@@ -1377,7 +1647,7 @@ focus_tree = {
 		id = AUH_mass_assault_doctrine
 		icon = GFX_goal_equal_court
 		x = 37
-		y = 5
+		y = 6
 
 		cost = 6
 		prerequisite = { focus = AUH_we_must_pick_aok_leader }
@@ -1416,7 +1686,7 @@ focus_tree = {
 		id = AUH_reorganize_recruiting_schema
 		icon = GFX_goal_equal_court
 		x = 37
-		y = 7
+		y = 8
 
 		cost = 6
 		prerequisite = { focus = AUH_we_must_fill_the_ranks }
@@ -1434,7 +1704,7 @@ focus_tree = {
 		id = AUH_swarms_of_men
 		icon = GFX_goal_equal_court
 		x = 37
-		y = 8
+		y = 9
 
 		cost = 6
 		prerequisite = { focus = AUH_reorganize_recruiting_schema }
@@ -1452,7 +1722,7 @@ focus_tree = {
 		id = AUH_we_must_fill_the_ranks
 		icon = GFX_goal_equal_court
 		x = 37
-		y = 6
+		y = 7
 
 		cost = 6
 		prerequisite = { focus = AUH_mass_assault_doctrine }
