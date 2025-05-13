@@ -1,50 +1,53 @@
 spriteTypes = {
-	
-		spriteType = {
+	spriteType = {
 		name = "GFX_franz_josef_meeting_fezs"
 		texturefile = "gfx/event_pictures/franz_josef_meeting_fezs.dds"
 	}
-}
 
-spriteTypes = {
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_school_lesson_girls"
 		texturefile = "gfx/event_pictures/school_lesson_girls.dds"
 	}
-}
 
-spriteTypes = {
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_translethania_postcard"
 		texturefile = "gfx/event_pictures/translethania_something_to_do.dds"
 	}
-}
 
-spriteTypes = {
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_little_girl_in_work_kids"
 		texturefile = "gfx/event_pictures/little_girl_in_work_kids.dds"
 	}
-}
 
-spriteTypes = {
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_office_meeting_maybe_giving"
 		texturefile = "gfx/event_pictures/office_meeting_maybe_giving.dds"
 	}
-}
 
-spriteTypes = {
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_winged_hussar"
 		texturefile = "gfx/event_pictures/winged_hussar.dds"
 	}
-}
 
-spriteTypes = {
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_many_crowns"
 		texturefile = "gfx/event_pictures/franz_josef_crown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ferdinand_flight"
+		texturefile = "gfx/event_pictures/ferdinand_flight.png"
+	}
+
+	spriteType = {
+		name = "GFX_titanic"
+		texturefile = "gfx/event_pictures/titanic.png"
 	}
 }
 

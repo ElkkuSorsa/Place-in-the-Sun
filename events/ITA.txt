@@ -82,6 +82,16 @@ country_event = {
 
 	option = {
 		name = "We must agree to save the empire."
+		ITA = {
+			transfer_state = 448
+			transfer_state = 661
+			transfer_state = 662
+			transfer_state = 449
+			transfer_state = 450
+			transfer_state = 451
+			transfer_state = 483
+			transfer_state = 273
+		}
 	}
 }
 
@@ -89,7 +99,7 @@ news_event = {
 	id = ITA_libya.3
 	picture = GFX_news_event_generic_read_write
 	title = "Treaty of Ouchy"
-	desc = "The Ottoman Empire has lost its war against the kingdom of Italy after the invasion of Libya. The outcome was excpected as the Ottomans are weaker since the Balkan situation has escalated to new levels."
+	desc = "The Ottoman Empire has lost its war against the kingdom of Italy after the invasion of Libya. The outcome was expected as the Ottomans are weaker since the Balkan situation has escalated to new levels."
 
 	fire_only_once = yes
 	major = yes
@@ -128,21 +138,6 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
-
-	immediate = {
-		hidden_effect = {
-			ITA = {
-				transfer_state = 448
-				transfer_state = 661
-				transfer_state = 662
-				transfer_state = 449
-				transfer_state = 450
-				transfer_state = 451
-				transfer_state = 483
-				transfer_state = 273
-			}
-		}
-	}
 
 	option = {
 		name = "Interesting..."
