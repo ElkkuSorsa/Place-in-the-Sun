@@ -1,3 +1,143 @@
+ENG_march_for_change = {
+	ENG_change_ireland = {
+		icon = eng_blackshirt_march
+
+		highlight_states = {
+			highlight_state_targets = { state = 113 state = 134 state = 135 state = 119 } 
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { OR = { has_government = fascism has_government = neutrality }}
+			has_completed_focus = ENG_march_for_change
+		}
+
+		remove_effect = {
+				add_popularity = { ideology = fascism popularity = 0.05 }
+				add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+	}
+
+	ENG_change_england = {
+		icon = eng_blackshirt_march
+
+		highlight_states = {
+			highlight_state_targets = { state = 126 state = 122 state = 931 state = 132 state = 130 state = 128 state = 129 state = 125 state = 131 state = 127 state = 338 state = 123 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { OR = { has_government = fascism has_government = neutrality }}
+			has_completed_focus = ENG_march_for_change
+		}
+
+		remove_effect = {
+				add_popularity = { ideology = fascism popularity = 0.05 }
+				add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+	}
+
+	ENG_change_scotland = {
+		icon = eng_blackshirt_march
+
+		highlight_states = {
+			highlight_state_targets = { state = 121 state = 136 state = 120 state = 133 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { OR = { has_government = fascism has_government = neutrality }}
+			has_completed_focus = ENG_march_for_change
+		}
+
+		remove_effect = {
+				add_popularity = { ideology = fascism popularity = 0.05 }
+				add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+	}
+
+	ENG_unite_opposition = {
+		icon = eng_blackshirt_march
+
+		cost = 100
+
+		days_remove = 10
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { OR = { has_government = fascism has_government = neutrality } }
+			has_completed_focus = ENG_march_for_change
+		}
+
+		remove_effect = {
+			set_party_name = {
+				ideology = fascism
+				long_name = "Party of Nationalist Conservatives and Military"
+				name = "National Conservatives"
+			}
+			add_popularity = { ideology = fascism popularity = 0.075 }
+			add_popularity = { ideology = neutrality popularity = 0.075 }
+		}
+	}
+
+	ENG_civil_war = {
+
+		activation = {
+			always = no
+		}
+
+		selectable_mission = yes
+		days_mission_timeout = 90
+
+		is_good = no
+
+		complete_effect = {
+			custom_effect_tooltip = "We will back down."
+			hidden_effect = {
+				complete_national_focus = ENG_hand_over_to_king
+				uncomplete_national_focus = {
+					focus = ENG_extended_military_admin
+					uncomplete_children = yes
+				}
+			}
+		}
+
+		timeout_effect = {
+			start_civil_war = {
+				ideology = communism
+				size = 0.6
+				hidden_effect = {
+					set_country_flag = ENG_socialist_england
+					load_focus_tree = ENG_COM_focus_tree
+					add_ideas = ENG_workers_militias
+				}
+			}
+		}
+	}
+}
+
 ENG_politics = {
 	ENG_elections_1910 = {
 
@@ -47,16 +187,6 @@ ENG_politics = {
 		timeout_effect = {
 			if = {
 				limit = {
-					has_country_flag = ENG_no_coalition
-				}
-				custom_effect_tooltip = ENG_law_pass
-				add_stability = -0.1
-				country_event = conservative_england.2
-			}
-
-			if = {
-				limit = {
-					not = { has_country_flag = ENG_no_coalition }
 					check_variable = { var = govseats  value = 331  compare = less_than }
 				}
 				custom_effect_tooltip = ENG_law_not_pass

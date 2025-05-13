@@ -41,6 +41,7 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = ENG_collaborate_conservatives
+					has_completed_focus = ENG_balfour
 				}
 			}
 		}

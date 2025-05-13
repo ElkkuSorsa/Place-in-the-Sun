@@ -114,7 +114,8 @@ ideas = {
 			picture = generic_democracy_banned
 			modifier = {
 				stability_factor = -0.25
-				democratic_drift = -0.05
+				neutrality_drift = 0.05
+				fascism_drift = 0.02
 			}
 		}
 

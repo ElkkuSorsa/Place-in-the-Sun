@@ -14,20 +14,48 @@ focus_tree = {
 
 	shared_focus = ENT_entente_cordiale_1
 
+
+	# Historical Political Tree
+
 	focus = {
 		id = ENG_1910_elections
-		icon = GFX_focus_generic_industry_2
-		x = 20
+		icon = GFX_focus_CHL_1938_chilean_presidential_election
+		x = 45
 		y = 1
+		mutually_exclusive = { focus = ENG_march_for_change }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
+		offset = {
+			x = -30
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+				}
+			}
+		}
+
+		offset = {
+			x = -25
+			trigger = {
+				has_completed_focus = ENG_conservative_victory
+			}
+		}
 
 		cost = 10
 
 		available = {
-			always = no
-		}
-
-		allow_branch = {
-			not = { has_completed_focus = ENG_coalition_breaks_down has_completed_focus = ENG_darkest_of_hours }
+			custom_trigger_tooltip = {
+				tooltip = "Elections were held like usually."
+				has_completed_focus = ENG_1910_elections
+			}
 		}
 
 		completion_reward = {
@@ -36,421 +64,2435 @@ focus_tree = {
 
 	focus = {
 		id = ENG_the_last_liberals
-		icon = GFX_focus_generic_industry_2
-		x = 12
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 30
 		y = 2
-
 		prerequisite = { focus = ENG_1910_elections }
-		mutually_exclusive = { focus = ENG_loss_of_confidence }
+		mutually_exclusive = { focus = ENG_conservative_victory	}
 
-		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		available = {
-			always = no
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_government_of_liberals
-		icon = GFX_focus_generic_industry_2
-		x = 12
-		y = 3
-
-		prerequisite = { focus = ENG_the_last_liberals }
-		mutually_exclusive = { focus = ENG_coalition_breaks_down }
-
-		cost = 10
-
-		available = {
-			always = no
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_coalition_breaks_down
-		icon = GFX_focus_generic_industry_2
-		x = 10
-		y = 3
-
-		mutually_exclusive = { focus = ENG_government_of_liberals }
-
-		cost = 1
-
-		available = {
-			always = no
+		allow_branch = {
+			NOT = {
+				has_completed_focus = ENG_conservative_victory
+			}
+			NOT = {
+				has_completed_focus = ENG_march_for_change
+			}
 		}
 
 		offset = {
-			y = -2
-			x = 10
+			x = -20
 			trigger = {
-				has_completed_focus = ENG_coalition_breaks_down
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
 			}
 		}
 
-		allow_branch = {
-			not = { has_country_flag = ENG_hide_1 }
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_home_rule_for_ireland
-		icon = GFX_focus_generic_industry_2
-		x = 16
-		y = 4
-
-		prerequisite = { focus = ENG_government_of_liberals }
-		prerequisite = { focus = ENG_continental_intervention }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_delay_home_rule
-		icon = GFX_focus_generic_industry_2
-		x = 16
-		y = 5
-
-		prerequisite = { focus = ENG_home_rule_for_ireland }
-		prerequisite = { focus = ENG_parliament_act }
-
-		cost = 1
-
-		available = {
-			always = no
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_form_war_cabinet
-		icon = GFX_focus_generic_industry_2
-		x = 17
-		y = 6
-
-		prerequisite = { focus = ENG_delay_home_rule }
-
-		cost = 5
-
-		available = {
-			has_war_with = GER
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_support_entrepreneurship
-		icon = GFX_focus_generic_industry_2
-		x = 14
-		y = 5
-
-		prerequisite = { focus = ENG_parliament_act }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_expand_education_access
-		icon = GFX_focus_generic_industry_2
-		x = 15
-		y = 6
-
-		prerequisite = { focus = ENG_support_entrepreneurship }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_national_insurance_act
-		icon = GFX_focus_generic_industry_2
-		x = 16
-		y = 7
-
-		prerequisite = { focus = ENG_expand_education_access }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_trade_union_act
-		icon = GFX_focus_generic_industry_2
-		x = 13
-		y = 6
-
-		prerequisite = { focus = ENG_support_entrepreneurship focus = ENG_expand_poor_laws }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_neo_liberalism
-		icon = GFX_focus_generic_industry_2
-		x = 13
-		y = 7
-
-		prerequisite = { focus = ENG_trade_union_act }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_expand_poor_laws
-		icon = GFX_focus_generic_industry_2
-		x = 12
-		y = 5
-
-		prerequisite = { focus = ENG_continue_liberal_reforms }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_expand_poor_laws
-		icon = GFX_focus_generic_industry_2
-		x = 12
-		y = 5
-
-		prerequisite = { focus = ENG_parliament_act }
-
-		allow_branch = {
-			not = { has_completed_focus = ENG_coalition_breaks_down has_completed_focus = ENG_darkest_of_hours }
+		offset = {
+			x = 5
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+				}
+			}
 		}
 
 		cost = 10
 
-		available = {
-		}
-
 		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 
 	focus = {
-		id = ENG_healthcare_reform
-		icon = GFX_focus_generic_industry_2
-		x = 11
-		y = 6
-
-		prerequisite = { focus = ENG_expand_poor_laws }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_parliament_act
-		icon = GFX_focus_generic_industry_2
-		x = 12
-		y = 4
-
-		prerequisite = { focus = ENG_government_of_liberals }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_continental_intervention
-		icon = GFX_focus_generic_industry_2
-		x = 20
+		id = ENG_minority_government
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 28
 		y = 3
+		prerequisite = { focus = ENG_the_last_liberals }
+		mutually_exclusive = { focus = ENG_government_of_liberals }
 
-		prerequisite = { focus = ENG_the_last_liberals focus = ENG_loss_of_confidence }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-			give_guarantee = FRA
-			give_guarantee = BEL
-		}
-	}
-
-	focus = {
-		id = ENG_reaffirm_the_entente
-		icon = GFX_focus_generic_industry_2
-		x = 19
-		y = 4
-
-		prerequisite = { focus = ENG_continental_intervention }
-		prerequisite = { focus = ENG_government_of_liberals }
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-			FRA = {
-				add_to_faction = ENG
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
 			}
 		}
-	}
-
-	focus = {
-		id = ENG_establish_consription
-		icon = GFX_focus_generic_industry_2
-		x = 20
-		y = 5
-
-		prerequisite = { focus = ENG_reaffirm_the_entente focus = ENG_pursue_global_interests }
-
-		cost = 3
-
-		available = {
-			has_completed_focus = ENG_haldane_reforms_completed
-		}
-
-		completion_reward = {
-			add_ideas = limited_conscription
-		}
-	}
-
-	focus = {
-		id = ENG_pursue_global_interests
-		icon = GFX_focus_generic_industry_2
-		x = 21
-		y = 4
-
-		prerequisite = { focus = ENG_continental_intervention }
-		prerequisite = { focus = ENG_balfour_second_term }
 
 		cost = 10
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
+				tooltip = "The liberals failed to negotiate government coalition."
+				always = no
+			}
+		}
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_stability = -0.2
+		}
+	}
+
+	focus = {
+		id = ENG_socialists_lead
+		icon = GFX_focus_SWE_socialist_reforms
+		x = 28
+		y = 4
+		prerequisite = { focus = ENG_minority_government }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_timed_idea = {
+				days = 180
+				idea = ENG_socialist_influence
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+			set_popularities = {
+				democratic = 45
+				communism = 45
+				fascism = 5
+				neutrality = 5
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "Socialist-Liberal Coalition"
+				name = "SocLib-Coalition"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Socialist-Liberal Coalition"
+				name = "SocLib-Coalition"
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_social_democracy
+		icon = GFX_focus_BRA_socialist_theologians
+		x = 30
+		y = 5
+		prerequisite = { focus = ENG_socialists_lead }
+		mutually_exclusive = { focus = ENG_red_star_in_the_sky }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = "This is not ready!!!!!!!!!!!!! DONT PLAY!!!"
+		}
+	}
+
+	focus = {
+		id = ENG_welfare_reforms
+		icon = GFX_focus_FIN_socialist_welfare
+		x = 30
+		y = 6
+		prerequisite = { focus = ENG_social_democracy }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = ENG_socialist_reforms
+		}
+	}
+
+	focus = {
+		id = ENG_women_suffrage
+		icon = GFX_focus_generic_universal_suffrage
+		x = 30
+		y = 7
+		prerequisite = { focus = ENG_welfare_reforms }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_republican_movement
+		icon = GFX_focus_generic_universal_suffrage
+		x = 30
+		y = 8
+		prerequisite = { focus = ENG_women_suffrage }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			remove_idea = GFX_idea_ENG_george_v
+			news_event = {
+				id = communist_britain.2
+				days = 3
+			}
+			set_cosmetic_tag = ENG_republic
+		}
+	}
+
+	focus = {
+		id = ENG_presidental_elections
+		icon = GFX_focus_generic_universal_suffrage
+		x = 30
+		y = 9
+		prerequisite = { focus = ENG_republican_movement }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_draft_constitution
+		icon = GFX_focus_generic_universal_suffrage
+		x = 30
+		y = 10
+		prerequisite = { focus = ENG_presidental_elections }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_lower_income_tax_cuts
+		icon = GFX_focus_generic_universal_suffrage
+		x = 34
+		y = 10
+		prerequisite = { focus = ENG_presidental_elections }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expand_state_pension
+		icon = GFX_focus_generic_universal_suffrage
+		x = 28
+		y = 10
+		prerequisite = { focus = ENG_presidental_elections }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_democratize_the_army
+		icon = GFX_focus_generic_universal_suffrage
+		x = 26
+		y = 10
+		prerequisite = { focus = ENG_presidental_elections }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_support_russian_liberals
+		icon = GFX_focus_generic_universal_suffrage
+		x = 32
+		y = 10
+		prerequisite = { focus = ENG_presidental_elections }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_red_star_in_the_sky
+		icon = GFX_focus_ger_great_red_menace
+		x = 26
+		y = 5
+		prerequisite = { focus = ENG_socialists_lead }
+		mutually_exclusive = { focus = ENG_social_democracy }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ENG_oust_the_liberal_ministers
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 26
+		y = 6
+		prerequisite = { focus = ENG_red_star_in_the_sky }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.3
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "British Union of Socialists"
+				name = "Socialists"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Liberal Party"
+				name = "Liberals"
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_workers_dictatorship
+		icon = GFX_goal_support_communism
+		x = 26
+		y = 7
+		prerequisite = { focus = ENG_oust_the_liberal_ministers }
+
+		cost = 5
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
 				}
 			}
 		}
 
 		completion_reward = {
-			FRA = {
-				add_to_faction = ENG
+			remove_idea = GFX_idea_ENG_george_v
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
+			news_event = {
+				id = communist_britain.1
+				days = 3
 			}
-			country_event = entente_conf.1
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.5
+				}
+			}
+			set_cosmetic_tag = ENG_republic
 		}
 	}
 
 	focus = {
-		id = ENG_loss_of_confidence
-		icon = GFX_focus_generic_industry_2
-		x = 28
-		y = 2
-
-		prerequisite = { focus = ENG_1910_elections }
-		mutually_exclusive = { focus = ENG_the_last_liberals }
+		id = ENG_united_forever
+		icon = GFX_goal_support_communism
+		x = 27
+		y = 8
+		prerequisite = { focus = ENG_workers_dictatorship }
+		mutually_exclusive = { focus = ENG_repeal_acts_of_union }
 
 		cost = 10
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = "This will establish a one party state and switch to new focus tree!"
+			hidden_effect = {
+				set_country_flag = socialist_england
+				load_focus_tree = ENG_COM_focus_tree
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_repeal_acts_of_union
+		icon = GFX_goal_support_communism
+		x = 25
+		y = 8
+		prerequisite = { focus = ENG_workers_dictatorship }
+		mutually_exclusive = { focus = ENG_united_forever }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = "This will establish a one party state and switch to new focus tree!"
+			hidden_effect = {
+				set_country_flag = socialist_england
+				load_focus_tree = ENG_COM_focus_tree
+			}
+			release_puppet_on_controlled = SCO 
+			release_puppet_on_controlled = IRE
+		}
+	}
+
+	focus = {
+		id = ENG_government_of_liberals
+		icon = GFX_goal_support_democracy
+		x = 35
+		y = 3
+		prerequisite = { focus = ENG_the_last_liberals }
+		mutually_exclusive = { focus = ENG_minority_government }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The liberals negotiated a coalition with the Irish and Labour Party."
+				always = no
+			}
+		}
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_campaign_for_democracy
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 4
+		prerequisite = { focus = ENG_government_of_liberals }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_times_of_desperation
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 5
+		prerequisite = { focus = ENG_campaign_for_democracy }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_business_as_usual
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 6
+		prerequisite = { focus = ENG_times_of_desperation }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_form_war_cabinet
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 33
+		y = 7
+		prerequisite = { focus = ENG_business_as_usual }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_unlock_war_cabinet_decision
+			custom_effect_tooltip = unlock_focuses
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = ENG_liberal_reforms
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 36
+		y = 4
+		prerequisite = { focus = ENG_government_of_liberals }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_expand_education_access
+		icon = GFX_focus_SWE_education_reform
+		x = 39
+		y = 5
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = ENG_expand_education_access
+		}
+	}
+
+	focus = {
+		id = ENG_neo_liberalism
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		x = 39
+		y = 7
+		prerequisite = { focus = ENG_expand_education_access }
+		prerequisite = { focus = ENG_support_entreprenourship }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_poor_laws
+		icon = GFX_focus_generic_population_growth
+		x = 37
+		y = 5
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = ENG_poor_laws
+		}
+	}
+
+	focus = {
+		id = ENG_healthcare_reform
+		icon = GFX_goal_generic_consumer_goods
+		x = 35
+		y = 5
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_timed_idea = {
+				days = 90
+				idea = ENG_healthcare_reform
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_national_insurance_act
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 35
+		y = 7
+		prerequisite = { focus = ENG_healthcare_reform }
+		prerequisite = { focus = ENG_parliament_act }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_nat_inc_law
+			hidden_effect = {
+				activate_mission = ENG_national_insurance_act
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_trade_union_act
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 37
+		y = 8
+		prerequisite = { focus = ENG_poor_laws }
+		prerequisite = { focus = ENG_national_insurance_act }
+		prerequisite = { focus = ENG_neo_liberalism }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_tuc_law
+			hidden_effect = {
+				activate_mission = ENG_trade_union_act
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_war_of_irish_independence
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 50
+		y = 10
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_irish_treaty
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 49
+		y = 11
+		prerequisite = { focus = ENG_war_of_irish_independence }
+		mutually_exclusive = { focus = ENG_total_defeat }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_aid_irish_recovery
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 49
+		y = 12
+		prerequisite = { focus = ENG_anglo_irish_treaty }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_total_defeat
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 51
+		y = 11
+		prerequisite = { focus = ENG_war_of_irish_independence }
+		mutually_exclusive = { focus = ENG_anglo_irish_treaty }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_withdraw_industry
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 51
+		y = 12
+		prerequisite = { focus = ENG_total_defeat }
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_war_cabinet
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 40
+		y = 9
+
+		cost = 5
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		allow_branch = {
+			has_completed_focus = ENG_form_war_cabinet
+		}
 
 		available = {
 			always = no
 		}
 
 		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 
 	focus = {
-		id = ENG_bonar_law
-		icon = GFX_focus_generic_industry_2
-		x = 28
-		y = 3
+		id = ENG_utilize_civilian_industry
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 38
+		y = 10
 
-		prerequisite = { focus = ENG_loss_of_confidence }
-		mutually_exclusive = { focus = ENG_leadership_elections }
+		prerequisite = { focus = ENG_war_cabinet }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_restore_the_public_trust
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 40
+		y = 10
+
+		prerequisite = { focus = ENG_war_cabinet }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_continue_social_welfare
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 42
+		y = 10
+
+		prerequisite = { focus = ENG_war_cabinet }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_reign_of_asquith
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 40
+		y = 11
+
+		prerequisite = { focus = ENG_utilize_civilian_industry }
+		prerequisite = { focus = ENG_restore_the_public_trust }
+		prerequisite = { focus = ENG_continue_social_welfare }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			set_power_balance = {
+				id = ENG_liberals_split
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_battle_the_party_influence
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 38
+		y = 12
+
+		prerequisite = { focus = ENG_reign_of_asquith }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_promote_pro_coalition
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 38
+		y = 13
+
+		prerequisite = { focus = ENG_battle_the_party_influence }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_discredit_liberals
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 40
+		y = 12
+
+		prerequisite = { focus = ENG_reign_of_asquith }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_split_in_liberals
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 40
+		y = 13
+
+		prerequisite = { focus = ENG_discredit_liberals }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_endorse_conservatives
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 42
+		y = 12
+
+		prerequisite = { focus = ENG_reign_of_asquith }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_collaborate_with_conservatives
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		x = 42
+		y = 13
+
+		prerequisite = { focus = ENG_endorse_conservatives }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_parliament_act
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 36
+		y = 6
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_parliament_act_law
+			hidden_effect = {
+				activate_mission = ENG_parliament_act
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_support_entreprenourship
+		icon = GFX_focus_mex_privatisation
+		x = 38
+		y = 6
+		prerequisite = { focus = ENG_liberal_reforms }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_timed_idea = {
+				days = 120
+				idea = ENG_supported_entreprenourship
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_reassure_france
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 41
+		y = 5
+		prerequisite = { focus = ENG_government_of_liberals }
+		prerequisite = { focus = ENG_limited_homerule }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+		}
+
+		completion_reward = {
+			give_guarantee = fra
+		}
+	}
+
+	focus = {
+		id = ENG_strait_blockade
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 43
+		y = 6
+		prerequisite = { focus = ENG_reassure_france }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+		}
+
+		completion_reward = {
+			give_guarantee = fra
+		}
+	}
+
+	focus = {
+		id = ENG_north_sea_blockade
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 43
+		y = 7
+		prerequisite = { focus = ENG_strait_blockade }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+		}
+
+		completion_reward = {
+			give_guarantee = fra
+		}
+	}
+
+	focus = {
+		id = ENG_uncle_sam
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 43
+		y = 8
+		prerequisite = { focus = ENG_north_sea_blockade }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		bypass = {
+			is_in_faction_with = USA
+		}
+
+		available = {
+			date > 1918.1.1
+			has_war_with = GER
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+		}
+
+		completion_reward = {
+			give_guarantee = fra
+		}
+	}
+
+	focus = {
+		id = ENG_american_loans
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 43
+		y = 9
+		prerequisite = { focus = ENG_uncle_sam }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		available = {
+			is_in_faction_with = USA
+			has_war_with = GER
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			base = 100
+		}
+
+		completion_reward = {
+			give_guarantee = fra
+		}
+	}
+
+	focus = {
+		id = ENG_attachee_to_russia
+		icon = GFX_goal_generic_major_alliance
+		x = 41
+		y = 6
+		prerequisite = { focus = ENG_reassure_france }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
 
 		cost = 5
 
 		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+			has_war_with = GER
+			RUS = {
+				has_war_with = GER
+			}
 		}
+
+		completion_reward = {
+			RUS = {
+	#			add_ideas
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_war_against_ottomans
+		icon = GFX_focus_generic_attack_turkey
+		x = 41
+		y = 7
+		prerequisite = { focus = ENG_attachee_to_russia }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		available = {
+			has_war_with = GER
+		}
+
+		will_lead_to_war_with = OTT
+
+		completion_reward = {
+			declare_war_on = {
+				target = OTT 
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_divide_ottomans
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 41
+		y = 8
+		prerequisite = { focus = ENG_war_against_ottomans }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
 
 		completion_reward = {
 		}
 	}
 
 	focus = {
-		id = ENG_parliamentary_coalition
-		icon = GFX_focus_generic_industry_2
-		x = 28
-		y = 4
+		id = ENG_engage_in_europe
+		icon = GFX_goal_generic_territory_or_war
+		x = 45
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory focus = ENG_the_last_liberals }
 
-		prerequisite = { focus = ENG_bonar_law }
-		mutually_exclusive = { focus = ENG_darkest_of_hours }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+				}
+			}
+		}
+
+		cost = 5
+
+		available = {
+			threat > 0.01
+		}
+
+		completion_reward = {
+			news_event = ENG_news.1
+			give_guarantee = BEL
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_limited_homerule
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		x = 43
+		y = 4
+		prerequisite = { focus = ENG_engage_in_europe }
+		prerequisite = { focus = ENG_the_last_liberals }
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		ai_will_do = {
+			base = 100
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Parliament Act of 1911"
+				has_country_flag = ENG_parliament_act
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_ire_1911_law
+			hidden_effect = {
+				activate_mission = ENG_gov_of_ire_1911
+				country_event = {
+					days = 45
+					id = ENG_ireland.7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_hold_on_ireland
+		icon = GFX_goal_generic_military_deal
+		x = 47
+		y = 4
+		prerequisite = { focus = ENG_engage_in_europe }
+		prerequisite = { focus = ENG_conservative_victory }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = ENG_irish_occupation
+		}
+	}
+
+	focus = {
+		id = ENG_increase_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 45
+		y = 5
+		prerequisite = { focus = ENG_engage_in_europe }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+				}
+			}
+		}
+
+		available = {
+			has_completed_focus = ENG_haldane_reforms_completed
+			custom_trigger_tooltip = {
+				tooltip = great_war
+			}
+		}
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 5
+
+	}
+
+	focus = {
+		id = ENG_conservative_victory
+		icon = GFX_goal_generic_national_unity
+		x = 60
+		y = 2
+		prerequisite = { focus = ENG_1910_elections }
+		mutually_exclusive = { focus = ENG_the_last_liberals }
+
+		offset = {
+			x = -40
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		allow_branch = {
+			NOT = { 
+				has_completed_focus = ENG_minority_government
+				has_completed_focus = ENG_government_of_liberals
+			}
+			NOT = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_agressive_diplomacy
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 51
+		y = 4
+		prerequisite = { focus = ENG_conservative_victory }
+		prerequisite = { focus = ENG_engage_in_europe }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = agressive_diplomacy
+		}
+	}
+
+	focus = {
+		id = ENG_entente_con
+		icon = GFX_goal_generic_alliance
+		x = 51
+		y = 5
+		prerequisite = { focus = ENG_agressive_diplomacy }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		offset = {
+			x = -20
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			FRA = {
+				add_to_faction = ENG
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_entente_conference
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 50
+		y = 6
+		prerequisite = { focus = ENG_entente_con }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			country_event = {
+				id = entente_conf.1
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_morocco_for_protection
+		icon = GFX_goal_generic_forceful_treaty
+		x = 47
+		y = 7
+		prerequisite = { focus = ENG_entente_conference }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			SPA = {
+				country_event = {
+					id = morocco_guarantee.1
+					days = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_stabilize_spain
+		icon = GFX_focus_intervention_spain_nationalists
+		x = 46
+		y = 8
+		prerequisite = { focus = ENG_morocco_for_protection }
+		mutually_exclusive = { focus = ENG_expand_gibraltar }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_to_faction = SPA
+		}
+	}
+
+	focus = {
+		id = ENG_expand_gibraltar
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 48
+		y = 8
+		prerequisite = { focus = ENG_morocco_for_protection }
+		mutually_exclusive = { focus = ENG_stabilize_spain }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_invoke_portugal
+		icon = GFX_focus_generic_befriend_portugal
+		x = 50
+		y = 7
+		prerequisite = { focus = ENG_entente_conference }
+		mutually_exclusive = { focus = ENG_demand_mozambique }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
 
 		cost = 10
 
 		available = {
 		}
+
+		completion_reward = {
+			POR = {
+				country_event = {
+					id = portugal_england.1
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_colonial_ambitions
+		icon = GFX_focus_ARG_revive_the_colonial_plan
+		x = 54
+		y = 6
+		prerequisite = { focus = ENG_entente_con }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_abyssinia
+		icon = GFX_focus_ETH_protector_of_the_somalis
+		x = 56
+		y = 7
+		prerequisite = { focus = ENG_colonial_ambitions }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ETH
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_middle_east
+		icon = GFX_focus_ETH_an_arabic_base
+		x = 54
+		y = 7
+		prerequisite = { focus = ENG_colonial_ambitions }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_anatolian_lands
+		icon = GFX_focus_generic_attack_turkey
+		x = 53
+		y = 8
+		prerequisite = { focus = ENG_middle_east }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_demand_mozambique
+		icon = GFX_focus_generic_attack_portugal
+		x = 52
+		y = 7
+		prerequisite = { focus = ENG_colonial_ambitions }
+		mutually_exclusive = { focus = ENG_invoke_portugal }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_empower_house_of_lords
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 59
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory }
+		mutually_exclusive = { focus = ENG_status_quo_with_lords }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_balfour
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 58
+		y = 4
+		prerequisite = { focus = ENG_empower_house_of_lords }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_royal_veto
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 59
+		y = 5
+		prerequisite = { focus = ENG_balfour }
+		prerequisite = { focus = ENG_royal_support }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = ENG_royal_veto
+		}
+	}
+
+	focus = {
+		id = ENG_status_quo_with_lords
+		icon = GFX_focus_generic_support_the_left_right
+		x = 61
+		y = 3
+		prerequisite = { focus = ENG_conservative_victory }
+		mutually_exclusive = { focus = ENG_empower_house_of_lords }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_law
+		icon = GFX_focus_generic_support_the_left_right
+		x = 62
+		y = 4
+		prerequisite = { focus = ENG_status_quo_with_lords }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			promote_character = ENG_bonar_law
+		}
+	}
+
+
+	focus = {
+		id = ENG_constitutionalism
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 61
+		y = 5
+		prerequisite = { focus = ENG_law }
+		prerequisite = { focus = ENG_royal_support }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = ENG_royal_appeasement
+		}
+	}
+
+	focus = {
+		id = ENG_limited_reformism
+		icon = GFX_focus_DEN_limited_regulations
+		x = 60
+		y = 6
+		prerequisite = { focus = ENG_royal_veto focus = ENG_constitutionalism }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_repeal_people_budget
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 59
+		y = 7
+		prerequisite = { focus = ENG_limited_reformism }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_draft_budget
+		icon = GFX_focus_generic_treaty
+		x = 58
+		y = 8
+		prerequisite = { focus = ENG_repeal_people_budget }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_limit_free_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 61
+		y = 7
+		prerequisite = { focus = ENG_limited_reformism }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_veteran_pensions
+		icon = GFX_focus_generic_military_mission
+		x = 62
+		y = 8
+		prerequisite = { focus = ENG_limit_free_trade }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_promote_english_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 60
+		y = 8
+		prerequisite = { focus = ENG_limit_free_trade }
+		prerequisite = { focus = ENG_repeal_people_budget }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 5
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_new_conservative_england
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		x = 60
+		y = 9
+		prerequisite = { focus = ENG_veteran_pensions }
+		prerequisite = { focus = ENG_promote_english_church }
+		prerequisite = { focus = ENG_draft_budget }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_royal_support
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 60
+		y = 4
+		prerequisite = { focus = ENG_status_quo_with_lords focus = ENG_empower_house_of_lords }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
 
 		completion_reward = {
 			country_event = conservative_england.1
@@ -458,23 +2500,381 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_strict_unionist_policies
-		icon = GFX_focus_generic_industry_2
-		x = 24
-		y = 5
+		id = ENG_march_for_change
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		x = 17
+		y = 1
+		mutually_exclusive = { focus = ENG_1910_elections }
 
-		prerequisite = { focus = ENG_parliamentary_coalition }
-		prerequisite = { focus = ENG_pursue_global_interests}
+		cost = 10
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The king asserted his royal prerogative"
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+			add_ideas = ENG_march_for_change_idea
+		}
+	}
+
+	focus = {
+		id = ENG_question_of_future
+		icon = GFX_goal_tripartite_pact
+		x = 17
+		y = 2
+		prerequisite = { focus = ENG_march_for_change }
 
 		cost = 10
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
+			has_country_leader = {
+				name = "Herbert Kitchener"
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+				id = march_change.3 
+				days = 2
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_hand_over_to_king
+		icon = GFX_focus_generic_home_defense
+		x = 14
+		y = 3
+		prerequisite = { focus = ENG_question_of_future }
+		mutually_exclusive = { focus = ENG_extended_military_admin }
+
+		cost = 1
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = ENG_restored_monarchy
+				days = 180
+			}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Saxe-Coburg & Gotha"
+					name = "House of Saxe-Coburg and Gotha"
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = ENG_revert_the_democratic_reforms
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 11
+		y = 4
+		prerequisite = { focus = ENG_hand_over_to_king }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_british_politics_aut
+				remove_idea = ENG_british_politics_dem
+			}
+			hidden_effect = {
+				country_event = {
+					id = ENG_restored_monarchy.1
+					days = 15
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_deal_with_ireland
+		icon = GFX_goal_generic_dangerous_deal
+		x = 7
+		y = 5
+		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			country_event = ENG_ireland.6
+		}
+	}
+
+	focus = {
+		id = ENG_english_society
+		icon = GFX_focus_CHL_revise_the_social_classes
+		x = 2
+		y = 5
+		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+
+		cost = 1
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			set_power_balance = {
+				id = ENG_english_society_bop
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_side_with_nobility
+		icon = GFX_focus_CONGO_gold_and_diamonds
+		x = 3
+		y = 6
+		prerequisite = { focus = ENG_english_society }
+		mutually_exclusive = { focus = ENG_side_with_people }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = 0.25
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_restore_noble_privileges
+		icon = GFX_focus_generic_home_defense
+		x = 3
+		y = 8
+		prerequisite = { focus = ENG_side_with_nobility }
+		prerequisite = { focus = ENG_maintain_balance }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_side_with_people
+		icon = GFX_focus_GER_the_peoples_victory
+		x = 1
+		y = 6
+		prerequisite = { focus = ENG_english_society }
+		mutually_exclusive = { focus = ENG_side_with_nobility }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = -0.25
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_workers_rights
+		icon = GFX_focus_generic_workers
+		x = 1
+		y = 8
+		prerequisite = { focus = ENG_side_with_people }
+		prerequisite = { focus = ENG_maintain_balance }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_power_balance_value = {
+				id = ENG_english_society_bop
+				value = -0.1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_maintain_balance
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 7
+		prerequisite = { focus = ENG_side_with_nobility focus = ENG_side_with_people }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ENG_social_divides
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 2
+		y = 9
+		prerequisite = { focus = ENG_workers_rights focus = ENG_restore_noble_privileges }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			remove_power_balance = {
+				id = ENG_english_society_bop
+			}
+			IF = {
+				limit = {
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value > 0.15
+					}
+				}
+				add_ideas = ENG_social_divides_1
+			}
+			IF = {
+				limit = {
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value < -0.15
+					}
+				}
+				add_ideas = ENG_social_divides_2
+			}
+			IF = {
+				limit = {
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value > 0.15
+					}
+					power_balance_value = {
+						id = ENG_english_society_bop
+						value < -0.15
+					}
+				}
+				add_ideas = ENG_social_divides_3
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_crown_of_ireland
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		x = 6
+		y = 6
+		prerequisite = { focus = ENG_deal_with_ireland }
+		mutually_exclusive = { focus = ENG_under_control_ireland }
+
+		cost = 5
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				release_puppet_on_controlled = IRE
+			}
+			set_autonomy = {
+				target = IRE
+				autonomy_state = autonomy_personal_union
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_under_control_ireland
+		icon = GFX_goal_generic_position_armies
+		x = 8
+		y = 6
+		prerequisite = { focus = ENG_deal_with_ireland }
+		mutually_exclusive = { focus = ENG_crown_of_ireland }
+
+		cost = 5
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			add_ideas = ENG_irish_occupation
+		}
+	}
+
+	focus = {
+		id = ENG_nation_united_once_more
+		icon = GFX_goal_generic_national_unity
+		x = 7
+		y = 7
+		prerequisite = { focus = ENG_under_control_ireland focus = ENG_crown_of_ireland }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_conference
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 7
+		y = 8
+		prerequisite = { focus = ENG_nation_united_once_more }
+		mutually_exclusive = { focus = ENG_angevin_empire }
+
+		cost = 30
+
+		available = {
 		}
 
 		completion_reward = {
@@ -482,44 +2882,630 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_promote_protestantism
-		icon = GFX_focus_generic_industry_2
+		id = ENG_imperial_federation
+		icon = GFX_focus_eng_imperial_federation
+		x = 7
+		y = 9
+		prerequisite = { focus = ENG_imperial_conference }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ENG_thirteen_colonies
+		icon = GFX_focus_eng_imperial_federation
+		x = 7
+		y = 10
+		prerequisite = { focus = ENG_imperial_federation }
+
+		will_lead_to_war_with = USA
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_disband_the_house_of_commons
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		x = 11
+		y = 5
+		prerequisite = { focus = ENG_revert_the_democratic_reforms }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
+			country_event = ENG_misc.1
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_collaborate_conservatives
+		icon = GFX_goal_continuous_boost_freedom
+		x = 10
+		y = 6
+		prerequisite = { focus = ENG_disband_the_house_of_commons }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			country_event = ENG_restored_monarchy.2
+			custom_effect_tooltip = "   "
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_bonar_law
+		}
+	}
+
+	focus = {
+		id = ENG_appoint_bonar_law
+		icon = GFX_goal_generic_major_alliance
+		x = 10
+		y = 7
+		prerequisite = { focus = ENG_collaborate_conservatives }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			activate_advisor = ENG_bonar_law
+			set_can_be_fired_in_advisor_role = {
+				character = ENG_bonar_law
+				value = no
+			}
+			custom_effect_tooltip = "   "
+			swap_ideas = {
+				add_idea = ENG_democratic_legitimacy_2
+				remove_idea = ENG_democratic_legitimacy_1
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_empower_loyal_nobility
+		icon = GFX_focus_generic_monarchy_1
+		x = 12
+		y = 6
+		prerequisite = { focus = ENG_disband_the_house_of_commons }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ENG_house_of_lords_2
+				remove_idea = ENG_house_of_lords
+			}
+			add_timed_idea = {
+				idea = ENG_empowered_local_nobility
+				days = 365
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_embrace_german_heritage
+		icon = GFX_focus_generic_monarchy_2
+		x = 14
+		y = 4
+		prerequisite = { focus = ENG_hand_over_to_king }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = ENG_embrace_german_heritage_modi
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_german_naval_treaty
+		icon = GFX_focus_generic_treaty
+		x = 14
+		y = 5
+		prerequisite = { focus = ENG_embrace_german_heritage }
+		mutually_exclusive = { focus = ENG_pax_britannica_focus }
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+			has_completed_focus = ENG_divert_resources
+		}
+
+		completion_reward = {
+			add_ideas = agressive_diplomacy
+		}
+	}
+
+	focus = {
+		id = ENG_blockade_france
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 14
+		y = 6
+		prerequisite = { focus = ENG_anglo_german_naval_treaty }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			send_embargo = FRA
+		}
+	}
+
+	focus = {
+		id = ENG_reinstate_claims
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 12
+		y = 7
+		prerequisite = { focus = ENG_blockade_france }
+		prerequisite = { focus = ENG_empower_loyal_nobility }
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			add_state_claim = 15
+			add_state_claim = 19
+		}
+	}
+
+	focus = {
+		id = ENG_future_of_empire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 8
+		prerequisite = { focus = ENG_reinstate_claims }
+		prerequisite = { focus = ENG_nation_united_once_more }
+		prerequisite = { focus = ENG_appoint_bonar_law }
+		mutually_exclusive = { focus = ENG_imperial_conference }
+
+		cost = 30
+
+		available = {
+		}
+
+		completion_reward = {
+			add_trait = {
+				character = ENG_george_v
+				trait = ENG_immortal_imperialist
+			}
+			add_state_core = 15
+			add_state_core = 19
+		}
+	}
+
+	focus = {
+		id = ENG_anglo_german_alliance
+		icon = GFX_goal_generic_alliance
+		x = 14
+		y = 7
+		prerequisite = { focus = ENG_blockade_france }
+
+		cost = 10
+
+		bypass = {
+			OR = {
+				is_in_faction_with = RUS
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_avenge_the_hundred_years_war
+		icon = GFX_goal_generic_major_war
+		x = 14
+		y = 8
+		prerequisite = { focus = ENG_anglo_german_alliance focus = ENG_stand_alone focus = ENG_romanov_alliance }
+		prerequisite = { focus = ENG_reinstate_claims focus = ENG_stand_alone focus = ENG_romanov_alliance }
+		mutually_exclusive = { focus = ENG_slay_the_eagle }
+
+		will_lead_to_war_with = FRA
+
+		cost = 10
+
+		available = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_extended_military_admin
+		icon = GFX_focus_generic_military_dictatorship
+		x = 20
+		y = 3
+		prerequisite = { focus = ENG_question_of_future }
+		mutually_exclusive = { focus = ENG_hand_over_to_king }
+
+		cost = 1
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = ENG_appoint_leader
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 20
+		y = 4
+		prerequisite = { focus = ENG_extended_military_admin }
+
+		cost = 10
+
+		available = {
+			has_civil_war = no
+			NOT = {
+				has_active_mission = ENG_civil_war
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+				id = march_change.5
+				days = 3
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_fire_shall_rise
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 5
+		prerequisite = { focus = ENG_appoint_leader }
+
+		cost = 10
+
+		allow_branch = {
+			has_country_flag = ENG_hitler
+			NOT = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_accident_shall_happen
+		icon = GFX_focus_rom_abdicate
+		x = 24
+		y = 6
+		prerequisite = { focus = ENG_fire_shall_rise }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_queen_will_hear
+		icon = GFX_focus_rom_abdicate
+		x = 24
+		y = 7
+		prerequisite = { focus = ENG_accident_shall_happen }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_world_shall_bow
+		icon = GFX_focus_rom_abdicate
+		x = 22
+		y = 6
+		prerequisite = { focus = ENG_fire_shall_rise }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_they_will_know
+		icon = GFX_focus_rom_abdicate
+		x = 22
+		y = 7
+		prerequisite = { focus = ENG_world_shall_bow }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_those_who_oppose_us
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 8
+		prerequisite = { focus = ENG_they_will_know }
+		prerequisite = { focus = ENG_queen_will_hear }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_will_bow_to_us
+		icon = GFX_focus_rom_abdicate
+		x = 23
+		y = 9
+		prerequisite = { focus = ENG_those_who_oppose_us }
+
+		cost = 10
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_abolish_nobility
+		icon = GFX_focus_rom_abdicate
+		x = 22
+		y = 5
+		prerequisite = { focus = ENG_appoint_leader }
+
+		cost = 10
+
+		allow_branch = {
+			NOT = { has_country_flag = ENG_hitler }
+			NOT = {
+				OR = {
+					has_completed_focus = ENG_minority_government
+					has_completed_focus = ENG_government_of_liberals
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = ENG_house_of_lords
+		}
+	}
+
+	focus = {
+		id = ENG_exile_the_royals
+		icon = GFX_focus_rom_handle_king
 		x = 23
 		y = 6
+		prerequisite = { focus = ENG_abolish_nobility }
 
-		prerequisite = { focus = ENG_strict_unionist_policies }
-
-		cost = 10
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
-				}
-			}
-		}
+		cost = 5
 
 		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
 		}
 	}
 
 	focus = {
-		id = ENG_limited_reformist_policies
-		icon = GFX_focus_generic_industry_2
-		x = 28
+		id = ENG_purge_the_government
+		icon = GFX_focus_SOV_military_purge
+		x = 23
+		y = 7
+		prerequisite = { focus = ENG_exile_the_royals }
+
+		cost = 5
+
+		completion_reward = {
+			set_party_name = {
+				ideology = fascism
+				long_name = "British Union Party of Order"
+				name = "Party of Order"
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_war_budget
+		icon = GFX_focus_generic_total_war
+		x = 21
+		y = 6
+		prerequisite = { focus = ENG_abolish_nobility }
+
+		cost = 5
+
+		available = {
+			OR = {
+				has_war_with = GER
+				has_war_with = RUS
+				has_war_with = FRA
+			}
+		}
+
+		completion_reward = {
+			add_ideas = ENG_war_budget
+		}
+	}
+
+	focus = {
+		id = ENG_expand_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 21
+		y = 7
+		prerequisite = { focus = ENG_war_budget }
+
+		cost = 5
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+
+	focus = {
+		id = ENG_dissolve_parliament
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 22
+		y = 8
+		prerequisite = { focus = ENG_expand_conscription focus = ENG_purge_the_government }
+
+		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
+			country_event = ENG_misc.1
+			remove_ideas = ENG_british_politics_dem
+		}
+	}
+
+	focus = {
+		id = ENG_pax_britannica_focus
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 17
 		y = 5
+		prerequisite = { focus = ENG_appoint_leader focus = ENG_embrace_german_heritage }
+		mutually_exclusive = { focus = ENG_anglo_german_naval_treaty }
 
-		prerequisite = { focus = ENG_parliamentary_coalition }
+		cost = 10
+
+		completion_reward = {
+			add_ideas = ENG_pax_britannica
+		}
+	}
+
+	focus = {
+		id = ENG_abandon_two_power_standard
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 17
+		y = 6
+		prerequisite = { focus = ENG_pax_britannica_focus }
+
+		cost = 5
+
+		completion_reward = {
+			remove_ideas = ENG_two_power_standard
+			leave_faction = yes
+			create_faction = "British Alliance"
+		}
+	}
+
+	focus = {
+		id = ENG_stand_alone
+		icon = GFX_focus_generic_support_the_left_right
+		x = 17
+		y = 7
+		prerequisite = { focus = ENG_abandon_two_power_standard }
+		mutually_exclusive = { focus = ENG_romanov_alliance }
 
 		cost = 10
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
-				}
+		}
+
+		completion_reward = {
+			leave_faction = yes
+			add_ideas = ENG_stand_alone
+			set_rule = {
+				can_create_factions = no
+			}
+			set_rule = {
+				can_join_factions = no
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_romanov_alliance
+		icon = GFX_focus_generic_home_defense
+		x = 19
+		y = 7
+		prerequisite = { focus = ENG_abandon_two_power_standard }
+		mutually_exclusive = { focus = ENG_britain_leads }
+
+		cost = 10
+
+		bypass = {
+			OR = {
+				is_in_faction_with = RUS
+				is_in_faction_with = GER
 			}
 		}
 
@@ -528,94 +3514,30 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_positivist_church
-		icon = GFX_focus_generic_industry_2
-		x = 25
-		y = 6
+		id = ENG_slay_the_eagle
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 8
+		prerequisite = { focus = ENG_stand_alone focus = ENG_romanov_alliance }
+		mutually_exclusive = { focus = ENG_avenge_the_hundred_years_war }
 
-		prerequisite = { focus = ENG_limited_reformist_policies }
-
+		will_lead_to_war_with = GER
+		
 		cost = 10
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
-				}
-			}
+			NOT = { is_in_faction_with = GER }
 		}
 
 		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_fund_welfare_programs
-		icon = GFX_focus_generic_industry_2
-		x = 27
-		y = 6
-
-		prerequisite = { focus = ENG_limited_reformist_policies }
-
-		cost = 10
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
-				}
+			add_timed_idea = {
+				days = 180
+				idea = ENG_slay_the_eagle
 			}
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_repeal_peoples_budget
-		icon = GFX_focus_generic_industry_2
-		x = 29
-		y = 6
-
-		prerequisite = { focus = ENG_limited_reformist_policies }
-
-		cost = 10
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
-				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
 			}
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = ENG_adopt_more_protectionist_policies
-		icon = GFX_focus_generic_industry_2
-		x = 31
-		y = 6
-
-		prerequisite = { focus = ENG_limited_reformist_policies }
-
-		cost = 10
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Majority in the House of Commons"
-				not = {
-					has_country_flag = ENG_no_coalition
-				}
-			}
-		}
-
-		completion_reward = {
 		}
 	}
 
