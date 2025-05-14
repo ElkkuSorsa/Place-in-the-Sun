@@ -967,6 +967,14 @@ focus_tree = {
 		prerequisite = { focus = AUH_creation_of_kuk_luftfahrtruppen }
 
 		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
     	}
 	}
 
@@ -979,7 +987,12 @@ focus_tree = {
 		cost = 6
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
+
 		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_kuk_luftfahrtruppen
+    	add_idea = auh_kuk_luftfahrtruppen_two
+    		}
     	}
 	}
 
@@ -993,6 +1006,23 @@ focus_tree = {
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
 		completion_reward = {
+				91 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+
+				88 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
     	}
 	}
 
@@ -1006,6 +1036,15 @@ focus_tree = {
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
 		completion_reward = {
+
+				43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
     	}
 	}
 
@@ -1015,10 +1054,14 @@ focus_tree = {
 		x = 44
 		y = 6
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 
 		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_kuk_luftfahrtruppen_two
+    	add_idea = auh_kuk_luftfahrtruppen_three
+    		}
     	}
 	}
 
@@ -1032,6 +1075,12 @@ focus_tree = {
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 
 		completion_reward = {
+				add_tech_bonus = {
+				name = GER_aeronautical_research_institute
+				bonus = 1
+				uses = 2
+				category = air_equipment
+			}
     	}
 	}
 
@@ -1047,6 +1096,10 @@ focus_tree = {
 		prerequisite = { focus = AUH_luftfahrtruppen_dedicated_organisation }
 
 		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_kuk_luftfahrtruppen_three
+    	add_idea = auh_kuk_luftfahrtruppen_four
+    		}
     	}
 	}
 
@@ -1115,6 +1168,10 @@ focus_tree = {
 		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
 
 		completion_reward = {
+		swap_ideas = { 
+    	remove_idea = auh_kuk_luftfahrtruppen_four
+    	add_idea = auh_kuk_luftfahrtruppen_five
+    		}
     	}
 	}
 
