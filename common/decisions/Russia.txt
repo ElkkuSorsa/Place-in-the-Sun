@@ -7,6 +7,8 @@ RUS_revolution = {
 			always = no
 		}
 
+		days_mission_timeout = 35
+
 		activation = {
 			has_stability < 0.5
 			has_country_leader = {
@@ -35,4 +37,51 @@ RUS_revolution = {
 			country_event = RUS_revolution.1
 		}
 	}
+
+	RUS_kornilov_march = {
+
+		fire_only_once = yes
+
+		days_mission_timeout = 35
+
+		available = {
+			always = no
+		}
+
+		activation = {
+			always = no
+			has_stability < 0.6
+			surrender_progress > 0.1
+		}
+
+		timeout_effect = {
+
+		}
+	}
+
+	RUS_lvov_resignation = {
+
+		fire_only_once = yes
+
+		days_mission_timeout = 140
+
+		available = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			promote_character = RUS_kerensky
+			set_party_name = {
+				ideology = democratic
+				long_name = "Socialist Revolutionary Party"
+				name = "Esers"
+			}
+			add_stability = -0.1
+		}
+	}
+
 }
