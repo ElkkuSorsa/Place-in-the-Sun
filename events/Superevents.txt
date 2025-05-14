@@ -67,7 +67,7 @@ news_event = {
 
 	immediate = {
 		RUS = {
-			set_global_flag = feb_revolution
+
 		}
 		every_country = {
 			if = {

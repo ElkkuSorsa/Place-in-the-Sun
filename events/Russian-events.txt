@@ -84,7 +84,6 @@ country_event = {
 		}
 		set_cosmetic_tag = RUS_PRO
 		load_focus_tree = RUS_pro_focus_tree
-		activate_mission = RUS_lvov_resignation
 		set_power_balance = {
 			id = RUS_dual_power
 			set_value = -0.1
