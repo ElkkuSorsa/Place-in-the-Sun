@@ -2,40 +2,11 @@ add_namespace = versailles
 news_event = {
 	id = versailles.1
 	title = "Treaty of Versailles"
-	desc = "We have arrived at a new age of peace. The treaty has been signed by the Entente cordiale and the German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintain global stability and order above all."
+	desc = "We have arrieved to a new age of peace. The treaty has been signed by the Entente cordiale and German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintin global stability and order above all."
 
 	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			1251 = {
-				set_demilitarized_zone = yes
-			}
-			978 = {
-				set_demilitarized_zone = yes
-			}
-			42 = {
-				set_demilitarized_zone = yes
-			}
-			1254 = {
-				set_demilitarized_zone = yes
-			}
-			1414 = {
-				set_demilitarized_zone = yes
-			}
-			1250 = {
-				set_demilitarized_zone = yes
-			}
-			1253 = {
-				set_demilitarized_zone = yes
-			}
-			51 = {
-				set_demilitarized_zone = yes
-			}
-		}
-	}
 
 	option = {
 		name = "The new age of peace has begun!"
@@ -43,7 +14,6 @@ news_event = {
 		dismantle_faction = yes
 		if = {
 			limit = { tag = ENG }
-			transfer_state = 546
 			if = {
 				limit = { has_completed_focus = ENG_1910_elections }
 				if = {
@@ -55,73 +25,7 @@ news_event = {
 				}
 			}
 		}
-		if = {
-			limit = { tag = FRA }
-			add_ideas = FRA_war_reparations
-			transfer_state = 1005
-			transfer_state = 773
-			transfer_state = 777
-		}
-		if = {
-			limit = { tag = AST }
-			transfer_state = 979
-		}
-		if = {
-			limit = { tag = DEN }
-			transfer_state = 912
-		}
-		if = {
-			limit = { tag = JAP }
-			transfer_state = 743
-			transfer_state = 645
-			transfer_state = 646
-			transfer_state = 647
-			transfer_state = 684
-			transfer_state = 633
-			transfer_state = 548
-		}
+
+
 	}
 }
-
-country_event = {
-	id = versailles.2
-	title = "Question of Luxembourg"
-	desc = "The Question of Luxembourg has arisen in the negotiations. Some have proposed Belgium should annex the Grand Duchy of Luxembourg, while others have proposed it should remain independent. The Grand Duchy has been a part of the German Empire since 1815, but it is also a part of the Kingdom of Belgium. The question is whether or not we should annex it."
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "They shall remain independent"
-	}
-
-	option = {
-		name = "Grant them to Belgium as reparation"
-		BEL = {
-			annex_country = LUX
-		}
-	}
-}
-
-news_event = {
-	id = versailles.3
-	title = "France annexes Alsace-Lorraine"
-	desc = "The French have annexed Alsace-Lorraine, a territory that has been a part of the German Empire since 1871. Alsace-Lorraine has been independent for some days under anarchy, but the French have finally annexed it. The area is rich in resources and has a large population. The French have promised to respect the rights of the German-speaking population, but many are skeptical of this promise. The French have also promised to respect the rights of the Alsatian people, but many are skeptical of this promise as well."
-
-	fire_only_once = yes
-	major = yes
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			FRA = {
-				annex_country = ALS
-			}
-		}
-	}
-
-	option = {
-		name = "France unbowed"
-	}
-}
-

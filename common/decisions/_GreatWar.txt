@@ -1,32 +1,4 @@
 greatwar = {
-	#FRA_armistice = {
-	#	available = {
-	#		always = no
-	#	}
-	#	
-	#	activation = {
-	#		always = no
-	#	}
-#
-#		days_remove = 7
-#		fire_only_once = yes
-#
-	#	remove_effect = {
-	#		every_country = {
-	#			limit = {
-	#				is_in_faction_with = GER
-	#			}
-	#			white_peace = FRA
-	#		}
-	#		every_country = {
-	#			limit = {
-	#				is_in_faction_with = FRA
-	#			}
-	#			white_peace = GER
-	#		}
-	#	}
-	#}
-
 	ENG_intervene_greatwar = {
 		ai_will_do = {
 			base = 500
@@ -59,7 +31,7 @@ greatwar = {
 				type = puppet_wargoal_focus
 			}
 			if = {
-				limit = { NOT = { has_war_with = FRA } }
+				limit = { NOT = has_war_with = FRA }
 				FRA = {
 					add_to_faction = ENG
 				}
@@ -127,7 +99,7 @@ greatwar = {
 		fire_only_once = yes
 
 		complete_effect = {
-			activate_mission = FRA_armistice
+			
 		}
 	}
 
