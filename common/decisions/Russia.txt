@@ -10,24 +10,25 @@ RUS_revolution = {
 		days_mission_timeout = 35
 
 		activation = {
-			has_stability < 0.5
-			has_country_leader = {
-				character = RUS_nikolai_II
-				ruling_only = yes
-			}
-			OR = {
-				and = {
-					casualties_k > 1000
-					surrender_progress > 0.2
-				}
-				and = {
-					casualties_k > 1500
-					surrender_progress > 0.1
-				}
-				and = {
-					casualties_k > 2000
-				}
-			}
+			tag = RUS
+		#	has_stability < 0.5
+		#	has_country_leader = {
+		#		character = RUS_nikolai_II
+		#		ruling_only = yes
+		#	}
+		#	OR = {
+		#		and = {
+		#			casualties_k > 1000
+		#			surrender_progress > 0.2
+		#		}
+		#		and = {
+		#			casualties_k > 1500
+		#			surrender_progress > 0.1
+		#		}
+		#		and = {
+		#			casualties_k > 2000
+		#		}
+		#	}
 		}
 
 		timeout_effect = {

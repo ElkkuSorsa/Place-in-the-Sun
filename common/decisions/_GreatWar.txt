@@ -8,21 +8,52 @@ greatwar = {
 			always = no
 		}
 
-		days_remove = 7
+		days_mission_timeout = 7
 		fire_only_once = yes
 
 		remove_effect = {
-			every_country = {
-				limit = {
-					is_in_faction_with = GER
+			custom_effect_tooltip = "German Empire and Austria-Hungary have lost the Great War and now will have to pay for this deadly mistake."
+			hidden_effect = {
+				activate_mission = versailles_peace_conference
+				GER = {
+					country_event = {
+						id = versailles.4
+						days = 5
+					}
 				}
-				white_peace = FRA
+				every_country = {
+					limit = {
+						is_in_faction_with = GER
+					}
+					white_peace = FRA
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = FRA
+					}
+					white_peace = GER
+				}
 			}
-			every_country = {
-				limit = {
-					is_in_faction_with = FRA
-				}
-				white_peace = GER
+		}
+	}
+
+	versailles_peace_conference = {
+		available = {
+			always = no
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = 50
+
+		fire_only_once = yes
+
+		remove_effect = {
+			custom_effect_tooltip = "The Great War is over and now the victors will decide the fate of the defeated."
+			country_event = {
+				id = versailles.1
 			}
 		}
 	}
@@ -127,7 +158,9 @@ greatwar = {
 		fire_only_once = yes
 
 		complete_effect = {
-			activate_mission = FRA_armistice
+			every_country = {
+				activate_mission = FRA_armistice
+			}
 		}
 	}
 

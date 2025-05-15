@@ -1,5 +1,5 @@
 add_namespace = versailles
-news_event = {
+country_event = {
 	id = versailles.1
 	title = "Treaty of Versailles"
 	desc = "We have arrived at a new age of peace. The treaty has been signed by the Entente cordiale and the German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintain global stability and order above all."
@@ -125,3 +125,22 @@ news_event = {
 	}
 }
 
+country_event = {
+	id = versailles.4
+	title = "1"
+
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "1"
+		GER = {
+			release = ALS
+			news_event = {
+				id = versailles.3
+				days = 7
+			}
+		}
+	}
+}
