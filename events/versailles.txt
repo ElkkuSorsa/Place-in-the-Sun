@@ -4,8 +4,6 @@ country_event = {
 	title = "Treaty of Versailles"
 	desc = "We have arrived at a new age of peace. The treaty has been signed by the Entente cordiale and the German lands have been partitioned between new and old countries. In this new age, we must safeguard peace and try to maintain global stability and order above all."
 
-	fire_only_once = yes
-	major = yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -80,6 +78,10 @@ country_event = {
 			transfer_state = 633
 			transfer_state = 548
 		}
+		if = {
+			limit = { tag = BEL }
+			transfer_state = 1250
+		}
 	}
 }
 
@@ -142,5 +144,135 @@ country_event = {
 				days = 7
 			}
 		}
+	}
+}
+
+news_event = {
+	id = versailles.5
+	title = "Wilhelm II abdicates"
+	desc = "The Kaiser has abdicated. The German Empire is in chaos. The Kaiser has fled to the Netherlands, where he has been granted asylum. The Netherlands has promised to respect the rights of the German-speaking kaiser, but many are skeptical of this promise. The Kaiser has promised to withdraw fully from political life, but many are skeptical of this promise as well."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "End of an era"
+		if = {
+			limit = { tag = GER }
+			set_politics = {
+				ruling_party = democratic
+			}
+			retire_character = GER_wilhelm_ii
+			set_cosmetic_tag = GER_republic
+		}
+	}
+}
+
+add_namespace = austria_peace
+country_event = {
+	id = austria_peace.1
+	title = "The Empire collapses"
+	desc = "The Austro-Hungarian Empire has collapsed. The Empire has been partitioned between the new and old countries. The minorities have lost their confidence in the Empire and have declared independence. The empire has been crumbling for years and the world war sped up the process."
+
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+	}
+
+	option = {
+		name = "We will not forget"
+		country_event = {
+			id = austria_peace.3
+			days = 7
+		}
+		set_cosmetic_tag = AUS_german
+		set_autonomy = {
+			target = HUN
+			autonomous_state = autonomy_free
+			end_wars = yes
+		}
+		set_autonomy = {
+			target = BOS
+			autonomous_state = autonomy_free
+			end_wars = yes
+		}
+		CZE = {
+			transfer_state = 1009
+			transfer_state = 9
+			transfer_state = 75
+		}
+		HUN = {
+			leave_faction = yes
+		}
+		BOS = {
+			leave_faction = yes
+		}
+		news_event = {
+			id = austria_peace.2
+		}
+	}
+}
+
+news_event = {
+	id = austria_peace.2
+	title = "Austria-Hungary collapses"
+	desc = "The Austro-Hungarian Empire has collapsed. The Empire has been partitioned between the new and old countries. The minorities have lost their confidence in the Empire and have declared independence. The empire has been crumbling for years and the world war sped up the process."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	fire_for_sender = no
+
+	option = {
+		name = "Gott ist nicht mit uns"
+	}
+}
+
+country_event = {
+	id = austria_peace.3
+	title = "Armistice of Villa Giusti"
+	desc = "The Armistice of Villa Giusti has been signed between the Austro-Hungarian Empire and the Entente cordiale. The Austro-Hungarian Empire has been partitioned between the minorities and Entente cordiale. Austria simply could not hold on to the empire any longer and the Italians forced a surrender."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Devasting and humiliating defeat"
+		set_global_flag = austria_out_of_war
+		leave_faction = yes
+		every_country = {
+			limit = { has_war_with = AUH is_in_faction_with = FRA }
+			white_peace = AUH
+		}
+		give_military_access = FRA
+		give_military_access = ENG
+		give_military_access = ITA
+		ITA = {
+			transfer_state = 1043
+			transfer_state = 1169
+			transfer_state = 852
+			transfer_state = 736
+			transfer_state = 1025
+			transfer_state = 850
+			transfer_state = 39
+		}
+	}
+}
+
+news_event = {
+	id = austria_peace.4
+	title = "Armistice of Villa Giusti"
+	desc = "The Armistice of Villa Giusti has been signed between the Austro-Hungarian Empire and the Entente cordiale. The Austro-Hungarian Empire has been partitioned between the minorities and Entente cordiale. Austria simply could not hold on to the empire any longer and the Italians forced a surrender."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	fire_for_sender = no
+
+	option = {
+		name = "God is not with us"
 	}
 }

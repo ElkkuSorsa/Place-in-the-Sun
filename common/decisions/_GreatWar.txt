@@ -11,7 +11,7 @@ greatwar = {
 		days_mission_timeout = 7
 		fire_only_once = yes
 
-		remove_effect = {
+		timeout_effect = {
 			custom_effect_tooltip = "German Empire and Austria-Hungary have lost the Great War and now will have to pay for this deadly mistake."
 			hidden_effect = {
 				activate_mission = versailles_peace_conference
@@ -41,20 +41,17 @@ greatwar = {
 		available = {
 			always = no
 		}
-
+		
 		activation = {
 			always = no
 		}
 
 		days_mission_timeout = 50
-
 		fire_only_once = yes
 
-		remove_effect = {
+		timeout_effect = {
 			custom_effect_tooltip = "The Great War is over and now the victors will decide the fate of the defeated."
-			country_event = {
-				id = versailles.1
-			}
+			country_event = versailles.1
 		}
 	}
 
@@ -140,13 +137,25 @@ greatwar = {
 
 	GER_surrender = {
 		ai_will_do = {
-			base = 500
+			base = 0
+			modifier = {
+				add = 10
+				has_global_flag = austria_out_of_war
+			}
+			modifier = {
+				add = 10
+				surrender_progress > 0.3
+				stability < 0.3
+			}
 		}
 
 		available = {
 			or = {
-				surrender_progress > 0.3
-
+				surrender_progress > 0.2
+				has_global_flag = {
+					flag = austria_out_of_war
+					tooltip = "Armistice of Villa Giusti"
+				}
 			}
 		}
 
@@ -160,6 +169,12 @@ greatwar = {
 		complete_effect = {
 			every_country = {
 				activate_mission = FRA_armistice
+			}
+			hidden_effect = {
+				news_event = {
+					id = versailles.5
+					days = 17
+				}
 			}
 		}
 	}

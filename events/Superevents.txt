@@ -65,6 +65,8 @@ news_event = {
 	hidden = yes
 	is_triggered_only = yes
 
+	
+
 	immediate = {
 		RUS = {
 			set_global_flag = feb_revolution

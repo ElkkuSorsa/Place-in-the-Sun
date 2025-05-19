@@ -103,6 +103,7 @@ news_event = {
 	desc = "After the bloodless revolution that overthrew the autocratic tsar and established a power vacuum, the moderate forces have taken the control and established a provisional government aiming at holding elections and creating a republican constitution for Russia. The situtation is not easy though as German forces are well into Russia."
 
 	is_triggered_only = yes
+	major = yes
 	fire_for_sender = no
 
 	option = {

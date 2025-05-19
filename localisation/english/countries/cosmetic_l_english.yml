@@ -14,3 +14,9 @@
 
  RUS_PRO: "Russian Provisional Government"
  RUS_PRO_DEF: "the Russian Provisional Government"
+
+ GER_republic: "German Republic"
+ GER_republic_DEF: "the German Republic"
+
+ AUS_german: "German-Austria"
+ AUS_german_DEF: "the Republic of German-Austria"
