@@ -10,12 +10,18 @@ country_event = {
 
 	trigger = {
 		democratic < 0.5
-		has_completed_focus = ENG_march_for_change
+		has_country_flag = ENG_no_coalition
 	}
 
 	option = {
 		name = "Does the sun set on the British Empire?"
 		add_political_power = -100
+		complete_national_focus = ENG_darkest_of_hours
+		uncomplete_national_focus = {
+			focus = ENG_1910_elections
+			uncomplete_children = yes
+			refund_political_power = no
+		}
 		create_country_leader = {
 			name = "Fallen Government"
 			picture = "portrait_eng_fallen_government.dds"
@@ -29,6 +35,7 @@ country_event = {
 				days = 35
 			}
 		}
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -75,17 +82,6 @@ country_event = {
 		}
 		promote_character = ENG_george_v
 	}
-
-	option = {
-		name = "Extend the military adminstration!"
-		add_political_power = 50
-		set_country_flag = miladminextended
-		complete_national_focus = ENG_extended_military_admin
-		custom_effect_tooltip = consuquenses_event_option
-		hidden_effect = {
-			activate_mission = ENG_civil_war
-		}
-	}
 }
 
 country_event = {
@@ -103,42 +99,6 @@ country_event = {
 	option = {
 		name = "Place them under British leadership"
 		add_political_power = 50
-	}
-
-	option = {
-		name = "Appoint German officers"
-		add_political_power = -100
-		add_stability = -0.1
-		add_war_support = -0.15
-		set_country_flag = ger_officer_hitler
-	}
-}
-
-country_event = {
-	id = march_change.5
-	title = "Leadership of Military Government"
-	desc = "Without a strong and charismatic leader, we have been very unpopular among the people, because of our radical nationalist politics. Our economy is in ruins after the civil war and everyone are very unhappy. Now it's time for us to select a supreme leader!"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "Herbert Kitchner"
-		create_country_leader = {
-			name = "Herbert Kitchner"
-			ideology = militarism
-		}
-	}
-
-	option = {
-		name = "German officer"
-		trigger = {
-			has_country_flag = ger_officer_hitler
-		}
-		create_country_leader = {
-			name = "Adolf Hitler"
-			ideology = militarism
-		}
 	}
 }
 
@@ -260,14 +220,14 @@ country_event = {
 			name = "Conservative Party"
 		}
 		complete_national_focus = ENG_1910_elections
-		complete_national_focus = ENG_conservative_victory
+		complete_national_focus = ENG_loss_of_confidence
 		hidden_effect = {
 			clr_country_flag = ENG_lib_his
 			set_country_flag = ENG_con
-			set_variable = { libseats = 232 }
-			set_variable = { conseats = 332 }
+			set_variable = { libseats = 270 }
+			set_variable = { conseats = 273 }
 			set_variable = { ireseats = 74 }
-			set_variable = { labseats = 22 }
+			set_variable = { labseats = 43 }
 			ENG_calc_gov = yes
 		}
 		create_country_leader = {
@@ -301,12 +261,6 @@ country_event = {
 			}
 		}
 	}
-
-	option = {
-		name = "Negotiations Break Down!"
-		country_event = ENG_elections.3
-	}
-
 }
 
 country_event = {
@@ -506,35 +460,42 @@ country_event = {
 add_namespace = conservative_england
 country_event = {
 	id = conservative_england.1
-	title = "Royal Support"
-	desc = "In order to maintain this fragile government, we must be in favor of the Royal family. They may demand some consessions..."
+	title = "Government Coalition"
+	desc = "In order to maintain this fragile government, we must make a coalition with the Liberal Party. This will be a very difficult task, as they are pretty strong and they have been in government for a long time. We must make some concessions to them in order to gain their support."
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = "Accept Liberum Veto"
-		trigger = {
-			has_completed_focus = ENG_empower_house_of_lords
-		}
-		complete_national_focus = ENG_royal_veto
+		name = "Accept the Coalition"
+		complete_national_focus = ENG_parliamentary_coalition
 	}
 
 	option = {
-		name = "We can't take this risk..."
-		trigger = {
-			has_completed_focus = ENG_empower_house_of_lords
-		}
-		add_ideas = ENG_royal_opposition
-		unlock_national_focus = ENG_royal_veto
+		name = "We can't make a coalition with them!"
+		set_country_flag = ENG_no_coalition
+		unlock_national_focus = ENG_parliamentary_coalition
+		activate_mission = ENG_parliament_act
+	}
+}
+
+country_event = {
+	id = conservative_england.2
+	title = "Liberal Opposition Passes Government Act"
+	desc = "In order to maintain this fragile government, we must make a coalition with the Liberal Party. This will be a very difficult task, as they are pretty strong and they have been in government for a long time. We must make some concessions to them in order to gain their support."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Invite them to the coalition"
+		complete_national_focus = ENG_parliamentary_coalition
 	}
 
 	option = {
-		name = "Limited Appeasement"
-		trigger = {
-			has_completed_focus = ENG_status_quo_with_lords
-		}
-		complete_national_focus = ENG_constitutionalism
+		name = "Opposition votes for no confidence"
+		add_ideas = ENG_march_for_change_idea
+		promote_character = ENG_asquith
 	}
 }
 
@@ -708,6 +669,7 @@ country_event = {
 	option = {
 		name = "Salty and Sweet"
 		add_political_power = 100
+		complete_national_focus = ENG_delay_home_rule
 		113 = {
 			add_dynamic_modifier = { modifier = ENG_ireland_modifier }
 		}

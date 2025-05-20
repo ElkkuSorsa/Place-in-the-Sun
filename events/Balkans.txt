@@ -199,6 +199,7 @@ news_event = {
 
 	option = {
 		name = "This could be a disaster for the Ottomans!"
+		set_global_flag = balkan_league
 	}
 }
 
@@ -212,5 +213,49 @@ news_event = {
 
 	option = {
 		name = "This could be a disaster!"
+		set_global_flag = balkan_league_no
+	}
+}
+
+country_event = {
+	id = balkan_wars.1
+	title = "Balkan league issues an ultimatum"
+	desc = "The newly formed Balkan League has issued an ultimatum to the Ottomans, demanding the return of Macedonia and Thrace. We really can't afford to lose the territories as we would lose main part of our european holdings. We must fight for the fatherland!"
+	is_triggered_only = yes
+
+	option = {
+		name = "Fight for the fatherland!"
+		SER = {
+			declare_war_on = {
+				target = TUR
+				type = annex
+			}
+		}
+	}
+}
+
+news_event = {
+	id = balkan_wars.2
+	title = "First Balkan War"
+	desc = "The newly formed Balkan League has declared war on the Ottomans, and the First Balkan War has begun. The future of the Balkans is looking bright for the coalition as the Ottoman empire is weak and divided. The Greeks are also eager to join the war, and the future of the Balkans is looking bright."
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = "This could be a disaster for the Ottomans!"
+		set_global_flag = balkan_wars
+	}
+}
+
+country_event = {
+	id = balkan_wars.3
+	title = "Prepare for war!"
+	desc = "We have been informed that our allies in the Balkan League are preparing for war against the Ottomans. We must prepare for war as well, and we must be ready to fight for our allies against the Ottomans for a just and righteous cause to liberate the european territories. We also have a lot to gain from this war."
+	is_triggered_only = yes
+
+	option = {
+		name = "Liberation!"
+		set_global_flag = balkan_wars_prepare
 	}
 }
