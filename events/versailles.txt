@@ -8,6 +8,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			set_global_flag = versailles_peace
 			1251 = {
 				set_demilitarized_zone = yes
 			}
@@ -39,6 +40,15 @@ country_event = {
 		name = "The new age of peace has begun!"
 		add_ideas = greatwar_recovery
 		dismantle_faction = yes
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = austria_out_of_war }	
+				news_event = {
+					id = austria_peace.6
+					days = 60
+				}
+			}
+		}
 		if = {
 			limit = { tag = ENG }
 			transfer_state = 546
@@ -137,12 +147,12 @@ country_event = {
 
 	option = {
 		name = "1"
-		GER = {
-			release = ALS
-			news_event = {
-				id = versailles.3
-				days = 7
-			}
+		ALS = {
+			transfer_state = 28
+		}
+		news_event = {
+			id = versailles.3
+			days = 7
 		}
 	}
 }
@@ -193,11 +203,6 @@ country_event = {
 			autonomous_state = autonomy_free
 			end_wars = yes
 		}
-		set_autonomy = {
-			target = BOS
-			autonomous_state = autonomy_free
-			end_wars = yes
-		}
 		CZE = {
 			transfer_state = 1009
 			transfer_state = 9
@@ -212,6 +217,7 @@ country_event = {
 		news_event = {
 			id = austria_peace.2
 		}
+	
 	}
 }
 
@@ -259,6 +265,15 @@ country_event = {
 			transfer_state = 850
 			transfer_state = 39
 		}
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = versailles_peace }	
+				news_event = {
+					id = austria_peace.6
+					days = 20
+				}
+			}
+		}
 	}
 }
 
@@ -274,5 +289,48 @@ news_event = {
 
 	option = {
 		name = "God is not with us"
+	}
+}
+
+news_event = {
+	id = austria_peace.6
+	title = "Treaty of Saint-Germain-en-Laye"
+	desc = "At the Paris Peace Conference, the Treaty of Saint-Germain-en-Laye was signed. The treaty was signed between the Entente cordiale and the German-Austrian Republic. The treaty has sealed the fate of the now fallen Austro-Hungarian Empire. This treaty also blocked Austria from unifying with Germany. The empire has been crumbling for years and the world war sped up the process."
+
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			CZE = {
+				transfer_state = 927
+				transfer_state = 69
+				transfer_state = 1010
+				transfer_state = 74
+			}
+			SER = {
+				annex_country = BOS
+				transfer_state = 1045
+				transfer_state = 103
+				transfer_state = 1034
+				transfer_state = 1296
+				transfer_state = 1044
+				transfer_state = 1033
+				transfer_state = 109
+				transfer_state = 1035
+				transfer_state = 163
+				transfer_state = 1023
+				transfer_state = 1024
+				transfer_state = 1388
+			}
+			AUH = {
+				set_cosmetic_tag = AUS_republic
+			}
+		}
+	}
+
+	option = {
+		name = "God is not with Austria"
 	}
 }

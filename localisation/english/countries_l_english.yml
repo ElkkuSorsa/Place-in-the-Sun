@@ -246,7 +246,7 @@
  NEP_DEF: "the Kingdom of Nepal"
  NEP_ADJ: "Nepalese"
 
-  BHU: "Kingdom of Bhutan"
+ BHU: "Kingdom of Bhutan"
  BHU_DEF: "the Wangchuck Dynasty of Bhutan"
  BHU_ADJ: "Bhutanese"
 
@@ -261,4 +261,8 @@
  ELS: "Rebublic of El Salvador"
  ELS_DEF: "the Rebublic of El Salvador"
  ELS_ADJ: "Salvadorian" 
+
+ ALS: "Alsace-Lorraine"
+ ALS_DEF: "Alsace-Lorraine"
+ ALS_ADJ: "Alsace-Lorraine"
  
