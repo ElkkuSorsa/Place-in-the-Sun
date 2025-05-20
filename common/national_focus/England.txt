@@ -1319,13 +1319,13 @@ focus_tree = {
 	focus = {
 		id = ENG_conservative_victory
 		icon = GFX_goal_generic_national_unity
-		x = 50
+		x = 45
 		y = 2
 		prerequisite = { focus = ENG_1910_elections }
 		mutually_exclusive = { focus = ENG_the_last_liberals }
 
 		offset = {
-			x = -40
+			x = -35
 			trigger = {
 				OR = {
 					has_completed_focus = ENG_conservative_victory
@@ -1598,12 +1598,35 @@ focus_tree = {
 	focus = {
 		id = ENG_law_first_term
 		icon = GFX_focus_DEN_empower_the_lords
-		x = 50
+		x = 46
 		y = 3
 		prerequisite = { focus = ENG_conservative_victory }
 
 		offset = {
-			x = -36
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 2
+
+		completion_reward = {
+			promote_character = ENG_bonar_law
+		}
+	}
+
+	focus = {
+		id = ENG_secure_constitutionalism
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 43
+		y = 4
+		prerequisite = { focus = ENG_law_first_term }
+
+		offset = {
+			x = -32
 			trigger = {
 				OR = {
 					has_completed_focus = ENG_conservative_victory
@@ -1614,20 +1637,150 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = ENG_realistic_party
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 46
+		y = 4
+		prerequisite = { focus = ENG_law_first_term }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_for_the_good_of_britain
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 46
+		y = 5
+		prerequisite = { focus = ENG_realistic_party }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_promote_anglicanism
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 45
+		y = 6
+		prerequisite = { focus = ENG_for_the_good_of_britain }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_amend_the_peoples_budget
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 47
+		y = 6
+		prerequisite = { focus = ENG_for_the_good_of_britain }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_disdain_parliament_act
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 42
+		y = 5
+		prerequisite = { focus = ENG_secure_constitutionalism }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_compromise_with_lords
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 44
+		y = 5
+		prerequisite = { focus = ENG_secure_constitutionalism }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
 		}
 	}
 
 	focus = {
 		id = ENG_strike_a_deal_with_liberals
 		icon = GFX_focus_DEN_empower_the_lords
-		x = 54
+		x = 48
 		y = 4
 		prerequisite = { focus = ENG_law_first_term }
 
 		offset = {
-			x = -36
+			x = -32
 			trigger = {
 				OR = {
 					has_completed_focus = ENG_conservative_victory
@@ -1638,8 +1791,32 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05
+			country_event = conservative_england.1
+			custom_effect_tooltip = ENG_coalition_warn
+		}
+	}
+
+	focus = {
+		id = ENG_appoint_cabinet
+		icon = GFX_focus_DEN_empower_the_lords
+		x = 48
+		y = 5
+		prerequisite = { focus = ENG_strike_a_deal_with_liberals }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			country_event = conservative_england.1
+			custom_effect_tooltip = ENG_coalition_warn
 		}
 	}
 
