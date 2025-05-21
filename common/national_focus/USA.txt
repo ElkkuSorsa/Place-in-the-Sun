@@ -1,0 +1,330 @@
+focus_tree = {
+    id = USA_focus_tree
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 50
+            tag = USA
+        }
+    }
+
+    default = no 
+    continuous_focus_position = { x = 120 y = 1800 }
+
+	focus = {
+		id = USA_elections_nearing
+		icon = GFX_goal_usa_elections
+		x = 20
+		y = 0
+
+        available = {date > 1911.01.01}
+
+		cost = 10
+
+		completion_reward = {
+		add_political_power = 150
+		}
+	}
+
+    focus = {
+		id = USA_taft
+		icon = GFX_goal_taft
+		x = 15
+		y = 1
+
+        mutually_exclusive = {focus = USA_roosevelt}
+
+        mutually_exclusive = {focus = USA_wilson}
+
+        prerequisite = {focus = USA_elections_nearing}
+
+        available = {always = no}
+
+		cost = 1
+
+		completion_reward = {
+		custom_effect_tooltip = USA_taft_election
+		}
+	}
+
+    focus = {
+		id = USA_start_campaigning
+		icon = GFX_goal_republican_campaign
+		x = 15
+		y = 2
+
+        prerequisite = {focus = USA_taft}
+
+		cost = 4
+
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_utilize_administration_resources
+		icon = GFX_goal_administration_resource
+		x = 14
+		y = 3
+
+        prerequisite = {focus = USA_start_campaigning}
+
+		cost = 5
+
+		completion_reward = {
+		add_timed_idea = {
+		idea = USA_utilize_administration_resources
+		days = 100
+		}
+		}
+	}
+
+	focus = {
+		id = USA_support_conservative_values
+		icon = GFX_goal_conservatism
+		x = 16.5
+		y = 3
+
+        prerequisite = {focus = USA_start_campaigning}
+
+		cost = 4
+
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_discredit_roosevelt
+		icon = GFX_goal_discredit_roosevelt
+		x = 13
+		y = 4
+
+        prerequisite = {focus = USA_utilize_administration_resources}
+
+		cost = 5
+
+		completion_reward = {
+		add_stability = -0.05
+		add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_campaign_against_wilson
+		icon = GFX_goal_discredit_wilson
+		x = 15
+		y = 4
+
+        prerequisite = {focus = USA_utilize_administration_resources}
+
+		cost = 5
+
+		completion_reward = {
+		add_stability = -0.05
+		add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_progressive_conservatism
+		icon = GFX_goal_progressive_conservatism
+		x = 17.5
+		y = 4
+
+        prerequisite = {focus = USA_support_conservative_values}
+
+		cost = 5
+
+		completion_reward = {
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.05
+		}
+		}
+	}
+
+	focus = {
+		id = USA_safeguard_american_conservatism
+		icon = GFX_goal_conservative_win
+		x = 15.5
+		y = 5
+
+        prerequisite = {focus = USA_progressive_conservatism}
+
+		prerequisite = {focus = USA_discredit_roosevelt}
+
+		prerequisite = {focus = USA_campaign_against_wilson}
+
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = USA_taft_election_victory
+		}
+	}
+
+    focus = {
+		id = USA_roosevelt
+		icon = GFX_goal_teddyroosevelt
+		x = 25
+		y = 1
+
+        mutually_exclusive = {focus = USA_taft}
+
+        mutually_exclusive = {focus = USA_wilson}
+
+        prerequisite = {focus = USA_elections_nearing}
+
+        available = {always = no}
+
+		cost = 1
+
+		completion_reward = {
+		custom_effect_tooltip = USA_roosevelt_election
+		}
+	}
+
+    focus = {
+		id = USA_wilson
+		icon = GFX_goal_wilson
+		x = 20
+		y = 1
+
+        mutually_exclusive = {focus = USA_taft}
+
+        mutually_exclusive = {focus = USA_roosevelt}
+
+        prerequisite = {focus = USA_elections_nearing}
+
+        available = {always = no}
+
+		cost = 1
+
+		completion_reward = {
+		custom_effect_tooltip = USA_wilson_election
+		}
+	}
+
+	focus = {
+		id = USA_utilize_republican_split
+		icon = GFX_goal_utilize_republican_split
+		x = 19
+		y = 2
+
+        prerequisite = {focus = USA_wilson}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_appease_the_south
+		icon = GFX_goal_wilson
+		x = 18
+		y = 3
+
+        prerequisite = {focus = USA_utilize_republican_split}
+
+		cost = 4
+
+		completion_reward = {
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.05
+		}
+		}
+	}
+
+	focus = {
+		id = USA_interventionist_economy
+		icon = GFX_goal_interventionist_economy
+		x = 20
+		y = 3
+
+        prerequisite = {focus = USA_utilize_republican_split}
+
+		prerequisite = {focus = USA_progressivism}
+
+		cost = 5
+
+		completion_reward = {
+		add_war_support = 0.05
+		add_timed_idea = {
+		idea = USA_interventionist_economics
+		days = 100
+		}
+		}
+	}
+
+	focus = {
+		id = USA_progressivism
+		icon = GFX_goal_progressivism
+		x = 21
+		y = 2
+
+        prerequisite = {focus = USA_wilson}
+
+		cost = 5
+
+		completion_reward = {
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_campaign_across_the_country
+		icon = GFX_goal_wilson
+		x = 22
+		y = 3
+
+        prerequisite = {focus = USA_progressivism}
+
+		cost = 4
+
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_promise_neutrality
+		icon = GFX_goal_wilson
+		x = 20
+		y = 4
+
+        prerequisite = {focus = USA_appease_the_south}
+
+		prerequisite = {focus = USA_campaign_across_the_country}
+
+		prerequisite = {focus = USA_interventionist_economy}
+
+		cost = 4
+
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = -0.05
+		}
+	}
+
+	focus = {
+		id = USA_towards_new_beginnings
+		icon = GFX_goal_wilson
+		x = 20
+		y = 5
+
+        prerequisite = {focus = USA_promise_neutrality}
+
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = USA_wilson_election_victory
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+ideas = {
+	
+	country = {
+
+		USA_strong_private_sector = {
+			modifier = {
+				consumer_goods_factor = 0.8
+                political_power_factor = -0.2
+                production_speed_buildings_factor = 0.1
+                research_speed_factor = 0.1
+                economy_law_category_type_cost_factor = 0.25
+			}
+		}
+
+        USA_high_immigration = {
+			modifier = {
+			monthly_population = 0.15
+            stability_factor = -0.05
+			}
+		}
+
+        USA_american_army = {
+			modifier = {
+			war_support_factor = -0.1
+            army_org_factor = -0.15
+            army_attack_factor = -0.1
+            conscription_factor = -0.75
+            production_speed_arms_factory_factor = -0.2
+			}
+		}
+
+		USA_utilize_administration_resources = {
+			modifier = {
+			political_power_factor = 0.1
+			}
+		}
+
+		USA_interventionist_economics = {
+			modifier = {
+			consumer_goods_factor = -0.1
+			}
+		}
+    }
+}

@@ -29,3 +29,9 @@
  ENG_side_soc: "We will side with the §Rsocialists§!."
 
  ENG_coalition_warn: "In order to pass any §Ylegislation§! in the House of Commons, we need to form a coalition with the §YLiberals§!."
+
+ USA_taft_election: "We will support the incumbent Republican president §RWilliam Howard Taft§! in the coming elections!"
+ USA_wilson_election: "We will support the Democratic candidate §BWoodrow Wilson§! in the coming elections!"
+ USA_roosevelt_election: "We will support the Bull Moose candidate §GTheodore Roosevelt§! in the coming elections!"
+ USA_taft_election_victory: "§RWilliam Howard Taft§! will be elected for a second term!"
+ USA_wilson_election_victory: "§BWoodrow Wilson§! will be elected as the new president!"

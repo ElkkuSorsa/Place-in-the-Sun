@@ -11,6 +11,210 @@ focus_tree = {
 
 	default = no
 
+
+	focus = {
+	id = JAP_continue_modernization
+	icon = GFX_focus_generic_workers
+	x = 20
+	y = 0
+
+	cost = 5
+
+	mutually_exclusive = {focus = JAP_reject_meiji_reforms}
+
+	completion_reward = {
+	add_political_power = 75
+	add_timed_idea = {
+	idea = JAP_continue_modernization
+	days = 180
+	}
+	}
+	}
+
+	focus = {
+	id = JAP_convene_the_imperial_diet
+	icon = GFX_focus_ETH_re-convene_the_parliament
+	x = 20
+	y = 1
+
+	cost = 10
+
+	prerequisite = {focus = JAP_continue_modernization}
+
+	completion_reward = {
+	add_political_power = 120
+	}
+	}
+
+	focus = {
+	id = JAP_economic_expansion
+	icon = GFX_focus_generic_economic_recovery
+	x = 17
+	y = 1
+
+	cost = 5
+
+	prerequisite = {focus = JAP_continue_modernization}
+
+	completion_reward = {
+	add_ideas = JAP_economic_expansion
+	}
+	}
+
+	focus = {
+	id = JAP_adopt_capitalism
+	icon = GFX_focus_generic_industry_3
+	x = 13
+	y = 2
+
+	cost = 10
+
+	prerequisite = {focus = JAP_economic_expansion}
+
+	completion_reward = {
+	swap_ideas = {
+	remove_idea = JAP_economic_expansion
+	add_idea = JAP_economic_expansion2
+	}
+	}
+	}
+
+	focus = {
+	id = JAP_political_reforms
+	icon = GFX_SOV_infiltrate_the_nkvd_ccp_2d_sov_compatibility
+	x = 18
+	y = 2
+
+	cost = 10
+
+	prerequisite = {focus = JAP_convene_the_imperial_diet}
+
+	completion_reward = {
+	add_ideas = JAP_political_reforms
+	}
+	}
+
+	focus = {
+	id = JAP_improve_personal_liberties
+	icon = GFX_focus_generic_self_management
+	x = 19
+	y = 3
+
+	cost = 10
+
+	prerequisite = {focus = JAP_political_reforms}
+
+	completion_reward = {
+	add_stability = 0.1
+	add_political_power = 50
+	}
+	}
+
+	focus = {
+	id = JAP_legislative_reform
+	icon = GFX_focus_AUS_lawmaking_leniency
+	x = 16
+	y = 3
+
+	cost = 5
+
+	prerequisite = {focus = JAP_political_reforms}
+
+	completion_reward = {
+	add_ideas = JAP_legislative_reform
+	}
+	}
+
+	focus = {
+	id = JAP_work_with_corporations
+	icon = GFX_focus_jap_zaibatsu
+	x = 14
+	y = 3
+
+	cost = 10
+
+	prerequisite = {focus = JAP_political_reforms}
+
+	prerequisite = {focus = JAP_adopt_capitalism}
+
+	completion_reward = {
+	282	= {
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	}
+
+	}
+	}
+
+	focus = {
+	id = JAP_clamp_down_on_religions
+	icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+	x = 21
+	y = 2
+
+	cost = 5
+
+	prerequisite = {focus = JAP_convene_the_imperial_diet}
+
+	completion_reward = {
+	add_stability = -0.05
+	add_war_support = 0.05
+	add_political_power = 75
+	}
+	}
+
+	focus = {
+	id = JAP_expand_conscription
+	icon = GFX_focus_generic_manpower
+	x = 20
+	y = 4
+
+	cost = 10
+
+	prerequisite = {focus = JAP_convene_the_imperial_diet}
+
+	completion_reward = {
+	add_stability = -0.05
+	add_ideas = extensive_conscription
+	}
+	}
+
+	focus = {
+	id = JAP_reject_meiji_reforms
+	icon = GFX_focus_generic_workers
+	x = 31
+	y = 0
+
+	cost = 10
+
+	mutually_exclusive = {focus = JAP_continue_modernization}
+
+	completion_reward = {
+	
+	}
+	}
+
+	focus = {
+	id = JAP_annex_korea
+	icon = GFX_SOV_pacify_the_rim_ccp_2d_sov_compatibility
+	x = 26
+	y = 1
+
+	cost = 5
+
+	prerequisite = {focus = JAP_continue_modernization
+	focus = JAP_reject_meiji_reforms}
+
+	completion_reward = {
+	add_threat = 1.0
+	annex_country = { target = KOR transfer_troops = no }
+	}
+	}
+
     focus = {
 	id = JAP_industry
 	icon = GFX_goal_generic_construct_civ_factory
@@ -38,281 +242,7 @@ focus_tree = {
 	}
 	}
 
-    focus = {
-	id = JAP_reinforce_bank_of_japan
-	icon = GFX_goal_generic_construct_civ_factory
-	x = 6
-	y = 1
-	cost = 10
-    prerequisite = { focus = JAP_industry}
-	completion_reward = {
-	add_ideas = JAP_bank_of_japan
-	}
-	}
-
-    focus = {
-	id = JAP_invest_in_industry
-	icon = GFX_goal_generic_construct_civ_factory
-	x = 7
-	y = 2
-	cost = 10
-    prerequisite = { focus = JAP_reinforce_bank_of_japan}
-    prerequisite = { focus = JAP_military_factories}
-	completion_reward = {
-    add_ideas = JAP_investments
-	282	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = industrial_complex
-	level = 2
-	instant_build = yes
-	}
-	}
-    add_tech_bonus = {
-    bonus = 1
-    uses = 2
-    category = industry
-    }
-	}
-	}
-
-    focus = {
-	id = JAP_encourage_entrepenourship
-	icon = GFX_focus_DEN_no_regulations
-	x = 3
-	y = 2
-	cost = 10
-    prerequisite = { focus = JAP_reinforce_bank_of_japan}
-    available = {has_idea = JAP_investments}
-	completion_reward = {
-    swap_ideas = {
-    remove_idea = JAP_investments
-    add_idea = JAP_investments2
-    }
-	}
-	}
-
-    focus = {
-	id = JAP_state_subsidies
-	icon = GFX_focus_DEN_no_regulations
-	x = 5
-	y = 3
-	cost = 10
-    mutually_exclusive = {focus = JAP_free_market_policies}
-    prerequisite = { focus = JAP_encourage_entrepenourship}
-	completion_reward = {
-    282	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = industrial_complex
-	level = 2
-	instant_build = yes
-	}
-	}
-    534	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = industrial_complex
-	level = 2
-	instant_build = yes
-	}
-	}
-	}
-	}
-
-    focus = {
-	id = JAP_free_market_policies
-	icon = GFX_focus_GER_rally_the_industrialists
-	x = 1
-	y = 3
-	cost = 10
-    mutually_exclusive = {focus = JAP_state_subsidies}
-    prerequisite = { focus = JAP_encourage_entrepenourship}
-	completion_reward = {
-    swap_ideas = {
-    remove_idea = JAP_investments2
-    add_idea = JAP_investments3
-    }
-	}
-	}
-
-    focus = {
-	id = JAP_expand_naval_facilities
-	icon = GFX_goal_generic_construct_naval_dockyard
-	x = 10
-	y = 1
-	cost = 5
-    prerequisite = { focus = JAP_industry}
-	completion_reward = {
-	282	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = dockyard
-	level = 2
-	instant_build = yes
-	}
-	}
-	}
-	}
-
-    focus = {
-	id = JAP_naval_investments
-	icon = GFX_goal_generic_navy_doctrines_tactics
-	x = 10
-	y = 2
-	cost = 10
-    prerequisite = { focus = JAP_expand_naval_facilities}
-    prerequisite = { focus = JAP_military_factories}
-	completion_reward = {
-	add_ideas = JAP_naval_expansion
-	}
-	}
-
-    focus = {
-	id = JAP_universities
-	icon = GFX_goal_generic_construct_civ_factory
-	x = 8
-	y = 3
-	cost = 10
-    prerequisite = { focus = JAP_invest_in_industry}
-	completion_reward = {
-    add_ideas = JAP_university
-    add_research_slot = 1
-	}
-	}
-
-    focus = {
-	id = JAP_military_factories
-	icon = GFX_focus_generic_military_industry
-	x = 8
-	y = 1
-	cost = 10
-    prerequisite = { focus = JAP_industry}
-	completion_reward = {
-	282	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = arms_factory
-	level = 2
-	instant_build = yes
-	}
-	}
-	}
-	}
-
-    focus = {
-	id = JAP_korean_factories
-	icon = GFX_focus_generic_industry_3
-	x = 12
-	y = 1
-	cost = 5
-    prerequisite = { focus = JAP_industry}
-	completion_reward = {
-	525	= {
-	add_extra_state_shared_building_slots = 1
-	add_building_construction = {
-	type = dockyard
-	level = 1
-	instant_build = yes
-	}
-	}
-    527	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = industrial_complex
-	level = 2
-	instant_build = yes
-	}
-	}
-	}
-	}
-
-    focus = {
-	id = JAP_free_trade
-	icon = GFX_goal_generic_positive_trade_relations
-	x = 2
-	y = 4
-	cost = 5
-    prerequisite = { focus = JAP_free_market_policies}
-	completion_reward = {
-	add_ideas = free_trade
-	}
-	}
-
-    focus = {
-	id = JAP_resource_extraction
-	icon = GFX_focus_generic_resource_extraction
-	x = 6
-	y = 4
-	cost = 5
-    prerequisite = { focus = JAP_free_market_policies focus = JAP_state_subsidies}
-    prerequisite = { focus = JAP_universities}
-	completion_reward = {
-	add_resource = {
-    type = steel
-    amount = 20
-    state = 528
-    }
-    add_resource = {
-    type = oil
-    amount = 10
-    state = 536
-    }    
-	}
-	}
-
-    focus = {
-	id = JAP_boost_military_production
-	icon = GFX_goal_generic_construct_mil_factory
-	x = 9
-	y = 4
-	cost = 10
     
-    prerequisite = { focus = JAP_naval_investments}
-    prerequisite = { focus = JAP_universities}
-    available = {has_war = yes}
-	completion_reward = {
-    282	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = arms_factory
-	level = 2
-	instant_build = yes
-	}
-	}
-    534	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = industrial_complex
-	level = 2
-	instant_build = yes
-	}
-	}
-    534	= {
-	add_extra_state_shared_building_slots = 2
-	add_building_construction = {
-	type = arms_factory
-	level = 2
-	instant_build = yes
-	}
-	}
-	}
-	}
-
-    focus = {
-	id = JAP_invite_congromelates
-	icon = GFX_goal_generic_positive_trade_relations
-	x = 0
-	y = 4
-	cost = 5
-    prerequisite = { focus = JAP_free_market_policies}
-	completion_reward = {
-	swap_ideas = {
-    remove_idea = JAP_investments3
-    add_idea = JAP_investments4
-    }
-	}
-	}
 
     
 

@@ -1,0 +1,53 @@
+oob = "USA_1936"
+capital = 361
+set_research_slots = 4
+set_stability = 0.45
+set_war_support = 0.03
+set_convoys = 478
+
+recruit_character = USA_william_howard_taft
+
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+	USA_strong_private_sector
+	USA_high_immigration
+	USA_american_army
+}
+
+
+recruit_character = 
+
+#For start date 1939.1.1
+1939.1.1 = {
+	add_political_power = 1000
+	oob =
+}
+
+#Politics for 1936.1.1
+set_politics = {
+	ruling_party = democratic
+	last_election = "1908.11.3"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+	fascism = 0
+	communism = 0
+	neutrality = 0
+}
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_popularities = {
+		democratic = 25
+		fascism = 25
+		communism = 25
+		neutrality = 25
+	}
+}

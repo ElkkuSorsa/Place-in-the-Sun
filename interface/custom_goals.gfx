@@ -335,4 +335,60 @@ spriteTypes = {
 		name = "GFX_goal_flag_germany"
 		texturefile = "gfx/interface/goals/FRA/flag_germany.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_taft"
+		texturefile = "gfx/interface/goals/USA/taft1.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_wilson"
+		texturefile = "gfx/interface/goals/USA/wilson.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_teddyroosevelt"
+		texturefile = "gfx/interface/goals/USA/teddyroosevelt.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_republican_campaign"
+		texturefile = "gfx/interface/goals/USA/republican.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_administration_resource"
+		texturefile = "gfx/interface/goals/USA/administration.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_usa_elections"
+		texturefile = "gfx/interface/goals/USA/usaelections.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_conservative_win"
+		texturefile = "gfx/interface/goals/USA/murika.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_discredit_roosevelt"
+		texturefile = "gfx/interface/goals/USA/teddychains.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_discredit_wilson"
+		texturefile = "gfx/interface/goals/USA/wilsonchain.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_conservatism"
+		texturefile = "gfx/interface/goals/USA/conservatism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_progressive_conservatism"
+		texturefile = "gfx/interface/goals/USA/progressiveconservatism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_utilize_republican_split"
+		texturefile = "gfx/interface/goals/USA/split.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_progressivism"
+		texturefile = "gfx/interface/goals/USA/progressivism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_interventionist_economy"
+		texturefile = "gfx/interface/goals/USA/interventionism.dds"
+	}
 
