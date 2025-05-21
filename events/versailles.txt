@@ -127,7 +127,10 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			FRA = {
-				annex_country = ALS
+				annex_country = {
+					target = ALS
+					transfer_troops = no
+				}
 			}
 		}
 	}
@@ -147,6 +150,19 @@ country_event = {
 
 	option = {
 		name = "1"
+		ALS = {
+			create_country_leader = {
+				name = "Strasbourg Soviet"
+				picture = "gfx/leaders/other/soviet.png"
+				ideology = marxism
+			}
+			set_popularities = {
+				democratic = 10
+				fascism = 5
+				communism = 75
+				neutrality = 10
+			}
+		}
 		ALS = {
 			transfer_state = 28
 		}
@@ -304,13 +320,17 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			CZE = {
-				transfer_state = 927
+				transfer_state = 972
 				transfer_state = 69
 				transfer_state = 1010
 				transfer_state = 74
+
 			}
 			SER = {
-				annex_country = BOS
+				annex_country = {
+					target = BOS
+					transfer_troops = yes
+				}
 				transfer_state = 1045
 				transfer_state = 103
 				transfer_state = 1034

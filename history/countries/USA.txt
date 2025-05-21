@@ -3,7 +3,7 @@ capital = 1
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
-set_convoys = 0
+set_convoys = 120
 
 recruit_character = USA_william_howard_taft
 
