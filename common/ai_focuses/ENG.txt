@@ -1,5 +1,7 @@
 ai_historical_focus_list_ENG = {
 	ai_national_focuses = {
+		ENG_south_africa_act
+		eng_legacy_of_boer_war
 		ENG_liberal_reforms
 		ENG_parliament_act
 		ENG_engage_in_europe

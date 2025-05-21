@@ -170,12 +170,6 @@ greatwar = {
 			every_country = {
 				activate_mission = FRA_armistice
 			}
-			hidden_effect = {
-				news_event = {
-					id = versailles.5
-					days = 17
-				}
-			}
 		}
 	}
 
