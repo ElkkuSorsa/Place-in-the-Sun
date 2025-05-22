@@ -391,4 +391,12 @@ spriteTypes = {
 		name = "GFX_goal_interventionist_economy"
 		texturefile = "gfx/interface/goals/USA/interventionism.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_new_nationalism"
+		texturefile = "gfx/interface/goals/USA/newnationalism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_republican_support"
+		texturefile = "gfx/interface/goals/USA/republicansupport1.dds"
+	}
 

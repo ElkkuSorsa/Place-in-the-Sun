@@ -187,6 +187,99 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = USA_new_nationalism
+		icon = GFX_goal_new_nationalism
+		x = 25
+		y = 2
+
+        prerequisite = {focus = USA_roosevelt}
+
+		cost = 5
+
+		completion_reward = {
+		add_ideas = USA_new_nationalism
+		}
+	}
+
+	focus = {
+		id = USA_gather_republican_supporters
+		icon = GFX_goal_republican_support
+		x = 24
+		y = 3
+
+        prerequisite = {focus = USA_new_nationalism}
+
+		cost = 4
+
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_promise_square_deal
+		icon = GFX_goal_teddyroosevelt
+		x = 24
+		y = 4
+
+        prerequisite = {focus = USA_gather_republican_supporters}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_campaign_against_establishment
+		icon = GFX_goal_teddyroosevelt
+		x = 26
+		y = 3
+
+        prerequisite = {focus = USA_new_nationalism}
+
+		cost = 4
+
+		completion_reward = {
+		add_stability = -0.05
+		add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_trustbusting
+		icon = GFX_goal_teddyroosevelt
+		x = 26
+		y = 4
+
+        prerequisite = {focus = USA_campaign_against_establishment}
+
+		cost = 4
+
+		completion_reward = {
+		add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_look_whos_back
+		icon = GFX_goal_teddyroosevelt
+		x = 25
+		y = 5
+
+        prerequisite = {focus = USA_trustbusting}
+
+		prerequisite = {focus = USA_promise_square_deal}
+
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = USA_roosevelt_election_win
+		}
+	}
+
     focus = {
 		id = USA_wilson
 		icon = GFX_goal_wilson

@@ -40,5 +40,11 @@ ideas = {
 			consumer_goods_factor = -0.1
 			}
 		}
+
+		USA_new_nationalism = {
+			modifier = {
+			war_support_factor = 0.1
+			}
+		}
     }
 }
