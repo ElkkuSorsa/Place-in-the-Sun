@@ -415,4 +415,8 @@ spriteTypes = {
 		name = "GFX_goal_economics"
 		texturefile = "gfx/interface/goals/USA/economy.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_mexico_in_flames"
+		texturefile = "gfx/interface/goals/USA/mehico.dds"
+	}
 

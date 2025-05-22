@@ -17,6 +17,7 @@ add_ideas = {
 	USA_strong_private_sector
 	USA_high_immigration
 	USA_american_army
+	USA_ineffective_administration
 }
 
 
