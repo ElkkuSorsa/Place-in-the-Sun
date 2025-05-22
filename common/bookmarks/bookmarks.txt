@@ -8,6 +8,20 @@ bookmarks = {
 		default = yes
 		default_country = ENG
 
+		effect = {
+			every_country = {
+				set_technology = {
+					infantry_weapons = 1
+					machinegun_weapons = 1
+					tech_support = 1
+					gw_artillery = 1
+					howitzer_artillery = 1
+					tech_engineers = 1
+					uniforms_weapons = 1
+				}
+			}
+		}
+
 		ENG = {
 			history = ENG_history
 			ideology = democratic

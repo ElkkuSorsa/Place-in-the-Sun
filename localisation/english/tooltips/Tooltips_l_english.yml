@@ -29,6 +29,17 @@
  ENG_side_soc: "We will side with the §Rsocialists§!."
 
  ENG_coalition_warn: "In order to pass any §Ylegislation§! in the House of Commons, we need to form a coalition with the §YLiberals§!."
+ ENG_ire_warn: "To ensure the §Yloyalty§! of the §GIrish Parliamentary Party§!, we need to pass the §YIrish Home Rule Act§!."
+ ENG_law_text: "§2Andrew Bonar Law§! will assume the office of prime minister."
+ ENG_haldane_reforms_tt: "§RThe British Army§! is not meant to be a standing army, but a reserve army. We need to reform the army to be able to fight a real war."
+ ENG_conscription_tt: "We may now raise our §Yconscription§! to a higher level."
+ ENG_abandon_pax_tt: "We will abandon the §RPax Britannica§! and shift our focus to the continental affairs."
+ ENG_strait_blockade_tt: "We will §Yblockade§! the §gGermans§! from trading with other powers, causing them to starve."
+ ENG_collaborate_conservatives_tt: "We will collaborate with the §2Conservative Party§! to establish legitimacy for the government."
+ ENG_parliament_act_warn: "In order to pass any §Ylegislation§! in the House of Commons, we need to first enact the §Yparliament act§!."
+
+ ENG_lib_win: "The §YLiberal Party§! will win the elections!"
+ ENG_con_win: "The §2Conservative Party§! will win the elections!"
 
  USA_taft_election: "We will support the incumbent Republican president §RWilliam Howard Taft§! in the coming elections!"
  USA_wilson_election: "We will support the Democratic candidate §BWoodrow Wilson§! in the coming elections!"
