@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_taft_administration
-		icon = GFX_goal_republican_campaign
+		icon = GFX_goal_taft
 		x = 7
 		y = 0
 
@@ -24,6 +24,158 @@ focus_tree = {
 
 		completion_reward = {
 		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_mexican_situation
+		icon = GFX_goal_mexico_in_flames
+		x = 7
+		y = 1
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_taft_administration}
+
+		cost = 5
+
+		completion_reward = {
+		country_event = mexican_situation.1
+		}
+	}
+
+	focus = {
+		id = USA_domestic_politics
+		icon = GFX_goal_economics
+		x = 10
+		y = 1
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_taft_administration}
+
+		cost = 5
+
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = USA_ineffective_administration
+		add_idea = USA_ineffective_administration2
+		}
+		}
+	}
+
+	focus = {
+		id = USA_era_of_progressivism
+		icon = GFX_goal_economics
+		x = 9
+		y = 2
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_domestic_politics}
+
+		cost = 10
+
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = USA_favor_conservatives
+		icon = GFX_goal_economics
+		x = 8
+		y = 3
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_era_of_progressivism}
+
+		mutually_exclusive = {focus = USA_favor_progressives}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = USA_favor_progressives
+		icon = GFX_goal_economics
+		x = 10
+		y = 3
+
+        available = {date < 1911.11.06}
+
+		mutually_exclusive = {focus = USA_favor_conservatives}
+
+		prerequisite = {focus = USA_era_of_progressivism}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = USA_appoint_judges
+		icon = GFX_goal_economics
+		x = 12
+		y = 2
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_domestic_politics}
+
+		cost = 5
+
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = USA_ineffective_administration2
+		add_idea = USA_ineffective_administration3
+		}
+		}
+	}
+
+	focus = {
+		id = USA_integrate_new_mexico_and_arizona
+		icon = GFX_goal_economics
+		x = 12
+		y = 3
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_appoint_judges}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_trust_in_the_government
+		icon = GFX_goal_economics
+		x = 10
+		y = 4
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_integrate_new_mexico_and_arizona}
+
+		prerequisite = {focus = USA_favor_conservatives
+		focus = USA_favor_progressives}
+
+		cost = 5
+
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = USA_ineffective_administration3
+		add_idea = USA_ineffective_administration4
+		}
 		}
 	}
 
@@ -69,6 +221,43 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_establish_us_bureau_of_mines
+		icon = GFX_goal_taft
+		x = 1
+		y = 3
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_lawsuits_against_corporations}
+
+		cost = 5
+
+		completion_reward = {
+		add_ideas = USA_bureau_of_mines
+		}
+	}
+
+	focus = {
+		id = USA_postal_savings_system
+		icon = GFX_goal_taft
+		x = 0.5
+		y = 4
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_establish_us_bureau_of_mines}
+
+		cost = 5
+
+		completion_reward = {
+		add_timed_idea = {
+		idea = USA_postal_savings_system
+		days = 365
+		}
+		}
+	}
+
+	focus = {
 		id = USA_introduce_the_income_tax
 		icon = GFX_goal_taft
 		x = 5
@@ -87,6 +276,116 @@ focus_tree = {
 		swap_ideas = {
 		remove_idea = USA_strong_private_sector3
 		add_idea = USA_strong_private_sector4
+		}
+		}
+	}
+
+	focus = {
+		id = USA_expand_infra
+		icon = GFX_goal_taft
+		x = 5
+		y = 3
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_introduce_the_income_tax}
+
+		cost = 5
+
+		completion_reward = {
+		add_timed_idea = {
+		idea = USA_infra_projects
+		days = 180
+		}
+		}
+	}
+
+	focus = {
+		id = USA_raise_tariffs
+		icon = GFX_goal_taft
+		x = 3.5
+		y = 3
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_economic_policy}
+
+		cost = 5
+
+		completion_reward = {
+		add_ideas = export_focus
+		add_political_power = 50
+		add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_establish_corporate_tax
+		icon = GFX_goal_taft
+		x = 2.5
+		y = 4
+
+        available = {date < 1911.11.06}
+
+		available = {has_completed_focus = USA_lawsuits_against_corporations}
+
+		available = {has_completed_focus = USA_introduce_the_income_tax}
+
+		prerequisite = {focus = USA_raise_tariffs}
+
+		cost = 10
+
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = USA_strong_private_sector4
+		add_idea = USA_strong_private_sector5
+		}
+		}
+	}
+
+	focus = {
+		id = USA_moderate_industrial_expansion
+		icon = GFX_goal_taft
+		x = 4.5
+		y = 4
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_raise_tariffs}
+
+		prerequisite = {focus = USA_expand_infra}
+
+		cost = 10
+
+		completion_reward = {
+		395	= { 
+		add_extra_state_shared_building_slots = 2 
+        add_building_construction = {
+		type = industrial_complex
+		level = 2
+		instant_build = yes
+    	}
+		}
+		}
+	}
+
+	focus = {
+		id = USA_oil_drilling
+		icon = GFX_goal_taft
+		x = 6
+		y = 4
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_expand_infra}
+
+		cost = 5
+
+		completion_reward = {
+		add_resource = {
+    	type = oil
+    	amount = 16
+    	state = 375
 		}
 		}
 	}
