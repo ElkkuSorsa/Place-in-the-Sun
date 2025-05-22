@@ -411,4 +411,8 @@ spriteTypes = {
 		name = "GFX_goal_trustbusting"
 		texturefile = "gfx/interface/goals/USA/trustbusting.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_economics"
+		texturefile = "gfx/interface/goals/USA/economy.dds"
+	}
 

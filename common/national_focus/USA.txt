@@ -13,12 +13,91 @@ focus_tree = {
     continuous_focus_position = { x = 120 y = 1800 }
 
 	focus = {
+		id = USA_taft_administration
+		icon = GFX_goal_republican_campaign
+		x = 7
+		y = 0
+
+        available = {date < 1911.11.06}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_economic_policy
+		icon = GFX_goal_economics
+		x = 4
+		y = 1
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_taft_administration}
+
+		cost = 5
+
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = USA_strong_private_sector
+		add_idea = USA_strong_private_sector2
+		}
+		}
+	}
+
+	focus = {
+		id = USA_lawsuits_against_corporations
+		icon = GFX_goal_taft
+		x = 2
+		y = 2
+
+        available = {date < 1911.11.06}
+
+		prerequisite = {focus = USA_economic_policy}
+
+		cost = 10
+
+		completion_reward = {
+		add_political_power = 25
+		swap_ideas = {
+		remove_idea = USA_strong_private_sector2
+		add_idea = USA_strong_private_sector3
+		}
+		}
+	}
+
+	focus = {
+		id = USA_introduce_the_income_tax
+		icon = GFX_goal_taft
+		x = 5
+		y = 2
+
+        available = {date < 1911.11.06}
+
+		available = {has_completed_focus = USA_lawsuits_against_corporations}
+
+		prerequisite = {focus = USA_economic_policy}
+
+		cost = 10
+
+		completion_reward = {
+		add_stability = -0.1
+		swap_ideas = {
+		remove_idea = USA_strong_private_sector3
+		add_idea = USA_strong_private_sector4
+		}
+		}
+	}
+
+	focus = {
 		id = USA_elections_nearing
 		icon = GFX_goal_usa_elections
 		x = 20
 		y = 0
 
-        available = {date > 1911.01.01}
+        available = {date > 1911.11.06}
 
 		cost = 10
 
@@ -181,7 +260,7 @@ focus_tree = {
 		}
 
         prerequisite = {focus = USA_safeguard_american_conservatism
-		focus = USA_towards_new_beginnings
+		focus = USA_towards_new_beginning
 		focus = USA_look_whos_back}
 
 		cost = 1
@@ -319,7 +398,7 @@ focus_tree = {
 		}
 
         prerequisite = {focus = USA_safeguard_american_conservatism
-		focus = USA_towards_new_beginnings
+		focus = USA_towards_new_beginning
 		focus = USA_look_whos_back}
 
 		cost = 1
@@ -455,7 +534,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_towards_new_beginnings
+		id = USA_towards_new_beginning
 		icon = GFX_goal_wilson
 		x = 20
 		y = 5
@@ -476,14 +555,14 @@ focus_tree = {
 		y = 6
 
 		allow_branch = {
-		has_completed_focus = USA_towards_new_beginnings
+		has_completed_focus = USA_towards_new_beginning
 		}
 		allow_branch = {
 		date > 1912.11.06
 		}
 
         prerequisite = {focus = USA_safeguard_american_conservatism
-		focus = USA_towards_new_beginnings
+		focus = USA_towards_new_beginning
 		focus = USA_look_whos_back}
 
 		cost = 1
