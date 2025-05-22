@@ -1,0 +1,86 @@
+add_namespace = american_elections
+
+country_event = {
+	id = american_elections.1
+	title = "Who To Support?"
+	desc = "With the elections nearing day by day we must choose which of the candidates to support."
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = "Taft"
+		unlock_national_focus = USA_taft
+	}
+
+    option = {
+		name = "Wilson"
+		unlock_national_focus = USA_wilson
+		
+	}
+
+    option = {
+		name = "Roosevelt"
+		unlock_national_focus = USA_roosevelt
+	}
+}
+
+country_event = {
+	id = american_elections.2
+	title = "Wilson Wins The Elections!"
+	desc = "Wilson wins."
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+    date > 1912.11.06
+    has_completed_focus = USA_towards_new_beginnings
+	}
+
+	option = {
+		name = "Of course he does"
+		unlock_national_focus = USA_wilson_elected
+	}
+}
+
+country_event = {
+	id = american_elections.3
+	title = "Taft Wins The Elections!"
+	desc = "Taft wins."
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+    date > 1912.11.06
+    has_completed_focus = USA_safeguard_american_conservatism
+	}
+
+	option = {
+		name = "Of course he does"
+		unlock_national_focus = USA_tafts_second_term
+	}
+}
+
+country_event = {
+	id = american_elections.4
+	title = "Roosevelt Wins The Elections!"
+	desc = "Roosevelt wins."
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+    date > 1912.11.06
+    has_completed_focus = USA_look_whos_back
+	}
+
+	option = {
+		name = "Of course he does"
+		unlock_national_focus = USA_roosevelts_third_term
+	}
+}

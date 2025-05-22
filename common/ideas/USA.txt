@@ -41,6 +41,15 @@ ideas = {
 			}
 		}
 
+		USA_diplomatic_neutrality = {
+			modifier = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.75
+			lend_lease_tension = 0.4
+			guarantee_tension = 0.3
+			}
+		}
+
 		USA_new_nationalism = {
 			modifier = {
 			war_support_factor = 0.1

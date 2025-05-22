@@ -399,4 +399,16 @@ spriteTypes = {
 		name = "GFX_goal_republican_support"
 		texturefile = "gfx/interface/goals/USA/republicansupport1.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_discredit_establishment"
+		texturefile = "gfx/interface/goals/USA/againstestablishment.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_promise_square_deal"
+		texturefile = "gfx/interface/goals/USA/promisesquaredeal.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_trustbusting"
+		texturefile = "gfx/interface/goals/USA/trustbusting.dds"
+	}
 
