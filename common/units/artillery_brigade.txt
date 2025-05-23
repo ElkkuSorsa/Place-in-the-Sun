@@ -26,10 +26,9 @@ sub_units = {
 
 		manpower = 500
 		need = {
-			artillery_equipment = 250
-			infantry_equipment = 500
-			support_equipment = 550
-			uniforms_equipment = 500
+			artillery_equipment = 100
+			infantry_equipment = 50
+			uniforms_equipment = 100
 		}
 		
 		max_strength = 0.5
