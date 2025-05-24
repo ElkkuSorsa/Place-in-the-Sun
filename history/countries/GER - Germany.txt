@@ -1,8 +1,8 @@
 ﻿oob = "GER_1936"
-capital = 1
+capital = 1269
 set_research_slots = 3
 set_stability = 0.8
-set_war_support = 0.3
+set_war_support = 0.4
 set_convoys = 300
 
 

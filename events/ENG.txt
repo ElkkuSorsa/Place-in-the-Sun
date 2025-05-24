@@ -222,7 +222,7 @@ country_event = {
 			name = "Conservative Party"
 		}
 		complete_national_focus = ENG_1910_elections
-		complete_national_focus = ENG_loss_of_confidence
+		complete_national_focus = ENG_conservative_victory
 		hidden_effect = {
 			clr_country_flag = ENG_lib_his
 			set_country_flag = ENG_con
@@ -435,13 +435,11 @@ country_event = {
 
 	option = {
 		name = "Accept the Coalition"
-		complete_national_focus = ENG_parliamentary_coalition
 	}
 
 	option = {
 		name = "We can't make a coalition with them!"
 		set_country_flag = ENG_no_coalition
-		unlock_national_focus = ENG_parliamentary_coalition
 		activate_mission = ENG_parliament_act
 	}
 }
@@ -456,7 +454,6 @@ country_event = {
 
 	option = {
 		name = "Invite them to the coalition"
-		complete_national_focus = ENG_parliamentary_coalition
 	}
 
 	option = {
