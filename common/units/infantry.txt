@@ -46,9 +46,8 @@ sub_units = {
 		supply_consumption = 0.05
 	
 		need = {
-			infantry_equipment = 500
-			support_equipment = 500
-			uniforms_equipment = 500
+			infantry_equipment = 100
+			uniforms_equipment = 100
 		}
 	}
 
@@ -92,9 +91,8 @@ sub_units = {
 	
 	
 		need = {
-			infantry_equipment = 500
-			support_equipment = 500
-			uniforms_equipment = 500
+			infantry_equipment = 100
+			uniforms_equipment = 100
 		}
 
 		forest = {
@@ -170,9 +168,8 @@ sub_units = {
 	
 	
 		need = {
-			infantry_equipment = 650
-			support_equipment = 850
-			uniforms_equipment = 650
+			infantry_equipment = 125
+			uniforms_equipment = 150
 		}
 
 		marsh = {
@@ -231,9 +228,8 @@ sub_units = {
 	
 	
 		need = {
-			infantry_equipment = 650
-			support_equipment = 850
-			uniforms_equipment = 650
+			infantry_equipment = 200
+			uniforms_equipment = 200
 		}
 
 		marsh = {
@@ -291,9 +287,8 @@ sub_units = {
 	
 	
 		need = {
-			infantry_equipment = 650
-			support_equipment = 850
-			uniforms_equipment = 650
+			infantry_equipment = 200
+			uniforms_equipment = 200
 		}
 		supply_consumption = 0.025
 		breakthrough = 0.15
@@ -352,9 +347,8 @@ sub_units = {
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 500
-			support_equipment = 500
-			uniforms_equipment = 500
+			infantry_equipment = 100
+			uniforms_equipment = 100
 		}
 
 		forest = {
@@ -463,9 +457,8 @@ sub_units = {
 		supply_consumption = 0.05
 	
 		need = {
-			infantry_equipment = 500
-			support_equipment = 500
-			uniforms_equipment = 500
+			infantry_equipment = 100
+			uniforms_equipment = 100
 		}
 	}
 
@@ -508,8 +501,6 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 35
-			support_equipment = 35
-			uniforms_equipment = 35
 		}
 	}
 
@@ -553,7 +544,6 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 40
-			support_equipment = 40
 			uniforms_equipment = 40
 		}
 	}

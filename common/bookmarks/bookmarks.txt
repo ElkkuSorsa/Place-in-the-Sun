@@ -83,7 +83,7 @@ bookmarks = {
 			ideology = neutrality
 		}
 
-		POR = {
+		BEL = {
 			minor = yes
 			history =
 			ideology = neutrality
