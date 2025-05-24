@@ -30,8 +30,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_support_moderatist_parties
-		icon = GFX_goal_the_republic
+		id = FRA_support_republican_parties
+		icon = GFX_goal_france_moderate
 		x = -1
 		y = 1 
 		relative_position_id = FRA_la_republic
@@ -39,7 +39,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_support_radical_parties }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = { idea = republican_support days = 365 }
 		}
 
 		cost = 5
@@ -49,15 +49,15 @@ focus_tree = {
 
 	focus = {
 		id = FRA_support_radical_parties
-		icon = GFX_goal_the_republic
+		icon = GFX_goal_support_radicalism
 		x = 1
 		y = 1 
 		relative_position_id = FRA_la_republic
 		prerequisite = { focus = FRA_la_republic }
-		mutually_exclusive = { focus = FRA_support_moderatist_parties }
+		mutually_exclusive = { focus = FRA_support_republican_parties }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = { idea = radicalist_support days = 365 }
 		}
 
 		cost = 5
@@ -67,14 +67,14 @@ focus_tree = {
 
 	focus = {
 		id = FRA_1910_elections
-		icon = GFX_goal_the_republic
+		icon = GFX_goal_1910_election
 		x = 1
 		y = 1 
-		relative_position_id = FRA_support_moderatist_parties
-		prerequisite = { focus = FRA_support_moderatist_parties focus = FRA_support_radical_parties }
+		relative_position_id = FRA_support_republican_parties
+		prerequisite = { focus = FRA_support_republican_parties focus = FRA_support_radical_parties }
 		
 		completion_reward = {
-			add_political_power = 100
+			country_event = france_elections.1
 		}
 
 		cost = 10
