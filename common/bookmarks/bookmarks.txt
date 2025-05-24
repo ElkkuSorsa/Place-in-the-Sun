@@ -18,6 +18,7 @@ bookmarks = {
 					howitzer_artillery = 1
 					tech_engineers = 1
 					uniforms_weapons = 1
+					basic_machine_tools = 1
 				}
 			}
 		}
@@ -26,11 +27,11 @@ bookmarks = {
 			history = ENG_history
 			ideology = democratic
 
-			focuses = { ENG_government_of_liberals ENG_british_federation ENG_pax_britannica }
+			focuses = { ENG_1910_elections ENG_law_first_term ENG_disband_the_house_of_commons }
 			ideas = { ENG_british_politics_dem ENG_haldane_reform_1 ENG_house_of_lords }
 		}
 
-			USA = {
+		USA = {
 			history = FRA_history
 			ideology = democratic
 		}

@@ -64,7 +64,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_the_last_liberals
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_last_liberals
 		x = 30
 		y = 2
 		prerequisite = { focus = ENG_1910_elections }
@@ -1206,7 +1206,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_limited_homerule
-		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		icon = GFX_goal_ireland_scale
 		x = 33
 		y = 4
 		prerequisite = { focus = ENG_engage_in_europe }
@@ -1253,7 +1253,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_hold_on_ireland
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_goal_ireland_border
 		x = 37
 		y = 4
 		prerequisite = { focus = ENG_engage_in_europe }
@@ -1625,7 +1625,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_secure_constitutionalism
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_goal_constitutionalism
 		x = 43
 		y = 4
 		prerequisite = { focus = ENG_law_first_term }
@@ -1647,7 +1647,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_realistic_party
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_goal_ENG_realistic_party
 		x = 46
 		y = 4
 		prerequisite = { focus = ENG_law_first_term }
@@ -1828,7 +1828,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_march_for_change
-		icon = GFX_focus_BRA_end_the_state_of_emergency
+		icon = GFX_goal_ENG_angel
 		x = 12
 		y = 1
 		mutually_exclusive = { focus = ENG_1910_elections }
@@ -1860,7 +1860,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_question_of_future
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_ENG_fist
 		x = 12
 		y = 2
 		prerequisite = { focus = ENG_march_for_change }
@@ -2132,7 +2132,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_crown_of_ireland
-		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		icon = GFX_goal_crown_of_ireland
 		x = 3
 		y = 6
 		prerequisite = { focus = ENG_deal_with_ireland }
@@ -2145,12 +2145,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = ENG_ire_personal_union_tt
 			hidden_effect = {
 				release_puppet_on_controlled = IRE
-			}
-			set_autonomy = {
-				target = IRE
-				autonomy_state = autonomy_personal_union
+				set_autonomy = {
+					target = IRE
+					autonomy_state = autonomy_real_union
+				}
+				transfer_state = 119
 			}
 		}
 	}
