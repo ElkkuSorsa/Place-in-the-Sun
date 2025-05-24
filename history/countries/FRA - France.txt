@@ -16,9 +16,6 @@ add_ideas = {
 	volunteer_only
 	civilian_economy
 	disjointed_goverment
-	french_army
-	political_violence
-	lacking_industry
 }
 
 recruit_character = FRA_aristide_briand

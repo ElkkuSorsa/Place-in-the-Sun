@@ -230,6 +230,22 @@ spriteTypes = {
 		name = "GFX_goal_the_republic"
 		texturefile = "gfx/interface/goals/FRA/the_republic.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_1910_election"
+		texturefile = "gfx/interface/goals/FRA/1910_election.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_france_moderate"
+		texturefile = "gfx/interface/goals/FRA/france_moderate.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_support_radicalism"
+		texturefile = "gfx/interface/goals/FRA/support_radicalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_social_democracy"
+		texturefile = "gfx/interface/goals/FRA/social_democracy.dds"
+	}
 		SpriteType = {
 		name = "GFX_goal_taft"
 		texturefile = "gfx/interface/goals/USA/taft1.dds"

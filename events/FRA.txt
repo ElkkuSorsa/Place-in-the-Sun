@@ -1,0 +1,81 @@
+add_namespace = france_elections
+
+country_event = {
+	id = france_elections.1
+	title = "The election day"
+	desc = "With the elections nearing day by day we must choose which of the parties to support."
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = "Parti Radical"
+		unlock_national_focus = FRA_parti_radical
+	}
+
+    option = {
+		name = "The Democratic Alliance"
+		unlock_national_focus = 
+		
+	}
+
+    option = {
+		name = "More radical option is the choice"
+		country_event = {
+				id = france_elections.2
+				days = 7
+			}
+		}
+	}
+
+country_event = {
+	id = france_elections.2
+	title = "Change of path"
+	desc = "This will mark a change of direction for our our motherland."
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = "Groupe Republicain nationaliste"
+		unlock_national_focus = 
+	}
+
+    option = {
+		name = "SFIO"
+		unlock_national_focus = 
+		
+	}
+
+    option = {
+		name = "Choise is not made"
+				country_event = {
+				id = france_elections.3
+				days = 7
+			}
+		}
+	}
+
+country_event = {
+	id = france_elections.3
+	title = "France falls a new nation is born"
+	desc = "Ultimate emotional dramatic description."
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	option = {
+		name = "Gaul is born"
+		unlock_national_focus = 
+	}
+}
+
