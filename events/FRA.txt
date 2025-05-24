@@ -13,7 +13,7 @@ country_event = {
 
 	option = {
 		name = "Parti Radical"
-		unlock_national_focus = 
+		unlock_national_focus = FRA_parti_radical
 	}
 
     option = {

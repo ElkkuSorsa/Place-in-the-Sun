@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = FRA_la_republic
 		icon = GFX_goal_the_republic
-		x = 18
+		x = 8
 		y = 1
 		
 		completion_reward = {
@@ -61,7 +61,7 @@ focus_tree = {
 		}
 
 		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 
@@ -78,6 +78,23 @@ focus_tree = {
 		}
 
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_parti_radical
+		icon = GFX_goal_social_democracy
+		x = 0
+		y = 1 
+		relative_position_id = FRA_1910_elections
+		available = { always = no }
+				
+		completion_reward = {
+			add_political_power = 50
+		}
+
+		cost = 1
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
