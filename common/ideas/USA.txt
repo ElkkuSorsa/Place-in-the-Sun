@@ -68,8 +68,8 @@ ideas = {
 
 		USA_ineffective_administration2 = {
 			modifier = {
-			stability_factor = -0.05
-			war_support_factor = -0.05
+			stability_factor = -0.04
+			war_support_factor = -0.04
 			political_power_factor = -0.1
 			consumer_goods_factor = 0.15
 			}
@@ -77,6 +77,8 @@ ideas = {
 
 		USA_ineffective_administration3 = {
 			modifier = {
+			stability_factor = -0.03
+			war_support_factor = -0.03
 			consumer_goods_factor = 0.15
 			political_power_factor = -0.05
 			}
@@ -84,7 +86,9 @@ ideas = {
 
 		USA_ineffective_administration4 = {
 			modifier = {
-			consumer_goods_factor = 0.1
+			stability_factor = -0.03
+			war_support_factor = -0.03
+			consumer_goods_factor = 0.15
 			}
 		}
 
@@ -115,6 +119,16 @@ ideas = {
             army_attack_factor = -0.1
             conscription_factor = -0.75
             production_speed_arms_factory_factor = -0.2
+			}
+		}
+
+		USA_american_army2 = {
+			modifier = {
+			war_support_factor = -0.09
+            army_org_factor = -0.14
+            army_attack_factor = -0.09
+            conscription_factor = -0.65
+            production_speed_arms_factory_factor = -0.18
 			}
 		}
 

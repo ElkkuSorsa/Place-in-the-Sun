@@ -545,30 +545,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_tafts_second_term
-		icon = GFX_goal_taft
-		x = 20
-		y = 6
-
-		allow_branch = {
-		has_completed_focus = USA_safeguard_american_conservatism
-		}
-		allow_branch = {
-		date > 1912.11.06
-		}
-
-        prerequisite = {focus = USA_safeguard_american_conservatism
-		focus = USA_towards_new_beginning
-		focus = USA_look_whos_back}
-
-		cost = 1
-
-		completion_reward = {
-		
-		}
-	}
-
     focus = {
 		id = USA_roosevelt
 		icon = GFX_goal_teddyroosevelt
@@ -680,30 +656,6 @@ focus_tree = {
 
 		completion_reward = {
 		custom_effect_tooltip = USA_roosevelt_election_win
-		}
-	}
-
-	focus = {
-		id = USA_roosevelts_third_term
-		icon = GFX_goal_roosevelt
-		x = 20
-		y = 6
-
-		allow_branch = {
-		has_completed_focus = USA_look_whos_back
-		}
-		allow_branch = {
-		date > 1912.11.06
-		}
-
-        prerequisite = {focus = USA_safeguard_american_conservatism
-		focus = USA_towards_new_beginning
-		focus = USA_look_whos_back}
-
-		cost = 1
-
-		completion_reward = {
-		
 		}
 	}
 
@@ -848,43 +800,21 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_wilson_elected
-		icon = GFX_goal_wilson
-		x = 20
-		y = 6
+		id = USA_american_military
+		icon = GFX_goal_usa_elections
+		x = 35
+		y = 0
 
-		allow_branch = {
-		has_completed_focus = USA_towards_new_beginning
-		}
-		allow_branch = {
-		date > 1912.11.06
-		}
-
-        prerequisite = {focus = USA_safeguard_american_conservatism
-		focus = USA_towards_new_beginning
-		focus = USA_look_whos_back}
-
-		cost = 1
-
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = USA_diplomatic_neutrality
-		icon = GFX_goal_wilson
-		x = 16
-		y = 7
-
-
-        prerequisite = {focus = USA_wilson_elected}
+        available = {threat > 0.25}
 
 		cost = 5
 
 		completion_reward = {
-		add_stability = 0.1
-		add_ideas = USA_diplomatic_neutrality
+		army_experience = 10
+		swap_ideas = {
+		remove_idea = USA_american_army
+		add_idea = USA_american_army2
+		}
 		}
 	}
 
