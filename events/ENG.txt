@@ -188,6 +188,7 @@ country_event = {
 	option = {
 		name = "Liberals Win!"
 		custom_effect_tooltip = historical_event_option
+		custom_effect_tooltip = ENG_lib_win
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_the_last_liberals
 		ai_chance = {
@@ -214,13 +215,14 @@ country_event = {
 	option = {
 		name = "Conservatives Win by a Slight Majority!"
 		news_event = ENG_news.5
+		custom_effect_tooltip = ENG_con_win
 		set_party_name = {
 			ideology = democratic
 			long_name = "the Conservative Party"
 			name = "Conservative Party"
 		}
 		complete_national_focus = ENG_1910_elections
-		complete_national_focus = ENG_loss_of_confidence
+		complete_national_focus = ENG_conservative_victory
 		hidden_effect = {
 			clr_country_flag = ENG_lib_his
 			set_country_flag = ENG_con
@@ -433,13 +435,11 @@ country_event = {
 
 	option = {
 		name = "Accept the Coalition"
-		complete_national_focus = ENG_parliamentary_coalition
 	}
 
 	option = {
 		name = "We can't make a coalition with them!"
 		set_country_flag = ENG_no_coalition
-		unlock_national_focus = ENG_parliamentary_coalition
 		activate_mission = ENG_parliament_act
 	}
 }
@@ -454,7 +454,6 @@ country_event = {
 
 	option = {
 		name = "Invite them to the coalition"
-		complete_national_focus = ENG_parliamentary_coalition
 	}
 
 	option = {

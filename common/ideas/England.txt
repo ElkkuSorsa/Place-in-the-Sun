@@ -518,5 +518,11 @@ ideas = {
 				war_support_factor = -0.3
 			}
 		}
+
+		ENG_private_construction = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
 	}
 }

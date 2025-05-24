@@ -14,1520 +14,14 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = FRA_republican_era
-		icon = GFX_focus_fra_french_union
-		x = 26
-		y = 1
-		
-		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_maintain_liberal_coalition
+		id = FRA_la_republic
 		icon = GFX_goal_the_republic
-		x = 21
-		y = 2
-		prerequisite = { focus = FRA_republican_era }
-		mutually_exclusive = { focus = FRA_social_conservatist_coalition }
-		
-		completion_reward = {
-			add_popularity = {
-                ideology = democratic
-                popularity = 0.15
-           }
-		   add_stability = 0.03
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_memories_of_the_paris_commune
-		icon = GFX_goal_paris_commune_memories
-		x = 12
-		y = 4
-        prerequisite = { focus = FRA_invite_sfio }
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = communism 
-				popularity = 0.1
-			}
-			add_stability = -0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_revolutionary_spirit
-		icon = GFX_focus_focus_fra_revolution_utmost
-		x = 10
-		y = 5
-		prerequisite = { focus = FRA_memories_of_the_paris_commune }
-		
-		completion_reward = {
-			add_ideas = { revolutionary_spirit }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_labour_laws
-		icon = GFX_focus_ICE_embrace_the_workers_revolution
-		x = 14
-		y = 5
-		prerequisite = { focus = FRA_memories_of_the_paris_commune }
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			    
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-
-		focus = {
-		id = FRA_path_to_power
-		icon = GFX_SOV_a_new_theory_of_revolution_ccp_2d_sov_compatibility
-		x = 12
-		y = 6
-		prerequisite = { focus = FRA_new_labour_laws
-		focus = FRA_revolutionary_spirit
-	    }
-		
-		completion_reward = {
-			add_political_power = 100
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_invite_sfio
-		icon = GFX_goal_invite_sfio
-		x = 16
-		y = 3
-		prerequisite = { focus = FRA_maintain_liberal_coalition }
-		mutually_exclusive = { focus = FRA_socialist_reforms }
-		
-		completion_reward = {
-			add_political_power = 100
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_social_welfare
-		icon = GFX_focus_ARG_women_in_industry
-		x = 16
-		y = 5
-		prerequisite = { focus = FRA_invite_sfio }
-		
-		completion_reward = {
-			add_ideas = { social_welfare }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_defend_the_revolution
-		icon = GFX_SOV_carry_revolution_east_ccp_2d_sov_compatibility
-		x = 15
-		y = 6
-		prerequisite = { focus = FRA_social_welfare }
-		
-		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_communist_militia
-		icon = GFX_focus_generic_spur_communist_revolutions
-		x = 14
-		y = 7
-		prerequisite = { focus = FRA_path_to_power } 
-		prerequisite = { focus = FRA_defend_the_revolution }
-		
-		completion_reward = {
-			add_ideas = { communist_militas }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_spread_the_revolution
-		icon = GFX_focus_CHL_union_of_hispanic_republics
-		x = 10
-		y = 7
-		prerequisite = { focus = FRA_path_to_power } 
-		
-		completion_reward = {
-			add_ideas = { the_new_revolution }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_the_french_revolution
-		icon = GFX_goal_revolutionary_spirit
-		x = 12
-		y = 8
-		prerequisite = { focus = FRA_spread_the_revolution }
-	    prerequisite = { focus = FRA_communist_militia } 
-		
-		completion_reward = {
-            set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			set_cosmetic_tag = TFC_FRA
-			add_popularity = {
-				ideology = communism
-				popularity = 0.3
-			}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_internal_policies
-		icon = GFX_focus_SWI_neutrality_on_the_move
-		x = 16
-		y = 9
-		prerequisite = { focus = FRA_the_french_revolution }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_command_economy
-		icon = GFX_focus_generic_communist_industry
-		x = 16
-		y = 10
-		prerequisite = { focus = FRA_internal_policies }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_political_system
-		icon = GFX_focus_usa_voter_registration_act
-		x = 16
-		y = 11
-		prerequisite = { focus = FRA_command_economy }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_religion_debate
-		icon = GFX_focus_generic_catholic_dominion
-		x = 16
-		y = 12
-		prerequisite = { focus = FRA_new_political_system }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_allow_religion
-		icon = GFX_focus_generic_vatican_state
-		x = 14
-		y = 13
-		prerequisite = { focus = FRA_religion_debate }
-		mutually_exclusive = { focus = FRA_state_atheism }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_state_atheism
-		icon = GFX_focus_BRA_state_atheism
-		x = 18
-		y = 13
-		prerequisite = { focus = FRA_religion_debate }
-		mutually_exclusive = { focus = FRA_allow_religion }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_foreing_policy_question
-		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		x = 10
-		y = 9
-		prerequisite = { focus = FRA_the_french_revolution }
-		
-		completion_reward = {
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_agressive_foreing_policy
-		icon = GFX_goal_france_agressive
 		x = 8
-		y = 10
-		prerequisite = { focus = FRA_foreing_policy_question }
-		mutually_exclusive = { focus = FRA_peacful_foreing_policy }
-		
-		completion_reward = {
-			add_war_support = 0.05
-			add_ideas = { french_expansionism }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_benelux_campaing
-		icon = GFX_focus_generic_influence_benelux
-		x = 6
-		y = 11
-		prerequisite = { focus = FRA_agressive_foreing_policy }
-		
-		completion_reward = {
-			add_threat = 5
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_belgian_invasion
-		icon = GFX_focus_BEL_dyle_plan
-		x = 5
-		y = 12
-		prerequisite = { focus = FRA_benelux_campaing }
-		
-		completion_reward = { create_wargoal = { type = annex_everything target = BEL } }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_invasion_of_germanic_benelux
-		icon = GFX_focus_BEL_dietsland
-		x = 7
-		y = 12
-		prerequisite = { focus = FRA_benelux_campaing }
-		
-		completion_reward = { create_wargoal = { type = annex_everything target = LUX } }
-		completion_reward = { create_wargoal = { type = annex_everything target = HOL } }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_destroy_the_fake_state
-		icon = GFX_focus_attack_switzerland
-		x = 9
-		y = 11
-		prerequisite = { focus = FRA_agressive_foreing_policy }
-		
-		completion_reward = { create_wargoal = { type = annex_everything target = SWI } }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_peacful_foreing_policy
-		icon = GFX_goal_france_peacful
-		x = 12
-		y = 10
-		prerequisite = { focus = FRA_foreing_policy_question }
-		mutually_exclusive = { focus = FRA_agressive_foreing_policy }
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_ideas = { friendly_neighbour }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_ally_the_swiss
-		icon = GFX_focus_generic_befriend_switzerland
-		x = 13
-		y = 11
-		prerequisite = { focus = FRA_peacful_foreing_policy }
-		
-		completion_reward = {
-			add_political_power = 100
-			}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_spanish_revolution
-		icon = GFX_focus_generic_befriend_communist_spain_focus
-		x = 13
-		y = 12
-		prerequisite = { focus = FRA_ally_the_swiss }
-		
-		completion_reward = {
-			add_political_power = 100
-			}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_divide_belgium
-		icon = GFX_focus_BEL_multi_language_courses
-		x = 11
-		y = 11
-		prerequisite = { focus = FRA_peacful_foreing_policy }
-		
-		completion_reward = {
-			add_political_power = 100
-			}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_alliance_whit_netherlands
-		icon = GFX_focus_hol_oranje_boven
-		x = 11
-		y = 12
-		prerequisite = { focus = FRA_divide_belgium }
-		
-		completion_reward = {
-			add_political_power = 100
-			}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-
-        focus = {
-		id = FRA_anti_monarchist_propaganda
-		icon = GFX_SOV_coup_detat_ccp_2d_sov_compatibility
-		x = 17
-		y = 6
-		prerequisite = { focus = FRA_social_welfare }
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.5
-			}
-			add_stability = -0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_socialist_reforms
-		icon = GFX_goal_socialist_reforms
-		x = 19
-		y = 3
-		prerequisite = { focus = FRA_maintain_liberal_coalition }
-		mutually_exclusive = { focus = FRA_invite_sfio }
-
-		completion_reward = {
-			add_ideas = { socialist_reforms }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_basic_state_pension
-		icon = GFX_focus_ARG_anti_corruption_policies
-		x = 19
-		y = 5
-		prerequisite = { focus = FRA_socialist_reforms }
-
-		completion_reward = {
-			add_political_power = -50
-			add_stability = 0.05
-		} 
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_developing_poor_areas
-		icon = GFX_focus_generic_farmland
-		x = 23
-		y = 3
-		prerequisite = { focus = FRA_maintain_liberal_coalition }
-		
-		completion_reward = {
-        1306 = {
-        add_extra_state_shared_building_slots = 2
-        add_building_construction = {
-	    type = industrial_complex
-	    level = 2
-	    instant_build = yes
-		}
-		735 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = industrial_complex
-		level = 2
-		instant_build = yes
-		}
-		}
-		}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_invest_in_the_rural_areas
-		icon = GFX_SOV_reverse_the_collectivization_process_ccp_2d_sov_compatibility
-		x = 23
-		y = 5
-		prerequisite = { focus = FRA_developing_poor_areas }
-		
-		completion_reward = {
-		33 = {
-	    add_building_construction = {
-	    type = infrastructure
-	    level = 2
-	    instant_build = yes
-		}
-		26 = {
-	    add_building_construction = {
-	    type = infrastructure
-	    level = 2
-	    instant_build = yes
-		}
-		}
-		}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_crackdown_on_rightists
-		icon = GFX_goal_anti_conservatism
-		x = 21
-		y = 4
-		prerequisite = { focus = FRA_maintain_liberal_coalition }
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism 
-				popularity = -0.5
-			}
-			add_stability = -0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_free_republic
-		icon = GFX_goal_france_liberte
-		x = 21
-		y = 6
-		prerequisite = { focus = FRA_basic_state_pension }
-		prerequisite = { focus = FRA_invest_in_the_rural_areas }
-		prerequisite = { focus = FRA_crackdown_on_rightists }
-		
-		completion_reward = {
-			add_ideas = { strong_and_free }
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_increasing_the_military_spending
-		icon = GFX_goal_france_officer_corps
-		x = 19
-		y = 7
-		prerequisite = { focus = FRA_free_republic }
-		
-		completion_reward = {
-		19 = {
-		add_extra_state_shared_building_slots = 2
-	    add_building_construction = {
-		type = arms_factory
-	    level = 2
-	    instant_build = yes
-		}
-		31 = {
-		add_extra_state_shared_building_slots = 2
-	    add_building_construction = {
-	    type = arms_factory
-	    level = 2
-	    instant_build = yes
-		}
-		}
-		}
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_prepearing_for_a_war
-		icon = GFX_focus_BEL_poudreries_reunies_de_belgique
-		x = 18
-		y = 8
-		prerequisite = { focus = FRA_increasing_the_military_spending }
-		
-		completion_reward = {
-        add_ideas = {}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_colonial_army
-		icon = GFX_focus_GER_liberate_exploited_colonial_workers
-		x = 18
-		y = 10
-		prerequisite = { focus = FRA_prepearing_for_a_war }
-		
-		completion_reward = {
-        add_ideas = {}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_increase_conscription
-		icon = GFX_focus_generic_full_social_mobilization
-		x = 19
-		y = 9
-		prerequisite = { focus = FRA_increasing_the_military_spending }
-		
-		completion_reward = {
-        add_ideas = {}
-		add_stability = -0.05
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_fortifying_the_german_border
-		icon = GFX_goal_fortify_the_westwall
-		x = 19
-		y = 11
-		prerequisite = { focus = FRA_increase_conscription }
-		
-		completion_reward = {
-		add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_attack_the_conservatists
-		icon = GFX_focus_BRA_end_the_state_of_emergency
-		x = 23
-		y = 7
-		prerequisite = { focus = FRA_free_republic }
-		
-		completion_reward = {
-			add_popularity = {
-                ideology = neutrality
-                popularity = -0.1         
-            }
-			add_stability = 0.1
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_political_monopoly
-		icon = GFX_focus_ARG_keep_it_in_the_party
-		x = 23
-		y = 9
-		prerequisite = { focus = FRA_attack_the_conservatists }
-		
-		completion_reward = {
-            add_popularity = {
-				ideology = democratic
-				popularity = 0.2
-			}
-			add_stability = 0.1
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_aproach_the_italians
-		icon = GFX_focus_befriend_italy
-		x = 23
-		y = 11
-		prerequisite = { focus = FRA_political_monopoly }
-		
-		completion_reward = {
-        add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_italian_military_cooperation
-		icon = GFX_focus_befriend_italy
-		x = 24
-		y = 12
-		prerequisite = { focus = FRA_aproach_the_italians }
-		
-		completion_reward = {
-        add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_tripple_entente
-		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
-		x = 21
-		y = 8
-		prerequisite = { focus = FRA_free_republic }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_the_threat_of_the_east
-		icon = GFX_goal_flag_germany
-		x = 21
-		y = 10
-		prerequisite = { focus = FRA_tripple_entente }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_Fort_de_Douaumont
-		icon = GFX_goal_fortify_the_westwall
-		x = 18
-		y = 12
-		prerequisite = { focus = FRA_fortifying_the_german_border }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_liberte_egalite
-		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		x = 21
-		y = 12
-		prerequisite = { focus = FRA_the_threat_of_the_east }
-		prerequisite = { focus = FRA_aproach_the_italians }
-		prerequisite = { focus = FRA_fortifying_the_german_border }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_strong_and_free
-		icon = GFX_focus_fra_le_deluge
-		x = 21
-		y = 13
-		prerequisite = { focus = FRA_liberte_egalite }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_control_political_instability
-		icon = GFX_focus_HUN_reinstate_the_lenin_boys
-		x = 26
-		y = 3
-		prerequisite = { focus = FRA_maintain_liberal_coalition focus = FRA_social_conservatist_coalition } 
-		
-		completion_reward = {
-			remove_ideas = { political_violence }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_address_the_champagne_riots
-		icon = GFX_goal_adressing_the_riots
-		x = 26
-		y = 4
-		prerequisite = { focus = FRA_control_political_instability } 
-		
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_negotiate_with_rioters
-		icon = GFX_focus_por_workers_of_iberia
-		x = 27
-		y = 5
-		prerequisite = { focus = FRA_address_the_champagne_riots } 
-		mutually_exclusive = { focus = FRA_supress_the_rioters }
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = champagne_riot
-				add_idea = negotiate_whit_rioters 
-			}
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-    focus = {
-		id = FRA_supress_the_rioters
-		icon = GFX_focus_GER_liberate_exploited_colonial_workers
-		x = 25
-		y = 5
-		prerequisite = { focus = FRA_address_the_champagne_riots } 
-		mutually_exclusive = { focus = FRA_negotiate_with_rioters }
-		
-		completion_reward = {
-            swap_ideas = {
-				remove_idea = champagne_riot 
-				add_idea = riots_supressed
-			}
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-
-	focus = {
-		id = FRA_end_the_riots
-		icon = GFX_goal_end_of_the_riots
-		x = 26
-		y = 6
-		prerequisite = { focus = FRA_negotiate_with_rioters
-		focus = FRA_supress_the_rioters
-		} 
-		
-		completion_reward = {
-			remove_ideas = { riots_supressed }
-			remove_ideas = { negotiate_whit_rioters }
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_social_conservatist_coalition
-		icon = GFX_goal_conservative_france
-		x = 31
-		y = 2
-		prerequisite = { focus = FRA_republican_era }
-		mutually_exclusive = { focus = FRA_maintain_liberal_coalition }
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.2
-			}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = FRA_manipulate_politics
-		icon = GFX_focus_usa_voter_registration_act
-		x = 33
-		y = 3
-		prerequisite = { focus = FRA_social_conservatist_coalition }
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	    focus = {
-		id = FRA_wide_spread_propaganda
-		icon = GFX_focus_GER_fund_the_film_department
-		x = 34
-		y = 4
-		prerequisite = { focus = FRA_manipulate_politics }
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_political_controll
-		icon = GFX_focus_ARG_keep_it_in_the_party
-		x = 33
-		y = 5
-		prerequisite = { focus = FRA_manipulate_politics }
-		
-		completion_reward = {
-			add_ideas = { total_controll }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-        focus = {
-		id = FRA_compromise_whit_monarchists
-		icon = GFX_goal_monarchist_compromise
-		x = 31
-		y = 4
-		prerequisite = { focus = FRA_social_conservatist_coalition }
-		
-		completion_reward = {
-			add_ideas = { monachists_in_the_coalition }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_crackdown_on_communists
-		icon = GFX_goal_anti_communism
-		x = 29
-		y = 3
-		prerequisite = { focus = FRA_social_conservatist_coalition }
-		
-		completion_reward = {
-			add_popularity = { 
-				ideology = communism
-				popularity = -0.5
-			}
-			add_stability = -0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_busines_investment
-		icon = GFX_goal_busines_investment
-		x = 29
-		y = 5
-		prerequisite = { focus = FRA_crackdown_on_communists }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_a_new_path
-		icon = GFX_goal_new_path_for_france
-		x = 31
-		y = 6
-		prerequisite = { focus = FRA_busines_investment focus = FRA_compromise_whit_monarchists focus = FRA_political_controll }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_monarchist_revitalisation
-		icon = GFX_goal_imperial_france
-		x = 38
-		y = 7
-		prerequisite = { focus = FRA_a_new_path }
-		mutually_exclusive = { focus = FRA_Action_Française }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_monarchist_propaganda
-		icon = GFX_goal_imperial_france
-		x = 38
-		y = 8
-		prerequisite = { focus = FRA_monarchist_revitalisation }
-		
-		completion_reward = {
-			add_ideas = { monarchist_propaganda }
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_achievments_of_monarchism
-		icon = GFX_goal_imperial_france
-		x = 36
-		y = 8
-		prerequisite = { focus = FRA_monarchist_revitalisation }
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_royalist_protests
-		icon = GFX_goal_imperial_france
-		x = 40
-		y = 8
-		prerequisite = { focus = FRA_monarchist_revitalisation }
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-			add_stability = -0.05
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-		
-		focus = {
-		id = FRA_absolute_monarchy
-		icon = GFX_goal_imperial_france
-		x = 34
-		y = 9
-		prerequisite = { focus = FRA_monarchist_revitalisation }
-		mutually_exclusive = { focus = FRA_constitutional_monarchy }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_choosing_a_king
-		icon = GFX_goal_imperial_france
-		x = 38
-		y = 10
-		prerequisite = { focus = FRA_absolute_monarchy focus = FRA_constitutional_monarchy }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_bourbonist_king
-		icon = GFX_goal_imperial_france
-		x = 40
-		y = 11
-		prerequisite = { focus = FRA_choosing_a_king }
-		mutually_exclusive = { focus = FRA_bonapartist_king }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_bonapartist_king
-		icon = GFX_goal_imperial_france
-		x = 36
-		y = 11
-		prerequisite = { focus = FRA_choosing_a_king }
-		mutually_exclusive = { focus = FRA_bourbonist_king }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_constitutional_monarchy
-		icon = GFX_goal_imperial_france
-		x = 42
-		y = 9
-		prerequisite = { focus = FRA_monarchist_revitalisation }
-		mutually_exclusive = { focus = FRA_absolute_monarchy }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_Action_Française
-		icon = GFX_goal_france_af
-		x = 28
-		y = 7
-		prerequisite = { focus = FRA_a_new_path }
-		mutually_exclusive = { focus = FRA_monarchist_revitalisation }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_authoritarian_path
-		icon = GFX_goal_france_af
-		x = 26
-		y = 8
-		prerequisite = { focus = FRA_Action_Française }
-		mutually_exclusive = { focus = FRA_democratic_path }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_nationalist_militas
-		icon = GFX_goal_france_af
-		x = 26
-		y = 9
-		prerequisite = { focus = FRA_authoritarian_path }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_nationalist_propaganda
-		icon = GFX_goal_france_af
-		x = 25
-		y = 10
-		prerequisite = { focus = FRA_nationalist_militas }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_nationalist_riots
-		icon = GFX_goal_france_af
-		x = 27
-		y = 10
-		prerequisite = { focus = FRA_nationalist_militas }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_new_france
-		icon = GFX_goal_france_af
-		x = 26
-		y = 11
-		prerequisite = { focus = FRA_nationalist_riots }
-		prerequisite = { focus = FRA_nationalist_propaganda }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_democratic_path
-		icon = GFX_goal_france_af
-		x = 30
-		y = 8
-		prerequisite = { focus = FRA_Action_Française }
-		mutually_exclusive = { focus = FRA_authoritarian_path }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_countter_authoritarianism
-		icon = GFX_goal_france_af
-		x = 30
-		y = 9
-		prerequisite = { focus = FRA_democratic_path }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_purge_authoritarian_elements
-		icon = GFX_goal_france_af
-		x = 29
-		y = 10
-		prerequisite = { focus = FRA_countter_authoritarianism }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_national_democracy
-		icon = GFX_goal_france_af
-		x = 31
-		y = 10
-		prerequisite = { focus = FRA_countter_authoritarianism }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_national_democracy
-		icon = GFX_goal_france_af
-		x = 30
-		y = 11
-		prerequisite = { focus = FRA_national_democracy }
-		prerequisite = { focus = FRA_purge_authoritarian_elements }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-		focus = {
-		id = FRA_new_french_model
-		icon = GFX_goal_france_af
-		x = 28
-		y = 9
-		prerequisite = { focus = FRA_democratic_path focus = FRA_authoritarian_path }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-    
-	}
-
-	# french industry tree
-
-		focus = {
-		id = FRA_french_industry
-		icon = GFX_focus_generic_military_industry
-		x = 44
 		y = 1
 		
 		completion_reward = {
 			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_1910_railway_strikes
-		icon = GFX_focus_generic_military_industry
-		x = 64
-		y = 2
-		prerequisite { focus = FRA_french_industry }
-		
-		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
 		}
 
 		cost = 5
@@ -1535,31 +29,17 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_negotiate_whit_the_rioters
-		icon = GFX_focus_generic_military_industry
-		x = 64
-		y = 3
-		prerequisite { focus = FRA_1910_railway_strikes }
+	focus = {
+		id = FRA_support_republican_parties
+		icon = GFX_goal_france_moderate
+		x = -1
+		y = 1 
+		relative_position_id = FRA_la_republic
+		prerequisite = { focus = FRA_la_republic }
+		mutually_exclusive = { focus = FRA_support_radical_parties }
 		
 		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_easing_the_tension
-		icon = GFX_focus_generic_military_industry
-		x = 64
-		y = 4
-		prerequisite { focus = FRA_negotiate_whit_the_rioters }
-		
-		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = { idea = republican_support days = 365 }
 		}
 
 		cost = 5
@@ -1567,47 +47,34 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_end_of_the_strikes
-		icon = GFX_focus_generic_military_industry
-		x = 64
-		y = 5
-		prerequisite { focus = FRA_easing_the_tension }
+	focus = {
+		id = FRA_support_radical_parties
+		icon = GFX_goal_support_radicalism
+		x = 1
+		y = 1 
+		relative_position_id = FRA_la_republic
+		prerequisite = { focus = FRA_la_republic }
+		mutually_exclusive = { focus = FRA_support_republican_parties }
 		
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = { idea = radicalist_support days = 365 }
 		}
 
-		cost = 8
-		search_filters = { FOCUS_FILTER_HISTORICAL }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 
-		focus = {
-		id = FRA_employment_crisis
-		icon = GFX_focus_generic_military_industry
-		x = 60
-		y = 2
-		prerequisite { focus = FRA_french_industry }
+	focus = {
+		id = FRA_1910_elections
+		icon = GFX_goal_1910_election
+		x = 1
+		y = 1 
+		relative_position_id = FRA_support_republican_parties
+		prerequisite = { focus = FRA_support_republican_parties focus = FRA_support_radical_parties }
 		
 		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_better_wages
-		icon = GFX_focus_generic_military_industry
-		x = 60
-		y = 3
-		prerequisite { focus = FRA_employment_crisis }
-		
-		completion_reward = {
-			add_political_power = 100
+			country_event = france_elections.1
 		}
 
 		cost = 10
@@ -1615,226 +82,33 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_fix_the_unemployment
-		icon = GFX_focus_generic_military_industry
-		x = 60
-		y = 4
-		prerequisite { focus = FRA_better_wages }
-		
+	focus = {
+		id = FRA_parti_radical
+		icon = GFX_goal_social_democracy
+		x = 0
+		y = 1 
+		relative_position_id = FRA_1910_elections
+		available = { always = no }
+				
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 1
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_developing_french_areas
-		icon = GFX_focus_generic_military_industry
-		x = 52
-		y = 2
-		prerequisite { focus = FRA_french_industry }
-		
+	focus = {
+		id = FRA_british_ties
+		icon = GFX_goal_social_democracy
+		x = 0
+		y = 1 
+		relative_position_id = FRA_parti_radical
+		prerequisite = { focus = FRA_parti_radical }
+				
 		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_southern_development
-		icon = GFX_focus_generic_military_industry
-		x = 57
-		y = 3
-		prerequisite { focus = FRA_developing_french_areas }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_southern_steel
-		icon = GFX_focus_generic_military_industry
-		x = 56
-		y = 4
-		prerequisite { focus = FRA_southern_development }
-		
-		completion_reward = {
-            add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_southern_aerodynamic_facility
-		icon = GFX_focus_generic_military_industry
-		x = 56
-		y = 4
-		prerequisite { focus = FRA_southern_development }
-		
-		completion_reward = {
-            add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_southern_industrial_expansion
-		icon = GFX_focus_generic_military_industry
-		x = 58
-		y = 4
-		prerequisite { focus = FRA_southern_development }
-		
-		completion_reward = {
-            add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_developing_the_capital_area
-		icon = GFX_goal_paris_development
-		x = 52
-		y = 3
-		prerequisite { focus = FRA_developing_french_areas }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_gun_factories
-		icon = GFX_focus_generic_military_industry
-		x = 51
-		y = 4
-		prerequisite { focus = FRA_developing_the_capital_area }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_laboratory
-		icon = GFX_focus_generic_military_industry
-		x = 53
-		y = 4
-		prerequisite { focus = FRA_developing_the_capital_area }
-		
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_north_western_development
-		icon = GFX_focus_generic_military_industry
-		x = 47
-		y = 3
-		prerequisite { focus = FRA_developing_french_areas }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_north_western_docyard_expansion
-		icon = GFX_focus_generic_military_industry
-		x = 46
-		y = 4
-		prerequisite { focus = FRA_north_western_development }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_north_western_industrial_expansion
-		icon = GFX_focus_generic_military_industry
-		x = 48
-		y = 4
-		prerequisite { focus = FRA_north_western_development }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-
-	#industrial modernisation
-
-		focus = {
-		id = FRA_modern_work_tools
-		icon = GFX_focus_generic_military_industry
-		x = 41
-		y = 2
-		prerequisite { focus = FRA_french_industry }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_modernize_construction_tools
-		icon = GFX_focus_generic_military_industry
-		x = 43
-		y = 3
-		prerequisite { focus = FRA_modern_work_tools }
-		
-		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		cost = 5
@@ -1842,15 +116,16 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_modernize_production_tools
-		icon = GFX_focus_generic_military_industry
-		x = 39
-		y = 3
-		prerequisite { focus = FRA_modern_work_tools }
-		
+	focus = {
+		id = FRA_strenghten_the_entente
+		icon = GFX_goal_social_democracy
+		x = 0
+		y = 1 
+		relative_position_id = FRA_british_ties
+		prerequisite = { focus = FRA_british_ties }
+				
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		cost = 5
@@ -1858,31 +133,16 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_modernizing_the_industry
-		icon = GFX_focus_generic_military_industry
-		x = 41
-		y = 4
-		prerequisite { focus = FRA_modern_work_tools }
-		
+	focus = {
+		id = FRA_social_reforms
+		icon = GFX_goal_social_democracy
+		x = -3
+		y = 1 
+		relative_position_id = FRA_parti_radical
+		prerequisite = { focus = FRA_parti_radical }
+				
 		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_modern_machines
-		icon = GFX_focus_generic_military_industry
-		x = 39
-		y = 5
-		prerequisite { focus = FRA_modernize_production_tools }
-		
-		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		cost = 5
@@ -1890,15 +150,16 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_modern_automobiles
-		icon = GFX_focus_generic_military_industry
-		x = 43
-		y = 5
-		prerequisite { focus = FRA_modernize_construction_tools }
-		
+	focus = {
+		id = FRA_healthcare_reforms
+		icon = GFX_goal_social_democracy
+		x = 1
+		y = 1 
+		relative_position_id = FRA_social_reforms
+		prerequisite = { focus = FRA_social_reforms }
+				
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		cost = 5
@@ -1906,66 +167,16 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_modernizing_the_industry
-		icon = GFX_focus_generic_military_industry
-		x = 41
-		y = 6
-		prerequisite { focus = FRA_modernizing_the_industry }
-		prerequisite { focus = FRA_modern_machines }
-		prerequisite { focus = FRA_modern_automobiles }
-		
+	focus = {
+		id = FRA_higher_pensions
+		icon = GFX_goal_social_democracy
+		x = -1
+		y = 1 
+		relative_position_id = FRA_social_reforms
+		prerequisite = { focus = FRA_social_reforms }
+				
 		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	# Army tree
-
-		focus = {
-		id = FRA_wadai_war
-		icon = GFX_focus_generic_africa_liberation
-		x = 60
-		y = 5
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_memories_of_the_franco_prussian_war
-		icon = GFX_goal_memories_of_the_franco_prussian_war
-		x = 59
-		y = 6
-		prerequisite = { focus = FRA_wadai_war }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_funds_for_arms_manufacturers
-		icon = GFX_focus_AUS_raid_military_storages
-		x = 61
-		y = 6
-		prerequisite = { focus = FRA_wadai_war }
-		
-		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		cost = 5
@@ -1973,347 +184,126 @@ focus_tree = {
 
 	}
 
-		focus = {
-		id = FRA_proper_army_funding
-		icon = GFX_goal_french_army
-		x = 68
-		y = 7
-		prerequisite = { focus = FRA_memories_of_the_franco_prussian_war }
-		
+	focus = {
+		id = FRA_higher_level_education
+		icon = GFX_goal_social_democracy
+		x = 1
+		y = 1 
+		relative_position_id = FRA_higher_pensions
+		prerequisite = { focus = FRA_higher_pensions }
+		prerequisite = { focus = FRA_healthcare_reforms }
+
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_modernize_tactics
-		icon = GFX_goal_french_army
-		x = 71
-		y = 8
-		prerequisite = { focus = FRA_proper_army_funding }
-		
+	focus = {
+		id = FRA_prepearing_for_war
+		icon = GFX_goal_social_democracy
+		x = 2
+		y = 1 
+		relative_position_id = FRA_parti_radical
+		prerequisite = { focus = FRA_parti_radical }
+
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_motorized_divisions
-		icon = GFX_goal_french_army
-		x = 71
-		y = 10
-		prerequisite = { focus = FRA_modernize_tactics }
-		
+	focus = {
+		id = FRA_rearm_the_nation
+		icon = GFX_goal_social_democracy
+		x = 0
+		y = 1 
+	    relative_position_id = FRA_prepearing_for_war
+		prerequisite = { focus = FRA_prepearing_for_war }
+
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_trench_works
-		icon = GFX_goal_french_army
-		x = 69
-		y = 9
-		prerequisite = { focus = FRA_proper_army_funding }
-		
+	focus = {
+		id = FRA_free_and_strong
+		icon = GFX_goal_social_democracy
+		x = 0
+		y = 1 
+	    relative_position_id = FRA_rearm_the_nation
+		prerequisite = { focus = FRA_rearm_the_nation }
+
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_ammunition_factories
-		icon = GFX_goal_french_army
-		x = 67
-		y = 8
-		prerequisite = { focus = FRA_proper_army_funding }
-		
+	focus = {
+		id = FRA_enact_conscription
+		icon = GFX_goal_social_democracy
+		x = 3
+		y = 1 
+		relative_position_id = FRA_prepearing_for_war
+		prerequisite = { focus = FRA_prepearing_for_war }
+
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+	
+	focus = {
+		id = FRA_extra_refresh_training
+		icon = GFX_goal_social_democracy
+		x = 1
+		y = 1 
+		relative_position_id = FRA_enact_conscription
+		prerequisite = { focus = FRA_enact_conscription }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_weapon_factories
-		icon = GFX_goal_french_army
-		x = 67
-		y = 10
-		prerequisite = { focus = FRA_ammunition_factories }
-		
+	focus = {
+		id = FRA_defence_deals_whit_belgium
+		icon = GFX_goal_social_democracy
+		x = -1
+		y = 1 
+		relative_position_id = FRA_enact_conscription
+		prerequisite = { focus = FRA_enact_conscription }
+
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
-		focus = {
-		id = FRA_morals_of_war
-		icon = GFX_goal_french_army
-		x = 60
-		y = 7
-		prerequisite = { focus = FRA_memories_of_the_franco_prussian_war }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_no_chemical_usage
-		icon = GFX_goal_french_army
-		x = 58
-		y = 8
-		prerequisite = { focus = FRA_morals_of_war }
-		mutually_exclusive = { focus = FRA_chemical_warfare }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_gas_masks_for_every_soldier
-		icon = GFX_goal_french_army
-		x = 58
-		y = 9
-		prerequisite = { focus = FRA_no_chemical_usage }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_chemical_warfare
-		icon = GFX_goal_french_army
-		x = 62
-		y = 8
-		prerequisite = { focus = FRA_morals_of_war }
-		mutually_exclusive = { focus = FRA_no_chemical_warfare }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_limited_chemical_warfare
-		icon = GFX_goal_french_army
-		x = 61
-		y = 9
-		prerequisite = { focus = FRA_chemical_warfare }
-		mutually_exclusive = { focus = FRA_unrestricted_chemical_warfare }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_unrestricted_chemical_warfare
-		icon = GFX_goal_french_army
-		x = 63
-		y = 9
-		prerequisite = { focus = FRA_chemical_warfare }
-		mutually_exclusive = { focus = FRA_limited_chemical_warfare }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_army_modernization
-		icon = GFX_goal_french_army
-		x = 50
-		y = 7
-		prerequisite = { focus = FRA_memories_of_the_franco_prussian_war }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_bolt_action_rifles
-		icon = GFX_goal_french_army
-		x = 48
-		y = 8
-		prerequisite = { focus = FRA_army_modernization }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_machine_guns
-		icon = GFX_goal_french_army
-		x = 48
-		y = 10
-		prerequisite = { focus = FRA_new_bolt_action_rifles }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_motorization_of_the_army
-		icon = GFX_goal_french_army
-		x = 50
-		y = 9
-		prerequisite = { focus = FRA_army_modernization }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_metal_beast
-		icon = GFX_goal_french_army
-		x = 50
-		y = 11
-		prerequisite = { focus = FRA_motorization_of_the_army }
-		prerequisite = { focus = FRA_new_machine_guns }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_new_artillery
-		icon = GFX_goal_french_army
-		x = 52
-		y = 8
-		prerequisite = { focus = FRA_army_modernization }
-		mutually_exclusive = { focus = FRA_howitzer_over_artillery }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_mass_production_of_artillery
-		icon = GFX_goal_french_army
-		x = 52
-		y = 10
-		prerequisite = { focus = FRA_new_artillery }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_howitzer_over_artillery
-		icon = GFX_goal_french_army
-		x = 54
-		y = 8
-		prerequisite = { focus = FRA_army_modernization }
-		mutually_exclusive = { focus = FRA_new_artillery }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-		focus = {
-		id = FRA_howitzer_mass_production
-		icon = GFX_goal_french_army
-		x = 54
-		y = 10
-		prerequisite = { focus = FRA_howitzer_over_artillery }
-		
-		completion_reward = {
-			add_political_power = 100
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
 }
 
+	
