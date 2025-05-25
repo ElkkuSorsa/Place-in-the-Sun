@@ -16,7 +16,6 @@ ideas = {
 	country = {
 		republican_support = {
 
-
 			modifier = {
 			 democratic_drift = 0.1
 			 stability_factor = 0.05
@@ -27,12 +26,92 @@ ideas = {
 	country = {
 		radicalist_support = {
 
-
 			modifier = {
 			 communism_drift = 0.1
 			 fascism_drift = 0.1
 			 neutrality_drift = 0.1
 			 stability_factor = -0.05
+		    }
+		}
+	}
+	
+
+
+	country = {
+		social_reforms = {
+
+			modifier = {
+			 consumer_goods_factor = 0.05
+			 production_speed_buildings_factor = 0.1
+			 stability_factor = 0.05
+		    }
+		}
+	}
+
+	country = {
+		higher_pensions = {
+
+			modifier = {
+			 consumer_goods_factor = 0.02
+			 production_speed_buildings_factor = 0.05
+			 industrial_capacity_factory = 0.05
+			 production_factory_efficiency_gain_factor = 0.05
+			 stability_factor = 0.05
+		    }
+		}
+	}
+
+	country = {
+		healthcare_reforms = {
+
+			modifier = {
+			 consumer_goods_factor = 0.03
+			 industrial_capacity_factory = 0.05
+			 production_factory_efficiency_gain_factor = 0.05
+			 stability_factor = 0.05
+		    }
+		}
+	}
+
+	country = {
+		high_level_education = {
+
+			modifier = {
+			 research_speed_factor = 0.1
+			 stability_factor = 0.05
+		    }
+		}
+	}
+
+	country = {
+		military_investment = {
+
+			modifier = {
+			 consumer_goods_factor = -0.05
+			 production_speed_arms_factory_factor = 0.2
+			 war_support_factor = 0.05
+		    }
+		}
+	}
+
+	country = {
+		conscription = {
+
+			modifier = {
+			 conscription = 0.02 
+			 war_support_factor = 0.05
+		    }
+		}
+	}
+
+	country = {
+		unity_through_war  = {
+
+			modifier = {
+			 conscription = 0.01
+			 conscription_factor = 0.15
+			 stability_factor = 0.1
+			 war_support_factor = 0.1
 		    }
 		}
 	}

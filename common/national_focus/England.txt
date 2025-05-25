@@ -55,6 +55,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = "Elections were held like usually."
 				has_completed_focus = ENG_1910_elections
+				not = { has_country_leader = ENG_asquith }
 			}
 		}
 
@@ -1840,7 +1841,10 @@ focus_tree = {
 				OR = {
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
+					AND = {
 					has_completed_focus = ENG_conservative_victory
+					not = { has_country_leader = ENG_asquith }
+					}
 				}
 			}
 		}
@@ -1865,7 +1869,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = ENG_march_for_change }
 
-		cost = 10
+		cost = 2
 
 		available = {
 			has_country_leader = {
@@ -2467,10 +2471,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_civil_war = no
-			NOT = {
-				has_active_mission = ENG_civil_war
-			}
 		}
 
 		completion_reward = {
@@ -2626,6 +2626,8 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			set_cosmetic_tag = ENG_fascism
+			remove_idea = ENG_george_v
 			add_stability = -0.1
 			add_popularity = {
 				ideology = fascism

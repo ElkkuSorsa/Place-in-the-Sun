@@ -82,6 +82,8 @@ focus_tree = {
 
 	}
 
+################### PARTI RADICAL
+
 	focus = {
 		id = FRA_parti_radical
 		icon = GFX_goal_social_democracy
@@ -101,14 +103,23 @@ focus_tree = {
 
 	focus = {
 		id = FRA_british_ties
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_british_ties
 		x = 0
 		y = 1 
 		relative_position_id = FRA_parti_radical
 		prerequisite = { focus = FRA_parti_radical }
 				
 		completion_reward = {
-			add_political_power = 50
+				reverse_add_opinion_modifier = {
+	            target = ENG
+	            modifier = large_increase
+	        }
+			add_tech_bonus = {
+	        name = electronic_bonus
+	        bonus = 1
+	        uses = 1
+	        category = electronics
+	        }
 		}
 
 		cost = 5
@@ -118,14 +129,23 @@ focus_tree = {
 
 	focus = {
 		id = FRA_strenghten_the_entente
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_strengthen_entente
 		x = 0
 		y = 1 
 		relative_position_id = FRA_british_ties
 		prerequisite = { focus = FRA_british_ties }
 				
 		completion_reward = {
-			add_political_power = 50
+				reverse_add_opinion_modifier = {
+	            target = RUS
+	            modifier = large_increase
+	        }
+			add_tech_bonus = {
+	        name = artillery_bonus
+	        bonus = 1
+	        uses = 1
+	        category = artillery
+	        }
 		}
 
 		cost = 5
@@ -134,32 +154,112 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FRA_approach_italy
+		icon = GFX_goal_italo_french_alliance
+		x = 0
+		y = 1 
+		relative_position_id = FRA_strenghten_the_entente
+		prerequisite = { focus = FRA_strenghten_the_entente }
+				
+		completion_reward = {
+				reverse_add_opinion_modifier = {
+	            target = ITA
+	            modifier = large_increase
+	        }
+			add_tech_bonus = {
+	        name = industry_bonus
+	        bonus = 1
+	        uses = 1
+	        category = industry
+	        }
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_spanish_ties
+		icon = GFX_goal_spanish_relations
+		x = 1
+		y = 1 
+		relative_position_id = FRA_approach_italy
+		prerequisite = { focus = FRA_approach_italy }
+				
+		completion_reward = {
+				reverse_add_opinion_modifier = {
+	            target = SPR
+	            modifier = large_increase
+	        }
+			add_tech_bonus = {
+	        name = infantry_bonus
+	        bonus = 1
+	        uses = 1
+	        category = infantry_weapons
+	        }
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_american_cooperation
+		icon = GFX_goal_American_ties
+		x = -1
+		y = 2
+		relative_position_id = FRA_approach_italy
+		prerequisite = { focus = FRA_approach_italy }
+				
+		completion_reward = {
+				reverse_add_opinion_modifier = {
+	            target = USA
+	            modifier = large_increase
+	        }
+			19 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = dockyard
+				level = 1
+				instant_build = yes
+				} 
+			}
+		}
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+    focus = {
 		id = FRA_social_reforms
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_social_reform 
 		x = -3
 		y = 1 
 		relative_position_id = FRA_parti_radical
 		prerequisite = { focus = FRA_parti_radical }
 				
 		completion_reward = {
-			add_political_power = 50
-		}
+			add_ideas = social_reforms 
+	}
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
 	focus = {
 		id = FRA_healthcare_reforms
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_healthcare_reform
 		x = 1
 		y = 1 
 		relative_position_id = FRA_social_reforms
 		prerequisite = { focus = FRA_social_reforms }
 				
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = healthcare_reforms 
 		}
 
 		cost = 5
@@ -169,14 +269,14 @@ focus_tree = {
 
 	focus = {
 		id = FRA_higher_pensions
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_higher_pension
 		x = -1
 		y = 1 
 		relative_position_id = FRA_social_reforms
 		prerequisite = { focus = FRA_social_reforms }
 				
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = higher_pensions
 		}
 
 		cost = 5
@@ -186,7 +286,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_higher_level_education
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_higher_level_education
 		x = 1
 		y = 1 
 		relative_position_id = FRA_higher_pensions
@@ -194,7 +294,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_healthcare_reforms }
 
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = high_level_education 
 		}
 
 		cost = 5
@@ -203,15 +303,49 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FRA_trusted_government
+		icon = GFX_goal_trusted_goverment
+		x = 1
+		y = 1 
+		relative_position_id = FRA_higher_level_education
+		prerequisite = { focus = FRA_higher_level_education }
+
+		completion_reward = {
+			remove_ideas = disjointed_goverment
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_ban_radicalists
+		icon = GFX_goal_ban_radicalism
+		x = -1
+		y = 1 
+		relative_position_id = FRA_higher_level_education
+		prerequisite = { focus = FRA_higher_level_education }
+
+		completion_reward = {
+			remove_ideas = political_violence
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
 		id = FRA_prepearing_for_war
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_prepeare_for_war
 		x = 2
 		y = 1 
 		relative_position_id = FRA_parti_radical
 		prerequisite = { focus = FRA_parti_radical }
 
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = military_investment 
 		}
 
 		cost = 5
@@ -221,14 +355,29 @@ focus_tree = {
 
 	focus = {
 		id = FRA_rearm_the_nation
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_rearm_the_nation
 		x = 0
 		y = 1 
 	    relative_position_id = FRA_prepearing_for_war
 		prerequisite = { focus = FRA_prepearing_for_war }
 
 		completion_reward = {
-			add_political_power = 50
+			14 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				} 
+			}
+            23 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				} 
+			}
 		}
 
 		cost = 5
@@ -238,14 +387,23 @@ focus_tree = {
 
 	focus = {
 		id = FRA_free_and_strong
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_free_and_strong
 		x = 0
 		y = 1 
 	    relative_position_id = FRA_rearm_the_nation
 		prerequisite = { focus = FRA_rearm_the_nation }
 
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+			1403 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				} 
+			}
 		}
 
 		cost = 5
@@ -255,31 +413,63 @@ focus_tree = {
 
 	focus = {
 		id = FRA_enact_conscription
-		icon = GFX_goal_social_democracy
-		x = 3
+		icon = GFX_goal_conscription
+		x = 3 
 		y = 1 
 		relative_position_id = FRA_prepearing_for_war
 		prerequisite = { focus = FRA_prepearing_for_war }
 
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = conscription 
 		}
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 	
 	focus = {
 		id = FRA_extra_refresh_training
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_refresh_training
 		x = 1
 		y = 1 
 		relative_position_id = FRA_enact_conscription
 		prerequisite = { focus = FRA_enact_conscription }
 
 		completion_reward = {
-			add_political_power = 50
+			army_experience = 80
+			navy_experience = 80
+			add_tech_bonus = {
+	        name = infantry_bonus
+	        bonus = 1
+	        uses = 2
+	        category = infantry_weapons
+	        }
+        }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_russo_french_military_exercise
+		icon = GFX_goal_russo_french_exercise
+		x = 0
+		y = 2
+		relative_position_id = FRA_enact_conscription
+		prerequisite = { focus = FRA_defence_deals_whit_belgium }
+		prerequisite = { focus = FRA_extra_refresh_training }
+
+		completion_reward = {
+			 army_experience = 50
+			 navy_experience = 50
+			 add_war_support = 0.05
+		RUS = {
+			 army_experience = 50
+			 navy_experience = 50
+			 add_war_support = 0.05
+			}
 		}
 
 		cost = 5
@@ -288,18 +478,57 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FRA_in_war_we_shall_find_peace
+		icon = GFX_goal_in_war_we_shall_find_peace
+		x = -2
+		y = 1
+		relative_position_id = FRA_russo_french_military_exercise
+		prerequisite = { focus = FRA_russo_french_military_exercise }
+		prerequisite = { focus = FRA_free_and_strong }
+
+		completion_reward = {
+			add_ideas = unity_through_war
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
 		id = FRA_defence_deals_whit_belgium
-		icon = GFX_goal_social_democracy
+		icon = GFX_goal_defence_deals_belgium
 		x = -1
 		y = 1 
 		relative_position_id = FRA_enact_conscription
 		prerequisite = { focus = FRA_enact_conscription }
 
 		completion_reward = {
-			add_political_power = 50
+			FRA = {
+			give_guarantee = BEL 
+            23 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				} 
+			}
 		}
+			BEL = {
+				give_guarantee = FRA 
+			 6 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				} 
+			}
+		}
+	}
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}

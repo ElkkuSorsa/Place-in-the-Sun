@@ -81,6 +81,39 @@ country_event = {
 			ruling_party = neutrality
 		}
 		promote_character = ENG_george_v
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1
+				add = 100
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = NEUTRALITY
+					}
+					has_country_flag = ENG_AI_RANDOM_NEUTRALITY
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "A lord-protector, huh?"
+		complete_national_focus = ENG_extended_military_admin
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1
+				add = 100
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = FASCISM
+					}
+					has_country_flag = ENG_AI_RANDOM_FASCISM
+				}
+			}
+		}
 	}
 }
 
@@ -194,9 +227,22 @@ country_event = {
 		ai_chance = {
 			base = 0
 			modifier = {
-				is_historical_focus_on = yes
 				factor = 1
 				add = 100
+				OR = {
+					and = {
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = DEFAULT
+						}
+						is_historical_focus_on = yes
+					}
+					has_game_rule = {
+							rule = ENG_ai_behavior
+							option = DEMOCRATIC_HISTORICAL
+					}
+					has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
+				}
 			}
 		}
 		hidden_effect = {
@@ -236,6 +282,30 @@ country_event = {
 			name = "House of Commons"
 			picture = "portrait_eng_fallen_government.dds"
 			ideology = conservatism
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1
+				add = 100
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = NEUTRALITY
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = DEMOCRATIC_ALTERNATE
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = FASCISM
+					}
+					has_country_flag = ENG_AI_RANDOM_ALT_HIST
+					has_country_flag = ENG_AI_RANDOM_FASCISM
+					has_country_flag = ENG_AI_RANDOM_NEUTRALITY
+				}
+			}
 		}
 	}
 }
@@ -435,12 +505,45 @@ country_event = {
 
 	option = {
 		name = "Accept the Coalition"
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1
+				add = 100
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = DEMOCRATIC_ALTERNATE
+					}
+					has_country_flag = ENG_AI_RANDOM_ALT_HIST
+				}
+			}
+		}
 	}
 
 	option = {
 		name = "We can't make a coalition with them!"
 		set_country_flag = ENG_no_coalition
 		activate_mission = ENG_parliament_act
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1
+				add = 100
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = NEUTRALITY
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = FASCISM
+					}
+					has_country_flag = ENG_AI_RANDOM_FASCISM
+					has_country_flag = ENG_AI_RANDOM_NEUTRALITY
+				}
+			}
+		}
 	}
 }
 
@@ -459,7 +562,32 @@ country_event = {
 	option = {
 		name = "Opposition votes for no confidence"
 		add_ideas = ENG_march_for_change_idea
+		uncomplete_national_focus = {
+			focus = ENG_1910_elections
+			uncomplete_children = yes
+			refund_political_power = no
+		}
 		promote_character = ENG_asquith
+		mark_focus_tree_layout_dirty = yes
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 1
+				add = 100
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = NEUTRALITY
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior
+						option = FASCISM
+					}
+					has_country_flag = ENG_AI_RANDOM_FASCISM
+					has_country_flag = ENG_AI_RANDOM_NEUTRALITY
+				}
+			}
+		}
 	}
 }
 

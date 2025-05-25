@@ -20,6 +20,42 @@ bookmarks = {
 					uniforms_weapons = 1
 					basic_machine_tools = 1
 				}
+				add_ideas = {
+					ww1_army_1
+				}
+			}
+			ENG = {
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = ENG_ai_behavior 
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = ENG_ai_behavior 
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						30 = {
+							set_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
+						}
+						30 = {
+							set_country_flag = ENG_AI_RANDOM_NEUTRALITY
+						}
+						15 = {
+							set_country_flag = ENG_AI_RANDOM_FASCISM
+						}
+						25 = {
+							set_country_flag = ENG_AI_RANDOM_ALT_HIST
+						}
+					}
+				}
 			}
 		}
 

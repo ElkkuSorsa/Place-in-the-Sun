@@ -1,0 +1,288 @@
+ENG_monarchist_plan = {
+	name = "UK plan"
+	desc = ""
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		original_tag = ENG
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = DEFAULT
+					}
+				}
+			}
+			has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
+			has_game_rule = {
+				rule = ENG_ai_behavior 
+				option = DEMOCRATIC_HISTORICAL
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		ENG_south_africa_act
+		eng_legacy_of_boer_war
+		ENG_liberal_reforms
+		ENG_parliament_act
+		ENG_engage_in_europe
+		ENG_limited_homerule
+		ENG_increase_conscription
+		ENG_haldane_reforms
+		ENG_industrial_powerhouse
+		ENG_lessons_of_war
+		ENG_expeditionary_force
+		ENG_territorial_force
+		ENG_expand_education_access
+		ENG_officer_training_corps
+		ENG_military_industries
+		ENG_two_power_standard_focus
+		ENG_british_navy
+		ENG_vickers_limited
+		ENG_prepare_for_war
+		ENG_support_arms_factories
+		ENG_haldane_reforms_completed
+		ENG_develop_textile_industry
+		ENG_heavy_industry
+		ENG_steel_industries
+		ENG_home_industries
+		ENG_develop_home_counties
+		ENG_military_innovation
+		ENG_weapon_reasearch
+		ENG_machine_guns
+		ENG_scottish_rare_metals
+		ENG_utilize_colony_resources
+		ENG_assembly_line
+		ENG_develop_home_counties
+		ENG_fund_universities
+		ENG_healthcare_reform
+		ENG_national_insurance_act
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 3.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+ENG_monarchist_plan = {
+	name = "UK monarchist plan"
+	desc = ""
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		original_tag = ENG
+		OR = {
+			has_country_flag = ENG_AI_RANDOM_NEUTRALITY
+			has_game_rule = {
+				rule = ENG_ai_behavior
+				option = NEUTRALITY
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		ENG_law_first_term
+		ENG_strike_a_deal_with_liberals
+		ENG_question_of_future
+		ENG_south_africa_act
+		eng_legacy_of_boer_war
+		ENG_revert_the_democratic_reforms
+		ENG_disband_the_house_of_commons
+		ENG_collaborate_conservatives
+		ENG_appoint_bonar_law
+		ENG_embrace_german_heritage
+		ENG_pax_britannica_focus
+		ENG_intervene_in_china
+		ENG_haldane_reforms
+		ENG_industrial_powerhouse
+		ENG_lessons_of_war
+		ENG_expeditionary_force
+		ENG_territorial_force
+		ENG_abandon_two_power_standard
+		ENG_officer_training_corps
+		ENG_military_industries
+		ENG_two_power_standard_focus
+		ENG_british_navy
+		ENG_vickers_limited
+		ENG_prepare_for_war
+		ENG_support_arms_factories
+		ENG_haldane_reforms_completed
+		ENG_develop_textile_industry
+		ENG_heavy_industry
+		ENG_steel_industries
+		ENG_home_industries
+		ENG_develop_home_counties
+		ENG_military_innovation
+		ENG_weapon_reasearch
+		ENG_machine_guns
+		ENG_scottish_rare_metals
+		ENG_utilize_colony_resources
+		ENG_assembly_line
+		ENG_develop_home_counties
+		ENG_fund_universities
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 3.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+ENG_fascist_plan = {
+	name = "UK fascist plan"
+	desc = ""
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		original_tag = ENG
+		OR = {
+			has_country_flag = ENG_AI_RANDOM_FASCISM
+			has_game_rule = {
+				rule = ENG_ai_behavior
+				option = FASCISM
+			}
+		}
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		ENG_law_first_term
+		ENG_strike_a_deal_with_liberals
+		ENG_question_of_future
+		ENG_south_africa_act
+		eng_legacy_of_boer_war
+		ENG_appoint_leader
+		ENG_abolish_nobility
+		ENG_pax_britannica_focus
+		ENG_intervene_in_china
+		ENG_haldane_reforms
+		ENG_industrial_powerhouse
+		ENG_lessons_of_war
+		ENG_expeditionary_force
+		ENG_territorial_force
+		ENG_abandon_two_power_standard
+		ENG_officer_training_corps
+		ENG_military_industries
+		ENG_two_power_standard_focus
+		ENG_british_navy
+		ENG_vickers_limited
+		ENG_prepare_for_war
+		ENG_support_arms_factories
+		ENG_haldane_reforms_completed
+		ENG_develop_textile_industry
+		ENG_heavy_industry
+		ENG_steel_industries
+		ENG_home_industries
+		ENG_develop_home_counties
+		ENG_military_innovation
+		ENG_weapon_reasearch
+		ENG_machine_guns
+		ENG_scottish_rare_metals
+		ENG_utilize_colony_resources
+		ENG_assembly_line
+		ENG_develop_home_counties
+		ENG_fund_universities
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 3.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+ENG_conservative_plan = {
+	name = "UK Alt Democratic plan"
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		original_tag = ENG
+		OR = {
+			has_country_flag = ENG_AI_RANDOM_ALT_HIST
+			has_game_rule = {
+				rule = ENG_ai_behavior
+				option = DEMOCRATIC_ALTERNATE
+			}
+		}
+
+	}
+	abort = {
+
+	}
+
+	ai_national_focuses = {
+		ENG_law_first_term
+		ENG_strike_a_deal_with_liberals
+		ENG_realistic_party
+		ENG_south_africa_act
+		eng_legacy_of_boer_war
+		ENG_for_the_good_of_britain
+		ENG_engage_in_europe
+		ENG_hold_on_ireland
+		ENG_agressive_diplomacy
+		ENG_morocco_for_protection
+		ENG_haldane_reforms
+		ENG_industrial_powerhouse
+		ENG_lessons_of_war
+		ENG_expeditionary_force
+		ENG_territorial_force
+		ENG_entente_con
+		ENG_entente_conference
+		ENG_officer_training_corps
+		ENG_military_industries
+		ENG_two_power_standard_focus
+		ENG_british_navy
+		ENG_vickers_limited
+		ENG_prepare_for_war
+		ENG_support_arms_factories
+		ENG_haldane_reforms_completed
+		ENG_develop_textile_industry
+		ENG_heavy_industry
+		ENG_steel_industries
+		ENG_home_industries
+		ENG_develop_home_counties
+		ENG_military_innovation
+		ENG_weapon_reasearch
+		ENG_machine_guns
+		ENG_scottish_rare_metals
+		ENG_utilize_colony_resources
+		ENG_assembly_line
+		ENG_develop_home_counties
+		ENG_fund_universities
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

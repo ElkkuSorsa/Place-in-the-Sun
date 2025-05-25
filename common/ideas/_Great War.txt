@@ -1,4 +1,16 @@
 ideas = {
+	hidden_ideas = {
+		ww1_army_1 = {
+			modifier = {
+				army_speed_factor = -0.2
+				army_org_factor = 0.1
+				breakthrough_factor = -0.2
+				max_dig_in_factor = 0.3
+				air_superiority_bonus_in_combat = -0.5
+			}
+		}
+	}
+
 	country = {
 		GER_schlieffen_plan_idea = {
 			targeted_modifier = {

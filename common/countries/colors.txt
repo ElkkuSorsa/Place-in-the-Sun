@@ -164,3 +164,19 @@ ELS = {
 	color = rgb { 232 224 65  }
 	color_ui = rgb { 232 224 65 }
 }
+ALS = {
+	color = rgb { 115 19 16 }
+	color_ui = rgb { 115 19 16 }
+}
+CZE = {	
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 70 217 203 }
+}
+POL = {
+	color = rgb { 214 102 139 }
+	color_ui = rgb { 255 120 138 }
+}
+HUN = {
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
