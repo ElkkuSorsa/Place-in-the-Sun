@@ -314,7 +314,7 @@ focus_tree = {
 			remove_ideas = disjointed_goverment
 		}
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
@@ -331,7 +331,7 @@ focus_tree = {
 			remove_ideas = political_violence
 		}
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
@@ -528,7 +528,7 @@ focus_tree = {
 		}
 	}
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
