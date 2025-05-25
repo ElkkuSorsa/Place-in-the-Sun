@@ -800,6 +800,149 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_wilson_administration
+		icon = GFX_goal_taft
+		x = 7
+		y = 5
+
+		allow_branch = { has_completed_focus = USA_towards_new_beginning }
+
+        prerequisite = {
+		focus = USA_postal_savings_system
+		focus = USA_establish_corporate_tax
+		focus = USA_moderate_industrial_expansion
+		focus = USA_oil_drilling
+		focus = USA_trust_in_the_government
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 25
+		remove_ideas = USA_ineffective_administration4
+		remove_ideas = USA_ineffective_administration3
+		remove_ideas = USA_ineffective_administration2
+		remove_ideas = USA_ineffective_administration
+		}
+	}
+
+	focus = {
+		id = USA_progressive_politics
+		icon = GFX_goal_taft
+		x = 7
+		y = 6
+
+        prerequisite = {
+		focus = USA_wilson_administration
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+		}
+		}
+	}
+
+	focus = {
+		id = USA_new_freedom_program
+		icon = GFX_goal_taft
+		x = 5
+		y = 7
+
+        prerequisite = {
+		focus = USA_progressive_politics
+		}
+
+		cost = 10
+
+		completion_reward = {
+		add_political_power = 75
+		add_ideas = USA_new_freedom_program
+		}
+	}
+
+	focus = {
+		id = USA_revenue_act
+		icon = GFX_goal_taft
+		x = 12
+		y = 6
+
+		available = {has_completed_focus = USA_establish_corporate_tax}
+
+        prerequisite = {
+		focus = USA_wilson_administration
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_political_power = 50
+		swap_ideas = {
+		remove_idea = USA_strong_private_sector5
+		add_idea = USA_strong_private_sector6
+		}
+		}
+	}
+
+	focus = {
+		id = USA_neutrality_act
+		icon = GFX_goal_taft
+		x = 2
+		y = 6
+
+        prerequisite = {
+		focus = USA_wilson_administration
+		}
+
+		cost = 10
+
+		completion_reward = {
+		add_stability = 0.1
+		add_ideas = USA_diplomatic_neutrality
+		}
+	}
+
+	focus = {
+		id = USA_weapon_sales
+		icon = GFX_goal_taft
+		x = 3
+		y = 7
+
+        prerequisite = {
+		focus = USA_neutrality_act
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_ideas = USA_weapon_sales
+		}
+	}
+
+	focus = {
+		id = USA_defensive_preparations
+		icon = GFX_goal_taft
+		x = 1
+		y = 7
+
+		available = {threat > 0.4}
+
+        prerequisite = {
+		focus = USA_neutrality_act
+		}
+
+		cost = 10
+
+		completion_reward = {
+		add_war_support = 0.05
+		add_ideas = USA_defensive_preparations
+		}
+	}
+
+	focus = {
 		id = USA_american_military
 		icon = GFX_goal_usa_elections
 		x = 35
