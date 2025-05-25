@@ -226,6 +226,7 @@ spriteTypes = {
 		name = "GFX_goal_going_alone"
 		texturefile = "gfx/interface/goals/BUL/going_alone.dds"
 	}
+	###############
 	SpriteType = {
 		name = "GFX_goal_the_republic"
 		texturefile = "gfx/interface/goals/FRA/the_republic.dds"
@@ -246,6 +247,84 @@ spriteTypes = {
 		name = "GFX_goal_social_democracy"
 		texturefile = "gfx/interface/goals/FRA/social_democracy.dds"
 	}
+		SpriteType = {
+		name = "GFX_goal_American_ties"
+		texturefile = "gfx/interface/goals/FRA/American_ties.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_ban_radicalism"
+		texturefile = "gfx/interface/goals/FRA/ban_radicalism.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_british_ties"
+		texturefile = "gfx/interface/goals/FRA/british_ties.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_conscription"
+		texturefile = "gfx/interface/goals/FRA/conscription.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_defence_deals_belgium" 
+		texturefile = "gfx/interface/goals/FRA/defence_deals_belgium.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_free_and_strong"
+		texturefile = "gfx/interface/goals/FRA/free_and_strong.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_healthcare_reform"
+		texturefile = "gfx/interface/goals/FRA/healthcare_reform.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_higher_level_education"
+		texturefile = "gfx/interface/goals/FRA/higher_level_education.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_higher_pension"
+		texturefile = "gfx/interface/goals/FRA/higher_pension.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_in_war_we_shall_find_peace"
+		texturefile = "gfx/interface/goals/FRA/in_war_we_shall_find_peace.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_italo_french_alliance"
+		texturefile = "gfx/interface/goals/FRA/italo_french_alliance.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_prepeare_for_war"
+		texturefile = "gfx/interface/goals/FRA/prepeare_for_war.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_rearm_the_nation"
+		texturefile = "gfx/interface/goals/FRA/rearm_the_nation.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_refresh_training"
+		texturefile = "gfx/interface/goals/FRA/refresh_training.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_russo_french_exercise"
+		texturefile = "gfx/interface/goals/FRA/russo_french_exercise.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_spanish_relations"
+		texturefile = "gfx/interface/goals/FRA/spanish_relations.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_strengthen_entente"
+		texturefile = "gfx/interface/goals/FRA/strengthen_entente.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_trusted_goverment"
+		texturefile = "gfx/interface/goals/FRA/trusted_goverment.dds"
+	}
+		SpriteType = {
+		name = "GFX_goal_social_reform"
+		texturefile = "gfx/interface/goals/FRA/social_reform.dds"
+	}
+
+	#########
 		SpriteType = {
 		name = "GFX_goal_taft"
 		texturefile = "gfx/interface/goals/USA/taft1.dds"
