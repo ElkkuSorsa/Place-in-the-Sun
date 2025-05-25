@@ -3309,8 +3309,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = ENG_rsaf_enfield_organization
+			unlock_military_industrial_organization_tooltip = mio:ENG_rsaf_enfield_organization
 		}
 	}
 
