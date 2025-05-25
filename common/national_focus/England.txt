@@ -1348,6 +1348,21 @@ focus_tree = {
 			}
 		}
 
+		available = {
+			if = {
+				limit = { 
+					has_game_rule = {
+						rule = allow_alt_hist
+						option = no
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = "Alt-history paths blocked by game rule"
+					always = no
+				}
+			}
+		}
+
 		cost = 10
 
 		completion_reward = {
@@ -1853,6 +1868,18 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = "The king asserted his royal prerogative"
 				has_completed_focus = ENG_march_for_change
+			}
+			if = {
+				limit = { 
+					has_game_rule = {
+						rule = allow_alt_hist
+						option = no
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = "Alt-history paths blocked by game rule"
+					always = no
+				}
 			}
 		}
 
@@ -3454,11 +3481,12 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			has_tech = assembly_line_production
 		}
 
 		completion_reward = {
 			add_timed_idea =  {
-				idea = ENG_industrial_powerhouse_idea_1
+				idea = ENG_private_construction
 				days = 100
 			}
 			add_tech_bonus = {

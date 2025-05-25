@@ -21,6 +21,10 @@ ENG_monarchist_plan = {
 				rule = ENG_ai_behavior 
 				option = DEMOCRATIC_HISTORICAL
 			}
+			has_game_rule = {
+				rule = allow_alt_hist
+				option = no
+			}
 		}
 	}
 	abort = {
@@ -69,7 +73,7 @@ ENG_monarchist_plan = {
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
-		factor = 3.0
+		factor = 5.0
 		modifier = {
 			factor = 1.0
 		}
@@ -90,6 +94,10 @@ ENG_monarchist_plan = {
 				rule = ENG_ai_behavior
 				option = NEUTRALITY
 			}
+		}
+		has_game_rule = {
+			rule = allow_alt_hist
+			option = yes
 		}
 	}
 	abort = {
@@ -163,6 +171,10 @@ ENG_fascist_plan = {
 				option = FASCISM
 			}
 		}
+		has_game_rule = {
+			rule = allow_alt_hist
+			option = yes
+		}
 	}
 	abort = {
 
@@ -230,7 +242,10 @@ ENG_conservative_plan = {
 				option = DEMOCRATIC_ALTERNATE
 			}
 		}
-
+		has_game_rule = {
+			rule = allow_alt_hist
+			option = yes
+		}
 	}
 	abort = {
 

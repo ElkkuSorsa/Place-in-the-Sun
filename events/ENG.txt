@@ -260,6 +260,12 @@ country_event = {
 
 	option = {
 		name = "Conservatives Win by a Slight Majority!"
+		trigger = {
+			has_game_rule = {
+				rule = allow_alt_hist
+				option = yes
+			}
+		}
 		news_event = ENG_news.5
 		custom_effect_tooltip = ENG_con_win
 		set_party_name = {
