@@ -24,6 +24,7 @@
  ENG_nat_inc_law: "Starts enacting §Y£GFX_decision_icon_small National Insurance Act §!as a law"
  ENG_tuc_law: "Starts enacting §Y£GFX_decision_icon_small Trade Union Act §!as a law"
  ENG_ire_1911_law: "Starts enacting §Y£GFX_decision_icon_small Irish Home Rule Act §!as a law"
+ ENG_people_budget_law: "Starts amending §Y£GFX_decision_icon_small People's Budget §!in the parliament"
 
  ENG_side_mil: "We will side with the §gmilitary§!."
  ENG_side_soc: "We will side with the §Rsocialists§!."
@@ -38,6 +39,7 @@
  ENG_collaborate_conservatives_tt: "We will collaborate with the §2Conservative Party§! to establish legitimacy for the government."
  ENG_parliament_act_warn: "In order to pass any controversial §Ylegislation§! in the House of Commons, we need to first enact the §Yparliament act§!."
  ENG_ire_personal_union_tt: "We will establish a §Yreal union§! with Ireland to manage the Irish question."
+ ENG_liberalism_tt: "We will continue our §Yliberal policies§! and support the §YLiberal Party§! as the mainstream party."
 
  ENG_lib_win: "The §YLiberal Party§! will win the elections!"
  ENG_con_win: "The §2Conservative Party§! will win the elections!"

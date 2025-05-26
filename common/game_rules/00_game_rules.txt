@@ -613,7 +613,7 @@ ENG_ai_behavior = {
 	}
 	option = {
 		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
+		text = "RULE_OPTION_DEMOCRATIC_ENG_HISTORICAL"
 		desc = "RULE_OPTION_DEMOCRATIC_ENG_AI_DESC"
 		allow_achievements = yes
 	}

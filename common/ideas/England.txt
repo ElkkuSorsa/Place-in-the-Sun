@@ -1,5 +1,78 @@
 ideas = {
 	country = {
+		ENG_loyal_military = {
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				conscription_factor = 0.05
+				stability_factor = -0.2
+				war_support_factor = 0.1
+			}
+		}
+
+		ENG_disloyal_army = {
+			picture = chi_army_corruption3
+			modifier = {
+				army_org_factor = -0.5
+				army_defence_factor = -0.3
+				conscription_factor = -0.3
+				stability_factor = -0.2
+				war_support_factor = -0.3
+			}
+		}
+
+		ENG_relative_support = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+				war_support_factor = -0.2
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+	
+		ENG_state_of_emergency_mil = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		general_strike_1 = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = 0.6
+				stability_factor = -0.3
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = -0.5
+			}
+		}
+
+		general_strike_2 = {
+			picture = chi_army_corruption3
+			modifier = {
+				consumer_goods_factor = 0.3
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		shame_of_defeat = {
+			picture = chi_army_corruption3
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+
 		ENG_edward_vii = {
 			picture = GFX_idea_ENG_edward_vii
 			traits = { popular_figurehead }
@@ -360,35 +433,8 @@ ideas = {
 			}
 		}
 
-		ENG_social_divides_1 = {
-			picture = generic_foreign_capital
-			modifier = {
-				stability_factor = -0.1
-				war_support_factor = 0.1
-				consumer_goods_factor = 0.15
-			}
-		}
-
-		ENG_social_divides_2 = {
-			picture = generic_foreign_capital
-			modifier = {
-				stability_factor = 0.1
-				war_support_factor = -0.1
-				consumer_goods_factor = -0.15
-			}
-		}
-
-		ENG_social_divides_3 = {
-			picture = generic_foreign_capital
-			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				consumer_goods_factor = -0.05
-			}
-		}
-
 		ENG_expand_education_access = {
-			picture = generic_foreign_capital
+			picture = AFG_democratic_graduates
 			modifier = {
 				consumer_goods_factor = -0.05
 				research_speed_factor = 0.07
@@ -396,7 +442,7 @@ ideas = {
 		}
 
 		ENG_rule_by_decree = {
-			picture = generic_foreign_capital
+			picture = AUS_habsburg_monarchy_restored
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = 0.1
@@ -405,7 +451,7 @@ ideas = {
 		}
 
 		ENG_privy_council = {
-			picture = generic_foreign_capital
+			picture = CHL_the_Hacienda_inquilinaje_system
 			modifier = {
 				stability_factor = 0.1
 				political_power_factor = -0.1
@@ -413,7 +459,7 @@ ideas = {
 		}
 
 		ENG_democratic_legitimacy_1 = {
-			picture = generic_foreign_capital
+			picture = generic_democratic_opposition
 			modifier = {
 				stability_factor = 0.05
 				consumer_goods_factor = 0.05
@@ -422,7 +468,7 @@ ideas = {
 		}
 
 		ENG_democratic_legitimacy_2 = {
-			picture = generic_foreign_capital
+			picture = can_defence_of_canada_regulations_democratic
 			modifier = {
 				stability_factor = 0.1
 				consumer_goods_factor = 0.05
@@ -431,7 +477,7 @@ ideas = {
 		}
 
 		ENG_military_research_1 = {
-			picture = generic_foreign_capital
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = 0.04
 				production_factory_max_efficiency_factor = 0.1
@@ -439,89 +485,60 @@ ideas = {
 		}
 
 		ENG_military_research_2 = {
-			picture = generic_foreign_capital
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.08
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 
-		ENG_loyal_military = {
-			picture = chi_army_corruption3
-			modifier = {
-				army_org_factor = 0.05
-				army_defence_factor = 0.05
-				conscription_factor = 0.05
-				stability_factor = -0.2
-				war_support_factor = 0.1
-			}
-		}
-
-		ENG_disloyal_army = {
-			picture = chi_army_corruption3
-			modifier = {
-				army_org_factor = -0.5
-				army_defence_factor = -0.3
-				conscription_factor = -0.3
-				stability_factor = -0.2
-				war_support_factor = -0.3
-			}
-		}
-
-		ENG_relative_support = {
-			picture = chi_army_corruption3
-			modifier = {
-				consumer_goods_factor = -0.1
-				stability_factor = 0.1
-				war_support_factor = -0.2
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-			}
-		}
-	
-		ENG_state_of_emergency_mil = {
-			picture = chi_army_corruption3
-			modifier = {
-				consumer_goods_factor = 0.3
-				stability_factor = -0.3
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-			}
-		}
-
-		general_strike_1 = {
-			picture = chi_army_corruption3
-			modifier = {
-				consumer_goods_factor = 0.6
-				stability_factor = -0.3
-				industrial_capacity_factory = -0.5
-				industrial_capacity_dockyard = -0.5
-				production_speed_buildings_factor = -0.5
-			}
-		}
-
-		general_strike_2 = {
-			picture = chi_army_corruption3
-			modifier = {
-				consumer_goods_factor = 0.3
-				stability_factor = -0.15
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.25
-				production_speed_buildings_factor = -0.25
-			}
-		}
-
-		shame_of_defeat = {
-			picture = chi_army_corruption3
-			modifier = {
-				stability_factor = -0.3
-				war_support_factor = -0.3
-			}
-		}
-
 		ENG_private_construction = {
+			picture = ARG_construction_guilds
 			modifier = {
 				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		ENG_american_loans_idea = {
+			picture = usa_desegregation_2
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_dockyard = 0.15
+
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.1
+			}
+			cancel = {
+				has_war = no
+			}
+		}
+
+		ENG_promote_constitutionalism = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		ENG_equal_and_english_church = {
+			picture = MEX_church_power_4
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		ENG_amended_the_peoples_budget = {
+			picture = NOR_printing_money
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 	}
