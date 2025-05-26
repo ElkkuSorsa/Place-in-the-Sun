@@ -668,17 +668,14 @@ ENG_template_design_2 = {
 # to invade them later when they are busy.
 #Losing troops in Europe leads to losing North Africa to the puny Italians
 ENG_trying_to_save_benelux_is_deathtrap = {
-	allowed = { original_tag = ENG }
+	allowed = { or = { original_tag = ENG original_tag = FRA } }
 	enable = {
 		has_war_with = GER
-		OR = {
-			HOL = { has_war_with = GER }
-			BEL = { has_war_with = GER }
-		}
+		BEL = { surrender_progress > 0.49}
 	}
 
 	abort = {
-		BEL = { has_capitulated = yes }
+		BEL = { has_capitulated = no }
 	}
 
 	ai_strategy = {
@@ -1269,35 +1266,6 @@ ENG_USA_focus_on_europe_loads_more = {
 	}
 }
 
-ENG_evacuate_troops_after_fall_of_france = {
-	allowed = {
-		OR = {
-			tag = ENG
-			tag = USA
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	enable = {
-		is_historical_focus_on = yes
-		OR = {
-			date < 1942.6.1
-			SOV = {
-				surrender_progress < 0.65
-				date < 1942.6.1
-			}
-		}
-		has_global_flag = FRA_already_surrendered
-	}
-
-	ai_strategy = {
-		type = front_unit_request
-		area = mainland_europe
-		value = -100
-	}
-}
-
 ENG_time_to_ditch_FRA = {
 	allowed = {
 		original_tag = ENG
@@ -1514,115 +1482,6 @@ ENG_unit_buffer_for_african_defense = {
 		subtract_fronts_from_need = yes
 	}
 }
-
-## US struggle to do torch, so let's help them a tad
-#ENG_torch_support = {
-#	allowed = {
-#		original_tag = ENG
-#	}
-#	enable = {
-#		country_exists = VIC
-#		has_war_with = GER
-#		date > 1942.5.1
-#	}
-#	abort = {
-#		OR = {
-#			date > 1943.9.1 # if we haven't succeeded by now, maybe try somewhere else
-#			461 = { is_controlled_by_ROOT_or_ally = yes }
-#			459 = { is_controlled_by_ROOT_or_ally = yes }
-#		}
-#	}
-#
-#	ai_strategy = {
-#		type = put_unit_buffers
-#
-#		states = {
-#			118
-#			114
-#		}
-#
-#		ratio = 0.15
-#
-#		subtract_invasions_from_need = yes
-#		subtract_fronts_from_need = no
-#	}
-#
-#	ai_strategy = {
-#		type = area_priority
-#		id = torch_landing_zone
-#		value = 800
-#	}
-#	ai_strategy = { # Let's avoid losing units in France for now. We'll go there later
-#		type = area_priority
-#		id = vichy_mainland
-#		value = -500
-#	}
-#
-#	ai_strategy = {
-#		type = invasion_unit_request
-#		area = torch_landing_zone
-#		value = 10
-#	}
-#	ai_strategy = {
-#		type = front_unit_request
-#		area = torch_landing_zone
-#		value = 5
-#	}
-#	ai_strategy = {
-#		type = prepare_for_war
-#		id = VIC
-#		value = 200
-#	}
-#	ai_strategy = {
-#		type = invade
-#		id = VIC
-#		value = 200
-#	}
-#}
-#
-# Note USA has an additional boost in the USA_d_day_boost strategy
-
-#ENG_RAJ_the_hot_gates = {
-#	allowed = {
-#		OR = {
-#			original_tag = ENG
-#			original_tag = RAJ
-#		}
-#	}
-#	enable = {
-#		OR = {
-#			671 = { is_controlled_by = JAP }
-#			670 = { is_controlled_by = JAP }
-#		}
-#	}
-#	abort_when_not_enabled = yes
-#
-#	ai_strategy = {
-#		type = area_priority
-#		id = burma
-#		value = 60
-#	}
-#
-#	ai_strategy = {
-#		type = front_unit_request
-#		area = burma
-#		value = 8
-#	}
-#
-#	ai_strategy = {
-#		type = put_unit_buffers
-#		# burmese states
-#		states = {
-#			288
-#			640
-#			430
-#		}
-#		ratio = 0.05
-#		area = burma
-#		subtract_invasions_from_need = no
-#		subtract_fronts_from_need = yes
-#	}
-#}
 
 ENG_ALLIES_we_hate_fighting_in_the_balkans = {
 
