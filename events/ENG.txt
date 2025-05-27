@@ -100,6 +100,7 @@ country_event = {
 	option = {
 		name = "A lord-protector, huh?"
 		complete_national_focus = ENG_extended_military_admin
+		add_ideas = ENG_minimal_public_support
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -1032,6 +1033,20 @@ country_event = {
 
 	option = {
 		name = "Go forth, brits!"
+	}
+}
+
+news_event = {
+	id = ENG_misc.6
+	title = "Britain claims the French throne"
+	desc = "The British royal government has claimed the French crown and the lands of the kingdom of England in the hundred years' war. The relations between the countries have been amicable, but the new royal order in England does not seem to be too excited about the friendly relations."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "Thousand year's war?"
 	}
 }
 

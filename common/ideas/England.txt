@@ -516,6 +516,18 @@ ideas = {
 			}
 		}
 
+		QIN_sino_british_treaty = {
+			picture = usa_desegregation_2
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.2
+				mic_to_target_factor = 0.2
+			}
+			cancel = {
+				has_war_with = ENG
+			}
+		}
+
 		ENG_promote_constitutionalism = {
 			picture = generic_constitutional_guarantees
 			modifier = {
@@ -539,6 +551,25 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				consumer_goods_factor = -0.15
+			}
+		}
+
+		ENG_minimal_public_support = {
+			picture = prc_low_popular_support
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.35
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		ENG_anglo_saxon_heritage = {
+			picture = GER_holy_roman_empire_of_the_german_nation
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
 	}

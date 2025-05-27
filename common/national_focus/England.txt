@@ -1604,7 +1604,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_for_the_good_of_britain
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_focus_RAJ_just_good_business
 		x = 46
 		y = 5
 		prerequisite = { focus = ENG_realistic_party }
@@ -1651,7 +1651,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_amend_the_peoples_budget
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_focus_generic_economic_recovery
 		x = 47
 		y = 6
 		prerequisite = { focus = ENG_for_the_good_of_britain }
@@ -1677,7 +1677,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_compromise_with_lords
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_SOV_autonomous_soviet_republics_ccp_2d_sov_compatibility
 		x = 44
 		y = 5
 		prerequisite = { focus = ENG_secure_constitutionalism }
@@ -1703,7 +1703,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_strike_a_deal_with_liberals
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
 		x = 48
 		y = 4
 		prerequisite = { focus = ENG_law_first_term }
@@ -1727,7 +1727,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_appoint_cabinet
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_focus_NOR_approach_kretsen
 		x = 48
 		y = 5
 		prerequisite = { focus = ENG_strike_a_deal_with_liberals }
@@ -2169,28 +2169,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_thirteen_colonies
-		icon = GFX_goal_burn_white_house
-		x = 4
-		y = 10
-		prerequisite = { focus = ENG_imperial_federation }
-
-		will_lead_to_war_with = USA
-
-		cost = 10
-
-		available = {
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = USA
-			}
-		}
-	}
-
-	focus = {
 		id = ENG_disband_the_house_of_commons
 		icon = GFX_focus_SWI_dissolve_the_federal_council
 		x = 8
@@ -2297,12 +2275,13 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = ENG_hand_over_to_king }
 
-		cost = 10
+		cost = 2
 
 		available = {
 		}
 
 		completion_reward = {
+			add_ideas = ENG_anglo_saxon_heritage
 			add_opinion_modifier = {
 				target = GER
 				modifier = ENG_embrace_german_heritage_modi
@@ -2312,7 +2291,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_reinstate_claims
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_ENG_fra_kingdom
 		x = 9
 		y = 7
 		prerequisite = { focus = ENG_blockade_france }
@@ -2324,6 +2303,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			news_event = ENG_misc.6
+			custom_effect_tooltip = ENG_fra_pu_tt
+			custom_effect_tooltip = "    "
+			set_global_flag = ENG_claimed_fra
 			add_state_claim = 15
 			add_state_claim = 19
 		}
@@ -2627,7 +2610,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_dissolve_parliament
-		icon = GFX_focus_generic_commonwealth_build_infantry
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
 		x = 17
 		y = 8
 		prerequisite = { focus = ENG_expand_conscription focus = ENG_purge_the_government }
@@ -2644,7 +2627,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_pax_britannica_focus
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_focus_eng_the_sun_never_sets
 		x = 12
 		y = 5
 		prerequisite = { focus = ENG_appoint_leader focus = ENG_embrace_german_heritage }
@@ -2653,6 +2636,8 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			custom_effect_tooltip = ENG_pax_tt
+			custom_effect_tooltip = "    "
 			add_ideas = ENG_pax_britannica
 		}
 	}
@@ -2703,7 +2688,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_first_sino-british_treaty
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_generic_forceful_treaty
 		x = 14
 		y = 7
 		prerequisite = { focus = ENG_intervene_in_china }
@@ -2717,15 +2702,33 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = 1000
-				target = QIN
+			QIN = {
+				add_ideas = QIN_sino_british_treaty
 			}
-			send_equipment = {
-				equipment = support_equipment
-				amount = 100
-				target = QIN
+
+			593 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			592 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			595 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
