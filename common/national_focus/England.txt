@@ -1604,7 +1604,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_for_the_good_of_britain
-		icon = GFX_focus_RAJ_just_good_business
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		x = 46
 		y = 5
 		prerequisite = { focus = ENG_realistic_party }
@@ -1741,7 +1741,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 2
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
@@ -2122,7 +2122,7 @@ focus_tree = {
 		y = 7
 		prerequisite = { focus = ENG_under_control_ireland focus = ENG_crown_of_ireland }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -2573,6 +2573,41 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_british_militarism
+		icon = GFX_focus_SOV_military_purge
+		x = 20
+		y = 7
+		prerequisite = { focus = ENG_exile_the_royals }
+
+		cost = 5
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_form_british_grand_council
+		icon = GFX_focus_SOV_military_purge
+		x = 19
+		y = 8
+		prerequisite = { focus = ENG_british_militarism }
+		mutually_exclusive = { focus = ENG_dissolve_parliament }
+
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = "Parliament will be dissolved."
+			set_country_flag = ENG_parliament_disabled
+			remove_ideas = ENG_british_politics_dem
+			set_party_name = {
+				ideology = fascism
+				long_name = "British Grand Council of Common law and order"
+				name = "Grand Council"
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_war_budget
 		icon = GFX_focus_generic_total_war
 		x = 16
@@ -2614,8 +2649,9 @@ focus_tree = {
 		x = 17
 		y = 8
 		prerequisite = { focus = ENG_expand_conscription focus = ENG_purge_the_government }
+		mutually_exclusive = { focus = ENG_form_british_grand_council }
 
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			custom_effect_tooltip = "Parliament will be dissolved."
@@ -4991,4 +5027,388 @@ focus_tree = {
 		}
 	}
 
+}
+
+focus_tree = {
+	id = ENG_iw_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 500
+			tag = ENG
+			has_country_flag = ww1_victory
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 100 y = 3000 }
+
+	focus = {
+		id = ENG_war_to_end_all_wars
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 1
+
+		cancelable = no
+
+		cost = 20
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_elections_1918
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 2
+		prerequisite = { focus = ENG_war_to_end_all_wars }
+
+		allow_branch = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_coupon_election
+		icon = GFX_focus_chi_army_reform
+		x = 17
+		y = 2
+		prerequisite = { focus = ENG_war_to_end_all_wars }
+
+		allow_branch = {
+			has_government = democratic
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_coalition_landslide
+		icon = GFX_focus_chi_army_reform
+		x = 18
+		y = 3
+		prerequisite = { focus = ENG_elections_1918 }
+		mutually_exclusive = {
+			focus = ENG_conservative_government
+		}
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_steady_as_she_goes
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 4
+		prerequisite = { focus = ENG_coalition_landslide focus = ENG_conservative_government }
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_housing_act
+		icon = GFX_focus_chi_army_reform
+		x = 14
+		y = 5
+		prerequisite = { focus = ENG_steady_as_she_goes }
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_addison_act
+		icon = GFX_focus_chi_army_reform
+		x = 16
+		y = 5
+		prerequisite = { focus = ENG_steady_as_she_goes }
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_help_the_needy
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 6
+		prerequisite = { focus = ENG_addison_act }
+		prerequisite = { focus = ENG_housing_act } 
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_return_to_normalcy
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 7
+		prerequisite = { focus = ENG_help_the_needy }
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = "Industrial Focus Tree will be unlocked"
+		}
+	}
+
+	focus = {
+		id = ENG_conservative_government
+		icon = GFX_focus_chi_army_reform
+		x = 12
+		y = 3
+		prerequisite = { focus = ENG_elections_1918 }
+		mutually_exclusive = {
+			focus = ENG_coalition_landslide
+		}
+
+		allow_branch = {
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	# Nationalist
+
+	focus = {
+		id = ENG_new_interventionism
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 2
+		prerequisite = { focus = ENG_war_to_end_all_wars }
+
+		allow_branch = {
+			has_government = fascism
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	# Monarchist
+
+	focus = {
+		id = ENG_pax_britannica
+		icon = GFX_focus_chi_army_reform
+		x = 15
+		y = 2
+		prerequisite = { focus = ENG_war_to_end_all_wars }
+
+		allow_branch = {
+			has_government = neutrality
+			
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_fire_law
+		icon = GFX_focus_chi_army_reform
+		x = 12
+		y = 3
+		prerequisite = { focus = ENG_pax_britannica }
+		mutually_exclusive = {
+			focus = ENG_allow_political_parties
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_allow_political_parties
+		icon = GFX_focus_chi_army_reform
+		x = 18
+		y = 3
+		prerequisite = { focus = ENG_pax_britannica }
+		mutually_exclusive = {
+			focus = ENG_fire_law
+		}
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_reconvene_parliament
+		icon = GFX_focus_chi_army_reform
+		x = 17
+		y = 4
+		prerequisite = { focus = ENG_allow_political_parties }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_lighten_censorship
+		icon = GFX_focus_chi_army_reform
+		x = 19
+		y = 4
+		prerequisite = { focus = ENG_allow_political_parties }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_democratic_legitimacy
+		icon = GFX_focus_chi_army_reform
+		x = 18
+		y = 5
+		prerequisite = { focus = ENG_reconvene_parliament }
+		prerequisite = { focus = ENG_lighten_censorship }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	# Industrial Focus Tree
+
+	focus = {
+		id = ENG_reconstruction
+		icon = GFX_focus_chi_army_reform
+		x = 25
+		y = 1
+
+		cost = 5
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We are ready to rebuild our nation"
+				has_completed_focus = ENG_return_to_normalcy
+			}
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ENG_expand_roads
+		icon = GFX_focus_chi_army_reform
+		x = 27
+		y = 2
+
+		prerequisite = { focus = ENG_reconstruction }
+
+		cost = 5
+
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
 }
