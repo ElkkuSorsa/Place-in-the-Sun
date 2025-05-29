@@ -189,5 +189,17 @@ ideas = {
 			production_speed_industrial_complex_factor = 0.1
 			}
 		}
+
+		USA_war_taxes = {
+			modifier = {
+			consumer_goods_factor = -0.15
+			}
+		}
+
+		USA_expanded_conscription = {
+			modifier = {
+			conscription_factor = 0.1
+			}
+		}
     }
 }

@@ -805,8 +805,6 @@ focus_tree = {
 		x = 7
 		y = 5
 
-		allow_branch = { has_completed_focus = USA_towards_new_beginning }
-
         prerequisite = {
 		focus = USA_postal_savings_system
 		focus = USA_establish_corporate_tax
@@ -865,6 +863,47 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_tariff_reduction
+		icon = GFX_goal_taft
+		x = 7
+		y = 7
+
+        prerequisite = {
+		focus = USA_progressive_politics
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_stability = 0.05
+		add_ideas = free_trade
+		}
+	}
+
+	focus = {
+		id = USA_reform_labour_rights
+		icon = GFX_goal_taft
+		x = 6
+		y = 8
+
+        prerequisite = {
+		focus = USA_new_freedom_program
+		focus = USA_tariff_reduction
+		}
+
+		cost = 10
+
+		completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.05
+		}
+		}
+	}
+
+	focus = {
 		id = USA_revenue_act
 		icon = GFX_goal_taft
 		x = 12
@@ -884,6 +923,30 @@ focus_tree = {
 		remove_idea = USA_strong_private_sector5
 		add_idea = USA_strong_private_sector6
 		}
+		}
+	}
+
+	focus = {
+		id = USA_establish_federal_reserve
+		icon = GFX_goal_taft
+		x = 10
+		y = 7
+
+		available = {has_completed_focus = USA_establish_corporate_tax}
+
+        prerequisite = {
+		focus = USA_progressive_politics
+		}
+
+		prerequisite = {
+		focus = USA_revenue_act
+		}
+
+		cost = 10
+
+		completion_reward = {
+		add_stability = -0.1
+		remove_ideas = USA_strong_private_sector6
 		}
 	}
 
@@ -939,6 +1002,68 @@ focus_tree = {
 		completion_reward = {
 		add_war_support = 0.05
 		add_ideas = USA_defensive_preparations
+		}
+	}
+
+	focus = {
+		id = USA_contain_german_agression
+		icon = GFX_goal_taft
+		x = 2
+		y = 8
+
+		available = {threat > 0.75}
+
+        prerequisite = {
+		focus = USA_defensive_preparations
+		focus = USA_weapon_sales
+		}
+
+		cost = 10
+
+		completion_reward = {
+		create_wargoal = {
+    	type = puppet_wargoal_focus
+    	target = GER
+		}
+		}
+	}
+
+	focus = {
+		id = USA_war_taxes
+		icon = GFX_goal_taft
+		x = 1
+		y = 9
+
+		available = {has_war = yes}
+
+        prerequisite = {
+		focus = USA_contain_german_agression
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_war_support = -0.05
+		add_ideas = USA_war_taxes
+		}
+	}
+
+	focus = {
+		id = USA_army_expansion
+		icon = GFX_goal_taft
+		x = 3
+		y = 9
+
+		available = {has_war = yes}
+
+        prerequisite = {
+		focus = USA_contain_german_agression
+		}
+
+		cost = 5
+
+		completion_reward = {
+		add_ideas = USA_expanded_conscription
 		}
 	}
 
