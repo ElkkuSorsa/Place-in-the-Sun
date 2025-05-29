@@ -10,7 +10,7 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 100 y = 3000 }
+	continuous_focus_position = { x = 0 y = 1500 }
 
 #	shared_focus = ENT_entente_cordiale_1
 
@@ -2836,14 +2836,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -2871,14 +2865,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -2914,14 +2902,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -2954,14 +2936,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -2995,14 +2971,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3037,14 +3007,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3090,14 +3054,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3148,14 +3106,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3191,14 +3143,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3226,14 +3172,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3261,14 +3201,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3300,14 +3234,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3363,14 +3291,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3398,14 +3320,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3438,14 +3354,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3483,14 +3393,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3523,14 +3427,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3566,13 +3464,6 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
@@ -3606,14 +3497,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3660,14 +3545,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3721,14 +3600,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3757,14 +3630,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3806,14 +3673,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3859,14 +3720,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3940,14 +3795,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -3980,14 +3829,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4118,14 +3961,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4255,14 +4092,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4290,14 +4121,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4328,14 +4153,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4367,14 +4186,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4401,14 +4214,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4442,14 +4249,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4481,14 +4282,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4520,14 +4315,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4559,14 +4348,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4600,14 +4383,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4634,14 +4411,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4669,14 +4440,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4704,14 +4469,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4742,14 +4501,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4777,14 +4530,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4818,14 +4565,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4853,14 +4594,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4892,14 +4627,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4931,14 +4660,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -4969,14 +4692,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
@@ -5003,14 +4720,8 @@ focus_tree = {
 		offset = {
 			x = -35
 			trigger = {
-				has_completed_focus = ENG_conservative_victory
-			}
-		}
-
-		offset = {
-			x = -40
-			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
