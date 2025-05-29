@@ -494,10 +494,9 @@ allow_scorched_earth = {
 	}
 }
 
-allow_scorched_earth = {
+allow_alt_hist = {
 	name = "RULE_ALLOW_ALT_HIST"
 	group = "RULE_GROUP_GAMEPLAY"
-	icon = "GFX_scorched_earth"
 	option = {
 		name = yes
 		text = "RULE_OPTION_ALLOWED"
@@ -614,7 +613,7 @@ ENG_ai_behavior = {
 	}
 	option = {
 		name = DEMOCRATIC_HISTORICAL
-		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
+		text = "RULE_OPTION_DEMOCRATIC_ENG_HISTORICAL"
 		desc = "RULE_OPTION_DEMOCRATIC_ENG_AI_DESC"
 		allow_achievements = yes
 	}

@@ -32,4 +32,12 @@ leader_traits = {
 		production_factory_max_efficiency_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.2 
 	}
+
+	ENG_realistic_politician = {
+		random = yes
+		stability_factor = 0.05
+		political_power_factor = 0.1
+		consumer_goods_factor = -0.05
+		democratic_drift = 0.01
+	}
 }

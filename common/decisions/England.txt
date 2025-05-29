@@ -78,6 +78,49 @@ ENG_politics = {
 		}
 	}
 
+	ENG_amend_the_peoples_budget = {
+
+		activation = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The House of Commons Passed This Law"
+				always = no
+			}
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 30
+
+		priority = 90
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { var = govseats  value = 331  compare = less_than }
+				}
+				custom_effect_tooltip = ENG_law_not_pass
+				add_stability = -0.1
+			}
+			
+			else_if = {
+				limit = {
+					check_variable = { var = govseats  value = 330  compare = greater_than }
+				}
+				custom_effect_tooltip = ENG_law_pass
+				add_timed_ideas = {
+					idea = ENG_peoples_budget
+					days = 200
+				}
+				add_stability = 0.05
+			}
+		}
+	}
+
 	ENG_national_insurance_act = {
 
 		activation = {

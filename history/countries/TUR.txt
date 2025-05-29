@@ -12,6 +12,7 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	civilian_economy
+	diplomatic_isolation
 }
 
 

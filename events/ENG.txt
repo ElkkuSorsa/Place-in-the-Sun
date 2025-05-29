@@ -100,6 +100,7 @@ country_event = {
 	option = {
 		name = "A lord-protector, huh?"
 		complete_national_focus = ENG_extended_military_admin
+		add_ideas = ENG_minimal_public_support
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -260,6 +261,12 @@ country_event = {
 
 	option = {
 		name = "Conservatives Win by a Slight Majority!"
+		trigger = {
+			has_game_rule = {
+				rule = allow_alt_hist
+				option = yes
+			}
+		}
 		news_event = ENG_news.5
 		custom_effect_tooltip = ENG_con_win
 		set_party_name = {
@@ -970,6 +977,79 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = ENG_misc.3
+	title = "Anglo-American Alliance"
+	desc = "The British government has proposed a new alliance with us, the USA to fight against the Germans and their allies. The British see us as a natural ally and they want to strengthen the ties between our two nations. This is a great opportunity for us to strengthen our position in the world and to fight against the Germans."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "In god we trust"
+		ENG = {
+			add_to_faction = USA
+			set_global_flag = ENG_anglo_american_alliance
+		}
+		add_to_war = {
+			enemy = GER
+			targeted_alliance = ENG
+			hostility_reason = asked_to_join
+		}
+		news_event = ENG_misc.4
+	}
+
+	option = {
+		name = "We are not ready for this"
+		reverse_add_opinion_modifier = {
+			target = ENG
+			modifier = faction_traitor
+		}
+	}
+}
+
+news_event = {
+	id = ENG_misc.4
+	title = "Anglo-American Alliance"
+	desc = "The British government and the American government have signed a new alliance to fight against the Germans and their allies. The British see them as a natural ally and they want to strengthen the ties between the two nations. This is a disaster for the Germans, as they are now at war with one of the largest and most powerful nations in the world."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	fire_for_sender = no
+	major = yes
+
+	option = {
+		name = "Doomsday for Germany"
+	}
+}
+
+country_event = {
+	id = ENG_misc.5
+	title = "State of the Empire"
+	desc = "A rousing speech by the king has been given to the people of the United Kingdom. The empire shines and all the wealth are distributed to the people. Or so they believe, the conservatives are fighting hard for the British priviliegies and the restoration of it's glory."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Go forth, brits!"
+	}
+}
+
+news_event = {
+	id = ENG_misc.6
+	title = "Britain claims the French throne"
+	desc = "The British royal government has claimed the French crown and the lands of the kingdom of England in the hundred years' war. The relations between the countries have been amicable, but the new royal order in England does not seem to be too excited about the friendly relations."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "Thousand year's war?"
+	}
+}
+
 add_namespace = ENG_defeat
 country_event = {
 	id = ENG_defeat.1
@@ -1156,9 +1236,9 @@ country_event = {
 				if = {
 					limit = { has_completed_focus = ENG_arm_the_people }
 					add_equipment_to_stockpile = {
-    					type = infantry_equipment
-    					amount = 750
-    					producer = ENG
+						type = infantry_equipment
+						amount = 750
+						producer = ENG
 					}
 				}
 				set_country_flag = communist_uk
