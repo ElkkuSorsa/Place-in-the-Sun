@@ -978,7 +978,7 @@ country_event = {
 }
 
 country_event = {
-	id = ENG_misc.3
+	id = ENG_misc.4
 	title = "Anglo-American Alliance"
 	desc = "The British government has proposed a new alliance with us, the USA to fight against the Germans and their allies. The British see us as a natural ally and they want to strengthen the ties between our two nations. This is a great opportunity for us to strengthen our position in the world and to fight against the Germans."
 
@@ -996,7 +996,7 @@ country_event = {
 			targeted_alliance = ENG
 			hostility_reason = asked_to_join
 		}
-		news_event = ENG_misc.4
+		news_event = ENG_misc.5
 	}
 
 	option = {
@@ -1009,7 +1009,7 @@ country_event = {
 }
 
 news_event = {
-	id = ENG_misc.4
+	id = ENG_misc.5
 	title = "Anglo-American Alliance"
 	desc = "The British government and the American government have signed a new alliance to fight against the Germans and their allies. The British see them as a natural ally and they want to strengthen the ties between the two nations. This is a disaster for the Germans, as they are now at war with one of the largest and most powerful nations in the world."
 
@@ -1024,7 +1024,7 @@ news_event = {
 }
 
 country_event = {
-	id = ENG_misc.5
+	id = ENG_misc.6
 	title = "State of the Empire"
 	desc = "A rousing speech by the king has been given to the people of the United Kingdom. The empire shines and all the wealth are distributed to the people. Or so they believe, the conservatives are fighting hard for the British priviliegies and the restoration of it's glory."
 
@@ -1037,7 +1037,7 @@ country_event = {
 }
 
 news_event = {
-	id = ENG_misc.6
+	id = ENG_misc.7
 	title = "Britain claims the French throne"
 	desc = "The British royal government has claimed the French crown and the lands of the kingdom of England in the hundred years' war. The relations between the countries have been amicable, but the new royal order in England does not seem to be too excited about the friendly relations."
 

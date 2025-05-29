@@ -149,7 +149,7 @@ focus_tree = {
 	focus = {
 		id = ENG_business_as_usual
 		icon = GFX_focus_TUR_reform_the_balkan_pact
-		x = 23
+		x = 24
 		y = 4
 		prerequisite = { focus = ENG_government_of_liberals }
 
@@ -981,7 +981,7 @@ focus_tree = {
 		completion_reward = {
 			USA = {
 				country_event = {
-					id = ENG_misc.3
+					id = ENG_misc.4
 					days = 8
 				}
 			}
@@ -1621,7 +1621,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			country_event = ENG_misc.5
+			country_event = ENG_misc.6
 			add_war_support = 0.1
 		}
 	}
@@ -2303,7 +2303,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			news_event = ENG_misc.6
+			news_event = ENG_misc.7
 			custom_effect_tooltip = ENG_fra_pu_tt
 			custom_effect_tooltip = "    "
 			set_global_flag = ENG_claimed_fra
@@ -3456,7 +3456,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_tech = assembly_line_production
 		}
 
 		completion_reward = {
@@ -3502,6 +3501,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			has_tech = assembly_line_production
 		}
 
 		completion_reward = {
