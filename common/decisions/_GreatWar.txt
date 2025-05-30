@@ -285,7 +285,6 @@ greatwar = {
 }
 
 agadir_crisis = {
-
 	agadir_timer = {
 		activation = {
 			always = no
