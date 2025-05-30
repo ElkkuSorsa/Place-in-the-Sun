@@ -7,8 +7,40 @@ focus_tree = {
 	default = yes
 
 	focus = {
-		id = focus_tree
+		id = DEF_politics
 		x = 5
-		y = 5
+		y = 1
+	}
+
+	focus = {
+		id = DEF_strive_for_democracy
+		x = 0
+		y = 2
+
+		prerequisite = { focus = DEF_politics }
+	}
+
+	focus = {
+		id = DEF_compromise_with_the_left
+		x = 5
+		y = 2
+
+		prerequisite = { focus = DEF_politics }
+	}
+
+	focus = {
+		id = DEF_authoritarian_politics
+		x = 10
+		y = 2
+
+		prerequisite = { focus = DEF_politics }
+	}
+
+	focus = {
+		id = DEF_authoritarian_politics
+		x = 10
+		y = 2
+
+		prerequisite = { focus = DEF_politics }
 	}
 }

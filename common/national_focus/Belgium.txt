@@ -11,13 +11,19 @@ focus_tree = {
 
 	default = no
 
+	continuous_focus_position = { x = 0 y = 1500 }
+
 	focus = {
 		id = BEL_20th_century
 		icon = GFX_focus_BEL_belgian_special_forces
 		x = 7
 		y = 1
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -25,13 +31,15 @@ focus_tree = {
 
 	focus = {
 		id = BEL_catholic_party_dominance
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
 		x = 7
 		y = 2
 
 		prerequisite = { focus = BEL_20th_century }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			add_ideas = BEL_catholic_party_policies
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -39,41 +47,50 @@ focus_tree = {
 
 	focus = {
 		id = BEL_maintain_belgian_identity
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_BEL_king_of_the_belgians
 		x = 6
 		y = 3
 
 		prerequisite = { focus = BEL_catholic_party_dominance }
 		
-		completion_reward = { add_political_power = 100}         
-		cost = 5
+		completion_reward = {
+		}
+
+		cost = 1
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
 	focus = {
 		id = BEL_secure_national_integrity
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_SOV_policy_of_individual_security_ccp_2d_sov_compatibility
 		x = 8
 		y = 3
 
 		prerequisite = { focus = BEL_catholic_party_dominance }
 		
-		completion_reward = { add_political_power = 100}         
-		cost = 5
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+		cost = 2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
 	focus = {
 		id = BEL_appoint_broqueville
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_BEL_belgian_renaissance
 		x = 7
 		y = 4
 
 		prerequisite = { focus = BEL_maintain_belgian_identity focus = BEL_secure_national_integrity }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			promote_character = BEL_paul_broqueville
+			add_political_power = 50
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -81,13 +98,16 @@ focus_tree = {
 
 	focus = {
 		id = BEL_mediate_between_halves
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
 		x = 3
 		y = 5
 
 		prerequisite = { focus = BEL_appoint_broqueville }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -95,13 +115,28 @@ focus_tree = {
 
 	focus = {
 		id = BEL_invest_in_wallonia
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_generic_road_investment
 		x = 2
 		y = 6
 
 		prerequisite = { focus = BEL_mediate_between_halves }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			if = {
+				limit = { has_idea = BEL_divided_society_2 }
+				swap_ideas = {
+					remove_idea = BEL_divided_society_2
+					add_idea = BEL_divided_society_3
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = BEL_divided_society_1
+						add_idea = BEL_divided_society_2
+					}
+				}
+			}
+		}
+
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -109,13 +144,28 @@ focus_tree = {
 
 	focus = {
 		id = BEL_support_bilingualism
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_BEL_multi_language_courses
 		x = 4
 		y = 6
 
 		prerequisite = { focus = BEL_mediate_between_halves }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			if = {
+				limit = { has_idea = BEL_divided_society_2 }
+				swap_ideas = {
+					remove_idea = BEL_divided_society_2
+					add_idea = BEL_divided_society_3
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = BEL_divided_society_1
+						add_idea = BEL_divided_society_2
+					}
+				}
+			}
+		}
+
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -123,14 +173,19 @@ focus_tree = {
 
 	focus = {
 		id = BEL_equal_military_service
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
 		x = 3
 		y = 7
 
 		prerequisite = { focus = BEL_invest_in_wallonia }
 		prerequisite = { focus = BEL_military_service_law }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_divided_society_3
+				add_idea = BEL_divided_society_4
+			}
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -138,13 +193,18 @@ focus_tree = {
 
 	focus = {
 		id = BEL_uphold_catholic_values
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_ARG_defense_and_democracy
 		x = 10
 		y = 5
 
 		prerequisite = { focus = BEL_appoint_broqueville }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_catholic_party_policies
+				add_idea = BEL_catholic_party_policies_2
+			}
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -152,13 +212,18 @@ focus_tree = {
 
 	focus = {
 		id = BEL_ensure_catholic_education
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_SWE_education_reform
 		x = 10
 		y = 6
 
 		prerequisite = { focus = BEL_uphold_catholic_values }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_catholic_party_policies_2
+				add_idea = BEL_catholic_party_policies_3
+			}
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -166,27 +231,33 @@ focus_tree = {
 
 	focus = {
 		id = BEL_placate_liberal_opposition
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = 12
 		y = 6
 
 		prerequisite = { focus = BEL_uphold_catholic_values }
 		
-		completion_reward = { add_political_power = 100}         
-		cost = 5
+		completion_reward = {
+
+		}
+		cost = 2
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
 	focus = {
 		id = BEL_belgian_neutrality
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_BEL_defensive_neutrality
 		x = 7
 		y = 5
 
 		prerequisite = { focus = BEL_appoint_broqueville }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			country_event = {
+				id = belgium.1
+			}
+		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -194,57 +265,304 @@ focus_tree = {
 
 	focus = {
 		id = BEL_military_service_law
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_BEL_independent_neutral_and_loyal
 		x = 6
 		y = 6
 
 		prerequisite = { focus = BEL_belgian_neutrality }
 		mutually_exclusive = { focus = BEL_entente_cooperation }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			add_ideas = BEL_military_service_law_idea
+		}
+
+		available = {
+			always = no
+		}
+
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
 	focus = {
-		id = BEL_fortification_efforts
-		icon = GFX_focus_BEL_belgian_special_forces
+		id = BEL_its_on
+		icon = GFX_SOV_the_last_break_southward_ccp_2d_sov_compatibility
 		x = 7
 		y = 7
 
 		prerequisite = { focus = BEL_entente_cooperation focus = BEL_military_service_law }
 		
-		completion_reward = { add_political_power = 100}         
-		cost = 5
+		completion_reward = {
+
+		}
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 
 	focus = {
 		id = BEL_entente_cooperation
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_BEL_broken_neutrality
 		x = 8
 		y = 6
 
 		prerequisite = { focus = BEL_belgian_neutrality }
 		mutually_exclusive = { focus = BEL_military_service_law }
+
+		available = {
+			always = no
+		}
 		
-		completion_reward = { add_political_power = 100}         
-		cost = 5
+		completion_reward = {
+			add_ideas = BEL_entente_cooperation_idea
+		}
+		cost = 0
 
 	}
 
 	focus = {
 		id = BEL_join_the_entente
-		icon = GFX_focus_BEL_belgian_special_forces
+		icon = GFX_focus_chi_reach_out_to_france
 		x = 9
 		y = 7
 
 		prerequisite = { focus = BEL_entente_cooperation }
 		
-		completion_reward = { add_political_power = 100}         
+		completion_reward = {
+			FRA = {
+				add_to_faction = BEL
+			}
+		}
+		cost = 10
+
+	}
+
+	focus = {
+		id = BEL_fortify_border
+		icon = GFX_goal_fortify_the_westwall
+		x = 9
+		y = 2
+
+		prerequisite = { focus = BEL_20th_century }
+		
+		completion_reward = {
+
+		}
 		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_military_exercises
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
+		x = 11
+		y = 2
+
+		prerequisite = { focus = BEL_20th_century }
+		
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 7500
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_support_arms_industries
+		icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
+		x = 10
+		y = 3
+
+		prerequisite = { focus = BEL_fortify_border focus = BEL_military_exercises }
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_emergency_mobilization
+		icon = GFX_SOV_strengthen_the_mobilization_plan_ccp_2d_sov_compatibility
+		x = 11
+		y = 4
+
+		prerequisite = { focus = BEL_support_arms_industries }
+		prerequisite = { focus = BEL_modernize_production_lines }
+		
+		completion_reward = {
+			add_manpower = 10000
+		}
+		cost = 2
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_urbanize_belgium
+		icon = GFX_focus_SWE_urbanization
+		x = 13
+		y = 4
+
+		prerequisite = { focus = BEL_modernize_production_lines }
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_continue_industrial_development
+		icon = GFX_focus_generic_modernize_industry
+		x = 15
+		y = 1
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_laissez_faire_economics
+		icon = GFX_focus_generic_currency_reforms
+		x = 16
+		y = 2
+
+		prerequisite = { focus = BEL_continue_industrial_development }
+		
+		completion_reward = {
+			add_ideas = BEL_laissez_faire_economics_1
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_economic_reforms
+		icon = GFX_focus_RAJ_special_economic_zones
+		x = 15
+		y = 3
+
+		prerequisite = { focus = BEL_laissez_faire_economics }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_laissez_faire_economics_1
+				add_idea = BEL_laissez_faire_economics_2
+			}
+
+			add_tech_bonus = {
+				bonus = 0.20
+				uses = 1
+				category = industry
+			}
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_limited_workers_rights
+		icon = GFX_focus_generic_support_the_left_right
+		x = 17
+		y = 3
+
+		prerequisite = { focus = BEL_laissez_faire_economics }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_laissez_faire_economics_2
+				add_idea = BEL_laissez_faire_economics_3
+			}
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_expand_coal_mining
+		icon = GFX_focus_generic_mining_industry
+		x = 14
+		y = 2
+
+		prerequisite = { focus = BEL_continue_industrial_development }
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_modernize_production_lines
+		icon = GFX_goal_generic_production2
+		x = 13
+		y = 3
+
+		prerequisite = { focus = BEL_expand_coal_mining }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}
 }

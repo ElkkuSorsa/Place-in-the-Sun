@@ -34,3 +34,20 @@ news_event = {
 		name = "Look! It's a tsar!"
 	}
 }
+
+news_event = {
+	id = news.3
+	title = "1912 Summer Olympics in Stockholm"
+	picture = GFX_olympics
+	desc = "The 1912 Summer Olympics, officially known as the Games of the V Olympiad, were held in Stockholm, Sweden. This was the first time that the modern Olympic Games were held in Northern Europe. The event featured 2,408 athletes from 28 nations competing in 102 events across 14 sports. The games were notable for their emphasis on amateurism and fair play, as well as for the introduction of new sports such as modern pentathlon and team handball."
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		date = 1912.7.22
+	}
+
+	option = {
+		name = "What a fascinating event!"
+	}
+}

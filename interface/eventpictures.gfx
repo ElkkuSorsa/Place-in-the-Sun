@@ -49,6 +49,11 @@ spriteTypes = {
 		name = "GFX_titanic"
 		texturefile = "gfx/event_pictures/titanic.png"
 	}
+
+	spriteType = {
+		name = "GFX_olympics"
+		texturefile = "gfx/event_pictures/olympics.png"
+	}
 }
 
 

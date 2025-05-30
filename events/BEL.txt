@@ -1,0 +1,19 @@
+add_namespace = belgium
+
+country_event = {
+	id = belgium.1
+	title = "Question of our neutrality"
+	desc = "The question of our neutrality has been raised again. Should we continue to maintain our neutrality or should we take a more active role in European affairs? The decision is ours to make in this new time of agressive foreign policy against us and our neighbours."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Continue to maintain neutrality"
+		complete_national_focus = BEL_military_service_law
+	}
+
+	option = {
+		name = "Maybe we should evaluate our position"
+		complete_national_focus = BEL_entente_cooperation
+	}
+}

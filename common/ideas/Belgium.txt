@@ -1,7 +1,121 @@
 ideas = {
 	country = {
-		ENG_march_for_change = {
+		BEL_catholic_party_policies = {
+			modifier = {
+				stability_factor = 0.05
+				consemer_goods_factor = -0.05
+				political_power_factor = 0.1
+			}
+		}
 
+		BEL_catholic_party_policies_2 = {
+			modifier = {
+				stability_factor = 0.1
+				consemer_goods_factor = -0.1
+				political_power_factor = 0.2
+			}
+		}
+
+		BEL_catholic_party_policies_3 = {
+			modifier = {
+				stability_factor = 0.15
+				consemer_goods_factor = -0.15
+				political_power_factor = 0.25
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		BEL_identity = {
+			modifier = {
+				democratic_drift = 0.01
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		BEL_military_service_law_idea = {
+			modifier = {
+				weekly_manpower = 100
+				experience_gain_army = 0.1
+				conscription_factor = 0.3
+			}
+		}
+
+		BEL_entente_cooperation_idea = {
+			modifier = {
+				army_defence_factor = 0.1
+				army_strength_factor = 0.1
+				experience_gain_army = 0.20
+				conscription_factor = -0.05
+			}
+		}
+
+		BEL_laissez_faire_economics_1 = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		BEL_laissez_faire_economics_2 = {
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		BEL_laissez_faire_economics_3 = {
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		BEL_divided_society_1 = {
+			modifier = {
+				stability_factor = -0.35
+				consemer_goods_factor = 0.20
+				political_power_factor = -0.3
+			}
+		}
+
+		BEL_divided_society_2 = {
+			modifier = {
+				stability_factor = -0.20
+				consemer_goods_factor = 0.15
+				political_power_factor = -0.2
+			}
+		}
+
+		BEL_divided_society_3 = {
+			modifier = {
+				stability_factor = -0.10
+				consemer_goods_factor = 0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		BEL_divided_society_4 = {
+			modifier = {
+				stability_factor = -0.05
+				consemer_goods_factor = 0.05
+				political_power_factor = -0.05
+			}
 		}
 	}
 }
