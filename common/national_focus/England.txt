@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 0 y = 1467 }
 
-#	shared_focus = ENT_entente_cordiale_1
+	shared_focus = commonwealth_shared
 
 
 	# Historical Political Tree
@@ -2853,6 +2853,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		available = {
 		}
 
@@ -2879,6 +2886,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -2919,6 +2933,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -2950,6 +2971,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -2988,6 +3016,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3021,6 +3056,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3068,6 +3110,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3123,6 +3172,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		prerequisite = { focus = ENG_haldane_reforms }
 
 		cost = 5
@@ -3160,6 +3216,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		prerequisite = { focus = ENG_support_english_military_industry }
 
 		cost = 5
@@ -3189,6 +3252,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		prerequisite = { focus = ENG_support_english_military_industry }
 
 		cost = 5
@@ -3215,6 +3285,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3248,6 +3325,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3308,6 +3392,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3334,6 +3425,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3368,6 +3466,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3410,6 +3515,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3441,6 +3553,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3481,6 +3600,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -3512,6 +3638,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3560,6 +3693,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3618,6 +3758,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3645,6 +3792,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3688,6 +3842,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3738,6 +3899,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -3761,11 +3929,18 @@ focus_tree = {
 			x = -30
 			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
-					has_completed_focus = ENG_conservative_victory
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3809,6 +3984,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3843,6 +4025,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3864,11 +4053,18 @@ focus_tree = {
 			x = -30
 			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
-					has_completed_focus = ENG_conservative_victory
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3905,11 +4101,18 @@ focus_tree = {
 			x = -30
 			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
-					has_completed_focus = ENG_conservative_victory
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -3964,6 +4167,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -3998,11 +4208,18 @@ focus_tree = {
 			x = -30
 			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
-					has_completed_focus = ENG_conservative_victory
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4037,11 +4254,18 @@ focus_tree = {
 			x = -30
 			trigger = {
 				OR = {
+					has_completed_focus = ENG_conservative_victory
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
-					has_completed_focus = ENG_conservative_victory
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4087,6 +4311,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -4113,6 +4344,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4145,6 +4383,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4181,6 +4426,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -4206,6 +4458,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4244,6 +4503,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -4274,6 +4540,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4310,6 +4583,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -4340,6 +4620,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4379,6 +4666,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 10
 
 		available = {
@@ -4404,6 +4698,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4435,6 +4736,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -4460,6 +4768,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4489,6 +4804,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4524,6 +4846,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -4550,6 +4879,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4588,6 +4924,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 5
 
 		available = {
@@ -4614,6 +4957,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4650,6 +5000,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 2
 
 		available = {
@@ -4680,6 +5037,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 
@@ -4715,6 +5079,13 @@ focus_tree = {
 			}
 		}
 
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
+			}
+		}
+
 		cost = 2
 
 		available = {
@@ -4740,6 +5111,13 @@ focus_tree = {
 					has_completed_focus = ENG_government_of_liberals
 					has_completed_focus = ENG_march_for_change
 				}
+			}
+		}
+
+		offset = {
+			x = 5
+			trigger = {
+				has_completed_focus = ENG_march_for_change
 			}
 		}
 

@@ -10,6 +10,8 @@ focus_tree = {
 	}
 
 	default = no
+
+	shared_focus = commonwealth_shared
 	
 focus = {
 	id = RUS_industrialization

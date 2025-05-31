@@ -1,0 +1,362 @@
+shared_focus = {
+	id = commonwealth_shared
+	x = 0
+	y = 1
+
+	offset = {
+
+	}
+
+	allow_branch = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = ZAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
+	}
+
+	available = {
+		OR = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+	}
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = south_africa_act
+	x = -1
+	y = 2
+	prerequisite = { focus = commonwealth_shared }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			original_tag = ZAF
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = invest_in_canada
+	x = -3
+	y = 2
+	prerequisite = { focus = commonwealth_shared }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = CAN
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = invest_in_pacific
+	x = -5
+	y = 2
+	prerequisite = { focus = commonwealth_shared }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = AST
+				is_subject_of = ENG
+			}
+			and = {
+				original_tag = NZL
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = dominion_investments
+	x = -4
+	y = 3
+	prerequisite = { focus = invest_in_pacific focus = invest_in_canada }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = CAN
+				is_subject_of = ENG
+			}
+			and = {
+				original_tag = NZL
+				is_subject_of = ENG
+			}
+			and = {
+				original_tag = AST
+				is_subject_of = ENG
+			}
+			and = {
+				original_tag = ZAF
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = crown_jewel
+	x = -4
+	y = 4
+	prerequisite = { focus = dominion_investments }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = RAJ
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = british_malaya
+	x = -6
+	y = 4
+	prerequisite = { focus = dominion_investments }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = MAL
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = extraction_economy
+	x = -3
+	y = 5
+	prerequisite = { focus = crown_jewel }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = RAJ
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = defend_the_empire
+	x = 1
+	y = 2
+	prerequisite = { focus = commonwealth_shared }
+
+	offset = {
+	}
+
+	available = {
+		OR = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = fortify_suez
+	x = 1
+	y = 3
+	prerequisite = { focus = defend_the_empire }
+
+	offset = {
+	}
+
+	available = {
+		any_allied_country = {
+			controls_state = 446
+		}
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = EGY
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = invest_in_imperial_defences
+	x = 3
+	y = 3
+	prerequisite = { focus = defend_the_empire }
+
+	offset = {
+	}
+
+	available = {
+		OR = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = imperial_military_investments
+	x = 1
+	y = 4
+	prerequisite = { focus = invest_in_imperial_defences }
+
+	offset = {
+	}
+
+	available = {
+		not = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = buildup_colonial_army
+	x = 3
+	y = 4
+	prerequisite = { focus = invest_in_imperial_defences }
+
+	offset = {
+	}
+
+	available = {
+		not = {
+			original_tag = ENG
+			is_subject_of = ENG
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = invest_in_saf
+	x = -1
+	y = 3
+	prerequisite = { focus = south_africa_act }
+
+	offset = {
+
+	}
+
+	available = {
+		or = {
+			original_tag = ENG
+			and = {
+				original_tag = ZAF
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	completion_reward_joint_originator = {
+		add_political_power = 100
+	}
+}
