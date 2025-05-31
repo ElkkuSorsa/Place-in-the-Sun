@@ -163,7 +163,7 @@ buildings = {
 		}
 	}
 
-	industrial_expansion = {
+	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 1000

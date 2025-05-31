@@ -2750,7 +2750,7 @@ focus_tree = {
 				add_ideas = QIN_sino_british_treaty
 			}
 
-			560 = {
+			592 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = 	industrial_complex
@@ -2758,7 +2758,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			559 = {
+			595 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	industrial_complex
@@ -2766,7 +2766,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			562 = {
+			593 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = 	industrial_complex
@@ -2910,7 +2910,22 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			446 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9947
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1155
+				}
+			}
 		}
+
 	}
 
 	focus = {
@@ -5062,45 +5077,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_south_africa_act
-		icon = GFX_focus_chi_army_reform
-		x = 63
-		y = 0
-
-		offset = {
-			x = -30
-			trigger = {
-				OR = {
-					has_completed_focus = ENG_conservative_victory
-					has_completed_focus = ENG_minority_government
-					has_completed_focus = ENG_government_of_liberals
-					has_completed_focus = ENG_march_for_change
-				}
-			}
-		}
-
-		offset = {
-			x = 5
-			trigger = {
-				has_completed_focus = ENG_march_for_change
-			}
-		}
-
-		cost = 2
-
-		available = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
 		id = ENG_legacy_of_boer_war
 		icon = GFX_focus_chi_army_reform
 		x = 63
 		y = 1
-		prerequisite = { focus = ENG_south_africa_act }
 
 		offset = {
 			x = -30
