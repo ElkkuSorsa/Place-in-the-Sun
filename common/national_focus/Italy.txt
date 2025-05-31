@@ -289,7 +289,7 @@ focus_tree = {
 	
    	focus = {
 		id = ITA_urbanize_the_south
-		icon = Gfx_focus_generic_monetary_union
+		icon = GFX_focus_generic_low_cost_housing
 		x = 7
 		y = 9
 		
