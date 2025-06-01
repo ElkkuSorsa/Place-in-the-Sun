@@ -108,7 +108,7 @@ focus_tree = {
  
    	focus = {
 		id = ITA_expand_italcementi
-		icon = Gfx_focus_generic_monetary_union
+		icon = GFX_goal_generic_construction
 		x = 7
 		y = 7
 		
@@ -314,7 +314,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_electrify_the_countryside
-		icon = Gfx_focus_generic_monetary_union
+		icon = GFX_focus_generic_electrification
 		x = 7
 		y = 11
 		
