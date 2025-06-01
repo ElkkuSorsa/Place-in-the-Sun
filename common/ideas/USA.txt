@@ -201,5 +201,13 @@ ideas = {
 			conscription_factor = 0.1
 			}
 		}
+
+		USA_victory_in_ww1 = {
+			modifier = {
+			war_support_factor = -0.1
+			consumer_goods_factor = 0.15
+			stability_factor = 0.1
+			}
+		}
     }
 }
