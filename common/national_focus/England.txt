@@ -14,6 +14,35 @@ focus_tree = {
 
 	shared_focus = commonwealth_shared
 
+	shortcut = {
+		name = ENG_industrial_powerhouse
+		target = ENG_industrial_innovation
+		scroll_wheel_factor = 0.5
+	}
+
+	shortcut = {
+		name = ENG_haldane_reforms
+		target = ENG_haldane_reforms
+		scroll_wheel_factor = 0.5
+	}
+
+	shortcut = {
+		name = ENG_march_for_change
+		target = ENG_march_for_change
+		scroll_wheel_factor = 0.5
+	}
+
+	shortcut = {
+		name = ENG_conservative_victory
+		target = ENG_conservative_victory
+		scroll_wheel_factor = 0.5
+	}
+
+	shortcut = {
+		name = ENG_the_last_liberals
+		target = ENG_the_last_liberals
+		scroll_wheel_factor = 0.5
+	}
 
 	# Historical Political Tree
 
@@ -1771,8 +1800,8 @@ focus_tree = {
 					has_completed_focus = ENG_minority_government
 					has_completed_focus = ENG_government_of_liberals
 					AND = {
-					has_completed_focus = ENG_conservative_victory
-					not = { has_country_leader = ENG_asquith }
+						has_completed_focus = ENG_conservative_victory
+						not = { has_country_leader = ENG_asquith }
 					}
 				}
 			}
