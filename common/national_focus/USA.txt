@@ -10,7 +10,7 @@ focus_tree = {
     }
 
     default = no 
-    continuous_focus_position = { x = 120 y = 1800 }
+    continuous_focus_position = { x = 120 y = 3000 }
 
 	focus = {
 		id = USA_taft_administration
@@ -1064,6 +1064,23 @@ focus_tree = {
 
 		completion_reward = {
 		add_ideas = USA_expanded_conscription
+		}
+	}
+
+	focus = {
+		id = USA_develop_rural_states
+		icon = GFX_goal_taft
+		x = 13
+		y = 7
+
+        prerequisite = {
+		focus = USA_revenue_act
+		}
+
+		cost = 10
+
+		completion_reward = {
+		
 		}
 	}
 

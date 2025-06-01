@@ -580,5 +580,53 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
+
+		ENG_imperial_defences_idea = {
+			picture = generic_economic_increase
+			modifier = {
+				land_bunker_effectiveness_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.1
+			}
+		}
+
+		ENG_imperial_defences_idea_2 = {
+			picture = generic_economic_increase
+			modifier = {
+				army_defence_factor = 0.05
+				land_bunker_effectiveness_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.1
+			}
+		}
+
+		ENG_dominion_investments_idea = {
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		RAJ_british_extraction_1 = {
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		RAJ_british_extraction_2 = {
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.2
+			}
+		}
 	}
 }

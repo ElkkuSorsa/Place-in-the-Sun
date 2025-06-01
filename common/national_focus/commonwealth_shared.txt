@@ -4,7 +4,18 @@ shared_focus = {
 	y = 1
 
 	offset = {
-
+		x = -15
+		trigger = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_minority_government
+				has_completed_focus = ENG_government_of_liberals
+				AND = {
+					has_completed_focus = ENG_conservative_victory
+					not = { has_country_leader = ENG_asquith }
+				}
+			}
+		}
 	}
 
 	allow_branch = {
@@ -16,7 +27,7 @@ shared_focus = {
 					original_tag = CAN
 					original_tag = AST
 					original_tag = NZL
-					original_tag = ZAF
+					original_tag = SAF
 					original_tag = RAJ
 					original_tag = MAL
 					original_tag = EGY
@@ -32,6 +43,26 @@ shared_focus = {
 		}
 	}
 
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
+	}
+
+	cost = 2
+
 	completion_reward = {
 		add_political_power = 100
 	}
@@ -40,7 +71,7 @@ shared_focus = {
 joint_focus = {
 	id = south_africa_act
 	x = -1
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
 
 	offset = {
@@ -50,19 +81,44 @@ joint_focus = {
 	available = {
 		or = {
 			original_tag = ENG
-			original_tag = ZAF
+			original_tag = SAF
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	relative_position_id = commonwealth_shared
+
+	completion_reward_joint_originator = {
+		SAF = {
+			add_political_power = 100
+			set_cosmetic_tag = SAF_union
+		}
+	}
+
+	cost = 5
 }
 
 joint_focus = {
 	id = invest_in_canada
 	x = -3
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
 
 	offset = {
@@ -79,15 +135,62 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	relative_position_id = commonwealth_shared
+
+	completion_reward_joint_originator = {
+		CAN = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	cost = 10
 }
 
 joint_focus = {
 	id = invest_in_pacific
 	x = -5
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
 
 	offset = {
@@ -108,15 +211,89 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	relative_position_id = commonwealth_shared
+
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward_joint_originator = {
+		AST = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		NZL = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	cost = 10
 }
 
 joint_focus = {
 	id = dominion_investments
 	x = -4
-	y = 3
+	y = 2
 	prerequisite = { focus = invest_in_pacific focus = invest_in_canada }
 
 	offset = {
@@ -139,26 +316,56 @@ joint_focus = {
 				is_subject_of = ENG
 			}
 			and = {
-				original_tag = ZAF
+				original_tag = SAF
 				is_subject_of = ENG
 			}
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	relative_position_id = commonwealth_shared
+
+	joint_trigger = {
+		or = {
+			original_tag = CAN
+			original_tag = AST
+			original_tag = NZL
+			original_tag = SAF
+		}
 	}
+
+	completion_reward_joint_originator = {
+		CAN = {
+			add_political_power = 100
+			add_ideas = ENG_dominion_investments_idea
+		}
+		AST = {
+			add_political_power = 100
+			add_ideas = ENG_dominion_investments_idea
+		}
+		NZL = {
+			add_political_power = 100
+			add_ideas = ENG_dominion_investments_idea
+		}
+		SAF = {
+			add_political_power = 100
+			add_ideas = ENG_dominion_investments_idea
+		}
+	}
+
+	cost = 10
 }
 
 joint_focus = {
 	id = crown_jewel
 	x = -4
-	y = 4
+	y = 3
 	prerequisite = { focus = dominion_investments }
 
 	offset = {
 
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		or = {
@@ -170,20 +377,46 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward_joint_originator = {
+		RAJ = {
+			add_political_power = 100
+			add_ideas = RAJ_british_extraction_1
+		}
+	}
+
+	cost = 5
+
 }
 
 joint_focus = {
 	id = british_malaya
 	x = -6
-	y = 4
+	y = 3
 	prerequisite = { focus = dominion_investments }
 
 	offset = {
 
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		or = {
@@ -195,41 +428,88 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward_joint_originator = {
+		MAL = {
+			add_political_power = 100
+			add_ideas = ENG_dominion_investments_idea
+		}
+	}
+
+	cost = 5
 }
 
 joint_focus = {
 	id = extraction_economy
 	x = -3
-	y = 5
+	y = 4
 	prerequisite = { focus = crown_jewel }
 
 	offset = {
 
 	}
 
+	relative_position_id = commonwealth_shared
+
 	available = {
-		or = {
+		original_tag = ENG
+		RAJ = {
+			is_subject_of = ENG
+		}
+	}
+
+	joint_trigger = {
+		OR = {
 			original_tag = ENG
 			and = {
-				original_tag = RAJ
 				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
 			}
 		}
 	}
 
 	completion_reward_joint_originator = {
-		add_political_power = 100
+		swap_ideas = {
+			remove_idea = RAJ_british_extraction_1
+			add_idea = RAJ_british_extraction_2
+		}
 	}
+
+	cost = 10
 }
 
 joint_focus = {
 	id = defend_the_empire
 	x = 1
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
+
+	relative_position_id = commonwealth_shared
 
 	offset = {
 	}
@@ -241,22 +521,45 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward = {
+		add_ideas = ENG_imperial_defences_idea
+	}
+
+	cost = 5
 }
 
 joint_focus = {
 	id = fortify_suez
 	x = 1
-	y = 3
+	y = 2
 	prerequisite = { focus = defend_the_empire }
 
 	offset = {
 	}
 
 	available = {
-		any_allied_country = {
+		OR = {
+			any_allied_country = {
+				controls_state = 446
+			}
 			controls_state = 446
 		}
 		or = {
@@ -268,15 +571,50 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	relative_position_id = commonwealth_shared
+
+	completion_reward_joint_originator = {
+		446 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 9947
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 1155
+			}
+		}
+	}
+
+	cost = 5
 }
 
 joint_focus = {
 	id = invest_in_imperial_defences
 	x = 3
-	y = 3
+	y = 2
 	prerequisite = { focus = defend_the_empire }
 
 	offset = {
@@ -289,15 +627,41 @@ joint_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	relative_position_id = commonwealth_shared
+
+	completion_reward = {
+		add_political_power = 100
+		swap_ideas = {
+			remove_idea = ENG_imperial_defences_idea
+			add_idea = ENG_imperial_defences_idea_2
+		}
+	}
+
+	cost = 5
 }
 
 shared_focus = {
 	id = imperial_military_investments
 	x = 1
-	y = 4
+	y = 3
 	prerequisite = { focus = invest_in_imperial_defences }
 
 	offset = {
@@ -310,19 +674,50 @@ shared_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	relative_position_id = commonwealth_shared
+
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward = {
+		random_core_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = 	arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	
+	cost = 10
 }
 
 shared_focus = {
 	id = buildup_colonial_army
 	x = 3
-	y = 4
+	y = 3
 	prerequisite = { focus = invest_in_imperial_defences }
 
 	offset = {
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		not = {
@@ -331,15 +726,46 @@ shared_focus = {
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward = {
+		add_manpower = 10000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 15000
+			producer = ENG
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 350
+			producer = ENG
+		}
+	}
+
+	cost = 10
 }
 
 joint_focus = {
 	id = invest_in_saf
 	x = -1
-	y = 3
+	y = 2
 	prerequisite = { focus = south_africa_act }
 
 	offset = {
@@ -350,13 +776,56 @@ joint_focus = {
 		or = {
 			original_tag = ENG
 			and = {
-				original_tag = ZAF
+				original_tag = SAF
 				is_subject_of = ENG
 			}
 		}
 	}
 
-	completion_reward_joint_originator = {
-		add_political_power = 100
+	relative_position_id = commonwealth_shared
+
+	joint_trigger = {
+		OR = {
+			original_tag = ENG
+			and = {
+				is_subject_of = ENG
+				or = {
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = MAL
+					original_tag = EGY
+				}
+			}
+		}
 	}
+
+	completion_reward_joint_originator = {
+		719 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = 	industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		681 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = 	industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = 	arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+	cost = 10
 }
