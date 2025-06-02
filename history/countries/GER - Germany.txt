@@ -1,4 +1,4 @@
-﻿oob = "GER_1936"
+﻿oob = "GER_1910"
 capital = 1269
 set_research_slots = 3
 set_stability = 0.8
@@ -12,7 +12,7 @@ add_ideas = {
 	extensive_conscription
 	limited_conscription
 	volunteer_only
-	civilian_economy
+	early_mobilization
 	naval_race
 	GER_spd_opposition
 	GER_perceived_encirclement
