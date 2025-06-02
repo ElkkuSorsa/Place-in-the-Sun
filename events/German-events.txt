@@ -76,3 +76,33 @@ country_event = {
 		unlock_national_focus = GER_contain_OHL
 	}
 }
+
+country_event = {
+	id = german_general_staff.2
+	title = "Military Coup!"
+	desc = "The OHL has gained a lot of political power and Germany is now effectively a military dictatorship."
+
+	trigger = {
+	fascism > 0.25
+	has_completed_focus = GER_empower_OHL
+	has_war = yes
+	}
+
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	option = {
+		name = "Ludendorff"
+		custom_effect_tooltip = GER_ohl_coup
+		hidden_effect = {
+		
+		set_politics = {
+    	ruling_party = fascism
+    	elections_allowed = no
+    	}
+
+		}
+	}
+
+}
