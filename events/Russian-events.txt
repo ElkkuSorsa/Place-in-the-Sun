@@ -17,25 +17,6 @@ country_event = {
 	}
 }
 
-add_namespace = stolypin_assasination
-
-country_event = {
-	id = stolypin_assasination.1
-	title = "Stolypin Assasinated!"
-	desc = my_event.1.desc
-
-	fire_only_once = yes
-
-	option = {
-		name = "The OHL shall take control for the duration of the war."
-		unlock_national_focus = GER_OHL
-	}
-	option = {
-		name = "The Kaiser will continue his rule."
-		unlock_national_focus = GER_kaiser
-	}
-}
-
 add_namespace = dealing_with_agrarianism
 
 country_event = {

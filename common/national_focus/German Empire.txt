@@ -348,6 +348,28 @@ focus_tree = {
     }
 
     focus = {
+        id = GER_hindenburg_program
+        icon = GFX_focus_generic_military_industry
+        x = 11
+        y = 9
+
+        available = {has_war = yes}
+
+        prerequisite = {focus = GER_transform_the_german_economy}
+		
+        completion_reward = {
+        
+        add_ideas = GER_hindenburg_program_idea
+        
+        }  
+               
+		cost = 10
+
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
         id = GER_militaristic_propaganda
         icon = GFX_focus_generic_full_social_mobilization
         x = 8
@@ -385,7 +407,7 @@ focus_tree = {
 
         available = {has_war = yes}
 
-        mutually_exclusive = {focus = GER_improve_tenches}
+        mutually_exclusive = {focus = GER_improve_trenches}
 
         prerequisite = {focus = GER_militaristic_propaganda}
 		
