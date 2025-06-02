@@ -14,6 +14,8 @@ add_ideas = {
 	volunteer_only
 	civilian_economy
 	naval_race
+	GER_spd_opposition
+	GER_perceived_encirclement
 }
 
 set_technology = {
