@@ -12,6 +12,9 @@ state={
 		victory_points = {
 			11506 40 
 		}
+		add_dynamic_modifier = {
+			modifier = entrenched_front
+		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 4
@@ -27,7 +30,7 @@ state={
 			        }
 			    }
 			}
-			9534 = {
+			9534 = { 
 				# The Renault factories on Île Seguin in Billancourt
 			}
 		}
