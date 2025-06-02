@@ -1,0 +1,38 @@
+﻿capital = 48
+set_research_slots = 3
+set_stability = 0.36
+set_war_support = 0.54
+set_convoys = 20
+oob = "BEL_1910"
+
+recruit_character = BUL_aleksandar_malinov
+
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+    ethnic_tensions
+	agrarian_economy
+}
+
+set_technology = {
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1908.4.9"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+	democratic = 75
+	fascism = 0
+	communism = 5
+	neutrality = 20
+}
+}

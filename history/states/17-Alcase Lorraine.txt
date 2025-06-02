@@ -19,6 +19,7 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 5
+			698 = { bunker = 4 }
 		}
 		add_core_of = FRA
 	}

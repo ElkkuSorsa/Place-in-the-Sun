@@ -223,6 +223,26 @@ greatwar = {
 				limit = { original_tag = RUS }
 				give_guarantee = SER
 			}
+
+			if = {
+				limit = { original_tag = FRA }
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 15000
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2500
+				}
+				add_equipment_to_stockpile = {
+					type = uniforms_equipment
+					amount = 15000
+				}
+			}
 		}
 	}
 

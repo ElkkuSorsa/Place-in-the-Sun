@@ -212,10 +212,10 @@ GER_area_priority = {
 		value = 20
 	}
 	ai_strategy = {
-        type = area_priority
-        id = suez
-        value = -50
-    }
+		type = area_priority
+		id = suez
+		value = -50
+	}
 
 	ai_strategy = {
 		type = area_priority
@@ -227,6 +227,109 @@ GER_area_priority = {
 		type = area_priority
 		id = oceania
 		value = 10
+	}
+}
+
+GER_offensive_bel = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_war_with = BEL
+		surrender_progress < 0.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 227
+		value = -100
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = BEL
+		value = 180
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = BEL
+		value = 150
+	}
+
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 5 #Belgium
+		value = 40000
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = BEL
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+GER_offensive_fra = {
+	allowed = { original_tag = GER }
+	enable = {
+		has_war_with = FRA
+		not = {
+			has_idea = GER_schlieffen_plan_idea
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		state = 6
+		tag = FRA
+		value = 180
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		priority = 90
+		ratio = 0.4
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
+	}
+}
+
+GER_offensive_rus = {
+	allowed = { original_tag = GER }
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				is_owned_by = RUS
+				is_owned_by = POL
+				is_owned_by = UKR
+			}
+		}
+		ratio = 0.1
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = FRA
+		value = 30
 	}
 }
 

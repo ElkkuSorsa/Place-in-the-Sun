@@ -7,6 +7,7 @@ news_event = {
 	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
+	fire_for_sender = no
 
 	option = {
 		name = "Did Serbia do this?"
@@ -30,9 +31,7 @@ country_event = {
 		SER = {
 			country_event = ww1.3
 		}
-		hidden_effect = {
-			news_event = ww1.1
-		}
+		news_event = ww1.1
 	}
 }
 
@@ -46,9 +45,7 @@ country_event = {
 
 	option = {
 		name = "Never shall we pay!"
-		hidden_effect = {
-			news_event = ww1.4
-		}
+		news_event = ww1.4
 	}
 }
 
@@ -60,6 +57,7 @@ news_event = {
 	fire_only_once = yes
 	major = yes
 	is_triggered_only = yes
+	fire_for_sender = no
 
 	immediate = {
 		every_country = {
