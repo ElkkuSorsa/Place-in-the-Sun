@@ -456,6 +456,68 @@ focus_tree = {
     }
 
     focus = {
+        id = GER_learning_from_the_war
+        icon = GFX_focus_generic_army_doctrines_2
+        x = 5
+        y = 8
+
+        available = {has_war = yes}
+
+        prerequisite = {
+        focus = GER_empower_OHL
+        focus = GER_contain_OHL
+        }
+		
+        completion_reward = {
+        
+        army_experience = 25
+        
+        add_doctrine_cost_reduction = {
+	    cost_reduction = 0.5
+	    uses = 2
+	    category = land_doctrine
+        }
+
+        }  
+               
+		cost = 5
+
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_send_advisors_austria
+        icon = GFX_focus_AUS_legitimistische_studentenverbindung
+        x = 5
+        y = 9
+
+        available = {has_war = yes}
+
+        prerequisite = {
+        focus = GER_learning_from_the_war
+        }
+		
+        completion_reward = {
+
+        reverse_add_opinion_modifier = {
+        target = AUH
+        modifier = large_increase
+        }
+        
+        AUH = {
+        add_ideas = GER_military_advisors
+        }
+
+        }  
+               
+		cost = 5
+
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
         id = GER_contain_OHL
         icon = GFX_focus_GER_appease_the_wehrmacht
         x = 2
