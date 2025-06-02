@@ -10,20 +10,20 @@ GER_preparedness = {
 }
 
 entrenched_front = {
-	icon = generic_fortify_the_borders
 	enable = { always = yes }
 
-	remove_trigger = = {
-		NOT = {
-			FRA = {
-				has_war_with = GER
-			}
-		}
-	}
+#	remove_trigger = = {
+#		NOT = {
+#			FRA = {
+#				has_war_with = GER
+#			}
+#		}
+#	}
 
 	land_bunker_effectiveness_factor = 0.2
 	coastal_bunker_effectiveness_factor = 0.2
 	production_speed_bunker_factor = 0.2
 	dig_in_speed_factor = 0.15
 	max_dig_in_factor = 0.2
+	icon = GFX_modifiers_generic_defense
 }
