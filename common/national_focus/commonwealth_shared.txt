@@ -4,7 +4,18 @@ shared_focus = {
 	y = 1
 
 	offset = {
-
+		x = -15
+		trigger = {
+			original_tag = ENG
+			OR = {
+				has_completed_focus = ENG_minority_government
+				has_completed_focus = ENG_government_of_liberals
+				AND = {
+					has_completed_focus = ENG_conservative_victory
+					not = { has_country_leader = ENG_asquith }
+				}
+			}
+		}
 	}
 
 	allow_branch = {
@@ -60,7 +71,7 @@ shared_focus = {
 joint_focus = {
 	id = south_africa_act
 	x = -1
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
 
 	offset = {
@@ -92,6 +103,8 @@ joint_focus = {
 		}
 	}
 
+	relative_position_id = commonwealth_shared
+
 	completion_reward_joint_originator = {
 		SAF = {
 			add_political_power = 100
@@ -105,7 +118,7 @@ joint_focus = {
 joint_focus = {
 	id = invest_in_canada
 	x = -3
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
 
 	offset = {
@@ -139,6 +152,8 @@ joint_focus = {
 			}
 		}
 	}
+
+	relative_position_id = commonwealth_shared
 
 	completion_reward_joint_originator = {
 		CAN = {
@@ -175,7 +190,7 @@ joint_focus = {
 joint_focus = {
 	id = invest_in_pacific
 	x = -5
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
 
 	offset = {
@@ -195,6 +210,8 @@ joint_focus = {
 			}
 		}
 	}
+
+	relative_position_id = commonwealth_shared
 
 	joint_trigger = {
 		OR = {
@@ -276,7 +293,7 @@ joint_focus = {
 joint_focus = {
 	id = dominion_investments
 	x = -4
-	y = 3
+	y = 2
 	prerequisite = { focus = invest_in_pacific focus = invest_in_canada }
 
 	offset = {
@@ -304,6 +321,8 @@ joint_focus = {
 			}
 		}
 	}
+
+	relative_position_id = commonwealth_shared
 
 	joint_trigger = {
 		or = {
@@ -339,12 +358,14 @@ joint_focus = {
 joint_focus = {
 	id = crown_jewel
 	x = -4
-	y = 4
+	y = 3
 	prerequisite = { focus = dominion_investments }
 
 	offset = {
 
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		or = {
@@ -388,12 +409,14 @@ joint_focus = {
 joint_focus = {
 	id = british_malaya
 	x = -6
-	y = 4
+	y = 3
 	prerequisite = { focus = dominion_investments }
 
 	offset = {
 
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		or = {
@@ -436,12 +459,14 @@ joint_focus = {
 joint_focus = {
 	id = extraction_economy
 	x = -3
-	y = 5
+	y = 4
 	prerequisite = { focus = crown_jewel }
 
 	offset = {
 
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		original_tag = ENG
@@ -481,8 +506,10 @@ joint_focus = {
 joint_focus = {
 	id = defend_the_empire
 	x = 1
-	y = 2
+	y = 1
 	prerequisite = { focus = commonwealth_shared }
+
+	relative_position_id = commonwealth_shared
 
 	offset = {
 	}
@@ -522,7 +549,7 @@ joint_focus = {
 joint_focus = {
 	id = fortify_suez
 	x = 1
-	y = 3
+	y = 2
 	prerequisite = { focus = defend_the_empire }
 
 	offset = {
@@ -562,6 +589,8 @@ joint_focus = {
 		}
 	}
 
+	relative_position_id = commonwealth_shared
+
 	completion_reward_joint_originator = {
 		446 = {
 			add_building_construction = {
@@ -585,7 +614,7 @@ joint_focus = {
 joint_focus = {
 	id = invest_in_imperial_defences
 	x = 3
-	y = 3
+	y = 2
 	prerequisite = { focus = defend_the_empire }
 
 	offset = {
@@ -616,6 +645,8 @@ joint_focus = {
 		}
 	}
 
+	relative_position_id = commonwealth_shared
+
 	completion_reward = {
 		add_political_power = 100
 		swap_ideas = {
@@ -630,7 +661,7 @@ joint_focus = {
 shared_focus = {
 	id = imperial_military_investments
 	x = 1
-	y = 4
+	y = 3
 	prerequisite = { focus = invest_in_imperial_defences }
 
 	offset = {
@@ -642,6 +673,8 @@ shared_focus = {
 			is_subject_of = ENG
 		}
 	}
+
+	relative_position_id = commonwealth_shared
 
 	joint_trigger = {
 		OR = {
@@ -678,11 +711,13 @@ shared_focus = {
 shared_focus = {
 	id = buildup_colonial_army
 	x = 3
-	y = 4
+	y = 3
 	prerequisite = { focus = invest_in_imperial_defences }
 
 	offset = {
 	}
+
+	relative_position_id = commonwealth_shared
 
 	available = {
 		not = {
@@ -730,7 +765,7 @@ shared_focus = {
 joint_focus = {
 	id = invest_in_saf
 	x = -1
-	y = 3
+	y = 2
 	prerequisite = { focus = south_africa_act }
 
 	offset = {
@@ -746,6 +781,8 @@ joint_focus = {
 			}
 		}
 	}
+
+	relative_position_id = commonwealth_shared
 
 	joint_trigger = {
 		OR = {
