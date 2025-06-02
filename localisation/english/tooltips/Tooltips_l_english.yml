@@ -43,6 +43,16 @@
  ENG_pax_tt: "We will bring back the §RPax Britannica§! and not furthermore engage in the §Ycontinental affairs§!, but focus on our colonial empire."
  ENG_fra_pu_tt: "Once we have returned §REnglish§! rule over France, we will be able to establish a §Ypersonal union§!."
 
+ POR_side_with_rep: "We will side with the §RRepublicans§!."
+ ENG_side_with_mon: "We will side with the §YMonarchists§!."
+ POR_army_support: "After the §Rrevolution§! we will have the support of the army and that will be very rewarding."
+ POR_no_revolution_tt: "The revolution will slowly die out when focuses §YSecular Compromise§!, §YPromise Reforms§! and §YEnsure Civil Liberties§! are completed."
+ POR_revolution_faster_tt: "§RThe republicans§! will benefit from a fast revolution and when focus §YLight the Fire§! is completed, the §Rrevolution§! will be fast and inevitable."
+ POR_rev_die: "The §Rrevolutionary§! support dropped below §Y10%§!."
+
+ POR_rev_dec: "The revolutionary support will §Ydecrease§!."
+ POR_rev_inc: "The revolutionary support will §Yincrease§!."
+
  ENG_lib_win: "The §YLiberal Party§! will win the elections!"
  ENG_con_win: "The §2Conservative Party§! will win the elections!"
 

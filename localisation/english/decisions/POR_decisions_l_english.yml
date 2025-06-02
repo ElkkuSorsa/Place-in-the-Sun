@@ -1,0 +1,7 @@
+﻿l_english:
+ POR_revolution: "The Coming Storm"
+ POR_revolution_desc: "The situation in Portugal is dire. The monarchy is weak, the republicans are gaining support and the country is on the brink of a revolution.\n\n§gThe army§! is mainly §Yneutral§! or symphatethic the §Rrepublican cause§! because of lack of funding under the royalist governance. Also many young officers and recruits see the monarchy as corrupt.\n\nCurrent support for the §Rrevolution§!: §Y[?revolutionary_support]%§!\n\n If the §Rrevolutionary support§! reaches §Y100%§!, the revolution will be immediate. Is it drops below §Y10%§! the movement will die out and revolution will be averted."
+
+ POR_revolution_imminent: "Immminent Revolution"
+ POR_revolutionary_moves: "Revolutionaries Acting"
+ POR_dying_revolution: "Dying Revolution"

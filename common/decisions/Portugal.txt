@@ -1,0 +1,110 @@
+POR_revolution = {
+	POR_revolution_imminent = {
+		activation = {
+			not = { has_country_flag = POR_revolution_concluded }
+		}
+
+		available = {
+			check_variable = { revolutionary_support < 10 tooltip = POR_rev_die }
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = POR_revolution_concluded
+			} 
+		}
+		priority = 100
+
+		selectable_mission = no
+		days_mission_timeout = 360
+		fire_only_once = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = historical_event_option
+			country_event = POR_revolution.1
+			set_country_flag = POR_revolution_concluded
+			clr_country_flag = POR_defend_kingdom
+			clr_country_flag = POR_support_revolution
+		}
+
+		complete_effect = {
+			country_event = POR_revolution.2
+			set_country_flag = POR_revolution_concluded
+			clr_country_flag = POR_defend_kingdom
+			clr_country_flag = POR_support_revolution
+		}
+	}
+
+	POR_revolutionary_moves = {
+		activation = {
+			NOT = {
+				has_completed_focus = POR_secular_compromise
+				has_completed_focus = POR_promise_reforms
+				has_completed_focus = POR_ensure_civil_liberties
+			}
+			not = { has_country_flag = POR_revolution_concluded }
+			has_country_flag = POR_defend_kingdom
+		}
+
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = "Portuguese Revolution has ended"
+					has_country_flag = POR_revolution_concluded
+				}
+				custom_trigger_tooltip = {
+					tooltip = POR_no_revolution_tt
+					has_completed_focus = POR_secular_compromise
+					has_completed_focus = POR_promise_reforms
+					has_completed_focus = POR_ensure_civil_liberties
+				}
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = POR_revolution_concluded
+			}
+		}
+		priority = 100
+
+		selectable_mission = no
+		days_mission_timeout = 35
+
+		timeout_effect = {
+			add_to_variable = { revolutionary_support = 10 tooltip = POR_rev_inc }
+			activate_mission = POR_revolutionary_moves
+		}
+	}
+
+	POR_dying_revolution = {
+		activation = {
+			has_completed_focus = POR_secular_compromise
+			has_completed_focus = POR_promise_reforms
+			has_completed_focus = POR_ensure_civil_liberties
+			not = { has_country_flag = POR_revolution_concluded }
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Portuguese Revolution has ended"
+				has_country_flag = POR_revolution_concluded
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = POR_revolution_concluded
+			}
+		}
+		priority = 100
+
+		selectable_mission = no
+		days_mission_timeout = 20
+
+		timeout_effect = {
+			subtract_from_variable = { revolutionary_support = 10 tooltip = POR_rev_dec }
+			activate_mission = POR_dying_revolution
+		}
+	}
+}

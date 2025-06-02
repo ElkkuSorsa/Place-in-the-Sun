@@ -1,0 +1,71 @@
+add_namespace = POR_revolution
+
+country_event = {
+	id = POR_revolution.1
+	title = "Portuguese Revolution"
+	desc = "The Portuguese Revolution is upon us! The people have risen against the monarchy, and the time has come to abolish the regime. Will we adapt to the new reality or will we push for another reality, liberty or not?"
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		check_variable = { revolutionary_support > 99 }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = POR_revolution_concluded
+			set_country_flag = POR_republic_victory
+			remove_mission = POR_revolution_imminent
+		}
+	}
+
+	option = {
+		name = "Long live the Republic!"
+		set_politics = {
+			ruling_party = Democratic
+		}
+		set_cosmetic_tag = POR_republic
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = POR_revolution.2
+	title = "The Revolutionary Movement ends"
+	desc = "The revolutionary movement has ended, and the people have spoken. The monarchy has been strengthened, and the revolutionaries have been defeated. The time has come to rebuild the nation and secure the monarchist future of the great nation of Portugal!"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = POR_revolution_concluded
+		}
+	}
+
+	option = {
+		name = "Long live the King!"
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = POR_revolution.3
+	title = "Question of the Monarchy"
+	desc = "The revolutionary movement is gaining momentum and support from the people. The monarchy is in danger, and the time has come to decide whether to support the revolution or defend the kingdom and the old order. The situation is dire and the future of the nation is at stake."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Down with the Monarchy!"
+		custom_effect_tooltip = historical_event_option
+		complete_national_focus = POR_support_the_revolution
+	}
+
+	option = {
+		name = "Monarchy must be defended!"
+		complete_national_focus = POR_defend_the_kingdom
+	}
+}

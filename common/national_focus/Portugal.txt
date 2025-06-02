@@ -1,0 +1,218 @@
+focus_tree = {
+	id = portugal_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 50
+			tag = POR
+		}
+	}
+	default = no
+
+	focus = {
+		id = POR_fragile_monarchy
+		x = 15
+		y = 0
+
+		allow_branch = {
+			not = { has_country_flag = POR_revolution_concluded }
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = POR_coming_storm
+		x = 15
+		y = 1
+
+		prerequisite = { focus = POR_fragile_monarchy }
+
+		completion_reward = {
+			country_event = POR_revolution.3
+		}
+	}
+
+	focus = {
+		id = POR_support_the_revolution
+		x = 11
+		y = 2
+
+		prerequisite = { focus = POR_coming_storm }
+		mutually_exclusive = { focus = POR_defend_the_kingdom }
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = POR_side_with_rep
+			set_country_flag = POR_support_revolution
+			custom_effect_tooltip = "   "
+			custom_effect_tooltip = POR_revolution_faster_tt
+		}
+
+		search_filters = { SEARCH_FILTER_HISTORICAL }
+	}
+
+	focus = {
+		id = POR_defend_the_kingdom
+		x = 19
+		y = 2
+
+		prerequisite = { focus = POR_coming_storm }
+		mutually_exclusive = { focus = POR_support_the_revolution }
+
+		available = {
+			always = no
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_side_with_mon
+			set_country_flag = POR_defend_kingdom
+			custom_effect_tooltip = "   "
+			custom_effect_tooltip = POR_no_revolution_tt
+		}
+	}
+
+	focus = {
+		id = POR_monarchist_propaganda
+		x = 18
+		y = 3
+
+		prerequisite = { focus = POR_defend_the_kingdom }
+
+		completion_reward = {
+			subtract_from_variable = { revolutionary_support = 10 tooltip = POR_rev_dec }
+		}
+	}
+
+	focus = {
+		id = POR_institute_press_censorship
+		x = 20
+		y = 3
+
+		prerequisite = { focus = POR_defend_the_kingdom }
+
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = POR_revolution_imminent
+				days = 30
+			}
+		}
+	}
+
+	focus = {
+		id = POR_raid_revolutionary_cells
+		x = 19
+		y = 4
+
+		prerequisite = { focus = POR_monarchist_propaganda focus = POR_institute_press_censorship }
+
+		completion_reward = {
+			subtract_from_variable = { revolutionary_support = 10 tooltip = POR_rev_dec }
+		}
+	}
+
+	focus = {
+		id = POR_promise_reforms
+		x = 19
+		y = 5
+
+		prerequisite = { focus = POR_raid_revolutionary_cells }
+
+		completion_reward = {
+			subtract_from_variable = { revolutionary_support = 10 tooltip = POR_rev_dec }
+		}
+	}
+
+	focus = {
+		id = POR_ensure_civil_liberties
+		x = 21
+		y = 5
+
+		prerequisite = { focus = POR_raid_revolutionary_cells }
+
+		completion_reward = {
+			subtract_from_variable = { revolutionary_support = 10 tooltip = POR_rev_dec }
+		}
+	}
+
+	focus = {
+		id = POR_secular_compromise
+		x = 17
+		y = 5
+
+		prerequisite = { focus = POR_raid_revolutionary_cells }
+
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = POR_revolution_imminent
+				days = 30
+			}
+		}
+	}
+
+	focus = {
+		id = POR_sway_the_army
+		x = 15
+		y = 3
+
+		prerequisite = { focus = POR_defend_the_kingdom focus = POR_support_the_revolution }
+
+		completion_reward = {
+			custom_effect_tooltip = POR_army_support
+		}
+	}
+
+	focus = {
+		id = POR_centralize_the_movement
+		x = 11
+		y = 3
+
+		prerequisite = { focus = POR_support_the_revolution }
+
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = POR_revolution_imminent
+				days = -30
+			}
+		}
+	}
+
+	focus = {
+		id = POR_radicalize_the_people
+		x = 12
+		y = 4
+
+		prerequisite = { focus = POR_centralize_the_movement }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = POR_promise_better_lives
+		x = 10
+		y = 4
+
+		prerequisite = { focus = POR_centralize_the_movement }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = POR_light_the_fire
+		x = 11
+		y = 5
+
+		prerequisite = { focus = POR_promise_better_lives focus = POR_radicalize_the_people }
+
+		completion_reward = {
+		}
+	}
+}
