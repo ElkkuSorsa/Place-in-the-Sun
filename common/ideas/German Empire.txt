@@ -146,6 +146,15 @@ ideas = {
 			}
 		}
 
+		GER_hindenburg_program_idea = {
+			modifier = {
+				political_power_cost = 0.15
+				war_support_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+
 
 	}
 }
