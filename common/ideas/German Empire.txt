@@ -181,6 +181,36 @@ ideas = {
 			}
 		}
 
+		GER_university_funds = {
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		GER_national_unity_idea = {
+			modifier = {
+				surrender_limit = 0.1
+				conscription = 0.005
+			}
+		}
+
+		GER_intel_agency = {
+			modifier = {
+				agency_upgrade_time = -0.1
+				decryption_factor = 0.05
+				encryption_factor = 0.05
+			}
+		}
+
+		GER_intel_agency2 = {
+			modifier = {
+				agency_upgrade_time = -0.1
+				decryption_factor = 0.05
+				encryption_factor = 0.05
+				operative_slot = 2
+			}
+		}
+
 
 	}
 }
