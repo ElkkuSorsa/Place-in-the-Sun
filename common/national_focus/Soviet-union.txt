@@ -60,7 +60,7 @@ focus_tree = {
 		}
 	}
         focus = {
-		id = Sov_Doctorine_question
+		id = Sov_trostsky_a_genius?
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 20
 		y = 22
@@ -77,23 +77,25 @@ focus_tree = {
 			}
 		}
 	}
-         focus = {
-		id = Sov_army_mechanisation
+	    focus = {
+		id = Sov_Trotskys_reforms
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 23
+		x = 20
 		y = 23
 
 		cost = 2
-        prerequisite = { focus = Sov_Doctorine_question }
-		available = { 
+        prerequisite = { focus = Sov_Trotskys_reforms  }
+		available = {
 		}
 
 		completion_reward = {
 			swap_ideas = {
+				remove_idea = Sov_disorganized_military_1
 				add_idea = Sov_disorganized_military_2
 			}
 		}
 	}
+
     # soviet foreign policy tree
     	focus = {
 		id = SOV_Foreign_policy
@@ -214,7 +216,7 @@ focus_tree = {
 		x = 59
 		y = 10
 		cost = 5
-
+		mutually_exclusive = { focus = SOV_reintigrate_cacausus }
 		available = {
 		}
          prerequisite = { focus = SOV_invade_the_rest_of_caucasus }
@@ -230,7 +232,7 @@ focus_tree = {
 		x = 61
 		y = 10
 		cost = 10
-
+		mutually_exclusive = { focus = SOV_Transcaucasian_SSR }
 		available = {
 		}
          prerequisite = { focus = SOV_invade_the_rest_of_caucasus }
@@ -288,7 +290,7 @@ focus_tree = {
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 54
 		y = 8
-		cost = 5
+		cost = 7
 		mutually_exclusive = { focus = SOV_invasion_of_poland }
         prerequisite = { focus = SOV_Invade_the_baltics }
 		available = {

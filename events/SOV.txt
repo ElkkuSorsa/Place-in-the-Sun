@@ -75,7 +75,7 @@ add_namespace = SOV_Dual_leadership
 	country_event = {
 	id = SOV_Dual_leadership.1 
 	title = "Interesting proposal"
-	desc = "To combat other contesters growing power comrade kamenev and Zinovyev have decided to fully unite against the fake revolutionaries. They even have decided to rule together and share power if the somehow manage to win this race "
+	desc = "To combat other contenderds growing power comrade Kamenev and Zinovyev have decided to fully unite against the fake revolutionaries. They even have decided to rule together and share power if the somehow manage to win this race "
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -85,10 +85,58 @@ add_namespace = SOV_Dual_leadership
 		custom_effect_tooltip = "This will benefit both in the future."
 	}
 		option = {
-		name = "Uhm no."
+		name = "No."
 		stability_factor = 0.1
 		political_power = 60
 	}
     }
+	add_namespace = SOV_Lenins_detoriating_health
 
+	country_event = {
+	id = SOV_Lenins_detoriating_health.1 
+	title = "Concerns over Lenins health"
+	desc = " "
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		trigger = {
+		original_tag = SOV
+		date = 1922.9.15
+	}
+	option = {
+		name = "This is very troubling"
+		custom_effect_tooltip = "Power strugle will soon erupt."
+	}
+    }	
+	country_event = {
+	id = SOV_Lenins_detoriating_health.2 
+	title = "Lenin has been paralyzed after recent stroke"
+	desc = " "
+		trigger = {
+		original_tag = SOV
+		date = 1923.3.9
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "This is very troubling"
+		custom_effect_tooltip = "Lenin can still impact the results of the power struggle."
+	}
+    }	
+	country_event = {
+	id = SOV_Lenins_detoriating_health.3 
+	title = "Death of Vladmir Lenin"
+	desc = " "
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		trigger = {
+		original_tag = SOV
+		date = 1924.1.21
+	}
+	option = {
+
+	}
+    }
 	
