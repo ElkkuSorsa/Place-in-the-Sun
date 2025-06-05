@@ -15,7 +15,7 @@ focus_tree = {
 
     focus = {
         id = GER_support_weltpolitik
-        icon = GFX_focus_ger_return_of_the_kaiser
+        icon = GFX_goal_GER_weltpolitik
         x = 15
         y = 0
 		
@@ -98,7 +98,7 @@ focus_tree = {
 
     focus = {
         id = GER_anti_socialism
-        icon = GFX_focus_GER_end_european_communism
+        icon = GFX_goal_GER_antisocialism
         x = 16
         y = 1
 
@@ -121,7 +121,7 @@ focus_tree = {
 
     focus = {
         id = GER_staunch_conservatism
-        icon = GFX_focus_ger_revive_kaiserreich
+        icon = GFX_goal_GER_conservatism
         x = 14
         y = 1
 
@@ -147,7 +147,7 @@ focus_tree = {
 
     focus = {
         id = GER_towards_a_german_century
-        icon = GFX_focus_GER_glory_to_the_imperial_army
+        icon = GFX_goal_GER_century
         x = 15
         y = 2
 
@@ -170,7 +170,7 @@ focus_tree = {
 
     focus = {
         id = GER_focus_on_domestic_affairs
-        icon = GFX_focus_GER_monarchy_compromise
+        icon = GFX_goal_GER_internal_affairs
         x = 12
         y = 3
 
@@ -347,12 +347,86 @@ focus_tree = {
     focus = {
         id = GER_continental_hegemony
         icon = GFX_focus_GER_european_confederation
-        x = 20
+        x = 22
         y = 4
 
-        prerequisite = {focus = GER_focus_on_domestic_affairs}
-
         prerequisite = {focus = GER_place_in_the_sun}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_western_expansion
+        icon = GFX_focus_GER_western_grand_duchies
+        x = 19
+        y = 5
+        prerequisite = {focus = GER_continental_hegemony}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_colonial_claims
+        icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+        x = 17.5
+        y = 6
+        prerequisite = {focus = GER_western_expansion}
+
+        prerequisite = {focus = GER_colonies}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_eastern_expansion
+        icon = GFX_focus_GER_eastern_grand_duchies
+        x = 25
+        y = 5
+        prerequisite = {focus = GER_continental_hegemony}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_seek_allies
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 22
+        y = 6
+
+        prerequisite = {focus = GER_eastern_expansion
+        focus = GER_western_expansion}
 		
         completion_reward = { 
 
