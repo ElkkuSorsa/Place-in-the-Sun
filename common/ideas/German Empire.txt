@@ -126,7 +126,7 @@ ideas = {
 			}
 		}
 
-		GER_refreshment_excersizes_idea = {
+		GER_refreshment_exersizes_idea = {
 			modifier = {
 				experience_gain_army_factor = 0.2
 
