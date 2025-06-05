@@ -42,4 +42,11 @@ defined_text = {
 		}
 		localization_key = ENG_parties.7
 	}
+
+	text = {
+		trigger = {
+			has_country_flag = ENG_lib_con_coalition
+		}
+		localization_key = ENG_parties.8
+	}
 }

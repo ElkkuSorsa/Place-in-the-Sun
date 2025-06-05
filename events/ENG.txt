@@ -526,6 +526,9 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = ENG_lib_con_coalition
+		ENG_calc_gov = yes
+		custom_effect_tooltip = ENG_lib_join_gov
 	}
 
 	option = {
@@ -564,6 +567,9 @@ country_event = {
 
 	option = {
 		name = "Invite them to the coalition"
+		set_country_flag = ENG_lib_con_coalition
+		ENG_calc_gov = yes
+		custom_effect_tooltip = ENG_lib_join_gov
 	}
 
 	option = {
@@ -785,25 +791,6 @@ country_event = {
 }
 
 add_namespace = ENG_restored_monarchy
-country_event = {
-	id = ENG_restored_monarchy.1
-	title = "English People Divided"
-	desc = "The English people are divided between the supporters of the monarchy and the supporters of the republic. The republicans have been gaining popularity and the monarchy has been losing it. The king has been very unpopular and the people have been demanding a new government."
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = "We must secure the people's trust!"
-		add_political_power = -150
-		add_stability = -0.15
-		set_power_balance = {
-			id = ENG_english_society_bop
-		}
-		unlock_national_focus = ENG_english_society
-	}
-}
-
 country_event = {
 	id = ENG_restored_monarchy.2
 	title = "Democratic Collaboration"

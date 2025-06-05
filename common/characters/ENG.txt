@@ -39,9 +39,7 @@ characters = {
 			idea_token = ENG_bonar_law
 			traits = { SWE_ardent_conservative }
 			available = {
-				OR = {
-					has_completed_focus = ENG_collaborate_conservatives
-				}
+				has_completed_focus = ENG_collaborate_conservatives
 			}
 		}
 		portraits = {
@@ -58,10 +56,12 @@ characters = {
 			slot = political_advisor
 			idea_token = ENG_churchill
 			traits = { minister_of_munitions }
+			available = {
 				OR = {
 					has_completed_focus = ENG_shell_crisis
 					has_completed_focus = ENG_appoint_cabinet
 				}
+			}
 		}
 		portraits = {
 			civilian = {

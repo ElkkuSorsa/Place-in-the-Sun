@@ -49,4 +49,11 @@ ENG_calc_gov = {
 		add_to_variable = { var = govseats value = labseats }
 		add_to_variable = { var = govseats value = conseats }
 	}
+
+	if = {
+		limit = { has_country_flag = ENG_lib_con_coalition }
+		set_variable = { govseats = 0 }
+		add_to_variable = { var = govseats value = libseats }
+		add_to_variable = { var = govseats value = conseats }
+	}
 }

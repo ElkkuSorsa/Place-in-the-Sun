@@ -1454,7 +1454,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			170 = {
+			173 = {
 				owner = {
 					ROOT ={
 						create_wargoal = {
@@ -1464,14 +1464,14 @@ focus_tree = {
 					}
 				}
 			}
-			add_state_claim = 170
+			add_state_claim = 173
 		}
 	}
 
 	focus = {
 		id = ENG_invoke_portugal
 		icon = GFX_focus_generic_befriend_portugal
-		x = 35
+		x = 33
 		y = 7
 		prerequisite = { focus = ENG_entente_conference }
 		mutually_exclusive = { focus = ENG_invade_mozambique }
@@ -1531,7 +1531,7 @@ focus_tree = {
 	focus = {
 		id = ENG_invade_mozambique
 		icon = GFX_focus_generic_attack_portugal
-		x = 33
+		x = 35
 		y = 7
 		prerequisite = { focus = ENG_colonial_ambitions }
 		mutually_exclusive = { focus = ENG_invoke_portugal }
@@ -2240,7 +2240,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 47
+			add_political_power = 50
 			country_event = ENG_restored_monarchy.2
 			custom_effect_tooltip = ENG_collaborate_conservatives_tt
 			custom_effect_tooltip = "   "
@@ -2294,7 +2294,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = ENG_empowered_local_nobility
-				days = 362
+				days = 70
 			}
 			add_popularity = {
 				ideology = neutrality
