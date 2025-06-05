@@ -1408,4 +1408,29 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
+	SpriteType = {
+	name = "GFX_goal_GER_weltpolitik"
+	texturefile = "gfx/interface/goals/GER/Weltpolitik.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_GER_conservatism"
+	texturefile = "gfx/interface/goals/GER/Germanconservatism.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_GER_antisocialism"
+	texturefile = "gfx/interface/goals/GER/antisocialism.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_GER_century"
+	texturefile = "gfx/interface/goals/GER/germancentury.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_GER_internal_affairs"
+	texturefile = "gfx/interface/goals/GER/internalaffairs.dds"			
+	}
 }
