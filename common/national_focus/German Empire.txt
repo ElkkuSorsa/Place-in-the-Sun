@@ -300,6 +300,52 @@ focus_tree = {
     }
 
     focus = {
+        id = GER_undermine_results
+        icon = GFX_focus_GER_total_control_over_domestic_affairs
+        x = 11
+        y = 6
+
+        mutually_exclusive = {focus = GER_conservative_majority}
+
+        prerequisite = {focus = GER_control_reichstag}
+
+        prerequisite = {focus = GER_university_funding}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_conservative_majority
+        icon = GFX_focus_GER_total_control_over_domestic_affairs
+        x = 13
+        y = 6
+
+        mutually_exclusive = {focus = GER_undermine_results}
+
+        prerequisite = {focus = GER_control_reichstag}
+
+        prerequisite = {focus = GER_university_funding}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
         id = GER_national_unity_campaign
         icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
         x = 9
