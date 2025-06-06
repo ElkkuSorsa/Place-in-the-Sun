@@ -374,9 +374,10 @@ focus_tree = {
 				days = 90
 				idea = ENG_healthcare_reform
 			}
+			custom_effect_tooltip = "    "
 			swap_ideas = {
-				add_ideas = ENG_peoples_budget_2
-				remove_ideas = ENG_peoples_budget_1
+				add_idea = ENG_peoples_budget_2
+				remove_idea = ENG_peoples_budget_1
 			}
 		}
 	}
@@ -1556,7 +1557,7 @@ focus_tree = {
 					ROOT ={
 						create_wargoal = {
 							type = take_state_focus
-							target = PREV
+							target = PREV.PREV
 						}
 					}
 				}
@@ -1733,7 +1734,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = ENG_misc.6
 			add_war_support = 0.1
-
+			custom_effect_tooltip = "    "
 			effect_tooltip = {
 				add_ideas = ENG_united_for_britain
 			}
