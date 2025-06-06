@@ -30,6 +30,7 @@ add_ideas = {
 	ENG_two_power_standard
 	ENG_british_politics_dem
 	naval_race
+	ENG_peoples_budget_1
 }
 
 set_autonomy = {

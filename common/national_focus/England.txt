@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = ENG_government_of_liberals
 		icon = GFX_goal_support_democracy
-		x = 20
+		x = 22
 		y = 3
 		prerequisite = { focus = ENG_the_last_liberals }
 		mutually_exclusive = { focus = ENG_minority_government }
@@ -373,6 +373,10 @@ focus_tree = {
 			add_timed_idea = {
 				days = 90
 				idea = ENG_healthcare_reform
+			}
+			swap_ideas = {
+				add_ideas = ENG_peoples_budget_2
+				remove_ideas = ENG_peoples_budget_1
 			}
 		}
 	}
@@ -1375,10 +1379,8 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			country_event = {
-				id = entente_conf.1
-				days = 1
-			}
+			set_faction_leader = yes
+			news_event = entente_conf.1
 		}
 	}
 
@@ -1401,7 +1403,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			SPA = {
+			SPR = {
 				country_event = {
 					id = morocco_guarantee.1
 					days = 5
@@ -1430,7 +1432,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_to_faction = SPA
+			SPR = { custom_effect_tooltip = invite_to_faction_tt }
+			hidden_effect = {
+				SPR = { country_event = generic.5 }
+			}
 		}
 	}
 
@@ -1473,7 +1478,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_portugal
 		x = 33
 		y = 7
-		prerequisite = { focus = ENG_entente_conference }
+		prerequisite = { focus = ENG_entente_conference focus = ENG_maintaining_our_place_in_the_sun }
 		mutually_exclusive = { focus = ENG_invade_mozambique }
 
 		offset = {
@@ -1491,18 +1496,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			POR = {
-				country_event = {
-					id = portugal_england.1
-					days = 3
-				}
+			POR = { custom_effect_tooltip = invite_to_faction_tt }
+			hidden_effect = {
+				POR = { country_event = generic.5 }
 			}
 		}
 	}
 
 	focus = {
-		id = ENG_colonial_ambitions
-		icon = GFX_focus_ARG_revive_the_colonial_plan
+		id = ENG_maintaining_our_place_in_the_sun
+		icon = GFX_goal_ENG_influence_world
 		x = 34
 		y = 6
 		prerequisite = { focus = ENG_entente_con }
@@ -1533,7 +1536,7 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_portugal
 		x = 35
 		y = 7
-		prerequisite = { focus = ENG_colonial_ambitions }
+		prerequisite = { focus = ENG_maintaining_our_place_in_the_sun }
 		mutually_exclusive = { focus = ENG_invoke_portugal }
 
 		offset = {
@@ -1558,9 +1561,81 @@ focus_tree = {
 					}
 				}
 			}
-			add_state_claim = 510
+			add_state_claim = 540
 			add_state_claim = 892
 			add_state_claim = 891
+		}
+	}
+
+	focus = {
+		id = ENG_claim_german_colonies
+		icon = GFX_focus_generic_attack_portugal
+		x = 34
+		y = 8
+		prerequisite = { focus = ENG_invade_mozambique focus = ENG_invoke_portugal }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = ENG_claim_german_colonies_tt
+			custom_effect_tooltip = "    "
+			add_state_claim = 546
+			add_state_claim = 773
+			add_state_claim = 777
+			add_state_claim = 893
+			add_state_claim = 541
+			add_state_claim = 894
+			add_state_claim = 895
+		}
+	}
+
+	focus = {
+		id = ENG_our_influence_in_persia
+		icon = GFX_focus_generic_attack_portugal
+		x = 36
+		y = 8
+		prerequisite = { focus = ENG_invade_mozambique }
+
+		offset = {
+			x = -32
+			trigger = {
+				OR = {
+					has_completed_focus = ENG_conservative_victory
+				}
+			}
+		}
+
+		cost = 10
+
+		completion_reward = {
+			news_event = ENG_news.9
+			RUS = {
+				transfer_state = 419
+				transfer_state = 420
+				transfer_state = 266
+				transfer_state = 416
+			}
+			set_autonomy = {
+				target = PER
+				autonomous_state = autonomy_protectorate
+				end_wars = no
+				end_civil_wars = no
+			}
+			hidden_effect = {
+				news_event = {
+					id = ENG_news.8
+					days = 143
+				}
+			}
 		}
 	}
 
@@ -1580,7 +1655,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 2
+		cost = 5
 
 		completion_reward = {
 			custom_effect_tooltip = ENG_law_text
@@ -1627,7 +1702,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 2
+		cost = 5
 
 		completion_reward = {
 			add_trait = {
@@ -1658,6 +1733,10 @@ focus_tree = {
 		completion_reward = {
 			country_event = ENG_misc.6
 			add_war_support = 0.1
+
+			effect_tooltip = {
+				add_ideas = ENG_united_for_britain
+			}
 		}
 	}
 
@@ -1729,6 +1808,8 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			custom_effect_tooltip = ENG_compromise_law
+			custom_effect_tooltip = "    "
 			swap_ideas = {
 				add_idea = ENG_house_of_lords_2
 				remove_idea = ENG_house_of_lords
@@ -1776,7 +1857,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 2
+		cost = 5
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor

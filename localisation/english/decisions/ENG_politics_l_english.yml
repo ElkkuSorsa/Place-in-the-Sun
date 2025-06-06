@@ -30,3 +30,5 @@
  ENG_unite_opposition: "Unite the Nationalist Opposition"
 
  ENG_elections_1918_event: "Elections of [GetYear]"
+
+ faction_invite.t: "[]"

@@ -112,11 +112,14 @@ ENG_politics = {
 					check_variable = { var = govseats  value = 330  compare = greater_than }
 				}
 				custom_effect_tooltip = ENG_law_pass
-				add_timed_ideas = {
-					idea = ENG_peoples_budget
-					days = 200
+				swap_ideas = {
+					remove_idea = ENG_peoples_budget_1
+					add_idea = ENG_amended_the_peoples_budget
 				}
-				add_stability = 0.05
+				add_party_popularity = {
+					ideology = democratic
+					popularity = -0.05
+				}
 			}
 		}
 	}

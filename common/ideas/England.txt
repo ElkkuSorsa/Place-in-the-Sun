@@ -546,11 +546,38 @@ ideas = {
 			}
 		}
 
+		ENG_peoples_budget_1 = {
+			picture = NOR_printing_money
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ENG_peoples_budget_2 = {
+			picture = NOR_printing_money
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+
 		ENG_amended_the_peoples_budget = {
 			picture = NOR_printing_money
 			modifier = {
 				stability_factor = -0.05
 				consumer_goods_factor = -0.15
+			}
+		}
+
+		ENG_united_for_britain = {
+			picture = NOR_printing_money
+			modifier = {
+				political_power_factor = 0.1
+				drift_defence_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				
 			}
 		}
 

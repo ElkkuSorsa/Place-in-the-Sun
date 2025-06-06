@@ -399,16 +399,17 @@ news_event = {
 }
 
 add_namespace = entente_conf
-country_event = {
+news_event = {
 	id = entente_conf.1
-	title = "Entente Conference"
-	desc = ""
+	title = "The United Kingdom assumes Entente Leadership"
+	desc = "The conservative government of the United Kingdom has announced that they will assume the leadership of the Entente Cordiale. The British government has been a strong supporter of the Entente and has been a key player in the alliance. The British government has announced that they will lead the Entente in the coming years of war and instability in the world."
 
 	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
 
 	option = {
 		name = "Dawn on the new Entente"
-		set_faction_leader = yes
 	}
 }
 
@@ -917,6 +918,45 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = ENG_news.8
+	title = "Anti-British Revolution in Persia"
+	desc = "The British government has been forced to intervene in Persia after a revolution broke out against the British influence in the country. The revolutionaries have declared independence from the British Empire after just couple of months after the British-Russian partition of Iranian lands. Will Iran reclaim it's independence or will the British crush the revolutionaries?"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			PER = {
+				start_civil_war = {
+					ideology = neutrality
+					size = 0.6
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "This is a disaster!"
+	}
+}
+
+news_event = {
+	id = ENG_news.9
+	title = "British-Russian Partition of Persia"
+	desc = "The British and Russian governments have agreed to partition Persia between them. The British will take the southern part of the country, while the Russians will take the northern part. This is a major blow to the Persian sovereignty and it will surely lead to unrest in the country against the invaders. The British have established a protectorate over Iran to govern the lands."
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = "Iran, another Poland?"
+	}
+}
+
 add_namespace = ENG_misc
 country_event = {
 	id = ENG_misc.1
@@ -1019,7 +1059,8 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "Go forth, brits!"
+		name = "Go forth, Brits!"
+		add_ideas = ENG_united_for_britain
 	}
 }
 
@@ -1267,3 +1308,4 @@ news_event = {
 		name = "Civil war has taken its toll"
 	}
 }
+
