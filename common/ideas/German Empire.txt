@@ -221,6 +221,53 @@ ideas = {
 			}
 		}
 
+		GER_global_economics = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1 
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+
+		GER_german_industrialisation = {
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		GER_german_industrialisation2 = {
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.05
+			}
+		}
+
+		GER_german_industrialisation3 = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_lack_of_resource_penalty_factor = -0.2
+				local_resources_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		GER_german_industrialisation4 = {
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_lack_of_resource_penalty_factor = -0.2
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
 
 	}
 }
