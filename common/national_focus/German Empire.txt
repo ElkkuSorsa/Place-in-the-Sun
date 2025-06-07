@@ -1213,7 +1213,7 @@ focus_tree = {
     focus = {
         id = GER_autarkic_reforms
         icon = GFX_focus_GER_autarky_achieved
-        x = 38
+        x = 39
         y = 3
 
         prerequisite = {focus = GER_german_industries}
@@ -1369,7 +1369,7 @@ focus_tree = {
     focus = {
         id = GER_military_industries
         icon = GFX_goal_generic_construct_mil_factory
-        x = 39
+        x = 40
         y = 4
 
         prerequisite = {focus = GER_autarkic_reforms}
