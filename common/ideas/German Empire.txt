@@ -19,6 +19,14 @@ ideas = {
 			}
 		}
 
+		GER_uncooperative_reichstag = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+
 		GER_weltpolitk = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {

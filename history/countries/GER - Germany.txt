@@ -16,6 +16,7 @@ add_ideas = {
 	naval_race
 	GER_spd_opposition
 	GER_perceived_encirclement
+	GER_uncooperative_reichstag
 }
 
 set_technology = {

@@ -18,6 +18,8 @@ focus_tree = {
         icon = GFX_goal_GER_weltpolitik
         x = 15
         y = 0
+
+        mutually_exclusive = {focus = GER_oppose_weltpolitik}
 		
         completion_reward = { 
         
@@ -1107,7 +1109,8 @@ focus_tree = {
         x = 32
         y = 1
 
-        prerequisite = {focus = GER_support_weltpolitik}
+        prerequisite = {focus = GER_support_weltpolitik
+        focus = GER_oppose_weltpolitik}
 		
         completion_reward = { 
     
@@ -1437,6 +1440,141 @@ focus_tree = {
 
         }  
                
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_rhineland_industries
+        icon = GFX_focus_GER_the_four_year_plan
+        x = 32
+        y = 4
+
+        prerequisite = {focus = GER_brandenburg_development}
+		
+        completion_reward = {
+
+        add_resource = {
+        type = steel
+        amount = 8
+        state = 51
+        }
+
+        add_resource = {
+        type = tungsten
+        amount = 8
+        state = 42
+        }
+
+        51 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+        42 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_bavarian_factories
+        icon = GFX_focus_GER_the_four_year_plan
+        x = 32
+        y = 5
+
+        prerequisite = {focus = GER_rhineland_industries}
+		
+        completion_reward = {
+
+        54 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+        54 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = arms_factory
+	    level = 1
+	    instant_build = yes
+        }
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_oppose_weltpolitik
+        icon = GFX_goal_GER_weltpolitik
+        x = 49
+        y = 0
+
+        mutually_exclusive = {focus = GER_support_weltpolitik}
+		
+        completion_reward = { 
+
+        }  
+
 		cost = 10
         search_filters = { FOCUS_FILTER_HISTORICAL }
 
