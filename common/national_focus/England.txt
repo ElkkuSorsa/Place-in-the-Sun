@@ -1864,7 +1864,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = ENG_hand_over_to_king }
 
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -1873,12 +1873,6 @@ focus_tree = {
 			swap_ideas = {
 				add_idea = ENG_british_politics_aut
 				remove_idea = ENG_british_politics_dem
-			}
-			hidden_effect = {
-				country_event = {
-					id = ENG_restored_monarchy.1
-					days = 15
-				}
 			}
 		}
 	}
@@ -2178,6 +2172,7 @@ focus_tree = {
 		x = 9
 		y = 5
 		prerequisite = { focus = ENG_revert_the_democratic_reforms focus = ENG_embrace_german_heritage }
+		prerequisite = { focus = ENG_royal_speech }
 
 		cost = 5
 
@@ -2279,7 +2274,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = ENG_hand_over_to_king }
 
-		cost = 2
+		cost = 5
 
 		available = {
 		}
@@ -2290,6 +2285,23 @@ focus_tree = {
 				target = GER
 				modifier = ENG_embrace_german_heritage_modi
 			}
+		}
+	}
+
+	focus = {
+		id = ENG_royal_speech
+		icon = GFX_focus_generic_monarchy_2
+		x = 9
+		y = 4
+		prerequisite = { focus = ENG_hand_over_to_king }
+
+		cost = 2
+
+		available = {
+		}
+
+		completion_reward = {
+			
 		}
 	}
 
