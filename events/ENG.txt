@@ -793,6 +793,32 @@ country_event = {
 
 add_namespace = ENG_restored_monarchy
 country_event = {
+	id = ENG_restored_monarchy.1
+	title = "The Royal Speech"
+	desc = "The king has held a speech from th Buckingham Palace balcony, where he has announced that he will restore the monarchy and deal with the traitous democratic politicians that have wrecked our nation by constant fighting and dividing the nation. We must act and solve the question!"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Arrest the Traitors!"
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}
+	option = {
+		name = "Execute the Traitors!"
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_stability = -0.1
+	}
+}
+
+country_event = {
 	id = ENG_restored_monarchy.2
 	title = "Democratic Collaboration"
 	desc = "Our new royalist and absolutist government has merely no legitimacy at all. Popular sovereignity has been the idea in the United Kingdom that states that legitimacy comes from the people. After we dissolved parliament we lost that legitimacy. We must restore it by collaborating with some conservative politics."

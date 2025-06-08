@@ -2706,6 +2706,8 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			custom_effect_tooltip = ENG_two_power_standard_tt
+			custom_effect_tooltip = "    "
 			remove_ideas = ENG_two_power_standard
 			leave_faction = yes
 		}
