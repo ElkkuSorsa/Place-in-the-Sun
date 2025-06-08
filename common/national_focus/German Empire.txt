@@ -514,7 +514,7 @@ focus_tree = {
     focus = {
         id = GER_western_expansion
         icon = GFX_focus_GER_western_grand_duchies
-        x = 19
+        x = 20
         y = 5
         prerequisite = {focus = GER_continental_hegemony}
 		
@@ -552,7 +552,7 @@ focus_tree = {
     focus = {
         id = GER_eastern_expansion
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 25
+        x = 24
         y = 5
         prerequisite = {focus = GER_continental_hegemony}
 		
@@ -570,7 +570,7 @@ focus_tree = {
     focus = {
         id = GER_eastern_claims
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 26
+        x = 25
         y = 6
         prerequisite = {focus = GER_eastern_expansion}
 		
@@ -588,7 +588,7 @@ focus_tree = {
     focus = {
         id = GER_fortify_prussia
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 24
+        x = 23
         y = 6
         prerequisite = {focus = GER_eastern_expansion}
 		
@@ -606,7 +606,7 @@ focus_tree = {
     focus = {
         id = GER_war_with_russia
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 25
+        x = 24
         y = 7
 
         available = {threat > 0.25}
@@ -632,7 +632,7 @@ focus_tree = {
     focus = {
         id = GER_seek_allies
         icon = GFX_goal_generic_intelligence_exchange
-        x = 22
+        x = 21
         y = 6
 
         prerequisite = {focus = GER_eastern_expansion
@@ -1136,7 +1136,7 @@ focus_tree = {
     focus = {
         id = GER_the_global_economy
         icon = GFX_goal_generic_positive_trade_relations
-        x = 27
+        x = 26
         y = 2
 
         mutually_exclusive = {focus = GER_german_industries}
@@ -1169,9 +1169,76 @@ focus_tree = {
     }
 
     focus = {
+        id = GER_the_civilian_economy
+        icon = GFX_focus_generic_economic_recovery
+        x = 25
+        y = 3
+
+        prerequisite = {focus = GER_the_global_economy}
+		
+        completion_reward = { 
+    
+        52 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+        swap_ideas = {
+        remove_idea = GER_global_economics
+        add_idea = GER_global_economics2
+        }
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_docking_expansion
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 30
+        y = 3
+
+        prerequisite = {focus = GER_the_global_economy}
+		
+        completion_reward = { 
+    
+        62 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = dockyard
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+        add_ideas = GER_expanded_docks
+
+        
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
         id = GER_german_industries
         icon = GFX_focus_GER_the_four_year_plan
-        x = 37
+        x = 38
         y = 2
 
         mutually_exclusive = {focus = GER_the_global_economy}
@@ -1216,7 +1283,7 @@ focus_tree = {
     focus = {
         id = GER_autarkic_reforms
         icon = GFX_focus_GER_autarky_achieved
-        x = 39
+        x = 40
         y = 3
 
         prerequisite = {focus = GER_german_industries}
@@ -1237,8 +1304,8 @@ focus_tree = {
 
     focus = {
         id = GER_steel_refining
-        icon = GFX_focus_GER_the_four_year_plan
-        x = 36
+        icon = GFX_focus_generic_steel
+        x = 37
         y = 3
 
         prerequisite = {focus = GER_german_industries}
@@ -1285,7 +1352,7 @@ focus_tree = {
     focus = {
         id = GER_restrict_foreign_monopolies
         icon = GFX_focus_DEN_heavy_regulations
-        x = 37
+        x = 38
         y = 4
 
         prerequisite = {focus = GER_steel_refining}
@@ -1349,7 +1416,7 @@ focus_tree = {
     focus = {
         id = GER_domestic_subsidies
         icon = GFX_focus_DEN_no_regulations
-        x = 36
+        x = 37
         y = 5
 
         prerequisite = {focus = GER_restrict_foreign_monopolies}
@@ -1372,7 +1439,7 @@ focus_tree = {
     focus = {
         id = GER_military_industries
         icon = GFX_goal_generic_construct_mil_factory
-        x = 40
+        x = 41
         y = 4
 
         prerequisite = {focus = GER_autarkic_reforms}
@@ -1413,7 +1480,7 @@ focus_tree = {
     focus = {
         id = GER_brandenburg_development
         icon = GFX_focus_GER_the_four_year_plan
-        x = 33
+        x = 34
         y = 3
 
         prerequisite = {focus = GER_german_industries}
@@ -1448,7 +1515,7 @@ focus_tree = {
     focus = {
         id = GER_rhineland_industries
         icon = GFX_focus_GER_the_four_year_plan
-        x = 32
+        x = 33
         y = 4
 
         prerequisite = {focus = GER_brandenburg_development}
@@ -1513,7 +1580,7 @@ focus_tree = {
     focus = {
         id = GER_bavarian_factories
         icon = GFX_focus_GER_the_four_year_plan
-        x = 32
+        x = 33
         y = 5
 
         prerequisite = {focus = GER_rhineland_industries}
@@ -1551,6 +1618,59 @@ focus_tree = {
         add_building_construction = {
 	    type = infrastructure
 	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_expand_eastern_production
+        icon = GFX_focus_GER_the_four_year_plan
+        x = 35
+        y = 4
+
+        prerequisite = {focus = GER_brandenburg_development}
+		
+        completion_reward = {
+
+        67 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = arms_factory
+	    level = 1
+	    instant_build = yes
+        }
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+        63 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
 	    instant_build = yes
         }
 

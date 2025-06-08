@@ -236,6 +236,15 @@ ideas = {
 			}
 		}
 
+		GER_global_economics2 = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1 
+				line_change_production_efficiency_factor = 0.15
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+
 		GER_german_industrialisation = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
@@ -273,6 +282,13 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -0.2
 				local_resources_factor = 0.05
 				consumer_goods_factor = -0.1
+			}
+		}
+
+		GER_expanded_docks = {
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 
