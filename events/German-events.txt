@@ -27,7 +27,7 @@ country_event = {
 
 	trigger = {
 		has_war_with = RUS
-		GER_preparedness > 0
+		check_variable = { GER_preparedness > 0 }
 	}
 
 	option = {
@@ -114,8 +114,8 @@ country_event = {
 	title = "SPD Victory!"
 	desc = "The SPD won the 1912 elections"
 	trigger = {
-	date > 1912.01.12
-	NOT = {has_completed_focus = GER_control_reichstag}
+		date = 1912.01.12
+		NOT = {has_completed_focus = GER_control_reichstag}
 	}
 
 	is_triggered_only = no
@@ -139,8 +139,8 @@ country_event = {
 	title = "Conservative Victory!"
 	desc = "Conservative parties won the 1912 elections"
 	trigger = {
-	date > 1912.01.12
-	has_completed_focus = GER_control_reichstag
+		date = 1912.01.12
+		has_completed_focus = GER_control_reichstag
 	}
 
 	is_triggered_only = no

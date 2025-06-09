@@ -353,6 +353,7 @@ agadir_crisis = {
 		}
 
 		timeout_effect = {
+			clr_global_flag = agadir_crisis
 			add_threat = -5
 			news_event = agadir.9
 		}
