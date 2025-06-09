@@ -1,121 +1,91 @@
 ideas = {
 	country = {
-		BEL_catholic_party_policies = {
+
+		BEL_bilingual_society = {
 			modifier = {
-				stability_factor = 0.05
-				consemer_goods_factor = -0.05
-				political_power_factor = 0.1
+				political_power_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.1
 			}
 		}
 
-		BEL_catholic_party_policies_2 = {
+		BEL_bilingual_society2 = {
 			modifier = {
-				stability_factor = 0.1
-				consemer_goods_factor = -0.1
-				political_power_factor = 0.2
+				political_power_factor = -0.12
+				stability_factor = -0.08
+				war_support_factor = -0.08
 			}
 		}
 
-		BEL_catholic_party_policies_3 = {
+		BEL_industrialising = {
 			modifier = {
-				stability_factor = 0.15
-				consemer_goods_factor = -0.15
-				political_power_factor = 0.25
-				line_change_production_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
 			}
 		}
 
-		BEL_identity = {
+		BEL_weak_army = {
 			modifier = {
-				democratic_drift = 0.01
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
 			}
 		}
 
-		BEL_military_service_law_idea = {
+		BEL_weak_army2 = {
 			modifier = {
-				weekly_manpower = 100
-				experience_gain_army = 0.1
-				conscription_factor = 0.3
+				army_attack_factor = -0.09
+				army_defence_factor = -0.09
+				army_org_factor = -0.09
 			}
 		}
 
-		BEL_entente_cooperation_idea = {
+		BEL_weak_army3 = {
 			modifier = {
-				army_defence_factor = 0.1
-				army_strength_factor = 0.1
-				experience_gain_army = 0.20
-				conscription_factor = -0.05
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+				army_org_factor = -0.08
 			}
 		}
 
-		BEL_laissez_faire_economics_1 = {
+		BEL_weak_army4 = {
 			modifier = {
-				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.05
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_start_efficiency_factor = 0.05
+				army_attack_factor = -0.07
+				army_defence_factor = -0.07
+				army_org_factor = -0.07
 			}
 		}
 
-		BEL_laissez_faire_economics_2 = {
+		BEL_weak_army5 = {
 			modifier = {
-				production_speed_buildings_factor = 0.2
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.1
-				production_factory_efficiency_gain_factor = 0.15
-				production_factory_max_efficiency_factor = 0.15
-				production_factory_start_efficiency_factor = 0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.05
 			}
 		}
 
-		BEL_laissez_faire_economics_3 = {
+		BEL_education_reform = {
 			modifier = {
-				production_speed_buildings_factor = 0.2
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.1
-				production_factory_efficiency_gain_factor = 0.15
-				production_factory_max_efficiency_factor = 0.15
-				production_factory_start_efficiency_factor = 0.1
-				stability_factor = 0.1
-				political_power_factor = 0.1
-			}
-		}
-
-		BEL_divided_society_1 = {
-			modifier = {
-				stability_factor = -0.35
-				consemer_goods_factor = 0.20
-				political_power_factor = -0.3
-			}
-		}
-
-		BEL_divided_society_2 = {
-			modifier = {
-				stability_factor = -0.20
-				consemer_goods_factor = 0.15
-				political_power_factor = -0.2
-			}
-		}
-
-		BEL_divided_society_3 = {
-			modifier = {
-				stability_factor = -0.10
-				consemer_goods_factor = 0.1
-				political_power_factor = -0.1
-			}
-		}
-
-		BEL_divided_society_4 = {
-			modifier = {
-				stability_factor = -0.05
-				consemer_goods_factor = 0.05
 				political_power_factor = -0.05
+				research_speed_factor = 0.1
 			}
 		}
+
+		BEL_expand_production_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		BEL_foreign_advisors_idea = {
+			modifier = {
+				experience_gain_army_factor = 0.15
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+
+		
 	}
 }

@@ -504,7 +504,7 @@ focus_tree = {
     focus = {
         id = GER_continental_hegemony
         icon = GFX_focus_GER_european_confederation
-        x = 22
+        x = 21
         y = 4
 
         prerequisite = {focus = GER_place_in_the_sun}
@@ -523,7 +523,7 @@ focus_tree = {
     focus = {
         id = GER_western_expansion
         icon = GFX_focus_GER_western_grand_duchies
-        x = 20
+        x = 19
         y = 5
         prerequisite = {focus = GER_continental_hegemony}
 		
@@ -541,7 +541,7 @@ focus_tree = {
     focus = {
         id = GER_claims_france
         icon = GFX_focus_GER_western_grand_duchies
-        x = 20
+        x = 19
         y = 7
         prerequisite = {focus = GER_western_expansion}
 		
@@ -579,7 +579,7 @@ focus_tree = {
     focus = {
         id = GER_eastern_expansion
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 24
+        x = 23
         y = 5
         prerequisite = {focus = GER_continental_hegemony}
 		
@@ -597,7 +597,7 @@ focus_tree = {
     focus = {
         id = GER_eastern_claims
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 25
+        x = 24
         y = 6
         prerequisite = {focus = GER_eastern_expansion}
 		
@@ -615,7 +615,7 @@ focus_tree = {
     focus = {
         id = GER_fortify_prussia
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 23
+        x = 22
         y = 6
         prerequisite = {focus = GER_eastern_expansion}
 		
@@ -633,7 +633,7 @@ focus_tree = {
     focus = {
         id = GER_war_with_russia
         icon = GFX_focus_GER_eastern_grand_duchies
-        x = 24
+        x = 23
         y = 7
 
         available = {threat > 0.25}
@@ -659,7 +659,7 @@ focus_tree = {
     focus = {
         id = GER_seek_allies
         icon = GFX_goal_generic_intelligence_exchange
-        x = 21
+        x = 20
         y = 6
 
         prerequisite = {focus = GER_eastern_expansion
