@@ -3068,7 +3068,7 @@ focus_tree = {
 	focus = {
 		id = ENG_emergancy_factories
 		icon = GFX_focus_GER_factories_for_resources
-		x = 54
+		x = 53
 		y = 5
 
 		prerequisite = { focus = ENG_shell_factories }
@@ -3123,10 +3123,10 @@ focus_tree = {
 	focus = {
 		id = ENG_convert_civilian_industries
 		icon = GFX_focus_GER_integrated_economies
-		x = 54
-		y = 6
+		x = 55
+		y = 5
 
-		prerequisite = { focus = ENG_emergancy_factories }
+		prerequisite = { focus = ENG_shell_factories }
 
 		offset = {
 			x = -30
@@ -3286,7 +3286,7 @@ focus_tree = {
 			}
 		}
 
-		prerequisite = { focus = ENG_support_english_military_industry }
+		prerequisite = { focus = ENG_support_english_military_industry focus = ENG_military_industries }
 
 		cost = 5
 

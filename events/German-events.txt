@@ -27,7 +27,7 @@ country_event = {
 
 	trigger = {
 		has_war_with = RUS
-		GER_preparedness > 0
+		check_variable = { GER_preparedness > 0 }
 	}
 
 	option = {
