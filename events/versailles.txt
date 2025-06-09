@@ -24,14 +24,20 @@ country_event = {
 			1414 = {
 				set_demilitarized_zone = yes
 			}
-			1250 = {
-				set_demilitarized_zone = yes
-			}
 			1253 = {
 				set_demilitarized_zone = yes
 			}
 			51 = {
 				set_demilitarized_zone = yes
+			}
+			if = {
+				limit = { has_global_flag = paris_luxembourg_bel }
+				BEL = {
+					annex_country = {
+						target = LUX
+						transfer_troops = no
+					}
+				}
 			}
 		}
 	}
@@ -97,21 +103,34 @@ country_event = {
 
 country_event = {
 	id = versailles.2
-	title = "Question of Luxembourg"
-	desc = "The Question of Luxembourg has arisen in the negotiations. Some have proposed Belgium should annex the Grand Duchy of Luxembourg, while others have proposed it should remain independent. The Grand Duchy has been a part of the German Empire since 1815, but it is also a part of the Kingdom of Belgium. The question is whether or not we should annex it."
+	title = "Paris Peace Conference Starts"
+	desc = "The delegates and diplomats, even the country leaders have arrieved to France. It is time to negotiate a peace, a lasting peace for the Great War. The central powers must pay, but how much can we actually demand, and will others agree? It is time to vote for the issues!"
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = {
-		name = "They shall remain independent"
+	immediate = {
+		hidden_effect = {
+			set_variable = { warscore = 1 }
+			if = {
+				limit = { 
+					any_state_in = {
+						continent = europe
+					}
+				}
+				add_to_variable = { warscore = 1 }
+			}
+			if = {
+				limit = {
+					is_major = yes
+				}
+				add_to_variable = { warscore = 1 }
+			}
+		}
 	}
 
 	option = {
-		name = "Grant them to Belgium as reparation"
-		BEL = {
-			annex_country = LUX
-		}
+		name = "Let's start!"
+		custom_effect_tooltip = paris_start
 	}
 }
 

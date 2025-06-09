@@ -1,0 +1,40 @@
+scripted_gui = {
+	paris_conference = {
+		window_name = "paris_conference"
+		context_type = decision_category
+
+		triggers = {
+			paris_option_1_visible = {
+				NOT = {
+					has_country_flag = paris_voted
+				}
+			}
+			paris_option_2_visible = {
+				NOT = {
+					has_country_flag = paris_voted
+				}
+			}
+			paris_conference_current_vote_visible = {
+				has_country_flag = paris_voted
+			}
+		}
+		 
+		effects = {
+			paris_option_1_click = {
+				add_to_variable = {
+					global.option_1 = warscore
+				}
+				set_country_flag = paris_voted
+				set_country_flag = paris_voted_1
+			}
+
+			paris_option_2_click = {
+				add_to_variable = {
+					global.option_2 = warscore
+				}
+				set_country_flag = paris_voted
+				set_country_flag = paris_voted_2
+			}
+		}
+	}
+}

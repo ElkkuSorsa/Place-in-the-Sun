@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_parisbutton"
+		textureFile = "/gfx/interface/button.dds"
+	}
+}
