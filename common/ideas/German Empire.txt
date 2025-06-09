@@ -27,6 +27,27 @@ ideas = {
 			}
 		}
 
+		GER_uncooperative_reichstag2 = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		GER_american_trade_deals_idea = {
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		GER_junker_investments = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+
 		GER_weltpolitk = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {
