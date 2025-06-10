@@ -1,0 +1,22 @@
+﻿l_english:
+ paris_conference_title: "§YParis Peace Conference§!"
+ paris_conference_descr: "Our Voting Power: §Y[?warscore]§!£GFX_war_score"
+ paris_conference_current: "Current Contested Area: \n§Y[GetCurrentContest]§!"
+
+ paris_conference_current_vote: "We voted for: \n§Y[GetCurrentVote]§!"
+
+ paris_votes1: "Current Votes: §Y[?global.option_1]"
+ paris_votes2: "Current Votes: §Y[?global.option_2]"
+
+ paris_voted_DeMil: "Demilitarization"
+ paris_voted_FRA: "French Occupation"
+
+ LUX_remain_independent: "§YLuxembourg§! will remain independent"
+ BEL_annex_LUX: "§YBelgium§! will annex Luxembourg"
+
+ paris_voted_BEL: "Belgian Occupation"
+ paris_voted_IND_LUX: "Independent Luxembourg"
+
+ PARIS_luxembourg: "Luxembourg"
+
+ paris_start: "§2Paris Peace Conference§! will be available in the §Ydecisions§!\n\nThe victors can vote on territorial changes and reparations. The voting power is based on their power.\n\nOur voting power is §Y[?warscore]§!."

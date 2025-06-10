@@ -1630,7 +1630,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_promote_anglicanism
-		icon = GFX_focus_DEN_empower_the_lords
+		icon = GFX_goal_ENG_church_people
 		x = 37
 		y = 6
 		prerequisite = { focus = ENG_for_the_good_of_britain }

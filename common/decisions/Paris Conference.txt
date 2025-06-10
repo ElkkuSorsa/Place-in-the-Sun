@@ -1,0 +1,33 @@
+paris_conference = {
+	PARIS_luxembourg = {
+		activation = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		priority = 100
+
+		selectable_mission = no
+		days_mission_timeout = 15
+		fire_only_once = yes
+
+		timeout_effect = {
+			clr_country_flag = paris_voted
+			clr_country_flag = paris_voted_1
+			clr_country_flag = paris_voted_2
+			if = {
+				limit = {
+					check_variable = { global.option_2 > global.option_1 }
+				}
+				custom_effect_tooltip = BEL_annex_LUX
+				set_global_flag = paris_luxembourg_bel
+				else = {
+					custom_effect_tooltip = LUX_remain_independent
+				}
+			}
+		}
+	}
+}

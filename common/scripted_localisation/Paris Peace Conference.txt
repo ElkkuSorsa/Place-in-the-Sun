@@ -1,0 +1,52 @@
+defined_text = {
+	name = GetCurrentVote
+	text = {
+		trigger = {
+			has_country_flag = paris_voted_1
+			has_active_mission = PARIS_luxembourg
+		}
+		localization_key = paris_voted_IND_LUX
+	}
+	text = {
+		trigger = {
+			has_country_flag = paris_voted_2
+			has_active_mission = PARIS_luxembourg
+		}
+		localization_key = paris_voted_BEL
+	}
+}
+
+defined_text = {
+	name = GetOption1
+	text = {
+		trigger = {
+			has_active_mission = PARIS_luxembourg
+		}
+		localization_key = paris_voted_IND_LUX
+	}
+}
+defined_text = {
+	name = GetOption2
+	text = {
+		trigger = {
+			has_active_mission = PARIS_luxembourg
+		}
+		localization_key = paris_voted_BEL
+	}
+}
+
+defined_text = {
+	name = GetCurrentContest
+	text = {
+		trigger = {
+			has_active_mission = PARIS_luxembourg
+		}
+		localization_key = PARIS_luxembourg
+	}
+	text = {
+		trigger = {
+			has_active_mission = PARIS_luxembourg
+		}
+		localization_key = paris_voted_IND_LUX
+	}
+}

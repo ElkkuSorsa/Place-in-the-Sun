@@ -1,0 +1,71 @@
+guiTypes = {
+	containerWindowType = {
+		name = "paris_conference"
+		position = { x = 0 y = 0 }
+		size = { width = 516 height = 320 }
+
+		instantTextboxType = {
+			name = "paris_conference_title"
+			position = { x = 0 y = 20 }
+			font = "hoi_36header"
+			text = paris_conference_title
+			maxWidth = 516
+			maxHeight = 50
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "paris_conference_desc"
+			position = { x = 0 y = 70 }
+			font = "hoi_20b"
+			text = paris_conference_descr
+			maxWidth = 516
+			maxHeight = 25
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "paris_conference_current"
+			position = { x = 0 y = 140 }
+			font = "hoi_24header"
+			text = paris_conference_current
+			maxWidth = 516
+			maxHeight = 25
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "paris_conference_current_vote"
+			position = { x = 0 y = 200 }
+			font = "hoi_24header"
+			text = paris_conference_current_vote
+			maxWidth = 516
+			maxHeight = 25
+			format = center
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "paris_option_1"
+			spriteType = "GFX_parisbutton"
+			position = { x= 120 y = 200 }
+			buttonText= "[GetOption1]"
+			buttonFont = "hoi_20b"
+			pdx_tooltip = paris_votes1
+			orientation = upper_center
+		}
+
+		buttonType = {
+			name = "paris_option_2"
+			spriteType = "GFX_parisbutton"
+			position = { x= 120 y = 240 }
+			buttonText= "[GetOption2]"
+			buttonFont = "hoi_20b"
+			pdx_tooltip = paris_votes2
+			orientation = upper_center
+		}
+	}
+}
