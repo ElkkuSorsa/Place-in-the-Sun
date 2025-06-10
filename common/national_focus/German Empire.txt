@@ -503,11 +503,29 @@ focus_tree = {
 
     focus = {
         id = GER_continental_hegemony
-        icon = GFX_focus_GER_european_confederation
+        icon = GFX_focus_GER_realpolitik
         x = 21
         y = 4
 
         prerequisite = {focus = GER_place_in_the_sun}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_triple_alliance
+        icon = GFX_SOV_bring_old_trotskyists_back_ccp_2d_sov_compatibility
+        x = 21
+        y = 5
+        prerequisite = {focus = GER_continental_hegemony}
 		
         completion_reward = { 
 
@@ -540,7 +558,7 @@ focus_tree = {
 
     focus = {
         id = GER_claims_france
-        icon = GFX_focus_GER_western_grand_duchies
+        icon = GFX_focus_focus_fra_down_marianne
         x = 19
         y = 7
         prerequisite = {focus = GER_western_expansion}
@@ -557,6 +575,57 @@ focus_tree = {
     }
 
     focus = {
+        id = GER_war_with_france
+        icon = GFX_focus_attack_france
+        x = 19
+        y = 8
+
+        available = {threat > 0.25}
+
+        prerequisite = {focus = GER_claims_france}
+		
+        completion_reward = { 
+
+        
+
+        add_threat = 20
+        
+        create_wargoal = {
+        type = puppet_wargoal_focus
+        target = FRA
+        }
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_european_project
+        icon = GFX_focus_GER_european_confederation
+        x = 21
+        y = 9
+
+        available = {has_peace = yes}
+
+        prerequisite = {focus = GER_war_with_france
+        focus = GER_destabilize_russia
+        focus = GER_form_mittelafrika
+        focus = GER_eastern_puppets}
+		
+        completion_reward = { 
+
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
         id = GER_colonial_claims
         icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
         x = 17.5
@@ -564,6 +633,57 @@ focus_tree = {
         prerequisite = {focus = GER_western_expansion}
 
         prerequisite = {focus = GER_colonies}
+		
+        completion_reward = { 
+
+        
+
+        }  
+               
+		cost = 5
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_war_with_britain
+        icon = GFX_focus_attack_britain
+        x = 16.25
+        y = 7
+
+        available = {threat > 0.25}
+        
+        prerequisite = {focus = GER_colonial_claims}
+
+        prerequisite = {focus = GER_colonial_investments}
+		
+        completion_reward = { 
+
+        add_threat = 20
+        
+        create_wargoal = {
+        type = puppet_wargoal_focus
+        target = ENG
+        }
+
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_form_mittelafrika
+        icon = GFX_focus_attack_britain
+        x = 16.25
+        y = 8
+
+        
+
+        prerequisite = {focus = GER_colonial_claims}
+
+        prerequisite = {focus = GER_colonial_investments}
 		
         completion_reward = { 
 
@@ -596,7 +716,7 @@ focus_tree = {
 
     focus = {
         id = GER_eastern_claims
-        icon = GFX_focus_GER_eastern_grand_duchies
+        icon = GFX_focus_GER_the_eastern_border
         x = 24
         y = 6
         prerequisite = {focus = GER_eastern_expansion}
@@ -614,7 +734,7 @@ focus_tree = {
 
     focus = {
         id = GER_fortify_prussia
-        icon = GFX_focus_GER_eastern_grand_duchies
+        icon = GFX_SOV_fortify_mongolian_border_ccp_2d_sov_compatibility
         x = 22
         y = 6
         prerequisite = {focus = GER_eastern_expansion}
@@ -632,7 +752,7 @@ focus_tree = {
 
     focus = {
         id = GER_war_with_russia
-        icon = GFX_focus_GER_eastern_grand_duchies
+        icon = GFX_focus_eng_expose_the_belly_of_the_bear
         x = 23
         y = 7
 
@@ -644,10 +764,50 @@ focus_tree = {
 		
         completion_reward = { 
         
+        add_threat = 20
+        
         create_wargoal = {
         type = puppet_wargoal_focus
         target = RUS
         }
+        
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_eastern_puppets
+        icon = GFX_focus_GER_brest_litovsk_borders
+        x = 25
+        y = 8
+
+        prerequisite = {focus = GER_war_with_russia}
+		
+        completion_reward = { 
+        
+        
+        
+        }  
+               
+		cost = 10
+        search_filters = { FOCUS_FILTER_HISTORICAL }
+
+    }
+
+    focus = {
+        id = GER_destabilize_russia
+        icon = GFX_focus_AUS_union_of_danubian_socialist_republics
+        x = 22
+        y = 8
+
+        prerequisite = {focus = GER_war_with_russia}
+		
+        completion_reward = { 
+        
+        
         
         }  
                

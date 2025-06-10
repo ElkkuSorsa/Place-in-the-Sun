@@ -17,10 +17,27 @@ ideas = {
 			}
 		}
 
+		BEL_bilingual_society2 = {
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
 		BEL_industrialising = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		BEL_industrialising2 = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 			}
@@ -86,6 +103,11 @@ ideas = {
 			}
 		}
 
-		
+		BEL_expanded_military = {
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.15
+			}
+		}
 	}
 }

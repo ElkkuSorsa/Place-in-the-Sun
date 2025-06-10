@@ -14,32 +14,20 @@ focus_tree = {
 	continuous_focus_position = { x = 0 y = 1500 }
 
 	focus = {
-		id = BEL_schoallert_cabinet
-		icon = GFX_focus_BEL_belgian_special_forces
-		x = 15
+		id = BEL_continue_industrialisation
+		icon = GFX_focus_BEL_belgian_miracle
+		x = 10
 		y = 0
 		
 		completion_reward = {
-		add_political_power = 75
-		add_stability = 0.05
-		}
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_start_the_education_reforms
-		icon = GFX_focus_research
-		x = 15
-		y = 1
-
-		prerequisite = {focus = BEL_schoallert_cabinet}
 		
-		completion_reward = {
+		swap_ideas = {
+		remove_idea = BEL_industrialising
+		add_idea = BEL_industrialising2
+		}
 
-		add_ideas = BEL_education_reform
-	
+		
+
 		}
 		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -47,205 +35,6 @@ focus_tree = {
 	}
 
 	
-
-	focus = {
-		id = BEL_language_schools
-		icon = GFX_focus_BEL_interpreters
-		x = 20
-		y = 2
-
-		prerequisite = {focus = BEL_ease_ethnic_tensions}
-		
-		completion_reward = {
-		
-		swap_ideas = {
-		remove_idea = BEL_bilingual_society
-		add_idea = BEL_bilingual_society2
-		}
-
-		}
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_prepare_the_army
-		icon = GFX_focus_BEL_eben_emael_fortress
-		x = 11
-		y = 1
-
-		prerequisite = {focus = BEL_schoallert_cabinet}
-		
-		completion_reward = {
-		
-		army_experience = 15
-
-		swap_ideas = {
-		remove_idea = BEL_weak_army
-		add_idea = BEL_weak_army2
-		}
-		
-		}
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_expand_production
-		icon = GFX_focus_generic_military_industry
-		x = 12
-		y = 2
-
-		prerequisite = {focus = BEL_prepare_the_army}
-		
-		completion_reward = {
-		
-		6 = {
-		
-		add_extra_state_shared_building_slots = 1
-
-        add_building_construction = {
-	    type = arms_factory
-	    level = 1
-	    instant_build = yes
-        }
-
-		add_ideas = BEL_expand_production_idea
-
-		}
-		
-		}
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_improve_training
-		icon = GFX_focus_BEL_junior_officer_training
-		x = 10
-		y = 2
-
-		prerequisite = {focus = BEL_prepare_the_army}
-		
-		completion_reward = {
-		
-		swap_ideas = {
-		remove_idea = BEL_weak_army2
-		add_idea = BEL_weak_army3
-		}
-		
-		}
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_improve_morale
-		icon = GFX_focus_generic_manpower
-		x = 11
-		y = 3
-
-		prerequisite = {focus = BEL_expand_production}
-
-		prerequisite = {focus = BEL_improve_training}
-		
-		completion_reward = {
-
-		add_war_support = 0.1
-		
-		swap_ideas = {
-		remove_idea = BEL_weak_army3
-		add_idea = BEL_weak_army4
-		}
-		
-		}
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_foreign_advisors
-		icon = GFX_SOV_military_engineering_university_ccp_2d_sov_compatibility
-		x = 9
-		y = 3
-
-		prerequisite = {focus = BEL_improve_training}
-		
-		completion_reward = {
-		
-		add_ideas = BEL_foreign_advisors_idea
-		
-		}
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_finish_army_reforms
-		icon = GFX_focus_generic_advanced_military_studies
-		x = 10
-		y = 4
-
-		prerequisite = {focus = BEL_improve_morale}
-
-		prerequisite = {focus = BEL_foreign_advisors}
-		
-		completion_reward = {
-		
-		army_experience = 25
-
-		swap_ideas = {
-		remove_idea = BEL_weak_army4
-		add_idea = BEL_weak_army5
-		}
-		
-		}
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_ease_ethnic_tensions
-		icon = GFX_focus_BEL_interpreters
-		x = 19
-		y = 1
-
-		prerequisite = {focus = BEL_schoallert_cabinet}
-		
-		completion_reward = {
-		
-		add_stability = 0.1
-
-		}
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
-	focus = {
-		id = BEL_snap_elections
-		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
-		x = 15
-		y = 2
-
-		allow_branch = { has_completed_focus = BEL_start_the_education_reforms }
-		
-		completion_reward = {
-		
-		
-
-		}
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-	}
-
+	
 	
 }
