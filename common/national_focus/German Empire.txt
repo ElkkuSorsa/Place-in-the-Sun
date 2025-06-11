@@ -890,7 +890,9 @@ focus_tree = {
         army_experience = 20
 
         add_timed_idea = {
+
         idea = GER_refreshment_excersizes_idea days = 180
+        
         }
 
         }  
