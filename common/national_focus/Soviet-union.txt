@@ -4,33 +4,33 @@ focus_tree = {
         factor = 0
 
         modifier = {
-            add = 50
+            add = 49
             tag = SOV
         }
     }
-    # soviet army tree
+	default = no
     	focus = {
-		id = Sov_Red_army_reorganisation
+		id = SOV_Red_army_reorganisation
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 23
-		y = 15
+		y = 6
 		cost = 5
 		available = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = Sov_Red_army_1
-				add_idea = Sov_Red_army_2
+				remove_idea = SOV_Red_army_1
+				add_idea = SOV_Red_army_2
 			}
 		}
 	}
         focus = {
-		id = Sov_Loot_weapon_stashes
+		id = SOV_Loot_weapon_stashes
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 24
-		y = 16
+		y = 7
 		cost = 3
-        prerequisite = { focus = Sov_Red_army_reorganisation}
+        prerequisite = { focus = SOV_Red_army_reorganisation}
 		available = {
 		}
 
@@ -39,149 +39,175 @@ focus_tree = {
 		}
 	}
         focus = {
-		id = Sov_Repurpose_old_factories
+		id = SOV_Repurpose_old_factories
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 22
-		y = 16
+		y = 7
 
-		cost = 3
-        prerequisite = { focus = Sov_Red_army_reorganisation}
+		cost = 5
+        prerequisite = { focus = SOV_Red_army_reorganisation}
 		available = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Sov_disorganized_military_1
-				add_idea = Sov_disorganized_military_2
+				1 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = 	arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
         focus = {
-		id = Sov_continue_army_reforms
+		id = SOV_continue_army_reforms
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 23
-		y = 17
+		y = 8
 
-		cost = 5
-        prerequisite = { focus = Sov_Loot_weapon_stashes focus = Sov_Repurpose_old_factories }
+		cost = 10
+        prerequisite = { focus = SOV_Loot_weapon_stashes focus = SOV_Repurpose_old_factories }
 		available = {
 		}
 
 		completion_reward = {
-		add_army_exprience = 75
-		}
-	}
-	    focus = {
-		id = Sov_recruit_partisans
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 20
-		y = 18
-
-		cost = 5
-        prerequisite = { focus = Sov_continue_army_reforms }
-		available = {
-		}
-
-		completion_reward = {
-		add_army_exprience = 75
-		}
-	}
-	    focus = {
-		id = Sov_Utilize_railway_guns
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 22
-		y = 18
-
-		cost = 4
-        prerequisite = { focus = Sov_continue_army_reforms }
-		available = {
-		}
-
-		completion_reward = {
-		add_army_exprience = 75
-		}
-	}
-		focus = {
-		id = Sov_fix_the_supply_problems
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 21
-		y = 19
-
-		cost = 4
-        prerequisite = { focus = Sov_Utilize_railway_guns focus = Sov_recruit_partisans }
-		available = {
-		}
-
-		completion_reward = {
-		add_army_exprience = 75
-		}
-	}
-	    focus = {
-		id = Sov_establish_Cheka
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 24
-		y = 18
-
-		cost = 4
-        prerequisite = { focus = Sov_continue_army_reforms }
-		available = {
-		}
-
-		completion_reward = {
-		add_idea = SOV_Cheka
-		}
-	}
-	    focus = {
-		id = Sov_Trotskys_reforms
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 23
-		y = 19
-
-		cost = 5
-        prerequisite = { focus = Sov_establish_Cheka  }
-		available = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
+				swap_ideas = {
 				remove_idea = Sov_Red_army_2
 				add_idea = Sov_Red_army_3
 			}
-		add_timed_idea = { idea = SOV_Trotskys_reforms  days = 125 }	
+		}
+	}
+	    focus = {
+		id = SOV_recruit_partisans
+		icon = GFX_focus_prc_infiltration
+		x = 20
+		y = 9
+
+		cost = 5
+        prerequisite = { focus = SOV_continue_army_reforms }
+		available = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	    focus = {
+		id = SOV_Utilize_railway_guns
+		icon = GFX_focus_generic_railway_gun
+		x = 22
+		y = 9
+
+		cost = 4
+        prerequisite = { focus = SOV_continue_army_reforms }
+		available = {
+		}
+
+		completion_reward = {
 		}
 	}
 		focus = {
-		id = Sov_The_great_eastern_offensive
+		id = SOV_fix_the_supply_issues
+		icon = GFX_focus_generic_supply_line
+		x = 21
+		y = 10
+
+		cost = 4
+        prerequisite = { focus = SOV_Utilize_railway_guns focus = SOV_recruit_partisans }
+		available = {
+		}
+
+		completion_reward = {
+		
+		}
+	}
+	    focus = {
+		id = SOV_establish_Cheka
+		icon = GFX_focus_generic_secret_service_agency
+		x = 24
+		y = 9
+
+		cost = 4
+        prerequisite = { focus = SOV_continue_army_reforms }
+		available = {
+		}
+
+		completion_reward = {
+		add_ideas =	{ SOV_Cheka }
+		add_political_power = 25
+		create_intelligence_agency = {
+        name = "Cheka"
+        icon = GFX_intelligence_agency_logo_agency
+        }
+		}
+	}
+	    focus = {
+		id = SOV_Trotskys_reforms
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 23
+		y = 10
+
+		cost = 5
+        prerequisite = { focus = SOV_establish_Cheka  }
+		prerequisite = { focus = SOV_Utilize_railway_guns  }
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Sov_Red_army_3
+				add_idea = SOV_Red_army_4
+			}
+		add_timed_idea = { idea = SOV_Trotskys_reforms  days = 125 }
+		}
+	}
+		focus = {
+		id = SOV_The_great_eastern_offensive
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
 		x = 24
-		y = 20
+		y = 11
 
 		cost = 2
-        prerequisite = { focus = Sov_Trotskys_reforms  }
+        prerequisite = { focus = SOV_Trotskys_reforms  }
 		available = {
 		}
 
 		completion_reward = {
-		add_timed_idea = { idea = Sov_The_great_eastern_offensive  days = 100 }
+		add_timed_idea = { idea = SOV_The_great_eastern_offensive  days = 100 }
 		}
 	}
 		focus = {
-		id = Sov_Destroy_the_southern_army
+		id = SOV_Red_army_triumphant
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		x = 22
-		y = 20
+		x = 23
+		y = 12
 
 		cost = 2
-        prerequisite = { focus = Sov_Trotskys_reforms  }
+        prerequisite = { focus = SOV_The_great_eastern_offensive  }
+		prerequisite = { focus = SOV_Destroy_the_southern_army  }
 		available = {
 		}
 
 		completion_reward = {
-		add_timed_idea = { idea = SOV_Southern_offensive  days = 75 }
 		}
 	}
+		focus = {
+		id = SOV_Destroy_the_southern_army
+		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+		x = 22
+		y = 11
 
-    # soviet foreign policy tree
+		cost = 2
+        prerequisite = { focus = SOV_Trotskys_reforms  }
+		available = { }
+		
+
+		completion_reward = {
+		add_timed_idea = { idea = SOV_Southern_offensive  days = 100 }  }
+		
+	}
+
     	focus = {
 		id = SOV_Foreign_policy
 		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
@@ -233,7 +259,7 @@ focus_tree = {
 
 		available = {
 		}
-         prerequisite = { focus = SOV_recognise_finland }
+        prerequisite = { focus = SOV_recognise_finland }
 		completion_reward = {
         add_political_power = 70
 		}
@@ -413,7 +439,6 @@ focus_tree = {
         
 		}
 	}
-	# Soviet Political Tree
 	    focus = {
 		id = SOV_12th_party_congress
 		icon = GFX_focus_SOV_the_supreme_soviet
@@ -461,7 +486,7 @@ focus_tree = {
 	}
 		focus = {
 		id = SOV_Ally_with_stalin
-		icon = GFX_
+		icon = GFX_focus_GER_alliance_with_the_ussr
 		x = 40
 		y = 8
 		cost = 5
@@ -710,12 +735,13 @@ focus_tree = {
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		x = 34
 		y = 7
-		cost = 5
+		cost = 10
 		prerequisite = { focus = SOV_choose_the_successor }
 		available = { always = no
 		}
 
 		completion_reward = {
+		add_stability = -0.25
 		
 		}
 	}

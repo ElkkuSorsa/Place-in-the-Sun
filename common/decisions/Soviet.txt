@@ -1,3 +1,0 @@
-SOV_civil_war = {
-
-}

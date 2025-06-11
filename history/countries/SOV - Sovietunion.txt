@@ -1,8 +1,8 @@
 oob = "SOV_1936"
-capital = 1
+capital = 219
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = 0.11
+set_war_support = 0.7
 set_convoys = 0
 
 add_ideas = {
@@ -14,6 +14,25 @@ add_ideas = {
 	partial_mobilisation
     Sov_disorganized_military_1
 }
+#For start date 1939.1.1
+recruit_character = SOV_Leon_Trotsky
+recruit_character = SOV_Josef_Stalin
+recruit_character = SOV_Mikhail_kalinin
+recruit_character = SOV_Nikolai_Bukharin
 
+add_ideas = { 
+	SOV_Red_army_1
+	SOV_Industry_in_ruins
+}
 
+set_politics = {
+	ruling_party = communism
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 5
+	communism = 75
+	neutrality = 10
+}
 

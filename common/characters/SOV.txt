@@ -1,0 +1,127 @@
+characters={
+	SOV_Vladimir_Lenin = {
+		name = "Vladmir Lenin"
+		country_leader = {
+			expire = "1924.21.1"
+			ideology = Leninism
+		}
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+	}
+        SOV_Leon_Trotsky = {
+    name = "Leon Trotsky"
+            portraits = {
+			civilian = {
+                large = "idea_mex_leon_trotsky"
+                small = "idea_mex_leon_trotsky"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { Red_Army_Organizer }
+        cost = 75
+        can_be_fired = yes
+        idea_token = SOV_Leon_Trotsky
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+    SOV_Josef_Stalin = {
+    name = "Josef_stalin"
+            portraits = {
+			civilian = {
+                large = "idea_SOV_joseph_stalin"
+                small = "idea_SOV_joseph_stalin"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { Political_Commissar	}
+        cost = 150
+        can_be_fired = yes
+        idea_token = SOV_Josef_Stalin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+        	visible = {
+			date < 1919.1.1
+		}
+
+        available = {
+            always = yes
+        }
+    }
+}
+    SOV_Nikolai_Bukharin = {
+    name = "Nikolai_Bukharin"
+            portraits = {
+			civilian = {
+                large = "idea_SOV_nikolay_bukharin"
+                small = "idea_SOV_nikolay_bukharin"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { Reformer_of_Economy }
+        cost = 150
+        can_be_fired = yes
+        idea_token = SOV_Nikolai_Bukharin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+        	visible = {
+			date < 1919.1.1
+		}
+
+        available = {
+            always = yes
+        }
+    }
+}
+    SOV_Mikhail_kalinin = {
+    name = "Mikhail Kalinin"
+            portraits = {
+			civilian = {
+                large = "idea_mikhail_kalinin"
+                small = "idea_mikhail_kalinin"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { Popular_figurehead }
+        cost = 150
+        can_be_fired = yes
+        idea_token = SOV_Mikhail_Kalinin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+        	visible = {
+			date < 1919.1.1
+		}
+
+        available = {
+            always = yes
+        }
+    }
+}
+}
