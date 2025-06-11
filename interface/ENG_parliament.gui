@@ -1,51 +1,77 @@
 guiTypes = {
-    containerWindowType = {
-        name = "independent_container" # Can be used in the window_name of scripted GUI
+	containerWindowType = {
+        name = "parliament_gui_container"
         position = { x = 0 y = 0 }
-        size = { width = 100% height = 600 }
+		size = { width = 400 height = 540 }
 
+		containerWindowType = {
+			name = "parliament_semicircle_main_container"
+			position = { x = -5 y = 50 }
+			size = { width = 507 height = 325 }
+
+			containerWindowType = {
+				name = "parliament_main_entry"
+				position = { x = 205 y = 190 }
+				
+
+			}
+			
+			gridboxtype = {
+				name = "parliament_semicircle_main_grid"
+				position = { x = 30 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		gridboxtype = {
+			name = "parliament_member_grid"
+			position = { x = -150 y = 345 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 280 height = 18 }
+			max_slots_vertical = 25
+			add_horizontal = no
+		}
+	}
+
+
+	containerWindowType = {
+        name = "parliament_semicircle_main_entry"
+        position = { x = 0 y = 0 }
+		scale = 0.75
+		iconType = {
+			name = "parliament_semicircle_main_icon"
+			spriteType = "GFX_parliament_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip_delayed = "parliament_party_description"
+		}
+    }
+
+	containerWindowType = {
+        name = "parliament_member_entry"
+        position = { x = 75 y = 0 }
+		size = { width = 500 height = 100 }
+
+		iconType = {
+		 	name = "parliament_member_icon"
+		 	spriteType = "GFX_parliament_party_icon"
+		 	position = { x = -20 y = 3 }
+		 	pdx_tooltip = "parliament_member_text"
+		 	pdx_tooltip_delayed = "parliament_party_description"
+		}
 		instantTextboxType = {
-			name = "ENG_public_trust_desc"
-			position = { x = 106 y = 110 }
+			name = "parliament_member_text"
+			position = { x = 0 y = 0 }
 			font = "hoi_20b"
-			text = ENG_public_trust_desc
-			maxWidth = 50000
-			maxHeight = 50000
+			maxWidth = 400
+			maxHeight = 16
 			format = left
-			alwaystransparent = yes
+			text = "parliament_member_text"
+			pdx_tooltip = "parliament_member_text"
+			pdx_tooltip_delayed = "parliament_party_description"
 		}
-
-		instantTextboxType = {
-			name = "ENG_public_trust"
-			position = { x = 106 y = 60 }
-			font = "hoi_36header"
-			text = ENG_public_trust
-			maxWidth = 50000
-			maxHeight = 50000
-			format = left
-			alwaystransparent = yes
-		}
-        
-		instantTextboxType = {
-			name = "ENG_parliament_title"
-			position = { x = 106 y = 200 }
-			font = "hoi_36header"
-			text = ENG_parliament_title
-			maxWidth = 50000
-			maxHeight = 50000
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "ENG_parliament"
-			position = { x = 106 y = 250 }
-			font = "hoi_20b"
-			text = ENG_parliament
-			maxWidth = 50000
-			maxHeight = 50000
-			format = left
-			alwaystransparent = yes
-		}
+		
     }
 }
