@@ -32,3 +32,23 @@
  ENG_elections_1918_event: "Elections of [GetYear]"
 
  faction_invite.t: "[]"
+
+ parliament_gui_title: "Grid Parliament"
+ semicircle_parliament_gui_title: "Semicircle Parliament"
+ parliament_main_icon_tt: "[GetParliamentSeatName] - [GetParliamentPartyName]"
+ parliament_seat_text: "Seat [?temp_seat|Y0]"
+ parliament_member_text: "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats [GetParliamentPartyAlliance]"
+ parliament_party_description: "[GetParliamentPartyDesc]"
+ parliament_modify_button_tt: "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+
+ parliament_gov: "(§Yin government§!)"
+
+ party_1_text: "§RLabour Party§!"
+ party_2_text: "§YLiberal party§!"
+ party_3_text: "§GIrish Parliamentary Party§!"
+ party_4_text: "§2Conservative and unionist party§!"
+
+ party_1_desc: "§RLabour Party§! is a major political party in the United Kingdom, representing the interests of the working class and advocating for social justice and workers' rights. They are not socialist, but rather a social democratic party. They are the third largest party in the UK. They support home rule for Ireland, but do not support full independence."
+ party_2_desc: "§YLiberal party§! is a centrist political party in the United Kingdom, historically associated with progressive policies and individual liberties. THey are the largest party in the UK. They support home rule for Ireland, but do not support full independence."
+ party_3_desc: "§GIrish Parliamentary Party§! is a political party in Ireland that advocates for Irish nationalism and self-governance, seeking to represent the interests of the Irish people within the United Kingdom. They do not advocate for full independence, but rather for home rule within the UK."
+ party_4_desc: "§2Conservative and unionist party§! is a major political party in the United Kingdom, traditionally representing conservative values, unionism, and the interests of the British establishment. They are the second largest party in the UK. They refuse to work with the Irish Parliamentary Party, as they are staunch unionists and do not support home rule for Ireland."
