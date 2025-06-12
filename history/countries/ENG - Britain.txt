@@ -75,17 +75,11 @@ recruit_character = ENG_kitchener
 recruit_character = ENG_haldane
 recruit_character = ENG_churchill
 set_cosmetic_tag = ENG_democratic
-set_country_flag = ENG_lib_his
-set_variable = { libseats = 274 }
-set_variable = { conseats = 272 }
-set_variable = { ireseats = 74 }
-set_variable = { labseats = 40 }
-ENG_calc_gov = yes
 
 parliament_gui_initial = yes
 set_country_flag = gov_lab
-set_country_flag = gov_lib
-set_country_flag = gov_ire
+set_country_flag = ruling_lib
+set_country_flag = ruling_ire
 
 set_politics = {
 	ruling_party = democratic

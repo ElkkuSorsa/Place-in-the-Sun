@@ -41,7 +41,8 @@
  parliament_party_description: "[GetParliamentPartyDesc]"
  parliament_modify_button_tt: "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
 
- parliament_gov: "(§Yin government§!)"
+ parliament_gov: "(§3Supporting§!)"
+ parliament_ruling: "(§2Ruling§!)"
 
  party_1_text: "§RLabour Party§!"
  party_2_text: "§YLiberal party§!"

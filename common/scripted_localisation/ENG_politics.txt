@@ -75,6 +75,9 @@ defined_text = {
 
 defined_text = {
 	name = GetParliamentPartyAlliance
+
+	# Supporting
+
 	text = {
 		trigger = {
 			check_variable = { v = 1 }
@@ -102,5 +105,36 @@ defined_text = {
 			has_country_flag = gov_con
 		}
 		localization_key = parliament_gov
+	}
+
+	# Ruling
+
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+			has_country_flag = ruling_lab
+		}
+		localization_key = parliament_ruling
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 2 }
+			has_country_flag = ruling_lib
+		}
+		localization_key = parliament_ruling
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+			has_country_flag = ruling_ire
+		}
+		localization_key = parliament_ruling
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4 }
+			has_country_flag = ruling_con
+		}
+		localization_key = parliament_ruling
 	}
 }

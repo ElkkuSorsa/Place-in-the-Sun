@@ -1,0 +1,43 @@
+ENG_majority = {
+	custom_trigger_tooltip = {
+		tooltip = "Parliamentary Majority"
+		set_temp_variable = { temp_majority = 0 }
+		if = {
+			limit = {
+				or = {
+					has_country_flag = ruling_lab
+					has_country_flag = gov_lab
+				}
+			}
+			add_to_temp_variable = { temp_majority = lab_seats }
+		}
+		if = {
+			limit = {
+				or = {
+					has_country_flag = ruling_lib
+					has_country_flag = gov_lib
+				}
+			}
+			add_to_temp_variable = { temp_majority = lib_seats }
+		}
+		if = {
+			limit = {
+				or = {
+					has_country_flag = ruling_ire
+					has_country_flag = gov_ire
+				}
+			}
+			add_to_temp_variable = { temp_majority = ire_seats }
+		}
+		if = {
+			limit = {
+				or = {
+					has_country_flag = ruling_con
+					has_country_flag = gov_con
+				}
+			}
+			add_to_temp_variable = { temp_majority = con_seats }
+		}
+		check_variable = { temp_majority > 335 }
+	}
+}
