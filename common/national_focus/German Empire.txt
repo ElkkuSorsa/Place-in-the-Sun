@@ -1982,7 +1982,8 @@ focus_tree = {
         x = 50
         y = 2
 
-        mutually_exclusive = {focus = GER_abolish_monarchy}
+        available = {democratic > 0.4}
+
 
         prerequisite = {focus = GER_erode_the_kaisers_powers}
 		
@@ -1998,12 +1999,13 @@ focus_tree = {
     }
 
     focus = {
-        id = GER_abolish_monarchy
+        id = GER_constitutional_monarchy
         icon = GFX_focus_ger_return_of_the_kaiser
-        x = 48
+        x = 50
         y = 2
 
-        mutually_exclusive = {focus = GER_constitutional_monarchy}
+        available = {democratic > 0.4}
+
 
         prerequisite = {focus = GER_erode_the_kaisers_powers}
 		
