@@ -26,10 +26,356 @@ focus_tree = {
 		add_idea = BEL_industrialising2
 		}
 
-		
+		6 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
 
 		}
 		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_develop_wallonia
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 11
+		y = 1
+
+		prerequisite = {focus = BEL_continue_industrialisation}
+		
+		completion_reward = {
+
+		34 = {
+		add_ideas = BEL_wallonian_investments
+		}
+
+		980 = {
+		add_ideas = BEL_wallonian_investments
+		}
+
+		34 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+		34 = {
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		980 = {
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_wallonian_resources
+		icon = GFX_focus_generic_mining_industry
+		x = 12
+		y = 2
+
+		prerequisite = {focus = BEL_develop_wallonia}
+		
+		completion_reward = {
+
+		add_resource = {
+   		type = steel
+		amount = 12
+    	state = 34
+		}
+
+		add_resource = {
+   		type = steel
+		amount = 8
+    	state = 980
+		}
+
+		34 = {
+		swap_ideas = {
+		remove_idea = BEL_wallonian_investments
+		add_idea = BEL_wallonian_investments2
+		}
+		}
+
+		980 = {
+		swap_ideas = {
+		remove_idea = BEL_wallonian_investments
+		add_idea = BEL_wallonian_investments2
+		}
+		}
+
+		
+
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_develop_flanders
+		icon = GFX_focus_BEL_flanders_ascendant
+		x = 7
+		y = 1
+
+		prerequisite = {focus = BEL_continue_industrialisation}
+		
+		completion_reward = {
+
+		6 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		6 = {
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_joint_economic_planning
+		icon = GFX_focus_generic_industrialists
+		x = 9
+		y = 2
+
+		prerequisite = {focus = BEL_develop_flanders
+		focus = BEL_develop_wallonia}
+		
+		completion_reward = {
+		
+		add_stability = 0.05
+
+		swap_ideas = {
+		remove_idea = BEL_industrialising2
+		add_idea = BEL_industrialising3
+		}
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_congolese_investments
+		icon = GFX_focus_CONGO_overseas_department_of_belgium
+		x = 3
+		y = 1
+
+		prerequisite = {focus = BEL_continue_industrialisation}
+		
+		completion_reward = {
+		
+		COG = { 
+			add_ideas = BEL_belgian_investments
+		}
+
+		295 = {
+        
+        add_extra_state_shared_building_slots = 1
+
+        add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_congolese_infra
+		icon = GFX_focus_generic_road_investment
+		x = 4
+		y = 2
+
+		prerequisite = {focus = BEL_congolese_investments}
+		
+		completion_reward = {
+		
+		COG = { 
+			swap_ideas = {
+			remove_idea = BEL_belgian_investments
+			add_idea = BEL_belgian_investments2
+			} 
+		}
+
+		295 = {
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		889 = {
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		890 = {
+
+        add_building_construction = {
+	    type = infrastructure
+	    level = 1
+	    instant_build = yes
+        }
+
+        }
+
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_mineral_profits
+		icon = GFX_focus_CONGO_gold_and_diamonds
+		x = 2
+		y = 2
+
+		prerequisite = {focus = BEL_congolese_investments}
+		
+		completion_reward = {
+
+		add_stability = 0.05
+
+		add_timed_idea = {idea = BEL_mineral_profits_idea days = 365}
+		
+		COG = { 
+			add_ideas = BEL_mineral_profits_idea_con
+		}
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_congo_war_industry
+		icon = GFX_focus_CONGO_copper_cartridges
+		x = 3
+		y = 3
+
+		prerequisite = {focus = BEL_congolese_infra}
+
+		prerequisite = {focus = BEL_mineral_profits}
+		
+		completion_reward = {
+
+		COG = {
+
+			swap_ideas = {
+			remove_idea = BEL_belgian_investments2
+			add_idea = BEL_belgian_investments3
+			}
+
+		}
+
+		889 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_congo_conscription
+		icon = GFX_focus_CONGO_congolese_generals
+		x = 3
+		y = 4
+
+		prerequisite = {focus = BEL_congo_war_industry}
+		
+		completion_reward = {
+
+		COG = {
+
+			swap_ideas = {
+			remove_idea = BEL_belgian_investments3
+			add_idea = BEL_belgian_investments4
+			}
+			
+		}
+
+
+		}
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 	}

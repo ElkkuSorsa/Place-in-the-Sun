@@ -27,19 +27,83 @@ ideas = {
 
 		BEL_industrialising = {
 			modifier = {
-				consumer_goods_factor = 0.15
-				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 			}
 		}
 
+		BEL_belgian_investments = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		BEL_belgian_investments2 = {
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		BEL_belgian_investments3 = {
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		BEL_belgian_investments4 = {
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				autonomy_manpower_share = 0.25
+			}
+		}
+
+		BEL_wallonian_investments = {
+			modifier = {
+				state_production_speed_buildings_factor = 0.1
+			}
+		}
+
+		BEL_wallonian_investments2 = {
+			modifier = {
+				state_production_speed_buildings_factor = 0.1
+				state_resources_factor = 0.05
+			}
+		}
+
+		BEL_mineral_profits_idea = {
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		BEL_mineral_profits_idea_con = {
+			modifier = {
+				local_resources_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+
 		BEL_industrialising2 = {
 			modifier = {
-				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		BEL_industrialising3 = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 
@@ -51,63 +115,5 @@ ideas = {
 			}
 		}
 
-		BEL_weak_army2 = {
-			modifier = {
-				army_attack_factor = -0.09
-				army_defence_factor = -0.09
-				army_org_factor = -0.09
-			}
-		}
-
-		BEL_weak_army3 = {
-			modifier = {
-				army_attack_factor = -0.08
-				army_defence_factor = -0.08
-				army_org_factor = -0.08
-			}
-		}
-
-		BEL_weak_army4 = {
-			modifier = {
-				army_attack_factor = -0.07
-				army_defence_factor = -0.07
-				army_org_factor = -0.07
-			}
-		}
-
-		BEL_weak_army5 = {
-			modifier = {
-				army_attack_factor = -0.05
-				army_defence_factor = -0.05
-				army_org_factor = -0.05
-			}
-		}
-
-		BEL_education_reform = {
-			modifier = {
-				political_power_factor = -0.05
-				research_speed_factor = 0.1
-			}
-		}
-
-		BEL_expand_production_idea = {
-			modifier = {
-				industrial_capacity_factory = 0.05
-			}
-		}
-
-		BEL_foreign_advisors_idea = {
-			modifier = {
-				experience_gain_army_factor = 0.15
-				land_doctrine_cost_factor = -0.05
-			}
-		}
-
-		BEL_expanded_military = {
-			modifier = {
-				conscription = 0.01
-				training_time_army_factor = -0.15
-			}
-		}
 	}
 }
