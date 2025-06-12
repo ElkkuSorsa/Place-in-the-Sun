@@ -1,18 +1,25 @@
 parliament_gui_initial = {
 	add_to_array = { parliament_seat_array = 40 } # LAB
-	add_to_array = { parliament_seat_array = 274 } # LIB
-	add_to_array = { parliament_seat_array = 79 } # IRE
-	add_to_array = { parliament_seat_array = 272 } # CON
+	add_to_array = { parliament_seat_array = 275 } # LIB
+	add_to_array = { parliament_seat_array = 82 } # IRE
+	add_to_array = { parliament_seat_array = 273 } # CON
 
 	add_to_array = { parliament_member_array = 1 } # LAB
 	add_to_array = { parliament_member_array = 2 } # LIB
 	add_to_array = { parliament_member_array = 3 } # IRE
 	add_to_array = { parliament_member_array = 4 } # CON
 
+	set_variable = { lab_seats = 40 }
+	set_variable = { lib_seats = 275 }
+	set_variable = { ire_seats = 82 }
+	set_variable = { con_seats = 273 }
+
 	parliament_gui_positions = yes
 
 	reload_parliament_gui = yes
 }
+
+
 
 reload_parliament_gui = {
 	clear_array = parliament_main_array
@@ -1479,64 +1486,4 @@ parliament_gui_positions = {
 	add_to_array = { parliament_y_array = 273 }
 	add_to_array = { parliament_x_array = 556 }
 	add_to_array = { parliament_y_array = 273 }
-}
-
-ENG_calc_gov = {
-	if = {
-		limit = { has_country_flag = ENG_lib_his }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = libseats }
-		add_to_variable = { var = govseats value = labseats }
-		add_to_variable = { var = govseats value = ireseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_lib_soc }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = libseats }
-		add_to_variable = { var = govseats value = socseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_soc }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = socseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_lib_con }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = libseats }
-		add_to_variable = { var = govseats value = labseats }
-		add_to_variable = { var = govseats value = ireseats }
-		add_to_variable = { var = govseats value = conseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_con }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = conseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_lib_nire }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = libseats }
-		add_to_variable = { var = govseats value = labseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_lib_con_nire }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = libseats }
-		add_to_variable = { var = govseats value = labseats }
-		add_to_variable = { var = govseats value = conseats }
-	}
-
-	if = {
-		limit = { has_country_flag = ENG_lib_con_coalition }
-		set_variable = { govseats = 0 }
-		add_to_variable = { var = govseats value = libseats }
-		add_to_variable = { var = govseats value = conseats }
-	}
 }

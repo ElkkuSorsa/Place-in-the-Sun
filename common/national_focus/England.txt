@@ -81,6 +81,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			ENG_majority = yes
 			custom_trigger_tooltip = {
 				tooltip = "Elections were held like usually."
 				has_completed_focus = ENG_1910_elections
