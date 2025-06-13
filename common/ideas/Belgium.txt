@@ -133,7 +133,7 @@ ideas = {
 				army_attack_factor = -0.25
 				army_defence_factor = -0.25
 				army_org_factor = -0.25
-				conscription_factor = -	0.15
+				conscription_factor = -0.15
 
 			}
 		}
@@ -142,6 +142,14 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		BEL_military_factory_buildup = {
+			modifier = {
+				state_production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 

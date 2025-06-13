@@ -352,7 +352,7 @@ focus_tree = {
 	focus = {
 		id = BEL_congolese_investments
 		icon = GFX_focus_CONGO_overseas_department_of_belgium
-		x = 3
+		x = 4
 		y = 1
 
 		prerequisite = {focus = BEL_continue_industrialisation}
@@ -384,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = BEL_congolese_infra
 		icon = GFX_focus_generic_road_investment
-		x = 4
+		x = 5
 		y = 2
 
 		prerequisite = {focus = BEL_congolese_investments}
@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = BEL_mineral_profits
 		icon = GFX_focus_CONGO_gold_and_diamonds
-		x = 2
+		x = 3
 		y = 2
 
 		prerequisite = {focus = BEL_congolese_investments}
@@ -461,7 +461,7 @@ focus_tree = {
 	focus = {
 		id = BEL_congo_war_industry
 		icon = GFX_focus_CONGO_copper_cartridges
-		x = 3
+		x = 4
 		y = 3
 
 		prerequisite = {focus = BEL_congolese_infra}
@@ -500,7 +500,7 @@ focus_tree = {
 	focus = {
 		id = BEL_congo_conscription
 		icon = GFX_focus_CONGO_congolese_generals
-		x = 3
+		x = 4
 		y = 4
 
 		prerequisite = {focus = BEL_congo_war_industry}
@@ -516,6 +516,98 @@ focus_tree = {
 			
 		}
 
+
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_belgian_military_industry
+		icon = GFX_focus_generic_military_industry
+		x = 15
+		y = 1
+
+		prerequisite = {focus = BEL_continue_industrialisation}
+		
+		completion_reward = {
+		
+		add_timed_idea = {
+		idea = BEL_military_factory_buildup days = 720
+		}
+
+		}
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_military_factories
+		icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
+		x = 14
+		y = 2
+
+		prerequisite = {focus = BEL_belgian_military_industry}
+		
+		completion_reward = {
+		
+		34 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = BEL_war_industry
+		icon = GFX_focus_generic_total_war
+		x = 16
+		y = 2
+
+		available = {has_war = yes}
+
+		prerequisite = {focus = BEL_belgian_military_industry}
+		
+		completion_reward = {
+
+		add_ideas = war_economy
+		
+		34 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
+
+		6 = {
+        
+        add_extra_state_shared_building_slots = 2
+
+        add_building_construction = {
+	    type = arms_factory
+	    level = 2
+	    instant_build = yes
+        }
+
+        }
 
 		}
 		cost = 5
