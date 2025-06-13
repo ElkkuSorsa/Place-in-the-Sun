@@ -223,6 +223,7 @@ country_event = {
 		name = "Liberals Win!"
 		custom_effect_tooltip = historical_event_option
 		custom_effect_tooltip = ENG_lib_win
+		custom_effect_tooltip = "   "
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_the_last_liberals
 		ai_chance = {
@@ -247,11 +248,19 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_variable = { libseats = 272 }
-			set_variable = { conseats = 271 }
-			set_variable = { ireseats = 74 }
-			set_variable = { labseats = 43 }
-			ENG_calc_gov = yes
+			clear_array = parliament_seat_array
+
+			add_to_array = { parliament_seat_array = 42 } # LAB
+			add_to_array = { parliament_seat_array = 272 } # LIB
+			add_to_array = { parliament_seat_array = 84 } # IRE
+			add_to_array = { parliament_seat_array = 272 } # CON
+
+			set_variable = { lab_seats = 42 }
+			set_variable = { lib_seats = 272 }
+			set_variable = { ire_seats = 84 }
+			set_variable = { con_seats = 272 }
+
+			reload_parliament_gui = yes
 			country_event = {
 				id = ENG_elections.2
 				days = 3
@@ -267,8 +276,11 @@ country_event = {
 				option = yes
 			}
 		}
-		news_event = ENG_news.5
+		hidden_effect = {
+			news_event = ENG_news.5
+		}
 		custom_effect_tooltip = ENG_con_win
+		custom_effect_tooltip = "   "
 		set_party_name = {
 			ideology = democratic
 			long_name = "the Conservative Party"
@@ -277,13 +289,25 @@ country_event = {
 		complete_national_focus = ENG_1910_elections
 		complete_national_focus = ENG_conservative_victory
 		hidden_effect = {
-			clr_country_flag = ENG_lib_his
-			set_country_flag = ENG_con
-			set_variable = { libseats = 270 }
-			set_variable = { conseats = 273 }
-			set_variable = { ireseats = 74 }
-			set_variable = { labseats = 43 }
-			ENG_calc_gov = yes
+			clear_array = parliament_seat_array
+
+			clr_country_flag = gov_lab
+			clr_country_flag = ruling_lib
+			clr_country_flag = ruling_ire
+
+			set_country_flag = ruling_con
+
+			add_to_array = { parliament_seat_array = 44 } # LAB
+			add_to_array = { parliament_seat_array = 269 } # LIB
+			add_to_array = { parliament_seat_array = 82 } # IRE
+			add_to_array = { parliament_seat_array = 275 } # CON
+
+			set_variable = { lab_seats = 44 }
+			set_variable = { lib_seats = 269 }
+			set_variable = { ire_seats = 82 }
+			set_variable = { con_seats = 275 }
+
+			reload_parliament_gui = yes
 		}
 		create_country_leader = {
 			name = "House of Commons"

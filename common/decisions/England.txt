@@ -276,8 +276,7 @@ ENG_politics = {
 
 		timeout_effect = {
 			custom_effect_tooltip = ENG_ire_leave_gov
-			clr_country_flag = ENG_lib_his
-			set_country_flag = ENG_lib_nire
+			clr_country_flag = ruling_ire
 			set_country_flag = ENG_instability
 			ENG_calc_gov = yes
 		}
