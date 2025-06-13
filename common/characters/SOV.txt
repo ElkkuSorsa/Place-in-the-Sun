@@ -38,7 +38,7 @@ characters={
     }
 }
     SOV_Josef_Stalin = {
-    name = "Josef_stalin"
+    name = "Josef stalin"
             portraits = {
 			civilian = {
                 large = "idea_SOV_joseph_stalin"
@@ -67,7 +67,7 @@ characters={
     }
 }
     SOV_Nikolai_Bukharin = {
-    name = "Nikolai_Bukharin"
+    name = "Nikolai Bukharin"
             portraits = {
 			civilian = {
                 large = "idea_SOV_nikolay_bukharin"
@@ -109,6 +109,64 @@ characters={
         cost = 150
         can_be_fired = yes
         idea_token = SOV_Mikhail_Kalinin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+        	visible = {
+			date < 1919.1.1
+		}
+
+        available = {
+            always = yes
+        }
+    }
+}
+    SOV_Alexei_Rykov = {
+    name = "Alexei Ivanovich Rykov"
+            portraits = {
+			civilian = {
+                large = ""
+                small = ""
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { Commissar_for_Posts_and_Telegraphs}	
+        cost = 150
+        can_be_fired = yes
+        idea_token = SOV_Alexei_Rykov
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+        	visible = {
+			date < 1919.1.1
+		}
+
+        available = {
+            always = yes
+        }
+    }
+}
+    SOV_Grigory_Zinoviev = {
+    name = "Grigory Yevseyevich Zinoviev"
+            portraits = {
+			civilian = {
+                large = ""
+                small = ""
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = {Communist_Theorist }	
+        cost = 150
+        can_be_fired = yes
+        idea_token = SOV_Grigory_Zinoviev
 
         allowed = {
             OR = {

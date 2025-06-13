@@ -24,7 +24,7 @@ country_event = {
 		add_ideas = SOV_leadership_struggle
 	}
 	    option = {
-		name = "grigory zinoviev is the man!"
+		name = "Grigory Zinoviev is the man!"
 		complete_national_focus = SOV_premier_zinovyev
 		add_ideas = SOV_leadership_struggle
 	}
@@ -37,7 +37,7 @@ country_event = {
 add_namespace = SOV_Alliance_with_stalin
 country_event = {
 	id = SOV_Alliance_with_stalin.1 
-	title = "Alliance_with_stalin"
+	title = "Alliance with stalin"
 	desc = "Comrade Bukharin dosent have many friends withing the party. So he is considering a alliance with stalin, because he is the only viable option.  "
 
 	is_triggered_only = yes
@@ -45,11 +45,11 @@ country_event = {
 
 	option = {
 		name = "I shall commit fully to this deal."
-		complete_national_focus = 
+		
 	}
 		option = {
 		name = "I may need to be more cautius."
-		complete_national_focus = 
+		
 	}
 }	
 add_namespace = SOV_Alliance_with_stalin

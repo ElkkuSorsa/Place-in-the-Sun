@@ -35,12 +35,22 @@ ideas = {
 			winter_attrition_factor = -0.1
 			}
 		}
+			SOV_Political_commisars = {
+			modifier = {
+			army_org_factor = -0.05
+			army_org_regain = 0.1
+			army_core_defence_factor = 0.05
+
+
+			}
+		}
 
 		SOV_free_healtcare = {
 			modifier = {
 			consumer_goods_factor = 0.06
 			stability_factor = 0.05
 			industrial_capacity_factory = 0.07
+			monthly_population = 0.15
 			}
 		}
 
@@ -71,9 +81,7 @@ ideas = {
 			stability_factor = 0.1
 			resistance_growth = -0.1
 			resistance_growth_on_our_occupied_states = 0.05
-			operation_risk = -0.1
 			operative_slot = 1
-			intel_network_gain = 0.2
 			}
 		}
 		SOV_Industry_in_ruins = {
