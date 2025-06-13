@@ -63,6 +63,12 @@ ideas = {
 			}
 		}
 
+		BEL_flanders_investments = {
+			modifier = {
+				state_production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
 		BEL_wallonian_investments = {
 			modifier = {
 				state_production_speed_buildings_factor = 0.1
@@ -107,13 +113,39 @@ ideas = {
 			}
 		}
 
-		BEL_weak_army = {
+		BEL_industrialising4 = {
 			modifier = {
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
-				army_org_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
+
+		BEL_growth = {
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		BEL_weak_army = {
+			modifier = {
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				army_org_factor = -0.25
+				conscription_factor = -	0.15
+
+			}
+		}
+
+		BEL_industrial_productivity = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		
 
 	}
 }
