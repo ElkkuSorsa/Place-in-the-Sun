@@ -629,4 +629,144 @@ focus_tree = {
 
 }
 
-	
+#focus_tree = {
+	id = FRA_alternative_focus_tree
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 55
+			tag = FRA
+		}
+	}
+
+	continuous_focus_position = { x = 100 y = 3000 }
+
+	default = no
+
+	focus = {
+		id = FRA_la_republique
+		icon = GFX_goal_the_republic
+		x = 5
+		y = 1
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 1
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_stand_by_republican_left
+		icon = GFX_goal_the_republic
+		x = -3
+		y = 2
+
+		prerequisite = { focus = FRA_la_republique }
+		mutually_exclusive = { focus = FRA_form_bloc_de_droite }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 14
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_form_bloc_de_droite
+		icon = GFX_goal_the_republic
+		x = 13
+		y = 2
+
+		prerequisite = { focus = FRA_la_republique }
+		mutually_exclusive = { focus = FRA_stand_by_republican_left }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 14
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_oppose_anti_clericalism
+		icon = GFX_goal_the_republic
+		x = 10
+		y = 3
+
+		prerequisite = { focus = FRA_form_bloc_de_droite }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 14
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_fund_propaganda_campaigns
+		icon = GFX_goal_the_republic
+		x = 8
+		y = 3
+
+		prerequisite = { focus = FRA_form_bloc_de_droite }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 14
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_attack_republican_left
+		icon = GFX_goal_the_republic
+		x = 8
+		y = 4
+
+		prerequisite = { focus = FRA_fund_propaganda_campaigns }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 14
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+
+	focus = {
+		id = FRA_support_pla_af_unification
+		icon = GFX_goal_the_republic
+		x = 10
+		y = 4
+
+		prerequisite = { focus = FRA_oppose_anti_clericalism }
+		
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+
+		cost = 14
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+	}
+#}

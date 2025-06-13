@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
-        name = "parliament_gui_container"
-        position = { x = 0 y = 0 }
+		name = "parliament_gui_container"
+		position = { x = 0 y = 0 }
 		size = { width = 516 height = 540 }
 
 		containerWindowType = {
@@ -68,8 +68,8 @@ guiTypes = {
 
 
 	containerWindowType = {
-        name = "parliament_semicircle_main_entry"
-        position = { x = 0 y = 0 }
+		name = "parliament_semicircle_main_entry"
+		position = { x = 0 y = 0 }
 		scale = 0.75
 		iconType = {
 			name = "parliament_semicircle_main_icon"
@@ -77,11 +77,11 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			pdx_tooltip_delayed = "parliament_party_description"
 		}
-    }
+	}
 
 	containerWindowType = {
-        name = "parliament_member_entry"
-        position = { x = 75 y = 0 }
+		name = "parliament_member_entry"
+		position = { x = 75 y = 0 }
 		size = { width = 500 height = 100 }
 
 		iconType = {
@@ -103,5 +103,5 @@ guiTypes = {
 			pdx_tooltip_delayed = "parliament_party_description"
 		}
 		
-    }
+	}
 }
