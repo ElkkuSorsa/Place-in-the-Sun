@@ -1,0 +1,15 @@
+BEL_wallonia_modifier = {
+
+    icon = ARG_civilian_economy_boost
+    
+    state_production_speed_buildings_factor = 0.1
+
+}
+
+BEL_flanders_modifier = {
+    
+    icon = ARG_civilian_economy_boost
+
+    state_production_speed_industrial_complex_factor = 0.2
+    
+}

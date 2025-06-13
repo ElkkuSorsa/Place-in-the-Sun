@@ -55,11 +55,11 @@ focus_tree = {
 		completion_reward = {
 
 		34 = {
-		add_ideas = BEL_wallonian_investments
+			add_dynamic_modifier = { modifier = BEL_wallonia_modifier }
 		}
 
 		980 = {
-		add_ideas = BEL_wallonian_investments
+			add_dynamic_modifier = { modifier = BEL_wallonia_modifier }
 		}
 
 		34 = {
@@ -122,22 +122,6 @@ focus_tree = {
     	state = 980
 		}
 
-		34 = {
-		swap_ideas = {
-		remove_idea = BEL_wallonian_investments
-		add_idea = BEL_wallonian_investments2
-		}
-		}
-
-		980 = {
-		swap_ideas = {
-		remove_idea = BEL_wallonian_investments
-		add_idea = BEL_wallonian_investments2
-		}
-		}
-
-		
-
 		}
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -193,7 +177,7 @@ focus_tree = {
 		completion_reward = {
 
 		6 = {
-		add_ideas = BEL_flanders_investments
+		add_dynamic_modifier = { modifier = BEL_flanders_modifier }
 		}
 
 		6 = {
