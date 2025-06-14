@@ -1,4 +1,67 @@
 # Gets the loc to be displayed based on what the current v (value) of the element in the array is (the value corresponds to the party id set in the scripted effect).
+
+
+defined_text = {
+	name = GetMajorityMinority
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					or = {
+						has_country_flag = ruling_lab
+						has_country_flag = gov_lab
+					}
+				}
+				add_to_temp_variable = { majority_temp = lab_seats }
+			}
+			if = {
+				limit = {
+					or = {
+						has_country_flag = ruling_lib
+						has_country_flag = gov_lib
+					}
+				}
+				add_to_temp_variable = { majority_temp = lib_seats }
+			}
+			if = {
+				limit = {
+					or = {
+						has_country_flag = ruling_ire
+						has_country_flag = gov_ire
+					}
+				}
+				add_to_temp_variable = { majority_temp = ire_seats }
+			}
+			if = {
+				limit = {
+					or = {
+						has_country_flag = ruling_con
+						has_country_flag = gov_con
+					}
+				}
+				add_to_temp_variable = { majority_temp = con_seats }
+			}
+			if = {
+				limit = {
+					or = {
+						has_country_flag = ruling_lib_con
+						has_country_flag = gov_lib_con
+					}
+				}
+				add_to_temp_variable = { majority_temp = lib_con_seats }
+			}
+			check_variable = { majority_temp > 335 }
+		}
+		localization_key = majority
+	}
+	text = {
+		localization_key = minority
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+
 defined_text = {
 	name = GetParliamentPartyName
 	text = {
@@ -24,6 +87,18 @@ defined_text = {
 			check_variable = { v = 4 }
 		}
 		localization_key = party_4_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+		}
+		localization_key = party_5_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 6 }
+		}
+		localization_key = party_6_text
 	}
 	text = {
 		localization_key = "Error"
@@ -55,6 +130,18 @@ defined_text = {
 			check_variable = { v = 4 }
 		}
 		localization_key = party_4_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+		}
+		localization_key = party_2_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 6 }
+		}
+		localization_key = party_6_desc
 	}
 	text = {
 		localization_key = "Error"
@@ -106,6 +193,13 @@ defined_text = {
 		}
 		localization_key = parliament_gov
 	}
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+			has_country_flag = gov_lib_con
+		}
+		localization_key = parliament_gov
+	}
 
 	# Ruling
 
@@ -134,6 +228,13 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 4 }
 			has_country_flag = ruling_con
+		}
+		localization_key = parliament_ruling
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 5 }
+			has_country_flag = ruling_lib_con
 		}
 		localization_key = parliament_ruling
 	}

@@ -377,16 +377,75 @@ country_event = {
 	option = {
 		name = "Liberals have divided themselvs..."
 		hidden_effect = {
-			set_variable = { libseats = 272 }
-			set_variable = { conseats = 271 }
-			clear_variable = ireseats
-			set_variable = { sinseats = 74 }
-			set_variable = { labseats = 43 }
-			ENG_calc_gov = yes
+			clear_array = parliament_seat_array
+			clear_array = parliament_member_array
+
+			add_to_array = { parliament_seat_array = 57 } # LAB
+			add_to_array = { parliament_seat_array = 28 } # LIB
+			add_to_array = { parliament_seat_array = 6 } # IRE
+			add_to_array = { parliament_seat_array = 380 } # CON
+			add_to_array = { parliament_seat_array = 126 } # LIB CON
+			add_to_array = { parliament_seat_array = 73 } # SIN
+
+			set_variable = { lab_seats = 57 }
+			set_variable = { lib_seats = 28 }
+			set_variable = { ire_seats = 6 }
+			set_variable = { con_seats = 380 }
+			set_variable = { lib_con_seats = 126 }
+			set_variable = { sin_seats = 73 }
+
+			add_to_array = { parliament_member_array = 1 } # LAB
+			add_to_array = { parliament_member_array = 2 } # LIB
+			add_to_array = { parliament_member_array = 3 } # IRE
+			add_to_array = { parliament_member_array = 4 } # CON
+			add_to_array = { parliament_member_array = 5 } # LIB CON
+			add_to_array = { parliament_member_array = 6 } # SIN
+
+
+			reload_parliament_gui = yes
 			country_event = {
 				id = ENG_ireland.2
 				days = 5
 			}
+		}
+	}
+}
+
+country_event = {
+	id = ENG_elections.5
+	title = ENG_elections_1918_event
+	desc = "After the Irish War of Independence, the United Kingdom has been shaken by the war and the loss of Ireland. The Irish have declared independence and the British government has been forced to accept it. The Irish have been granted a dominion status within the British Empire, but they are still a part of it. Sinn Féin left, so new elections were called and the conservatives have won."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Conservatives have won the elections!"
+		promote_character = ENG_bonar_law
+		hidden_effect = {
+			clear_array = parliament_seat_array
+			clear_array = parliament_member_array
+			
+			add_to_array = { parliament_seat_array = 158 } # LAB
+			add_to_array = { parliament_seat_array = 69 } # LIB
+			add_to_array = { parliament_seat_array = 2 } # IRE
+			add_to_array = { parliament_seat_array = 382 } # CON
+			add_to_array = { parliament_seat_array = 59 } # LIB CON
+
+			set_variable = { lab_seats = 158 }
+			set_variable = { lib_seats = 69 }
+			set_variable = { ire_seats = 2 }
+			set_variable = { con_seats = 382 }
+			set_variable = { lib_con_seats = 59 }
+			set_variable = { sin_seats = 0 }
+
+			add_to_array = { parliament_member_array = 1 } # LAB
+			add_to_array = { parliament_member_array = 2 } # LIB
+			add_to_array = { parliament_member_array = 3 } # IRE
+			add_to_array = { parliament_member_array = 4 } # CON
+			add_to_array = { parliament_member_array = 5 } # LIB CON
+
+			reload_parliament_gui = yes
 		}
 	}
 }
@@ -669,28 +728,18 @@ news_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = ENG_ireland.2
 	title = "Irish War of Independence"
 	desc = "After the elections in the United Kingdom ended in a Sinn Féin landslide, they refused to receive their seats in the British parliament and they established their own in Dublin and declared independence from us. We are now officially at war with them."
 
 	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
 
 	option = {
-		name = "Rally the Army!"
-		hidden_effect = {
-			IRE = {
-				transfer_state = 113
-				transfer_state = 135
-				transfer_state = 134
-			}
-		}
-
-		declare_war_on = {
-			target = IRE
-			type = annex_everything
-		}
+		name = "The British Empire crumbles..."
 	}
 }
 
@@ -700,6 +749,19 @@ country_event = {
 	desc = "We have pushed Irish rebellion to their place and now we must create a solution that will last for the best of the empire and his majesty. We have sent an offer of dominion status within the empire to the rebel government. This will establish a Irish Free State that is responsible for it's internal affairs."
 
 	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			white_peace = IRE
+			if = {
+				LIMIT = { original_tag = ENG }
+				country_event = {
+					id = ENG_elections.5
+					days = 200
+				}
+			}
+		}
+	}
 
 	mean_time_to_happen = {
 		days = 1
@@ -716,9 +778,6 @@ country_event = {
 	option = {
 		name = "These are Acceptable Terms."
 		custom_effect_tooltip = historical_event_option
-		hidden_effect = {
-			white_peace = IRE
-		}
 		unlock_national_focus = ENG_anglo_irish_treaty
 		set_autonomy = {
 			target = IRE
@@ -745,12 +804,16 @@ country_event = {
 	}
 
 	option = {
-		name = "Rally the Army!"
+		name = "Fine then, they refused diplomacy."
 		hidden_effect = {
 			IRE = {
 				transfer_state = 113
 				transfer_state = 135
 				transfer_state = 134
+			}
+			news_event = {
+				id = ENG_ireland.2
+				days = 3
 			}
 		}
 
@@ -1125,6 +1188,94 @@ news_event = {
 
 	option = {
 		name = "Thousand year's war?"
+	}
+}
+
+country_event = {
+	id = ENG_misc.8
+	title = "Shell Shortages in the Army"
+	desc = "The news has come that the British army is running out of shells and ammunition. The army is in a very bad state and the soldiers are demoralized. The government must act quickly to solve this problem, or the media will be all over it and the public will be outraged. The government must find a way to increase the production of shells and ammunition, or the army will be in a very bad state."
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		has_war = yes
+		date > 1915.1.14
+		has_completed_focus = ENG_government_of_liberals
+	}
+
+	option = {
+		name = "This could lead to a even greater disaster"
+		activate_mission = ENG_shell_crisis
+		unlock_national_focus = ENG_shell_crisis
+		add_ideas = ENG_shell_crisis_idea
+
+		set_variable = { ENG.shell_crisis = 10 }
+		add_to_variable = { ENG.shell_crisis = num_of_military_factories }
+	}
+}
+
+country_event = {
+	id = ENG_misc.9
+	title = "The Liberal Government Resigns"
+	desc = "The Liberal prime minister Herbert Henry Asquith has demanded the resignation of every member of the government. The government has been in power for a long time and has been very unpopular in the recent years. The government has been accused of causing the shell crisis and now they face no other choice but to resign. Asquith will continue as the prime minister, but the conservatives will also join the government."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Watch as the government falls apart"
+		add_ideas = ENG_wavering_trust
+		set_power_balance = {
+			id = ENG_asquith_trust
+			value = 0.8
+		}
+		custom_effect_tooltip = ENG_con_join_gov
+		custom_effect_tooltip = ENG_ire_leave_gov
+		set_country_flag = ruling_con
+		clr_country_flag = ruling_ire
+		clr_country_flag = gov_lab
+		set_country_flag = ruling_lab
+	}
+}
+
+country_event = {
+	id = ENG_misc.10
+	title = "Liberals Split"
+	desc = "After immense pressure from the public and the party, the liberal prime minister Herbert Henry Asquith has resigned. The party is now split in two factions, one led by Asquith and the other by David Lloyd George. The party is now in a very bad state and the government is in a very bad state. The government must find a way to unite the party or the party will risk losing it's identity."
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "Watch as the government falls apart"
+		custom_effect_tooltip = ENG_liberals_split
+		promote_character = ENG_lloyd_george
+		remove_power_balance = {
+			id = ENG_asquith_trust
+		}
+		remove_ideas = ENG_wavering_trust
+		set_country_flag = ruling_lib_con
+		clr_country_flag = ruling_lib
+		clr_country_flag = ruling_lab
+		add_to_array = { parliament_member_array = 5 } # LIB CON
+
+		clear_array = parliament_seat_array
+
+		add_to_array = { parliament_seat_array = 42 } # LAB
+		add_to_array = { parliament_seat_array = 100 } # LIB
+		add_to_array = { parliament_seat_array = 84 } # IRE
+		add_to_array = { parliament_seat_array = 272 } # CON
+		add_to_array = { parliament_seat_array = 172 } # LIB CON
+
+		set_variable = { lab_seats = 42 }
+		set_variable = { lib_seats = 100 }
+		set_variable = { ire_seats = 84 }
+		set_variable = { con_seats = 272 }
+		set_variable = { lib_con_seats = 172 }
+
+		reload_parliament_gui = yes
 	}
 }
 

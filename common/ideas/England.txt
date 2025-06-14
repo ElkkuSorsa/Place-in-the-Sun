@@ -655,5 +655,30 @@ ideas = {
 				cic_to_target_factor = 0.2
 			}
 		}
+
+		ENG_shell_crisis_idea = {
+			picture = ARG_economic_reactivation
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+
+			cancel = {
+				has_war = no
+			}
+		}
+
+		ENG_wavering_trust = {
+			picture = prc_low_popular_support
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.05
+				power_balance_weekly = -0.05
+			}
+		}
 	}
 }

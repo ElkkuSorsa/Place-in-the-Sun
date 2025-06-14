@@ -38,6 +38,15 @@ ENG_majority = {
 			}
 			add_to_temp_variable = { temp_majority = con_seats }
 		}
+		if = {
+			limit = {
+				or = {
+					has_country_flag = ruling_lib_con
+					has_country_flag = gov_lib_con
+				}
+			}
+			add_to_temp_variable = { temp_majority = lib_con_seats }
+		}
 		check_variable = { temp_majority > 335 }
 	}
 }

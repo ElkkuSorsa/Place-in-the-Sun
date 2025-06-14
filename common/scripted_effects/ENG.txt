@@ -3,6 +3,7 @@ parliament_gui_initial = {
 	add_to_array = { parliament_seat_array = 275 } # LIB
 	add_to_array = { parliament_seat_array = 82 } # IRE
 	add_to_array = { parliament_seat_array = 273 } # CON
+	add_to_array = { parliament_seat_array = 0 } # LIB CON
 
 	add_to_array = { parliament_member_array = 1 } # LAB
 	add_to_array = { parliament_member_array = 2 } # LIB
@@ -11,7 +12,9 @@ parliament_gui_initial = {
 
 	set_variable = { lab_seats = 40 }
 	set_variable = { lib_seats = 275 }
+	set_variable = { lib_con_seats = 0 }
 	set_variable = { ire_seats = 82 }
+	set_variable = { sin_seats = 0 }
 	set_variable = { con_seats = 273 }
 
 	parliament_gui_positions = yes
@@ -139,7 +142,6 @@ modify_parliament_seat = {
 }
 
 clear_parliament_gui_arrays = {
-	clear_array = parliament_main_array
 	clear_array = parliament_member_array
 	clear_array = parliament_seat_array
 	clear_array = parliament_x_array
