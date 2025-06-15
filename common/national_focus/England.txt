@@ -988,7 +988,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			threat > 0.01
 		}
 
 		completion_reward = {
