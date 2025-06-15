@@ -255,7 +255,7 @@ focus = {
         }		
     }
 	 focus= {
-		id = EGY_expand_alexandria_iron_mines
+		id = EGY_expand_alexandria_steel_mines
 		icon = GFX_focus_generic_offshore_oil_rig
 		x = 25
 		y = 3
