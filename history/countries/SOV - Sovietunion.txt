@@ -12,7 +12,6 @@ add_ideas = {
 	limited_conscription
 	volunteer_only
 	partial_mobilisation
-    Sov_disorganized_military_1
 }
 #For start date 1939.1.1
 recruit_character = SOV_Leon_Trotsky

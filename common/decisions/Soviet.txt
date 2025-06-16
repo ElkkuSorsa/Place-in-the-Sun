@@ -1,0 +1,23 @@
+SOV_civil_war = {
+	SOV_Loot_weapon_stashes = {
+		ai_will_do = {
+			base = 500
+		}
+
+		available = { has_completed_focus = SOV_Loot_weapon_stashes
+
+		}
+
+		fire_only_once = no
+		days_re_enable = 70
+
+		complete_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+				}
+
+
+		}
+	}
+    }
