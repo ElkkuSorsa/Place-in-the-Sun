@@ -1306,7 +1306,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_expand_gibraltar
+		id = ENG_enforce_spanish_loyalty
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 32
 		y = 8

@@ -1,6 +1,7 @@
 characters = {
 	ENG_asquith = {
 		name = "Herbert Henry Asquith"
+		desc = "Born in 1852, Asquith was a distinguished barrister and politician, serving as the Prime Minister of the United Kingdom from 1908 to 1916. He was a key figure in the Liberal Party and played a significant role in the early years of World War I, although his leadership faced criticism as the war progressed."
 		country_leader = {
 			expire = "1940.1.1"
 			ideology = liberalism
