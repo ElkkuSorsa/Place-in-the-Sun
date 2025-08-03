@@ -57,7 +57,7 @@ ENG_politics = {
 			if = {
 				limit = {
 					not = { has_country_flag = ENG_no_coalition }
-					check_variable = { var = govseats  value = 331  compare = less_than }
+					ENG_majority = no
 				}
 				custom_effect_tooltip = ENG_law_not_pass
 				add_stability = -0.1
@@ -65,10 +65,10 @@ ENG_politics = {
 			
 			else_if = {
 				limit = {
-					check_variable = { var = govseats  value = 330  compare = greater_than }
+					ENG_majority = yes
 				}
 				custom_effect_tooltip = ENG_law_pass
-				country_event = ENG_parliament.4
+				country_event = ENG_parliament_act.4
 				set_country_flag = ENG_parliament_act
 				swap_ideas = {
 					remove_idea = ENG_house_of_lords
@@ -101,7 +101,7 @@ ENG_politics = {
 		timeout_effect = {
 			if = {
 				limit = {
-					check_variable = { var = govseats  value = 331  compare = less_than }
+					ENG_majority = no
 				}
 				custom_effect_tooltip = ENG_law_not_pass
 				add_stability = -0.1
@@ -109,7 +109,7 @@ ENG_politics = {
 			
 			else_if = {
 				limit = {
-					check_variable = { var = govseats  value = 330  compare = greater_than }
+					ENG_majority = yes
 				}
 				custom_effect_tooltip = ENG_law_pass
 				swap_ideas = {
@@ -147,7 +147,7 @@ ENG_politics = {
 		timeout_effect = {
 			if = {
 				limit = {
-					check_variable = { var = govseats  value = 331  compare = less_than }
+					ENG_majority = no
 				}
 				custom_effect_tooltip = ENG_law_not_pass
 				add_stability = -0.1
@@ -155,7 +155,7 @@ ENG_politics = {
 			
 			else_if = {
 				limit = {
-					check_variable = { var = govseats  value = 330  compare = greater_than }
+					ENG_majority = yes
 				}
 				custom_effect_tooltip = ENG_law_pass
 				add_popularity = {
@@ -218,7 +218,7 @@ ENG_politics = {
 		remove_effect = {
 			if = {
 				limit = {
-					check_variable = { var = govseats  value = 331  compare = less_than }
+					ENG_majority = no
 				}
 				custom_effect_tooltip = ENG_law_not_pass
 				add_stability = -0.1
@@ -227,7 +227,7 @@ ENG_politics = {
 			
 			else_if = {
 				limit = {
-					check_variable = { var = govseats  value = 330  compare = greater_than }
+					ENG_majority = yes
 				}
 				custom_effect_tooltip = ENG_law_pass
 				set_country_flag = ENG_mobilization_passed
@@ -261,7 +261,7 @@ ENG_politics = {
 		timeout_effect = {
 			if = {
 				limit = {
-					check_variable = { var = govseats  value = 331  compare = less_than }
+					ENG_majority = no
 				}
 				custom_effect_tooltip = ENG_law_not_pass
 				add_stability = -0.1
@@ -269,7 +269,7 @@ ENG_politics = {
 			
 			else_if = {
 				limit = {
-					check_variable = { var = govseats  value = 330  compare = greater_than }
+					ENG_majority = yes
 				}
 				custom_effect_tooltip = ENG_law_pass
 				add_popularity = {
@@ -337,7 +337,7 @@ ENG_politics = {
 		timeout_effect = {
 			if = {
 				limit = {
-					check_variable = { var = govseats  value = 331  compare = less_than }
+					ENG_majority = no
 				}
 				custom_effect_tooltip = ENG_law_not_pass
 				add_stability = -0.1
@@ -345,7 +345,7 @@ ENG_politics = {
 			
 			else_if = {
 				limit = {
-					check_variable = { var = govseats  value = 330  compare = greater_than }
+					ENG_majority = yes
 				}
 				custom_effect_tooltip = ENG_law_pass
 				set_country_flag = ENG_gov_ire_1911
@@ -377,7 +377,7 @@ ENG_politics = {
 	ENG_resign_asquith = {
 		available = {
 			always = yes
-		#	has_country_flag = ENG_instability
+			has_country_flag = ENG_instability
 		}
 
 		fire_only_once = yes
